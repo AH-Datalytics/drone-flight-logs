@@ -1,0 +1,7 @@
+{
+  "objectIdFieldName": "ObjectId",
+  "features": [
+    { "attributes": { "ObjectId": 6, "flight_id": "83700711-b12a-451b-a114-d4281b4c26da", "vehicle_serial": null, "dock_serial": null, "user_email": null, "takeoff": 1741499889198, "landing": 1741501047260, "external_id": "P2503080355", "description": "Shamrock Shuffle", "flight_purpose": "Event Management", "operation_id": null, "organization_id": "b438cee6-dca6-4104-ac75-c9b5f4c9c567", "Shape__Length": 0.0289 } },
+    { "attributes": { "ObjectId": 7, "flight_id": "0f2d1d1c-1111-2222-3333-444444444444", "vehicle_serial": null, "dock_serial": null, "user_email": null, "takeoff": 0, "landing": null, "external_id": "", "description": "Test flight.", "flight_purpose": "Training", "operation_id": null, "organization_id": "b438cee6-dca6-4104-ac75-c9b5f4c9c567", "Shape__Length": 0 } }
+  ]
+}

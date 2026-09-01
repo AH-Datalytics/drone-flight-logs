@@ -1,0 +1,2 @@
+{ "name": "Operation", "geometryType": "esriGeometryPolyline", "maxRecordCount": 2000,
+  "extent": { "xmin": -88.05, "ymin": 42.92, "xmax": -87.86, "ymax": 43.19, "spatialReference": { "wkid": 4326, "latestWkid": 4326 } } }
