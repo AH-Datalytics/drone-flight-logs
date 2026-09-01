@@ -10,6 +10,12 @@ const skydio = (id: string, orgs: { org_uuid: string; dashboard_item_id: string;
   first_flight: null, last_flight: null, flight_count: 0, total_hours: 0, last_pulled_utc: null, notes: null,
 });
 
+const sfpd = (id: string, status: RegistryAgency['status'] = 'ok'): RegistryAgency => ({
+  agency_id: id, display_name: id, state: 'CA', org_type: 'law_enforcement', timezone: 'America/Los_Angeles', source: 'sfpd_datasf',
+  source_config: { domain: 'data.sfgov.org', dataset_id: 'giw5-ttjs' }, official_url: 'https://example.com', status,
+  first_flight: null, last_flight: null, flight_count: 0, total_hours: 0, last_pulled_utc: null, notes: null,
+});
+
 describe('title helpers', () => {
   it('cleans Skydio dashboard titles', () => {
     expect(cleanTitle('Milwaukee Police Department Drone Flights')).toBe('Milwaukee Police Department');
@@ -73,6 +79,14 @@ describe('mergeDiscovered', () => {
     mergeDiscovered(reg, [{ item_id: 'd1', title: 'Changed Title Drone Flights', org_uuid: 'u1', modified: '2026-01-01T00:00:00.000Z' }], []);
     expect(reg.agencies[0].display_name).toBe('Curated Name');
     expect(reg.agencies[0].status).toBe('ok');
+  });
+  it('never retires a non-Skydio agency, even when it has no Skydio dashboards to match', () => {
+    const reg: Registry = { agencies: [skydio('a-pd', [{ org_uuid: 'u1', dashboard_item_id: 'd1', title: 'A PD Drone Flights' }]), sfpd('sfpd')] };
+    const res = mergeDiscovered(reg, [], []);
+    expect(res.retired).toEqual(['a-pd']);
+    expect(res.retired).not.toContain('sfpd');
+    const sfpdAgency = reg.agencies.find(a => a.agency_id === 'sfpd')!;
+    expect(sfpdAgency.status).toBe('ok');
   });
 });
 
