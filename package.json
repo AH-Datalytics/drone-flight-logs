@@ -1,0 +1,19 @@
+{
+  "name": "police-drone-logs",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "pull": "tsx pipeline/pull.ts",
+    "seed": "tsx pipeline/seed.ts",
+    "validate:data": "tsx pipeline/validate.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
