@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { validateRecord, type FlightRecord } from '../schema.js';
+import { validateRecord, FORBIDDEN_FIELDS, type FlightRecord } from '../schema.js';
 
 const good: FlightRecord = {
   agency_id: 'milwaukee-pd',
@@ -33,9 +33,9 @@ describe('validateRecord', () => {
     expect(validateRecord({ ...good, takeoff_utc: '2025-03-09 05:58' })).toContain('takeoff_utc must be ISO 8601 UTC or null');
     expect(validateRecord({ ...good, flight_date_local: '3/8/2025' })).toContain('flight_date_local must be YYYY-MM-DD or null');
   });
-  it('rejects forbidden identity fields', () => {
-    const r = { ...good, user_email: 'x@y.gov' } as unknown;
-    expect(validateRecord(r)).toContain('forbidden field present: user_email');
+  it.each(FORBIDDEN_FIELDS)('rejects forbidden identity field: %s', (field) => {
+    const r = { ...good, [field]: 'x@y.gov' } as unknown;
+    expect(validateRecord(r)).toContain(`forbidden field present: ${field}`);
   });
   it('rejects negative duration and non-object extra', () => {
     expect(validateRecord({ ...good, duration_min: -1 })).toContain('duration_min must be a non-negative number or null');
