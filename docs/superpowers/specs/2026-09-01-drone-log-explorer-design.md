@@ -157,7 +157,7 @@ Where the data comes from, exactly what is and is not included, the pull schedul
 
 ### 7.4 Design
 
-Editorial, dense, data-first, in line with your other dashboards. No portal bar, no gradients, no emoji. Charts follow the house rules: y-axis from zero, round intervals, no decimals.
+Technological, clean and modern — a precision instrument rather than a newspaper page. Hairline 1px grid, squared corners, monospace for every number and identifier, one cool accent against near-neutral surfaces, generous negative space, and a real dark mode driven by `prefers-color-scheme`. Dense and data-first, but not editorial pastiche. No portal bar, no gradients, no shadows, no rounded corners, no emoji. Charts follow the house rules: y-axis from zero, round intervals, no decimals.
 
 ## 8. Error handling and quality
 
