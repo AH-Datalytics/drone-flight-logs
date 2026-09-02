@@ -1,16 +1,16 @@
 {
-  "run_utc": "2026-09-02T11:31:58.716Z",
+  "run_utc": "2026-09-02T12:28:17.877Z",
   "agencies": {
-    "aep-gen-shared-services-engineering": {
+    "arkansas-dot": {
       "status": "stale",
-      "rows": 1,
-      "previous_rows": 1,
+      "rows": 11,
+      "previous_rows": 11,
       "error": null
     },
-    "adams-county-so-wa-wa": {
+    "appleton-pd-wi": {
       "status": "ok",
-      "rows": 24,
-      "previous_rows": 24,
+      "rows": 25,
+      "previous_rows": 0,
       "error": null
     },
     "alaska-dot-pf": {
@@ -19,22 +19,10 @@
       "previous_rows": 2,
       "error": null
     },
-    "arkansas-dot": {
-      "status": "stale",
-      "rows": 11,
-      "previous_rows": 11,
-      "error": null
-    },
-    "appleton-pd-wi-wi": {
+    "adams-county-so-wa": {
       "status": "ok",
-      "rows": 25,
-      "previous_rows": 23,
-      "error": null
-    },
-    "australian-federal-police-drone-flights-for-missing-person-sharon-granites": {
-      "status": "stale",
-      "rows": 28,
-      "previous_rows": 28,
+      "rows": 24,
+      "previous_rows": 0,
       "error": null
     },
     "amarillo-pd": {
@@ -43,16 +31,10 @@
       "previous_rows": 10,
       "error": null
     },
-    "azimuth-inc": {
+    "australian-federal-police-drone-flights-for-missing-person-sharon-granites": {
       "status": "stale",
-      "rows": 1,
-      "previous_rows": 1,
-      "error": null
-    },
-    "axon": {
-      "status": "stale",
-      "rows": 36,
-      "previous_rows": 36,
+      "rows": 28,
+      "previous_rows": 28,
       "error": null
     },
     "axon-air-psm": {
@@ -61,10 +43,28 @@
       "previous_rows": 40,
       "error": null
     },
-    "birmingham-pd-al-al": {
+    "axon": {
+      "status": "stale",
+      "rows": 36,
+      "previous_rows": 36,
+      "error": null
+    },
+    "arvada-pd-co": {
+      "status": "ok",
+      "rows": 1176,
+      "previous_rows": 0,
+      "error": null
+    },
+    "azimuth-inc": {
       "status": "stale",
       "rows": 1,
       "previous_rows": 1,
+      "error": null
+    },
+    "bellingham-pd-wa": {
+      "status": "ok",
+      "rows": 1,
+      "previous_rows": 0,
       "error": null
     },
     "bernalillo-county-so": {
@@ -73,40 +73,40 @@
       "previous_rows": 7,
       "error": null
     },
-    "belmont-pd": {
-      "status": "ok",
-      "rows": 438,
-      "previous_rows": 438,
-      "error": null
-    },
-    "bellingham-pd-wa-wa": {
-      "status": "ok",
+    "birmingham-pd-al": {
+      "status": "stale",
       "rows": 1,
-      "previous_rows": 1,
+      "previous_rows": 0,
       "error": null
     },
-    "bloomington-pd-il-il": {
+    "bloomington-pd-il": {
       "status": "ok",
       "rows": 404,
-      "previous_rows": 404,
-      "error": null
-    },
-    "arvada-pd-co-co": {
-      "status": "ok",
-      "rows": 1176,
-      "previous_rows": 1176,
-      "error": null
-    },
-    "calcasieu-parish-so": {
-      "status": "ok",
-      "rows": 183,
-      "previous_rows": 183,
+      "previous_rows": 0,
       "error": null
     },
     "boston-pd": {
       "status": "stale",
       "rows": 3,
       "previous_rows": 3,
+      "error": null
+    },
+    "belmont-pd": {
+      "status": "ok",
+      "rows": 438,
+      "previous_rows": 438,
+      "error": null
+    },
+    "aep-gen-shared-services-engineering": {
+      "status": "stale",
+      "rows": 1,
+      "previous_rows": 1,
+      "error": null
+    },
+    "calcasieu-parish-so": {
+      "status": "ok",
+      "rows": 183,
+      "previous_rows": 183,
       "error": null
     },
     "cherry-hill-pd": {
@@ -121,22 +121,22 @@
       "previous_rows": 4,
       "error": null
     },
-    "caldwell-pd-id-id": {
-      "status": "ok",
-      "rows": 1249,
-      "previous_rows": 1248,
-      "error": null
-    },
-    "chiefland-pd-fl-fl": {
-      "status": "ok",
-      "rows": 29,
-      "previous_rows": 29,
-      "error": null
-    },
-    "chesterfield-county-pd-va-va": {
+    "chesterfield-county-pd-va": {
       "status": "ok",
       "rows": 238,
-      "previous_rows": 238,
+      "previous_rows": 0,
+      "error": null
+    },
+    "chiefland-pd-fl": {
+      "status": "ok",
+      "rows": 29,
+      "previous_rows": 0,
+      "error": null
+    },
+    "caldwell-pd-id": {
+      "status": "ok",
+      "rows": 1249,
+      "previous_rows": 0,
       "error": null
     },
     "cleveland-division-of-police": {
@@ -145,16 +145,10 @@
       "previous_rows": 248,
       "error": null
     },
-    "cobb-county-pd": {
+    "brookhaven-pd": {
       "status": "ok",
-      "rows": 649,
-      "previous_rows": 647,
-      "error": null
-    },
-    "brooklyn-park-pd": {
-      "status": "ok",
-      "rows": 2006,
-      "previous_rows": 2006,
+      "rows": 3268,
+      "previous_rows": 3268,
       "error": null
     },
     "columbus-pd-oh": {
@@ -163,22 +157,28 @@
       "previous_rows": 1,
       "error": null
     },
-    "brookhaven-pd": {
+    "cobb-county-pd": {
       "status": "ok",
-      "rows": 3268,
-      "previous_rows": 3268,
+      "rows": 649,
+      "previous_rows": 649,
       "error": null
     },
-    "conroe-pd": {
+    "brooklyn-park-pd": {
       "status": "ok",
-      "rows": 363,
-      "previous_rows": 363,
+      "rows": 2006,
+      "previous_rows": 2006,
       "error": null
     },
     "crubier": {
       "status": "stale",
       "rows": 51,
       "previous_rows": 51,
+      "error": null
+    },
+    "conroe-pd": {
+      "status": "ok",
+      "rows": 363,
+      "previous_rows": 363,
       "error": null
     },
     "csu-long-beach-pd": {
@@ -193,16 +193,16 @@
       "previous_rows": 26,
       "error": null
     },
-    "concord-pd-ca-ca": {
+    "concord-pd-ca": {
       "status": "ok",
       "rows": 3081,
-      "previous_rows": 3081,
+      "previous_rows": 0,
       "error": null
     },
-    "denver-pd-drone-as-first-responder-flights": {
+    "denver-pd": {
       "status": "ok",
       "rows": 1841,
-      "previous_rows": 1841,
+      "previous_rows": 0,
       "error": null
     },
     "detroit-fire-department": {
@@ -211,16 +211,16 @@
       "previous_rows": 435,
       "error": null
     },
-    "duluth-pd-mn-mn": {
-      "status": "ok",
-      "rows": 813,
-      "previous_rows": 813,
-      "error": null
-    },
-    "dock-trial-vancouver-pd-wa-wa": {
+    "dock-trial-vancouver-pd-wa": {
       "status": "stale",
       "rows": 1,
-      "previous_rows": 1,
+      "previous_rows": 0,
+      "error": null
+    },
+    "duluth-pd-mn": {
+      "status": "ok",
+      "rows": 813,
+      "previous_rows": 0,
       "error": null
     },
     "duquesne-light-company": {
@@ -229,16 +229,10 @@
       "previous_rows": 1,
       "error": null
     },
-    "dearborn-pd-mi-mi": {
+    "durango-pd-co": {
       "status": "ok",
-      "rows": 4193,
-      "previous_rows": 4159,
-      "error": null
-    },
-    "dutchess-county-so-uas-unit": {
-      "status": "ok",
-      "rows": 2,
-      "previous_rows": 2,
+      "rows": 854,
+      "previous_rows": 0,
       "error": null
     },
     "el-cajon-pd": {
@@ -247,10 +241,16 @@
       "previous_rows": 1,
       "error": null
     },
-    "durango-pd-co-co": {
+    "dutchess-county-so-uas-unit": {
       "status": "ok",
-      "rows": 854,
-      "previous_rows": 848,
+      "rows": 2,
+      "previous_rows": 2,
+      "error": null
+    },
+    "dearborn-pd-mi": {
+      "status": "ok",
+      "rows": 4193,
+      "previous_rows": 0,
       "error": null
     },
     "el-centro-pd-ca": {
@@ -265,10 +265,34 @@
       "previous_rows": 19,
       "error": null
     },
-    "everett-pd-wa-wa": {
+    "escambia-county-so-fl": {
+      "status": "stale",
+      "rows": 4,
+      "previous_rows": 0,
+      "error": null
+    },
+    "everett-pd-wa": {
       "status": "ok",
       "rows": 10,
-      "previous_rows": 10,
+      "previous_rows": 0,
+      "error": null
+    },
+    "fayette-county-so-ga": {
+      "status": "stale",
+      "rows": 14,
+      "previous_rows": 0,
+      "error": null
+    },
+    "fitchburg-pd-wi": {
+      "status": "ok",
+      "rows": 94,
+      "previous_rows": 0,
+      "error": null
+    },
+    "fort-collins-police-services": {
+      "status": "stale",
+      "rows": 1,
+      "previous_rows": 1,
       "error": null
     },
     "fairfax-county-pd": {
@@ -277,34 +301,10 @@
       "previous_rows": 38,
       "error": null
     },
-    "escambia-county-so-fl-fl": {
-      "status": "stale",
-      "rows": 4,
-      "previous_rows": 4,
-      "error": null
-    },
-    "fayette-county-so-ga-ga": {
-      "status": "stale",
-      "rows": 14,
-      "previous_rows": 14,
-      "error": null
-    },
-    "foxborough-pd-ma-ma": {
+    "foxborough-pd-ma": {
       "status": "stale",
       "rows": 3,
-      "previous_rows": 3,
-      "error": null
-    },
-    "fitchburg-pd-wi-wi": {
-      "status": "ok",
-      "rows": 94,
-      "previous_rows": 94,
-      "error": null
-    },
-    "fort-collins-police-services": {
-      "status": "stale",
-      "rows": 1,
-      "previous_rows": 1,
+      "previous_rows": 0,
       "error": null
     },
     "frederick-county-so": {
@@ -325,16 +325,16 @@
       "previous_rows": 35,
       "error": null
     },
-    "glendale-pd-ca-trial-ca": {
-      "status": "stale",
-      "rows": 315,
-      "previous_rows": 315,
+    "cspd-real-time-crime-center": {
+      "status": "ok",
+      "rows": 10301,
+      "previous_rows": 0,
       "error": null
     },
-    "granite-defense-technologies-nfr": {
+    "glendale-pd-trial-ca": {
       "status": "stale",
-      "rows": 1,
-      "previous_rows": 1,
+      "rows": 315,
+      "previous_rows": 0,
       "error": null
     },
     "gray-fire-rescue": {
@@ -343,16 +343,22 @@
       "previous_rows": 27,
       "error": null
     },
-    "hamilton-pd-oh-oh": {
+    "granite-defense-technologies-nfr": {
       "status": "stale",
-      "rows": 25,
-      "previous_rows": 25,
+      "rows": 1,
+      "previous_rows": 1,
       "error": null
     },
-    "cspd-real-time-crime-center-dfr-flights": {
+    "hamilton-pd-oh": {
+      "status": "stale",
+      "rows": 25,
+      "previous_rows": 0,
+      "error": null
+    },
+    "hampton-pd-va": {
       "status": "ok",
-      "rows": 10301,
-      "previous_rows": 10289,
+      "rows": 13,
+      "previous_rows": 0,
       "error": null
     },
     "hennepin-ems": {
@@ -367,52 +373,52 @@
       "previous_rows": 107,
       "error": null
     },
-    "hampton-pd-va-va": {
-      "status": "ok",
-      "rows": 13,
-      "previous_rows": 13,
-      "error": null
-    },
     "honolulu-pd": {
       "status": "ok",
       "rows": 11,
       "previous_rows": 11,
       "error": null
     },
-    "indian-river-county-emergency-services-fl-fl": {
+    "indian-river-county-emergency-services-fl": {
       "status": "ok",
       "rows": 3,
-      "previous_rows": 3,
+      "previous_rows": 0,
       "error": null
     },
-    "greeley-pd-co-co": {
+    "killeen-pd-tx": {
       "status": "ok",
-      "rows": 2322,
-      "previous_rows": 2300,
+      "rows": 172,
+      "previous_rows": 0,
       "error": null
     },
-    "knox-county-so-tn-tn": {
+    "knox-county-so-tn": {
       "status": "stale",
       "rows": 5,
-      "previous_rows": 5,
+      "previous_rows": 0,
       "error": null
     },
-    "killeen-pd-tx-tx": {
+    "greeley-pd-co": {
       "status": "ok",
-      "rows": 171,
-      "previous_rows": 168,
+      "rows": 2322,
+      "previous_rows": 0,
       "error": null
     },
-    "kootenai-county-so-id-id": {
+    "kootenai-county-so-id": {
       "status": "stale",
       "rows": 6,
-      "previous_rows": 6,
+      "previous_rows": 0,
       "error": null
     },
-    "lafayette-pd-la-la": {
+    "lafayette-pd-la": {
       "status": "stale",
       "rows": 1,
-      "previous_rows": 1,
+      "previous_rows": 0,
+      "error": null
+    },
+    "lake-county-so-fl": {
+      "status": "stale",
+      "rows": 15,
+      "previous_rows": 0,
       "error": null
     },
     "las-vegas-metropolitan-pd": {
@@ -421,10 +427,10 @@
       "previous_rows": 3,
       "error": null
     },
-    "lake-county-so-fl-fl": {
-      "status": "stale",
-      "rows": 15,
-      "previous_rows": 15,
+    "lewisville-pd-dfr-tx": {
+      "status": "ok",
+      "rows": 945,
+      "previous_rows": 0,
       "error": null
     },
     "laurel-pd-uas-flight-data": {
@@ -439,22 +445,10 @@
       "previous_rows": 461,
       "error": null
     },
-    "los-altos-pd-ca-ca": {
+    "los-altos-pd-ca": {
       "status": "ok",
       "rows": 386,
-      "previous_rows": 386,
-      "error": null
-    },
-    "lewisville-pd-tx-dfr-tx": {
-      "status": "ok",
-      "rows": 945,
-      "previous_rows": 945,
-      "error": null
-    },
-    "los-gatos-monte-sereno-pd": {
-      "status": "ok",
-      "rows": 6,
-      "previous_rows": 6,
+      "previous_rows": 0,
       "error": null
     },
     "louisville-metro-government": {
@@ -463,10 +457,16 @@
       "previous_rows": 7,
       "error": null
     },
-    "marysville-pd-sno911-dfr-flights": {
+    "los-gatos-monte-sereno-pd": {
+      "status": "ok",
+      "rows": 6,
+      "previous_rows": 6,
+      "error": null
+    },
+    "marysville-pd-sno911": {
       "status": "stale",
       "rows": 4,
-      "previous_rows": 4,
+      "previous_rows": 0,
       "error": null
     },
     "medicine-hat-police-service": {
@@ -475,16 +475,10 @@
       "previous_rows": 2,
       "error": null
     },
-    "laredo-pd": {
-      "status": "ok",
-      "rows": 4676,
-      "previous_rows": 4676,
-      "error": null
-    },
-    "melrose-park-pd-il-il": {
+    "melrose-park-pd-il": {
       "status": "ok",
       "rows": 224,
-      "previous_rows": 224,
+      "previous_rows": 0,
       "error": null
     },
     "menifee-pd": {
@@ -493,16 +487,10 @@
       "previous_rows": 346,
       "error": null
     },
-    "miami-beach-pd-g47-beta": {
-      "status": "stale",
-      "rows": 12,
-      "previous_rows": 12,
-      "error": null
-    },
-    "metropolitan-nashville-pd-tn-tn": {
+    "laredo-pd": {
       "status": "ok",
-      "rows": 395,
-      "previous_rows": 395,
+      "rows": 4676,
+      "previous_rows": 4676,
       "error": null
     },
     "metropolitan-pd": {
@@ -511,16 +499,22 @@
       "previous_rows": 100,
       "error": null
     },
+    "metropolitan-nashville-pd-tn": {
+      "status": "ok",
+      "rows": 395,
+      "previous_rows": 0,
+      "error": null
+    },
+    "miami-beach-pd-g47-beta": {
+      "status": "stale",
+      "rows": 12,
+      "previous_rows": 12,
+      "error": null
+    },
     "miami-pd-org": {
       "status": "stale",
       "rows": 2,
       "previous_rows": 2,
-      "error": null
-    },
-    "milford-pd": {
-      "status": "stale",
-      "rows": 141,
-      "previous_rows": 141,
       "error": null
     },
     "middlefield-vol-fire-co": {
@@ -529,16 +523,16 @@
       "previous_rows": 4,
       "error": null
     },
+    "milford-pd": {
+      "status": "stale",
+      "rows": 141,
+      "previous_rows": 141,
+      "error": null
+    },
     "mlgw": {
       "status": "stale",
       "rows": 3,
       "previous_rows": 3,
-      "error": null
-    },
-    "monroe-county-so-dfr-flights": {
-      "status": "ok",
-      "rows": 247,
-      "previous_rows": 247,
       "error": null
     },
     "minnetonka-pd": {
@@ -547,16 +541,22 @@
       "previous_rows": 1220,
       "error": null
     },
+    "monroe-county-so": {
+      "status": "ok",
+      "rows": 247,
+      "previous_rows": 0,
+      "error": null
+    },
     "montgomery-county-pd-g47-beta": {
       "status": "stale",
       "rows": 450,
       "previous_rows": 450,
       "error": null
     },
-    "new-berlin-marshal-s-office-tx-tx": {
+    "new-berlin-marshal-s-office-tx": {
       "status": "ok",
       "rows": 5,
-      "previous_rows": 5,
+      "previous_rows": 0,
       "error": null
     },
     "nevada-county-so": {
@@ -565,10 +565,10 @@
       "previous_rows": 5,
       "error": null
     },
-    "niles-pd-il-il": {
-      "status": "ok",
-      "rows": 29,
-      "previous_rows": 29,
+    "new-orleans-pd": {
+      "status": "stale",
+      "rows": 297,
+      "previous_rows": 297,
       "error": null
     },
     "newmont-lihir-papua-new-guinea": {
@@ -577,10 +577,10 @@
       "previous_rows": 1,
       "error": null
     },
-    "new-orleans-pd": {
-      "status": "stale",
-      "rows": 297,
-      "previous_rows": 297,
+    "niles-pd-il": {
+      "status": "ok",
+      "rows": 29,
+      "previous_rows": 0,
       "error": null
     },
     "milwaukee-pd": {
@@ -595,16 +595,16 @@
       "previous_rows": 6,
       "error": null
     },
-    "norton-pd-oh-suas-flights-oh": {
+    "norton-pd-oh": {
       "status": "ok",
       "rows": 23,
-      "previous_rows": 23,
+      "previous_rows": 0,
       "error": null
     },
-    "cincinnati-pd": {
+    "pacifica-pd-drone-transparency-portal-ca": {
       "status": "ok",
-      "rows": 17938,
-      "previous_rows": 17938,
+      "rows": 86,
+      "previous_rows": 0,
       "error": null
     },
     "oakland-county-so": {
@@ -613,22 +613,16 @@
       "previous_rows": 12,
       "error": null
     },
-    "pacifica-pd-ca-drone-transparency-portal-ca": {
-      "status": "ok",
-      "rows": 86,
-      "previous_rows": 86,
-      "error": null
-    },
-    "overland-park-pd-ks-ks": {
+    "overland-park-pd-ks": {
       "status": "ok",
       "rows": 294,
-      "previous_rows": 294,
+      "previous_rows": 0,
       "error": null
     },
-    "los-angeles-pd-drone-as-first-responder": {
+    "los-angeles-pd": {
       "status": "ok",
       "rows": 9685,
-      "previous_rows": 9650,
+      "previous_rows": 0,
       "error": null
     },
     "oklahoma-city-pd": {
@@ -637,16 +631,16 @@
       "previous_rows": 37,
       "error": null
     },
-    "pickens-county-so-ga-ga": {
-      "status": "ok",
-      "rows": 14,
-      "previous_rows": 14,
-      "error": null
-    },
-    "providence-pd-ri-ri": {
+    "providence-pd-ri": {
       "status": "ok",
       "rows": 17,
-      "previous_rows": 17,
+      "previous_rows": 0,
+      "error": null
+    },
+    "pickens-county-so-ga": {
+      "status": "ok",
+      "rows": 14,
+      "previous_rows": 0,
       "error": null
     },
     "quincy-pd": {
@@ -661,28 +655,28 @@
       "previous_rows": 2,
       "error": null
     },
-    "rowlett-pd-tx-tx": {
+    "rowlett-pd-tx": {
       "status": "ok",
       "rows": 8,
-      "previous_rows": 8,
+      "previous_rows": 0,
       "error": null
     },
-    "santa-clara-county-so-uas-flights": {
+    "santa-clara-county-so": {
       "status": "ok",
       "rows": 698,
-      "previous_rows": 698,
+      "previous_rows": 0,
       "error": null
     },
-    "santa-ana-pd-ca-ca": {
+    "santa-ana-pd-ca": {
       "status": "ok",
       "rows": 1599,
-      "previous_rows": 1599,
+      "previous_rows": 0,
       "error": null
     },
-    "sfpd": {
-      "status": "stale",
-      "rows": 7481,
-      "previous_rows": 7481,
+    "cincinnati-pd": {
+      "status": "ok",
+      "rows": 17938,
+      "previous_rows": 17938,
       "error": null
     },
     "rochester-pd-mn": {
@@ -691,28 +685,22 @@
       "previous_rows": 3111,
       "error": null
     },
+    "philadelphia-pd": {
+      "status": "ok",
+      "rows": 4258,
+      "previous_rows": 4258,
+      "error": null
+    },
+    "south-san-francisco-pd-ca": {
+      "status": "ok",
+      "rows": 1628,
+      "previous_rows": 0,
+      "error": null
+    },
     "st-cloud-pd": {
       "status": "ok",
       "rows": 1060,
       "previous_rows": 1060,
-      "error": null
-    },
-    "south-san-francisco-pd-ca-ca": {
-      "status": "ok",
-      "rows": 1628,
-      "previous_rows": 1628,
-      "error": null
-    },
-    "philadelphia-pd": {
-      "status": "ok",
-      "rows": 4258,
-      "previous_rows": 4255,
-      "error": null
-    },
-    "terrebonne-parish-so-la-la": {
-      "status": "ok",
-      "rows": 20,
-      "previous_rows": 20,
       "error": null
     },
     "tampa-pd": {
@@ -727,16 +715,16 @@
       "previous_rows": 33,
       "error": null
     },
+    "terrebonne-parish-so-la": {
+      "status": "ok",
+      "rows": 20,
+      "previous_rows": 0,
+      "error": null
+    },
     "titusville-pd-suas-transparency-dashboard": {
       "status": "ok",
       "rows": 16,
       "previous_rows": 16,
-      "error": null
-    },
-    "st-paul-pd-mn-mn": {
-      "status": "ok",
-      "rows": 1488,
-      "previous_rows": 1488,
       "error": null
     },
     "trial-fargo-pd": {
@@ -745,22 +733,28 @@
       "previous_rows": 5,
       "error": null
     },
+    "town-of-ramapo-pd": {
+      "status": "ok",
+      "rows": 1163,
+      "previous_rows": 1163,
+      "error": null
+    },
+    "trophy-club-pd-tx": {
+      "status": "ok",
+      "rows": 1,
+      "previous_rows": 0,
+      "error": null
+    },
     "tulsa-fire-department": {
       "status": "ok",
       "rows": 66,
       "previous_rows": 66,
       "error": null
     },
-    "trophy-club-pd-tx-tx": {
+    "st-paul-pd-mn": {
       "status": "ok",
-      "rows": 1,
-      "previous_rows": 1,
-      "error": null
-    },
-    "turner-construction-company": {
-      "status": "stale",
-      "rows": 2,
-      "previous_rows": 2,
+      "rows": 1517,
+      "previous_rows": 0,
       "error": null
     },
     "university-of-arizona-real-time-coordination-center": {
@@ -769,16 +763,16 @@
       "previous_rows": 121,
       "error": null
     },
-    "town-of-ramapo-pd": {
-      "status": "ok",
-      "rows": 1163,
-      "previous_rows": 1161,
+    "turner-construction-company": {
+      "status": "stale",
+      "rows": 2,
+      "previous_rows": 2,
       "error": null
     },
-    "upper-arlington-police-division-oh-oh": {
-      "status": "ok",
-      "rows": 37,
-      "previous_rows": 37,
+    "sfpd": {
+      "status": "stale",
+      "rows": 7481,
+      "previous_rows": 7481,
       "error": null
     },
     "university-of-illinois-division-of-public-safety": {
@@ -787,16 +781,16 @@
       "previous_rows": 249,
       "error": null
     },
-    "vanderbilt-university-pd": {
-      "status": "ok",
-      "rows": 753,
-      "previous_rows": 753,
-      "error": null
-    },
-    "virginia-beach-pd-dfr-flights": {
+    "upper-arlington-police-division-oh": {
       "status": "ok",
       "rows": 37,
-      "previous_rows": 37,
+      "previous_rows": 0,
+      "error": null
+    },
+    "virginia-beach-pd": {
+      "status": "ok",
+      "rows": 37,
+      "previous_rows": 0,
       "error": null
     },
     "watchung-pd": {
@@ -811,10 +805,16 @@
       "previous_rows": 46,
       "error": null
     },
+    "vanderbilt-university-pd": {
+      "status": "ok",
+      "rows": 753,
+      "previous_rows": 753,
+      "error": null
+    },
     "wichita-pd": {
       "status": "ok",
       "rows": 6649,
-      "previous_rows": 6636,
+      "previous_rows": 6649,
       "error": null
     }
   },

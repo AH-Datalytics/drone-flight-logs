@@ -44,4 +44,33 @@ describe('buildSeedRegistry', () => {
     expect(excluded).toEqual([{ dashboard_item_id: 'bbbb', org_uuid: 'u-int', title: 'INT - Someone Drone Flights', reason: 'skydio internal or demo (title pattern)' }]);
     expect(registry.agencies.find(a => a.agency_id === 'sfpd')).toBeTruthy();
   });
+
+  it('strips a trailing (XX) state parenthetical from a CSV-sourced agency name so the state is not doubled', () => {
+    const CSV_WITH_STATE_PAREN = CSV + `Appleton Police Department (WI),law_enforcement,,120,2025-01-01,2026-08-01,31,50,2.4,20,10,0.4,50,10,5,4,call_for_service_general,60,,false,https://www.arcgis.com/apps/dashboards/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,c1c1c1c1-0000-0000-0000-000000000000\n`;
+    const discovered = [
+      { item_id: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', title: 'Appleton Police Department (WI) Drone Flights', org_uuid: 'c1c1c1c1-0000-0000-0000-000000000000', modified: '2026-08-27T00:00:00.000Z' },
+    ];
+    const { registry } = buildSeedRegistry(discovered, parseSeedCsv(CSV_WITH_STATE_PAREN), new Map(), new Date('2026-09-01T00:00:00Z'));
+    const appleton = registry.agencies.find(a => a.display_name.startsWith('Appleton'))!;
+    expect(appleton).toBeTruthy();
+    expect(appleton.display_name).toBe('Appleton Police Department');
+    expect(appleton.state).toBe('WI');
+    expect(appleton.agency_id).toBe('appleton-pd-wi');
+    expect(appleton.agency_id).not.toMatch(/-([a-z]{2})-\1$/);
+  });
+
+  it('strips a mid-string (XX) state parenthetical too, leaving trailing qualifiers intact', () => {
+    const CSV_MID_PAREN = CSV + `Glendale Police Department (CA) - Trial,law_enforcement,,10,2025-01-01,2026-08-01,31,50,2.4,20,10,0.4,50,10,5,4,call_for_service_general,60,,false,https://www.arcgis.com/apps/dashboards/bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,d2d2d2d2-0000-0000-0000-000000000000\n`;
+    const discovered = [
+      { item_id: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', title: 'Glendale Police Department (CA) - Trial Drone Flights', org_uuid: 'd2d2d2d2-0000-0000-0000-000000000000', modified: '2026-08-27T00:00:00.000Z' },
+    ];
+    const { registry } = buildSeedRegistry(discovered, parseSeedCsv(CSV_MID_PAREN), new Map(), new Date('2026-09-01T00:00:00Z'));
+    const glendale = registry.agencies.find(a => a.display_name.startsWith('Glendale'))!;
+    expect(glendale).toBeTruthy();
+    expect(glendale.display_name).not.toMatch(/\(CA\)/);
+    expect(glendale.display_name).toBe('Glendale Police Department - Trial');
+    expect(glendale.state).toBe('CA');
+    expect(glendale.agency_id).not.toMatch(/-([a-z]{2})-\1$/);
+    expect((glendale.agency_id.match(/-ca(?:-|$)/g) ?? []).length).toBe(1);
+  });
 });

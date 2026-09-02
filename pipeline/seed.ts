@@ -44,6 +44,18 @@ export function isInternalTitle(title: string): boolean {
   return INTERNAL.some(re => re.test(t));
 }
 
+// cleanTitle only strips a "(XX)" state parenthetical when it sits at the very end of the string.
+// A few CSV/dashboard names carry it mid-string instead (e.g. "Glendale Police Department (CA) -
+// Trial", "Lewisville Police Department (TX) DFR") — cleanTitle correctly leaves those alone since
+// it can't know (CA) is the same value as the separately-derived `state` rather than a meaningful
+// part of the name (contrast "Tennessee Department of Transportation (TDOT)", which must NOT be
+// touched). Once `state` is known, though, any literal "(STATE)" left in the name is provably
+// redundant with it, so it is safe to remove here.
+function stripRedundantStateParen(name: string, state: string | null): string {
+  if (!state) return name;
+  return name.replace(new RegExp(`\\s*\\(${state}\\)\\s*`, 'g'), ' ').replace(/\s+/g, ' ').trim();
+}
+
 export function buildSeedRegistry(discovered: DiscoveredDashboard[], seed: Map<string, SeedRow>, extents: Map<string, { lon: number; lat: number } | null>, now: Date): { registry: Registry; excluded: ExcludedOrg[] } {
   const agencies: RegistryAgency[] = [];
   const excluded: ExcludedOrg[] = [];
@@ -57,8 +69,13 @@ export function buildSeedRegistry(discovered: DiscoveredDashboard[], seed: Map<s
     if (existing && existing.source === 'skydio_arcgis') { (existing.source_config as any).orgs.push({ org_uuid: d.org_uuid, dashboard_item_id: d.item_id, title: d.title.trim() }); continue; }
 
     const s = seed.get(d.org_uuid);
-    const name = s?.agency ?? cleanTitle(d.title);
+    // cleanTitle strips a trailing "(XX)" state parenthetical (among other suffixes). The CSV's
+    // `agency` column already carries that parenthetical for many rows, so it must go through the
+    // same strip as a discovered dashboard title does — otherwise the state gets appended a second
+    // time below (slugify(name + ' ' + state)), producing doubled-state slugs like `-wi-wi` and
+    // display names like "Appleton Police Department (WI)".
     const state = (s?.state_hint || stateFromTitle(d.title)) || null;
+    const name = stripRedundantStateParen(cleanTitle(s?.agency ?? d.title), state);
     const id = slugify(state ? `${name} ${state}` : name, taken);
     const ext = extents.get(d.org_uuid) ?? null;
     const tz = ext ? timezoneForPoint(ext.lon, ext.lat) : null;

@@ -1,1 +1,0 @@
-{"agency_id":"bellingham-pd-wa-wa","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["85d8a747-4760-40ac-9324-284e7544bc5a","2026-08-19T19:40:11.327Z","2026-08-19","2026-08-19T19:46:23.588Z",6.2,"Training",null,"Training",null,{}]]}
