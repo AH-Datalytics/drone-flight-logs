@@ -16,6 +16,7 @@ export type Manifest = {
   run_utc: string | null;
   agencies: Record<string, { status: Status; rows: number; previous_rows: number; error: string | null }>;
   added: string[]; retired: string[]; unresolved_dashboards: DiscoveredDashboard[];
+  discovery_error: string | null;
 };
 
 export type RunOpts = {
@@ -71,14 +72,24 @@ export async function runPull(opts: RunOpts): Promise<Manifest> {
   mkdirSync(flightsDir, { recursive: true });
   const regPath = join(opts.dataDir, 'registry.json');
   const reg: Registry = loadRegistry(regPath);
-  const manifest: Manifest = { run_utc: opts.now.toISOString(), agencies: {}, added: [], retired: [], unresolved_dashboards: [] };
+  const manifest: Manifest = { run_utc: opts.now.toISOString(), agencies: {}, added: [], retired: [], unresolved_dashboards: [], discovery_error: null };
 
   if (opts.doDiscover !== false) {
     log('discovering Skydio dashboards…');
-    const discovered = await opts.discover(opts.fetchJson);
-    const res = mergeDiscovered(reg, discovered, loadExcluded(join(opts.dataDir, 'excluded_orgs.json')));
-    manifest.added = res.added; manifest.retired = res.retired; manifest.unresolved_dashboards = res.unresolved;
-    log(`discovered ${discovered.length}; added ${res.added.length}; retired ${res.retired.length}; unresolved ${res.unresolved.length}`);
+    // Discovery and pulling must fail independently (§6 step 2): discovery is an
+    // enrichment step, the pull is the product. A thrown failure here — including
+    // the circuit breaker firing — must not prevent every already-known agency
+    // from being pulled from the existing registry. Record it loudly and keep going.
+    try {
+      const discovered = await opts.discover(opts.fetchJson);
+      const res = mergeDiscovered(reg, discovered, loadExcluded(join(opts.dataDir, 'excluded_orgs.json')));
+      manifest.added = res.added; manifest.retired = res.retired; manifest.unresolved_dashboards = res.unresolved;
+      log(`discovered ${discovered.length}; added ${res.added.length}; retired ${res.retired.length}; unresolved ${res.unresolved.length}`);
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
+      manifest.discovery_error = msg;
+      log(`DISCOVERY FAILED: ${msg} — continuing with the existing registry; every already-known agency will still be pulled.`);
+    }
   }
 
   const only = opts.only ? new Set(opts.only) : null;
@@ -112,6 +123,9 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     only: onlyArg ? onlyArg.split(',') : undefined,
   }).then(m => {
     const failed = Object.values(m.agencies).filter(a => a.status === 'unreachable').length;
-    console.log(`done: ${Object.keys(m.agencies).length} agencies, ${failed} unreachable`);
+    console.log(`done: ${Object.keys(m.agencies).length} agencies, ${failed} unreachable${m.discovery_error ? `, discovery failed: ${m.discovery_error}` : ''}`);
+    // A discovery failure must be visible in the exit code even when every agency
+    // pull otherwise succeeded — it must never be swallowed as a silent success.
+    if (m.discovery_error) process.exit(1);
   }).catch(e => { console.error(e); process.exit(1); });
 }

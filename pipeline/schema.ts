@@ -25,6 +25,9 @@ export function validateRecord(input: unknown): string[] {
   const r = input as Record<string, unknown>;
 
   for (const f of FORBIDDEN_FIELDS) if (f in r) p.push(`forbidden field present: ${f}`);
+  if (typeof r.extra === 'object' && r.extra !== null && !Array.isArray(r.extra)) {
+    for (const f of FORBIDDEN_FIELDS) if (f in (r.extra as Record<string, unknown>)) p.push(`forbidden field present in extra: ${f}`);
+  }
 
   if (typeof r.agency_id !== 'string' || r.agency_id.length === 0) p.push('agency_id must be a non-empty string');
   if (typeof r.source_flight_id !== 'string' || r.source_flight_id.length === 0) p.push('source_flight_id must be a non-empty string');

@@ -14,7 +14,13 @@ export function mapSfpdRow(row: SfpdRow, agencyId: string): FlightRecord {
   const date = str(row.date)?.slice(0, 10) ?? null;
   const durRaw = str(row.flight_duration_minutes);
   const dur = durRaw !== null && Number.isFinite(Number(durRaw)) ? Number(durRaw) : null;
-  const dq = ['no_takeoff_time'];
+  // SFPD publishes a date without a time for every record — that is a property
+  // of the whole source (documented in the agency's registry `notes`), not a
+  // defect in any individual record, so it must not be flagged per-record here
+  // (spec §4.1: a field null for every record of a source by design is a
+  // source-level caveat, not a per-record `data_quality` code). A genuinely
+  // missing duration is a real per-record gap and is still flagged.
+  const dq: string[] = [];
   if (dur === null) dq.push('missing_duration');
   return {
     agency_id: agencyId,
@@ -27,7 +33,7 @@ export function mapSfpdRow(row: SfpdRow, agencyId: string): FlightRecord {
     description: str(row.call_type_original_desc),
     case_number: str(row.case_cad_event_number),
     extra: { analysis_neighborhood: str(row.analysis_neighborhood), supervisor_district: str(row.supervisor_district), geocoded_location: str(row.geocoded_location) },
-    data_quality: dq.join(';'),
+    data_quality: dq.length ? dq.join(';') : null,
   };
 }
 

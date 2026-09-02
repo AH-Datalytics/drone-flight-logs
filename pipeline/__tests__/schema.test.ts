@@ -37,6 +37,10 @@ describe('validateRecord', () => {
     const r = { ...good, [field]: 'x@y.gov' } as unknown;
     expect(validateRecord(r)).toContain(`forbidden field present: ${field}`);
   });
+  it.each(FORBIDDEN_FIELDS)('rejects forbidden identity field nested inside extra: %s', (field) => {
+    const r = { ...good, extra: { ...good.extra, [field]: 'x@y.gov' } };
+    expect(validateRecord(r)).toContain(`forbidden field present in extra: ${field}`);
+  });
   it('rejects negative duration and non-object extra', () => {
     expect(validateRecord({ ...good, duration_min: -1 })).toContain('duration_min must be a non-negative number or null');
     expect(validateRecord({ ...good, extra: 'nope' })).toContain('extra must be an object');

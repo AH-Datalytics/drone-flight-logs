@@ -1,3 +1,17 @@
+// One-time migration, already run against the committed registry on 2026-09-01.
+//
+// It merged five agencies that Skydio published as two-or-more separate
+// dashboards (Oklahoma City, Brooklyn Park, Oakland County SO, Amarillo,
+// Columbus GA) into single registry entries with multiple `source_config`
+// entries, hand-set the timezone for four non-US/edge-case agencies the
+// automatic ArcGIS-extent seeding could not place, and appended a
+// multi-dashboard note to any agency left with more than one Skydio org.
+//
+// Kept for the record, not for re-use. Re-running it against the current
+// registry would be wrong: the merges and timezone fixes it performs are
+// idempotent-looking but not guaranteed safe against a registry that has
+// since been further edited by hand or by the pipeline, and it has no
+// dry-run or undo. There is no `npm run` entry for it on purpose.
 import { join } from 'node:path';
 import { loadRegistry, saveRegistry, mergeAgencies } from './registry.js';
 

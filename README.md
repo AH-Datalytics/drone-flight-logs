@@ -10,6 +10,7 @@ No flight-path geometry is stored, no pilot or vehicle identity fields are kept,
 - `npm run validate:data` — cross-checks the committed data in `data/` against the registry and the record schema. Exits 1 and lists every problem found; exits 0 with "data/ valid" otherwise.
 - `npm run pull` — runs the real pipeline against live services: re-discovers Skydio dashboards, pulls every non-`needs_review`, non-`retired` agency, writes `data/flights/`, and recomputes registry summaries and `data/manifest.json`. Flags: `-- --no-discover` skips re-discovery; `-- --only=agency-id-1,agency-id-2` pulls only the named agencies.
 - `npm run seed` — the one-time bootstrap that built the initial registry and data from a hand-exported CSV. Already run; not needed again in normal operation.
+- `pipeline/seed-fixups.ts` — a one-time migration that merged multi-dashboard agencies and hand-set a few timezones after the initial seed. Already run (2026-09-01); kept for the record, not exposed as an `npm run` script, and not meant to be re-run.
 
 ## Data layout
 

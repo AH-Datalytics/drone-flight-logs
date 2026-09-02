@@ -9,19 +9,19 @@ const here = dirname(fileURLToPath(import.meta.url));
 const rows = JSON.parse(readFileSync(join(here, 'fixtures', 'sfpd_page.json'), 'utf8'));
 
 describe('mapSfpdRow', () => {
-  it('maps a complete row with date-only time and extras', () => {
+  it('maps a complete row with date-only time and extras, and leaves data_quality null since nothing is wrong with the record', () => {
     expect(mapSfpdRow(rows[0], 'sfpd')).toEqual({
       agency_id: 'sfpd', source_flight_id: 'row-abcd-1234-efgh', takeoff_utc: null, flight_date_local: '2025-11-13', landing_utc: null,
       duration_min: 20, purpose: 'Criminal Investigation', description: 'PROWLER', case_number: '253173043',
       extra: { analysis_neighborhood: 'Financial District/South Beach', supervisor_district: '6', geocoded_location: 'FREMONT ST & HARRISON ST' },
-      data_quality: 'no_takeoff_time',
+      data_quality: null,
     });
   });
-  it('handles missing fields', () => {
+  it('flags missing_duration as a genuine per-record gap, without a takeoff-time flag', () => {
     const r = mapSfpdRow(rows[1], 'sfpd');
     expect(r.duration_min).toBeNull(); expect(r.case_number).toBeNull(); expect(r.description).toBeNull();
     expect(r.extra).toEqual({ analysis_neighborhood: null, supervisor_district: null, geocoded_location: null });
-    expect(r.data_quality).toBe('no_takeoff_time;missing_duration');
+    expect(r.data_quality).toBe('missing_duration');
   });
 });
 

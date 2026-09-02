@@ -109,6 +109,26 @@ describe('runPull', () => {
     expect(m.agencies['bad-pd'].error).toMatch(/source_flight_id/);
   });
 
+  it('pulls every known agency and saves the registry even when discovery throws (e.g. the circuit breaker firing)', async () => {
+    const dir = setup([agency('a-pd'), agency('b-pd')]);
+    const pulled: string[] = [];
+    const discover = async () => { throw new Error('discoverSkydioDashboards: circuit breaker tripped'); };
+    const m = await runPull({
+      dataDir: dir, now: NOW, fetchJson: async () => ({}),
+      adapters: { skydio_arcgis: fakeAdapter(async a => { pulled.push(a.agency_id); return [rec('1', a.agency_id, '2026-08-30')]; }) },
+      discover, log: () => {},
+    });
+    expect(pulled.sort()).toEqual(['a-pd', 'b-pd']);
+    expect(m.discovery_error).toMatch(/circuit breaker tripped/);
+    expect(m.agencies['a-pd'].status).toBe('ok');
+    expect(m.agencies['b-pd'].status).toBe('ok');
+    expect(JSON.parse(readFileSync(join(dir, 'flights', 'a-pd.json'), 'utf8')).rows.length).toBe(1);
+    expect(JSON.parse(readFileSync(join(dir, 'flights', 'b-pd.json'), 'utf8')).rows.length).toBe(1);
+    const reg = JSON.parse(readFileSync(join(dir, 'registry.json'), 'utf8'));
+    expect(reg.agencies.map((a: any) => a.agency_id).sort()).toEqual(['a-pd', 'b-pd']);
+    expect(reg.agencies.find((a: any) => a.agency_id === 'a-pd').flight_count).toBe(1);
+  });
+
   it('preserves a corrupt previous file rather than treating it as a brand-new agency', async () => {
     const dir = setup([agency('corrupt-pd')]);
     const corrupt = '{not valid json';
