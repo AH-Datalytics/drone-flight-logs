@@ -14,6 +14,7 @@
     --fg: #e7ebf0; --fg-2: #a4adba; --fg-3: #6b7280;
     --line: #232932; --line-2: #333b47; --line-strong: #e7ebf0;
     --accent: #4d9bff; --accent-fg: #06121f; --accent-dim: #16304f;
+    --ok: #4ade80; --warn: #fbbf24; --bad: #f87171;
   }
 }
 * { box-sizing: border-box; }
