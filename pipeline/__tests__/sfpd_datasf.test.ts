@@ -41,4 +41,11 @@ describe('sfpdAdapter.pull', () => {
     expect(urls[0]).toMatch(/%24select=%3Aid/);
     expect(urls[1]).toContain('%24offset=5000');
   });
+  it('rejects rather than silently returning zero rows when the response is not an array', async () => {
+    await expect(sfpdAdapter.pull(agency, async () => ({}))).rejects.toThrow(/non-array/);
+    await expect(sfpdAdapter.pull(agency, async () => null)).rejects.toThrow(/non-array/);
+  });
+  it('resolves to an empty array when the first page is genuinely empty', async () => {
+    await expect(sfpdAdapter.pull(agency, async () => [])).resolves.toEqual([]);
+  });
 });
