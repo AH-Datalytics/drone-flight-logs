@@ -8,7 +8,9 @@
 
 A public website where anyone can pick a police agency and see the drone flights it has published: how often it flies, for how long, when, and for what stated reason, with a searchable table of individual flights and a link to the agency's own official flight map.
 
-It aggregates every agency that publishes flight-level drone logs in machine-readable form, from whatever source the agency uses. The first source is Skydio's public transparency dashboards (139 agencies, ~120,000 flights). The second is the San Francisco Police Department's dataset on the city's open data portal (~7,500 flights). Further sources are added as adapters after a separate research pass.
+It aggregates every agency that publishes flight-level drone logs in machine-readable form, from whatever source the agency uses. The first source is Skydio's public transparency dashboards (about 136 agencies, ~102,000 distinct flights). The second is the San Francisco Police Department's dataset on the city's open data portal (~7,500 flights).
+
+**A note on counting.** Several Skydio feature services contain byte-identical duplicate rows — the same `flight_id` with the same takeoff, landing and purpose, published two or three times. Cincinnati's service holds 30,071 rows for 17,938 real flights. Every count on this site is therefore a count of **distinct `flight_id`s**, not of rows. An earlier hand-run census reported row counts and overstated the total by about 15%. Further sources are added as adapters after a separate research pass.
 
 The data is pulled weekly and stored in this repository, so the site owns its data, keeps a history of what each agency published, and does not depend on vendor services being up when a reader visits.
 
