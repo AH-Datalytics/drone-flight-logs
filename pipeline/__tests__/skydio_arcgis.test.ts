@@ -147,6 +147,49 @@ describe('discoverSkydioDashboards item resolution isolation', () => {
   });
 });
 
+describe('discoverSkydioDashboards failure-rate circuit breaker', () => {
+  const DIRECT_FIXTURE = fx('arcgis_dashboard_data_direct.json');
+  const DIRECT_ORG = 'c1a2b3c4-d5e6-47f8-a9b0-c1d2e3f4a5b6';
+  const TOTAL = 60; // threshold = max(5, round(60 * 0.10)) = 6
+
+  function makeBatch(total: number, failCount: number) {
+    const results = Array.from({ length: total }, (_, i) => ({
+      id: `item-${i}`, title: `Agency ${i}`, type: 'Dashboard', access: 'public', modified: 1756300000000,
+    }));
+    const failIds = new Set(results.slice(0, failCount).map(r => r.id));
+    const search = { total, start: 1, num: 100, nextStart: -1, results };
+    const fj = async (u: string) => {
+      if (u.includes('/sharing/rest/search')) return search;
+      const m = u.match(/\/items\/([^/]+)\/data/);
+      if (m) {
+        if (failIds.has(m[1])) throw new Error(`Unparsable JSON from ${u}: `);
+        return DIRECT_FIXTURE;
+      }
+      throw new Error('unexpected ' + u);
+    };
+    return fj;
+  }
+
+  // Case 1 (a single failing item still returns every dashboard, with the failing one's org_uuid
+  // null) is the pre-existing 'discoverSkydioDashboards item resolution isolation' test above —
+  // 1 unresolved of 2 items is well under this threshold (max(5, round(2*0.10)) = 5), so it must
+  // and does still pass unchanged.
+
+  it('failures above the threshold throw, and the error names both counts', async () => {
+    const fj = makeBatch(TOTAL, 7); // threshold is 6; 7 exceeds it
+    await expect(discoverSkydioDashboards(fj)).rejects.toThrow(/7 of 60.*threshold of 6/s);
+  });
+
+  it('failures at the threshold do not throw (the boundary that keeps the fix from over-correcting)', async () => {
+    const fj = makeBatch(TOTAL, 6); // exactly at threshold
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const d = await discoverSkydioDashboards(fj);
+    expect(d).toHaveLength(TOTAL);
+    expect(d.filter(x => x.org_uuid === null)).toHaveLength(6);
+    warn.mockRestore();
+  });
+});
+
 describe('discoverSkydioDashboards direct-URL shortcut', () => {
   it('resolves org_uuid from a feature-service URL embedded directly in the dashboard payload, without ever fetching a web map', async () => {
     const DIRECT_ITEM = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';

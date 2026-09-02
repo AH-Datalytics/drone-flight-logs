@@ -96,6 +96,18 @@ async function resolveOrgUuid(fetchJson: FetchJson, itemId: string): Promise<str
 }
 
 export async function discoverSkydioDashboards(fetchJson: FetchJson): Promise<DiscoveredDashboard[]> {
+  // A per-item resolution failure degrades to org_uuid: null so one stray bad item (a genuine,
+  // deterministic zero-byte upstream item) doesn't abort the whole run. But nothing distinguishes
+  // that from ArcGIS having a bad day and dozens of real agencies failing to resolve — in which
+  // case those agencies would be silently reclassified into excluded_orgs.json, the run would
+  // report success, and the census would quietly shrink with no visible sign beyond a log warning.
+  // So degrading is bounded: past this many failures, discovery aborts loudly (throws) instead of
+  // returning a list degraded by what is more likely a systemic outage than isolated bad items.
+  // This also runs on the unattended scheduled refresh, where a thrown error is the only thing
+  // standing between "nothing to see here" and a quietly shrinking public dataset.
+  const UNRESOLVED_RATE_THRESHOLD = 0.10; // throw once unresolved items exceed 10% of the total...
+  const UNRESOLVED_FLOOR = 5; // ...but never on fewer than this many failures, regardless of total size
+
   const q = encodeURIComponent(`orgid:${ARCGIS_ORG_ID} AND type:Dashboard`);
   const items: Array<{ id: string; title: string; modified: number }> = [];
   let start = 1;
@@ -117,6 +129,14 @@ export async function discoverSkydioDashboards(fetchJson: FetchJson): Promise<Di
       unresolved.push({ item_id: it.id, title: it.title.trim(), error: e instanceof Error ? e.message : String(e) });
     }
     out.push({ item_id: it.id, title: it.title.trim(), org_uuid: orgUuid, modified: new Date(it.modified).toISOString() });
+  }
+  const threshold = Math.max(UNRESOLVED_FLOOR, Math.round(items.length * UNRESOLVED_RATE_THRESHOLD));
+  if (unresolved.length > threshold) {
+    throw new Error(
+      `discoverSkydioDashboards: ${unresolved.length} of ${items.length} item(s) failed org_uuid resolution, ` +
+      `exceeding the failure threshold of ${threshold} (max(${UNRESOLVED_FLOOR}, ${Math.round(UNRESOLVED_RATE_THRESHOLD * 100)}% of ${items.length})). ` +
+      `Aborting discovery rather than returning a registry silently degraded by what looks like a systemic failure, not isolated bad items.`
+    );
   }
   if (unresolved.length) {
     console.warn(`discoverSkydioDashboards: ${unresolved.length} item(s) failed org_uuid resolution and were recorded as unresolved (org_uuid: null):`);
