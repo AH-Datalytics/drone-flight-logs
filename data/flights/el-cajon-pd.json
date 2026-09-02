@@ -1,0 +1,1 @@
+{"agency_id":"el-cajon-pd","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["e02f1e03-9511-45d9-a4f2-273a4c274729","2026-08-25T20:37:22.890Z","2026-08-25","2026-08-25T20:50:57.357Z",13.57,"Call for Service","Trespasser","2026-00028861",null,{}]]}

@@ -1,0 +1,1 @@
+{"agency_id":"fort-collins-police-services","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["b4e5d8c6-8684-4614-8590-543740604fe6","2026-04-23T05:59:08.967Z","2026-04-22","2026-04-23T06:07:14.486Z",8.09,"FC911",null,null,null,{}]]}

@@ -1,0 +1,1 @@
+{"agency_id":"aep-gen-shared-services-engineering","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["445ae8df-923f-47b3-beee-515efe681558","2025-05-07T19:37:38.641Z","2025-05-07","2025-05-07T19:48:39.569Z",11.02,null,null,null,null,{}]]}

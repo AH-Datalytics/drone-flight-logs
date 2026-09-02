@@ -1,0 +1,1 @@
+{"agency_id":"birmingham-pd-al-al","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["2103ae80-0b40-4dc9-87db-dd450d70b03c","2026-03-30T20:01:24.179Z","2026-03-30","2026-03-30T20:24:12.901Z",22.81,null,"Test Flight","Test Flight",null,{}]]}

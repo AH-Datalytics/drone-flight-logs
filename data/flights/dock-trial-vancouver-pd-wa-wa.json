@@ -1,0 +1,1 @@
+{"agency_id":"dock-trial-vancouver-pd-wa-wa","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["969e1859-ab07-4afe-98ac-139e5dec4558","2025-08-26T14:26:23.984Z","2025-08-26","2025-08-26T14:27:52.298Z",1.47,null,null,null,null,{}]]}

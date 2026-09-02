@@ -1,0 +1,326 @@
+[
+  {
+    "dashboard_item_id": "30487c6552a348f183b6b26c24b24182",
+    "org_uuid": "6415e7c0-e530-4b3a-bf50-c004d028a59b",
+    "title": "[INT] DFR and RFD Platform Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "bdb09b679a414a61b451b05c7c3d8317",
+    "org_uuid": "deb8a13b-9d57-489a-ab6e-2d1964c97c7f",
+    "title": "[Paraverse] - CPSO Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "2e6b82fa424c4e35b76ff4dabbd38a99",
+    "org_uuid": "dcc1dbc7-afa9-4bbb-8012-28db80e4f6b3",
+    "title": "[Paraverse] Bellevue Police Department (WA) Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "9ed6551758c647d19c437afeac948d3a",
+    "org_uuid": "1ea88714-1100-4edd-841b-94a55040abf9",
+    "title": "[Paraverse] Deus X Defense Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "cc5c9b7e5f9b476ba135e62aec4db28e",
+    "org_uuid": "73f3eb11-f75e-4b0e-95b1-f0c5933b656d",
+    "title": "[Paraverse] DroneTag Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "43e0e875ad41422180cd6e7c31c1b871",
+    "org_uuid": "ddd886dd-4984-4cdc-bea3-2fe0a6966a28",
+    "title": "[Paraverse] Ohio State University Simulated Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "e02f679797544bacb87afc5b5055341d",
+    "org_uuid": "8d8db53e-1d48-465d-bf0c-8604019cf465",
+    "title": "[Paraverse] Vanderbilt University Police Department Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "46c00955a6a34935879f71a87f5934e0",
+    "org_uuid": null,
+    "title": "[TEMPLATE] Skydio Transparency Dashboard",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "8a9609c2169a4590a77a396d5038058e",
+    "org_uuid": "84330e44-1aca-4136-b647-22feff97871e",
+    "title": "[VINCENT COPY FOR EXPERIMENT] Denver Police Department Drone as First Responder Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "c8bbf845d0c345f8aff7bfdaba7d06ee",
+    "org_uuid": "fa2e7018-0838-4503-a8ba-54d0beb824ae",
+    "title": "Axon Demo Sim Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "604d561aa4fe4edfb811c79caf20519f",
+    "org_uuid": "dcedcf4b-2b4f-48be-95be-19f69704569d",
+    "title": "DFR 2025 Ascend Multi-drone Test Org  Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "5ee3d66efe1a41ddbd6ca504bcfa85b2",
+    "org_uuid": "88be391e-fb2c-475b-b258-1614db67b938",
+    "title": "DFR Summit June 2025 - Paraverse Org  Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "132258f8425948969f2d477a9a2b8e95",
+    "org_uuid": "ed224c4d-a682-4438-898a-b9cc8aff0fb3",
+    "title": "Digital Systems (MX) NFR Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "c46f310a21a44968a55418aacedf1581",
+    "org_uuid": null,
+    "title": "FlightsDashboard",
+    "reason": "no feature service resolvable from dashboard"
+  },
+  {
+    "dashboard_item_id": "a0584fc1b18c445984638aa839bd1ddf",
+    "org_uuid": "7bc7107b-bb46-4c05-b85e-088053f4cf32",
+    "title": "INT - Brumbaugh Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "c381d526ddd142eab9e2b39b642a9e98",
+    "org_uuid": "3b6cf944-8904-4b4a-bf44-d916c26954ae",
+    "title": "INT - CR/DFR CR16 FFs (DO NOT EDIT) Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "82462e5ea2d64f0f855831126b92353b",
+    "org_uuid": "ce28ff07-8563-452d-89ed-50a6cacd82ac",
+    "title": "INT - DFR Demo Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "c28b6928da984eb7a1ba94caa2ab77c6",
+    "org_uuid": null,
+    "title": "INT - DFR E2E Testing Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "5ec94be0cbec48c5a692050c359424e0",
+    "org_uuid": "0eb29007-bc85-4781-8266-16f532fcdeff",
+    "title": "INT - DFR Product & Design Demo Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "b8351ea4eb70468999ac4a3a528ac4b7",
+    "org_uuid": "d891c9e9-6ca3-4c3d-ab87-01f8f8c36071",
+    "title": "INT - DFR Team Eng Demo SIM ONLY Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "d651f9576d2b471889790da2af6be63b",
+    "org_uuid": "e9f5c896-893b-4db0-9f47-a135f09a917d",
+    "title": "INT - Dock Warehouse [Dev Testing 2] Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "501b91d979214e81a9b4eb48f4b68066",
+    "org_uuid": "44ddee9b-44f1-4bc2-bf3f-3d31299eb18b",
+    "title": "INT - Dylan Brown DFR Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "796a69bbe4ce476d94abc6bdc08658de",
+    "org_uuid": "7062a8e0-d8a5-48e3-a7fb-048d0c2937ce",
+    "title": "INT - Ignacio Villanueva Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "46ae44ddca694be98eeb993a66f2de18",
+    "org_uuid": "7c235559-a984-46dc-8ae1-e368e4227234",
+    "title": "INT - Jason LaFond Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "52c761f38c5f4ee3a8e2946f1391e6a5",
+    "org_uuid": "6917b5d7-43e6-4dae-bd85-00b452090a4c",
+    "title": "INT - LK Test",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "51b2b090b0594a819d348a6774010b74",
+    "org_uuid": "56a4c44a-223f-4a8a-9040-b1432db07efc",
+    "title": "INT - Marvin A Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "7c085801448a4d539afa0c0ab2ff8dfa",
+    "org_uuid": "46a8a2fa-957e-4153-9f21-b55c54a8ef04",
+    "title": "INT - NACHO CARNICERO Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "c7deb6dc635145a39d95db68b298a543",
+    "org_uuid": "885beac0-db01-4b04-bb65-ba7d11166808",
+    "title": "INT - Nha Pham Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "e310c32396e941809244d11502b69767",
+    "org_uuid": "c1343b74-2964-4438-9826-8164b311c22c",
+    "title": "INT - Online - Skydio Training Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "0a876aaee560472e81329e2fd8d0c382",
+    "org_uuid": "71579f0a-ef51-4a28-ac26-c110382cbc0d",
+    "title": "INT - Reading Enterprises Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "a8f0a4c0aa3e427c9fa25420f310e169",
+    "org_uuid": "9248666a-c477-4ce9-a35e-3d560aef9eb0",
+    "title": "INT - Skydio Training  Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "362239247fe14aeab1214ae485c0a5f9",
+    "org_uuid": "41e41385-77b4-4b98-90bd-625e9f711385",
+    "title": "INT - Steve Lincoln Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "d82fce723ab145a481657d86f71c02ea",
+    "org_uuid": "cfa73b76-cb68-4eb5-83d8-f0de054a970c",
+    "title": "INT - Tommy Clare Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "b2f08032733a4350979f4489badb3fe5",
+    "org_uuid": "1e982abc-c0e1-4dce-bbe7-a440c13d1fd1",
+    "title": "INT - X10 Dock Training Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "de6c2ef997624796b6ffddf8e40373d9",
+    "org_uuid": "e30a6295-063c-4df9-a07f-4884be1b408f",
+    "title": "INT- Axon Week 2025 - Pathfinder Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "76e59aef84054014ae63e97486a2fd82",
+    "org_uuid": "cd6e0c15-be60-4583-bd6b-4f52c73655c4",
+    "title": "INT-Nick Gilmour Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "57d20cd16680439cacfe64cb956ac1a9",
+    "org_uuid": "3d1039f9-a3ca-4716-a5c1-536378168d16",
+    "title": "joejoeDrones Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "ccc763bf5ea942cc84a2e470fd114a2c",
+    "org_uuid": "ea72e222-fb62-47f4-be36-7482250bdde5",
+    "title": "JP-INT-Takuya G47 (Beta) SIM Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "50f7e683411c425da3f70938808dd0de",
+    "org_uuid": "c50e34ab-2097-4a13-90a2-d3cc2b8619e4",
+    "title": "lNT - SE X10 Docks Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "283c6ef65939491d97a27c16667a0101",
+    "org_uuid": null,
+    "title": "Metropolitan Police Department (G47 Alpha - Ext)",
+    "reason": "no feature service resolvable from dashboard"
+  },
+  {
+    "dashboard_item_id": "a660e6a9d463407bb338a60fccb21da0",
+    "org_uuid": null,
+    "title": "Metropolitan Police Department (INT - G47 Ascend DFR Hands on Demo 1)",
+    "reason": "no feature service resolvable from dashboard"
+  },
+  {
+    "dashboard_item_id": "590addc61836406cb6f7cf85a29ea677",
+    "org_uuid": null,
+    "title": "Metropolitan Police Department (INT - G47 Ascend DFR Hands on Demo 2)",
+    "reason": "no feature service resolvable from dashboard"
+  },
+  {
+    "dashboard_item_id": "92021ea2617f4db18b8dc4cdab153434",
+    "org_uuid": null,
+    "title": "New Dashboard: INT - Dock Warehouse [Dev Testing 2]",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "617210bc9d8c48359822bb54fa9aecb6",
+    "org_uuid": null,
+    "title": "New Dashboard: INT - Dock Warehouse [Dev Testing 2]",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "f496a306cfe34ea2b5a46244a8e49edc",
+    "org_uuid": null,
+    "title": "NYPD Drone Flights",
+    "reason": "no feature service resolvable from dashboard"
+  },
+  {
+    "dashboard_item_id": "468a02363b754738a54ed880771f88f6",
+    "org_uuid": "f6b4c9b6-3d61-4a50-8cfa-31743ed9e9d2",
+    "title": "Paraverse - Dutchess County Sheriff's Office (NY) Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "9b0f6f3e62354a15917192855845a415",
+    "org_uuid": "2ff50f24-2af7-437b-8799-1f705905ccf7",
+    "title": "Paraverse - Metro Nashville PD Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "6bc8315e782c4686a8d6ce0281504f18",
+    "org_uuid": "efcd15d9-8f47-412f-ad33-2026e665bb5b",
+    "title": "Paraverse - MS Team Demo Drone Flights",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "2d99be1328e549708d4ae1872a534f1f",
+    "org_uuid": null,
+    "title": "Skydio Transparency Dashboard",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "0b0f3db4c42e40159a575c287f0947e8",
+    "org_uuid": null,
+    "title": "Skydio Transparency Dashboard - Dev Test 2",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "d464a268acd3474ead727af3f303f966",
+    "org_uuid": null,
+    "title": "Skydio Transparency Dashboard 123",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "6239a4041ffe4de7ae4e076e9b7fdbfc",
+    "org_uuid": "627dec4f-3c91-4a82-88c2-81345e8dcd35",
+    "title": "Skydio Transparency Dashboard ABC",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "d0d5fbc3583a40d0b5e04580ddec60cc",
+    "org_uuid": null,
+    "title": "Synthetic Transparency Dashboard",
+    "reason": "skydio internal or demo (title pattern)"
+  },
+  {
+    "dashboard_item_id": "c920251a4c3846ab878c35d4453d0d9f",
+    "org_uuid": null,
+    "title": "Vincent Prototype dashboard",
+    "reason": "skydio internal or demo (title pattern)"
+  }
+]

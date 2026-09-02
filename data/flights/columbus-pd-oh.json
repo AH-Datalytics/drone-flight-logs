@@ -1,0 +1,1 @@
+{"agency_id":"columbus-pd-oh","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["c12bccf8-d8b2-4f47-a701-66070b832a80","2025-11-19T16:54:56.830Z","2025-11-19","2025-11-19T17:01:09.024Z",6.2,null,"Training Test Flight","Training Flight",null,{}]]}

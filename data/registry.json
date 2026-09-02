@@ -1,0 +1,4204 @@
+{
+  "agencies": [
+    {
+      "agency_id": "adams-county-so-wa-wa",
+      "display_name": "Adams County Sheriffs Office (WA)",
+      "state": "WA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "5ecb6121-1578-43c6-a179-4b57b6fbd15a",
+            "dashboard_item_id": "a9c7cf7faa2e4aae81cfaeab65a401c5",
+            "title": "Adams County Sheriffs Office (WA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/a9c7cf7faa2e4aae81cfaeab65a401c5",
+      "status": "ok",
+      "first_flight": "2026-04-16",
+      "last_flight": "2026-08-27",
+      "flight_count": 24,
+      "total_hours": 5.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "aep-ed-tfs-line-east",
+      "display_name": "AEP ED TFS Line East",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "90d070d2-6c47-4997-82c0-f3bf9ec6a7b7",
+            "dashboard_item_id": "78367bc1ae0944a9b47fe179a13f5c5f",
+            "title": "AEP ED TFS Line East Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/78367bc1ae0944a9b47fe179a13f5c5f",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "aep-gen-shared-services-engineering",
+      "display_name": "AEP Gen Shared Services Engineering",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "7f26fd6b-5dde-4b2a-b92b-4f213d9fd393",
+            "dashboard_item_id": "a1e7692c854140ffaaf2fbf165e9d3f4",
+            "title": "AEP Gen Shared Services Engineering Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/a1e7692c854140ffaaf2fbf165e9d3f4",
+      "status": "stale",
+      "first_flight": "2025-05-07",
+      "last_flight": "2025-05-07",
+      "flight_count": 1,
+      "total_hours": 0.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "alaska-dot-pf",
+      "display_name": "Alaska DOT&PF",
+      "state": null,
+      "org_type": "government_other",
+      "timezone": "America/Anchorage",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "d59be3e5-7597-446f-9ba8-6928a549fa22",
+            "dashboard_item_id": "fb9447dc4b354c99850366254b6c7c0f",
+            "title": "Alaska DOT&PF Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/fb9447dc4b354c99850366254b6c7c0f",
+      "status": "stale",
+      "first_flight": "2026-06-22",
+      "last_flight": "2026-06-22",
+      "flight_count": 2,
+      "total_hours": 0.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "alsip-pd-il",
+      "display_name": "Alsip Police Department",
+      "state": "IL",
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "ac7090e9-d2e4-4671-a729-888998ea5f09",
+            "dashboard_item_id": "6b1a7b24351f4d399fa2513569c85aa0",
+            "title": "Alsip Police Department (IL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/6b1a7b24351f4d399fa2513569c85aa0",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "amarillo-pd",
+      "display_name": "Amarillo Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Phoenix",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c04f8ccb-bea2-487e-834e-9ccdfcd41f08",
+            "dashboard_item_id": "f34686592a37474e830e95065fcca6d8",
+            "title": "Amarillo Police Department"
+          },
+          {
+            "org_uuid": "915dc684-90d7-4ca6-b624-812231263236",
+            "dashboard_item_id": "0e4774c9a25c443591fed76b5a870c65",
+            "title": "Amarillo Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f34686592a37474e830e95065fcca6d8",
+      "status": "stale",
+      "first_flight": "2025-03-03",
+      "last_flight": "2025-03-08",
+      "flight_count": 10,
+      "total_hours": 2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "Combines 2 Skydio dashboards published by this agency."
+    },
+    {
+      "agency_id": "appleton-pd-wi-wi",
+      "display_name": "Appleton Police Department (WI)",
+      "state": "WI",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b145d623-0763-4f8b-a303-c0e2bfdf4615",
+            "dashboard_item_id": "dc72264a9fcf40eca84e78661ed37a16",
+            "title": "Appleton Police Department (WI) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/dc72264a9fcf40eca84e78661ed37a16",
+      "status": "ok",
+      "first_flight": "2026-08-01",
+      "last_flight": "2026-08-28",
+      "flight_count": 23,
+      "total_hours": 4.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "arkansas-dot",
+      "display_name": "Arkansas DOT",
+      "state": null,
+      "org_type": "government_other",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b300d1e3-5183-48e5-939c-db2e1346d1bc",
+            "dashboard_item_id": "88c4f1e8bda644668f3c363a821225a0",
+            "title": "Arkansas DOT Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/88c4f1e8bda644668f3c363a821225a0",
+      "status": "stale",
+      "first_flight": "2025-02-24",
+      "last_flight": "2025-03-10",
+      "flight_count": 11,
+      "total_hours": 1.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "arvada-pd-co-co",
+      "display_name": "Arvada Police Department (CO)",
+      "state": "CO",
+      "org_type": "law_enforcement",
+      "timezone": "America/Denver",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "d5a0507e-f4f1-41cc-a666-40dabdaa2286",
+            "dashboard_item_id": "b7c9dafc9f1047f4af6f3df05a7fae2e",
+            "title": "Arvada Police Department (CO) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/b7c9dafc9f1047f4af6f3df05a7fae2e",
+      "status": "ok",
+      "first_flight": "2026-05-22",
+      "last_flight": "2026-09-01",
+      "flight_count": 1176,
+      "total_hours": 204.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "austintown-fire-department-oh",
+      "display_name": "Austintown Fire Department",
+      "state": "OH",
+      "org_type": "fire_ems",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "58ae4868-188d-4a45-8a3a-47ebfa501a3c",
+            "dashboard_item_id": "cec559ab9a04433db43889b30156cedc",
+            "title": "Austintown Fire Department (OH) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/cec559ab9a04433db43889b30156cedc",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "australian-federal-police-drone-flights-for-missing-person-sharon-granites",
+      "display_name": "Australian Federal Police Drone Flights for Missing Person (Sharon Granites)",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "Australia/Sydney",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "f80d9b99-2119-4ed2-9496-7530b8e962cd",
+            "dashboard_item_id": "fc5e3073f45f480e8a96e7a896861700",
+            "title": "Australian Federal Police Drone Flights for Missing Person (Sharon Granites)"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/fc5e3073f45f480e8a96e7a896861700",
+      "status": "stale",
+      "first_flight": "2026-04-26",
+      "last_flight": "2026-04-30",
+      "flight_count": 28,
+      "total_hours": 8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "axon",
+      "display_name": "Axon",
+      "state": null,
+      "org_type": "vendor_partner",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "1f18467c-59a9-45ae-a839-9de5448b01ce",
+            "dashboard_item_id": "c7819204066a4f71af6a5463be0f8b30",
+            "title": "Axon Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c7819204066a4f71af6a5463be0f8b30",
+      "status": "stale",
+      "first_flight": "2024-10-23",
+      "last_flight": "2026-05-07",
+      "flight_count": 36,
+      "total_hours": 7.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "axon-air-psm",
+      "display_name": "Axon Air PSM",
+      "state": null,
+      "org_type": "vendor_partner",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "28d55979-8974-44a6-825e-0b44fc0505d2",
+            "dashboard_item_id": "490bbd4e23aa4d2683c48a53b2a38e6d",
+            "title": "Axon Air PSM Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/490bbd4e23aa4d2683c48a53b2a38e6d",
+      "status": "stale",
+      "first_flight": "2025-03-12",
+      "last_flight": "2026-07-01",
+      "flight_count": 40,
+      "total_hours": 6.7,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "azimuth-inc",
+      "display_name": "Azimuth, Inc.",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "09ffa344-ed6c-4dc7-846a-8e90da064e4e",
+            "dashboard_item_id": "cf8880ca0f654cfeac6f2d402be880d8",
+            "title": "Azimuth, Inc. Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/cf8880ca0f654cfeac6f2d402be880d8",
+      "status": "stale",
+      "first_flight": "2025-09-22",
+      "last_flight": "2025-09-22",
+      "flight_count": 1,
+      "total_hours": 0.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "bellingham-pd-wa-wa",
+      "display_name": "Bellingham Police Department (WA)",
+      "state": "WA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c3889327-20f3-4a8d-b183-3cb7e4987364",
+            "dashboard_item_id": "ac4bcc12e9e4420897665747e8c2c5d0",
+            "title": "Bellingham Police Department (WA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/ac4bcc12e9e4420897665747e8c2c5d0",
+      "status": "ok",
+      "first_flight": "2026-08-19",
+      "last_flight": "2026-08-19",
+      "flight_count": 1,
+      "total_hours": 0.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "belmont-pd",
+      "display_name": "Belmont Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b6d8e0be-c940-4af5-8e04-abb341aab4b7",
+            "dashboard_item_id": "32ec77cf9c7346cbba65b8c3830142a2",
+            "title": "Belmont Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/32ec77cf9c7346cbba65b8c3830142a2",
+      "status": "ok",
+      "first_flight": "2025-03-27",
+      "last_flight": "2026-08-21",
+      "flight_count": 438,
+      "total_hours": 99.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "bernalillo-county-so",
+      "display_name": "Bernalillo County Sheriff's Office",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Denver",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "4870b79d-bcc1-4b01-8de0-a180cc59faa8",
+            "dashboard_item_id": "831574a885f145c9ad80a2dbbed4e0be",
+            "title": "Bernalillo County Sheriff's Office Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/831574a885f145c9ad80a2dbbed4e0be",
+      "status": "stale",
+      "first_flight": "2026-03-12",
+      "last_flight": "2026-03-24",
+      "flight_count": 7,
+      "total_hours": 1.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "birmingham-pd-al-al",
+      "display_name": "Birmingham Police Department (AL)",
+      "state": "AL",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "d6ee4782-f028-49c5-bab7-628cf42b4a2b",
+            "dashboard_item_id": "f3736746a3c9430d98cc8ca03ab5c53a",
+            "title": "Birmingham Police Department (AL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f3736746a3c9430d98cc8ca03ab5c53a",
+      "status": "stale",
+      "first_flight": "2026-03-30",
+      "last_flight": "2026-03-30",
+      "flight_count": 1,
+      "total_hours": 0.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "bloomington-pd-il-il",
+      "display_name": "Bloomington Police Department (IL)",
+      "state": "IL",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "d6bcac94-87db-4629-882b-d9d536a02019",
+            "dashboard_item_id": "cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
+            "title": "Bloomington Police Department (IL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
+      "status": "ok",
+      "first_flight": "2026-04-04",
+      "last_flight": "2026-08-14",
+      "flight_count": 404,
+      "total_hours": 70.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "boston-pd",
+      "display_name": "Boston PD",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a6719287-93b5-4cb6-970d-9e3ba5e9ff6d",
+            "dashboard_item_id": "1f5e7b6f6daa426daab73a4225a5062e",
+            "title": "Boston PD Drone Flights"
+          }
+        ],
+        "vanity_slug": "bostonpolice"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/bostonpolice",
+      "status": "stale",
+      "first_flight": "2026-01-20",
+      "last_flight": "2026-02-08",
+      "flight_count": 3,
+      "total_hours": 0.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "bradley-county-so-cleveland-tn",
+      "display_name": "Bradley County Sheriff's Office Cleveland",
+      "state": "TN",
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "87deb974-b337-4e62-8d81-3ae8b4c54dab",
+            "dashboard_item_id": "4bc15e35dc5c400c8a8071ce99299f00",
+            "title": "Bradley County Sheriff's Office Cleveland (TN) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/4bc15e35dc5c400c8a8071ce99299f00",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "brookhaven-pd",
+      "display_name": "Brookhaven Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "dbf49e0e-920b-4aad-b7fd-83416cb46f4d",
+            "dashboard_item_id": "71277e089a2e4bdab12566a426a46cac",
+            "title": "Brookhaven Police Department - Skydio"
+          }
+        ],
+        "vanity_slug": "brookhavenpd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
+      "status": "ok",
+      "first_flight": "2025-05-22",
+      "last_flight": "2026-09-01",
+      "flight_count": 3268,
+      "total_hours": 562.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "brooklyn-park-pd",
+      "display_name": "Brooklyn Park Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "5476bd24-9000-4625-8756-139e0b63a3ee",
+            "dashboard_item_id": "b230d35acc124c4080b591a99fc3b28d",
+            "title": "Brooklyn Park Police Department"
+          },
+          {
+            "org_uuid": "9690df77-a564-4c40-9f42-d334a06b4705",
+            "dashboard_item_id": "c8452a68e93545368192cea1e14ed4a7",
+            "title": "Brooklyn Park PD (MN) - Dock Trial Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/b230d35acc124c4080b591a99fc3b28d",
+      "status": "ok",
+      "first_flight": "2025-11-14",
+      "last_flight": "2026-08-31",
+      "flight_count": 2006,
+      "total_hours": 394.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "Combines 2 Skydio dashboards published by this agency."
+    },
+    {
+      "agency_id": "calcasieu-parish-so",
+      "display_name": "Calcasieu Parish Sheriff's Office",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "00a1a479-73f8-4394-b5ae-8e30d6ea2b47",
+            "dashboard_item_id": "d121145f41bc46fb8ae2dc6dcbe0b293",
+            "title": "Calcasieu Parish Sheriff's Office Drone Flights"
+          }
+        ],
+        "vanity_slug": "cpso"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/cpso",
+      "status": "ok",
+      "first_flight": "2025-11-14",
+      "last_flight": "2026-07-22",
+      "flight_count": 183,
+      "total_hours": 41.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "caldwell-pd-id-id",
+      "display_name": "Caldwell Police Department (ID)",
+      "state": "ID",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "6cf2f233-f38e-4cf8-86da-8d9b4c5fc854",
+            "dashboard_item_id": "62c4003416fb4c52ad4e03766e9ad32a",
+            "title": "Caldwell Police Department (ID) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/62c4003416fb4c52ad4e03766e9ad32a",
+      "status": "ok",
+      "first_flight": "2026-01-07",
+      "last_flight": "2026-09-01",
+      "flight_count": 1248,
+      "total_hours": 213.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "cherry-hill-pd",
+      "display_name": "Cherry Hill Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "462ccdb5-0825-4c44-a722-63b1dfeff4be",
+            "dashboard_item_id": "94993e7062594865ab808e13b4373669",
+            "title": "Cherry Hill Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/94993e7062594865ab808e13b4373669",
+      "status": "ok",
+      "first_flight": "2023-03-24",
+      "last_flight": "2026-08-25",
+      "flight_count": 286,
+      "total_hours": 47,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "cherry-valley-pd",
+      "display_name": "Cherry Valley Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "15dbf4a2-d9d8-4cf6-9599-33cc3faaadb9",
+            "dashboard_item_id": "1c97e9500fb84acdb5ca2b9fb74e8c50",
+            "title": "Cherry Valley Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": "cvpd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/cvpd",
+      "status": "stale",
+      "first_flight": "2024-11-09",
+      "last_flight": "2025-12-25",
+      "flight_count": 4,
+      "total_hours": 0.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "chesterfield-county-pd-va-va",
+      "display_name": "Chesterfield County Police Department (VA)",
+      "state": "VA",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "60d35172-24f0-43a6-b2a5-ef4fbf773f36",
+            "dashboard_item_id": "50b238d27ed94d298ebceaff9ee48bf4",
+            "title": "Chesterfield County Police Department (VA) Drone Flights"
+          }
+        ],
+        "vanity_slug": "chesterfieldpublicsafety"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/chesterfieldpublicsafety",
+      "status": "ok",
+      "first_flight": "2026-07-15",
+      "last_flight": "2026-09-01",
+      "flight_count": 238,
+      "total_hours": 36.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "chiefland-pd-fl-fl",
+      "display_name": "Chiefland Police Department (FL)",
+      "state": "FL",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "87202c0e-e269-4fea-9d71-d7143289a976",
+            "dashboard_item_id": "cd48d90615b748d9ad10b51f6e30b0bd",
+            "title": "Chiefland Police Department (FL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/cd48d90615b748d9ad10b51f6e30b0bd",
+      "status": "ok",
+      "first_flight": "2026-03-06",
+      "last_flight": "2026-07-08",
+      "flight_count": 29,
+      "total_hours": 3.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "cincinnati-pd",
+      "display_name": "Cincinnati Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b322b378-b726-4bd3-93fe-bab0b311191b",
+            "dashboard_item_id": "49102a57e82a4755b015ea84dcd39b01",
+            "title": "Cincinnati Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/49102a57e82a4755b015ea84dcd39b01",
+      "status": "ok",
+      "first_flight": "2025-03-19",
+      "last_flight": "2026-08-31",
+      "flight_count": 17938,
+      "total_hours": 3667.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "cleveland-division-of-police",
+      "display_name": "Cleveland Division of Police",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "60c5407a-5d0b-4fa9-8a7e-5f24f614d95d",
+            "dashboard_item_id": "7e8326e7b872424f9f6c7182f397178b",
+            "title": "Cleveland Division of Police"
+          }
+        ],
+        "vanity_slug": "clevelandpolice"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/clevelandpolice",
+      "status": "ok",
+      "first_flight": "2024-11-24",
+      "last_flight": "2026-08-30",
+      "flight_count": 248,
+      "total_hours": 78.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "cobb-county-pd",
+      "display_name": "Cobb County Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "5b551c3f-90ca-4771-82b9-f33a4de6d47a",
+            "dashboard_item_id": "b8e5c097e1bb44c7bd3912fb79037cba",
+            "title": "Cobb County Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/b8e5c097e1bb44c7bd3912fb79037cba",
+      "status": "ok",
+      "first_flight": "2025-11-06",
+      "last_flight": "2026-09-01",
+      "flight_count": 647,
+      "total_hours": 101,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "columbus-ga-skydio-dfr-day",
+      "display_name": "Columbus GA - Skydio DFR Day",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "0737efed-647d-41f8-8c65-70561f005ac2",
+            "dashboard_item_id": "e4ff0fb1f5d841b78cbc70a428ead7c2",
+            "title": "Columbus GA - Skydio DFR Day Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e4ff0fb1f5d841b78cbc70a428ead7c2",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "columbus-pd-ga",
+      "display_name": "Columbus Police Department",
+      "state": "GA",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "343db44d-4a37-4797-87e0-2f847d089800",
+            "dashboard_item_id": "c7aa4ac739d24a71ba7975dbefef6e2f",
+            "title": "Columbus Police Department (GA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c7aa4ac739d24a71ba7975dbefef6e2f",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "columbus-pd-oh",
+      "display_name": "Columbus Police Department - OH",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "7a86050d-f897-4ef7-8620-f3e6e8009b88",
+            "dashboard_item_id": "be1daa5b5d4f486eaf15770cb0dd0bb1",
+            "title": "Columbus Police Department - OH Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/be1daa5b5d4f486eaf15770cb0dd0bb1",
+      "status": "stale",
+      "first_flight": "2025-11-19",
+      "last_flight": "2025-11-19",
+      "flight_count": 1,
+      "total_hours": 0.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "concord-pd-ca-ca",
+      "display_name": "Concord Police Department (CA)",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "efa5b827-75f5-4882-bde2-8e1464d7e40b",
+            "dashboard_item_id": "0394c1027dee4b79b609a41650f623cf",
+            "title": "Concord Police Department (CA) Drone Flights"
+          }
+        ],
+        "vanity_slug": "concordpd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/concordpd",
+      "status": "ok",
+      "first_flight": "2025-10-01",
+      "last_flight": "2026-09-01",
+      "flight_count": 3081,
+      "total_hours": 555,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "conroe-pd",
+      "display_name": "Conroe Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "79b5be63-b4db-4db2-bad3-2b4e15ba9a71",
+            "dashboard_item_id": "ba178654b95049549774ec4efd3573c6",
+            "title": "Conroe Police Department"
+          }
+        ],
+        "vanity_slug": "conroepd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/conroepd",
+      "status": "ok",
+      "first_flight": "2026-05-11",
+      "last_flight": "2026-09-01",
+      "flight_count": 363,
+      "total_hours": 74.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "crubier",
+      "display_name": "Crubier",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "cdd6e6eb-9bd8-49ce-8f62-08aaf3e6f73c",
+            "dashboard_item_id": "ea32f26fbba4458c9dcd12bdaceda7a9",
+            "title": "Crubier Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/ea32f26fbba4458c9dcd12bdaceda7a9",
+      "status": "stale",
+      "first_flight": "2024-04-11",
+      "last_flight": "2026-01-18",
+      "flight_count": 51,
+      "total_hours": 14.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "cspd-real-time-crime-center-dfr-flights",
+      "display_name": "CSPD Real-Time Crime Center DFR Flights",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Denver",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "d1b00b98-d57d-46f0-8e13-fa169d4e1a39",
+            "dashboard_item_id": "77fe7c984946489aaf32ca7564667c0b",
+            "title": "CSPD Real-Time Crime Center DFR Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/77fe7c984946489aaf32ca7564667c0b",
+      "status": "ok",
+      "first_flight": "2025-09-21",
+      "last_flight": "2026-09-01",
+      "flight_count": 10289,
+      "total_hours": 1936.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "csu-long-beach-pd",
+      "display_name": "CSU Long Beach Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "201dfb07-3302-4a0e-8dee-18f16a1e2167",
+            "dashboard_item_id": "4fc07c3ce464428d98bdc9cc449c8454",
+            "title": "CSU Long Beach Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/4fc07c3ce464428d98bdc9cc449c8454",
+      "status": "stale",
+      "first_flight": "2026-05-17",
+      "last_flight": "2026-05-21",
+      "flight_count": 37,
+      "total_hours": 10.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "dallas-pd",
+      "display_name": "Dallas Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b0509266-d8dd-4037-ab48-f1aadedd8914",
+            "dashboard_item_id": "50131d633d314eef8408f834f22c19b3",
+            "title": "Dallas Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/50131d633d314eef8408f834f22c19b3",
+      "status": "ok",
+      "first_flight": "2026-05-20",
+      "last_flight": "2026-08-12",
+      "flight_count": 26,
+      "total_hours": 2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "dare-county-so-nc",
+      "display_name": "Dare County Sheriffs Office",
+      "state": "NC",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "612503b7-b9f6-4d4f-8793-2b8beda7c691",
+            "dashboard_item_id": "919acc68c84a403cb76bac08a8198e02",
+            "title": "Dare County Sheriffs Office (NC) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/919acc68c84a403cb76bac08a8198e02",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "dearborn-pd-mi-mi",
+      "display_name": "Dearborn Police Department (MI)",
+      "state": "MI",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "19baabe4-7447-4111-aec4-8ea71de71cb7",
+            "dashboard_item_id": "13937d18670e44d5a20a5a3821f01775",
+            "title": "Dearborn Police Department (MI) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/13937d18670e44d5a20a5a3821f01775",
+      "status": "ok",
+      "first_flight": "2026-01-28",
+      "last_flight": "2026-08-31",
+      "flight_count": 4159,
+      "total_hours": 657.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "denver-pd-drone-as-first-responder-flights",
+      "display_name": "Denver Police Department Drone as First Responder Flights",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Denver",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "84330e44-1aca-4136-b647-22feff97871e",
+            "dashboard_item_id": "1b5401943dfe484c9a1b0ace355d33cc",
+            "title": "Denver Police Department Drone as First Responder Flights"
+          }
+        ],
+        "vanity_slug": "denverpd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/denverpd",
+      "status": "ok",
+      "first_flight": "2025-10-21",
+      "last_flight": "2026-09-01",
+      "flight_count": 1841,
+      "total_hours": 290.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "detroit-fire-department",
+      "display_name": "Detroit Fire Department",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "020f7282-0454-4e1b-b74d-b9579a1b0aca",
+            "dashboard_item_id": "00013c28bfd349089a62f87b1cab5fd2",
+            "title": "Detroit Fire Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/00013c28bfd349089a62f87b1cab5fd2",
+      "status": "stale",
+      "first_flight": "2024-02-04",
+      "last_flight": "2026-03-09",
+      "flight_count": 435,
+      "total_hours": 101.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "dock-trial-vancouver-pd-wa-wa",
+      "display_name": "Dock Trial - Vancouver PD (WA)",
+      "state": "WA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "488946cd-2a8e-4399-a684-1e692886faf1",
+            "dashboard_item_id": "e0f70ef9724b4d6c9f26261c51757310",
+            "title": "Dock Trial - Vancouver PD (WA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e0f70ef9724b4d6c9f26261c51757310",
+      "status": "stale",
+      "first_flight": "2025-08-26",
+      "last_flight": "2025-08-26",
+      "flight_count": 1,
+      "total_hours": 0,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "duluth-pd-mn-mn",
+      "display_name": "Duluth Police Department (MN)",
+      "state": "MN",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "54924db8-8cd4-413b-8ab5-ee1412b6fba3",
+            "dashboard_item_id": "c916825c24e04d3bbd226e8e5aeb56c5",
+            "title": "Duluth Police Department (MN) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c916825c24e04d3bbd226e8e5aeb56c5",
+      "status": "ok",
+      "first_flight": "2025-12-16",
+      "last_flight": "2026-09-01",
+      "flight_count": 813,
+      "total_hours": 126.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "duquesne-light-company",
+      "display_name": "Duquesne Light Company",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "3fe861a4-69a5-41bf-81d1-011a5f37cc9d",
+            "dashboard_item_id": "9ae8824a0caf4b3dacbc3596122eb282",
+            "title": "Duquesne Light Company Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/9ae8824a0caf4b3dacbc3596122eb282",
+      "status": "stale",
+      "first_flight": "2025-08-06",
+      "last_flight": "2025-08-06",
+      "flight_count": 1,
+      "total_hours": 0.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "durango-pd-co-co",
+      "display_name": "Durango Police Department (CO)",
+      "state": "CO",
+      "org_type": "law_enforcement",
+      "timezone": "America/Denver",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "ab5c34f9-160d-49f1-83a6-73ab507291a9",
+            "dashboard_item_id": "e9e298e4ce57474c96908c82dfe2c8d8",
+            "title": "Durango Police Department (CO) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e9e298e4ce57474c96908c82dfe2c8d8",
+      "status": "ok",
+      "first_flight": "2026-05-28",
+      "last_flight": "2026-09-01",
+      "flight_count": 848,
+      "total_hours": 159.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "dutchess-county-so-uas-unit",
+      "display_name": "Dutchess County Sheriff's Office UAS Unit",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "8d9f3dba-2ef3-46aa-a50e-44913a3181f6",
+            "dashboard_item_id": "332a8432ca584035a71c69a08afb34d9",
+            "title": "Dutchess County Sheriff's Office UAS Unit Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/332a8432ca584035a71c69a08afb34d9",
+      "status": "ok",
+      "first_flight": "2026-08-10",
+      "last_flight": "2026-08-21",
+      "flight_count": 2,
+      "total_hours": 0.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "el-cajon-pd",
+      "display_name": "El Cajon PD",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "e29c2326-3bf0-4cc7-b547-8d6e267e359d",
+            "dashboard_item_id": "e82d5b26aff9427f88026be731055113",
+            "title": "El Cajon PD Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e82d5b26aff9427f88026be731055113",
+      "status": "ok",
+      "first_flight": "2026-08-25",
+      "last_flight": "2026-08-25",
+      "flight_count": 1,
+      "total_hours": 0.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "el-centro-pd-ca",
+      "display_name": "El Centro Police Department - CA",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "db43ceca-fab8-4e0e-803e-3e92f01bcec6",
+            "dashboard_item_id": "987c3bcd7aa644bb876e9c401fd9b2a6",
+            "title": "El Centro Police Department - CA Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/987c3bcd7aa644bb876e9c401fd9b2a6",
+      "status": "stale",
+      "first_flight": "2025-03-21",
+      "last_flight": "2025-04-07",
+      "flight_count": 7,
+      "total_hours": 1.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "el-dorado-pd-kansas",
+      "display_name": "El Dorado Police Department- Kansas",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a3a69790-cdcf-49d2-b928-db8d95a88269",
+            "dashboard_item_id": "f3b2fd312cc24ba99fdafc4387f4bb0f",
+            "title": "El Dorado Police Department- Kansas Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f3b2fd312cc24ba99fdafc4387f4bb0f",
+      "status": "ok",
+      "first_flight": "2026-05-22",
+      "last_flight": "2026-08-22",
+      "flight_count": 19,
+      "total_hours": 5.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "elgin-pd-dock-trial",
+      "display_name": "Elgin Police Department DOCK TRIAL",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a2deee69-aec6-43c4-aec0-3216f145f696",
+            "dashboard_item_id": "1aac882182574327b7e7179fce6169a4",
+            "title": "Elgin Police Department DOCK TRIAL Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/1aac882182574327b7e7179fce6169a4",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "escambia-county-so-fl-fl",
+      "display_name": "Escambia County Sheriffs Office (FL)",
+      "state": "FL",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "6dae47d9-4646-4f63-9ea2-f2b53cab1298",
+            "dashboard_item_id": "d2a0e9c04fca4bcda91af3d52ef18e3c",
+            "title": "Escambia County Sheriffs Office (FL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/d2a0e9c04fca4bcda91af3d52ef18e3c",
+      "status": "stale",
+      "first_flight": "2025-04-12",
+      "last_flight": "2026-01-29",
+      "flight_count": 4,
+      "total_hours": 1.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "eustis-pd-fl",
+      "display_name": "Eustis Police Department",
+      "state": "FL",
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "712ed828-c0af-4786-8f84-7695bd205ce2",
+            "dashboard_item_id": "b6be64b9a1624c30a9aebbcd9b26cdc8",
+            "title": "Eustis Police Department (FL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/b6be64b9a1624c30a9aebbcd9b26cdc8",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "everett-pd-wa-wa",
+      "display_name": "Everett Police Department (WA)",
+      "state": "WA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "069b1064-c1fe-48e5-ab4d-12d23fa9d693",
+            "dashboard_item_id": "698d0105df8e45f7906b57ea1e596465",
+            "title": "Everett Police Department (WA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/698d0105df8e45f7906b57ea1e596465",
+      "status": "ok",
+      "first_flight": "2026-08-03",
+      "last_flight": "2026-08-26",
+      "flight_count": 10,
+      "total_hours": 1.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "fairfax-county-pd",
+      "display_name": "Fairfax County Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b9a43b2e-83d7-447c-a3cd-432b6314a2d3",
+            "dashboard_item_id": "c47a7c0ff6d5465884f182588bd2a15f",
+            "title": "Fairfax County Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c47a7c0ff6d5465884f182588bd2a15f",
+      "status": "ok",
+      "first_flight": "2026-03-19",
+      "last_flight": "2026-07-28",
+      "flight_count": 38,
+      "total_hours": 8.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "fayette-county-so-ga-ga",
+      "display_name": "Fayette County Sheriff's Office (GA)",
+      "state": "GA",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c5405483-77cb-4394-8a4d-9cb8da564e16",
+            "dashboard_item_id": "038598dc66d44090a6c3e537d996868d",
+            "title": "Fayette County Sheriff's Office (GA) Drone Flights"
+          }
+        ],
+        "vanity_slug": "fayettecountysheriff"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/fayettecountysheriff",
+      "status": "stale",
+      "first_flight": "2026-03-11",
+      "last_flight": "2026-06-04",
+      "flight_count": 14,
+      "total_hours": 3.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "fitchburg-pd-wi-wi",
+      "display_name": "Fitchburg Police Department (WI)",
+      "state": "WI",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "8e45029b-d16d-40fb-be1d-032fe5217ec3",
+            "dashboard_item_id": "0249cfdd63684f5a81dd5c33b710a464",
+            "title": "Fitchburg Police Department (WI) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/0249cfdd63684f5a81dd5c33b710a464",
+      "status": "ok",
+      "first_flight": "2026-07-13",
+      "last_flight": "2026-07-17",
+      "flight_count": 94,
+      "total_hours": 12.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "fort-collins-police-services",
+      "display_name": "Fort Collins Police Services",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Denver",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "38400145-96fb-4e1b-997e-713a681cacb4",
+            "dashboard_item_id": "2d104fe503674c2395e36fdacb4205fa",
+            "title": "Fort Collins Police Services Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/2d104fe503674c2395e36fdacb4205fa",
+      "status": "stale",
+      "first_flight": "2026-04-22",
+      "last_flight": "2026-04-22",
+      "flight_count": 1,
+      "total_hours": 0.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "foxborough-pd-ma-ma",
+      "display_name": "Foxborough Police Department (MA)",
+      "state": "MA",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b3a05556-7f38-404c-a296-d21dbe2cf2cc",
+            "dashboard_item_id": "d8e670915cd6437c985ee831219964d8",
+            "title": "Foxborough Police Department (MA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/d8e670915cd6437c985ee831219964d8",
+      "status": "stale",
+      "first_flight": "2026-03-26",
+      "last_flight": "2026-03-26",
+      "flight_count": 3,
+      "total_hours": 0.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "frederick-county-so",
+      "display_name": "Frederick County Sheriff's Office",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "5e6642fd-2d61-4c76-b398-cae135d916b5",
+            "dashboard_item_id": "757a3ca500934bfa9de33669a5d473e8",
+            "title": "Frederick County Sheriff's Office Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/757a3ca500934bfa9de33669a5d473e8",
+      "status": "stale",
+      "first_flight": "2026-01-23",
+      "last_flight": "2026-02-23",
+      "flight_count": 5,
+      "total_hours": 1.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "fsu-emhs",
+      "display_name": "FSU EMHS",
+      "state": null,
+      "org_type": "university",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "9b31bb2c-80a2-4ffe-8a38-088e9e1a780e",
+            "dashboard_item_id": "e51b33d0cd5c4c0ca801dab88a739b90",
+            "title": "FSU  EMHS Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e51b33d0cd5c4c0ca801dab88a739b90",
+      "status": "stale",
+      "first_flight": "2025-11-17",
+      "last_flight": "2025-12-12",
+      "flight_count": 7,
+      "total_hours": 1.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "gerrittsen-beach-fire-department",
+      "display_name": "Gerrittsen Beach Fire Department",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b321f5f8-60fb-4d2e-93c1-a1c8efbdcf74",
+            "dashboard_item_id": "5feb59dab107420f9e040fecca5a41d2",
+            "title": "Gerrittsen Beach Fire Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/5feb59dab107420f9e040fecca5a41d2",
+      "status": "stale",
+      "first_flight": "2025-06-05",
+      "last_flight": "2026-06-21",
+      "flight_count": 35,
+      "total_hours": 7.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "glendale-pd-ca-trial-ca",
+      "display_name": "Glendale Police Department (CA) - Trial",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "4f699e44-59d1-4e96-878b-b1518f67a219",
+            "dashboard_item_id": "45470a6e60354b068d1ddb6076fcc26c",
+            "title": "Glendale Police Department (CA) - Trial Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/45470a6e60354b068d1ddb6076fcc26c",
+      "status": "stale",
+      "first_flight": "2026-02-10",
+      "last_flight": "2026-03-05",
+      "flight_count": 315,
+      "total_hours": 58.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "granite-defense-technologies-nfr",
+      "display_name": "Granite Defense & Technologies NFR",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "9004d24c-0d81-412d-9884-7719844c216a",
+            "dashboard_item_id": "50427cbddf194c359ca2ff1ac41d578f",
+            "title": "Granite Defense & Technologies NFR Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/50427cbddf194c359ca2ff1ac41d578f",
+      "status": "stale",
+      "first_flight": "2025-09-03",
+      "last_flight": "2025-09-03",
+      "flight_count": 1,
+      "total_hours": 0.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "gray-fire-rescue",
+      "display_name": "Gray Fire Rescue",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "38f8f752-9126-4a96-af36-fcaa0cfadae9",
+            "dashboard_item_id": "5a75354712194028989ec53180676b56",
+            "title": "Gray Fire Rescue Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/5a75354712194028989ec53180676b56",
+      "status": "stale",
+      "first_flight": "2025-05-27",
+      "last_flight": "2026-06-30",
+      "flight_count": 27,
+      "total_hours": 5.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "greeley-pd-co-co",
+      "display_name": "Greeley Police Department (CO)",
+      "state": "CO",
+      "org_type": "law_enforcement",
+      "timezone": "America/Denver",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "f020cc82-3fad-4c3e-a040-8958d4a68e12",
+            "dashboard_item_id": "e6b0a17763154df2b33112c954ef6b0d",
+            "title": "Greeley Police Department (CO) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e6b0a17763154df2b33112c954ef6b0d",
+      "status": "ok",
+      "first_flight": "2026-01-28",
+      "last_flight": "2026-09-01",
+      "flight_count": 2300,
+      "total_hours": 419.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "hamilton-pd-oh-oh",
+      "display_name": "Hamilton Police Department (OH)",
+      "state": "OH",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "820a13b2-09d7-47b8-9c6c-285eb8ab882f",
+            "dashboard_item_id": "d34653ae03a74404a75b2ee4ea53ce53",
+            "title": "Hamilton Police Department (OH) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/d34653ae03a74404a75b2ee4ea53ce53",
+      "status": "stale",
+      "first_flight": "2026-05-05",
+      "last_flight": "2026-06-03",
+      "flight_count": 25,
+      "total_hours": 5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "hampton-pd-va-va",
+      "display_name": "Hampton Police Department (VA)",
+      "state": "VA",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "ad1a33f9-6a39-4dff-8b3c-7bb55dd90843",
+            "dashboard_item_id": "7f548a7c0fe54c2989d1f5beb949736f",
+            "title": "Hampton Police Department (VA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/7f548a7c0fe54c2989d1f5beb949736f",
+      "status": "ok",
+      "first_flight": "2026-07-28",
+      "last_flight": "2026-08-21",
+      "flight_count": 13,
+      "total_hours": 1.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "hennepin-ems",
+      "display_name": "Hennepin EMS",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "54d447e9-1aee-454d-ba14-1641a14e0fb2",
+            "dashboard_item_id": "65bd58e97fb44d15b05949d5b7ad6097",
+            "title": "Hennepin EMS Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/65bd58e97fb44d15b05949d5b7ad6097",
+      "status": "stale",
+      "first_flight": "2025-08-29",
+      "last_flight": "2025-08-29",
+      "flight_count": 2,
+      "total_hours": 0.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "hollywood-pd",
+      "display_name": "Hollywood Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a54861b7-de06-466c-946c-cb76690e0bf9",
+            "dashboard_item_id": "bc2e1abd9acb4917b48fc189f26239aa",
+            "title": "Hollywood Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/bc2e1abd9acb4917b48fc189f26239aa",
+      "status": "stale",
+      "first_flight": "2024-11-22",
+      "last_flight": "2026-04-23",
+      "flight_count": 107,
+      "total_hours": 18.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "honolulu-pd",
+      "display_name": "Honolulu Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "Pacific/Honolulu",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "0f94aa81-9cc2-479a-b91e-21a3632c9f7d",
+            "dashboard_item_id": "276109f23c14448bb789ece9d88e83a7",
+            "title": "Honolulu Police Department"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/276109f23c14448bb789ece9d88e83a7",
+      "status": "ok",
+      "first_flight": "2026-08-03",
+      "last_flight": "2026-08-20",
+      "flight_count": 11,
+      "total_hours": 3.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "huntington-beach-pd",
+      "display_name": "Huntington Beach Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "48f2856d-68d4-4a2c-981f-d864a259d6dd",
+            "dashboard_item_id": "c3be19afce314574baf793eae5ec373d",
+            "title": "Huntington Beach Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c3be19afce314574baf793eae5ec373d",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "indian-river-county-emergency-services-fl-fl",
+      "display_name": "Indian River County Emergency Services (FL)",
+      "state": "FL",
+      "org_type": "fire_ems",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c2e0fb02-369b-42a4-b70d-dae4ba3d8509",
+            "dashboard_item_id": "5c38bed763624cedbc63178f11687739",
+            "title": "Indian River County Emergency Services (FL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/5c38bed763624cedbc63178f11687739",
+      "status": "ok",
+      "first_flight": "2026-08-11",
+      "last_flight": "2026-08-11",
+      "flight_count": 3,
+      "total_hours": 0,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "jea",
+      "display_name": "JEA",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "6b192170-d286-44c8-8ef8-32dbac0077a1",
+            "dashboard_item_id": "d93918edbd9844dea5a830bd3fea2e85",
+            "title": "JEA Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/d93918edbd9844dea5a830bd3fea2e85",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "jp-jiw-x10",
+      "display_name": "JP-JIW-X10",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "5f8414e6-c328-4a5a-9305-53738b39f0a7",
+            "dashboard_item_id": "73f87287920848c69def5a2c5ad25ffb",
+            "title": "JP-JIW-X10 Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/73f87287920848c69def5a2c5ad25ffb",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "jp-kajima-kanto",
+      "display_name": "JP-Kajima-Kanto",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "0ac57443-68bb-497a-85e9-9962ae5bd684",
+            "dashboard_item_id": "41ace93a98084961b762d01ad41c0ae6",
+            "title": "JP-Kajima-Kanto Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/41ace93a98084961b762d01ad41c0ae6",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "killeen-pd-tx-tx",
+      "display_name": "Killeen Police Department (TX)",
+      "state": "TX",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "49ade02b-3fb2-4e87-9850-449c56d62d7a",
+            "dashboard_item_id": "71bd05b0f73341c5a8caaa6ef84c4b1f",
+            "title": "Killeen Police Department (TX) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/71bd05b0f73341c5a8caaa6ef84c4b1f",
+      "status": "ok",
+      "first_flight": "2026-03-24",
+      "last_flight": "2026-09-01",
+      "flight_count": 168,
+      "total_hours": 32.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "knox-county-so-tn-tn",
+      "display_name": "Knox County Sheriffs Office (TN)",
+      "state": "TN",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "ef31cc96-e316-423a-8c6c-f64c39a11840",
+            "dashboard_item_id": "2fedc6d0fa3a4ff3b8bc0608e708b768",
+            "title": "Knox County Sheriffs Office (TN) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/2fedc6d0fa3a4ff3b8bc0608e708b768",
+      "status": "stale",
+      "first_flight": "2026-04-10",
+      "last_flight": "2026-04-10",
+      "flight_count": 5,
+      "total_hours": 1.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "kootenai-county-so-id-id",
+      "display_name": "Kootenai County Sheriff's Office (ID)",
+      "state": "ID",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "2469f93b-ad2a-4463-adad-b654a4bc40a0",
+            "dashboard_item_id": "28e40b58334948d5a551f831c83db142",
+            "title": "Kootenai County Sheriff's Office (ID) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/28e40b58334948d5a551f831c83db142",
+      "status": "stale",
+      "first_flight": "2026-06-17",
+      "last_flight": "2026-06-21",
+      "flight_count": 6,
+      "total_hours": 2.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "lafayette-pd-la-la",
+      "display_name": "Lafayette Police Department (LA)",
+      "state": "LA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "1d46b223-25aa-45b7-9480-d49ee6f10eab",
+            "dashboard_item_id": "652aee69f955462f9a788b4e60e6fa23",
+            "title": "Lafayette Police Department (LA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/652aee69f955462f9a788b4e60e6fa23",
+      "status": "stale",
+      "first_flight": "2025-03-25",
+      "last_flight": "2025-03-25",
+      "flight_count": 1,
+      "total_hours": 0.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "lake-county-so-fl-fl",
+      "display_name": "Lake County Sheriff's Office (FL)",
+      "state": "FL",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "6fdacf68-ca72-4f3d-8acd-8ea142586d22",
+            "dashboard_item_id": "20e1ba0f975a49c3b0431ad9ec569b1b",
+            "title": "Lake County Sheriff's Office (FL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/20e1ba0f975a49c3b0431ad9ec569b1b",
+      "status": "stale",
+      "first_flight": "2025-01-03",
+      "last_flight": "2025-01-29",
+      "flight_count": 15,
+      "total_hours": 3.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "laredo-pd",
+      "display_name": "Laredo Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "139347d9-df46-42ce-98d8-980db6bda7ff",
+            "dashboard_item_id": "54d059bde3374638a21e593fa5d9c417",
+            "title": "Laredo Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": "laredopd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/laredopd",
+      "status": "ok",
+      "first_flight": "2026-01-30",
+      "last_flight": "2026-09-01",
+      "flight_count": 4676,
+      "total_hours": 824.7,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "las-vegas-metropolitan-pd",
+      "display_name": "Las Vegas Metropolitan Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "eaee1074-6c2b-42d5-9e8e-d9003c16b3db",
+            "dashboard_item_id": "70a0fe191f6d407e8044e416df7910b2",
+            "title": "Las Vegas Metropolitan Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
+      "status": "stale",
+      "first_flight": "2026-05-27",
+      "last_flight": "2026-05-27",
+      "flight_count": 3,
+      "total_hours": 0.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "laurel-pd-uas-flight-data",
+      "display_name": "Laurel Police Department UAS Flight Data",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "8a785c98-aec7-47e3-8868-170a8886e542",
+            "dashboard_item_id": "f9e4f009b02b43628e8d259acbe14a68",
+            "title": "Laurel Police Department UAS Flight Data"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f9e4f009b02b43628e8d259acbe14a68",
+      "status": "ok",
+      "first_flight": "2026-07-02",
+      "last_flight": "2026-08-31",
+      "flight_count": 292,
+      "total_hours": 52.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "lee-county-government",
+      "display_name": "Lee County Government",
+      "state": null,
+      "org_type": "government_other",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "6fde1bb5-8e12-47b1-9ca7-0f2fafcac3a5",
+            "dashboard_item_id": "efe67bb8531c4907b4b355403485e2fc",
+            "title": "Lee County Government Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/efe67bb8531c4907b4b355403485e2fc",
+      "status": "ok",
+      "first_flight": "2024-04-04",
+      "last_flight": "2026-08-03",
+      "flight_count": 461,
+      "total_hours": 96,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "lewisville-pd-tx-dfr-tx",
+      "display_name": "Lewisville Police Department (TX) DFR",
+      "state": "TX",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "344a8d24-1db5-4368-9206-81a4adb93ca9",
+            "dashboard_item_id": "f93f7ce5e9f447ce8fdb8593dd11442d",
+            "title": "Lewisville Police Department (TX) DFR Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f93f7ce5e9f447ce8fdb8593dd11442d",
+      "status": "ok",
+      "first_flight": "2026-02-26",
+      "last_flight": "2026-07-30",
+      "flight_count": 945,
+      "total_hours": 162.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "long-beach-township",
+      "display_name": "Long Beach Township",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "2cedb02b-f760-4e4d-8f40-1c7d7456b879",
+            "dashboard_item_id": "5291bfae11f043798590a5cdb84f1090",
+            "title": "Long Beach Township Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/5291bfae11f043798590a5cdb84f1090",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "los-altos-pd-ca-ca",
+      "display_name": "Los Altos Police Department (CA)",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "4e9b6dad-3dea-4c31-ad91-6f2acf0663c4",
+            "dashboard_item_id": "555d9b93a2824197becd4066013775ea",
+            "title": "Los Altos Police Department (CA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
+      "status": "ok",
+      "first_flight": "2026-03-05",
+      "last_flight": "2026-08-25",
+      "flight_count": 386,
+      "total_hours": 70.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "los-angeles-pd-drone-as-first-responder",
+      "display_name": "Los Angeles Police Department Drone as First Responder",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "5e6750a5-1bc9-4fb6-a6cf-8693f4d603ff",
+            "dashboard_item_id": "82a43b632c314e298d0b8b0bb62d4d1a",
+            "title": "Los Angeles Police Department Drone as First Responder"
+          }
+        ],
+        "vanity_slug": "lapd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/lapd",
+      "status": "ok",
+      "first_flight": "2025-07-29",
+      "last_flight": "2026-08-31",
+      "flight_count": 9650,
+      "total_hours": 1956.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "los-gatos-monte-sereno-pd",
+      "display_name": "Los Gatos/Monte Sereno Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "7882e1c8-ee00-4311-95fb-aca5b4c534e5",
+            "dashboard_item_id": "f766075aa8694f0dba75b8a350e5c131",
+            "title": "Los Gatos/Monte Sereno Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f766075aa8694f0dba75b8a350e5c131",
+      "status": "ok",
+      "first_flight": "2026-02-04",
+      "last_flight": "2026-08-25",
+      "flight_count": 6,
+      "total_hours": 1.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "louisville-metro-government",
+      "display_name": "Louisville Metro Government",
+      "state": null,
+      "org_type": "government_other",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "75ec7cb4-8b40-42d8-b3e5-9531e3c0d29c",
+            "dashboard_item_id": "e626c750dedc49e1ae572d103e188bb4",
+            "title": "Louisville Metro Government Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e626c750dedc49e1ae572d103e188bb4",
+      "status": "stale",
+      "first_flight": "2025-10-21",
+      "last_flight": "2025-10-23",
+      "flight_count": 7,
+      "total_hours": 1.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "marion-county-fire-rescue",
+      "display_name": "Marion County Fire Rescue",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "085403d8-13bd-403b-bf2e-f09aaf65fcf4",
+            "dashboard_item_id": "be153db7fcb845479879f6c0d39115a5",
+            "title": "Marion County Fire Rescue Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/be153db7fcb845479879f6c0d39115a5",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "marysville-pd-sno911-dfr-flights",
+      "display_name": "Marysville Police Department - Sno911 DFR Flights",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "e83aab52-ff5b-4548-8706-8c7bbc095da5",
+            "dashboard_item_id": "882eadd9bfef4ca58b9b20f73781d6dc",
+            "title": "Marysville Police Department - Sno911 DFR Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/882eadd9bfef4ca58b9b20f73781d6dc",
+      "status": "stale",
+      "first_flight": "2025-08-09",
+      "last_flight": "2025-08-09",
+      "flight_count": 4,
+      "total_hours": 1.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "medicine-hat-police-service",
+      "display_name": "Medicine Hat Police Service",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Edmonton",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "5f6eee2b-3156-46eb-8650-92f374eea53c",
+            "dashboard_item_id": "dc06dea91597478ea122684bdbffdb3d",
+            "title": "Medicine Hat Police Service Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/dc06dea91597478ea122684bdbffdb3d",
+      "status": "ok",
+      "first_flight": "2026-08-12",
+      "last_flight": "2026-08-12",
+      "flight_count": 2,
+      "total_hours": 0.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "melrose-park-pd-il-il",
+      "display_name": "Melrose PARK Police Department (IL)",
+      "state": "IL",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "7bff39e5-3d3b-4e6d-b51a-7aac0d215d1d",
+            "dashboard_item_id": "e0d00aa615684f678bdd7cda8cf29083",
+            "title": "Melrose PARK Police Department (IL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/e0d00aa615684f678bdd7cda8cf29083",
+      "status": "ok",
+      "first_flight": "2026-05-01",
+      "last_flight": "2026-09-01",
+      "flight_count": 224,
+      "total_hours": 34.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "menifee-pd",
+      "display_name": "Menifee Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "20661392-fe22-4ecb-9e9b-4a32382e27d8",
+            "dashboard_item_id": "a6e459fbc6194f17ac08084aec34e603",
+            "title": "Menifee Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/a6e459fbc6194f17ac08084aec34e603",
+      "status": "ok",
+      "first_flight": "2025-11-21",
+      "last_flight": "2026-08-31",
+      "flight_count": 346,
+      "total_hours": 67.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "metropolitan-nashville-pd-tn-tn",
+      "display_name": "Metropolitan Nashville Police Department (TN)",
+      "state": "TN",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "678dee26-6aa8-4d60-bf1c-30c7b0f6b517",
+            "dashboard_item_id": "a190b98bd45c40bd9c35cc054a004f49",
+            "title": "Metropolitan Nashville Police Department (TN) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/a190b98bd45c40bd9c35cc054a004f49",
+      "status": "ok",
+      "first_flight": "2026-05-26",
+      "last_flight": "2026-08-07",
+      "flight_count": 395,
+      "total_hours": 95.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "metropolitan-pd",
+      "display_name": "Metropolitan Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "edd2a1aa-8614-4d75-82c0-7612f79e76c9",
+            "dashboard_item_id": "f9cf6e64c7c246a68596da24f904e47f",
+            "title": "Metropolitan Police Department"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f9cf6e64c7c246a68596da24f904e47f",
+      "status": "stale",
+      "first_flight": "2024-09-23",
+      "last_flight": "2026-05-26",
+      "flight_count": 100,
+      "total_hours": 18,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "miami-beach-pd-g47-beta",
+      "display_name": "Miami Beach PD - G47 Beta",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "ad7288de-741f-4fff-b41a-700b1a27522a",
+            "dashboard_item_id": "6a4e721a3d1d4493bfd1f3caf7c0b59a",
+            "title": "Miami Beach PD - G47 Beta Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/6a4e721a3d1d4493bfd1f3caf7c0b59a",
+      "status": "stale",
+      "first_flight": "2025-10-31",
+      "last_flight": "2025-11-04",
+      "flight_count": 12,
+      "total_hours": 1.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "miami-pd-org",
+      "display_name": "Miami PD - Org",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "1c96ce95-7718-4af0-bc1c-8a7cd71c2f2d",
+            "dashboard_item_id": "bcb6529dfdff4a7093bc7feb91b435e0",
+            "title": "Miami PD - Org Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/bcb6529dfdff4a7093bc7feb91b435e0",
+      "status": "stale",
+      "first_flight": "2025-09-18",
+      "last_flight": "2025-09-18",
+      "flight_count": 2,
+      "total_hours": 0.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "michigan-state-police-mi",
+      "display_name": "Michigan State Police",
+      "state": "MI",
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a330787e-0cfb-4c4b-9531-e2bff8f2ff98",
+            "dashboard_item_id": "d6ebfc8722df40229414ca9d3465712b",
+            "title": "Michigan State Police (MI) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/d6ebfc8722df40229414ca9d3465712b",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "middlefield-vol-fire-co",
+      "display_name": "Middlefield Vol. Fire Co.",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "945f9a26-388f-4b46-a72c-4b64e52e83b5",
+            "dashboard_item_id": "61dfcc89c4804cb5aefd93ffbb3219e4",
+            "title": "Middlefield Vol. Fire Co. Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/61dfcc89c4804cb5aefd93ffbb3219e4",
+      "status": "stale",
+      "first_flight": "2024-11-16",
+      "last_flight": "2025-06-16",
+      "flight_count": 4,
+      "total_hours": 1.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "milford-pd",
+      "display_name": "Milford Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c93bfbab-1af8-4a0d-af91-996971296565",
+            "dashboard_item_id": "0ed27de487774b9eb6b7fd249f91ef65",
+            "title": "Milford Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/0ed27de487774b9eb6b7fd249f91ef65",
+      "status": "stale",
+      "first_flight": "2025-07-04",
+      "last_flight": "2026-03-24",
+      "flight_count": 141,
+      "total_hours": 29.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "milwaukee-pd",
+      "display_name": "Milwaukee Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "b438cee6-dca6-4104-ac75-c9b5f4c9c567",
+            "dashboard_item_id": "81fc8f0745944ddfbf773850cf28eca8",
+            "title": "Milwaukee Police Department"
+          }
+        ],
+        "vanity_slug": "milwaukee"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/milwaukee",
+      "status": "ok",
+      "first_flight": "2025-03-08",
+      "last_flight": "2026-08-23",
+      "flight_count": 4130,
+      "total_hours": 879.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "minnetonka-pd",
+      "display_name": "Minnetonka Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a5d35662-d210-4194-b2c4-7e9332fc2732",
+            "dashboard_item_id": "864a017ece0f4aa898e0026032f8ce92",
+            "title": "Minnetonka Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/864a017ece0f4aa898e0026032f8ce92",
+      "status": "ok",
+      "first_flight": "2025-02-13",
+      "last_flight": "2026-08-26",
+      "flight_count": 1220,
+      "total_hours": 239.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "mlgw",
+      "display_name": "MLGW",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "fa62a7d5-2f14-4df9-b89e-1b12b6f91366",
+            "dashboard_item_id": "1baaf00e2bd14cfc82e8e9df06d60cf4",
+            "title": "MLGW Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/1baaf00e2bd14cfc82e8e9df06d60cf4",
+      "status": "stale",
+      "first_flight": "2025-06-17",
+      "last_flight": "2025-06-18",
+      "flight_count": 3,
+      "total_hours": 1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "monroe-county-so-dfr-flights",
+      "display_name": "Monroe County Sheriff's Office DFR Flights",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "8f89237e-d91e-4bdf-adea-f99dae78585e",
+            "dashboard_item_id": "57633537efa44d2eb774f49ef3c2bf59",
+            "title": "Monroe County Sheriff's Office DFR Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/57633537efa44d2eb774f49ef3c2bf59",
+      "status": "ok",
+      "first_flight": "2026-03-09",
+      "last_flight": "2026-08-28",
+      "flight_count": 247,
+      "total_hours": 42.7,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "montgomery-county-pd-g47-beta",
+      "display_name": "Montgomery County PD - G47 Beta",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "1df25366-409d-49ed-bbe3-97dc8f053467",
+            "dashboard_item_id": "10da1489c7e441b99b824c1fc5faf0a9",
+            "title": "Montgomery County PD - G47 Beta Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9",
+      "status": "stale",
+      "first_flight": "2025-04-01",
+      "last_flight": "2026-06-12",
+      "flight_count": 450,
+      "total_hours": 92.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "nevada-county-so",
+      "display_name": "Nevada County Sheriff's Office",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "78f645bb-c80a-463a-a70a-53e7af54c765",
+            "dashboard_item_id": "c414beda48c0421ba36d9a81b31a5a4a",
+            "title": "Nevada County Sheriff's Office Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c414beda48c0421ba36d9a81b31a5a4a",
+      "status": "stale",
+      "first_flight": "2025-02-03",
+      "last_flight": "2025-02-28",
+      "flight_count": 5,
+      "total_hours": 2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "new-berlin-marshal-s-office-tx-tx",
+      "display_name": "New Berlin Marshal's Office (TX)",
+      "state": "TX",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "50baf856-1c7f-4f2e-b563-d5a1bec57014",
+            "dashboard_item_id": "82eadbba84e7480f9e614ba2c7d5c5f5",
+            "title": "New Berlin Marshal's Office (TX) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/82eadbba84e7480f9e614ba2c7d5c5f5",
+      "status": "ok",
+      "first_flight": "2026-08-26",
+      "last_flight": "2026-09-01",
+      "flight_count": 5,
+      "total_hours": 1.7,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "new-orleans-pd",
+      "display_name": "New Orleans Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "bbe82a3b-5931-40c7-b848-f921b8da0373",
+            "dashboard_item_id": "1b53a78ceea54a15bf004f239db3dd43",
+            "title": "New Orleans Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": "nopd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/nopd",
+      "status": "stale",
+      "first_flight": "2026-01-13",
+      "last_flight": "2026-06-28",
+      "flight_count": 297,
+      "total_hours": 100.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "newmont-lihir-papua-new-guinea",
+      "display_name": "Newmont Lihir Papua New Guinea",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "Pacific/Port_Moresby",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "70f49e80-5e34-42ad-b907-8774b0ee474f",
+            "dashboard_item_id": "d30c85a1e8a74201a2825591eda0fed1",
+            "title": "Newmont Lihir Papua New Guinea Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/d30c85a1e8a74201a2825591eda0fed1",
+      "status": "ok",
+      "first_flight": "2026-07-19",
+      "last_flight": "2026-07-19",
+      "flight_count": 1,
+      "total_hours": 0.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "niles-pd-il-il",
+      "display_name": "Niles Police Department (IL)",
+      "state": "IL",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "fc7bdb35-bb23-4daa-b0a0-d58745c63c3e",
+            "dashboard_item_id": "46325aa313e94f36864c2afb254fa69c",
+            "title": "Niles Police Department (IL) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/46325aa313e94f36864c2afb254fa69c",
+      "status": "ok",
+      "first_flight": "2026-07-04",
+      "last_flight": "2026-08-25",
+      "flight_count": 29,
+      "total_hours": 6.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "niras-emea",
+      "display_name": "NIRAS EMEA",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "Europe/Copenhagen",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "94045c25-2e0f-4b9a-b3b0-91ecc600e45c",
+            "dashboard_item_id": "37b99114b5d843fabfa7cd05b0ecbbd1",
+            "title": "NIRAS EMEA Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/37b99114b5d843fabfa7cd05b0ecbbd1",
+      "status": "stale",
+      "first_flight": "2025-01-21",
+      "last_flight": "2025-01-21",
+      "flight_count": 6,
+      "total_hours": 1.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "noaa-lakeland",
+      "display_name": "NOAA - Lakeland",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "92cd26b5-0297-49a8-821e-b8139d73d94e",
+            "dashboard_item_id": "8c84418547e54eaf97d77573c9756e5a",
+            "title": "NOAA - Lakeland Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/8c84418547e54eaf97d77573c9756e5a",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "norton-pd-oh-suas-flights-oh",
+      "display_name": "Norton Police Department (OH) sUAS Flights",
+      "state": "OH",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "2fed5f2e-c902-4a3d-9fdf-4d8b1d33fb9e",
+            "dashboard_item_id": "9e47de96be8a4dec90b98064bff26c12",
+            "title": "Norton Police Department (OH) sUAS Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/9e47de96be8a4dec90b98064bff26c12",
+      "status": "ok",
+      "first_flight": "2026-07-30",
+      "last_flight": "2026-09-01",
+      "flight_count": 23,
+      "total_hours": 4.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "oakland-county-so",
+      "display_name": "Oakland County Sheriff's Office",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "f0fc18ff-27e6-4ee1-9991-6eb74d6ebf75",
+            "dashboard_item_id": "11517f673dc847f4bcf7f48fd3139e7f",
+            "title": "Oakland County Sheriff's Office"
+          },
+          {
+            "org_uuid": "e7cd5233-b363-4033-8976-f8fc2a54da96",
+            "dashboard_item_id": "6c4d65ac50574b4e9254572f0df4c43e",
+            "title": "Oakland County Sheriff's Office DFR"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/11517f673dc847f4bcf7f48fd3139e7f",
+      "status": "ok",
+      "first_flight": "2025-09-05",
+      "last_flight": "2026-07-16",
+      "flight_count": 12,
+      "total_hours": 2.5,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "Combines 2 Skydio dashboards published by this agency."
+    },
+    {
+      "agency_id": "odessa-police-fire-departments-tx",
+      "display_name": "Odessa Police & Fire Departments",
+      "state": "TX",
+      "org_type": "fire_ems",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "e58689c9-1614-4ba9-a0f2-b9c0d805ef77",
+            "dashboard_item_id": "203f2a50944a4f72acf412853024ad89",
+            "title": "Odessa Police & Fire Departments (TX) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/203f2a50944a4f72acf412853024ad89",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "oklahoma-city-pd",
+      "display_name": "Oklahoma City Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "86914868-dfa9-455f-9a77-604bd1137f9c",
+            "dashboard_item_id": "c7a3fac3b8024e2098e8d98aede302b5",
+            "title": "Oklahoma City Police Department Drone Flights"
+          },
+          {
+            "org_uuid": "83807192-7e23-435a-9bcd-693eba46d9a2",
+            "dashboard_item_id": "c325906195cc4f72a94202bb2019eabd",
+            "title": "Oklahoma City Police Department Docked Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c7a3fac3b8024e2098e8d98aede302b5",
+      "status": "stale",
+      "first_flight": "2024-11-16",
+      "last_flight": "2025-02-04",
+      "flight_count": 37,
+      "total_hours": 5.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "Combines 2 Skydio dashboards published by this agency."
+    },
+    {
+      "agency_id": "olathe-pd-ks",
+      "display_name": "Olathe Police Department",
+      "state": "KS",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "6bac9eae-fa08-42c3-a75a-5bf8e28d41ae",
+            "dashboard_item_id": "8de565bc7f6d4acf923119d4c0937ca3",
+            "title": "Olathe Police Department (KS) UAS Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/8de565bc7f6d4acf923119d4c0937ca3",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "ontario-pd-ca",
+      "display_name": "Ontario Police Department",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "9bdf2ec1-370e-47d8-9089-7eb0894d3d83",
+            "dashboard_item_id": "2928687a9e6d4966b4b46304bca4a3e1",
+            "title": "Ontario Police Department (CA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/2928687a9e6d4966b4b46304bca4a3e1",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": null
+    },
+    {
+      "agency_id": "overland-park-pd-ks-ks",
+      "display_name": "Overland Park Police Department (KS)",
+      "state": "KS",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "2b350515-444b-4007-890b-471ce5652da0",
+            "dashboard_item_id": "046b94ec93f84a599e69d5f1b1b01eb1",
+            "title": "Overland Park Police Department (KS) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/046b94ec93f84a599e69d5f1b1b01eb1",
+      "status": "ok",
+      "first_flight": "2026-05-12",
+      "last_flight": "2026-09-01",
+      "flight_count": 294,
+      "total_hours": 64.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "pacifica-pd-ca-drone-transparency-portal-ca",
+      "display_name": "Pacifica Police Department (CA) Drone Transparency Portal",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "85b68552-70ac-46fd-99dd-407dd05a9fb0",
+            "dashboard_item_id": "5866d865778a41a0bb200e9131070fc2",
+            "title": "Pacifica Police Department (CA) Drone Transparency Portal"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/5866d865778a41a0bb200e9131070fc2",
+      "status": "ok",
+      "first_flight": "2025-11-17",
+      "last_flight": "2026-07-04",
+      "flight_count": 86,
+      "total_hours": 16.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "philadelphia-pd",
+      "display_name": "Philadelphia Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "1fbc1d0b-0a24-4f30-9fb9-8775f6b4bf6f",
+            "dashboard_item_id": "acc28d9c9fbd48c68d1059452bf2bb1c",
+            "title": "Philadelphia Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/acc28d9c9fbd48c68d1059452bf2bb1c",
+      "status": "ok",
+      "first_flight": "2025-03-08",
+      "last_flight": "2026-09-01",
+      "flight_count": 4255,
+      "total_hours": 853,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "pickens-county-so-ga-ga",
+      "display_name": "Pickens County Sheriffs Office (GA)",
+      "state": "GA",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "8a9dac71-3c14-43d4-be88-fafa3e714afc",
+            "dashboard_item_id": "f2e26f7a271249c6a9935b99fddb4d0b",
+            "title": "Pickens County Sheriffs Office (GA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f2e26f7a271249c6a9935b99fddb4d0b",
+      "status": "ok",
+      "first_flight": "2026-06-29",
+      "last_flight": "2026-09-01",
+      "flight_count": 14,
+      "total_hours": 2.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "providence-pd-ri-ri",
+      "display_name": "Providence Police Department (RI)",
+      "state": "RI",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "215f4ae3-80af-4574-b7ef-628698975a30",
+            "dashboard_item_id": "b1c8de98bc844f54b881a64aa3c7a93b",
+            "title": "Providence Police Department (RI) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/b1c8de98bc844f54b881a64aa3c7a93b",
+      "status": "ok",
+      "first_flight": "2026-07-24",
+      "last_flight": "2026-08-02",
+      "flight_count": 17,
+      "total_hours": 4.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "pseg-long-island-power-authority",
+      "display_name": "PSEG Long Island Power Authority",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "93fdbfe8-5264-4a33-8291-1c1b2d5831c9",
+            "dashboard_item_id": "a97a09c800f44b08b4450be0a82af604",
+            "title": "PSEG Long Island Power Authority  Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/a97a09c800f44b08b4450be0a82af604",
+      "status": "stale",
+      "first_flight": "2026-05-27",
+      "last_flight": "2026-05-29",
+      "flight_count": 2,
+      "total_hours": 0.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "quincy-pd",
+      "display_name": "Quincy Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "86f0324b-af44-49e5-9c04-48b1e9daa247",
+            "dashboard_item_id": "842da83f140c4bcb93f2164981ea0dec",
+            "title": "Quincy Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/842da83f140c4bcb93f2164981ea0dec",
+      "status": "stale",
+      "first_flight": "2025-09-30",
+      "last_flight": "2026-01-06",
+      "flight_count": 8,
+      "total_hours": 1.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "rochester-pd-mn",
+      "display_name": "Rochester Police Department - MN",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "deea8289-a117-4089-b1a8-d1d646a4608b",
+            "dashboard_item_id": "fc2491c66ec9416aaab58eb84865d51b",
+            "title": "Rochester Police Department - MN Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/fc2491c66ec9416aaab58eb84865d51b",
+      "status": "ok",
+      "first_flight": "2025-09-09",
+      "last_flight": "2026-08-13",
+      "flight_count": 3111,
+      "total_hours": 511.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "rowlett-pd-tx-tx",
+      "display_name": "Rowlett Police Department (TX)",
+      "state": "TX",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "22de7246-09cd-40c5-a600-8ae3ad581cf6",
+            "dashboard_item_id": "8f9ba15b43564c2dad3299b74399b590",
+            "title": "Rowlett Police Department (TX) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/8f9ba15b43564c2dad3299b74399b590",
+      "status": "ok",
+      "first_flight": "2026-07-02",
+      "last_flight": "2026-08-26",
+      "flight_count": 8,
+      "total_hours": 2.1,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "santa-ana-pd-ca-ca",
+      "display_name": "Santa Ana Police Department (CA)",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "51374267-cb11-49a9-9185-6672d293e631",
+            "dashboard_item_id": "2a9b8236a99245dd99899b96495326fe",
+            "title": "Santa Ana Police Department (CA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe",
+      "status": "ok",
+      "first_flight": "2026-05-21",
+      "last_flight": "2026-08-27",
+      "flight_count": 1599,
+      "total_hours": 252.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "santa-clara-county-so-uas-flights",
+      "display_name": "Santa Clara County Sheriff's Office UAS Flights",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a34eedd9-14db-41e1-ad32-86064c27e170",
+            "dashboard_item_id": "06fa738e00f84de6a9fa587a01ab159e",
+            "title": "Santa Clara County Sheriff's Office UAS Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/06fa738e00f84de6a9fa587a01ab159e",
+      "status": "ok",
+      "first_flight": "2024-12-09",
+      "last_flight": "2026-07-27",
+      "flight_count": 698,
+      "total_hours": 182.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "sfpd",
+      "display_name": "San Francisco Police Department",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "sfpd_datasf",
+      "source_config": {
+        "domain": "data.sfgov.org",
+        "dataset_id": "giw5-ttjs"
+      },
+      "official_url": "https://www.sanfranciscopolice.org/your-sfpd/explore-department/drones",
+      "status": "stale",
+      "first_flight": "2024-05-16",
+      "last_flight": "2026-06-30",
+      "flight_count": 7481,
+      "total_hours": 2104.7,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "Published by the city under its surveillance ordinance, not through a vendor. Covers SFPD's whole fleet (DJI, Skydio, Flock Safety and others), whereas Skydio-sourced agencies show Skydio flights only. Dates only; no takeoff times."
+    },
+    {
+      "agency_id": "skydio-fire-service-working-group",
+      "display_name": "Skydio Fire Service Working Group",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "97261c6b-b70f-4b6a-9808-0c6c629fdf9d",
+            "dashboard_item_id": "f45511bf92c24d648e58aff4270532a6",
+            "title": "Skydio Fire Service Working Group"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f45511bf92c24d648e58aff4270532a6",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "south-san-francisco-pd-ca-ca",
+      "display_name": "South San Francisco Police Department (CA)",
+      "state": "CA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Los_Angeles",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "d9f92238-9012-451d-8350-82ece7e59c27",
+            "dashboard_item_id": "c62d7fea1f524f2ebe9f10ff5569e0c8",
+            "title": "South San Francisco Police Department (CA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c62d7fea1f524f2ebe9f10ff5569e0c8",
+      "status": "ok",
+      "first_flight": "2025-10-06",
+      "last_flight": "2026-08-27",
+      "flight_count": 1628,
+      "total_hours": 316.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "st-cloud-pd",
+      "display_name": "St. Cloud Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "fc542615-7161-478a-b623-60b82e6ea9ab",
+            "dashboard_item_id": "a72c3583084241528c5dc488d59892ba",
+            "title": "St. Cloud Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/a72c3583084241528c5dc488d59892ba",
+      "status": "ok",
+      "first_flight": "2025-02-09",
+      "last_flight": "2026-09-01",
+      "flight_count": 1060,
+      "total_hours": 213.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "st-paul-pd-mn-mn",
+      "display_name": "St. Paul Police Department (MN)",
+      "state": "MN",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "bc5608cb-2788-4280-92c2-7322bd2a213e",
+            "dashboard_item_id": "a821d5aa8aab434e936a2d643b28f42c",
+            "title": "St. Paul Police Department (MN) Drone Flights"
+          }
+        ],
+        "vanity_slug": "sppd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/sppd",
+      "status": "ok",
+      "first_flight": "2026-06-01",
+      "last_flight": "2026-08-29",
+      "flight_count": 1488,
+      "total_hours": 270.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "surprise-pd-az",
+      "display_name": "Surprise Police Department",
+      "state": "AZ",
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "cb2edc87-8cc0-4403-bae4-50e58f65355c",
+            "dashboard_item_id": "f89e86d870dd450fb58715bf24b58a49",
+            "title": "Surprise Police Department (AZ) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f89e86d870dd450fb58715bf24b58a49",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "suwannee-county-drone-department",
+      "display_name": "Suwannee County Drone Department",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "2c97d448-b761-4923-afc8-aa449ce9447c",
+            "dashboard_item_id": "c7c43160a88f474aacb38fd9e6625ab9",
+            "title": "Suwannee County Drone Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c7c43160a88f474aacb38fd9e6625ab9",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "tampa-pd",
+      "display_name": "Tampa Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "20da68e0-39f9-4a52-8f59-0cf625d793b9",
+            "dashboard_item_id": "ba48b9c7ffa549749decea24ad63264f",
+            "title": "Tampa Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": "tampa"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/tampa",
+      "status": "ok",
+      "first_flight": "2026-01-03",
+      "last_flight": "2026-08-20",
+      "flight_count": 593,
+      "total_hours": 129,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "tennessee-department-of-transportation-tdot",
+      "display_name": "Tennessee Department of Transportation (TDOT)",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "57a25d07-69af-4598-81c5-e7b70fc82f07",
+            "dashboard_item_id": "59e75c20358a47759f3ef694bc438f50",
+            "title": "Tennessee Department of Transportation (TDOT) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/59e75c20358a47759f3ef694bc438f50",
+      "status": "stale",
+      "first_flight": "2024-09-20",
+      "last_flight": "2024-12-11",
+      "flight_count": 33,
+      "total_hours": 9.4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "terrebonne-parish-so-la-la",
+      "display_name": "Terrebonne Parish Sheriff's Office (LA)",
+      "state": "LA",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "3f9a1a18-2a78-440c-b94f-8944501a19b9",
+            "dashboard_item_id": "f84e8578eb4e4deeb0e4d7785b3d4982",
+            "title": "Terrebonne Parish Sheriff's Office (LA) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f84e8578eb4e4deeb0e4d7785b3d4982",
+      "status": "ok",
+      "first_flight": "2026-06-29",
+      "last_flight": "2026-08-26",
+      "flight_count": 20,
+      "total_hours": 4,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "titusville-pd-suas-transparency-dashboard",
+      "display_name": "Titusville Police Department sUAS Transparency Dashboard",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "d8d546ec-2307-4451-b9d3-09a6bad449cb",
+            "dashboard_item_id": "5378b0bf683744ccb1f7493d70c3c39f",
+            "title": "Titusville Police Department sUAS Transparency Dashboard"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/5378b0bf683744ccb1f7493d70c3c39f",
+      "status": "ok",
+      "first_flight": "2025-12-29",
+      "last_flight": "2026-08-11",
+      "flight_count": 16,
+      "total_hours": 4.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "town-of-ramapo-pd",
+      "display_name": "Town of Ramapo Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c7e49e30-75d6-4eb6-8d25-19de98286b09",
+            "dashboard_item_id": "91bfbf2aaa034122810ad9120c1213b9",
+            "title": "Town of Ramapo Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/91bfbf2aaa034122810ad9120c1213b9",
+      "status": "ok",
+      "first_flight": "2026-03-31",
+      "last_flight": "2026-08-31",
+      "flight_count": 1161,
+      "total_hours": 182.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "trial-fargo-pd",
+      "display_name": "TRIAL - Fargo Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "7280a95f-cbe4-4cc4-b288-b22b28c9a079",
+            "dashboard_item_id": "c95c74d0abbd4b588f233a04a893e25a",
+            "title": "TRIAL - Fargo Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/c95c74d0abbd4b588f233a04a893e25a",
+      "status": "stale",
+      "first_flight": "2025-12-07",
+      "last_flight": "2025-12-08",
+      "flight_count": 5,
+      "total_hours": 0.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "trophy-club-pd-tx-tx",
+      "display_name": "Trophy Club Police Department (TX)",
+      "state": "TX",
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a0c6e7b3-6744-4d1d-8f15-ede6532d68f9",
+            "dashboard_item_id": "b82c0141ee054a41ac56d9b9b36e393f",
+            "title": "Trophy Club Police Department (TX) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/b82c0141ee054a41ac56d9b9b36e393f",
+      "status": "ok",
+      "first_flight": "2026-07-23",
+      "last_flight": "2026-07-23",
+      "flight_count": 1,
+      "total_hours": 0.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "tulsa-fire-department",
+      "display_name": "Tulsa Fire Department",
+      "state": null,
+      "org_type": "fire_ems",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c262e446-ed06-435e-b31d-399196d7618d",
+            "dashboard_item_id": "aa6360f6c007449996862a05cb499bd1",
+            "title": "Tulsa Fire Department"
+          }
+        ],
+        "vanity_slug": "tulsafire"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/tulsafire",
+      "status": "ok",
+      "first_flight": "2025-09-12",
+      "last_flight": "2026-08-27",
+      "flight_count": 66,
+      "total_hours": 17.3,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "turner-construction-company",
+      "display_name": "Turner Construction Company",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "e2fb8729-76e2-4c89-beea-14d2c8889196",
+            "dashboard_item_id": "980c6bec15754d998e45b726e8eca6b9",
+            "title": "Turner Construction Company Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/980c6bec15754d998e45b726e8eca6b9",
+      "status": "stale",
+      "first_flight": "2024-12-01",
+      "last_flight": "2024-12-01",
+      "flight_count": 2,
+      "total_hours": 0.9,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "university-of-arizona-real-time-coordination-center",
+      "display_name": "University of Arizona - Real Time Coordination Center",
+      "state": null,
+      "org_type": "university",
+      "timezone": "America/Phoenix",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "a9cccd4a-9c5c-4583-a5d4-cd26dc0c74a6",
+            "dashboard_item_id": "8946d06a91434fc6898da9bafbdfd953",
+            "title": "University of Arizona - Real Time Coordination Center Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/8946d06a91434fc6898da9bafbdfd953",
+      "status": "stale",
+      "first_flight": "2026-03-09",
+      "last_flight": "2026-04-04",
+      "flight_count": 121,
+      "total_hours": 27.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "university-of-connecticut-t2-center",
+      "display_name": "University of Connecticut T2 Center",
+      "state": null,
+      "org_type": "university",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "f5717d36-d4dd-4b45-92b6-ae6cbf044b0b",
+            "dashboard_item_id": "569d8c9db1bb4d14badaae86a369265f",
+            "title": "University of Connecticut T2 Center Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/569d8c9db1bb4d14badaae86a369265f",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "university-of-illinois-division-of-public-safety",
+      "display_name": "University of Illinois Division of Public Safety",
+      "state": null,
+      "org_type": "university",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "4fe95fdb-cbe2-4ba5-ad46-779fa050cd4d",
+            "dashboard_item_id": "d4a3d2851dba46149858ce525b941b90",
+            "title": "University of Illinois Division of Public Safety Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/d4a3d2851dba46149858ce525b941b90",
+      "status": "ok",
+      "first_flight": "2026-05-14",
+      "last_flight": "2026-09-01",
+      "flight_count": 249,
+      "total_hours": 32,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "upper-arlington-police-division-oh-oh",
+      "display_name": "Upper Arlington Police Division (OH)",
+      "state": "OH",
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "25ca6061-00d7-40fd-b20b-83de3dfb014b",
+            "dashboard_item_id": "f5ea9137103a48d78bb5f2504d2a9d6e",
+            "title": "Upper Arlington Police Division (OH) Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/f5ea9137103a48d78bb5f2504d2a9d6e",
+      "status": "ok",
+      "first_flight": "2026-05-30",
+      "last_flight": "2026-08-27",
+      "flight_count": 37,
+      "total_hours": 7.2,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "usaf-87-abw-suas-agency-jb-mcguire-dix-lakehurst",
+      "display_name": "USAF - 87 ABW sUAS Agency - JB McGuire-Dix-Lakehurst",
+      "state": null,
+      "org_type": "corporate_utility",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c974b832-2662-43ca-a45e-4c52070fae2b",
+            "dashboard_item_id": "b6b34c3e68fb4e78894f9fe13cdfd0e4",
+            "title": "USAF -  87 ABW sUAS Agency - JB McGuire-Dix-Lakehurst Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/b6b34c3e68fb4e78894f9fe13cdfd0e4",
+      "status": "needs_review",
+      "first_flight": null,
+      "last_flight": null,
+      "flight_count": 0,
+      "total_hours": 0,
+      "last_pulled_utc": null,
+      "notes": "timezone not detected automatically; set manually."
+    },
+    {
+      "agency_id": "vanderbilt-university-pd",
+      "display_name": "Vanderbilt University Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/Chicago",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "bc63cfbe-82f1-4d06-90b5-86bad094368f",
+            "dashboard_item_id": "a8cd850f37644d7ca7d50dde2ab9733a",
+            "title": "Vanderbilt University Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/a8cd850f37644d7ca7d50dde2ab9733a",
+      "status": "ok",
+      "first_flight": "2026-04-21",
+      "last_flight": "2026-08-30",
+      "flight_count": 753,
+      "total_hours": 91.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "virginia-beach-pd-dfr-flights",
+      "display_name": "Virginia Beach Police Department DFR Flights",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "3a180c93-a159-40da-b60a-27e1bc88df0a",
+            "dashboard_item_id": "9cac2db7f521433ebbecd7dda731562b",
+            "title": "Virginia Beach Police Department DFR Flights"
+          }
+        ],
+        "vanity_slug": "vbpd"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/vbpd",
+      "status": "ok",
+      "first_flight": "2026-07-04",
+      "last_flight": "2026-08-29",
+      "flight_count": 37,
+      "total_hours": 6.7,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "watchung-pd",
+      "display_name": "Watchung Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "fd6caf9d-c8a9-4a5d-8392-332b6b286f21",
+            "dashboard_item_id": "dfb49fccd26940159ad80ab2e7ee8dd6",
+            "title": "Watchung Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/dfb49fccd26940159ad80ab2e7ee8dd6",
+      "status": "stale",
+      "first_flight": "2025-05-06",
+      "last_flight": "2026-05-30",
+      "flight_count": 76,
+      "total_hours": 12.8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "west-palm-beach-pd",
+      "display_name": "West Palm Beach Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "America/New_York",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "c48c3a00-583c-4e38-bce6-903a804e49c7",
+            "dashboard_item_id": "92ead0d3c5c6434a8272625b91d3e40e",
+            "title": "West Palm Beach Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": null
+      },
+      "official_url": "https://www.arcgis.com/apps/dashboards/92ead0d3c5c6434a8272625b91d3e40e",
+      "status": "stale",
+      "first_flight": "2024-12-10",
+      "last_flight": "2025-08-02",
+      "flight_count": 46,
+      "total_hours": 8,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": null
+    },
+    {
+      "agency_id": "wichita-pd",
+      "display_name": "Wichita Police Department",
+      "state": null,
+      "org_type": "law_enforcement",
+      "timezone": "UTC",
+      "source": "skydio_arcgis",
+      "source_config": {
+        "orgs": [
+          {
+            "org_uuid": "bcdd21c4-5099-465c-b1a8-53f364447517",
+            "dashboard_item_id": "57fba8ee25a24d1e8d678b00938d77a2",
+            "title": "Wichita Police Department Drone Flights"
+          }
+        ],
+        "vanity_slug": "wichita"
+      },
+      "official_url": "https://cloud.skydio.com/dashboard/wichita",
+      "status": "ok",
+      "first_flight": "2024-05-29",
+      "last_flight": "2026-09-01",
+      "flight_count": 6636,
+      "total_hours": 1695.6,
+      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "notes": "timezone not detected automatically; set manually."
+    }
+  ]
+}

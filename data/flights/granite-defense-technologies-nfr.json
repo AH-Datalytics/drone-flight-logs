@@ -1,0 +1,1 @@
+{"agency_id":"granite-defense-technologies-nfr","columns":["source_flight_id","takeoff_utc","flight_date_local","landing_utc","duration_min","purpose","description","case_number","data_quality","extra"],"rows":[["73984e64-3d05-4c1d-9c88-6f29ec251f32","2025-09-03T15:27:03.875Z","2025-09-03","2025-09-03T15:49:56.013Z",22.87,"3D Capture",null,null,null,{}]]}
