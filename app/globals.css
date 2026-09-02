@@ -19,16 +19,17 @@
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
-a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; text-underline-offset: 2px; }
+a { color: var(--fg); text-decoration: none; } a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
 
 /* masthead: thin rule, monospace wordmark, accent tick */
-.masthead { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0 16px; border-bottom: 1px solid var(--line-2); }
-.masthead h1 { margin: 0; font: 600 15px/1 var(--mono); letter-spacing: -.01em; text-transform: uppercase; }
-.masthead h1 a { color: var(--fg); display: inline-flex; align-items: center; gap: 9px; }
-.masthead h1 a::before { content: ""; width: 9px; height: 9px; background: var(--accent); flex: 0 0 auto; }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0 18px; border-bottom: 2px solid var(--line-strong); }
+.masthead h1 { margin: 0; font: 700 18px/1 var(--mono); letter-spacing: -.01em; text-transform: uppercase; }
+.masthead h1 a { color: var(--fg); display: inline-flex; align-items: center; gap: 10px; }
+.masthead h1 a:hover { color: var(--fg); text-decoration: none; }
+.masthead h1 a::before { content: ""; width: 11px; height: 11px; background: var(--accent); flex: 0 0 auto; }
 .masthead nav { display: flex; gap: 20px; font: 500 12px/1 var(--mono); text-transform: uppercase; letter-spacing: .07em; }
-.masthead nav a { color: var(--fg-3); } .masthead nav a:hover { color: var(--fg); text-decoration: none; }
+.masthead nav a { color: var(--fg-3); } .masthead nav a:hover { color: var(--accent); text-decoration: none; }
 .footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 20px 0 48px; color: var(--fg-3); font-size: 13px; max-width: 820px; }
 
 h2 { font-size: 25px; line-height: 1.2; letter-spacing: -.02em; margin: 32px 0 10px; font-weight: 600; }
@@ -38,13 +39,21 @@ ul { max-width: 760px; color: var(--fg-2); }
 
 /* data tables: monospace numerals, hairline grid, sticky head */
 .num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
-table.data { width: 100%; border-collapse: collapse; font-size: 13.5px; }
-table.data th, table.data td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+table.data { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 12.5px; }
+table.data th, table.data td { padding: 5px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; }
 table.data th { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--line-strong); font: 500 11px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--fg-2); white-space: nowrap; cursor: pointer; user-select: none; }
-table.data th:hover { color: var(--fg); }
+table.data th:hover { color: var(--accent); }
 table.data th.num, table.data td.num { text-align: right; }
-table.data tbody tr:hover { background: var(--bg-2); }
-table.data td:first-child { font-weight: 500; }
+table.data tbody tr:hover { background: var(--bg-3); }
+table.data td:first-child { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+table.data td:first-child a { display: block; overflow: hidden; text-overflow: ellipsis; }
+
+/* inline magnitude bar in the Flights column: a thin accent track under the number,
+   filled from the right edge (aligned with the right-aligned figure) proportional to
+   share of the largest agency's count, on a sqrt scale so mid-sized agencies still read. */
+.flight-cell { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.flight-bar { position: relative; display: block; width: 100%; height: 3px; background: var(--line); }
+.flight-bar::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: var(--w, 0%); background: var(--accent); }
 
 /* status chips */
 .badge { display: inline-block; font: 500 10px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .08em; padding: 1px 7px; border: 1px solid var(--line-2); color: var(--fg-3); white-space: nowrap; }
