@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getAgency, publicAgencies, loadManifest } from '@/lib/data';
+import { getAgency, publicAgencies, loadManifest, loadFlights } from '@/lib/data';
 import { fmtDate } from '@/lib/format';
+import { monthly, durationBins, purposeTop, stats, heatmapGrids, PURPOSE_OPTION_CAP } from '@/lib/aggregate';
 import StatusBadge from '@/components/StatusBadge';
-import AgencyInteractive from '@/components/AgencyInteractive';
+import AgencyInteractive, { type AgencyInitial } from '@/components/AgencyInteractive';
 
 export const dynamicParams = false;
 export function generateStaticParams() { return publicAgencies().map(a => ({ agency_id: a.agency_id })); }
@@ -11,12 +12,35 @@ export async function generateMetadata({ params }: { params: Promise<{ agency_id
   const a = getAgency((await params).agency_id); return { title: a ? `${a.display_name} — drone flights` : 'Agency' };
 }
 
-const SOURCE: Record<string, string> = { skydio_arcgis: "Skydio transparency dashboard (Skydio aircraft only)", sfpd_datasf: 'City open-data portal (all aircraft)' };
+const SOURCE: Record<string, string> = { skydio_arcgis: 'Skydio transparency dashboard (Skydio aircraft only)', sfpd_datasf: 'City open-data portal (all aircraft)' };
 
 export default async function AgencyPage({ params }: { params: Promise<{ agency_id: string }> }) {
   const { agency_id } = await params;
   const a = getAgency(agency_id); if (!a) notFound();
   const m = loadManifest(); const now = m.run_utc ? new Date(m.run_utc) : new Date();
+
+  // Compute the unfiltered view on the server so the page paints complete on first
+  // load. The client component refetches the records for filtering and for the flight
+  // table, but the statistics and charts are never blank — a dashboard that flashes a
+  // loader before showing its own numbers reads as broken.
+  const recs = loadFlights(agency_id);
+  const anyTime = recs.some(r => r.takeoff_utc);
+  const allPurposes = purposeTop(recs, Infinity);
+  const heat = anyTime ? heatmapGrids(recs, a.timezone) : null;
+  const initial: AgencyInitial = {
+    stats: stats(recs, now),
+    monthly: monthly(recs),
+    durationBins: durationBins(recs) ?? [],
+    purposeAll: purposeTop(recs, 15),
+    heat,
+    anyTime,
+    allCount: recs.length,
+    purposeOptions: allPurposes.slice(0, PURPOSE_OPTION_CAP).map(b => ({ label: b.label, count: b.value })),
+    purposeOptionsHidden: Math.max(0, allPurposes.length - PURPOSE_OPTION_CAP),
+    extraKeys: [...new Set(recs.flatMap(r => Object.keys(r.extra ?? {})))]
+      .filter(k => recs.some(r => r.extra?.[k] !== null && r.extra?.[k] !== undefined)).sort(),
+  };
+
   return (
     <>
       <div className="agency-head">
@@ -27,7 +51,7 @@ export default async function AgencyPage({ params }: { params: Promise<{ agency_
         <a className="btn" href={a.official_url} target="_blank" rel="noopener noreferrer">View official flight map ↗</a>
       </div>
       {a.notes && <div className="note">{a.notes}</div>}
-      <AgencyInteractive agencyId={agency_id} timezone={a.timezone} nowIso={now.toISOString()} />
+      <AgencyInteractive agencyId={agency_id} timezone={a.timezone} nowIso={now.toISOString()} initial={initial} />
     </>
   );
 }

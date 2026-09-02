@@ -92,6 +92,19 @@ export function normalizePurpose(p: string | null | undefined): string {
   return p && p.trim() ? p.trim() : 'Not stated';
 }
 
+/**
+ * How many purposes to offer in the agency page's filter. A select with several hundred
+ * options is a haystack, not a filter: SFPD alone publishes 435 distinct purpose strings
+ * because its older records are free text. The rest are reachable via the flight table's
+ * text search.
+ *
+ * This lives here rather than beside the component on purpose. Next turns every export of
+ * a 'use client' module into an opaque client reference, so a plain number exported from a
+ * client component reads as an object on the server — and `slice(0, thatObject)` silently
+ * returns an empty array rather than throwing.
+ */
+export const PURPOSE_OPTION_CAP = 20;
+
 export function purposeTop(recs: FlightRecord[], n: number): Bar[] {
   const c = new Map<string, number>();
   for (const r of recs) { const k = normalizePurpose(r.purpose); c.set(k, (c.get(k) ?? 0) + 1); }
