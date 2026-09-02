@@ -147,3 +147,32 @@ export function stats(recs: FlightRecord[], now: Date) {
     medianGapDays: medianPublishGapDays(recs),
   };
 }
+
+/**
+ * Whether an agency's published record is too thin to characterise its drone programme,
+ * and why. Returns null when the agency should be shown.
+ *
+ * This exists because a published count is not the same as a programme. Las Vegas
+ * Metropolitan Police Department published three flights to its Skydio dashboard on a
+ * single day in May 2026 and nothing since, while its real programme publishes elsewhere
+ * and flew at least 72 times in August alone. Showing "3 flights" for one of the largest
+ * departments in the country is not a small number — it is a false impression, and no
+ * caveat elsewhere on the site repairs it.
+ *
+ * The test is active days rather than flight count, because that is what separates a
+ * trial from a small programme. Every agency in the dataset with three or fewer flights
+ * flew them across one or two days; agencies with a handful of flights spread over five
+ * different days are genuinely small but real. A record that is entirely training and
+ * testing is excluded at any size, since it describes a pilot rather than operations.
+ */
+export const MIN_ACTIVE_DAYS = 3;
+const TESTISH = /\b(test|testing|training|demo|demonstration|trial|maintenance|calibrat|firmware|simulator|practice)\b/i;
+
+export function suppressionReason(recs: FlightRecord[]): string | null {
+  if (recs.length === 0) return 'no published flights';
+  const days = new Set(recs.map(r => r.flight_date_local).filter(Boolean)).size;
+  if (days < MIN_ACTIVE_DAYS) return `flights on only ${days} day${days === 1 ? '' : 's'}`;
+  const testish = recs.filter(r => TESTISH.test(`${r.purpose ?? ''} ${r.description ?? ''}`)).length;
+  if (testish === recs.length) return 'every published flight is testing or training';
+  return null;
+}

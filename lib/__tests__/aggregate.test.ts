@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { monthly, byWeekday, byHour, durationBins, purposeTop, stats, normalizePurpose, heatmapGrids, medianPublishGapDays } from '../aggregate';
+import { monthly, byWeekday, byHour, durationBins, purposeTop, stats, normalizePurpose, heatmapGrids, medianPublishGapDays, suppressionReason } from '../aggregate';
 import type { FlightRecord } from '@/pipeline/schema';
 
 const r = (o: Partial<FlightRecord>): FlightRecord => ({ agency_id: 'a', source_flight_id: Math.random().toString(36), takeoff_utc: null, flight_date_local: null, landing_utc: null, duration_min: null, purpose: null, description: null, case_number: null, extra: {}, data_quality: null, ...o });
@@ -83,5 +83,52 @@ describe('heatmapGrids', () => {
   });
   it('returns null when no record has a takeoff time', () => {
     expect(heatmapGrids([r({ flight_date_local: '2026-01-01' })], 'UTC')).toBeNull();
+  });
+});
+
+describe('suppressionReason', () => {
+  const f = (o: Partial<FlightRecord>): FlightRecord => ({
+    agency_id: 'a', source_flight_id: Math.random().toString(36), takeoff_utc: null,
+    flight_date_local: '2026-01-01', landing_utc: null, duration_min: 20, purpose: 'Call for Service',
+    description: null, case_number: null, extra: {}, data_quality: null, ...o,
+  });
+
+  it('suppresses an agency with no published flights', () => {
+    expect(suppressionReason([])).toBe('no published flights');
+  });
+
+  it('suppresses a one-day trial however many flights it holds', () => {
+    // Las Vegas Metro's real shape: several flights, all on one day, nothing since.
+    const recs = [1, 2, 3].map(() => f({ flight_date_local: '2026-05-27' }));
+    expect(suppressionReason(recs)).toBe('flights on only 1 day');
+  });
+
+  it('suppresses two active days, keeps three', () => {
+    const two = ['2026-01-01', '2026-01-02'].map(d => f({ flight_date_local: d }));
+    expect(suppressionReason(two)).toBe('flights on only 2 days');
+    const three = ['2026-01-01', '2026-01-02', '2026-01-03'].map(d => f({ flight_date_local: d }));
+    expect(suppressionReason(three)).toBeNull();
+  });
+
+  it('suppresses a record that is entirely testing or training, at any size', () => {
+    const recs = ['2026-01-01', '2026-02-01', '2026-03-01', '2026-04-01']
+      .map(d => f({ flight_date_local: d, purpose: 'Training' }));
+    expect(suppressionReason(recs)).toBe('every published flight is testing or training');
+  });
+
+  it('keeps a small but genuine programme spread across days', () => {
+    // A handful of real flights over several days is small, not unrepresentative.
+    const recs = ['2026-01-01', '2026-02-14', '2026-03-30', '2026-05-02', '2026-06-11']
+      .map(d => f({ flight_date_local: d, purpose: 'Missing Person' }));
+    expect(suppressionReason(recs)).toBeNull();
+  });
+
+  it('keeps a programme that merely includes training among real flights', () => {
+    const recs = [
+      f({ flight_date_local: '2026-01-01', purpose: 'Training' }),
+      f({ flight_date_local: '2026-02-01', purpose: 'Training' }),
+      f({ flight_date_local: '2026-03-01', purpose: 'Pursuit' }),
+    ];
+    expect(suppressionReason(recs)).toBeNull();
   });
 });

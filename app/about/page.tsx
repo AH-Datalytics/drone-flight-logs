@@ -1,4 +1,4 @@
-import { publicAgencies, loadManifest, loadRegistry } from '@/lib/data';
+import { publicAgencies, loadManifest, loadRegistry, suppressedAgencies } from '@/lib/data';
 import { fmtDate, fmtInt } from '@/lib/format';
 import StatRow from '@/components/StatRow';
 
@@ -8,6 +8,7 @@ export default function About() {
   const m = loadManifest();
   const served = publicAgencies();
   const all = loadRegistry().agencies;
+  const hidden = suppressedAgencies();
   const bySource = (s: string) => served.filter(a => a.source === s).length;
   const byStatus = (s: string) => served.filter(a => a.status === s).length;
   const flights = served.reduce((t, a) => t + (a.flight_count || 0), 0);
@@ -79,6 +80,18 @@ export default function About() {
           No national totals or national trends. Aggregate counts across agencies mostly reflect when
           each agency started publishing rather than how much anyone flies, so a rising national line
           would say more about dashboard adoption than about drones.
+        </li>
+        <li>
+          <strong>{hidden.length} agencies are collected but not shown</strong>, because their published
+          record is too thin to describe a drone programme: flights on fewer than three separate days,
+          or a record that is entirely testing and training. Together they account for{' '}
+          {fmtInt(hidden.reduce((t, h) => t + (h.agency.flight_count || 0), 0))} flights, about a tenth
+          of one percent of the data.
+          {' '}This matters more than the numbers suggest. Las Vegas Metropolitan Police Department
+          published three flights on a single day and nothing since, while its actual programme
+          publishes on a different platform entirely and flew at least 72 times in one recent month.
+          Showing &ldquo;3 flights&rdquo; for a department that size would not be a small number; it would be a
+          false impression, and a caveat elsewhere on this page would not repair it.
         </li>
         <li>
           {all.length - served.length} further dashboards have been discovered but are not shown, because
