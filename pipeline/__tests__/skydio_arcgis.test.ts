@@ -49,6 +49,13 @@ describe('fetchAllFeatures', () => {
   it('rejects rather than silently returning zero rows when the response is null', async () => {
     await expect(fetchAllFeatures(async () => null, featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
   });
+  it('rejects a response that omits features entirely, distinct from a genuinely empty page', async () => {
+    await expect(fetchAllFeatures(async () => ({}), featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
+  });
+  it('resolves to an empty array when the service reports zero flights', async () => {
+    const rows = await fetchAllFeatures(async () => ({ features: [] }), featureLayerUrl(ORG));
+    expect(rows).toEqual([]);
+  });
 });
 
 describe('discoverSkydioDashboards', () => {
