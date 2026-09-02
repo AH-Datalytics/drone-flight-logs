@@ -1,0 +1,377 @@
+[
+ {
+  "host": "community.alameda-county.ca.us.aerodome.com",
+  "name": "ALAMEDA COUNTY SO",
+  "flights": null
+ },
+ {
+  "host": "community.alhambra.ca.us.aerodome.com",
+  "name": "ALHAMBRA PD",
+  "flights": null
+ },
+ {
+  "host": "community.aspen.co.us.aerodome.com",
+  "name": "ASPEN PD",
+  "flights": null
+ },
+ {
+  "host": "community.aurora.co.us.aerodome.com",
+  "name": "AURORA PD",
+  "flights": null
+ },
+ {
+  "host": "community.azusa.ca.us.aerodome.com",
+  "name": "AZUSA PD",
+  "flights": null
+ },
+ {
+  "host": "community.berkeley.il.us.aerodome.com",
+  "name": "BERKELEY PD",
+  "flights": null
+ },
+ {
+  "host": "community.boynton-beach.fl.us.aerodome.com",
+  "name": "BOYNTON BEACH PD",
+  "flights": null
+ },
+ {
+  "host": "community.breck.co.us.aerodome.com",
+  "name": "BRECK PD",
+  "flights": null
+ },
+ {
+  "host": "community.buena-park.ca.us.aerodome.com",
+  "name": "BUENA PARK PD",
+  "flights": null
+ },
+ {
+  "host": "community.casa-grande.az.us.aerodome.com",
+  "name": "CASA GRANDE PD",
+  "flights": null
+ },
+ {
+  "host": "community.castle-rock.co.us.aerodome.com",
+  "name": "CASTLE ROCK PD",
+  "flights": null
+ },
+ {
+  "host": "community.cobb-county.ga.us.aerodome.com",
+  "name": "COBB COUNTY PD",
+  "flights": null
+ },
+ {
+  "host": "community.colony.tx.us.aerodome.com",
+  "name": "COLONY PD",
+  "flights": null
+ },
+ {
+  "host": "community.conyers.ga.us.aerodome.com",
+  "name": "CONYERS PD",
+  "flights": null
+ },
+ {
+  "host": "community.copper.co.us.aerodome.com",
+  "name": "COPPER MOUNTAIN PD",
+  "flights": null
+ },
+ {
+  "host": "community.cottonwood.az.us.aerodome.com",
+  "name": "COTTONWOOD PD",
+  "flights": null
+ },
+ {
+  "host": "community.dekalb.ga.us.aerodome.com",
+  "name": "DEKALB COUNTY PD",
+  "flights": null
+ },
+ {
+  "host": "community.denver.co.us.aerodome.com",
+  "name": "DENVER PD",
+  "flights": null
+ },
+ {
+  "host": "community.dunwoody.ga.us.aerodome.com",
+  "name": "DUNWOODY PD",
+  "flights": null
+ },
+ {
+  "host": "community.durango.co.us.aerodome.com",
+  "name": "DURANGO PD",
+  "flights": null
+ },
+ {
+  "host": "community.dutchess.ny.us.aerodome.com",
+  "name": "DUTCHESS SO",
+  "flights": null
+ },
+ {
+  "host": "community.edinburg.tx.us.aerodome.com",
+  "name": "EDINBURG PD",
+  "flights": null
+ },
+ {
+  "host": "community.el-segundo.ca.us.aerodome.com",
+  "name": "EL SEGUNDO PD",
+  "flights": null
+ },
+ {
+  "host": "community.elizabethtown.ky.us.aerodome.com",
+  "name": "ELIZABETHTOWN PD",
+  "flights": null
+ },
+ {
+  "host": "community.elk-grove.ca.us.aerodome.com",
+  "name": "ELK GROVE PD",
+  "flights": null
+ },
+ {
+  "host": "community.elm-ridge.tx.us.aerodome.com",
+  "name": "ELM RIDGE PD",
+  "flights": null
+ },
+ {
+  "host": "community.emporia.va.us.aerodome.com",
+  "name": "EMPORIA, PD",
+  "flights": null
+ },
+ {
+  "host": "community.everett.wa.us.aerodome.com",
+  "name": "EVERETT PD",
+  "flights": null
+ },
+ {
+  "host": "community.farmers-branch.tx.us.aerodome.com",
+  "name": "FARMERS BRANCH PD",
+  "flights": null
+ },
+ {
+  "host": "community.fort-worth.tx.us.aerodome.com",
+  "name": "FORT WORTH PD",
+  "flights": null
+ },
+ {
+  "host": "community.franklin-somerset.nj.us.aerodome.com",
+  "name": "FRANKLIN TOWNSHIP PD",
+  "flights": null
+ },
+ {
+  "host": "community.fulton-county.ga.us.aerodome.com",
+  "name": "FULTON COUNTY SO",
+  "flights": null
+ },
+ {
+  "host": "community.galveston.tx.us.aerodome.com",
+  "name": "GALVESTON PD",
+  "flights": null
+ },
+ {
+  "host": "community.georgia-tech.ga.us.aerodome.com",
+  "name": "GEORGIA TECH PD",
+  "flights": null
+ },
+ {
+  "host": "community.gilbert.az.us.aerodome.com",
+  "name": "GILBERT PD",
+  "flights": null
+ },
+ {
+  "host": "community.hamilton.in.us.aerodome.com",
+  "name": "HAMILTON COUNTY SO",
+  "flights": null
+ },
+ {
+  "host": "community.harvey.il.us.aerodome.com",
+  "name": "HARVEY PD",
+  "flights": null
+ },
+ {
+  "host": "community.hawthorne.ca.us.aerodome.com",
+  "name": "HAWTHORNE PD",
+  "flights": null
+ },
+ {
+  "host": "community.hemet.ca.us.aerodome.com",
+  "name": "HEMET PD",
+  "flights": null
+ },
+ {
+  "host": "community.hempstead.ny.us.aerodome.com",
+  "name": "HEMPSTEAD PD",
+  "flights": null
+ },
+ {
+  "host": "community.humble.tx.us.aerodome.com",
+  "name": "HUMBLE PD",
+  "flights": null
+ },
+ {
+  "host": "community.keystone.co.us.aerodome.com",
+  "name": "KEYSTONE PD",
+  "flights": null
+ },
+ {
+  "host": "community.las-cruces.nm.us.aerodome.com",
+  "name": "LAS CRUCES PD",
+  "flights": null
+ },
+ {
+  "host": "community.longmont.co.us.aerodome.com",
+  "name": "LONGMONT PD",
+  "flights": null
+ },
+ {
+  "host": "community.los-angeles.ca.us.aerodome.com",
+  "name": "LOS ANGELES PD",
+  "flights": null
+ },
+ {
+  "host": "community.loveland.co.us.aerodome.com",
+  "name": "LOVELAND PD",
+  "flights": null
+ },
+ {
+  "host": "community.mansfield.tx.us.aerodome.com",
+  "name": "MANSFIELD TX PD",
+  "flights": null
+ },
+ {
+  "host": "community.mesa.az.us.aerodome.com",
+  "name": "MESA PD",
+  "flights": null
+ },
+ {
+  "host": "community.midwest.ok.us.aerodome.com",
+  "name": "MIDWEST CITY PD",
+  "flights": null
+ },
+ {
+  "host": "community.monarch.co.us.aerodome.com",
+  "name": "MONARCH PD",
+  "flights": null
+ },
+ {
+  "host": "community.mooresville.nc.us.aerodome.com",
+  "name": "MOORESVILLE PD",
+  "flights": null
+ },
+ {
+  "host": "community.oak-brook.il.us.aerodome.com",
+  "name": "OAK BROOK PD",
+  "flights": null
+ },
+ {
+  "host": "community.peoria.az.us.aerodome.com",
+  "name": "PEORIA PD",
+  "flights": null
+ },
+ {
+  "host": "community.perth-amboy.nj.us.aerodome.com",
+  "name": "PERTH AMBOY",
+  "flights": null
+ },
+ {
+  "host": "community.prosper.tx.us.aerodome.com",
+  "name": "PROSPER PD",
+  "flights": null
+ },
+ {
+  "host": "community.raleigh.nc.us.aerodome.com",
+  "name": "RALEIGH PD",
+  "flights": null
+ },
+ {
+  "host": "community.rbpd.ca.us.aerodome.com",
+  "name": "REDONDO BEACH PD",
+  "flights": null
+ },
+ {
+  "host": "community.riverside-county.ca.us.aerodome.com",
+  "name": "RIVERSIDE COUNTY SO",
+  "flights": null
+ },
+ {
+  "host": "community.roanoke.tx.us.aerodome.com",
+  "name": "ROANOKE PD",
+  "flights": null
+ },
+ {
+  "host": "community.san-angelo.tx.us.aerodome.com",
+  "name": "SAN ANGELO, TX PD",
+  "flights": null
+ },
+ {
+  "host": "community.san-rafael.ca.us.aerodome.com",
+  "name": "SAN RAFAEL PD",
+  "flights": null
+ },
+ {
+  "host": "community.sansom-park.tx.us.aerodome.com",
+  "name": "SANSOM PARK PD",
+  "flights": null
+ },
+ {
+  "host": "community.scottsdale.az.us.aerodome.com",
+  "name": "SCOTTSDALE PD",
+  "flights": null
+ },
+ {
+  "host": "community.show-low.az.us.aerodome.com",
+  "name": "SHOW LOW PD",
+  "flights": null
+ },
+ {
+  "host": "community.south-bend.in.us.aerodome.com",
+  "name": "SOUTH BEND PD",
+  "flights": null
+ },
+ {
+  "host": "community.southern-illinois-university.il.us.aerodome.com",
+  "name": "SOUTHERN ILLINOIS UNIVERSITY PD",
+  "flights": null
+ },
+ {
+  "host": "community.southington.ct.us.aerodome.com",
+  "name": "SOUTHINGTON PD",
+  "flights": null
+ },
+ {
+  "host": "community.steamboat.co.us.aerodome.com",
+  "name": "STEAMBOAT PD",
+  "flights": null
+ },
+ {
+  "host": "community.suisun-city.ca.us.aerodome.com",
+  "name": "SUISUN CITY PD",
+  "flights": null
+ },
+ {
+  "host": "community.telluride.co.us.aerodome.com",
+  "name": "TELLURIDE",
+  "flights": null
+ },
+ {
+  "host": "community.temple.tx.us.aerodome.com",
+  "name": "TEMPLE PD",
+  "flights": null
+ },
+ {
+  "host": "community.toledo.oh.us.aerodome.com",
+  "name": "TOLEDO PD",
+  "flights": null
+ },
+ {
+  "host": "community.university-st-thomas.tx.us.aerodome.com",
+  "name": "UNIVERSITY ST. THOMAS PD",
+  "flights": null
+ },
+ {
+  "host": "community.vail.co.us.aerodome.com",
+  "name": "MMOZOL",
+  "flights": null
+ },
+ {
+  "host": "community.washoe-county.nv.us.aerodome.com",
+  "name": "WASHOE COUNTY SO",
+  "flights": null
+ }
+]
