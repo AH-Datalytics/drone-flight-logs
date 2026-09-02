@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadRegistry } from './registry.js';
+import { loadRegistry, type Registry } from './registry.js';
 import { COLUMNS, decodeFlightFile, type FlightFile } from './flightfile.js';
 import { validateRecord } from './schema.js';
 
@@ -11,9 +11,18 @@ const SOURCES = new Set(['skydio_arcgis', 'sfpd_datasf']);
 
 export function validateDataDir(dataDir: string): string[] {
   const p: string[] = [];
-  const reg = loadRegistry(join(dataDir, 'registry.json'));
+  let reg: Registry;
+  try {
+    reg = loadRegistry(join(dataDir, 'registry.json'));
+  } catch (e) {
+    p.push(`registry.json: unparsable JSON (${(e as Error).message})`);
+    return p;
+  }
+  if (!Array.isArray(reg.agencies)) {
+    p.push('registry.json: agencies must be an array');
+    return p;
+  }
   const ids = new Set<string>();
-  const expectFiles = new Set<string>();
   for (const a of reg.agencies) {
     const tag = `registry ${a.agency_id || '(no id)'}`;
     if (!a.agency_id || !/^[a-z0-9-]+$/.test(a.agency_id)) p.push(`${tag}: agency_id must be a lowercase slug`);
@@ -25,7 +34,6 @@ export function validateDataDir(dataDir: string): string[] {
     if (!a.timezone) p.push(`${tag}: timezone required`);
     if (!a.official_url) p.push(`${tag}: official_url required`);
     if (a.status !== 'needs_review' && a.status !== 'retired') {
-      expectFiles.add(`${a.agency_id}.json`);
       if (!existsSync(join(dataDir, 'flights', `${a.agency_id}.json`))) p.push(`${tag}: missing flight file`);
     }
   }
@@ -36,11 +44,19 @@ export function validateDataDir(dataDir: string): string[] {
     const id = f.replace(/\.json$/, '');
     if (!ids.has(id)) { p.push(`${tag}: not in registry`); continue; }
     let file: FlightFile;
-    try { file = JSON.parse(readFileSync(join(flightsDir, f), 'utf8')); } catch (e) { p.push(`${tag}: unparsable JSON`); continue; }
+    try { file = JSON.parse(readFileSync(join(flightsDir, f), 'utf8')); } catch { p.push(`${tag}: unparsable JSON`); continue; }
     if (file.agency_id !== id) p.push(`${tag}: agency_id ${file.agency_id} does not match filename`);
     if (JSON.stringify(file.columns) !== JSON.stringify(COLUMNS)) p.push(`${tag}: columns differ from COLUMNS`);
+    if (!Array.isArray(file.rows)) { p.push(`${tag}: rows must be an array`); continue; }
+    let records: ReturnType<typeof decodeFlightFile>;
+    try {
+      records = decodeFlightFile(file);
+    } catch (e) {
+      p.push(`${tag}: failed to decode (${(e as Error).message})`);
+      continue;
+    }
     const seen = new Set<string>();
-    decodeFlightFile(file).forEach((r, i) => {
+    records.forEach((r, i) => {
       const probs = validateRecord(r);
       if (probs.length) p.push(`${tag} row ${i} (${id}): ${probs.join('; ')}`);
       if (seen.has(r.source_flight_id)) p.push(`${tag} (${id}): duplicate source_flight_id ${r.source_flight_id}`);
