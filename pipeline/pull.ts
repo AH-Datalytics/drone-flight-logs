@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import type { FetchJson } from './http.js';
 import { fetchJson as realFetchJson } from './http.js';
 import { loadRegistry, saveRegistry, loadExcluded, mergeDiscovered, type Registry, type RegistryAgency, type Status, type DiscoveredDashboard } from './registry.js';
-import { encodeFlightFile, summarize, type FlightFile } from './flightfile.js';
+import { encodeFlightFile, summarize } from './flightfile.js';
 import { validateRecord } from './schema.js';
 import type { Adapter } from './adapters/types.js';
 import { skydioAdapter, discoverSkydioDashboards } from './adapters/skydio_arcgis.js';
@@ -26,9 +26,15 @@ export type RunOpts = {
   log?: (line: string) => void;
 };
 
+// Distinguishes "no previous file" (0, legitimate for a brand-new agency) from
+// "previous file exists but is corrupt/unreadable" (throws — must never be
+// silently treated as zero, or a truncated/corrupt file would defeat the
+// zero-row guard below and get overwritten with an empty one).
 function previousRows(path: string): number {
   if (!existsSync(path)) return 0;
-  try { return (JSON.parse(readFileSync(path, 'utf8')) as FlightFile).rows.length; } catch { return 0; }
+  const parsed = JSON.parse(readFileSync(path, 'utf8')) as { rows?: unknown };
+  if (!Array.isArray(parsed?.rows)) throw new Error(`previous flight file is corrupt: no rows array in ${path}`);
+  return parsed.rows.length;
 }
 
 function daysBetween(a: string, b: Date): number {
@@ -37,9 +43,10 @@ function daysBetween(a: string, b: Date): number {
 
 async function pullOne(a: RegistryAgency, opts: RunOpts, flightsDir: string): Promise<Manifest['agencies'][string]> {
   const path = join(flightsDir, `${a.agency_id}.json`);
-  const prev = previousRows(path);
+  let prev = 0;
   const adapter = opts.adapters[a.source];
   try {
+    prev = previousRows(path);
     if (!adapter) throw new Error(`no adapter for source ${a.source}`);
     const records = await adapter.pull(a, opts.fetchJson);
     const bad = records.map(validateRecord).filter(p => p.length);

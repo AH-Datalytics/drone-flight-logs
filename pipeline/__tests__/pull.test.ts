@@ -95,4 +95,28 @@ describe('runPull', () => {
     const reg = JSON.parse(readFileSync(join(dir, 'registry.json'), 'utf8'));
     expect(reg.agencies.find((a: any) => a.agency_id === 'newville-pd-wa').status).toBe('needs_review');
   });
+
+  it('rejects invalid records, leaves the previous file untouched, and reports the validation error', async () => {
+    const dir = setup([agency('bad-pd')]);
+    const prev = JSON.stringify(encodeFlightFile('bad-pd', [rec('old', 'bad-pd', '2026-08-01')]));
+    writeFileSync(join(dir, 'flights', 'bad-pd.json'), prev);
+    const badRecord = { ...rec('1', 'bad-pd', '2026-08-30'), source_flight_id: '' };
+    const m = await runPull({ dataDir: dir, now: NOW, fetchJson: async () => ({}), adapters: { skydio_arcgis: fakeAdapter(async () => [badRecord]) }, discover: noDiscover, doDiscover: false, log: () => {} });
+    expect(readFileSync(join(dir, 'flights', 'bad-pd.json'), 'utf8')).toBe(prev);
+    const reg = JSON.parse(readFileSync(join(dir, 'registry.json'), 'utf8'));
+    expect(reg.agencies[0].status).toBe('unreachable');
+    expect(m.agencies['bad-pd'].status).toBe('unreachable');
+    expect(m.agencies['bad-pd'].error).toMatch(/source_flight_id/);
+  });
+
+  it('preserves a corrupt previous file rather than treating it as a brand-new agency', async () => {
+    const dir = setup([agency('corrupt-pd')]);
+    const corrupt = '{not valid json';
+    writeFileSync(join(dir, 'flights', 'corrupt-pd.json'), corrupt);
+    const m = await runPull({ dataDir: dir, now: NOW, fetchJson: async () => ({}), adapters: { skydio_arcgis: fakeAdapter(async () => []) }, discover: noDiscover, doDiscover: false, log: () => {} });
+    expect(readFileSync(join(dir, 'flights', 'corrupt-pd.json'), 'utf8')).toBe(corrupt);
+    const reg = JSON.parse(readFileSync(join(dir, 'registry.json'), 'utf8'));
+    expect(reg.agencies[0].status).toBe('unreachable');
+    expect(m.agencies['corrupt-pd'].status).toBe('unreachable');
+  });
 });
