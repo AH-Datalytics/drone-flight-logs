@@ -48,7 +48,10 @@ export async function fetchAllFeatures(fetchJson: FetchJson, layerUrl: string): 
     const url = `${layerUrl}/query?where=1%3D1&outFields=*&returnGeometry=false&orderByFields=${encodeURIComponent('takeoff ASC,ObjectId ASC')}&resultOffset=${offset}&resultRecordCount=${PAGE}&f=json`;
     const j = await fetchJson(url);
     if (j?.error) throw new Error(`ArcGIS error from ${layerUrl}: ${JSON.stringify(j.error)}`);
-    const feats: Array<{ attributes: SkydioAttributes }> = j?.features ?? [];
+    if (typeof j !== 'object' || j === null || ('features' in j && !Array.isArray(j.features))) {
+      throw new Error(`ArcGIS error from ${layerUrl}: malformed response ${JSON.stringify(j)}`);
+    }
+    const feats: Array<{ attributes: SkydioAttributes }> = j.features ?? [];
     for (const f of feats) out.push(f.attributes);
     if (feats.length < PAGE) break;
     offset += feats.length;

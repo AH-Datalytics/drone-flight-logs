@@ -46,6 +46,9 @@ describe('fetchAllFeatures', () => {
     expect(urls[1]).toContain('resultOffset=1000&');
     await expect(fetchAllFeatures(async () => ({ error: { code: 400, message: 'bad' } }), featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
   });
+  it('rejects rather than silently returning zero rows when the response is null', async () => {
+    await expect(fetchAllFeatures(async () => null, featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
+  });
 });
 
 describe('discoverSkydioDashboards', () => {
@@ -62,6 +65,25 @@ describe('discoverSkydioDashboards', () => {
     expect(d).toEqual([
       { item_id: '81fc8f0745944ddfbf773850cf28eca8', title: 'Milwaukee Police Department', org_uuid: ORG, modified: MOD },
       { item_id: '46c00955a6a34935879f71a87f5934e0', title: '[TEMPLATE] Skydio Transparency Dashboard', org_uuid: null, modified: MOD },
+    ]);
+  });
+});
+
+describe('discoverSkydioDashboards direct-URL shortcut', () => {
+  it('resolves org_uuid from a feature-service URL embedded directly in the dashboard payload, without ever fetching a web map', async () => {
+    const DIRECT_ITEM = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+    const DIRECT_ORG = 'c1a2b3c4-d5e6-47f8-a9b0-c1d2e3f4a5b6';
+    const search = { total: 1, start: 1, num: 100, nextStart: -1, results: [
+      { id: DIRECT_ITEM, title: 'Direct PD', type: 'Dashboard', access: 'public', modified: 1756300000000 },
+    ] };
+    const fj = async (u: string) => {
+      if (u.includes('/sharing/rest/search')) return search;
+      if (u.includes(`/items/${DIRECT_ITEM}/data`)) return fx('arcgis_dashboard_data_direct.json');
+      throw new Error('unexpected ' + u); // any web-map item fetch lands here and fails the test
+    };
+    const d = await discoverSkydioDashboards(fj);
+    expect(d).toEqual([
+      { item_id: DIRECT_ITEM, title: 'Direct PD', org_uuid: DIRECT_ORG, modified: new Date(1756300000000).toISOString() },
     ]);
   });
 });

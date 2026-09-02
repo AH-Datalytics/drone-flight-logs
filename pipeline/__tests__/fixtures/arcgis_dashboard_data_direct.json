@@ -1,0 +1,1 @@
+{ "version": 30, "widgets": [ { "type": "mapWidget", "datasource": { "url": "https://services7.arcgis.com/mnhQTdIYDA7UoY2l/arcgis/rest/services/c1a2b3c4-d5e6-47f8-a9b0-c1d2e3f4a5b6-production/FeatureServer/0" } } ] }
