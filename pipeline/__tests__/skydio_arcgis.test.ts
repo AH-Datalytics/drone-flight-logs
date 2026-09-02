@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -73,6 +73,33 @@ describe('discoverSkydioDashboards', () => {
       { item_id: '81fc8f0745944ddfbf773850cf28eca8', title: 'Milwaukee Police Department', org_uuid: ORG, modified: MOD },
       { item_id: '46c00955a6a34935879f71a87f5934e0', title: '[TEMPLATE] Skydio Transparency Dashboard', org_uuid: null, modified: MOD },
     ]);
+  });
+});
+
+describe('discoverSkydioDashboards item resolution isolation', () => {
+  it('records org_uuid: null for an item whose resolution throws, without aborting the rest of discovery', async () => {
+    const BAD_ITEM = 'c46f310a21a44968a55418aacedf1581';
+    const search = { total: 2, start: 1, num: 100, nextStart: -1, results: [
+      { id: '81fc8f0745944ddfbf773850cf28eca8', title: 'Milwaukee Police Department', type: 'Dashboard', access: 'public', modified: 1756300000000 },
+      { id: BAD_ITEM, title: 'FlightsDashboard', type: 'Dashboard', access: 'public', modified: 1756300000000 },
+    ] };
+    const fj = async (u: string) => {
+      if (u.includes('/sharing/rest/search')) return search;
+      if (u.includes('/items/81fc8f0745944ddfbf773850cf28eca8/data')) return fx('arcgis_dashboard_data.json');
+      if (u.includes('/items/978dcbe2ba40406aa545ba2abc25bc5f?')) return fx('arcgis_webmap_item.json');
+      if (u.includes(`/items/${BAD_ITEM}/data`)) throw new Error(`Unparsable JSON from ${u}: `);
+      throw new Error('unexpected ' + u);
+    };
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const d = await discoverSkydioDashboards(fj);
+    const MOD = new Date(1756300000000).toISOString();
+    expect(d).toEqual([
+      { item_id: '81fc8f0745944ddfbf773850cf28eca8', title: 'Milwaukee Police Department', org_uuid: ORG, modified: MOD },
+      { item_id: BAD_ITEM, title: 'FlightsDashboard', org_uuid: null, modified: MOD },
+    ]);
+    expect(warn).toHaveBeenCalled();
+    expect(warn.mock.calls.flat().join(' ')).toMatch(new RegExp(BAD_ITEM));
+    warn.mockRestore();
   });
 });
 

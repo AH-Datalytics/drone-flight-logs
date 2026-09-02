@@ -85,8 +85,20 @@ export async function discoverSkydioDashboards(fetchJson: FetchJson): Promise<Di
     start = j.nextStart;
   }
   const out: DiscoveredDashboard[] = [];
+  const unresolved: Array<{ item_id: string; title: string; error: string }> = [];
   for (const it of items) {
-    out.push({ item_id: it.id, title: it.title.trim(), org_uuid: await resolveOrgUuid(fetchJson, it.id), modified: new Date(it.modified).toISOString() });
+    let orgUuid: string | null;
+    try {
+      orgUuid = await resolveOrgUuid(fetchJson, it.id);
+    } catch (e) {
+      orgUuid = null;
+      unresolved.push({ item_id: it.id, title: it.title.trim(), error: e instanceof Error ? e.message : String(e) });
+    }
+    out.push({ item_id: it.id, title: it.title.trim(), org_uuid: orgUuid, modified: new Date(it.modified).toISOString() });
+  }
+  if (unresolved.length) {
+    console.warn(`discoverSkydioDashboards: ${unresolved.length} item(s) failed org_uuid resolution and were recorded as unresolved (org_uuid: null):`);
+    for (const u of unresolved) console.warn(`  - ${u.item_id} "${u.title}": ${u.error}`);
   }
   return out;
 }
