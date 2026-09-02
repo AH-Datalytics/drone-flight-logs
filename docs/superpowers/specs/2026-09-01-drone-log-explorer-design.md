@@ -43,7 +43,7 @@ Every source adapter produces records in this one shape. Fields marked optional 
 | `description` | string or null | Free text, verbatim |
 | `case_number` | string or null | CAD / item / event number, verbatim |
 | `extra` | object | Source-specific fields worth keeping (e.g. SFPD `analysis_neighborhood`, `supervisor_district`). Displayed as additional table columns when present |
-| `data_quality` | string or null | Null when clean. Otherwise a short code such as `missing_takeoff` or `missing_landing`, so flawed records stay visible instead of being dropped |
+| `data_quality` | string or null | Null when clean. Otherwise a short code such as `missing_takeoff` or `missing_landing`, so flawed records stay visible instead of being dropped. **A field that is null for every record of a source by design is a source-level caveat, not a per-record flaw** — it belongs in the agency's `notes`, and `data_quality` stays null. Flagging 100% of a source would paint an honest publisher as suspect. |
 
 Excluded deliberately: geometry, pilot identity, vehicle and dock serials. Skydio's public services already null the identity fields; the adapter drops them regardless so a future change on Skydio's side cannot leak them onto this site.
 
@@ -118,6 +118,7 @@ A single command, `npm run pull`, run by a GitHub Actions workflow on a weekly s
 
 1. **Discover.** Re-scan the Skydio ArcGIS org. Any dashboard not in the registry or exclusion list is appended to the registry with `status: needs_review`. Any registry agency whose dashboard has disappeared gets `status: retired` (data retained).
 2. **Pull.** For each active agency, run its adapter. Concurrency 6. Per-agency failure after retries is logged, the agency's `status` becomes `unreachable`, and **its previous data file is kept unchanged.** One bad agency never blocks the run.
+   **Discovery and pulling must fail independently.** A failure in step 1 — including the circuit breaker firing — must not prevent already-known agencies from being pulled from the existing registry. Discovery is an enrichment step; the pull is the product. The run records the discovery failure, logs it loudly, pulls everything it already knows about, and exits non-zero.
 3. **Write.** One file per agency at `data/flights/<agency_id>.json`, as a header row plus array-of-arrays (compact, diff-friendly, gzips to roughly 1/8). Registry summary fields recomputed. A `data/manifest.json` records run time, per-agency row counts and statuses.
 4. **Validate.** Every record checked against the schema; a file with zero rows when the previous had rows is treated as a failure and the previous file kept.
 5. **Commit and push.** Only if something changed. Vercel is git-connected, so the push is the deploy.
