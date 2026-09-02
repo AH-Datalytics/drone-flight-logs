@@ -169,7 +169,8 @@
    "Los Angeles PD (Skydio)",
    "Redondo Beach PD (Motorola)"
   ],
-  "decision_needed": "headless collection (vendor actively blocks automation; ToS/robots unknown) vs directory-only vs ask Flock for feed"
+  "decision_needed": "headless collection (vendor actively blocks automation; ToS/robots unknown) vs directory-only vs ask Flock for feed",
+  "history": "ROLLING ~30 DAYS by default: Elk Grove on 2026-09-02 shows 2026-08-02..2026-09-02, 63 pages, ~498 flights. pageSize/per_page/limit/size ignored (8/page fixed). Date pickers exist; whether they reach earlier history not yet tested (UI-only). Accumulate semantics required, like CAPE."
  },
  "skydio_vanity_slugs_from_wayback": [
   "LAPD",
@@ -807,5 +808,6 @@
   "Reno PD DFR Transparency Dashboard (press; coming to city site)",
   "Santa Clara CA UAS deployment summary page",
   "DC MPD UAS page"
- ]
+ ],
+ "phase": "A+B complete 2026-09-02; awaiting decisions (Flock, ODOT scope) before Phase C/D"
 }
