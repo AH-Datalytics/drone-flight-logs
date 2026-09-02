@@ -1,5 +1,5 @@
 import type { RegistryAgency, OrgType } from '@/pipeline/registry';
-export type Row = Pick<RegistryAgency, 'agency_id' | 'display_name' | 'state' | 'org_type' | 'flight_count' | 'total_hours' | 'first_flight' | 'last_flight' | 'status'> & { days_since_last: number | null };
+export type Row = Pick<RegistryAgency, 'agency_id' | 'display_name' | 'state' | 'org_type' | 'flight_count' | 'total_hours' | 'first_flight' | 'last_flight' | 'status'> & { days_since_last: number | null; median_gap_days: number | null };
 export const PUBLIC_SAFETY = new Set<OrgType>(['law_enforcement', 'fire_ems', 'university', 'government_other']);
 
 export function filterAgencies(rows: Row[], q: string, publicSafetyOnly: boolean): Row[] {

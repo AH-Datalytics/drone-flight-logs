@@ -5,8 +5,8 @@
   --line: #e3e6ec; --line-2: #cdd2db; --line-strong: #0d1117;
   --accent: #0060df; --accent-fg: #ffffff; --accent-dim: #cfe0f8;
   --ok: #0a7d4a; --warn: #9a6100; --bad: #b3261e;
-  --mono: ui-monospace, "JetBrains Mono", "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: var(--font-mono), ui-monospace, "JetBrains Mono", "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  --sans: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -39,7 +39,14 @@ ul { max-width: 760px; color: var(--fg-2); }
 
 /* data tables: monospace numerals, hairline grid, sticky head */
 .num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
-table.data { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 12.5px; }
+/* The agency table's ten fixed-width columns don't fit a narrow viewport without either
+   truncating the agency name (unreadable) or squeezing everything (worse). A min-width
+   on the table -- bigger than the sum of its own fixed-pixel columns -- keeps every
+   column at a legible width and lets the wrapping .table-scroll div scroll horizontally
+   instead of the fixed-layout algorithm squeezing columns down to fit. */
+.table-scroll { overflow-x: auto; }
+table.data { width: 100%; min-width: 600px; table-layout: fixed; border-collapse: collapse; font-size: 12.5px; }
+table.data.agencies { min-width: 1180px; }
 table.data th, table.data td { padding: 5px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; }
 table.data th { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--line-strong); font: 500 11px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--fg-2); white-space: nowrap; cursor: pointer; user-select: none; }
 table.data th:hover { color: var(--accent); }
@@ -78,8 +85,15 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .btn.ghost:hover { background: var(--accent); color: var(--accent-fg); filter: none; }
 
 .note { border: 1px solid var(--line-2); border-left: 3px solid var(--accent); background: var(--bg-2); padding: 11px 15px; font-size: 13.5px; color: var(--fg-2); margin: 14px 0; }
-.charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 28px 36px; margin-top: 10px; }
+
+/* Each chart on the agency page gets its own full-width row, sized to what it needs,
+   rather than a fixed-column grid -- that was leaving an empty column at some widths
+   and squeezing the purpose chart's long labels. A compact chart (the duration
+   histogram) caps its own inner width via .chart-compact instead of sharing a track
+   with a neighbour. */
+.charts { display: flex; flex-direction: column; gap: 36px; margin-top: 10px; }
 .chart { min-width: 0; }
+.chart-compact .chart-inner { max-width: 640px; }
 .pager { display: flex; gap: 10px; align-items: center; font: 12px var(--mono); color: var(--fg-2); margin: 14px 0; }
 .pager button { font: inherit; text-transform: uppercase; letter-spacing: .06em; padding: 5px 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--fg); cursor: pointer; }
 .pager button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
@@ -87,3 +101,31 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .agency-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-top: 28px; }
 .agency-head .meta { color: var(--fg-2); font-size: 13.5px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .small { font: 12px var(--mono); color: var(--fg-3); }
+
+/* purpose filter: a select styled like the search inputs, plus an active-filter chip
+   with a one-click way back to the unfiltered page. */
+.filter-bar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 22px 0 4px; }
+.filter-bar label { font: 500 11px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--fg-3); }
+.filter-bar select { font: 14px var(--sans); padding: 9px 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--fg); min-width: 260px; }
+.filter-bar select:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: var(--accent); }
+.filter-chip { display: inline-flex; align-items: center; gap: 8px; font: 500 12px/1.4 var(--mono); padding: 5px 6px 5px 10px; border: 1px solid var(--accent); color: var(--fg); background: var(--accent-dim); }
+.filter-chip button { font: inherit; color: var(--fg); background: transparent; border: none; cursor: pointer; padding: 0 4px; text-decoration: underline; text-underline-offset: 2px; }
+.filter-chip button:hover { text-decoration-thickness: 2px; }
+
+/* weekday x hour heatmaps: plain CSS grid, cells kept square via aspect-ratio so the
+   shape reads correctly at any container width. Colour is a sequential ramp mixed from
+   the accent token toward the page background -- never a hardcoded hex -- so it tracks
+   light/dark automatically. */
+.heatmap-wrap { max-width: 980px; }
+.heatmap-hourlabels, .heatmap-row { display: grid; grid-template-columns: 40px repeat(24, 1fr); align-items: center; gap: 2px; }
+.heatmap-hourlabels { margin-bottom: 4px; }
+.heatmap-hourlabels span, .heatmap-rowlabel { font: 500 10px/1 var(--mono); color: var(--fg-3); text-align: center; }
+.heatmap-rowlabel { text-align: left; padding-right: 6px; }
+.heatmap-row { margin-bottom: 2px; }
+.heatcell { aspect-ratio: 1; background: color-mix(in srgb, var(--accent) var(--mix, 0%), var(--bg)); border: 1px solid var(--line); cursor: default; }
+.heatcell.empty { background: repeating-linear-gradient(135deg, var(--bg-2), var(--bg-2) 3px, var(--bg-3) 3px, var(--bg-3) 6px); }
+.heatmap-legend { display: flex; align-items: center; gap: 16px; margin-top: 14px; flex-wrap: wrap; }
+.heatmap-ramp { display: flex; align-items: center; gap: 6px; }
+.heatmap-ramp .swatch { width: 16px; height: 16px; border: 1px solid var(--line); background: color-mix(in srgb, var(--accent) var(--mix, 0%), var(--bg)); }
+.heatmap-ramp .swatch.empty { background: repeating-linear-gradient(135deg, var(--bg-2), var(--bg-2) 3px, var(--bg-3) 3px, var(--bg-3) 6px); }
+.heatmap-legend .lbl { font: 12px var(--mono); color: var(--fg-2); }

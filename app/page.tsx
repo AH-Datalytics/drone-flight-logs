@@ -1,13 +1,18 @@
 import AgencyTable from '@/components/AgencyTable';
 import StatRow from '@/components/StatRow';
-import { publicAgencies, loadManifest } from '@/lib/data';
+import { publicAgencies, loadManifest, loadFlights } from '@/lib/data';
 import { daysSince, fmtInt, fmtHours, fmtDate } from '@/lib/format';
+import { medianPublishGapDays } from '@/lib/aggregate';
 import type { Row } from '@/lib/table';
 
 export default function Home() {
   const m = loadManifest();
   const now = m.run_utc ? new Date(m.run_utc) : new Date();
-  const rows: Row[] = publicAgencies().map(a => ({ agency_id: a.agency_id, display_name: a.display_name, state: a.state, org_type: a.org_type, flight_count: a.flight_count, total_hours: a.total_hours, first_flight: a.first_flight, last_flight: a.last_flight, status: a.status, days_since_last: daysSince(a.last_flight, now) }));
+  const rows: Row[] = publicAgencies().map(a => ({
+    agency_id: a.agency_id, display_name: a.display_name, state: a.state, org_type: a.org_type, flight_count: a.flight_count, total_hours: a.total_hours,
+    first_flight: a.first_flight, last_flight: a.last_flight, status: a.status, days_since_last: daysSince(a.last_flight, now),
+    median_gap_days: medianPublishGapDays(loadFlights(a.agency_id)),
+  }));
 
   const totalFlights = rows.reduce((sum, r) => sum + r.flight_count, 0);
   const totalHours = rows.reduce((sum, r) => sum + r.total_hours, 0);

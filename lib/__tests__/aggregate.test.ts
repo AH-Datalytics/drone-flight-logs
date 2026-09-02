@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { monthly, byWeekday, byHour, durationBins, purposeTop, stats } from '../aggregate';
+import { monthly, byWeekday, byHour, durationBins, purposeTop, stats, normalizePurpose, heatmapGrids, medianPublishGapDays } from '../aggregate';
 import type { FlightRecord } from '@/pipeline/schema';
 
 const r = (o: Partial<FlightRecord>): FlightRecord => ({ agency_id: 'a', source_flight_id: Math.random().toString(36), takeoff_utc: null, flight_date_local: null, landing_utc: null, duration_min: null, purpose: null, description: null, case_number: null, extra: {}, data_quality: null, ...o });
@@ -43,7 +43,45 @@ describe('purposeTop', () => {
 describe('stats', () => {
   it('computes headline numbers', () => {
     const recs = [r({ flight_date_local: '2026-08-20', duration_min: 10, case_number: 'A' }), r({ flight_date_local: '2026-06-01', duration_min: 30 }), r({ flight_date_local: '2026-08-30', duration_min: 20, case_number: 'B' })];
-    expect(stats(recs, NOW)).toEqual({ flights: 3, hours: 1, medianMin: 20, last30: 2, daysSinceLast: 2, pctWithCase: 66.7 });
-    expect(stats([], NOW)).toEqual({ flights: 0, hours: 0, medianMin: null, last30: 0, daysSinceLast: null, pctWithCase: 0 });
+    expect(stats(recs, NOW)).toEqual({ flights: 3, hours: 1, medianMin: 20, last30: 2, daysSinceLast: 2, pctWithCase: 66.7, medianGapDays: 45 });
+    expect(stats([], NOW)).toEqual({ flights: 0, hours: 0, medianMin: null, last30: 0, daysSinceLast: null, pctWithCase: 0, medianGapDays: null });
+  });
+});
+describe('normalizePurpose', () => {
+  it('trims and labels blanks as Not stated', () => {
+    expect(normalizePurpose('  Patrol Support  ')).toBe('Patrol Support');
+    expect(normalizePurpose(null)).toBe('Not stated'); expect(normalizePurpose('   ')).toBe('Not stated');
+  });
+});
+describe('medianPublishGapDays', () => {
+  it('is the median gap between consecutive distinct published dates', () => {
+    expect(medianPublishGapDays([r({ flight_date_local: '2026-06-01' }), r({ flight_date_local: '2026-08-20' }), r({ flight_date_local: '2026-08-30' })])).toBe(45);
+    expect(medianPublishGapDays([r({ flight_date_local: '2026-01-01' }), r({ flight_date_local: '2026-01-05' }), r({ flight_date_local: '2026-01-15' })])).toBe(7);
+  });
+  it('ignores duplicate dates and needs at least two distinct dates', () => {
+    expect(medianPublishGapDays([r({ flight_date_local: '2026-01-01' }), r({ flight_date_local: '2026-01-01' })])).toBeNull();
+    expect(medianPublishGapDays([r({ flight_date_local: '2026-01-01' })])).toBeNull();
+    expect(medianPublishGapDays([])).toBeNull();
+  });
+});
+describe('heatmapGrids', () => {
+  it('buckets by local weekday and hour, and computes per-cell median duration', () => {
+    // 2026-08-31 is a Monday. Two flights same weekday+hour in Chicago time -> one count cell, median of durations.
+    const g = heatmapGrids([
+      r({ takeoff_utc: '2026-08-31T15:10:00.000Z', duration_min: 10 }), // 10:10 CDT Mon
+      r({ takeoff_utc: '2026-08-31T15:40:00.000Z', duration_min: 20 }), // 10:40 CDT Mon
+      r({ takeoff_utc: '2026-09-01T15:10:00.000Z', duration_min: 30 }), // Tue, no case_number relevance
+    ], 'America/Chicago')!;
+    expect(g.count[0][10]).toBe(2); // Mon, 10am
+    expect(g.medianMin[0][10]).toBe(20); // even count -> upper of the two (Math.floor(n/2) index)
+    expect(g.count[1][10]).toBe(1); // Tue, 10am
+    expect(g.medianMin[1][10]).toBe(30);
+    expect(g.medianMin[0][11]).toBeNull(); // no flights in that cell
+    expect(g.maxCount).toBe(2);
+    expect(g.maxMedian).toBe(30);
+    expect(g.count.length).toBe(7); expect(g.count[0].length).toBe(24);
+  });
+  it('returns null when no record has a takeoff time', () => {
+    expect(heatmapGrids([r({ flight_date_local: '2026-01-01' })], 'UTC')).toBeNull();
   });
 });
