@@ -187,7 +187,7 @@ Kept here so the adapter author does not rediscover it.
 
 - Skydio transparency dashboards are ArcGIS items in org `mnhQTdIYDA7UoY2l`, all `access: public`, 219 total on 2026-09-01, of which about 50 are Skydio-internal or demo orgs and 139 are external organizations with flight data.
 - The public feature services expose `user_email`, `vehicle_serial`, `dock_serial`, `operation_id` fields but every value is null across all 120k rows checked.
-- Feature service `maxRecordCount` is 2,000; `exceededTransferLimit` is unreliable with geometry, so paginate by count.
+- Feature service `maxRecordCount` is 2,000. **Pagination must be count-verified.** Fetch `returnCountOnly=true` first, page until the collected total reaches it or a page returns ZERO features, and fail loudly if the final count does not match. A short mid-stream page is legal — ArcGIS returns fewer rows than requested when it hits an internal time limit — so treating a short page as end-of-data silently truncates. This was not theoretical: it cut Cincinnati from 30,071 rows to 17,938 on the first live run, with no error anywhere.
 - About 0.1% of rows have a null/epoch-zero `takeoff`; about 0.4% have no geometry (irrelevant once geometry is dropped).
 - Vanity-page lookup: `POST https://api.skydio.com/graphql` with header `transparency-dashboard-path`; query `transparencyDashboardSettings { enabled vanityUrlPath dashboardUrl title organizationId }`. 24 slugs known; 6 of those have `enabled: false` while their ArcGIS dashboard remains public.
 - SFPD: 7,481 rows, 2024-05-16 to 2026-06-30 as of 2026-09-01; `reason_for_flight` was consolidated to a controlled list on 2025-09-01, earlier rows are free text.
