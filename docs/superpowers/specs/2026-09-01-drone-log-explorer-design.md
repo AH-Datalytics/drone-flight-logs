@@ -110,7 +110,22 @@ Note for the agency page: SFPD's log covers its whole fleet (DJI, Skydio, Flock 
 
 ### 5.3 Future sources
 
-Added only after a research pass produces an inventory of agencies publishing flight-level, machine-readable logs outside Skydio. Candidates to check: Chula Vista PD, Flock Safety / Aerodome customer transparency pages, Brinc, Axon. Sources that publish only aggregate counts or PDF annual reports (e.g. California AB 481 reports) are out of scope.
+Added only after a research pass produces an inventory of agencies publishing flight-level, machine-readable logs outside Skydio. Sources that publish only aggregate counts or PDF annual reports (e.g. California AB 481 reports) are out of scope.
+
+**AirData — the strongest known lead (investigated 2026-09-02, not yet built).** Chula Vista PD publishes at `https://app.airdata.com/u/cvpd`. Two reasons this is the highest-value next source:
+
+- **Its history is far deeper than ours.** Records run from **April 2021**, where most Skydio dashboards begin in 2024 or 2025. It would roughly double the time span the site covers.
+- **Chula Vista pioneered drone-as-first-responder in the United States.** Its absence from a national census of published drone flight logs is conspicuous.
+
+Fields visible on the page map cleanly onto the common record: date, time, case/incident number, location, and a summary that reads as the incident type. Duration is not among them, so `duration_min` would likely be null for this source — a source-level trait for `notes`, **not** a per-record `data_quality` code (see §4.1).
+
+What makes it work rather than a one-hour job: the page is a JavaScript application. The static HTML carries only a handful of table rows and the records arrive over XHR, and there is no export button, no documented API, and no visible index of other agencies on the platform. Finding the real endpoint needs the same approach that cracked Skydio's dashboards — drive the page in a headless browser, capture its network calls, and identify the request that returns records. Budget an hour for the investigation before committing to an adapter.
+
+Two questions the investigation must answer before any code is written:
+1. Is there an endpoint returning structured records, or is scraping rendered HTML the only route? The latter is far more brittle and changes the cost calculation.
+2. How many agencies publish through AirData? A `/u/<slug>` pattern suggests per-agency pages, but nothing observed so far enumerates them. If the answer is "one", this is a single-agency adapter; if it is "forty", it is the second major source.
+
+Also still worth checking: Flock Safety / Aerodome customer transparency pages, Brinc, and Axon.
 
 ## 6. Pipeline
 
