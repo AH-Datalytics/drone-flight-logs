@@ -1,0 +1,23 @@
+[
+ {
+  "name": "Drones - Edmonton Insight Community",
+  "domain": "data.edmonton.ca",
+  "id": "r7s9-vh96",
+  "link": "https://data.edmonton.ca/Surveys/Drones-Edmonton-Insight-Community/r7s9-vh96",
+  "desc": "This was one single topic among many as part of the August 2015 Mixed Topic survey. Test link to view these questions: h"
+ },
+ {
+  "name": "East Shepard Drone Testing Site Weather Station",
+  "domain": "data.calgary.ca",
+  "id": "wxym-gmjx",
+  "link": "https://data.calgary.ca/Environment/East-Shepard-Drone-Testing-Site-Weather-Station/wxym-gmjx",
+  "desc": "Dataset from 12 parameter weather station for drone testing site at east shepard *************************** Weather dat"
+ },
+ {
+  "name": "UAV Flight Log",
+  "domain": "data.bloomington.in.gov",
+  "id": "3a7f-6kb4",
+  "link": "https://data.bloomington.in.gov/Maps/UAV-Flight-Log/3a7f-6kb4",
+  "desc": "Unmanned Aerial Vehicle (UAV) flight data for flights conducted by the City of Bloomington, Indiana. This dataset is upd"
+ }
+]

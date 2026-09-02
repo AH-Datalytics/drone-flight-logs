@@ -1,0 +1,688 @@
+[
+ {
+  "name": "Multifamily Buildings for DroneSense",
+  "owner": "GIS@McKinney",
+  "org": "City of McKinney",
+  "rows": 1016,
+  "url": "https://services1.arcgis.com/B8MwidgHpU2dWUmv/arcgis/rest/services/MultifamilyBuildings/FeatureServer/0",
+  "id": "467f955b7c3442a7bad2277317ca0c85_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Police Drone Flights",
+  "owner": "gwetterow@CityBlm.org_CityBlm",
+  "org": "City of Bloomington, Illinois",
+  "rows": 458,
+  "url": "https://services3.arcgis.com/8EQ1HhogM827boPC/arcgis/rest/services/Police_Drone_Flights/FeatureServer/0",
+  "id": "f7a13e5b4e8e46feb0d16b95d0da9107_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "SC Drone Flights",
+  "owner": "Scott_County_IA_GIS",
+  "org": "Scott County Iowa",
+  "rows": 263,
+  "url": "https://services.arcgis.com/ovln19YRWV44nBqV/arcgis/rest/services/SC_Drone_Flights/FeatureServer/0",
+  "id": "485f96b80c7b423bb469601486dd1cde_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "UAS Flights Log points",
+  "owner": "CRodriguez@planning.lacounty.gov_lacounty",
+  "org": "County of Los Angeles",
+  "rows": 118,
+  "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/UAS_Flights_points/FeatureServer/0",
+  "id": "55f7586fece64e31be943092862d9da9_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Flood Drone Flight Paths",
+  "owner": "CityOfMoorheadMN",
+  "org": "City of Moorhead",
+  "rows": 55,
+  "url": "https://services.arcgis.com/t2tplTEKxuL7eSvF/arcgis/rest/services/Flood_Drone_Flight_Paths/FeatureServer/0",
+  "id": "5ad28dc9e6854125a63dfece9e74e2d9_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "UAS Mission Summaries ",
+  "owner": "publisher_BedfordVAGIS",
+  "org": "Bedford County GIS",
+  "rows": 47,
+  "url": "https://services3.arcgis.com/DXCmCcRcEQ793kMP/arcgis/rest/services/UAS_Program_Summary_Table/FeatureServer/0",
+  "id": "1c7aea6242e14d4c8d0914d59332feec_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Drone Projects",
+  "owner": "GTiravantiBeoutis_CHATTGIS",
+  "org": "City of Chattanooga",
+  "rows": 12,
+  "url": "https://services2.arcgis.com/OIAIimblRxPs0xxc/arcgis/rest/services/DroneProjects2/FeatureServer/0",
+  "id": "7c87aa306d954a379b4c26b5778db5db_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Drone Locations",
+  "owner": "aescholl_SCRPC",
+  "org": "Stark County Regional Planning Commission",
+  "rows": 9,
+  "url": "https://services3.arcgis.com/UrHoExVO3YKMIi6I/arcgis/rest/services/Drone_Locations/FeatureServer/0",
+  "id": "686c0254c4104aed8c3ccb8a5740b306_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Drone Imagery",
+  "owner": "jcarmichael@mariettaga.gov_cityofmarietta",
+  "org": "City of Marietta, GA",
+  "rows": 7,
+  "url": "https://gis.mariettaga.gov/imageserver/rest/services/Drone_Imagery/Drone_Imagery/ImageServer",
+  "id": "99454c9577a04696a8440fd869db85b1",
+  "type": "Image Service"
+ },
+ {
+  "name": "Drone Flights",
+  "owner": "isjames",
+  "org": "City of High Point, North Carolina, USA",
+  "rows": 6,
+  "url": "https://services1.arcgis.com/NP9XRUGtccDdwVYa/arcgis/rest/services/Drone_Flights/FeatureServer/0",
+  "id": "a1def8ea518147a0b10caeb260a20f04_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "City of Yuma Drone Flights view2",
+  "owner": "Deborah.Glogoff@yumaaz.gov_yuma",
+  "org": "City of Yuma, Arizona",
+  "rows": 5,
+  "url": "https://services1.arcgis.com/tzW2OKwR84ufoH3y/arcgis/rest/services/City_of_Yuma_Drone_Flights_2_view/FeatureServer/0",
+  "id": "cb1b2c3779644116ae1b1fc8d6aa75c3_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Citywide Drone Flights",
+  "owner": "205493_geospatialDenver",
+  "org": "geospatialDENVER: Putting Denver on the map.",
+  "id": "b93da5563d3e483c9ba1b05bc6dff6f6",
+  "type": "Web Map"
+ },
+ {
+  "name": "City of Yuma Drone Flights view",
+  "owner": "Deborah.Glogoff@yumaaz.gov_yuma",
+  "org": "City of Yuma, Arizona",
+  "rows": 0,
+  "url": "https://services1.arcgis.com/tzW2OKwR84ufoH3y/arcgis/rest/services/City_of_Yuma_Drone_Flights_view/FeatureServer/0",
+  "id": "3ae34c198ff54d38b19c7d36feeada7a_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Drone Flights",
+  "owner": "Fletcher",
+  "org": "Fletcher",
+  "url": "https://services2.arcgis.com/lfD49qylDsb6IIcE/arcgis/rest/services/Drone_Flights/FeatureServer",
+  "id": "652c0bc08b634990acb60019be18b3da",
+  "type": "Feature Service"
+ },
+ {
+  "name": "Crubier Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "ea32f26fbba4458c9dcd12bdaceda7a9",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Azimuth, Inc. Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "cf8880ca0f654cfeac6f2d402be880d8",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Nevada County Sheriff's Office Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "c414beda48c0421ba36d9a81b31a5a4a",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Tisbury MA Drone Flights May 14, 2020",
+  "owner": "mvdukes",
+  "org": "Dukes County, MA GIS",
+  "id": "212ad82ed7364f5994cb9849518a8531",
+  "type": "Web Map"
+ },
+ {
+  "name": "Lee County Government Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "efe67bb8531c4907b4b355403485e2fc",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Drone Flights",
+  "owner": "SJCity",
+  "org": "South Jordan City",
+  "id": "7a08ca3a6adc4ef980b737f645f66eb0",
+  "type": "Web Map"
+ },
+ {
+  "name": "Drone Flights",
+  "owner": "mkulickebrpd",
+  "org": "East Bay Regional Park District",
+  "url": "https://storymaps.arcgis.com/stories/5fbe91c03a564527875e3be291b274a5",
+  "id": "5fbe91c03a564527875e3be291b274a5",
+  "type": "StoryMap"
+ },
+ {
+  "name": "Drone Flights for Story Map",
+  "owner": "longze_nngov",
+  "org": "City of Newport News",
+  "id": "da54128e4c0347e7a63e76234e546938",
+  "type": "Web Map"
+ },
+ {
+  "name": "Drone Flights",
+  "owner": "jvalen@bendoregon.gov_bendoregon",
+  "org": "City of Bend, Oregon",
+  "id": "84d8728aa71540449ebe8c740a2b03fc",
+  "type": "Hub Page"
+ },
+ {
+  "name": "Drone Flights Map",
+  "owner": "mkulickebrpd",
+  "org": "East Bay Regional Park District",
+  "id": "8a032f8dc47842ee84c410524bba5873",
+  "type": "Web Map"
+ },
+ {
+  "name": "IT GIS Drone Unit Flights Layer",
+  "owner": "longze_nngov",
+  "org": "City of Newport News",
+  "url": "https://services6.arcgis.com/SiUAoHzWN11AIADA/arcgis/rest/services/Flights/FeatureServer",
+  "id": "5c37b5613ea543dcb8434669b79a2620",
+  "type": "Feature Service"
+ },
+ {
+  "name": "Drone Flights near an Anaerobic Digester in Randolph, VT",
+  "owner": "rgalus",
+  "org": "rgalus",
+  "rows": null,
+  "url": "https://uvm.maps.arcgis.com/apps/webappviewer/index.html?id=d57bae8b884c46b28000d6005964e9fb",
+  "id": "d57bae8b884c46b28000d6005964e9fb",
+  "type": "Web Mapping Application"
+ },
+ {
+  "name": "City of Yuma Drone Map (Public)",
+  "owner": "YumaAZ",
+  "org": "City of Yuma, Arizona",
+  "id": "aeaa153783a34622a699ea1f22e30194",
+  "type": "Web Map"
+ },
+ {
+  "name": "Drone Flights near an Anaerobic Digester in Randolph, VT",
+  "owner": "rgalus",
+  "org": "rgalus",
+  "rows": null,
+  "id": "89983bcf1cfa4301ae2c445ef45158a1",
+  "type": "Web Map"
+ },
+ {
+  "name": "Drone Flights",
+  "owner": "isjames",
+  "org": "City of High Point, North Carolina, USA",
+  "url": "https://highpoint.maps.arcgis.com/apps/webappviewer/index.html?id=63ea3c87a9fa4c599b66e01ce1321d29",
+  "id": "63ea3c87a9fa4c599b66e01ce1321d29",
+  "type": "Web Mapping Application"
+ },
+ {
+  "name": "Drone Flights",
+  "owner": "isjames",
+  "org": "City of High Point, North Carolina, USA",
+  "id": "dd7c5a31728a4e77a10139662c8983dc",
+  "type": "Web Map"
+ },
+ {
+  "name": "UAS Flight Log",
+  "owner": "egarding_sedonafire",
+  "org": "Sedona Fire District",
+  "rows": null,
+  "url": "https://services.arcgis.com/pFzi7bOdCZMDuqYB/arcgis/rest/services/service_4133e4c948bd44af8eb7a79b2e6cde59/FeatureServer/0",
+  "id": "31166d6ca6564e2aa79d0f78101a5f39_0",
+  "type": "Feature Layer"
+ },
+ {
+  "name": "Santa Clara County Sheriff's Office UAS Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "06fa738e00f84de6a9fa587a01ab159e",
+  "type": "Dashboard"
+ },
+ {
+  "name": "UAS Mission Map",
+  "owner": "publisher_BedfordVAGIS",
+  "org": "Bedford County GIS",
+  "id": "985b80646c65442f8dfefe7539431416",
+  "type": "Web Map"
+ },
+ {
+  "name": "UAS Drone Webpage Map",
+  "owner": "RaleighPRCR",
+  "org": "City of Raleigh",
+  "id": "eda41a5ac57a4713909df23be860039c",
+  "type": "Web Map"
+ },
+ {
+  "name": "Bedford GIS UAS Program Hub Site",
+  "owner": "publisher_BedfordVAGIS",
+  "org": "Bedford County GIS",
+  "url": "https://uas-bedfordvagis.hub.arcgis.com",
+  "id": "0722973d5de94707ab824d83d48ac8ea",
+  "type": "Hub Site Application"
+ },
+ {
+  "name": "DRP UAS Flight Log",
+  "owner": "CRodriguez@planning.lacounty.gov_lacounty",
+  "org": "County of Los Angeles",
+  "id": "076a66fa69d44025bb883c4ff6ecaccd",
+  "type": "Web Map"
+ },
+ {
+  "name": "Hampton Drone as First Responder",
+  "owner": "nperriello_CoHVA",
+  "org": "City of Hampton, VA",
+  "url": "https://storymaps.arcgis.com/stories/4f7cca2355f0479aa392897e07848afe",
+  "id": "4f7cca2355f0479aa392897e07848afe",
+  "type": "StoryMap"
+ },
+ {
+  "name": "Hampton Drone as First Responder (Shareable) ",
+  "owner": "nperriello_CoHVA",
+  "org": "City of Hampton, VA",
+  "url": "https://storymaps.arcgis.com/stories/8a631dad75ad4d8688bafc2f96612845",
+  "id": "8a631dad75ad4d8688bafc2f96612845",
+  "type": "StoryMap"
+ },
+ {
+  "name": "Drone as First Responder",
+  "owner": "Lkwdsoftwareservices",
+  "org": "City of Lakewood, Colorado",
+  "id": "75fb6a3bb50b4b38b0d4144e00c860e3",
+  "type": "Image"
+ },
+ {
+  "name": "Axon Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "c7819204066a4f71af6a5463be0f8b30",
+  "type": "Dashboard"
+ },
+ {
+  "name": "NYPD Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "f496a306cfe34ea2b5a46244a8e49edc",
+  "type": "Dashboard"
+ },
+ {
+  "name": "MLGW Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "1baaf00e2bd14cfc82e8e9df06d60cf4",
+  "type": "Dashboard"
+ },
+ {
+  "name": "JEA Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "d93918edbd9844dea5a830bd3fea2e85",
+  "type": "Dashboard"
+ },
+ {
+  "name": "[Paraverse] - CPSO Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "bdb09b679a414a61b451b05c7c3d8317",
+  "type": "Dashboard"
+ },
+ {
+  "name": "[Paraverse] DroneTag Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "cc5c9b7e5f9b476ba135e62aec4db28e",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Brumbaugh Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "a0584fc1b18c445984638aa839bd1ddf",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Boston PD Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "1f5e7b6f6daa426daab73a4225a5062e",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Hennepin EMS Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "65bd58e97fb44d15b05949d5b7ad6097",
+  "type": "Dashboard"
+ },
+ {
+  "name": "NOAA - Lakeland Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "8c84418547e54eaf97d77573c9756e5a",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Marvin A Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "51b2b090b0594a819d348a6774010b74",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Louisville Metro Government Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "e626c750dedc49e1ae572d103e188bb4",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - DFR Demo Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "82462e5ea2d64f0f855831126b92353b",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Skydio Training  Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "a8f0a4c0aa3e427c9fa25420f310e169",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Axon Air PSM Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "490bbd4e23aa4d2683c48a53b2a38e6d",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Miami PD - Org Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "bcb6529dfdff4a7093bc7feb91b435e0",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - NACHO CARNICERO Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "7c085801448a4d539afa0c0ab2ff8dfa",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Reading Enterprises Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "0a876aaee560472e81329e2fd8d0c382",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Ignacio Villanueva Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "796a69bbe4ce476d94abc6bdc08658de",
+  "type": "Dashboard"
+ },
+ {
+  "name": "JP-Kajima-Kanto Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "41ace93a98084961b762d01ad41c0ae6",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Duquesne Light Company Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "9ae8824a0caf4b3dacbc3596122eb282",
+  "type": "Dashboard"
+ },
+ {
+  "name": "JP-JIW-X10 Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "73f87287920848c69def5a2c5ad25ffb",
+  "type": "Dashboard"
+ },
+ {
+  "name": " Axon Demo Sim Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "c8bbf845d0c345f8aff7bfdaba7d06ee",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Steve Lincoln Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "362239247fe14aeab1214ae485c0a5f9",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Nha Pham Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "c7deb6dc635145a39d95db68b298a543",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Jason LaFond Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "46ae44ddca694be98eeb993a66f2de18",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Tommy Clare Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "d82fce723ab145a481657d86f71c02ea",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Long Beach Township Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "5291bfae11f043798590a5cdb84f1090",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Gray Fire Rescue Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "5a75354712194028989ec53180676b56",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - DFR E2E Testing Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "c28b6928da984eb7a1ba94caa2ab77c6",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Calcasieu Parish Sheriff's Office Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "d121145f41bc46fb8ae2dc6dcbe0b293",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - X10 Dock Training Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "b2f08032733a4350979f4489badb3fe5",
+  "type": "Dashboard"
+ },
+ {
+  "name": "[Paraverse] Deus X Defense Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "9ed6551758c647d19c437afeac948d3a",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Granite Defense & Technologies NFR Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "50427cbddf194c359ca2ff1ac41d578f",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Michigan State Police (MI) Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "d6ebfc8722df40229414ca9d3465712b",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Dylan Brown DFR Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "501b91d979214e81a9b4eb48f4b68066",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Fort Collins Police Services Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "2d104fe503674c2395e36fdacb4205fa",
+  "type": "Dashboard"
+ },
+ {
+  "name": "INT - Online - Skydio Training Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "e310c32396e941809244d11502b69767",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Middlefield Vol. Fire Co. Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "61dfcc89c4804cb5aefd93ffbb3219e4",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Medicine Hat Police Service Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "dc06dea91597478ea122684bdbffdb3d",
+  "type": "Dashboard"
+ },
+ {
+  "name": "lNT - SE X10 Docks Drone Flights",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "50f7e683411c425da3f70938808dd0de",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Cleveland Police UAS Drone Transparency Dashboard",
+  "owner": "opendataCLE",
+  "org": "Cleveland | GIS",
+  "url": "https://experience.arcgis.com/experience/b95e43bfbf2b432693f67b31c21daffc",
+  "id": "b95e43bfbf2b432693f67b31c21daffc",
+  "type": "Web Experience"
+ },
+ {
+  "name": "Drone Deployments",
+  "owner": "jmh_com",
+  "org": "City of Medford",
+  "id": "ebd0652bbefd420ea390974eb0a0047a",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Police Drone Map - Phone App",
+  "owner": "kaufmannc@pasco_wa.gov_CityofPasco",
+  "org": "City of Pasco",
+  "id": "498add35836e4fc696abf101daa65351",
+  "type": "Web Map"
+ },
+ {
+  "name": "Australian Federal Police Drone Flights for Missing Person (Sharon Granites)",
+  "owner": "bella_skydio_inc",
+  "org": "Skydio-Inc",
+  "id": "fc5e3073f45f480e8a96e7a896861700",
+  "type": "Dashboard"
+ },
+ {
+  "name": "Calls made to UK police in 2015 regarding drones",
+  "owner": "bflanagan_bureau",
+  "org": "Esri UK Bureau",
+  "url": "https://bureau.maps.arcgis.com/apps/Viewer/index.html?appid=59ac07f4af114b0f89486f431834d9ce",
+  "id": "59ac07f4af114b0f89486f431834d9ce",
+  "type": "Web Mapping Application"
+ },
+ {
+  "name": "Roselle Police Dept Drone Map",
+  "owner": "gdixon_RoselleIL",
+  "org": "gdixon_RoselleIL",
+  "id": "4850e50ec6a24f20bad3bf18c387e09b",
+  "type": "Web Map"
+ },
+ {
+  "name": "Imagery 2024 Drone",
+  "owner": "Jonathan.Mikolin_harrisonburg",
+  "org": "City of Harrisonburg",
+  "url": "https://gis.harrisonburgva.gov/image/rest/services/Imagery/Imagery_2024_Drone/MapServer",
+  "id": "d78a5bb12b214cea83a82a6e93c99660",
+  "type": "Map Service"
+ },
+ {
+  "name": "D 0001 Drone",
+  "owner": "Jonathan.Mikolin_harrisonburg",
+  "org": "City of Harrisonburg",
+  "rows": null,
+  "url": "https://gis.harrisonburgva.gov/image/rest/services/Imagery/Imagery_2024_Drone/MapServer/1",
+  "id": "d78a5bb12b214cea83a82a6e93c99660_1",
+  "type": "Mosaic Layer"
+ },
+ {
+  "name": "Drone Deployments",
+  "owner": "jmh_com",
+  "org": "City of Medford",
+  "url": "https://mpd-data.medfordoregon.gov/pages/drone-program",
+  "id": "1136e814e7e14e368786c63713fc7fef",
+  "type": "Document Link"
+ },
+ {
+  "name": "Yearly Drone Report",
+  "owner": "longze_nngov",
+  "org": "City of Newport News",
+  "id": "fbf4234e4c0347299ba2a1557f7f0355",
+  "type": "PDF"
+ },
+ {
+  "name": "Drone Locations",
+  "owner": "aescholl_SCRPC",
+  "org": "Stark County Regional Planning Commission",
+  "id": "34e8d78918ce4f5bb07c6d9801d74b98",
+  "type": "Web Map"
+ },
+ {
+  "name": "Unmanned Aircraft Systems (UAS) Follow-Up",
+  "owner": "Innovation_andTechnology",
+  "org": "City of Worcester, MA",
+  "id": "ebac0f4b8c7b4bf281eb0d5d36f24fca",
+  "type": "PDF"
+ }
+]

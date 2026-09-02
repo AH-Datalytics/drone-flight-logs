@@ -1,0 +1,14 @@
+ad.paladindrones.com
+api.paladindrones.com
+bk.paladindrones.com
+cdn.paladindrones.com
+cs.paladindrones.com
+dashboard.paladindrones.com
+demo.paladindrones.com
+dock.paladindrones.com
+ext-update.paladindrones.com
+mqtt.paladindrones.com
+nexus.paladindrones.com
+paladindrones.com
+wt-api.paladindrones.com
+www.paladindrones.com
