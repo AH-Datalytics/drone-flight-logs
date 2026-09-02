@@ -23,7 +23,7 @@
       "last_flight": "2026-08-27",
       "flight_count": 24,
       "total_hours": 5.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -75,7 +75,7 @@
       "last_flight": "2025-05-07",
       "flight_count": 1,
       "total_hours": 0.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -101,7 +101,7 @@
       "last_flight": "2026-06-22",
       "flight_count": 2,
       "total_hours": 0.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -158,7 +158,7 @@
       "last_flight": "2025-03-08",
       "flight_count": 10,
       "total_hours": 2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "Combines 2 Skydio dashboards published by this agency."
     },
     {
@@ -181,10 +181,10 @@
       "official_url": "https://www.arcgis.com/apps/dashboards/dc72264a9fcf40eca84e78661ed37a16",
       "status": "ok",
       "first_flight": "2026-08-01",
-      "last_flight": "2026-08-28",
-      "flight_count": 23,
-      "total_hours": 4.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_flight": "2026-09-01",
+      "flight_count": 25,
+      "total_hours": 5.2,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -210,7 +210,7 @@
       "last_flight": "2025-03-10",
       "flight_count": 11,
       "total_hours": 1.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -236,7 +236,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 1176,
       "total_hours": 204.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -288,7 +288,7 @@
       "last_flight": "2026-04-30",
       "flight_count": 28,
       "total_hours": 8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -314,7 +314,7 @@
       "last_flight": "2026-05-07",
       "flight_count": 36,
       "total_hours": 7.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -340,7 +340,7 @@
       "last_flight": "2026-07-01",
       "flight_count": 40,
       "total_hours": 6.7,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -366,7 +366,7 @@
       "last_flight": "2025-09-22",
       "flight_count": 1,
       "total_hours": 0.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -392,7 +392,7 @@
       "last_flight": "2026-08-19",
       "flight_count": 1,
       "total_hours": 0.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -418,7 +418,7 @@
       "last_flight": "2026-08-21",
       "flight_count": 438,
       "total_hours": 99.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -444,7 +444,7 @@
       "last_flight": "2026-03-24",
       "flight_count": 7,
       "total_hours": 1.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -470,7 +470,7 @@
       "last_flight": "2026-03-30",
       "flight_count": 1,
       "total_hours": 0.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -496,7 +496,7 @@
       "last_flight": "2026-08-14",
       "flight_count": 404,
       "total_hours": 70.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -522,7 +522,7 @@
       "last_flight": "2026-02-08",
       "flight_count": 3,
       "total_hours": 0.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -574,7 +574,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 3268,
       "total_hours": 562.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -605,7 +605,7 @@
       "last_flight": "2026-08-31",
       "flight_count": 2006,
       "total_hours": 394.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "Combines 2 Skydio dashboards published by this agency."
     },
     {
@@ -631,7 +631,7 @@
       "last_flight": "2026-07-22",
       "flight_count": 183,
       "total_hours": 41.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -655,9 +655,9 @@
       "status": "ok",
       "first_flight": "2026-01-07",
       "last_flight": "2026-09-01",
-      "flight_count": 1248,
-      "total_hours": 213.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "flight_count": 1249,
+      "total_hours": 213.7,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -683,7 +683,7 @@
       "last_flight": "2026-08-25",
       "flight_count": 286,
       "total_hours": 47,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -709,7 +709,7 @@
       "last_flight": "2025-12-25",
       "flight_count": 4,
       "total_hours": 0.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -735,7 +735,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 238,
       "total_hours": 36.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -761,7 +761,7 @@
       "last_flight": "2026-07-08",
       "flight_count": 29,
       "total_hours": 3.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -787,7 +787,7 @@
       "last_flight": "2026-08-31",
       "flight_count": 17938,
       "total_hours": 3667.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -813,7 +813,7 @@
       "last_flight": "2026-08-30",
       "flight_count": 248,
       "total_hours": 78.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -837,9 +837,9 @@
       "status": "ok",
       "first_flight": "2025-11-06",
       "last_flight": "2026-09-01",
-      "flight_count": 647,
-      "total_hours": 101,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "flight_count": 649,
+      "total_hours": 101.4,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -917,7 +917,7 @@
       "last_flight": "2025-11-19",
       "flight_count": 1,
       "total_hours": 0.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -943,7 +943,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 3081,
       "total_hours": 555,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -969,7 +969,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 363,
       "total_hours": 74.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -995,7 +995,7 @@
       "last_flight": "2026-01-18",
       "flight_count": 51,
       "total_hours": 14.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "timezone not detected automatically; set manually."
     },
     {
@@ -1018,10 +1018,10 @@
       "official_url": "https://www.arcgis.com/apps/dashboards/77fe7c984946489aaf32ca7564667c0b",
       "status": "ok",
       "first_flight": "2025-09-21",
-      "last_flight": "2026-09-01",
-      "flight_count": 10289,
-      "total_hours": 1936.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_flight": "2026-09-02",
+      "flight_count": 10301,
+      "total_hours": 1938.7,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1047,7 +1047,7 @@
       "last_flight": "2026-05-21",
       "flight_count": 37,
       "total_hours": 10.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1073,7 +1073,7 @@
       "last_flight": "2026-08-12",
       "flight_count": 26,
       "total_hours": 2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1122,10 +1122,10 @@
       "official_url": "https://www.arcgis.com/apps/dashboards/13937d18670e44d5a20a5a3821f01775",
       "status": "ok",
       "first_flight": "2026-01-28",
-      "last_flight": "2026-08-31",
-      "flight_count": 4159,
-      "total_hours": 657.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_flight": "2026-09-01",
+      "flight_count": 4193,
+      "total_hours": 663,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1151,7 +1151,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 1841,
       "total_hours": 290.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1177,7 +1177,7 @@
       "last_flight": "2026-03-09",
       "flight_count": 435,
       "total_hours": 101.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1203,7 +1203,7 @@
       "last_flight": "2025-08-26",
       "flight_count": 1,
       "total_hours": 0,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1229,7 +1229,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 813,
       "total_hours": 126.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1255,7 +1255,7 @@
       "last_flight": "2025-08-06",
       "flight_count": 1,
       "total_hours": 0.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1279,9 +1279,9 @@
       "status": "ok",
       "first_flight": "2026-05-28",
       "last_flight": "2026-09-01",
-      "flight_count": 848,
-      "total_hours": 159.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "flight_count": 854,
+      "total_hours": 160.9,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1307,7 +1307,7 @@
       "last_flight": "2026-08-21",
       "flight_count": 2,
       "total_hours": 0.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1333,7 +1333,7 @@
       "last_flight": "2026-08-25",
       "flight_count": 1,
       "total_hours": 0.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1359,7 +1359,7 @@
       "last_flight": "2025-04-07",
       "flight_count": 7,
       "total_hours": 1.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1385,7 +1385,7 @@
       "last_flight": "2026-08-22",
       "flight_count": 19,
       "total_hours": 5.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1437,7 +1437,7 @@
       "last_flight": "2026-01-29",
       "flight_count": 4,
       "total_hours": 1.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1489,7 +1489,7 @@
       "last_flight": "2026-08-26",
       "flight_count": 10,
       "total_hours": 1.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1515,7 +1515,7 @@
       "last_flight": "2026-07-28",
       "flight_count": 38,
       "total_hours": 8.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1541,7 +1541,7 @@
       "last_flight": "2026-06-04",
       "flight_count": 14,
       "total_hours": 3.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1567,7 +1567,7 @@
       "last_flight": "2026-07-17",
       "flight_count": 94,
       "total_hours": 12.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1593,7 +1593,7 @@
       "last_flight": "2026-04-22",
       "flight_count": 1,
       "total_hours": 0.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1619,7 +1619,7 @@
       "last_flight": "2026-03-26",
       "flight_count": 3,
       "total_hours": 0.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1645,7 +1645,7 @@
       "last_flight": "2026-02-23",
       "flight_count": 5,
       "total_hours": 1.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1671,7 +1671,7 @@
       "last_flight": "2025-12-12",
       "flight_count": 7,
       "total_hours": 1.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1697,7 +1697,7 @@
       "last_flight": "2026-06-21",
       "flight_count": 35,
       "total_hours": 7.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1723,7 +1723,7 @@
       "last_flight": "2026-03-05",
       "flight_count": 315,
       "total_hours": 58.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1749,7 +1749,7 @@
       "last_flight": "2025-09-03",
       "flight_count": 1,
       "total_hours": 0.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1775,7 +1775,7 @@
       "last_flight": "2026-06-30",
       "flight_count": 27,
       "total_hours": 5.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1799,9 +1799,9 @@
       "status": "ok",
       "first_flight": "2026-01-28",
       "last_flight": "2026-09-01",
-      "flight_count": 2300,
-      "total_hours": 419.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "flight_count": 2322,
+      "total_hours": 423.6,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1827,7 +1827,7 @@
       "last_flight": "2026-06-03",
       "flight_count": 25,
       "total_hours": 5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1853,7 +1853,7 @@
       "last_flight": "2026-08-21",
       "flight_count": 13,
       "total_hours": 1.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1879,7 +1879,7 @@
       "last_flight": "2025-08-29",
       "flight_count": 2,
       "total_hours": 0.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1905,7 +1905,7 @@
       "last_flight": "2026-04-23",
       "flight_count": 107,
       "total_hours": 18.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1931,7 +1931,7 @@
       "last_flight": "2026-08-20",
       "flight_count": 11,
       "total_hours": 3.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -1983,7 +1983,7 @@
       "last_flight": "2026-08-11",
       "flight_count": 3,
       "total_hours": 0,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2084,10 +2084,10 @@
       "official_url": "https://www.arcgis.com/apps/dashboards/71bd05b0f73341c5a8caaa6ef84c4b1f",
       "status": "ok",
       "first_flight": "2026-03-24",
-      "last_flight": "2026-09-01",
-      "flight_count": 168,
-      "total_hours": 32.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_flight": "2026-09-02",
+      "flight_count": 171,
+      "total_hours": 33.2,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2113,7 +2113,7 @@
       "last_flight": "2026-04-10",
       "flight_count": 5,
       "total_hours": 1.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2139,7 +2139,7 @@
       "last_flight": "2026-06-21",
       "flight_count": 6,
       "total_hours": 2.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2165,7 +2165,7 @@
       "last_flight": "2025-03-25",
       "flight_count": 1,
       "total_hours": 0.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2191,7 +2191,7 @@
       "last_flight": "2025-01-29",
       "flight_count": 15,
       "total_hours": 3.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2217,7 +2217,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 4676,
       "total_hours": 824.7,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2243,7 +2243,7 @@
       "last_flight": "2026-05-27",
       "flight_count": 3,
       "total_hours": 0.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2269,7 +2269,7 @@
       "last_flight": "2026-08-31",
       "flight_count": 292,
       "total_hours": 52.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2295,7 +2295,7 @@
       "last_flight": "2026-08-03",
       "flight_count": 461,
       "total_hours": 96,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "timezone not detected automatically; set manually."
     },
     {
@@ -2321,7 +2321,7 @@
       "last_flight": "2026-07-30",
       "flight_count": 945,
       "total_hours": 162.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2373,7 +2373,7 @@
       "last_flight": "2026-08-25",
       "flight_count": 386,
       "total_hours": 70.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "timezone not detected automatically; set manually."
     },
     {
@@ -2396,10 +2396,10 @@
       "official_url": "https://cloud.skydio.com/dashboard/lapd",
       "status": "ok",
       "first_flight": "2025-07-29",
-      "last_flight": "2026-08-31",
-      "flight_count": 9650,
-      "total_hours": 1956.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_flight": "2026-09-01",
+      "flight_count": 9685,
+      "total_hours": 1963.3,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2425,7 +2425,7 @@
       "last_flight": "2026-08-25",
       "flight_count": 6,
       "total_hours": 1.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2451,7 +2451,7 @@
       "last_flight": "2025-10-23",
       "flight_count": 7,
       "total_hours": 1.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2503,7 +2503,7 @@
       "last_flight": "2025-08-09",
       "flight_count": 4,
       "total_hours": 1.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2529,7 +2529,7 @@
       "last_flight": "2026-08-12",
       "flight_count": 2,
       "total_hours": 0.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2555,7 +2555,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 224,
       "total_hours": 34.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2581,7 +2581,7 @@
       "last_flight": "2026-08-31",
       "flight_count": 346,
       "total_hours": 67.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2607,7 +2607,7 @@
       "last_flight": "2026-08-07",
       "flight_count": 395,
       "total_hours": 95.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2633,7 +2633,7 @@
       "last_flight": "2026-05-26",
       "flight_count": 100,
       "total_hours": 18,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2659,7 +2659,7 @@
       "last_flight": "2025-11-04",
       "flight_count": 12,
       "total_hours": 1.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2685,7 +2685,7 @@
       "last_flight": "2025-09-18",
       "flight_count": 2,
       "total_hours": 0.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2737,7 +2737,7 @@
       "last_flight": "2025-06-16",
       "flight_count": 4,
       "total_hours": 1.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2763,7 +2763,7 @@
       "last_flight": "2026-03-24",
       "flight_count": 141,
       "total_hours": 29.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2789,7 +2789,7 @@
       "last_flight": "2026-08-23",
       "flight_count": 4130,
       "total_hours": 879.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2815,7 +2815,7 @@
       "last_flight": "2026-08-26",
       "flight_count": 1220,
       "total_hours": 239.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2841,7 +2841,7 @@
       "last_flight": "2025-06-18",
       "flight_count": 3,
       "total_hours": 1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2867,7 +2867,7 @@
       "last_flight": "2026-08-28",
       "flight_count": 247,
       "total_hours": 42.7,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2893,7 +2893,7 @@
       "last_flight": "2026-06-12",
       "flight_count": 450,
       "total_hours": 92.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2919,7 +2919,7 @@
       "last_flight": "2025-02-28",
       "flight_count": 5,
       "total_hours": 2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2945,7 +2945,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 5,
       "total_hours": 1.7,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2971,7 +2971,7 @@
       "last_flight": "2026-06-28",
       "flight_count": 297,
       "total_hours": 100.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -2997,7 +2997,7 @@
       "last_flight": "2026-07-19",
       "flight_count": 1,
       "total_hours": 0.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3023,7 +3023,7 @@
       "last_flight": "2026-08-25",
       "flight_count": 29,
       "total_hours": 6.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3049,7 +3049,7 @@
       "last_flight": "2025-01-21",
       "flight_count": 6,
       "total_hours": 1.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3101,7 +3101,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 23,
       "total_hours": 4.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3132,7 +3132,7 @@
       "last_flight": "2026-07-16",
       "flight_count": 12,
       "total_hours": 2.5,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "Combines 2 Skydio dashboards published by this agency."
     },
     {
@@ -3189,7 +3189,7 @@
       "last_flight": "2025-02-04",
       "flight_count": 37,
       "total_hours": 5.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "Combines 2 Skydio dashboards published by this agency."
     },
     {
@@ -3267,7 +3267,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 294,
       "total_hours": 64.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3293,7 +3293,7 @@
       "last_flight": "2026-07-04",
       "flight_count": 86,
       "total_hours": 16.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3317,9 +3317,9 @@
       "status": "ok",
       "first_flight": "2025-03-08",
       "last_flight": "2026-09-01",
-      "flight_count": 4255,
-      "total_hours": 853,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "flight_count": 4258,
+      "total_hours": 853.9,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3345,7 +3345,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 14,
       "total_hours": 2.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3371,7 +3371,7 @@
       "last_flight": "2026-08-02",
       "flight_count": 17,
       "total_hours": 4.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3397,7 +3397,7 @@
       "last_flight": "2026-05-29",
       "flight_count": 2,
       "total_hours": 0.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3423,7 +3423,7 @@
       "last_flight": "2026-01-06",
       "flight_count": 8,
       "total_hours": 1.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3449,7 +3449,7 @@
       "last_flight": "2026-08-13",
       "flight_count": 3111,
       "total_hours": 511.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3475,7 +3475,7 @@
       "last_flight": "2026-08-26",
       "flight_count": 8,
       "total_hours": 2.1,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3501,7 +3501,7 @@
       "last_flight": "2026-08-27",
       "flight_count": 1599,
       "total_hours": 252.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3527,7 +3527,7 @@
       "last_flight": "2026-07-27",
       "flight_count": 698,
       "total_hours": 182.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3547,7 +3547,7 @@
       "last_flight": "2026-06-30",
       "flight_count": 7481,
       "total_hours": 2104.7,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "Published by the city under its surveillance ordinance, not through a vendor. Covers SFPD's whole fleet (DJI, Skydio, Flock Safety and others), whereas Skydio-sourced agencies show Skydio flights only. Dates only; no takeoff times."
     },
     {
@@ -3599,7 +3599,7 @@
       "last_flight": "2026-08-27",
       "flight_count": 1628,
       "total_hours": 316.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3625,7 +3625,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 1060,
       "total_hours": 213.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3651,7 +3651,7 @@
       "last_flight": "2026-08-29",
       "flight_count": 1488,
       "total_hours": 270.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3729,7 +3729,7 @@
       "last_flight": "2026-08-20",
       "flight_count": 593,
       "total_hours": 129,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3755,7 +3755,7 @@
       "last_flight": "2024-12-11",
       "flight_count": 33,
       "total_hours": 9.4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3781,7 +3781,7 @@
       "last_flight": "2026-08-26",
       "flight_count": 20,
       "total_hours": 4,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3807,7 +3807,7 @@
       "last_flight": "2026-08-11",
       "flight_count": 16,
       "total_hours": 4.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3830,10 +3830,10 @@
       "official_url": "https://www.arcgis.com/apps/dashboards/91bfbf2aaa034122810ad9120c1213b9",
       "status": "ok",
       "first_flight": "2026-03-31",
-      "last_flight": "2026-08-31",
-      "flight_count": 1161,
-      "total_hours": 182.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_flight": "2026-09-02",
+      "flight_count": 1163,
+      "total_hours": 182.9,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3859,7 +3859,7 @@
       "last_flight": "2025-12-08",
       "flight_count": 5,
       "total_hours": 0.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3885,7 +3885,7 @@
       "last_flight": "2026-07-23",
       "flight_count": 1,
       "total_hours": 0.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3911,7 +3911,7 @@
       "last_flight": "2026-08-27",
       "flight_count": 66,
       "total_hours": 17.3,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3937,7 +3937,7 @@
       "last_flight": "2024-12-01",
       "flight_count": 2,
       "total_hours": 0.9,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -3963,7 +3963,7 @@
       "last_flight": "2026-04-04",
       "flight_count": 121,
       "total_hours": 27.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -4015,7 +4015,7 @@
       "last_flight": "2026-09-01",
       "flight_count": 249,
       "total_hours": 32,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -4041,7 +4041,7 @@
       "last_flight": "2026-08-27",
       "flight_count": 37,
       "total_hours": 7.2,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -4093,7 +4093,7 @@
       "last_flight": "2026-08-30",
       "flight_count": 753,
       "total_hours": 91.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -4119,7 +4119,7 @@
       "last_flight": "2026-08-29",
       "flight_count": 37,
       "total_hours": 6.7,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -4145,7 +4145,7 @@
       "last_flight": "2026-05-30",
       "flight_count": 76,
       "total_hours": 12.8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -4171,7 +4171,7 @@
       "last_flight": "2025-08-02",
       "flight_count": 46,
       "total_hours": 8,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": null
     },
     {
@@ -4194,10 +4194,10 @@
       "official_url": "https://cloud.skydio.com/dashboard/wichita",
       "status": "ok",
       "first_flight": "2024-05-29",
-      "last_flight": "2026-09-01",
-      "flight_count": 6636,
-      "total_hours": 1695.6,
-      "last_pulled_utc": "2026-09-02T01:59:16.909Z",
+      "last_flight": "2026-09-02",
+      "flight_count": 6649,
+      "total_hours": 1698.4,
+      "last_pulled_utc": "2026-09-02T11:31:58.716Z",
       "notes": "timezone not detected automatically; set manually."
     }
   ]

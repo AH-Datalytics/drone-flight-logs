@@ -31,18 +31,42 @@ export function mapSfpdRow(row: SfpdRow, agencyId: string): FlightRecord {
   };
 }
 
+async function countRows(fetchJson: FetchJson, domain: string, datasetId: string): Promise<number> {
+  const url = `https://${domain}/resource/${datasetId}.json?${new URLSearchParams({ $select: 'count(*)' }).toString()}`;
+  const rows = await fetchJson(url);
+  if (!Array.isArray(rows) || rows.length !== 1 || typeof rows[0] !== 'object' || rows[0] === null) {
+    throw new Error(`Socrata count error from ${url}: malformed response ${JSON.stringify(rows).slice(0, 200)}`);
+  }
+  const n = Number((rows[0] as Record<string, unknown>).count);
+  if (!Number.isFinite(n)) throw new Error(`Socrata count error from ${url}: non-numeric count ${JSON.stringify(rows[0])}`);
+  return n;
+}
+
 export const sfpdAdapter: Adapter = {
   source: 'sfpd_datasf',
+  // Pagination is self-verifying rather than heuristic, for the same reason as
+  // the Skydio adapter: a short page must never be indistinguishable from
+  // end-of-data. Socrata is stricter about honoring $limit than ArcGIS is
+  // about resultRecordCount, so this is prevention rather than a known live
+  // bug, but the shape has to match — a mismatch throws instead of returning
+  // a partial result.
   async pull(agency: RegistryAgency, fetchJson: FetchJson): Promise<FlightRecord[]> {
     if (agency.source !== 'sfpd_datasf') throw new Error(`${agency.agency_id} is not an sfpd_datasf agency`);
     const cfg = agency.source_config as SfpdConfig;
+    const url = `https://${cfg.domain}/resource/${cfg.dataset_id}.json`;
+    const expected = await countRows(fetchJson, cfg.domain, cfg.dataset_id);
     const out: FlightRecord[] = [];
-    for (let offset = 0; ; offset += PAGE) {
+    let offset = 0;
+    while (out.length < expected) {
       const params = new URLSearchParams({ $select: FIELDS.join(','), $order: ':id', $limit: String(PAGE), $offset: String(offset) });
-      const rows: SfpdRow[] = await fetchJson(`https://${cfg.domain}/resource/${cfg.dataset_id}.json?${params.toString()}`);
+      const rows: SfpdRow[] = await fetchJson(`${url}?${params.toString()}`);
       if (!Array.isArray(rows)) throw new Error(`Socrata returned non-array: ${JSON.stringify(rows).slice(0, 200)}`);
       for (const r of rows) out.push(mapSfpdRow(r, agency.agency_id));
-      if (rows.length < PAGE) break;
+      if (rows.length === 0) break;
+      offset += rows.length;
+    }
+    if (out.length !== expected) {
+      throw new Error(`Socrata pagination mismatch from ${url}: expected ${expected} rows, got ${out.length}`);
     }
     return out;
   },

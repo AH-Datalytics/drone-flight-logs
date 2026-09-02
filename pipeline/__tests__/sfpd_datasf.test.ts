@@ -31,21 +31,62 @@ describe('sfpdAdapter.pull', () => {
     source: 'sfpd_datasf', source_config: { domain: 'data.sfgov.org', dataset_id: 'giw5-ttjs' }, official_url: 'https://www.sanfranciscopolice.org/your-sfpd/explore-department/drones',
     status: 'ok', first_flight: null, last_flight: null, flight_count: 0, total_hours: 0, last_pulled_utc: null, notes: null,
   };
-  it('pages with $limit/$offset and selects :id', async () => {
+  const isCountUrl = (u: string) => u.includes('count%28');
+
+  it('issues a count query first, then pages with $limit/$offset and selects :id', async () => {
     const urls: string[] = [];
     const big = Array.from({ length: 5000 }, (_, i) => ({ ...rows[0], ':id': 'r' + i }));
-    const fj = async (u: string) => { urls.push(u); return u.includes('%24offset=0') ? big : rows; };
+    const fj = async (u: string) => { urls.push(u); return isCountUrl(u) ? [{ count: String(5000 + rows.length) }] : (u.includes('%24offset=0') ? big : rows); };
     const recs = await sfpdAdapter.pull(agency, fj);
-    expect(recs.length).toBe(5002);
-    expect(urls[0]).toContain('https://data.sfgov.org/resource/giw5-ttjs.json');
-    expect(urls[0]).toMatch(/%24select=%3Aid/);
-    expect(urls[1]).toContain('%24offset=5000');
+    expect(recs.length).toBe(5000 + rows.length);
+    expect(urls[0]).toContain('count%28');
+    const dataUrls = urls.filter(u => !isCountUrl(u));
+    expect(dataUrls[0]).toContain('https://data.sfgov.org/resource/giw5-ttjs.json');
+    expect(dataUrls[0]).toMatch(/%24select=%3Aid/);
+    expect(dataUrls[1]).toContain('%24offset=5000');
   });
-  it('rejects rather than silently returning zero rows when the response is not an array', async () => {
-    await expect(sfpdAdapter.pull(agency, async () => ({}))).rejects.toThrow(/non-array/);
-    await expect(sfpdAdapter.pull(agency, async () => null)).rejects.toThrow(/non-array/);
+
+  it('regression: a short mid-stream page that is not the end still collects everything', async () => {
+    // Total is 5502: a full 5000-row page, then a SHORT 2-row page mid-stream
+    // (which the old "short page means done" rule would have wrongly treated
+    // as the end), then a final 500-row page that completes the counted total.
+    const mk = (n: number, prefix: string) => Array.from({ length: n }, (_, i) => ({ ...rows[0], ':id': prefix + i }));
+    const urls: string[] = [];
+    const fj = async (u: string) => {
+      urls.push(u);
+      if (isCountUrl(u)) return [{ count: '5502' }];
+      if (u.includes('%24offset=0')) return mk(5000, 'a');
+      if (u.includes('%24offset=5000')) return mk(2, 'b');
+      if (u.includes('%24offset=5002')) return mk(500, 'c');
+      throw new Error('unexpected ' + u);
+    };
+    const recs = await sfpdAdapter.pull(agency, fj);
+    expect(recs.length).toBe(5502);
   });
-  it('resolves to an empty array when the first page is genuinely empty', async () => {
-    await expect(sfpdAdapter.pull(agency, async () => [])).resolves.toEqual([]);
+
+  it('resolves to an empty array when the dataset is genuinely empty (count 0), with no data query', async () => {
+    const urls: string[] = [];
+    const fj = async (u: string) => { urls.push(u); return isCountUrl(u) ? [{ count: '0' }] : []; };
+    await expect(sfpdAdapter.pull(agency, fj)).resolves.toEqual([]);
+    expect(urls.length).toBe(1); // the count query alone was enough
+  });
+
+  it('throws instead of returning a partial result when collected rows fall short of the counted total', async () => {
+    const fj = async (u: string) => {
+      if (isCountUrl(u)) return [{ count: '10' }];
+      if (u.includes('%24offset=0')) return [rows[0]];
+      return []; // genuinely out of data after the first row
+    };
+    await expect(sfpdAdapter.pull(agency, fj)).rejects.toThrow(/pagination mismatch.*expected 10.*got 1/);
+  });
+
+  it('rejects rather than silently returning zero rows when the data response is not an array', async () => {
+    await expect(sfpdAdapter.pull(agency, async (u: string) => (isCountUrl(u) ? [{ count: '1' }] : {}))).rejects.toThrow(/non-array/);
+    await expect(sfpdAdapter.pull(agency, async (u: string) => (isCountUrl(u) ? [{ count: '1' }] : null))).rejects.toThrow(/non-array/);
+  });
+
+  it('rejects when the count query itself is unparseable', async () => {
+    await expect(sfpdAdapter.pull(agency, async () => ({}))).rejects.toThrow(/Socrata count error/);
+    await expect(sfpdAdapter.pull(agency, async () => null)).rejects.toThrow(/Socrata count error/);
   });
 });

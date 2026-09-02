@@ -33,28 +33,72 @@ describe('mapSkydioAttributes', () => {
 });
 
 describe('fetchAllFeatures', () => {
-  it('paginates until a short page and forwards ArcGIS errors', async () => {
+  const isCountUrl = (u: string) => u.includes('returnCountOnly=true');
+  const attrOf = (page: any) => page.features[0].attributes;
+  const featuresOf = (attr: any, n: number, startId: number) =>
+    Array.from({ length: n }, (_, i) => ({ attributes: { ...attr, ObjectId: startId + i, flight_id: 'f' + (startId + i) } }));
+
+  it('issues a count query before paging, and pages by resultOffset', async () => {
     const page = fx('skydio_page.json');
-    const full = { features: Array.from({ length: 1000 }, (_, i) => ({ attributes: { ...page.features[0].attributes, ObjectId: i, flight_id: 'f' + i } })) };
     const urls: string[] = [];
-    const fj = async (u: string) => { urls.push(u); return u.includes('resultOffset=0&') ? full : page; };
+    const fj = async (u: string) => { urls.push(u); return isCountUrl(u) ? { count: 2 } : page; };
     const rows = await fetchAllFeatures(fj, featureLayerUrl(ORG));
-    expect(rows.length).toBe(1002);
-    expect(urls.length).toBe(2);
-    expect(urls[0]).toContain('returnGeometry=false');
-    expect(urls[0]).toContain(`${ORG}-production/FeatureServer/0/query`);
-    expect(urls[1]).toContain('resultOffset=1000&');
-    await expect(fetchAllFeatures(async () => ({ error: { code: 400, message: 'bad' } }), featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
+    expect(rows.length).toBe(2);
+    expect(urls[0]).toContain('returnCountOnly=true');
+    expect(urls[1]).toContain('returnGeometry=false');
+    expect(urls[1]).toContain(`${ORG}-production/FeatureServer/0/query`);
+    expect(urls[1]).toContain('resultOffset=0&');
   });
-  it('rejects rather than silently returning zero rows when the response is null', async () => {
-    await expect(fetchAllFeatures(async () => null, featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
+
+  it('regression: a short mid-stream page that is not the end still collects everything', async () => {
+    // Total is 2002: a full 1000-row page, then a SHORT 500-row page
+    // mid-stream (which the old "short page means done" rule would have
+    // wrongly treated as end-of-data), then a final 502-row page that
+    // completes the counted total. All 2002 rows must be collected.
+    const attr = attrOf(fx('skydio_page.json'));
+    const urls: string[] = [];
+    const fj = async (u: string) => {
+      urls.push(u);
+      if (isCountUrl(u)) return { count: 2002 };
+      if (u.includes('resultOffset=0&')) return { features: featuresOf(attr, 1000, 0) };
+      if (u.includes('resultOffset=1000&')) return { features: featuresOf(attr, 500, 1000) };
+      if (u.includes('resultOffset=1500&')) return { features: featuresOf(attr, 502, 1500) };
+      throw new Error('unexpected ' + u);
+    };
+    const rows = await fetchAllFeatures(fj, featureLayerUrl(ORG));
+    expect(rows.length).toBe(2002);
+    expect(urls.filter(u => !isCountUrl(u)).length).toBe(3);
   });
-  it('rejects a response that omits features entirely, distinct from a genuinely empty page', async () => {
-    await expect(fetchAllFeatures(async () => ({}), featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
-  });
-  it('resolves to an empty array when the service reports zero flights', async () => {
-    const rows = await fetchAllFeatures(async () => ({ features: [] }), featureLayerUrl(ORG));
+
+  it('a genuinely empty dataset (count 0) succeeds with zero rows and no data query', async () => {
+    const urls: string[] = [];
+    const fj = async (u: string) => { urls.push(u); return isCountUrl(u) ? { count: 0 } : { features: [] }; };
+    const rows = await fetchAllFeatures(fj, featureLayerUrl(ORG));
     expect(rows).toEqual([]);
+    expect(urls.length).toBe(1); // the count query alone was enough to know there's nothing to page
+  });
+
+  it('a data query genuinely running out (empty page) before reaching the counted total throws instead of returning a partial result', async () => {
+    const attr = attrOf(fx('skydio_page.json'));
+    const fj = async (u: string) => {
+      if (isCountUrl(u)) return { count: 1000 };
+      if (u.includes('resultOffset=0&')) return { features: featuresOf(attr, 1, 0) };
+      return { features: [] };
+    };
+    await expect(fetchAllFeatures(fj, featureLayerUrl(ORG))).rejects.toThrow(/pagination mismatch.*expected 1000.*got 1/);
+  });
+
+  it('forwards ArcGIS errors from the count query and the data query', async () => {
+    await expect(fetchAllFeatures(async (u: string) => (isCountUrl(u) ? { error: { code: 400, message: 'bad' } } : { features: [] }), featureLayerUrl(ORG)))
+      .rejects.toThrow(/ArcGIS count error/);
+    await expect(fetchAllFeatures(async (u: string) => (isCountUrl(u) ? { count: 1 } : { error: { code: 400, message: 'bad' } }), featureLayerUrl(ORG)))
+      .rejects.toThrow(/ArcGIS error/);
+  });
+  it('rejects rather than silently returning zero rows when the data response is null', async () => {
+    await expect(fetchAllFeatures(async (u: string) => (isCountUrl(u) ? { count: 1 } : null), featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
+  });
+  it('rejects a data response that omits features entirely, distinct from a genuinely empty page', async () => {
+    await expect(fetchAllFeatures(async (u: string) => (isCountUrl(u) ? { count: 1 } : {}), featureLayerUrl(ORG))).rejects.toThrow(/ArcGIS error/);
   });
 });
 
@@ -138,7 +182,7 @@ describe('skydioAdapter.pull', () => {
   };
   it('merges multiple orgs and de-duplicates on flight_id', async () => {
     const page = fx('skydio_page.json');
-    const fj = async () => page; // both orgs return the same two flights
+    const fj = async (u: string) => (u.includes('returnCountOnly=true') ? { count: 2 } : page); // both orgs report and return the same two flights
     const recs = await skydioAdapter.pull(agency, fj);
     expect(recs.length).toBe(2);
     expect(recs.every(r => r.agency_id === 'okc-pd')).toBe(true);

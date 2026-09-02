@@ -41,10 +41,29 @@ export function mapSkydioAttributes(a: SkydioAttributes, agencyId: string, tz: s
   };
 }
 
+async function countFeatures(fetchJson: FetchJson, layerUrl: string): Promise<number> {
+  const url = `${layerUrl}/query?where=1%3D1&returnCountOnly=true&f=json`;
+  const j = await fetchJson(url);
+  if (j?.error) throw new Error(`ArcGIS count error from ${layerUrl}: ${JSON.stringify(j.error)}`);
+  if (typeof j?.count !== 'number' || !Number.isFinite(j.count)) {
+    throw new Error(`ArcGIS count error from ${layerUrl}: malformed count response ${JSON.stringify(j)}`);
+  }
+  return j.count;
+}
+
+// Pagination is self-verifying rather than heuristic: ArcGIS may legally return
+// fewer rows than requested mid-stream (an internal transfer limit), which looks
+// identical to "that was the last page" unless we know the true total in
+// advance. A short page is therefore never treated as end-of-data by itself —
+// only a genuinely empty page, or reaching the expected count, ends the loop.
+// If the two disagree afterward we throw rather than return a partial result,
+// so a truncation becomes a loud per-agency failure instead of quietly wrong
+// totals.
 export async function fetchAllFeatures(fetchJson: FetchJson, layerUrl: string): Promise<SkydioAttributes[]> {
+  const expected = await countFeatures(fetchJson, layerUrl);
   const out: SkydioAttributes[] = [];
   let offset = 0;
-  for (;;) {
+  while (out.length < expected) {
     const url = `${layerUrl}/query?where=1%3D1&outFields=*&returnGeometry=false&orderByFields=${encodeURIComponent('takeoff ASC,ObjectId ASC')}&resultOffset=${offset}&resultRecordCount=${PAGE}&f=json`;
     const j = await fetchJson(url);
     if (j?.error) throw new Error(`ArcGIS error from ${layerUrl}: ${JSON.stringify(j.error)}`);
@@ -53,8 +72,11 @@ export async function fetchAllFeatures(fetchJson: FetchJson, layerUrl: string): 
     }
     const feats: Array<{ attributes: SkydioAttributes }> = j.features;
     for (const f of feats) out.push(f.attributes);
-    if (feats.length < PAGE) break;
+    if (feats.length === 0) break;
     offset += feats.length;
+  }
+  if (out.length !== expected) {
+    throw new Error(`ArcGIS pagination mismatch from ${layerUrl}: expected ${expected} features, got ${out.length}`);
   }
   return out;
 }
