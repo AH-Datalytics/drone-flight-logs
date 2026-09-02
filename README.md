@@ -16,7 +16,7 @@ No flight-path geometry is stored, no pilot or vehicle identity fields are kept,
 - `data/registry.json` — one record per agency: identity, source configuration, curated fields, and pipeline-maintained status/summary fields. Partly hand-curated, partly refreshed by the pipeline.
 - `data/manifest.json` — the outcome of the last pipeline run: per-agency status (`ok`, `stale`, `unreachable`, `retired`) and row count.
 - `data/flights/<agency_id>.json` — one file per agency, in a compact header-plus-rows format (a `columns` array and an array of row arrays, not an array of objects) to keep the files diff-friendly and small.
-- `data/excluded_orgs.json` — Skydio-internal and demo dashboards (test orgs, employee sandboxes, template dashboards) that are deliberately never ingested.
+- `data/excluded_orgs.json` — dashboards that are deliberately never ingested, for either of two recorded reasons: internal or demo dashboards identified by title pattern (test orgs, employee sandboxes, template dashboards — 49 entries today), and dashboards for which no feature service could be resolved (5 entries today). Each entry records its own `reason`, so the file is self-describing.
 - `data/seed/` — the CSV used for the one-time bootstrap. Kept for reference; the pipeline does not read it again.
 
 ## Promoting a `needs_review` agency
@@ -34,6 +34,8 @@ The pipeline never edits curated fields and never deletes a registry entry, so p
 ## Adding an exclusion
 
 If the pipeline discovers a Skydio dashboard that is internal or a demo rather than a real publishing agency, add an entry to `data/excluded_orgs.json` with its `dashboard_item_id`, `org_uuid`, `title`, and a `reason`, then remove the corresponding `needs_review` entry from `data/registry.json`. Future discovery runs will skip it.
+
+If instead a real agency's dashboard cannot be resolved to a feature service, treat that as something to investigate rather than simply exclude — it can mean Skydio has moved that agency to a dashboard or service naming convention the resolver does not yet recognise (the known example: a service named `<org>-transparency-dashboard-new` instead of the expected `<org>-production`), not that the dashboard is a demo. Discovery's failure-rate circuit breaker aborts a run if more than 10% of dashboards fail to resolve, so a wholesale naming migration on Skydio's side would surface loudly rather than quietly shrinking the census.
 
 ## Two things to know before you touch this data
 
