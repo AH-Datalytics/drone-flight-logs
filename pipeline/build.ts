@@ -6,6 +6,7 @@ import { groupAgencies, agencyKind, type Aliases, type Candidate } from './ident
 import { mergeSources, type SourcedRecord } from './merge.js';
 import { localDate } from './time.js';
 import { guessOrgType, type OrgType, type Status } from './registry.js';
+import { loadPlaces } from './places.js';
 import { extractFlights as extractFlock, toRecord as flockRecord } from './flock/parse.js';
 import { parseFlights as parseAirData, toRecord as airDataRecord, type AirDataFlight } from './airdata/parse.js';
 import { toRecord as capeRecord, type CapeFlight } from './cape/parse.js';
@@ -51,6 +52,9 @@ export type SiteAgency = {
   total_hours: number;
   /** Flights that two platforms both published, counted once here. */
   overlap_count: number;
+  /** A coarse point for the map: where the agency operates, not where a drone went. */
+  lat: number | null;
+  lon: number | null;
   notes: string | null;
 };
 
@@ -210,6 +214,7 @@ export function build(log: (m: string) => void = console.log): void {
 
   const entries = collectEntries();
   const groups = groupAgencies(entries, aliases);
+  const places = loadPlaces();
   log(`${entries.length} published dashboards, ${groups.length} agencies after merging`);
 
   mkdirSync(SITE_FLIGHTS, { recursive: true });
@@ -243,10 +248,15 @@ export function build(log: (m: string) => void = console.log): void {
       JSON.stringify(encodeSourcedFlightFile(identity.key, merged.records as SourcedRecord[])),
     );
 
+    // A point, and often a state, comes from the located places file. The state
+    // read off a coordinate beats one parsed out of a dashboard title, which is
+    // how agencies whose titles never named a state get one.
+    const place = group.map(e => places.get(e.key)).find(Boolean) ?? null;
+
     agencies.push({
       agency_id: identity.key,
       display_name: identity.displayName,
-      state: identity.state,
+      state: identity.state ?? place?.state ?? null,
       org_type: identity.orgType,
       timezone: identity.timezone,
       sources: refs.sort((a, b) => b.flight_count - a.flight_count),
@@ -257,6 +267,8 @@ export function build(log: (m: string) => void = console.log): void {
       flight_count: summary.flight_count,
       total_hours: summary.total_hours,
       overlap_count: merged.overlaps,
+      lat: place?.lat ?? null,
+      lon: place?.lon ?? null,
       notes: group.map(e => e.notes).find(Boolean) ?? null,
     });
   }
@@ -274,6 +286,8 @@ export function build(log: (m: string) => void = console.log): void {
     agencies,
   }, null, 1) + '\n');
 
+  const located = agencies.filter(a => a.lat !== null).length;
+  log(`${located} of ${agencies.length} agencies have a point for the map`);
   const multi = agencies.filter(a => a.sources.length > 1);
   log(`${agencies.reduce((t, a) => t + a.flight_count, 0)} distinct flights`);
   log(`${multi.length} agencies publish on more than one platform; ${totalOverlaps} flights were published twice and are counted once`);

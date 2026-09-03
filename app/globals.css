@@ -145,3 +145,52 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .heatmap-ramp .swatch { width: 16px; height: 16px; border: 1px solid var(--line); background: color-mix(in srgb, var(--hue, var(--heat-cold)) var(--mix, 0%), var(--bg)); }
 .heatmap-ramp .swatch.empty { background: repeating-linear-gradient(135deg, var(--bg-2), var(--bg-2) 3px, var(--bg-3) 3px, var(--bg-3) 6px); }
 .heatmap-legend .lbl { font: 12px var(--mono); color: var(--fg-2); }
+
+/* ---- Landing: search, then map ---------------------------------------- */
+
+/* A combobox rather than a select: 226 options in a native dropdown is a
+   scroll, not a search. The list sits over the map, so it needs a solid
+   background and a stacking context of its own. */
+.agency-search { position: relative; margin: 26px 0 8px; max-width: 560px; z-index: 5; }
+.agency-search label { display: block; font: 11px var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-2); margin-bottom: 6px; }
+.agency-search-box { position: relative; display: flex; }
+.agency-search input { width: 100%; font: 15px var(--sans); padding: 10px 34px 10px 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--fg); border-radius: 0; }
+.agency-search input:focus { outline: 2px solid var(--accent); outline-offset: -2px; border-color: var(--accent); }
+.agency-search-clear { position: absolute; right: 0; top: 0; height: 100%; width: 32px; border: 0; background: none; color: var(--fg-3); font-size: 20px; line-height: 1; cursor: pointer; }
+.agency-search-clear:hover { color: var(--fg); }
+.agency-search-list { position: absolute; top: calc(100% + 2px); left: 0; right: 0; margin: 0; padding: 0; list-style: none; background: var(--bg); border: 1px solid var(--line-2); max-height: 340px; overflow-y: auto; box-shadow: 0 6px 20px rgb(0 0 0 / 0.08); }
+.agency-search-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 8px 12px; cursor: pointer; border-bottom: 1px solid var(--line); }
+.agency-search-list li:last-child { border-bottom: 0; }
+.agency-search-list li.is-active { background: var(--accent); color: var(--accent-fg); }
+.agency-search-list li.is-empty { cursor: default; color: var(--fg-2); font-size: 13px; display: block; }
+.agency-search-name { font-size: 14px; }
+.agency-search-meta { font: 12px var(--mono); color: var(--fg-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.agency-search-list li.is-active .agency-search-meta { color: var(--accent-fg); opacity: 0.85; }
+
+.mapcard { margin: 6px 0 4px; border: 1px solid var(--line); background: var(--bg); }
+.mapwrap { position: relative; }
+.mapwrap svg { display: block; width: 100%; height: auto; }
+.map-states path { fill: var(--bg-2); stroke: var(--line-2); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+.map-dots circle { fill: color-mix(in srgb, var(--accent) 55%, transparent); stroke: var(--accent); stroke-width: 1; cursor: pointer; transition: fill 90ms linear; }
+.map-dots circle:hover, .map-dots circle.is-focus { fill: color-mix(in srgb, var(--heat-hot) 70%, transparent); stroke: var(--heat-hot); }
+.map-dots circle:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+
+/* Anchored to the dot, lifted clear of it, and never the reason the page
+   scrolls sideways. */
+.map-tip { position: absolute; transform: translate(-50%, calc(-100% - 12px)); background: var(--fg); color: var(--bg); padding: 6px 9px; font-size: 12.5px; line-height: 1.4; pointer-events: none; white-space: nowrap; display: flex; flex-direction: column; max-width: 90vw; }
+.map-tip-state { font: 11px var(--mono); opacity: 0.7; }
+.map-tip-n { font: 12px var(--mono); font-variant-numeric: tabular-nums; }
+
+.map-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding: 10px 14px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.map-foot .small { max-width: 62ch; }
+.map-legend { display: flex; align-items: center; gap: 10px; }
+.map-legend-item { display: flex; align-items: center; gap: 4px; font: 11px var(--mono); color: var(--fg-2); font-variant-numeric: tabular-nums; }
+.map-legend-item svg { width: 40px; height: 40px; }
+.map-legend-item circle { fill: color-mix(in srgb, var(--accent) 55%, transparent); stroke: var(--accent); stroke-width: 1; }
+
+.see-all { display: flex; align-items: center; gap: 16px; margin: 18px 0 8px; flex-wrap: wrap; }
+
+@media (max-width: 700px) {
+  .map-foot { flex-direction: column; align-items: flex-start; }
+  .map-legend-item svg { width: 32px; height: 32px; }
+}

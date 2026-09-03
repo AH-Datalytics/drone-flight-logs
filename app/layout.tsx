@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <div className="wrap">
         <header className="masthead">
           <h1><Link href="/">Police Drone Flight Logs</Link></h1>
-          <nav><Link href="/">Agencies</Link><Link href="/about">About the data</Link></nav>
+          <nav><Link href="/">Map</Link><Link href="/agencies">All agencies</Link><Link href="/about">About the data</Link></nav>
         </header>
         <main>{children}</main>
         <footer className="footer">Collected {m.run_utc ? fmtDate(m.run_utc.slice(0, 10)) : 'n/a'}. A monthly snapshot, not a live feed. Agencies publish only the flights they choose to.</footer>

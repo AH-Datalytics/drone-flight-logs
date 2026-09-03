@@ -1,0 +1,2093 @@
+{
+ "note": "One coarse point per agency, for the map. Derived from each Skydio dashboard's own published extent where possible, otherwise geocoded from the municipality. Not flight geometry: no flight path or per-flight location is stored anywhere in this project. Cached so a run never re-fetches a location it already has.",
+ "places": [
+  {
+   "agency_id": "adams-county-so-wa",
+   "lat": 46.8817,
+   "lon": -118.90332,
+   "state": "WA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:57.590Z"
+  },
+  {
+   "agency_id": "aep-gen-shared-services-engineering",
+   "lat": 39.38718,
+   "lon": -82.17654,
+   "state": "OH",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:57.832Z"
+  },
+  {
+   "agency_id": "alameda-county-so-ca",
+   "lat": 37.60903,
+   "lon": -121.89914,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "alameda county, CA, USA",
+   "resolved_utc": "2026-09-03T13:19:36.981Z"
+  },
+  {
+   "agency_id": "alaska-dot-pf",
+   "lat": 61.0524,
+   "lon": -149.62916,
+   "state": "AK",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:58.094Z"
+  },
+  {
+   "agency_id": "alhambra-pd-ca",
+   "lat": 34.09304,
+   "lon": -118.12706,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "alhambra, CA, USA",
+   "resolved_utc": "2026-09-03T13:19:38.436Z"
+  },
+  {
+   "agency_id": "amarillo-pd",
+   "lat": 36.36407,
+   "lon": -112.07818,
+   "state": "AZ",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:58.339Z"
+  },
+  {
+   "agency_id": "amherst-pd-oh",
+   "lat": 41.39782,
+   "lon": -82.22238,
+   "state": "OH",
+   "via": "geocode_name",
+   "query": "Amherst, OH, USA",
+   "resolved_utc": "2026-09-03T13:22:10.703Z"
+  },
+  {
+   "agency_id": "anne-arundel-county-police-md",
+   "lat": 38.97226,
+   "lon": -76.57345,
+   "state": "MD",
+   "via": "geocode_name",
+   "query": "Anne Arundel County, MD, USA",
+   "resolved_utc": "2026-09-03T13:21:38.462Z"
+  },
+  {
+   "agency_id": "appleton-pd-wi",
+   "lat": 44.28383,
+   "lon": -88.39089,
+   "state": "WI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:58.597Z"
+  },
+  {
+   "agency_id": "arkansas-dot",
+   "lat": 34.38977,
+   "lon": -92.23043,
+   "state": "AR",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:58.848Z"
+  },
+  {
+   "agency_id": "arvada-pd-co",
+   "lat": 39.81821,
+   "lon": -105.09519,
+   "state": "CO",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:59.043Z"
+  },
+  {
+   "agency_id": "aspen-pd-co",
+   "lat": 39.19111,
+   "lon": -106.82356,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "aspen, CO, USA",
+   "resolved_utc": "2026-09-03T13:19:40.195Z"
+  },
+  {
+   "agency_id": "aurora-pd-co",
+   "lat": 39.74014,
+   "lon": -104.87334,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "aurora, CO, USA",
+   "resolved_utc": "2026-09-03T13:19:42.048Z"
+  },
+  {
+   "agency_id": "australian-federal-police-drone-flights-for-missing-person-sharon-granites",
+   "lat": -23.74609,
+   "lon": 133.84788,
+   "state": null,
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:59.296Z"
+  },
+  {
+   "agency_id": "axon",
+   "lat": 38.75958,
+   "lon": -97.23933,
+   "state": "KS",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:59.504Z"
+  },
+  {
+   "agency_id": "axon-air-psm",
+   "lat": 35.52045,
+   "lon": -98.37566,
+   "state": "OK",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:59.731Z"
+  },
+  {
+   "agency_id": "azimuth-inc",
+   "lat": 39.67918,
+   "lon": -79.86098,
+   "state": "WV",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:18:59.921Z"
+  },
+  {
+   "agency_id": "azusa-pd-ca",
+   "lat": 34.13388,
+   "lon": -117.9056,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "azusa, CA, USA",
+   "resolved_utc": "2026-09-03T13:19:43.613Z"
+  },
+  {
+   "agency_id": "bellingham-pd-wa",
+   "lat": 48.75827,
+   "lon": -122.48414,
+   "state": "WA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:00.127Z"
+  },
+  {
+   "agency_id": "belmont-pd",
+   "lat": 35.70046,
+   "lon": -120.21509,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:00.315Z"
+  },
+  {
+   "agency_id": "berkeley-pd-il",
+   "lat": 41.88892,
+   "lon": -87.9034,
+   "state": "IL",
+   "via": "geocode_host",
+   "query": "berkeley, IL, USA",
+   "resolved_utc": "2026-09-03T13:19:45.186Z"
+  },
+  {
+   "agency_id": "bernalillo-county-so",
+   "lat": 35.08056,
+   "lon": -106.49623,
+   "state": "NM",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:00.528Z"
+  },
+  {
+   "agency_id": "birmingham-pd-al",
+   "lat": 33.50997,
+   "lon": -86.81057,
+   "state": "AL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:00.842Z"
+  },
+  {
+   "agency_id": "bloomington-pd-il",
+   "lat": 40.54037,
+   "lon": -88.88686,
+   "state": "IL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:01.066Z"
+  },
+  {
+   "agency_id": "boston-pd",
+   "lat": 42.34252,
+   "lon": -71.07903,
+   "state": "MA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:01.280Z"
+  },
+  {
+   "agency_id": "bothell-pd-wa",
+   "lat": 47.76232,
+   "lon": -122.2054,
+   "state": "WA",
+   "via": "geocode_name",
+   "query": "Bothell, WA, USA",
+   "resolved_utc": "2026-09-03T13:21:39.926Z"
+  },
+  {
+   "agency_id": "boulder-pd-co",
+   "lat": 40.01499,
+   "lon": -105.27054,
+   "state": "CO",
+   "via": "geocode_name",
+   "query": "Boulder, CO, USA",
+   "resolved_utc": "2026-09-03T13:22:12.335Z"
+  },
+  {
+   "agency_id": "boynton-beach-pd-fl",
+   "lat": 26.52891,
+   "lon": -80.05814,
+   "state": "FL",
+   "via": "geocode_host",
+   "query": "boynton beach, FL, USA",
+   "resolved_utc": "2026-09-03T13:19:46.726Z"
+  },
+  {
+   "agency_id": "brea-pd-ca",
+   "lat": 33.91704,
+   "lon": -117.88885,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Brea, CA, USA",
+   "resolved_utc": "2026-09-03T13:22:13.838Z"
+  },
+  {
+   "agency_id": "breck-pd-co",
+   "lat": 38.4959,
+   "lon": -84.7355,
+   "state": "KY",
+   "via": "geocode_host",
+   "query": "breck, CO, USA",
+   "resolved_utc": "2026-09-03T13:19:48.302Z"
+  },
+  {
+   "agency_id": "brookhaven-pd",
+   "lat": 33.86606,
+   "lon": -84.33297,
+   "state": "GA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:01.485Z"
+  },
+  {
+   "agency_id": "brookhaven-pd-ga",
+   "lat": 33.85844,
+   "lon": -84.3402,
+   "state": "GA",
+   "via": "geocode_name",
+   "query": "Brookhaven, GA, USA",
+   "resolved_utc": "2026-09-03T13:22:15.338Z"
+  },
+  {
+   "agency_id": "brooklyn-park-pd",
+   "lat": 44.69974,
+   "lon": -93.34141,
+   "state": "MN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:01.696Z"
+  },
+  {
+   "agency_id": "buena-park-pd-ca",
+   "lat": 33.87041,
+   "lon": -117.99622,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "buena park, CA, USA",
+   "resolved_utc": "2026-09-03T13:19:49.898Z"
+  },
+  {
+   "agency_id": "calcasieu-parish-so",
+   "lat": 30.30704,
+   "lon": -93.3867,
+   "state": "LA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:01.882Z"
+  },
+  {
+   "agency_id": "caldwell-pd-id",
+   "lat": 43.73261,
+   "lon": -116.80328,
+   "state": "ID",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:02.088Z"
+  },
+  {
+   "agency_id": "casa-grande-pd-az",
+   "lat": 32.87728,
+   "lon": -111.75368,
+   "state": "AZ",
+   "via": "geocode_host",
+   "query": "casa grande, AZ, USA",
+   "resolved_utc": "2026-09-03T13:19:51.553Z"
+  },
+  {
+   "agency_id": "castle-rock-pd-co",
+   "lat": 39.37226,
+   "lon": -104.85868,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "castle rock, CO, USA",
+   "resolved_utc": "2026-09-03T13:19:53.159Z"
+  },
+  {
+   "agency_id": "cherry-hill-pd",
+   "lat": 39.91189,
+   "lon": -74.88301,
+   "state": "NJ",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:02.318Z"
+  },
+  {
+   "agency_id": "cherry-valley-pd",
+   "lat": 42.23776,
+   "lon": -88.94195,
+   "state": "IL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:02.518Z"
+  },
+  {
+   "agency_id": "chesterfield-county-pd-va",
+   "lat": 37.45731,
+   "lon": -77.50905,
+   "state": "VA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:02.701Z"
+  },
+  {
+   "agency_id": "chico-pd-ca",
+   "lat": 39.72849,
+   "lon": -121.83748,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Chico, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:41.785Z"
+  },
+  {
+   "agency_id": "chiefland-pd-fl",
+   "lat": 29.23918,
+   "lon": -82.72099,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:02.901Z"
+  },
+  {
+   "agency_id": "chula-vista-pd-ca",
+   "lat": 32.64005,
+   "lon": -117.08419,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Chula Vista, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:43.329Z"
+  },
+  {
+   "agency_id": "cincinnati-pd",
+   "lat": 39.20393,
+   "lon": -84.53302,
+   "state": "OH",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:03.030Z"
+  },
+  {
+   "agency_id": "cleveland-division-of-police",
+   "lat": 41.47352,
+   "lon": -81.68242,
+   "state": "OH",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:03.229Z"
+  },
+  {
+   "agency_id": "coachella-valley-rtic-ca",
+   "lat": 33.76724,
+   "lon": -116.35604,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Coachella Valley, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:44.827Z"
+  },
+  {
+   "agency_id": "cobb-county-pd",
+   "lat": 34.07438,
+   "lon": -81.34464,
+   "state": "SC",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:03.408Z"
+  },
+  {
+   "agency_id": "cobb-county-pd-ga",
+   "lat": 33.93739,
+   "lon": -84.5732,
+   "state": "GA",
+   "via": "geocode_host",
+   "query": "cobb county, GA, USA",
+   "resolved_utc": "2026-09-03T13:19:54.806Z"
+  },
+  {
+   "agency_id": "colony-pd-tx",
+   "lat": 32.78179,
+   "lon": -95.68802,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "colony, TX, USA",
+   "resolved_utc": "2026-09-03T13:19:56.323Z"
+  },
+  {
+   "agency_id": "columbus-pd-oh",
+   "lat": 39.97813,
+   "lon": -83.07734,
+   "state": "OH",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:03.636Z"
+  },
+  {
+   "agency_id": "concord-pd-ca",
+   "lat": 37.96947,
+   "lon": -121.90656,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:03.840Z"
+  },
+  {
+   "agency_id": "conroe-pd",
+   "lat": 30.31332,
+   "lon": -95.462,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:04.028Z"
+  },
+  {
+   "agency_id": "conyers-pd-ga",
+   "lat": 33.66761,
+   "lon": -84.01769,
+   "state": "GA",
+   "via": "geocode_host",
+   "query": "conyers, GA, USA",
+   "resolved_utc": "2026-09-03T13:19:57.827Z"
+  },
+  {
+   "agency_id": "copper-mountain-pd-co",
+   "lat": 39.47809,
+   "lon": -106.16289,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "copper, CO, USA",
+   "resolved_utc": "2026-09-03T13:20:01.109Z"
+  },
+  {
+   "agency_id": "cottonwood-pd-az",
+   "lat": 34.74756,
+   "lon": -112.02724,
+   "state": "AZ",
+   "via": "geocode_host",
+   "query": "cottonwood, AZ, USA",
+   "resolved_utc": "2026-09-03T13:20:02.616Z"
+  },
+  {
+   "agency_id": "cspd-real-time-crime-center",
+   "lat": 38.89085,
+   "lon": -104.77093,
+   "state": "CO",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:05.983Z"
+  },
+  {
+   "agency_id": "csu-long-beach-pd",
+   "lat": 33.78828,
+   "lon": -118.11108,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:06.179Z"
+  },
+  {
+   "agency_id": "dallas-pd",
+   "lat": 32.79641,
+   "lon": -96.75741,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:06.379Z"
+  },
+  {
+   "agency_id": "dearborn-pd-mi",
+   "lat": 42.3139,
+   "lon": -83.22085,
+   "state": "MI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:06.582Z"
+  },
+  {
+   "agency_id": "dekalb-county-pd-ga",
+   "lat": 33.75756,
+   "lon": -84.21865,
+   "state": "GA",
+   "via": "geocode_host",
+   "query": "dekalb, GA, USA",
+   "resolved_utc": "2026-09-03T13:20:04.130Z"
+  },
+  {
+   "agency_id": "denver-pd",
+   "lat": 39.83372,
+   "lon": -104.9017,
+   "state": "CO",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:06.791Z"
+  },
+  {
+   "agency_id": "denver-pd-co",
+   "lat": 39.73924,
+   "lon": -104.98486,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "denver, CO, USA",
+   "resolved_utc": "2026-09-03T13:20:05.713Z"
+  },
+  {
+   "agency_id": "detroit-fire-department",
+   "lat": 42.4278,
+   "lon": -83.27661,
+   "state": "MI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:07.030Z"
+  },
+  {
+   "agency_id": "dock-trial-vancouver-pd-wa",
+   "lat": 45.64292,
+   "lon": -122.61791,
+   "state": "WA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:07.238Z"
+  },
+  {
+   "agency_id": "duluth-pd-mn",
+   "lat": 46.76851,
+   "lon": -92.14282,
+   "state": "MN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:07.413Z"
+  },
+  {
+   "agency_id": "dunwoody-pd-ga",
+   "lat": 33.94638,
+   "lon": -84.33427,
+   "state": "GA",
+   "via": "geocode_host",
+   "query": "dunwoody, GA, USA",
+   "resolved_utc": "2026-09-03T13:20:07.259Z"
+  },
+  {
+   "agency_id": "duquesne-light-company",
+   "lat": 40.4696,
+   "lon": -79.86303,
+   "state": "PA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:07.614Z"
+  },
+  {
+   "agency_id": "durango-pd-co",
+   "lat": 37.27695,
+   "lon": -107.8766,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "durango, CO, USA",
+   "resolved_utc": "2026-09-03T13:20:08.849Z"
+  },
+  {
+   "agency_id": "dutchess-county-so-uas-unit",
+   "lat": 41.64027,
+   "lon": -73.8832,
+   "state": "NY",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:08.035Z"
+  },
+  {
+   "agency_id": "dutchess-so-ny",
+   "lat": 41.71943,
+   "lon": -73.75162,
+   "state": "NY",
+   "via": "geocode_host",
+   "query": "dutchess, NY, USA",
+   "resolved_utc": "2026-09-03T13:20:10.360Z"
+  },
+  {
+   "agency_id": "edinburg-pd-tx",
+   "lat": 26.3014,
+   "lon": -98.16245,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "edinburg, TX, USA",
+   "resolved_utc": "2026-09-03T13:20:11.837Z"
+  },
+  {
+   "agency_id": "el-cajon-pd",
+   "lat": 32.79509,
+   "lon": -116.965,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:08.209Z"
+  },
+  {
+   "agency_id": "el-centro-pd-ca",
+   "lat": 33.06171,
+   "lon": -115.76944,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:08.420Z"
+  },
+  {
+   "agency_id": "el-dorado-pd-kansas",
+   "lat": 37.76632,
+   "lon": -96.93048,
+   "state": "KS",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:08.633Z"
+  },
+  {
+   "agency_id": "el-segundo-pd-ca",
+   "lat": 33.91703,
+   "lon": -118.41563,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "el segundo, CA, USA",
+   "resolved_utc": "2026-09-03T13:20:13.499Z"
+  },
+  {
+   "agency_id": "elizabethtown-pd-ky",
+   "lat": 37.69395,
+   "lon": -85.85913,
+   "state": "KY",
+   "via": "geocode_host",
+   "query": "elizabethtown, KY, USA",
+   "resolved_utc": "2026-09-03T13:20:15.049Z"
+  },
+  {
+   "agency_id": "elk-grove-pd-ca",
+   "lat": 38.4088,
+   "lon": -121.37162,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Elk Grove, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:46.430Z"
+  },
+  {
+   "agency_id": "elm-ridge-pd-tx",
+   "lat": 29.35526,
+   "lon": -95.97244,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "elm ridge, TX, USA",
+   "resolved_utc": "2026-09-03T13:20:18.169Z"
+  },
+  {
+   "agency_id": "emporia-pd-va",
+   "lat": 36.69376,
+   "lon": -77.53571,
+   "state": "VA",
+   "via": "geocode_host",
+   "query": "emporia, VA, USA",
+   "resolved_utc": "2026-09-03T13:20:19.663Z"
+  },
+  {
+   "agency_id": "escambia-county-so-fl",
+   "lat": 30.49767,
+   "lon": -87.29836,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:08.837Z"
+  },
+  {
+   "agency_id": "everett-pd-wa",
+   "lat": 47.97934,
+   "lon": -122.2127,
+   "state": "WA",
+   "via": "geocode_name",
+   "query": "Everett, WA, USA",
+   "resolved_utc": "2026-09-03T13:21:47.978Z"
+  },
+  {
+   "agency_id": "fairfax-county-pd",
+   "lat": 38.88399,
+   "lon": -77.29102,
+   "state": "VA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:09.360Z"
+  },
+  {
+   "agency_id": "farmers-branch-pd-tx",
+   "lat": 32.92657,
+   "lon": -96.89609,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "farmers branch, TX, USA",
+   "resolved_utc": "2026-09-03T13:20:22.730Z"
+  },
+  {
+   "agency_id": "fayette-county-so-ga",
+   "lat": 33.5268,
+   "lon": -84.45083,
+   "state": "GA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:09.563Z"
+  },
+  {
+   "agency_id": "fitchburg-pd-wi",
+   "lat": 43.01952,
+   "lon": -89.41334,
+   "state": "WI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:09.784Z"
+  },
+  {
+   "agency_id": "fort-collins-police-services",
+   "lat": 40.59154,
+   "lon": -105.0625,
+   "state": "CO",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:10.342Z"
+  },
+  {
+   "agency_id": "fort-worth-pd-tx",
+   "lat": 32.75318,
+   "lon": -97.33275,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "fort worth, TX, USA",
+   "resolved_utc": "2026-09-03T13:20:24.267Z"
+  },
+  {
+   "agency_id": "foxborough-pd-ma",
+   "lat": 42.08928,
+   "lon": -71.2691,
+   "state": "MA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:10.569Z"
+  },
+  {
+   "agency_id": "franklin-township-pd-nj",
+   "lat": 40.48407,
+   "lon": -74.50916,
+   "state": "NJ",
+   "via": "geocode_host",
+   "query": "franklin somerset, NJ, USA",
+   "resolved_utc": "2026-09-03T13:20:25.595Z"
+  },
+  {
+   "agency_id": "frederick-county-so",
+   "lat": 39.51202,
+   "lon": -77.40782,
+   "state": "MD",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:10.806Z"
+  },
+  {
+   "agency_id": "fsu-emhs",
+   "lat": 30.42942,
+   "lon": -84.29948,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:11.011Z"
+  },
+  {
+   "agency_id": "fulton-county-so-ga",
+   "lat": 34.05811,
+   "lon": -84.29617,
+   "state": "GA",
+   "via": "geocode_host",
+   "query": "fulton county, GA, USA",
+   "resolved_utc": "2026-09-03T13:20:27.246Z"
+  },
+  {
+   "agency_id": "galveston-pd-tx",
+   "lat": 29.38723,
+   "lon": -94.99274,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "galveston, TX, USA",
+   "resolved_utc": "2026-09-03T13:20:28.761Z"
+  },
+  {
+   "agency_id": "georgia-tech-pd-ga",
+   "lat": 33.77609,
+   "lon": -84.39881,
+   "state": "GA",
+   "via": "geocode_host",
+   "query": "georgia tech, GA, USA",
+   "resolved_utc": "2026-09-03T13:20:30.289Z"
+  },
+  {
+   "agency_id": "gerrittsen-beach-fire-department",
+   "lat": 40.59641,
+   "lon": -73.9231,
+   "state": "NY",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:11.237Z"
+  },
+  {
+   "agency_id": "gilbert-pd-az",
+   "lat": 33.35276,
+   "lon": -111.78904,
+   "state": "AZ",
+   "via": "geocode_host",
+   "query": "gilbert, AZ, USA",
+   "resolved_utc": "2026-09-03T13:20:32.063Z"
+  },
+  {
+   "agency_id": "glendale-pd-az",
+   "lat": 33.53869,
+   "lon": -112.18599,
+   "state": "AZ",
+   "via": "geocode_name",
+   "query": "Glendale, AZ, USA",
+   "resolved_utc": "2026-09-03T13:22:16.992Z"
+  },
+  {
+   "agency_id": "glendale-pd-trial-ca",
+   "lat": 34.15187,
+   "lon": -118.25415,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:11.452Z"
+  },
+  {
+   "agency_id": "granite-defense-technologies-nfr",
+   "lat": 30.80044,
+   "lon": -98.33428,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:11.650Z"
+  },
+  {
+   "agency_id": "gray-fire-rescue",
+   "lat": 43.88826,
+   "lon": -70.30375,
+   "state": "ME",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:11.887Z"
+  },
+  {
+   "agency_id": "greeley-pd-co",
+   "lat": 40.33029,
+   "lon": -104.853,
+   "state": "CO",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:12.102Z"
+  },
+  {
+   "agency_id": "hamilton-county-so-in",
+   "lat": 40.07498,
+   "lon": -86.04989,
+   "state": "IN",
+   "via": "geocode_host",
+   "query": "hamilton, IN, USA",
+   "resolved_utc": "2026-09-03T13:20:33.942Z"
+  },
+  {
+   "agency_id": "hamilton-pd-oh",
+   "lat": 39.38887,
+   "lon": -84.55064,
+   "state": "OH",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:12.302Z"
+  },
+  {
+   "agency_id": "hampton-pd-va",
+   "lat": 37.03317,
+   "lon": -76.37449,
+   "state": "VA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:12.534Z"
+  },
+  {
+   "agency_id": "harvey-pd-il",
+   "lat": 41.61003,
+   "lon": -87.64671,
+   "state": "IL",
+   "via": "geocode_host",
+   "query": "harvey, IL, USA",
+   "resolved_utc": "2026-09-03T13:20:35.700Z"
+  },
+  {
+   "agency_id": "hawthorne-pd-ca",
+   "lat": 33.91283,
+   "lon": -118.34261,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "hawthorne, CA, USA",
+   "resolved_utc": "2026-09-03T13:20:37.220Z"
+  },
+  {
+   "agency_id": "hemet-pd-ca",
+   "lat": 33.74752,
+   "lon": -116.97197,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Hemet, CA, USA",
+   "resolved_utc": "2026-09-03T13:22:18.552Z"
+  },
+  {
+   "agency_id": "hempstead-pd-ny",
+   "lat": 40.67368,
+   "lon": -73.61907,
+   "state": "NY",
+   "via": "geocode_host",
+   "query": "hempstead, NY, USA",
+   "resolved_utc": "2026-09-03T13:20:40.178Z"
+  },
+  {
+   "agency_id": "hennepin-ems",
+   "lat": 44.97377,
+   "lon": -93.26296,
+   "state": "MN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:12.792Z"
+  },
+  {
+   "agency_id": "hollywood-pd",
+   "lat": 27.05209,
+   "lon": -80.99306,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:13.068Z"
+  },
+  {
+   "agency_id": "honolulu-pd",
+   "lat": 21.31703,
+   "lon": -157.8506,
+   "state": "HI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:13.277Z"
+  },
+  {
+   "agency_id": "humble-pd-tx",
+   "lat": 29.99883,
+   "lon": -95.26216,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "humble, TX, USA",
+   "resolved_utc": "2026-09-03T13:20:41.734Z"
+  },
+  {
+   "agency_id": "indian-river-county-emergency-services-fl",
+   "lat": 27.63892,
+   "lon": -80.38397,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:13.547Z"
+  },
+  {
+   "agency_id": "irvine-pd-ca",
+   "lat": 33.6857,
+   "lon": -117.82598,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Irvine, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:49.753Z"
+  },
+  {
+   "agency_id": "keystone-pd-co",
+   "lat": 39.59656,
+   "lon": -105.93403,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "keystone, CO, USA",
+   "resolved_utc": "2026-09-03T13:20:43.494Z"
+  },
+  {
+   "agency_id": "killeen-pd-tx",
+   "lat": 31.04374,
+   "lon": -97.75101,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:13.811Z"
+  },
+  {
+   "agency_id": "king-county-so-wa",
+   "lat": 47.48734,
+   "lon": -121.86221,
+   "state": "WA",
+   "via": "geocode_name",
+   "query": "King County, WA, USA",
+   "resolved_utc": "2026-09-03T13:21:51.312Z"
+  },
+  {
+   "agency_id": "knox-county-so-tn",
+   "lat": 36.08045,
+   "lon": -83.77759,
+   "state": "TN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:14.025Z"
+  },
+  {
+   "agency_id": "kootenai-county-so-id",
+   "lat": 47.72946,
+   "lon": -116.83431,
+   "state": "ID",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:14.233Z"
+  },
+  {
+   "agency_id": "la-port-police-ca",
+   "lat": 33.70855,
+   "lon": -118.25162,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Los Angeles Port, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:53.188Z"
+  },
+  {
+   "agency_id": "lafayette-pd-la",
+   "lat": 30.22486,
+   "lon": -92.01691,
+   "state": "LA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:14.480Z"
+  },
+  {
+   "agency_id": "lake-county-so-fl",
+   "lat": 28.84619,
+   "lon": -81.5861,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:14.674Z"
+  },
+  {
+   "agency_id": "lancaster-pd-ca",
+   "lat": 34.69811,
+   "lon": -118.13662,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Lancaster, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:54.838Z"
+  },
+  {
+   "agency_id": "laredo-pd",
+   "lat": 27.53948,
+   "lon": -99.46496,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:14.948Z"
+  },
+  {
+   "agency_id": "las-cruces-pd-nm",
+   "lat": 32.31404,
+   "lon": -106.77981,
+   "state": "NM",
+   "via": "geocode_host",
+   "query": "las cruces, NM, USA",
+   "resolved_utc": "2026-09-03T13:20:45.087Z"
+  },
+  {
+   "agency_id": "las-vegas-metro-pd-nv",
+   "lat": 36.1226,
+   "lon": -115.17978,
+   "state": "NV",
+   "via": "geocode_name",
+   "query": "Las Vegas Metropolitan, NV, USA",
+   "resolved_utc": "2026-09-03T13:21:57.017Z"
+  },
+  {
+   "agency_id": "las-vegas-metropolitan-pd",
+   "lat": 36.16985,
+   "lon": -115.12827,
+   "state": "NV",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:15.135Z"
+  },
+  {
+   "agency_id": "laurel-pd-uas-flight-data",
+   "lat": 39.08531,
+   "lon": -76.86464,
+   "state": "MD",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:15.350Z"
+  },
+  {
+   "agency_id": "lee-county-government",
+   "lat": 33.04442,
+   "lon": -97.02121,
+   "state": "TX",
+   "via": "geocode_name",
+   "query": "Lee County Government, USA",
+   "resolved_utc": "2026-09-03T13:19:17.708Z"
+  },
+  {
+   "agency_id": "lewisville-pd-dfr-tx",
+   "lat": 33.03604,
+   "lon": -96.98903,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:17.921Z"
+  },
+  {
+   "agency_id": "longmont-pd-co",
+   "lat": 40.16721,
+   "lon": -105.10193,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "longmont, CO, USA",
+   "resolved_utc": "2026-09-03T13:20:46.770Z"
+  },
+  {
+   "agency_id": "los-altos-pd-ca",
+   "lat": 37.37906,
+   "lon": -122.11658,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Los Altos, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:58.169Z"
+  },
+  {
+   "agency_id": "los-angeles-pd",
+   "lat": 34.02006,
+   "lon": -118.41823,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:19.925Z"
+  },
+  {
+   "agency_id": "los-angeles-pd-ca",
+   "lat": 34.05369,
+   "lon": -118.24277,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "los angeles, CA, USA",
+   "resolved_utc": "2026-09-03T13:20:48.628Z"
+  },
+  {
+   "agency_id": "los-gatos-monte-sereno-pd",
+   "lat": 37.24148,
+   "lon": -121.97152,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:20.151Z"
+  },
+  {
+   "agency_id": "louisville-metro-government",
+   "lat": 38.22232,
+   "lon": -85.71436,
+   "state": "KY",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:20.362Z"
+  },
+  {
+   "agency_id": "loveland-pd-co",
+   "lat": 40.39776,
+   "lon": -105.07498,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "loveland, CO, USA",
+   "resolved_utc": "2026-09-03T13:20:50.219Z"
+  },
+  {
+   "agency_id": "mankato-mn",
+   "lat": 44.16585,
+   "lon": -94.0028,
+   "state": "MN",
+   "via": "geocode_name",
+   "query": "Mankato, MN, USA",
+   "resolved_utc": "2026-09-03T13:21:59.694Z"
+  },
+  {
+   "agency_id": "mansfield-tx-pd-tx",
+   "lat": 32.56349,
+   "lon": -97.14203,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "mansfield, TX, USA",
+   "resolved_utc": "2026-09-03T13:20:51.651Z"
+  },
+  {
+   "agency_id": "marysville-pd-sno911",
+   "lat": 47.79835,
+   "lon": -122.24739,
+   "state": "WA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:20.588Z"
+  },
+  {
+   "agency_id": "medicine-hat-police-service",
+   "lat": 50.0399,
+   "lon": -110.67291,
+   "state": null,
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:20.794Z"
+  },
+  {
+   "agency_id": "melrose-park-pd-il",
+   "lat": 41.90116,
+   "lon": -87.86438,
+   "state": "IL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:21.005Z"
+  },
+  {
+   "agency_id": "menifee-pd",
+   "lat": 33.68696,
+   "lon": -117.17973,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:21.227Z"
+  },
+  {
+   "agency_id": "mesa-pd-az",
+   "lat": 33.4151,
+   "lon": -111.83145,
+   "state": "AZ",
+   "via": "geocode_host",
+   "query": "mesa, AZ, USA",
+   "resolved_utc": "2026-09-03T13:20:53.410Z"
+  },
+  {
+   "agency_id": "metropolitan-nashville-pd-tn",
+   "lat": 36.27571,
+   "lon": -86.69176,
+   "state": "TN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:21.342Z"
+  },
+  {
+   "agency_id": "metropolitan-pd",
+   "lat": 36.45699,
+   "lon": -98.18986,
+   "state": "OK",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:21.537Z"
+  },
+  {
+   "agency_id": "miami-beach-pd-g47-beta",
+   "lat": 25.78446,
+   "lon": -80.13464,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:21.825Z"
+  },
+  {
+   "agency_id": "miami-pd-org",
+   "lat": 25.7724,
+   "lon": -80.20841,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:22.121Z"
+  },
+  {
+   "agency_id": "middlefield-vol-fire-co",
+   "lat": 41.52497,
+   "lon": -72.72063,
+   "state": "CT",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:22.328Z"
+  },
+  {
+   "agency_id": "midwest-city-pd-ok",
+   "lat": 35.44951,
+   "lon": -97.3967,
+   "state": "OK",
+   "via": "geocode_host",
+   "query": "midwest, OK, USA",
+   "resolved_utc": "2026-09-03T13:20:54.999Z"
+  },
+  {
+   "agency_id": "milford-pd",
+   "lat": 41.21937,
+   "lon": -73.05063,
+   "state": "CT",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:22.522Z"
+  },
+  {
+   "agency_id": "milwaukee-pd",
+   "lat": 43.10262,
+   "lon": -88.05467,
+   "state": "WI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:22.777Z"
+  },
+  {
+   "agency_id": "minnetonka-pd",
+   "lat": 45.00821,
+   "lon": -93.4415,
+   "state": "MN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:22.895Z"
+  },
+  {
+   "agency_id": "mlgw",
+   "lat": 35.03486,
+   "lon": -89.79524,
+   "state": "TN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:23.122Z"
+  },
+  {
+   "agency_id": "mmozol-co",
+   "lat": 39.6438,
+   "lon": -106.38882,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "vail, CO, USA",
+   "resolved_utc": "2026-09-03T13:20:56.744Z"
+  },
+  {
+   "agency_id": "monarch-pd-co",
+   "lat": 38.2151,
+   "lon": -81.45706,
+   "state": "WV",
+   "via": "geocode_host",
+   "query": "monarch, CO, USA",
+   "resolved_utc": "2026-09-03T13:21:00.125Z"
+  },
+  {
+   "agency_id": "monroe-county-so",
+   "lat": 43.07045,
+   "lon": -77.60879,
+   "state": "NY",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:23.330Z"
+  },
+  {
+   "agency_id": "montgomery-county-pd-g47-beta",
+   "lat": 39.12019,
+   "lon": -77.11755,
+   "state": "MD",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:23.568Z"
+  },
+  {
+   "agency_id": "mooresville-pd-nc",
+   "lat": 35.58486,
+   "lon": -80.81007,
+   "state": "NC",
+   "via": "geocode_host",
+   "query": "mooresville, NC, USA",
+   "resolved_utc": "2026-09-03T13:21:01.561Z"
+  },
+  {
+   "agency_id": "nevada-county-so",
+   "lat": 39.16719,
+   "lon": -120.6498,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:23.810Z"
+  },
+  {
+   "agency_id": "new-berlin-marshal-s-office-tx",
+   "lat": 29.50685,
+   "lon": -98.10925,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:24.007Z"
+  },
+  {
+   "agency_id": "new-orleans-pd",
+   "lat": 29.99384,
+   "lon": -89.99597,
+   "state": "LA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:24.207Z"
+  },
+  {
+   "agency_id": "newmont-lihir-papua-new-guinea",
+   "lat": -3.12826,
+   "lon": 152.64474,
+   "state": null,
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:24.456Z"
+  },
+  {
+   "agency_id": "niles-pd-il",
+   "lat": 42.03015,
+   "lon": -87.80988,
+   "state": "IL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:24.728Z"
+  },
+  {
+   "agency_id": "niras-emea",
+   "lat": 55.72114,
+   "lon": 12.48251,
+   "state": null,
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:24.978Z"
+  },
+  {
+   "agency_id": "norton-pd-oh",
+   "lat": 41.02019,
+   "lon": -81.64224,
+   "state": "OH",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:25.295Z"
+  },
+  {
+   "agency_id": "oak-brook-pd-il",
+   "lat": 41.83271,
+   "lon": -87.94841,
+   "state": "IL",
+   "via": "geocode_host",
+   "query": "oak brook, IL, USA",
+   "resolved_utc": "2026-09-03T13:21:03.167Z"
+  },
+  {
+   "agency_id": "oakland-county-so",
+   "lat": 42.64952,
+   "lon": -83.29376,
+   "state": "MI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:25.499Z"
+  },
+  {
+   "agency_id": "oklahoma-city-pd",
+   "lat": 35.46931,
+   "lon": -97.53377,
+   "state": "OK",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:25.697Z"
+  },
+  {
+   "agency_id": "overland-park-pd-ks",
+   "lat": 38.94061,
+   "lon": -94.68139,
+   "state": "KS",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:25.967Z"
+  },
+  {
+   "agency_id": "pacifica-pd-drone-transparency-portal-ca",
+   "lat": 37.62245,
+   "lon": -122.49086,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:26.159Z"
+  },
+  {
+   "agency_id": "paradise-pd-ca",
+   "lat": 39.75961,
+   "lon": -121.62192,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Paradise, CA, USA",
+   "resolved_utc": "2026-09-03T13:22:01.569Z"
+  },
+  {
+   "agency_id": "peoria-pd-az",
+   "lat": 33.58061,
+   "lon": -112.23729,
+   "state": "AZ",
+   "via": "geocode_host",
+   "query": "peoria, AZ, USA",
+   "resolved_utc": "2026-09-03T13:21:04.835Z"
+  },
+  {
+   "agency_id": "perth-amboy-nj",
+   "lat": 40.51332,
+   "lon": -74.27242,
+   "state": "NJ",
+   "via": "geocode_host",
+   "query": "perth amboy, NJ, USA",
+   "resolved_utc": "2026-09-03T13:21:06.273Z"
+  },
+  {
+   "agency_id": "philadelphia-pd",
+   "lat": 40.01863,
+   "lon": -75.0808,
+   "state": "PA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:26.367Z"
+  },
+  {
+   "agency_id": "pickens-county-so-ga",
+   "lat": 34.47967,
+   "lon": -84.45081,
+   "state": "GA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:26.568Z"
+  },
+  {
+   "agency_id": "prosper-pd-tx",
+   "lat": 33.23716,
+   "lon": -96.7977,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "prosper, TX, USA",
+   "resolved_utc": "2026-09-03T13:21:07.772Z"
+  },
+  {
+   "agency_id": "providence-pd-ri",
+   "lat": 41.81887,
+   "lon": -71.42975,
+   "state": "RI",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:26.776Z"
+  },
+  {
+   "agency_id": "pseg-long-island-power-authority",
+   "lat": 40.9376,
+   "lon": -72.37262,
+   "state": "NY",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:26.998Z"
+  },
+  {
+   "agency_id": "quincy-pd",
+   "lat": 30.5913,
+   "lon": -84.57993,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:27.205Z"
+  },
+  {
+   "agency_id": "raleigh-pd-nc",
+   "lat": 35.7804,
+   "lon": -78.6391,
+   "state": "NC",
+   "via": "geocode_host",
+   "query": "raleigh, NC, USA",
+   "resolved_utc": "2026-09-03T13:21:09.328Z"
+  },
+  {
+   "agency_id": "redondo-beach-pd-ca",
+   "lat": 33.83983,
+   "lon": -118.38459,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Redondo Beach, CA, USA",
+   "resolved_utc": "2026-09-03T13:22:20.044Z"
+  },
+  {
+   "agency_id": "riverside-county-so-ca",
+   "lat": 33.722,
+   "lon": -116.03725,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "riverside county, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:12.483Z"
+  },
+  {
+   "agency_id": "roanoke-pd-tx",
+   "lat": 33.00401,
+   "lon": -97.22585,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "roanoke, TX, USA",
+   "resolved_utc": "2026-09-03T13:21:13.838Z"
+  },
+  {
+   "agency_id": "rochester-pd-mn",
+   "lat": 44.02966,
+   "lon": -92.46552,
+   "state": "MN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:27.411Z"
+  },
+  {
+   "agency_id": "roswell-pd-ga",
+   "lat": 34.02332,
+   "lon": -84.36002,
+   "state": "GA",
+   "via": "geocode_name",
+   "query": "Roswell, GA, USA",
+   "resolved_utc": "2026-09-03T13:22:21.514Z"
+  },
+  {
+   "agency_id": "rowlett-pd-tx",
+   "lat": 32.90226,
+   "lon": -96.54273,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:27.608Z"
+  },
+  {
+   "agency_id": "sacramento-pd-ca",
+   "lat": 38.58106,
+   "lon": -121.49389,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Sacramento, CA, USA",
+   "resolved_utc": "2026-09-03T13:22:03.047Z"
+  },
+  {
+   "agency_id": "san-angelo-tx-pd-tx",
+   "lat": 31.46497,
+   "lon": -100.44051,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "san angelo, TX, USA",
+   "resolved_utc": "2026-09-03T13:21:15.626Z"
+  },
+  {
+   "agency_id": "san-rafael-pd-ca",
+   "lat": 37.97478,
+   "lon": -122.53167,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "san rafael, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:17.237Z"
+  },
+  {
+   "agency_id": "sansom-park-pd-tx",
+   "lat": 32.80596,
+   "lon": -97.40307,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "sansom park, TX, USA",
+   "resolved_utc": "2026-09-03T13:21:18.716Z"
+  },
+  {
+   "agency_id": "santa-ana-pd-ca",
+   "lat": 33.7376,
+   "lon": -117.88315,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:27.812Z"
+  },
+  {
+   "agency_id": "santa-clara-county-so",
+   "lat": 37.40206,
+   "lon": -121.85235,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:28.025Z"
+  },
+  {
+   "agency_id": "scottsdale-pd-az",
+   "lat": 33.49422,
+   "lon": -111.92602,
+   "state": "AZ",
+   "via": "geocode_host",
+   "query": "scottsdale, AZ, USA",
+   "resolved_utc": "2026-09-03T13:21:20.210Z"
+  },
+  {
+   "agency_id": "sfpd",
+   "lat": 37.78794,
+   "lon": -122.40752,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "San Francisco, CA, USA",
+   "resolved_utc": "2026-09-03T13:19:29.615Z"
+  },
+  {
+   "agency_id": "show-low-pd-az",
+   "lat": 34.25421,
+   "lon": -110.02983,
+   "state": "AZ",
+   "via": "geocode_host",
+   "query": "show low, AZ, USA",
+   "resolved_utc": "2026-09-03T13:21:21.813Z"
+  },
+  {
+   "agency_id": "snohomish-county-so-wa",
+   "lat": 48.00747,
+   "lon": -121.73049,
+   "state": "WA",
+   "via": "geocode_name",
+   "query": "Snohomish County, WA, USA",
+   "resolved_utc": "2026-09-03T13:22:04.515Z"
+  },
+  {
+   "agency_id": "south-bend-pd-in",
+   "lat": 41.68338,
+   "lon": -86.25001,
+   "state": "IN",
+   "via": "geocode_host",
+   "query": "south bend, IN, USA",
+   "resolved_utc": "2026-09-03T13:21:23.226Z"
+  },
+  {
+   "agency_id": "south-san-francisco-pd-ca",
+   "lat": 37.65337,
+   "lon": -122.42305,
+   "state": "CA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:29.810Z"
+  },
+  {
+   "agency_id": "southern-illinois-university-pd-il",
+   "lat": 37.70834,
+   "lon": -89.22756,
+   "state": "IL",
+   "via": "geocode_host",
+   "query": "southern illinois university, IL, USA",
+   "resolved_utc": "2026-09-03T13:21:24.709Z"
+  },
+  {
+   "agency_id": "southington-pd-ct",
+   "lat": 41.60054,
+   "lon": -72.87829,
+   "state": "CT",
+   "via": "geocode_host",
+   "query": "southington, CT, USA",
+   "resolved_utc": "2026-09-03T13:21:26.285Z"
+  },
+  {
+   "agency_id": "st-cloud-pd",
+   "lat": 28.23623,
+   "lon": -81.28348,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:29.917Z"
+  },
+  {
+   "agency_id": "st-paul-pd-mn",
+   "lat": 44.9532,
+   "lon": -93.10323,
+   "state": "MN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:30.101Z"
+  },
+  {
+   "agency_id": "steamboat-pd-co",
+   "lat": 40.4848,
+   "lon": -106.83173,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "steamboat, CO, USA",
+   "resolved_utc": "2026-09-03T13:21:27.822Z"
+  },
+  {
+   "agency_id": "suisun-city-pd-ca",
+   "lat": 38.23825,
+   "lon": -122.04024,
+   "state": "CA",
+   "via": "geocode_host",
+   "query": "suisun city, CA, USA",
+   "resolved_utc": "2026-09-03T13:21:29.364Z"
+  },
+  {
+   "agency_id": "tampa-pd",
+   "lat": 27.99306,
+   "lon": -82.42986,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:30.294Z"
+  },
+  {
+   "agency_id": "telluride-co",
+   "lat": 37.93749,
+   "lon": -107.81228,
+   "state": "CO",
+   "via": "geocode_host",
+   "query": "telluride, CO, USA",
+   "resolved_utc": "2026-09-03T13:21:30.664Z"
+  },
+  {
+   "agency_id": "temple-pd-tx",
+   "lat": 31.09837,
+   "lon": -97.34296,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "temple, TX, USA",
+   "resolved_utc": "2026-09-03T13:21:32.338Z"
+  },
+  {
+   "agency_id": "tennessee-department-of-transportation-tdot",
+   "lat": 35.8022,
+   "lon": -85.66797,
+   "state": "TN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:30.510Z"
+  },
+  {
+   "agency_id": "terrebonne-parish-so-la",
+   "lat": 29.61362,
+   "lon": -90.72358,
+   "state": "LA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:30.715Z"
+  },
+  {
+   "agency_id": "titusville-pd-suas-transparency-dashboard",
+   "lat": 28.58927,
+   "lon": -80.83718,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:30.911Z"
+  },
+  {
+   "agency_id": "toledo-pd-oh",
+   "lat": 41.65291,
+   "lon": -83.53782,
+   "state": "OH",
+   "via": "geocode_host",
+   "query": "toledo, OH, USA",
+   "resolved_utc": "2026-09-03T13:21:33.796Z"
+  },
+  {
+   "agency_id": "town-of-ramapo-pd",
+   "lat": 41.13317,
+   "lon": -74.09366,
+   "state": "NY",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:31.144Z"
+  },
+  {
+   "agency_id": "trial-fargo-pd",
+   "lat": 46.87151,
+   "lon": -96.82109,
+   "state": "ND",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:31.359Z"
+  },
+  {
+   "agency_id": "trophy-club-pd-tx",
+   "lat": 33.01572,
+   "lon": -97.20348,
+   "state": "TX",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:31.564Z"
+  },
+  {
+   "agency_id": "tulsa-fire-department",
+   "lat": 36.12194,
+   "lon": -96.28682,
+   "state": "OK",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:31.796Z"
+  },
+  {
+   "agency_id": "turner-construction-company",
+   "lat": 35.67568,
+   "lon": -78.90638,
+   "state": "NC",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:32.044Z"
+  },
+  {
+   "agency_id": "university-of-arizona-real-time-coordination-center",
+   "lat": 32.23067,
+   "lon": -110.96761,
+   "state": "AZ",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:32.237Z"
+  },
+  {
+   "agency_id": "university-of-illinois-division-of-public-safety",
+   "lat": 40.04741,
+   "lon": -88.18859,
+   "state": "IL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:32.419Z"
+  },
+  {
+   "agency_id": "university-st-thomas-pd-tx",
+   "lat": 29.73684,
+   "lon": -95.39417,
+   "state": "TX",
+   "via": "geocode_host",
+   "query": "university st thomas, TX, USA",
+   "resolved_utc": "2026-09-03T13:21:35.556Z"
+  },
+  {
+   "agency_id": "upper-arlington-police-division-oh",
+   "lat": 40.02382,
+   "lon": -83.0978,
+   "state": "OH",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:32.640Z"
+  },
+  {
+   "agency_id": "vanderbilt-university-pd",
+   "lat": 36.14209,
+   "lon": -86.80214,
+   "state": "TN",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:32.853Z"
+  },
+  {
+   "agency_id": "ventura-county-so-es-ca",
+   "lat": 34.44582,
+   "lon": -119.07794,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Ventura County, CA, USA",
+   "resolved_utc": "2026-09-03T13:22:06.022Z"
+  },
+  {
+   "agency_id": "virginia-beach-pd",
+   "lat": 36.85433,
+   "lon": -75.98239,
+   "state": "VA",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:33.158Z"
+  },
+  {
+   "agency_id": "washoe-county-so-nv",
+   "lat": 40.5849,
+   "lon": -119.61316,
+   "state": "NV",
+   "via": "geocode_host",
+   "query": "washoe county, NV, USA",
+   "resolved_utc": "2026-09-03T13:21:36.862Z"
+  },
+  {
+   "agency_id": "watchung-pd",
+   "lat": 40.64573,
+   "lon": -74.43244,
+   "state": "NJ",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:33.367Z"
+  },
+  {
+   "agency_id": "west-palm-beach-pd",
+   "lat": 26.72661,
+   "lon": -80.11543,
+   "state": "FL",
+   "via": "skydio_extent",
+   "query": null,
+   "resolved_utc": "2026-09-03T13:19:33.563Z"
+  },
+  {
+   "agency_id": "west-palm-beach-pd-fl",
+   "lat": 26.71536,
+   "lon": -80.05329,
+   "state": "FL",
+   "via": "geocode_name",
+   "query": "West Palm Beach, FL, USA",
+   "resolved_utc": "2026-09-03T13:22:07.612Z"
+  },
+  {
+   "agency_id": "westmont-pd-il",
+   "lat": 41.79505,
+   "lon": -87.9752,
+   "state": "IL",
+   "via": "geocode_name",
+   "query": "Westmont, IL, USA",
+   "resolved_utc": "2026-09-03T13:22:09.124Z"
+  },
+  {
+   "agency_id": "wichita-pd",
+   "lat": 37.69224,
+   "lon": -97.33754,
+   "state": "KS",
+   "via": "geocode_name",
+   "query": "Wichita, USA",
+   "resolved_utc": "2026-09-03T13:19:35.360Z"
+  },
+  {
+   "agency_id": "yonkers-pd-ny",
+   "lat": 40.93121,
+   "lon": -73.89875,
+   "state": "NY",
+   "via": "geocode_name",
+   "query": "Yonkers, NY, USA",
+   "resolved_utc": "2026-09-03T13:22:23.086Z"
+  }
+ ]
+}

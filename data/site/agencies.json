@@ -1,10 +1,10 @@
 {
- "built_utc": "2026-09-03T11:47:09.656Z",
+ "built_utc": "2026-09-03T13:24:08.271Z",
  "agency_count": 226,
- "flight_count": 275541,
+ "flight_count": 284030,
  "overlap_count": 161,
  "by_source": {
-  "airdata": 57931,
+  "airdata": 66420,
   "skydio_arcgis": 102052,
   "flock_aerodome": 99492,
   "motorola_cape": 8746,
@@ -34,12 +34,49 @@
    "flight_count": 24348,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 32.64005,
+   "lon": -117.08419,
+   "notes": null
+  },
+  {
+   "agency_id": "las-vegas-metropolitan-pd",
+   "display_name": "Las Vegas Metropolitan Police Department",
+   "state": "NV",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "las-vegas-metro-pd-nv",
+     "official_url": "https://app.airdata.com/u/lvmpd",
+     "flight_count": 22199,
+     "first_flight": "2025-09-03",
+     "last_flight": "2026-08-26"
+    },
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "las-vegas-metropolitan-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
+     "flight_count": 3,
+     "first_flight": "2026-05-27",
+     "last_flight": "2026-05-27"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/lvmpd",
+   "status": "ok",
+   "first_flight": "2025-09-03",
+   "last_flight": "2026-08-26",
+   "flight_count": 22200,
+   "total_hours": 0.4,
+   "overlap_count": 2,
+   "lat": 36.16985,
+   "lon": -115.12827,
    "notes": null
   },
   {
    "agency_id": "cincinnati-pd",
    "display_name": "Cincinnati Police Department",
-   "state": null,
+   "state": "OH",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -59,39 +96,8 @@
    "flight_count": 18043,
    "total_hours": 3690.4,
    "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "las-vegas-metropolitan-pd",
-   "display_name": "Las Vegas Metropolitan Police Department",
-   "state": "NV",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "las-vegas-metro-pd-nv",
-     "official_url": "https://app.airdata.com/u/lvmpd",
-     "flight_count": 17954,
-     "first_flight": "2025-09-03",
-     "last_flight": "2026-07-31"
-    },
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "las-vegas-metropolitan-pd",
-     "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
-     "flight_count": 3,
-     "first_flight": "2026-05-27",
-     "last_flight": "2026-05-27"
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/lvmpd",
-   "status": "ok",
-   "first_flight": "2025-09-03",
-   "last_flight": "2026-07-31",
-   "flight_count": 17955,
-   "total_hours": 0.4,
-   "overlap_count": 2,
+   "lat": 39.20393,
+   "lon": -84.53302,
    "notes": null
   },
   {
@@ -125,12 +131,14 @@
    "flight_count": 12548,
    "total_hours": 2378.3,
    "overlap_count": 156,
+   "lat": 38.4088,
+   "lon": -121.37162,
    "notes": null
   },
   {
    "agency_id": "cspd-real-time-crime-center",
    "display_name": "CSPD Real-Time Crime Center",
-   "state": null,
+   "state": "CO",
    "org_type": "law_enforcement",
    "timezone": "America/Denver",
    "sources": [
@@ -150,6 +158,8 @@
    "flight_count": 10307,
    "total_hours": 1939.4,
    "overlap_count": 0,
+   "lat": 38.89085,
+   "lon": -104.77093,
    "notes": null
   },
   {
@@ -183,6 +193,8 @@
    "flight_count": 10300,
    "total_hours": 3233.4,
    "overlap_count": 0,
+   "lat": 33.83983,
+   "lon": -118.38459,
    "notes": null
   },
   {
@@ -216,6 +228,8 @@
    "flight_count": 9767,
    "total_hours": 1985.8,
    "overlap_count": 2,
+   "lat": 34.02006,
+   "lon": -118.41823,
    "notes": null
   },
   {
@@ -241,12 +255,14 @@
    "flight_count": 7481,
    "total_hours": 2104.7,
    "overlap_count": 0,
+   "lat": 37.78794,
+   "lon": -122.40752,
    "notes": "Published by the city under its surveillance ordinance, not through a vendor. Covers SFPD's whole fleet (DJI, Skydio, Flock Safety and others), whereas Skydio-sourced agencies show Skydio flights only. Dates only; no takeoff times."
   },
   {
    "agency_id": "wichita-pd",
    "display_name": "Wichita Police Department",
-   "state": null,
+   "state": "KS",
    "org_type": "law_enforcement",
    "timezone": "UTC",
    "sources": [
@@ -266,6 +282,8 @@
    "flight_count": 6653,
    "total_hours": 1698.7,
    "overlap_count": 0,
+   "lat": 37.69224,
+   "lon": -97.33754,
    "notes": "timezone not detected automatically; set manually."
   },
   {
@@ -291,6 +309,8 @@
    "flight_count": 5381,
    "total_hours": 2910.4,
    "overlap_count": 0,
+   "lat": 34.13388,
+   "lon": -117.9056,
    "notes": null
   },
   {
@@ -316,6 +336,8 @@
    "flight_count": 4959,
    "total_hours": 1281.3,
    "overlap_count": 0,
+   "lat": 39.74014,
+   "lon": -104.87334,
    "notes": null
   },
   {
@@ -341,12 +363,14 @@
    "flight_count": 4829,
    "total_hours": 1215.7,
    "overlap_count": 0,
+   "lat": 34.09304,
+   "lon": -118.12706,
    "notes": null
   },
   {
    "agency_id": "laredo-pd",
    "display_name": "Laredo Police Department",
-   "state": null,
+   "state": "TX",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -366,6 +390,8 @@
    "flight_count": 4688,
    "total_hours": 826.6,
    "overlap_count": 0,
+   "lat": 27.53948,
+   "lon": -99.46496,
    "notes": null
   },
   {
@@ -391,12 +417,14 @@
    "flight_count": 4450,
    "total_hours": 1025.9,
    "overlap_count": 0,
+   "lat": 33.91283,
+   "lon": -118.34261,
    "notes": null
   },
   {
    "agency_id": "philadelphia-pd",
    "display_name": "Philadelphia Police Department",
-   "state": null,
+   "state": "PA",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -416,6 +444,8 @@
    "flight_count": 4258,
    "total_hours": 853.9,
    "overlap_count": 0,
+   "lat": 40.01863,
+   "lon": -75.0808,
    "notes": null
   },
   {
@@ -441,6 +471,8 @@
    "flight_count": 4193,
    "total_hours": 663,
    "overlap_count": 0,
+   "lat": 42.3139,
+   "lon": -83.22085,
    "notes": null
   },
   {
@@ -466,12 +498,14 @@
    "flight_count": 4146,
    "total_hours": 11155.3,
    "overlap_count": 0,
+   "lat": 39.19111,
+   "lon": -106.82356,
    "notes": null
   },
   {
    "agency_id": "milwaukee-pd",
    "display_name": "Milwaukee Police Department",
-   "state": null,
+   "state": "WI",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -491,6 +525,35 @@
    "flight_count": 4130,
    "total_hours": 879.2,
    "overlap_count": 0,
+   "lat": 43.10262,
+   "lon": -88.05467,
+   "notes": null
+  },
+  {
+   "agency_id": "sacramento-pd-ca",
+   "display_name": "Sacramento Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "sacramento-pd-ca",
+     "official_url": "https://app.airdata.com/u/spduas",
+     "flight_count": 3682,
+     "first_flight": "2019-10-17",
+     "last_flight": "2024-03-31"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/spduas",
+   "status": "stale",
+   "first_flight": "2019-10-17",
+   "last_flight": "2024-03-31",
+   "flight_count": 3682,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 38.58106,
+   "lon": -121.49389,
    "notes": null
   },
   {
@@ -516,6 +579,8 @@
    "flight_count": 3280,
    "total_hours": 663.8,
    "overlap_count": 0,
+   "lat": 33.4151,
+   "lon": -111.83145,
    "notes": null
   },
   {
@@ -549,6 +614,8 @@
    "flight_count": 3268,
    "total_hours": 562.5,
    "overlap_count": 0,
+   "lat": 33.86606,
+   "lon": -84.33297,
    "notes": null
   },
   {
@@ -574,12 +641,14 @@
    "flight_count": 3259,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 33.6857,
+   "lon": -117.82598,
    "notes": null
   },
   {
    "agency_id": "rochester-pd-mn",
    "display_name": "Rochester Police Department - MN",
-   "state": null,
+   "state": "MN",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -599,6 +668,8 @@
    "flight_count": 3111,
    "total_hours": 511.4,
    "overlap_count": 0,
+   "lat": 44.02966,
+   "lon": -92.46552,
    "notes": null
   },
   {
@@ -624,6 +695,8 @@
    "flight_count": 3081,
    "total_hours": 555,
    "overlap_count": 0,
+   "lat": 37.96947,
+   "lon": -121.90656,
    "notes": null
   },
   {
@@ -649,6 +722,8 @@
    "flight_count": 2978,
    "total_hours": 770.8,
    "overlap_count": 0,
+   "lat": 32.31404,
+   "lon": -106.77981,
    "notes": null
   },
   {
@@ -674,6 +749,8 @@
    "flight_count": 2944,
    "total_hours": 529.4,
    "overlap_count": 0,
+   "lat": 33.91704,
+   "lon": -117.88885,
    "notes": null
   },
   {
@@ -699,6 +776,8 @@
    "flight_count": 2936,
    "total_hours": 765.3,
    "overlap_count": 0,
+   "lat": 33.49422,
+   "lon": -111.92602,
    "notes": null
   },
   {
@@ -724,6 +803,8 @@
    "flight_count": 2741,
    "total_hours": 4915.6,
    "overlap_count": 0,
+   "lat": 41.65291,
+   "lon": -83.53782,
    "notes": null
   },
   {
@@ -765,6 +846,8 @@
    "flight_count": 2614,
    "total_hours": 546.3,
    "overlap_count": 1,
+   "lat": 47.97934,
+   "lon": -122.2127,
    "notes": null
   },
   {
@@ -790,6 +873,8 @@
    "flight_count": 2528,
    "total_hours": 589.3,
    "overlap_count": 0,
+   "lat": 33.23716,
+   "lon": -96.7977,
    "notes": null
   },
   {
@@ -815,6 +900,8 @@
    "flight_count": 2322,
    "total_hours": 423.6,
    "overlap_count": 0,
+   "lat": 40.33029,
+   "lon": -104.853,
    "notes": null
   },
   {
@@ -840,6 +927,8 @@
    "flight_count": 2267,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 38.97226,
+   "lon": -76.57345,
    "notes": null
   },
   {
@@ -865,6 +954,8 @@
    "flight_count": 2232,
    "total_hours": 510.7,
    "overlap_count": 0,
+   "lat": 41.68338,
+   "lon": -86.25001,
    "notes": null
   },
   {
@@ -890,12 +981,14 @@
    "flight_count": 2011,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 33.76724,
+   "lon": -116.35604,
    "notes": null
   },
   {
    "agency_id": "brooklyn-park-pd",
    "display_name": "Brooklyn Park Police Department",
-   "state": null,
+   "state": "MN",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -915,6 +1008,8 @@
    "flight_count": 2006,
    "total_hours": 394.1,
    "overlap_count": 0,
+   "lat": 44.69974,
+   "lon": -93.34141,
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
@@ -940,6 +1035,8 @@
    "flight_count": 1927,
    "total_hours": 424.4,
    "overlap_count": 0,
+   "lat": 26.3014,
+   "lon": -98.16245,
    "notes": null
   },
   {
@@ -965,6 +1062,8 @@
    "flight_count": 1919,
    "total_hours": 376.9,
    "overlap_count": 0,
+   "lat": 33.58061,
+   "lon": -112.23729,
    "notes": null
   },
   {
@@ -990,6 +1089,8 @@
    "flight_count": 1910,
    "total_hours": 504.5,
    "overlap_count": 0,
+   "lat": 40.5849,
+   "lon": -119.61316,
    "notes": null
   },
   {
@@ -1015,6 +1116,8 @@
    "flight_count": 1907,
    "total_hours": 517.1,
    "overlap_count": 0,
+   "lat": 40.51332,
+   "lon": -74.27242,
    "notes": null
   },
   {
@@ -1048,6 +1151,8 @@
    "flight_count": 1899,
    "total_hours": 304.4,
    "overlap_count": 0,
+   "lat": 39.83372,
+   "lon": -104.9017,
    "notes": null
   },
   {
@@ -1073,6 +1178,8 @@
    "flight_count": 1857,
    "total_hours": 438.7,
    "overlap_count": 0,
+   "lat": 33.66761,
+   "lon": -84.01769,
    "notes": null
   },
   {
@@ -1098,6 +1205,8 @@
    "flight_count": 1797,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 39.72849,
+   "lon": -121.83748,
    "notes": null
   },
   {
@@ -1131,6 +1240,8 @@
    "flight_count": 1739,
    "total_hours": 367.3,
    "overlap_count": 0,
+   "lat": 33.74752,
+   "lon": -116.97197,
    "notes": null
   },
   {
@@ -1156,6 +1267,8 @@
    "flight_count": 1647,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 34.69811,
+   "lon": -118.13662,
    "notes": null
   },
   {
@@ -1181,6 +1294,8 @@
    "flight_count": 1637,
    "total_hours": 319,
    "overlap_count": 0,
+   "lat": 37.65337,
+   "lon": -122.42305,
    "notes": null
   },
   {
@@ -1206,6 +1321,8 @@
    "flight_count": 1599,
    "total_hours": 252.2,
    "overlap_count": 0,
+   "lat": 33.7376,
+   "lon": -117.88315,
    "notes": null
   },
   {
@@ -1231,6 +1348,8 @@
    "flight_count": 1585,
    "total_hours": 436.5,
    "overlap_count": 0,
+   "lat": 33.75756,
+   "lon": -84.21865,
    "notes": null
   },
   {
@@ -1256,6 +1375,8 @@
    "flight_count": 1558,
    "total_hours": 283.5,
    "overlap_count": 0,
+   "lat": 41.83271,
+   "lon": -87.94841,
    "notes": null
   },
   {
@@ -1281,6 +1402,8 @@
    "flight_count": 1517,
    "total_hours": 277,
    "overlap_count": 0,
+   "lat": 44.9532,
+   "lon": -93.10323,
    "notes": null
   },
   {
@@ -1306,6 +1429,8 @@
    "flight_count": 1420,
    "total_hours": 331.4,
    "overlap_count": 0,
+   "lat": 29.99883,
+   "lon": -95.26216,
    "notes": null
   },
   {
@@ -1331,6 +1456,8 @@
    "flight_count": 1384,
    "total_hours": 331.7,
    "overlap_count": 0,
+   "lat": 39.37226,
+   "lon": -104.85868,
    "notes": null
   },
   {
@@ -1356,6 +1483,8 @@
    "flight_count": 1367,
    "total_hours": 785.9,
    "overlap_count": 0,
+   "lat": 35.58486,
+   "lon": -80.81007,
    "notes": null
   },
   {
@@ -1381,6 +1510,8 @@
    "flight_count": 1336,
    "total_hours": 304.3,
    "overlap_count": 0,
+   "lat": 33.722,
+   "lon": -116.03725,
    "notes": null
   },
   {
@@ -1406,6 +1537,8 @@
    "flight_count": 1298,
    "total_hours": 229.5,
    "overlap_count": 0,
+   "lat": 33.91703,
+   "lon": -118.41563,
    "notes": null
   },
   {
@@ -1431,6 +1564,8 @@
    "flight_count": 1269,
    "total_hours": 240.9,
    "overlap_count": 0,
+   "lat": 40.07498,
+   "lon": -86.04989,
    "notes": null
   },
   {
@@ -1456,6 +1591,8 @@
    "flight_count": 1249,
    "total_hours": 213.7,
    "overlap_count": 0,
+   "lat": 43.73261,
+   "lon": -116.80328,
    "notes": null
   },
   {
@@ -1481,6 +1618,8 @@
    "flight_count": 1248,
    "total_hours": 228.5,
    "overlap_count": 0,
+   "lat": 37.97478,
+   "lon": -122.53167,
    "notes": null
   },
   {
@@ -1506,12 +1645,14 @@
    "flight_count": 1241,
    "total_hours": 354.3,
    "overlap_count": 0,
+   "lat": 40.67368,
+   "lon": -73.61907,
    "notes": null
   },
   {
    "agency_id": "minnetonka-pd",
    "display_name": "Minnetonka Police Department",
-   "state": null,
+   "state": "MN",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -1531,6 +1672,8 @@
    "flight_count": 1220,
    "total_hours": 239.2,
    "overlap_count": 0,
+   "lat": 45.00821,
+   "lon": -93.4415,
    "notes": null
   },
   {
@@ -1556,6 +1699,8 @@
    "flight_count": 1189,
    "total_hours": 287.8,
    "overlap_count": 0,
+   "lat": 35.44951,
+   "lon": -97.3967,
    "notes": null
   },
   {
@@ -1581,12 +1726,14 @@
    "flight_count": 1176,
    "total_hours": 204.3,
    "overlap_count": 0,
+   "lat": 39.81821,
+   "lon": -105.09519,
    "notes": null
   },
   {
    "agency_id": "town-of-ramapo-pd",
    "display_name": "Town of Ramapo Police Department",
-   "state": null,
+   "state": "NY",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -1606,6 +1753,8 @@
    "flight_count": 1163,
    "total_hours": 182.9,
    "overlap_count": 0,
+   "lat": 41.13317,
+   "lon": -74.09366,
    "notes": null
   },
   {
@@ -1631,6 +1780,8 @@
    "flight_count": 1107,
    "total_hours": 248.3,
    "overlap_count": 0,
+   "lat": 32.56349,
+   "lon": -97.14203,
    "notes": null
   },
   {
@@ -1656,12 +1807,14 @@
    "flight_count": 1089,
    "total_hours": 194.7,
    "overlap_count": 0,
+   "lat": 33.94638,
+   "lon": -84.33427,
    "notes": null
   },
   {
    "agency_id": "st-cloud-pd",
    "display_name": "St. Cloud Police Department",
-   "state": null,
+   "state": "FL",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -1681,6 +1834,8 @@
    "flight_count": 1061,
    "total_hours": 213.3,
    "overlap_count": 0,
+   "lat": 28.23623,
+   "lon": -81.28348,
    "notes": null
   },
   {
@@ -1706,6 +1861,8 @@
    "flight_count": 945,
    "total_hours": 162.1,
    "overlap_count": 0,
+   "lat": 33.03604,
+   "lon": -96.98903,
    "notes": null
   },
   {
@@ -1731,6 +1888,8 @@
    "flight_count": 934,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 33.70855,
+   "lon": -118.25162,
    "notes": null
   },
   {
@@ -1756,6 +1915,8 @@
    "flight_count": 921,
    "total_hours": 205.7,
    "overlap_count": 0,
+   "lat": 33.87041,
+   "lon": -117.99622,
    "notes": null
   },
   {
@@ -1781,6 +1942,8 @@
    "flight_count": 869,
    "total_hours": 238.4,
    "overlap_count": 0,
+   "lat": 32.87728,
+   "lon": -111.75368,
    "notes": null
   },
   {
@@ -1814,6 +1977,8 @@
    "flight_count": 854,
    "total_hours": 160.9,
    "overlap_count": 0,
+   "lat": 37.27695,
+   "lon": -107.8766,
    "notes": null
   },
   {
@@ -1839,6 +2004,8 @@
    "flight_count": 846,
    "total_hours": 173.9,
    "overlap_count": 0,
+   "lat": 37.70834,
+   "lon": -89.22756,
    "notes": null
   },
   {
@@ -1864,6 +2031,8 @@
    "flight_count": 813,
    "total_hours": 126.6,
    "overlap_count": 0,
+   "lat": 46.76851,
+   "lon": -92.14282,
    "notes": null
   },
   {
@@ -1889,12 +2058,14 @@
    "flight_count": 760,
    "total_hours": 143.5,
    "overlap_count": 0,
+   "lat": 33.00401,
+   "lon": -97.22585,
    "notes": null
   },
   {
    "agency_id": "vanderbilt-university-pd",
    "display_name": "Vanderbilt University Police Department",
-   "state": null,
+   "state": "TN",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -1914,6 +2085,8 @@
    "flight_count": 753,
    "total_hours": 91.8,
    "overlap_count": 0,
+   "lat": 36.14209,
+   "lon": -86.80214,
    "notes": null
   },
   {
@@ -1939,6 +2112,8 @@
    "flight_count": 739,
    "total_hours": 150.7,
    "overlap_count": 0,
+   "lat": 37.69395,
+   "lon": -85.85913,
    "notes": null
   },
   {
@@ -1964,6 +2139,8 @@
    "flight_count": 729,
    "total_hours": 237.5,
    "overlap_count": 0,
+   "lat": 34.74756,
+   "lon": -112.02724,
    "notes": null
   },
   {
@@ -1989,12 +2166,14 @@
    "flight_count": 699,
    "total_hours": 148.7,
    "overlap_count": 0,
+   "lat": 31.46497,
+   "lon": -100.44051,
    "notes": null
   },
   {
    "agency_id": "santa-clara-county-so",
    "display_name": "Santa Clara County Sheriff's Office",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -2014,6 +2193,8 @@
    "flight_count": 698,
    "total_hours": 182.3,
    "overlap_count": 0,
+   "lat": 37.40206,
+   "lon": -121.85235,
    "notes": null
   },
   {
@@ -2039,6 +2220,8 @@
    "flight_count": 689,
    "total_hours": 134.3,
    "overlap_count": 0,
+   "lat": 41.61003,
+   "lon": -87.64671,
    "notes": null
   },
   {
@@ -2064,6 +2247,8 @@
    "flight_count": 672,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 47.76232,
+   "lon": -122.2054,
    "notes": null
   },
   {
@@ -2089,6 +2274,8 @@
    "flight_count": 667,
    "total_hours": 161.3,
    "overlap_count": 0,
+   "lat": 32.92657,
+   "lon": -96.89609,
    "notes": null
   },
   {
@@ -2122,6 +2309,8 @@
    "flight_count": 649,
    "total_hours": 101.4,
    "overlap_count": 0,
+   "lat": 34.07438,
+   "lon": -81.34464,
    "notes": null
   },
   {
@@ -2147,6 +2336,8 @@
    "flight_count": 645,
    "total_hours": 147.7,
    "overlap_count": 0,
+   "lat": 37.60903,
+   "lon": -121.89914,
    "notes": null
   },
   {
@@ -2172,12 +2363,14 @@
    "flight_count": 617,
    "total_hours": 157.1,
    "overlap_count": 0,
+   "lat": 32.75318,
+   "lon": -97.33275,
    "notes": null
   },
   {
    "agency_id": "tampa-pd",
    "display_name": "Tampa Police Department",
-   "state": null,
+   "state": "FL",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -2197,6 +2390,8 @@
    "flight_count": 593,
    "total_hours": 129,
    "overlap_count": 0,
+   "lat": 27.99306,
+   "lon": -82.42986,
    "notes": null
   },
   {
@@ -2222,6 +2417,35 @@
    "flight_count": 554,
    "total_hours": 104.8,
    "overlap_count": 0,
+   "lat": 38.23825,
+   "lon": -122.04024,
+   "notes": null
+  },
+  {
+   "agency_id": "mankato-mn",
+   "display_name": "City of Mankato",
+   "state": "MN",
+   "org_type": "corporate_utility",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "mankato-mn",
+     "official_url": "https://app.airdata.com/u/mankato",
+     "flight_count": 512,
+     "first_flight": "2022-07-18",
+     "last_flight": "2026-08-26"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/mankato",
+   "status": "ok",
+   "first_flight": "2022-07-18",
+   "last_flight": "2026-08-26",
+   "flight_count": 512,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 44.16585,
+   "lon": -94.0028,
    "notes": null
   },
   {
@@ -2247,12 +2471,14 @@
    "flight_count": 477,
    "total_hours": 118.1,
    "overlap_count": 0,
+   "lat": 32.78179,
+   "lon": -95.68802,
    "notes": null
   },
   {
    "agency_id": "lee-county-government",
    "display_name": "Lee County Government",
-   "state": null,
+   "state": "TX",
    "org_type": "government_other",
    "timezone": "UTC",
    "sources": [
@@ -2272,12 +2498,14 @@
    "flight_count": 461,
    "total_hours": 96,
    "overlap_count": 0,
+   "lat": 33.04442,
+   "lon": -97.02121,
    "notes": "timezone not detected automatically; set manually."
   },
   {
    "agency_id": "montgomery-county-pd-g47-beta",
    "display_name": "Montgomery County PD - G47 Beta",
-   "state": null,
+   "state": "MD",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -2297,12 +2525,14 @@
    "flight_count": 450,
    "total_hours": 92.1,
    "overlap_count": 0,
+   "lat": 39.12019,
+   "lon": -77.11755,
    "notes": null
   },
   {
    "agency_id": "belmont-pd",
    "display_name": "Belmont Police Department",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -2322,12 +2552,49 @@
    "flight_count": 438,
    "total_hours": 99.4,
    "overlap_count": 0,
+   "lat": 35.70046,
+   "lon": -120.21509,
    "notes": null
+  },
+  {
+   "agency_id": "los-altos-pd-ca",
+   "display_name": "Los Altos Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "UTC",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "los-altos-pd-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
+     "flight_count": 386,
+     "first_flight": "2026-03-05",
+     "last_flight": "2026-08-25"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "los-altos-pd-ca",
+     "official_url": "https://app.airdata.com/u/losaltospd",
+     "flight_count": 50,
+     "first_flight": "2025-04-08",
+     "last_flight": "2026-08-04"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
+   "status": "ok",
+   "first_flight": "2025-04-08",
+   "last_flight": "2026-08-25",
+   "flight_count": 436,
+   "total_hours": 70.3,
+   "overlap_count": 0,
+   "lat": 37.37906,
+   "lon": -122.11658,
+   "notes": "timezone not detected automatically; set manually."
   },
   {
    "agency_id": "detroit-fire-department",
    "display_name": "Detroit Fire Department",
-   "state": null,
+   "state": "MI",
    "org_type": "fire_ems",
    "timezone": "America/New_York",
    "sources": [
@@ -2347,6 +2614,8 @@
    "flight_count": 435,
    "total_hours": 101.1,
    "overlap_count": 0,
+   "lat": 42.4278,
+   "lon": -83.27661,
    "notes": null
   },
   {
@@ -2372,6 +2641,8 @@
    "flight_count": 431,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 47.48734,
+   "lon": -121.86221,
    "notes": null
   },
   {
@@ -2397,6 +2668,8 @@
    "flight_count": 430,
    "total_hours": 261.6,
    "overlap_count": 0,
+   "lat": 37.93749,
+   "lon": -107.81228,
    "notes": null
   },
   {
@@ -2422,6 +2695,8 @@
    "flight_count": 409,
    "total_hours": 130.1,
    "overlap_count": 0,
+   "lat": 29.38723,
+   "lon": -94.99274,
    "notes": null
   },
   {
@@ -2447,6 +2722,8 @@
    "flight_count": 404,
    "total_hours": 70.1,
    "overlap_count": 0,
+   "lat": 40.54037,
+   "lon": -88.88686,
    "notes": null
   },
   {
@@ -2472,6 +2749,8 @@
    "flight_count": 402,
    "total_hours": 98.1,
    "overlap_count": 0,
+   "lat": 31.09837,
+   "lon": -97.34296,
    "notes": null
   },
   {
@@ -2497,6 +2776,8 @@
    "flight_count": 396,
    "total_hours": 100.3,
    "overlap_count": 0,
+   "lat": 33.35276,
+   "lon": -111.78904,
    "notes": null
   },
   {
@@ -2522,40 +2803,9 @@
    "flight_count": 395,
    "total_hours": 95.1,
    "overlap_count": 0,
+   "lat": 36.27571,
+   "lon": -86.69176,
    "notes": null
-  },
-  {
-   "agency_id": "los-altos-pd-ca",
-   "display_name": "Los Altos Police Department",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "UTC",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "los-altos-pd-ca",
-     "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
-     "flight_count": 386,
-     "first_flight": "2026-03-05",
-     "last_flight": "2026-08-25"
-    },
-    {
-     "source": "airdata",
-     "source_agency_id": "los-altos-pd-ca",
-     "official_url": "https://app.airdata.com/u/losaltospd",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
-   "status": "ok",
-   "first_flight": "2026-03-05",
-   "last_flight": "2026-08-25",
-   "flight_count": 386,
-   "total_hours": 70.3,
-   "overlap_count": 0,
-   "notes": "timezone not detected automatically; set manually."
   },
   {
    "agency_id": "mmozol-co",
@@ -2580,12 +2830,14 @@
    "flight_count": 376,
    "total_hours": 6093.8,
    "overlap_count": 0,
+   "lat": 39.6438,
+   "lon": -106.38882,
    "notes": null
   },
   {
    "agency_id": "conroe-pd",
    "display_name": "Conroe Police Department",
-   "state": null,
+   "state": "TX",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -2605,12 +2857,14 @@
    "flight_count": 363,
    "total_hours": 74.1,
    "overlap_count": 0,
+   "lat": 30.31332,
+   "lon": -95.462,
    "notes": null
   },
   {
    "agency_id": "menifee-pd",
    "display_name": "Menifee Police Department",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -2630,6 +2884,8 @@
    "flight_count": 346,
    "total_hours": 67.6,
    "overlap_count": 0,
+   "lat": 33.68696,
+   "lon": -117.17973,
    "notes": null
   },
   {
@@ -2655,6 +2911,8 @@
    "flight_count": 344,
    "total_hours": 5846.8,
    "overlap_count": 0,
+   "lat": 39.47809,
+   "lon": -106.16289,
    "notes": null
   },
   {
@@ -2680,6 +2938,8 @@
    "flight_count": 322,
    "total_hours": 82,
    "overlap_count": 0,
+   "lat": 34.05811,
+   "lon": -84.29617,
    "notes": null
   },
   {
@@ -2705,12 +2965,14 @@
    "flight_count": 315,
    "total_hours": 58.5,
    "overlap_count": 0,
+   "lat": 34.15187,
+   "lon": -118.25415,
    "notes": null
   },
   {
    "agency_id": "laurel-pd-uas-flight-data",
    "display_name": "Laurel Police Department UAS Flight Data",
-   "state": null,
+   "state": "MD",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -2730,12 +2992,14 @@
    "flight_count": 313,
    "total_hours": 55.8,
    "overlap_count": 0,
+   "lat": 39.08531,
+   "lon": -76.86464,
    "notes": null
   },
   {
    "agency_id": "new-orleans-pd",
    "display_name": "New Orleans Police Department",
-   "state": null,
+   "state": "LA",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -2755,6 +3019,8 @@
    "flight_count": 297,
    "total_hours": 100.8,
    "overlap_count": 0,
+   "lat": 29.99384,
+   "lon": -89.99597,
    "notes": null
   },
   {
@@ -2780,6 +3046,8 @@
    "flight_count": 294,
    "total_hours": 64.2,
    "overlap_count": 0,
+   "lat": 38.94061,
+   "lon": -94.68139,
    "notes": null
   },
   {
@@ -2805,12 +3073,14 @@
    "flight_count": 293,
    "total_hours": 57.4,
    "overlap_count": 0,
+   "lat": 33.77609,
+   "lon": -84.39881,
    "notes": null
   },
   {
    "agency_id": "cherry-hill-pd",
    "display_name": "Cherry Hill Police Department",
-   "state": null,
+   "state": "NJ",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -2830,6 +3100,8 @@
    "flight_count": 286,
    "total_hours": 47,
    "overlap_count": 0,
+   "lat": 39.91189,
+   "lon": -74.88301,
    "notes": null
   },
   {
@@ -2855,12 +3127,14 @@
    "flight_count": 263,
    "total_hours": 76.9,
    "overlap_count": 0,
+   "lat": 34.25421,
+   "lon": -110.02983,
    "notes": null
   },
   {
    "agency_id": "university-of-illinois-division-of-public-safety",
    "display_name": "University of Illinois Division of Public Safety",
-   "state": null,
+   "state": "IL",
    "org_type": "university",
    "timezone": "America/Chicago",
    "sources": [
@@ -2880,12 +3154,14 @@
    "flight_count": 249,
    "total_hours": 32,
    "overlap_count": 0,
+   "lat": 40.04741,
+   "lon": -88.18859,
    "notes": null
   },
   {
    "agency_id": "cleveland-division-of-police",
    "display_name": "Cleveland Division of Police",
-   "state": null,
+   "state": "OH",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -2905,12 +3181,14 @@
    "flight_count": 248,
    "total_hours": 78.5,
    "overlap_count": 0,
+   "lat": 41.47352,
+   "lon": -81.68242,
    "notes": null
   },
   {
    "agency_id": "monroe-county-so",
    "display_name": "Monroe County Sheriff's Office",
-   "state": null,
+   "state": "NY",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -2930,6 +3208,8 @@
    "flight_count": 247,
    "total_hours": 42.7,
    "overlap_count": 0,
+   "lat": 43.07045,
+   "lon": -77.60879,
    "notes": null
   },
   {
@@ -2955,6 +3235,8 @@
    "flight_count": 238,
    "total_hours": 36.1,
    "overlap_count": 0,
+   "lat": 37.45731,
+   "lon": -77.50905,
    "notes": null
   },
   {
@@ -2980,6 +3262,8 @@
    "flight_count": 226,
    "total_hours": 34.6,
    "overlap_count": 0,
+   "lat": 41.90116,
+   "lon": -87.86438,
    "notes": null
   },
   {
@@ -3005,12 +3289,14 @@
    "flight_count": 219,
    "total_hours": 57.2,
    "overlap_count": 0,
+   "lat": 32.80596,
+   "lon": -97.40307,
    "notes": null
   },
   {
    "agency_id": "calcasieu-parish-so",
    "display_name": "Calcasieu Parish Sheriff's Office",
-   "state": null,
+   "state": "LA",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -3030,6 +3316,8 @@
    "flight_count": 183,
    "total_hours": 41.6,
    "overlap_count": 0,
+   "lat": 30.30704,
+   "lon": -93.3867,
    "notes": null
   },
   {
@@ -3055,12 +3343,14 @@
    "flight_count": 172,
    "total_hours": 33.3,
    "overlap_count": 0,
+   "lat": 31.04374,
+   "lon": -97.75101,
    "notes": null
   },
   {
    "agency_id": "milford-pd",
    "display_name": "Milford Police Department",
-   "state": null,
+   "state": "CT",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -3080,6 +3370,8 @@
    "flight_count": 141,
    "total_hours": 29.1,
    "overlap_count": 0,
+   "lat": 41.21937,
+   "lon": -73.05063,
    "notes": null
   },
   {
@@ -3105,12 +3397,14 @@
    "flight_count": 135,
    "total_hours": 29.6,
    "overlap_count": 0,
+   "lat": 41.60054,
+   "lon": -72.87829,
    "notes": null
   },
   {
    "agency_id": "university-of-arizona-real-time-coordination-center",
    "display_name": "University of Arizona - Real Time Coordination Center",
-   "state": null,
+   "state": "AZ",
    "org_type": "university",
    "timezone": "America/Phoenix",
    "sources": [
@@ -3130,6 +3424,8 @@
    "flight_count": 121,
    "total_hours": 27.2,
    "overlap_count": 0,
+   "lat": 32.23067,
+   "lon": -110.96761,
    "notes": null
   },
   {
@@ -3155,6 +3451,8 @@
    "flight_count": 120,
    "total_hours": 21.6,
    "overlap_count": 0,
+   "lat": 41.88892,
+   "lon": -87.9034,
    "notes": null
   },
   {
@@ -3188,12 +3486,14 @@
    "flight_count": 117,
    "total_hours": 24.5,
    "overlap_count": 0,
+   "lat": 41.64027,
+   "lon": -73.8832,
    "notes": null
   },
   {
    "agency_id": "hollywood-pd",
    "display_name": "Hollywood Police Department",
-   "state": null,
+   "state": "FL",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -3213,12 +3513,14 @@
    "flight_count": 107,
    "total_hours": 18.9,
    "overlap_count": 0,
+   "lat": 27.05209,
+   "lon": -80.99306,
    "notes": null
   },
   {
    "agency_id": "metropolitan-pd",
    "display_name": "Metropolitan Police Department",
-   "state": null,
+   "state": "OK",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -3238,6 +3540,8 @@
    "flight_count": 100,
    "total_hours": 18,
    "overlap_count": 0,
+   "lat": 36.45699,
+   "lon": -98.18986,
    "notes": null
   },
   {
@@ -3263,6 +3567,8 @@
    "flight_count": 94,
    "total_hours": 12.2,
    "overlap_count": 0,
+   "lat": 43.01952,
+   "lon": -89.41334,
    "notes": null
   },
   {
@@ -3288,6 +3594,8 @@
    "flight_count": 86,
    "total_hours": 16.8,
    "overlap_count": 0,
+   "lat": 37.62245,
+   "lon": -122.49086,
    "notes": null
   },
   {
@@ -3313,6 +3621,8 @@
    "flight_count": 83,
    "total_hours": 5.8,
    "overlap_count": 0,
+   "lat": 33.53869,
+   "lon": -112.18599,
    "notes": null
   },
   {
@@ -3338,12 +3648,14 @@
    "flight_count": 81,
    "total_hours": 11.5,
    "overlap_count": 0,
+   "lat": 40.4848,
+   "lon": -106.83173,
    "notes": null
   },
   {
    "agency_id": "watchung-pd",
    "display_name": "Watchung Police Department",
-   "state": null,
+   "state": "NJ",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -3363,12 +3675,14 @@
    "flight_count": 76,
    "total_hours": 12.8,
    "overlap_count": 0,
+   "lat": 40.64573,
+   "lon": -74.43244,
    "notes": null
   },
   {
    "agency_id": "tulsa-fire-department",
    "display_name": "Tulsa Fire Department",
-   "state": null,
+   "state": "OK",
    "org_type": "fire_ems",
    "timezone": "America/Chicago",
    "sources": [
@@ -3388,6 +3702,8 @@
    "flight_count": 66,
    "total_hours": 17.3,
    "overlap_count": 0,
+   "lat": 36.12194,
+   "lon": -96.28682,
    "notes": null
   },
   {
@@ -3413,6 +3729,8 @@
    "flight_count": 63,
    "total_hours": 15.4,
    "overlap_count": 0,
+   "lat": 29.35526,
+   "lon": -95.97244,
    "notes": null
   },
   {
@@ -3438,6 +3756,8 @@
    "flight_count": 51,
    "total_hours": 14.1,
    "overlap_count": 0,
+   "lat": null,
+   "lon": null,
    "notes": "timezone not detected automatically; set manually."
   },
   {
@@ -3471,12 +3791,14 @@
    "flight_count": 46,
    "total_hours": 8,
    "overlap_count": 0,
+   "lat": 26.72661,
+   "lon": -80.11543,
    "notes": null
   },
   {
    "agency_id": "axon-air-psm",
    "display_name": "Axon Air PSM",
-   "state": null,
+   "state": "OK",
    "org_type": "vendor_partner",
    "timezone": "America/Chicago",
    "sources": [
@@ -3496,12 +3818,14 @@
    "flight_count": 40,
    "total_hours": 6.7,
    "overlap_count": 0,
+   "lat": 35.52045,
+   "lon": -98.37566,
    "notes": null
   },
   {
    "agency_id": "fairfax-county-pd",
    "display_name": "Fairfax County Police Department",
-   "state": null,
+   "state": "VA",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -3521,12 +3845,14 @@
    "flight_count": 38,
    "total_hours": 8.2,
    "overlap_count": 0,
+   "lat": 38.88399,
+   "lon": -77.29102,
    "notes": null
   },
   {
    "agency_id": "csu-long-beach-pd",
    "display_name": "CSU Long Beach Police Department",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -3546,12 +3872,14 @@
    "flight_count": 37,
    "total_hours": 10.3,
    "overlap_count": 0,
+   "lat": 33.78828,
+   "lon": -118.11108,
    "notes": null
   },
   {
    "agency_id": "oklahoma-city-pd",
    "display_name": "Oklahoma City Police Department",
-   "state": null,
+   "state": "OK",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -3571,6 +3899,8 @@
    "flight_count": 37,
    "total_hours": 5.2,
    "overlap_count": 0,
+   "lat": 35.46931,
+   "lon": -97.53377,
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
@@ -3596,12 +3926,14 @@
    "flight_count": 37,
    "total_hours": 7.2,
    "overlap_count": 0,
+   "lat": 40.02382,
+   "lon": -83.0978,
    "notes": null
   },
   {
    "agency_id": "virginia-beach-pd",
    "display_name": "Virginia Beach Police Department",
-   "state": null,
+   "state": "VA",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -3621,12 +3953,14 @@
    "flight_count": 37,
    "total_hours": 6.7,
    "overlap_count": 0,
+   "lat": 36.85433,
+   "lon": -75.98239,
    "notes": null
   },
   {
    "agency_id": "axon",
    "display_name": "Axon",
-   "state": null,
+   "state": "KS",
    "org_type": "vendor_partner",
    "timezone": "America/Chicago",
    "sources": [
@@ -3646,12 +3980,14 @@
    "flight_count": 36,
    "total_hours": 7.4,
    "overlap_count": 0,
+   "lat": 38.75958,
+   "lon": -97.23933,
    "notes": null
   },
   {
    "agency_id": "gerrittsen-beach-fire-department",
    "display_name": "Gerrittsen Beach Fire Department",
-   "state": null,
+   "state": "NY",
    "org_type": "fire_ems",
    "timezone": "America/New_York",
    "sources": [
@@ -3671,12 +4007,14 @@
    "flight_count": 35,
    "total_hours": 7.1,
    "overlap_count": 0,
+   "lat": 40.59641,
+   "lon": -73.9231,
    "notes": null
   },
   {
    "agency_id": "tennessee-department-of-transportation-tdot",
    "display_name": "Tennessee Department of Transportation (TDOT)",
-   "state": null,
+   "state": "TN",
    "org_type": "corporate_utility",
    "timezone": "America/Chicago",
    "sources": [
@@ -3696,6 +4034,8 @@
    "flight_count": 33,
    "total_hours": 9.4,
    "overlap_count": 0,
+   "lat": 35.8022,
+   "lon": -85.66797,
    "notes": null
   },
   {
@@ -3721,6 +4061,8 @@
    "flight_count": 29,
    "total_hours": 3.8,
    "overlap_count": 0,
+   "lat": 29.23918,
+   "lon": -82.72099,
    "notes": null
   },
   {
@@ -3746,6 +4088,8 @@
    "flight_count": 29,
    "total_hours": 6.4,
    "overlap_count": 0,
+   "lat": 42.03015,
+   "lon": -87.80988,
    "notes": null
   },
   {
@@ -3771,12 +4115,14 @@
    "flight_count": 28,
    "total_hours": 8,
    "overlap_count": 0,
+   "lat": -23.74609,
+   "lon": 133.84788,
    "notes": null
   },
   {
    "agency_id": "gray-fire-rescue",
    "display_name": "Gray Fire Rescue",
-   "state": null,
+   "state": "ME",
    "org_type": "fire_ems",
    "timezone": "America/New_York",
    "sources": [
@@ -3796,12 +4142,14 @@
    "flight_count": 27,
    "total_hours": 5.4,
    "overlap_count": 0,
+   "lat": 43.88826,
+   "lon": -70.30375,
    "notes": null
   },
   {
    "agency_id": "dallas-pd",
    "display_name": "Dallas Police Department",
-   "state": null,
+   "state": "TX",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -3821,6 +4169,8 @@
    "flight_count": 26,
    "total_hours": 2,
    "overlap_count": 0,
+   "lat": 32.79641,
+   "lon": -96.75741,
    "notes": null
   },
   {
@@ -3846,6 +4196,8 @@
    "flight_count": 26,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 39.75961,
+   "lon": -121.62192,
    "notes": null
   },
   {
@@ -3871,6 +4223,8 @@
    "flight_count": 25,
    "total_hours": 5.2,
    "overlap_count": 0,
+   "lat": 44.28383,
+   "lon": -88.39089,
    "notes": null
   },
   {
@@ -3896,6 +4250,8 @@
    "flight_count": 25,
    "total_hours": 5,
    "overlap_count": 0,
+   "lat": 39.38887,
+   "lon": -84.55064,
    "notes": null
   },
   {
@@ -3921,6 +4277,8 @@
    "flight_count": 24,
    "total_hours": 5.6,
    "overlap_count": 0,
+   "lat": 46.8817,
+   "lon": -118.90332,
    "notes": null
   },
   {
@@ -3946,6 +4304,8 @@
    "flight_count": 23,
    "total_hours": 4.9,
    "overlap_count": 0,
+   "lat": 41.02019,
+   "lon": -81.64224,
    "notes": null
   },
   {
@@ -3971,12 +4331,14 @@
    "flight_count": 20,
    "total_hours": 4,
    "overlap_count": 0,
+   "lat": 29.61362,
+   "lon": -90.72358,
    "notes": null
   },
   {
    "agency_id": "el-dorado-pd-kansas",
    "display_name": "El Dorado Police Department- Kansas",
-   "state": null,
+   "state": "KS",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -3996,6 +4358,8 @@
    "flight_count": 19,
    "total_hours": 5.6,
    "overlap_count": 0,
+   "lat": 37.76632,
+   "lon": -96.93048,
    "notes": null
   },
   {
@@ -4021,6 +4385,8 @@
    "flight_count": 17,
    "total_hours": 4.1,
    "overlap_count": 0,
+   "lat": 41.81887,
+   "lon": -71.42975,
    "notes": null
   },
   {
@@ -4046,12 +4412,14 @@
    "flight_count": 17,
    "total_hours": 2.9,
    "overlap_count": 0,
+   "lat": 29.73684,
+   "lon": -95.39417,
    "notes": null
   },
   {
    "agency_id": "titusville-pd-suas-transparency-dashboard",
    "display_name": "Titusville Police Department sUAS Transparency Dashboard",
-   "state": null,
+   "state": "FL",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -4071,6 +4439,8 @@
    "flight_count": 16,
    "total_hours": 4.3,
    "overlap_count": 0,
+   "lat": 28.58927,
+   "lon": -80.83718,
    "notes": null
   },
   {
@@ -4096,6 +4466,8 @@
    "flight_count": 15,
    "total_hours": 3.6,
    "overlap_count": 0,
+   "lat": 28.84619,
+   "lon": -81.5861,
    "notes": null
   },
   {
@@ -4121,6 +4493,8 @@
    "flight_count": 14,
    "total_hours": 3.3,
    "overlap_count": 0,
+   "lat": 33.5268,
+   "lon": -84.45083,
    "notes": null
   },
   {
@@ -4146,6 +4520,8 @@
    "flight_count": 14,
    "total_hours": 2.8,
    "overlap_count": 0,
+   "lat": 34.47967,
+   "lon": -84.45081,
    "notes": null
   },
   {
@@ -4171,12 +4547,14 @@
    "flight_count": 13,
    "total_hours": 1.9,
    "overlap_count": 0,
+   "lat": 37.03317,
+   "lon": -76.37449,
    "notes": null
   },
   {
    "agency_id": "miami-beach-pd-g47-beta",
    "display_name": "Miami Beach PD - G47 Beta",
-   "state": null,
+   "state": "FL",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -4196,12 +4574,14 @@
    "flight_count": 12,
    "total_hours": 1.8,
    "overlap_count": 0,
+   "lat": 25.78446,
+   "lon": -80.13464,
    "notes": null
   },
   {
    "agency_id": "oakland-county-so",
    "display_name": "Oakland County Sheriff's Office",
-   "state": null,
+   "state": "MI",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -4221,12 +4601,14 @@
    "flight_count": 12,
    "total_hours": 2.5,
    "overlap_count": 0,
+   "lat": 42.64952,
+   "lon": -83.29376,
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
    "agency_id": "arkansas-dot",
    "display_name": "Arkansas DOT",
-   "state": null,
+   "state": "AR",
    "org_type": "government_other",
    "timezone": "America/Chicago",
    "sources": [
@@ -4246,12 +4628,14 @@
    "flight_count": 11,
    "total_hours": 1.3,
    "overlap_count": 0,
+   "lat": 34.38977,
+   "lon": -92.23043,
    "notes": null
   },
   {
    "agency_id": "honolulu-pd",
    "display_name": "Honolulu Police Department",
-   "state": null,
+   "state": "HI",
    "org_type": "law_enforcement",
    "timezone": "Pacific/Honolulu",
    "sources": [
@@ -4271,12 +4655,14 @@
    "flight_count": 11,
    "total_hours": 3.3,
    "overlap_count": 0,
+   "lat": 21.31703,
+   "lon": -157.8506,
    "notes": null
   },
   {
    "agency_id": "amarillo-pd",
    "display_name": "Amarillo Police Department",
-   "state": null,
+   "state": "AZ",
    "org_type": "law_enforcement",
    "timezone": "America/Phoenix",
    "sources": [
@@ -4296,12 +4682,14 @@
    "flight_count": 10,
    "total_hours": 2,
    "overlap_count": 0,
+   "lat": 36.36407,
+   "lon": -112.07818,
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
    "agency_id": "quincy-pd",
    "display_name": "Quincy Police Department",
-   "state": null,
+   "state": "FL",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -4321,6 +4709,8 @@
    "flight_count": 8,
    "total_hours": 1.2,
    "overlap_count": 0,
+   "lat": 30.5913,
+   "lon": -84.57993,
    "notes": null
   },
   {
@@ -4346,6 +4736,8 @@
    "flight_count": 8,
    "total_hours": 2.1,
    "overlap_count": 0,
+   "lat": 32.90226,
+   "lon": -96.54273,
    "notes": null
   },
   {
@@ -4371,12 +4763,14 @@
    "flight_count": 8,
    "total_hours": 1.6,
    "overlap_count": 0,
+   "lat": 38.4959,
+   "lon": -84.7355,
    "notes": null
   },
   {
    "agency_id": "bernalillo-county-so",
    "display_name": "Bernalillo County Sheriff's Office",
-   "state": null,
+   "state": "NM",
    "org_type": "law_enforcement",
    "timezone": "America/Denver",
    "sources": [
@@ -4396,12 +4790,14 @@
    "flight_count": 7,
    "total_hours": 1.8,
    "overlap_count": 0,
+   "lat": 35.08056,
+   "lon": -106.49623,
    "notes": null
   },
   {
    "agency_id": "el-centro-pd-ca",
    "display_name": "El Centro Police Department - CA",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -4421,12 +4817,14 @@
    "flight_count": 7,
    "total_hours": 1.2,
    "overlap_count": 0,
+   "lat": 33.06171,
+   "lon": -115.76944,
    "notes": null
   },
   {
    "agency_id": "fsu-emhs",
    "display_name": "FSU EMHS",
-   "state": null,
+   "state": "FL",
    "org_type": "university",
    "timezone": "America/New_York",
    "sources": [
@@ -4446,12 +4844,14 @@
    "flight_count": 7,
    "total_hours": 1.4,
    "overlap_count": 0,
+   "lat": 30.42942,
+   "lon": -84.29948,
    "notes": null
   },
   {
    "agency_id": "louisville-metro-government",
    "display_name": "Louisville Metro Government",
-   "state": null,
+   "state": "KY",
    "org_type": "government_other",
    "timezone": "America/Chicago",
    "sources": [
@@ -4471,6 +4871,8 @@
    "flight_count": 7,
    "total_hours": 1.5,
    "overlap_count": 0,
+   "lat": 38.22232,
+   "lon": -85.71436,
    "notes": null
   },
   {
@@ -4496,6 +4898,8 @@
    "flight_count": 7,
    "total_hours": 24.2,
    "overlap_count": 0,
+   "lat": 39.59656,
+   "lon": -105.93403,
    "notes": null
   },
   {
@@ -4521,6 +4925,8 @@
    "flight_count": 7,
    "total_hours": 1.3,
    "overlap_count": 0,
+   "lat": 38.2151,
+   "lon": -81.45706,
    "notes": null
   },
   {
@@ -4546,6 +4952,8 @@
    "flight_count": 7,
    "total_hours": 0.8,
    "overlap_count": 0,
+   "lat": 40.93121,
+   "lon": -73.89875,
    "notes": null
   },
   {
@@ -4571,12 +4979,14 @@
    "flight_count": 6,
    "total_hours": 2.1,
    "overlap_count": 0,
+   "lat": 47.72946,
+   "lon": -116.83431,
    "notes": null
   },
   {
    "agency_id": "los-gatos-monte-sereno-pd",
    "display_name": "Los Gatos/Monte Sereno Police Department",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -4596,6 +5006,8 @@
    "flight_count": 6,
    "total_hours": 1.1,
    "overlap_count": 0,
+   "lat": 37.24148,
+   "lon": -121.97152,
    "notes": null
   },
   {
@@ -4621,12 +5033,14 @@
    "flight_count": 6,
    "total_hours": 1.3,
    "overlap_count": 0,
+   "lat": 55.72114,
+   "lon": 12.48251,
    "notes": null
   },
   {
    "agency_id": "frederick-county-so",
    "display_name": "Frederick County Sheriff's Office",
-   "state": null,
+   "state": "MD",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -4646,6 +5060,8 @@
    "flight_count": 5,
    "total_hours": 1.1,
    "overlap_count": 0,
+   "lat": 39.51202,
+   "lon": -77.40782,
    "notes": null
   },
   {
@@ -4671,12 +5087,14 @@
    "flight_count": 5,
    "total_hours": 1.4,
    "overlap_count": 0,
+   "lat": 36.08045,
+   "lon": -83.77759,
    "notes": null
   },
   {
    "agency_id": "nevada-county-so",
    "display_name": "Nevada County Sheriff's Office",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -4696,6 +5114,8 @@
    "flight_count": 5,
    "total_hours": 2,
    "overlap_count": 0,
+   "lat": 39.16719,
+   "lon": -120.6498,
    "notes": null
   },
   {
@@ -4721,12 +5141,14 @@
    "flight_count": 5,
    "total_hours": 1.7,
    "overlap_count": 0,
+   "lat": 29.50685,
+   "lon": -98.10925,
    "notes": null
   },
   {
    "agency_id": "trial-fargo-pd",
    "display_name": "TRIAL - Fargo Police Department",
-   "state": null,
+   "state": "ND",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -4746,12 +5168,14 @@
    "flight_count": 5,
    "total_hours": 0.8,
    "overlap_count": 0,
+   "lat": 46.87151,
+   "lon": -96.82109,
    "notes": null
   },
   {
    "agency_id": "cherry-valley-pd",
    "display_name": "Cherry Valley Police Department",
-   "state": null,
+   "state": "IL",
    "org_type": "law_enforcement",
    "timezone": "America/Chicago",
    "sources": [
@@ -4771,6 +5195,8 @@
    "flight_count": 4,
    "total_hours": 0.5,
    "overlap_count": 0,
+   "lat": 42.23776,
+   "lon": -88.94195,
    "notes": null
   },
   {
@@ -4796,12 +5222,14 @@
    "flight_count": 4,
    "total_hours": 1.3,
    "overlap_count": 0,
+   "lat": 30.49767,
+   "lon": -87.29836,
    "notes": null
   },
   {
    "agency_id": "marysville-pd-sno911",
    "display_name": "Marysville Police Department - Sno911",
-   "state": null,
+   "state": "WA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -4821,12 +5249,14 @@
    "flight_count": 4,
    "total_hours": 1.1,
    "overlap_count": 0,
+   "lat": 47.79835,
+   "lon": -122.24739,
    "notes": null
   },
   {
    "agency_id": "middlefield-vol-fire-co",
    "display_name": "Middlefield Vol. Fire Co.",
-   "state": null,
+   "state": "CT",
    "org_type": "fire_ems",
    "timezone": "America/New_York",
    "sources": [
@@ -4846,6 +5276,8 @@
    "flight_count": 4,
    "total_hours": 1.4,
    "overlap_count": 0,
+   "lat": 41.52497,
+   "lon": -72.72063,
    "notes": null
   },
   {
@@ -4871,12 +5303,14 @@
    "flight_count": 4,
    "total_hours": 0.1,
    "overlap_count": 0,
+   "lat": 35.7804,
+   "lon": -78.6391,
    "notes": null
   },
   {
    "agency_id": "boston-pd",
    "display_name": "Boston PD",
-   "state": null,
+   "state": "MA",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -4896,6 +5330,8 @@
    "flight_count": 3,
    "total_hours": 0.5,
    "overlap_count": 0,
+   "lat": 42.34252,
+   "lon": -71.07903,
    "notes": null
   },
   {
@@ -4921,6 +5357,8 @@
    "flight_count": 3,
    "total_hours": 0.9,
    "overlap_count": 0,
+   "lat": 42.08928,
+   "lon": -71.2691,
    "notes": null
   },
   {
@@ -4946,12 +5384,14 @@
    "flight_count": 3,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 27.63892,
+   "lon": -80.38397,
    "notes": null
   },
   {
    "agency_id": "mlgw",
    "display_name": "MLGW",
-   "state": null,
+   "state": "TN",
    "org_type": "corporate_utility",
    "timezone": "America/Chicago",
    "sources": [
@@ -4971,6 +5411,8 @@
    "flight_count": 3,
    "total_hours": 1,
    "overlap_count": 0,
+   "lat": 35.03486,
+   "lon": -89.79524,
    "notes": null
   },
   {
@@ -4996,12 +5438,14 @@
    "flight_count": 3,
    "total_hours": 0.2,
    "overlap_count": 0,
+   "lat": 41.39782,
+   "lon": -82.22238,
    "notes": null
   },
   {
    "agency_id": "alaska-dot-pf",
    "display_name": "Alaska DOT&PF",
-   "state": null,
+   "state": "AK",
    "org_type": "government_other",
    "timezone": "America/Anchorage",
    "sources": [
@@ -5021,12 +5465,14 @@
    "flight_count": 2,
    "total_hours": 0.4,
    "overlap_count": 0,
+   "lat": 61.0524,
+   "lon": -149.62916,
    "notes": null
   },
   {
    "agency_id": "hennepin-ems",
    "display_name": "Hennepin EMS",
-   "state": null,
+   "state": "MN",
    "org_type": "fire_ems",
    "timezone": "America/Chicago",
    "sources": [
@@ -5046,6 +5492,8 @@
    "flight_count": 2,
    "total_hours": 0.1,
    "overlap_count": 0,
+   "lat": 44.97377,
+   "lon": -93.26296,
    "notes": null
   },
   {
@@ -5071,12 +5519,14 @@
    "flight_count": 2,
    "total_hours": 0.5,
    "overlap_count": 0,
+   "lat": 50.0399,
+   "lon": -110.67291,
    "notes": null
   },
   {
    "agency_id": "miami-pd-org",
    "display_name": "Miami PD - Org",
-   "state": null,
+   "state": "FL",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -5096,12 +5546,14 @@
    "flight_count": 2,
    "total_hours": 0.6,
    "overlap_count": 0,
+   "lat": 25.7724,
+   "lon": -80.20841,
    "notes": null
   },
   {
    "agency_id": "pseg-long-island-power-authority",
    "display_name": "PSEG Long Island Power Authority",
-   "state": null,
+   "state": "NY",
    "org_type": "corporate_utility",
    "timezone": "America/New_York",
    "sources": [
@@ -5121,12 +5573,14 @@
    "flight_count": 2,
    "total_hours": 0.2,
    "overlap_count": 0,
+   "lat": 40.9376,
+   "lon": -72.37262,
    "notes": null
   },
   {
    "agency_id": "turner-construction-company",
    "display_name": "Turner Construction Company",
-   "state": null,
+   "state": "NC",
    "org_type": "corporate_utility",
    "timezone": "America/New_York",
    "sources": [
@@ -5146,6 +5600,8 @@
    "flight_count": 2,
    "total_hours": 0.9,
    "overlap_count": 0,
+   "lat": 35.67568,
+   "lon": -78.90638,
    "notes": null
   },
   {
@@ -5171,12 +5627,14 @@
    "flight_count": 2,
    "total_hours": 0.2,
    "overlap_count": 0,
+   "lat": 36.69376,
+   "lon": -77.53571,
    "notes": null
   },
   {
    "agency_id": "aep-gen-shared-services-engineering",
    "display_name": "AEP Gen Shared Services Engineering",
-   "state": null,
+   "state": "OH",
    "org_type": "corporate_utility",
    "timezone": "America/New_York",
    "sources": [
@@ -5196,12 +5654,14 @@
    "flight_count": 1,
    "total_hours": 0.2,
    "overlap_count": 0,
+   "lat": 39.38718,
+   "lon": -82.17654,
    "notes": null
   },
   {
    "agency_id": "azimuth-inc",
    "display_name": "Azimuth, Inc.",
-   "state": null,
+   "state": "WV",
    "org_type": "corporate_utility",
    "timezone": "America/New_York",
    "sources": [
@@ -5221,6 +5681,8 @@
    "flight_count": 1,
    "total_hours": 0.5,
    "overlap_count": 0,
+   "lat": 39.67918,
+   "lon": -79.86098,
    "notes": null
   },
   {
@@ -5246,6 +5708,8 @@
    "flight_count": 1,
    "total_hours": 0.1,
    "overlap_count": 0,
+   "lat": 48.75827,
+   "lon": -122.48414,
    "notes": null
   },
   {
@@ -5271,12 +5735,14 @@
    "flight_count": 1,
    "total_hours": 0.4,
    "overlap_count": 0,
+   "lat": 33.50997,
+   "lon": -86.81057,
    "notes": null
   },
   {
    "agency_id": "columbus-pd-oh",
    "display_name": "Columbus Police Department - OH",
-   "state": null,
+   "state": "OH",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
@@ -5296,6 +5762,8 @@
    "flight_count": 1,
    "total_hours": 0.1,
    "overlap_count": 0,
+   "lat": 39.97813,
+   "lon": -83.07734,
    "notes": null
   },
   {
@@ -5321,12 +5789,14 @@
    "flight_count": 1,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 45.64292,
+   "lon": -122.61791,
    "notes": null
   },
   {
    "agency_id": "duquesne-light-company",
    "display_name": "Duquesne Light Company",
-   "state": null,
+   "state": "PA",
    "org_type": "corporate_utility",
    "timezone": "America/New_York",
    "sources": [
@@ -5346,12 +5816,14 @@
    "flight_count": 1,
    "total_hours": 0.1,
    "overlap_count": 0,
+   "lat": 40.4696,
+   "lon": -79.86303,
    "notes": null
   },
   {
    "agency_id": "el-cajon-pd",
    "display_name": "El Cajon PD",
-   "state": null,
+   "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
@@ -5371,12 +5843,14 @@
    "flight_count": 1,
    "total_hours": 0.2,
    "overlap_count": 0,
+   "lat": 32.79509,
+   "lon": -116.965,
    "notes": null
   },
   {
    "agency_id": "fort-collins-police-services",
    "display_name": "Fort Collins Police Services",
-   "state": null,
+   "state": "CO",
    "org_type": "law_enforcement",
    "timezone": "America/Denver",
    "sources": [
@@ -5396,12 +5870,14 @@
    "flight_count": 1,
    "total_hours": 0.1,
    "overlap_count": 0,
+   "lat": 40.59154,
+   "lon": -105.0625,
    "notes": null
   },
   {
    "agency_id": "granite-defense-technologies-nfr",
    "display_name": "Granite Defense & Technologies NFR",
-   "state": null,
+   "state": "TX",
    "org_type": "corporate_utility",
    "timezone": "America/Chicago",
    "sources": [
@@ -5421,6 +5897,8 @@
    "flight_count": 1,
    "total_hours": 0.4,
    "overlap_count": 0,
+   "lat": 30.80044,
+   "lon": -98.33428,
    "notes": null
   },
   {
@@ -5446,6 +5924,8 @@
    "flight_count": 1,
    "total_hours": 0.3,
    "overlap_count": 0,
+   "lat": 30.22486,
+   "lon": -92.01691,
    "notes": null
   },
   {
@@ -5471,6 +5951,8 @@
    "flight_count": 1,
    "total_hours": 0.2,
    "overlap_count": 0,
+   "lat": -3.12826,
+   "lon": 152.64474,
    "notes": null
   },
   {
@@ -5496,6 +5978,8 @@
    "flight_count": 1,
    "total_hours": 0.2,
    "overlap_count": 0,
+   "lat": 33.01572,
+   "lon": -97.20348,
    "notes": null
   },
   {
@@ -5521,6 +6005,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 26.52891,
+   "lon": -80.05814,
    "notes": null
   },
   {
@@ -5546,6 +6032,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 40.48407,
+   "lon": -74.50916,
    "notes": null
   },
   {
@@ -5571,6 +6059,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 40.16721,
+   "lon": -105.10193,
    "notes": null
   },
   {
@@ -5596,56 +6086,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "mankato-mn",
-   "display_name": "City of Mankato",
-   "state": "MN",
-   "org_type": "corporate_utility",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "mankato-mn",
-     "official_url": "https://app.airdata.com/u/mankato",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/mankato",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "sacramento-pd-ca",
-   "display_name": "Sacramento Police Department",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "sacramento-pd-ca",
-     "official_url": "https://app.airdata.com/u/spduas",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/spduas",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
+   "lat": 40.39776,
+   "lon": -105.07498,
    "notes": null
   },
   {
@@ -5671,6 +6113,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 48.00747,
+   "lon": -121.73049,
    "notes": null
   },
   {
@@ -5696,6 +6140,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 34.44582,
+   "lon": -119.07794,
    "notes": null
   },
   {
@@ -5721,6 +6167,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 41.79505,
+   "lon": -87.9752,
    "notes": null
   },
   {
@@ -5746,6 +6194,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 40.01499,
+   "lon": -105.27054,
    "notes": null
   },
   {
@@ -5771,6 +6221,8 @@
    "flight_count": 0,
    "total_hours": 0,
    "overlap_count": 0,
+   "lat": 34.02332,
+   "lon": -84.36002,
    "notes": null
   }
  ]
