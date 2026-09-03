@@ -88,22 +88,24 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
         <BarChartCard compact title="Flight length (minutes)" data={view.durationBins} height={220} />
         {/* Always the full breakdown: filtered to one purpose it would be a single bar,
             and it doubles as the legend for the filter above. */}
-        <BarChartCard
-          title="15 most common stated purposes"
-          data={initial.purposeAll}
-          horizontal
-          note={filtering
-            ? 'Always the full breakdown, not the current filter — it is the key to what the filter can select.'
-            : 'Blank entries are shown as “Not stated”. Vocabularies differ by agency, so these do not compare between departments.'}
-        />
-        {initial.eventCount >= initial.minEventsToChart && initial.eventAll.length > 0 && (
+        <div className="chart-pair">
           <BarChartCard
-            title="15 most common event descriptions"
-            data={initial.eventAll}
+            title="15 most common stated purposes"
+            data={initial.purposeAll}
             horizontal
-            note={`What the flight was sent to, as recorded on ${fmtInt(initial.eventCount)} of ${fmtInt(initial.allCount)} flights.`}
+            note={filtering
+              ? 'Always the full breakdown, not the current filter — it is the key to what the filter can select.'
+              : 'Blank entries appear as “Not stated”. Each agency writes its own labels, so they mean different things at different departments.'}
           />
-        )}
+          {initial.eventCount >= initial.minEventsToChart && initial.eventAll.length > 0 && (
+            <BarChartCard
+              title="15 most common event descriptions"
+              data={initial.eventAll}
+              horizontal
+              note={`What the flight was sent to, recorded on ${fmtInt(initial.eventCount)} of ${fmtInt(initial.allCount)} flights.`}
+            />
+          )}
+        </div>
       </div>
       <h3 style={{ marginTop: 32 }}>All published flights</h3>
       {filtered

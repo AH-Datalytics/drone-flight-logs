@@ -97,6 +97,11 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
    with a neighbour. */
 .charts { display: flex; flex-direction: column; gap: 36px; margin-top: 10px; }
 .chart { min-width: 0; }
+/* The two categorical breakdowns read as a pair: same shape, same question asked
+   two ways. Side by side above 1000px, stacked below, where two horizontal bar
+   charts would each be too narrow for their own labels. */
+.chart-pair { display: grid; grid-template-columns: 1fr; gap: 36px; }
+@media (min-width: 1000px) { .chart-pair { grid-template-columns: 1fr 1fr; gap: 28px; } }
 .chart-compact .chart-inner { max-width: 640px; }
 .pager { display: flex; gap: 10px; align-items: center; font: 12px var(--mono); color: var(--fg-2); margin: 14px 0; }
 .pager button { font: inherit; text-transform: uppercase; letter-spacing: .06em; padding: 5px 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--fg); cursor: pointer; }
