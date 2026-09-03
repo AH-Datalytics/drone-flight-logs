@@ -48,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <span>
             A project of <a href="https://ahdatalytics.com" target="_blank" rel="noopener noreferrer">AH Datalytics</a>.
             {' '}<Link href="/about">How this was built</Link>.
+            {' '}<a href="https://www.flaticon.com/free-icons/drone-case" title="drone case icons" target="_blank" rel="noopener noreferrer">Drone case icons created by Magnific &ndash; Flaticon</a>.
           </span>
         </footer>
       </div>

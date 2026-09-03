@@ -77,4 +77,6 @@ No flight paths. Several sources publish the full track of every flight; it is d
 
 Agency locations for the map were geocoded through OpenStreetMap's Nominatim service, so map data is © OpenStreetMap contributors, available under the [Open Database Licence](https://www.openstreetmap.org/copyright). State outlines come from the US Census Bureau via [us-atlas](https://github.com/topojson/us-atlas).
 
+The favicon is [drone case icons created by Magnific – Flaticon](https://www.flaticon.com/free-icons/drone-case), used under Flaticon's free licence, which requires that attribution. It appears in the site's footer.
+
 The flight records themselves are published by the agencies named alongside them; each agency page links to that agency's own dashboard, which is the authoritative source.
