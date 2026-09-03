@@ -42,10 +42,14 @@ export default function Home() {
         { label: 'States', value: fmtInt(states) },
         { label: 'Reported flights', value: fmtInt(totalFlights) },
         { label: 'Reported flight hours', value: fmtHours(totalHours) },
-        { label: 'Collected', value: fmtDate(collected.toISOString().slice(0, 10)) },
       ]} />
 
-      <AgencySearch items={items} />
+      {/* The search and the update date share the row above the map: one is
+          how you enter the data, the other is how old it is. */}
+      <div className="map-head">
+        <AgencySearch items={items} />
+        <p className="map-updated">Date of last update: {fmtDate(collected.toISOString().slice(0, 10))}</p>
+      </div>
       <AgencyMap
         outlines={outlines}
         dots={dots}

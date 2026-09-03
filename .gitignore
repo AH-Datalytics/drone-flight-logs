@@ -14,3 +14,6 @@ tsconfig.tsbuildinfo
 # Raw vendor payloads collected overnight; large and rebuildable from the source.
 data/raw/
 shots/
+
+.vercel
+.env*

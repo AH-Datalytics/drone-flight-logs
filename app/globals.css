@@ -176,6 +176,10 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .agency-search-meta { font: 12px var(--mono); color: var(--fg-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .agency-search-list li.is-active .agency-search-meta { color: var(--accent-fg); opacity: 0.85; }
 
+.map-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.map-head .agency-search { flex: 0 1 560px; }
+.map-updated { font: 11px var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-3); margin: 0 0 14px; white-space: nowrap; }
+
 .mapcard { margin: 6px 0 4px; border: 1px solid var(--line-2); background: var(--bg); }
 .mapwrap { position: relative; }
 /* A faint water tone, so the Great Lakes and the sea read as absent land
@@ -253,6 +257,9 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
   .map-zoom button { min-width: 38px; min-height: 38px; }
 
   .agency-search { margin-top: 22px; }
+  /* On a phone the date sits under the search box rather than beside it. */
+  .map-head { display: block; }
+  .map-updated { margin: 10px 0 12px; }
   .agency-search input { font-size: 16px; }   /* 16px stops iOS zooming the page on focus */
   .agency-search-list { max-height: 60vh; }
 
