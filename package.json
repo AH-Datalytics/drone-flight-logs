@@ -20,7 +20,8 @@
     "airdata:collect": "tsx pipeline/airdata/collect.ts",
     "cape:collect": "tsx pipeline/cape/collect.ts",
     "build:data": "tsx pipeline/build.ts",
-    "refresh": "tsx pipeline/refresh.ts"
+    "refresh": "tsx pipeline/refresh.ts",
+    "overnight": "tsx pipeline/overnight.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
