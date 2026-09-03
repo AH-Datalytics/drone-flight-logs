@@ -59,6 +59,14 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
     };
   }, [filtered, purpose, initial, now, timezone]);
 
+  // Both categorical charts render at the height the taller one needs, so the pair
+  // reads as one row instead of a tall chart beside a stub. BarChartCard takes the
+  // greater of the height it is given and the height its own bars need, so passing
+  // the maximum stretches the shorter chart without squashing the other.
+  const showEvents = initial.eventCount >= initial.minEventsToChart && initial.eventAll.length > 0;
+  const pairRows = Math.max(initial.purposeAll.length, showEvents ? initial.eventAll.length : 0);
+  const pairHeight = pairRows * 26 + 30;
+
   const tzLabel = timezone.replace('_', ' ');
   const filtering = purpose !== 'all';
 
@@ -93,15 +101,17 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
             title="15 most common stated purposes"
             data={initial.purposeAll}
             horizontal
+            height={pairHeight}
             note={filtering
               ? 'Always the full breakdown, not the current filter — it is the key to what the filter can select.'
               : 'Blank entries appear as “Not stated”. Each agency writes its own labels, so they mean different things at different departments.'}
           />
-          {initial.eventCount >= initial.minEventsToChart && initial.eventAll.length > 0 && (
+          {showEvents && (
             <BarChartCard
               title="15 most common event descriptions"
               data={initial.eventAll}
               horizontal
+              height={pairHeight}
               note={`What the flight was sent to, recorded on ${fmtInt(initial.eventCount)} of ${fmtInt(initial.allCount)} flights.`}
             />
           )}
