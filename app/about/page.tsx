@@ -1,4 +1,4 @@
-import { publicAgencies, collectedAt, loadSite, suppressedAgencies } from '@/lib/data';
+import { publicAgencies, collectedAt, loadSite } from '@/lib/data';
 import { fmtDate, fmtInt } from '@/lib/format';
 import StatRow from '@/components/StatRow';
 
@@ -8,11 +8,8 @@ export default function About() {
   const collected = collectedAt();
   const served = publicAgencies();
   const site = loadSite();
-  const hidden = suppressedAgencies();
   const bySource = (s: string) => served.filter(a => a.sources.some(x => x.source === s)).length;
   const flightsFrom = (s: string) => site.by_source[s] ?? 0;
-  const byStatus = (s: string) => served.filter(a => a.status === s).length;
-  const multi = served.filter(a => a.sources.length > 1);
   const flights = served.reduce((t, a) => t + (a.flight_count || 0), 0);
   const hours = served.reduce((t, a) => t + (a.total_hours || 0), 0);
   const firsts = served.map(a => a.first_flight).filter(Boolean).sort() as string[];
@@ -38,121 +35,61 @@ export default function About() {
 
       <h3>Where it comes from</h3>
       <p>
-        There is no national register of police drone flights, and no law requiring one. What exists is
+        There is no national register of police drone flights and no law requiring one. What exists is
         a scattering of dashboards, each run by a different vendor, each publishing a different subset
-        of a different set of fields. Finding them is most of the work. This site reads five kinds of
-        source, and treats each one&rsquo;s limits as part of the record rather than smoothing them away.
+        of a different set of fields. This site gathers data from multiple sources though it is not
+        inherently an authoritative collection of data on all law enforcement drone flights.
       </p>
       <p>
-        <strong>Skydio transparency dashboards — {bySource('skydio_arcgis')} agencies, {fmtInt(flightsFrom('skydio_arcgis'))} flights.</strong> Agencies
-        that fly Skydio drones can publish selected flights to a public dashboard. Skydio hosts every
-        one of those dashboards as a public map service, and this site reads those services directly.
-        Only flights on Skydio aircraft appear there, so an agency that also flies other manufacturers&rsquo;
-        drones will look smaller here than it actually is.
+        <strong>Skydio transparency dashboards — {bySource('skydio_arcgis')} agencies.</strong> Agencies
+        that fly Skydio drones can publish selected flights to a public dashboard. Skydio hosts those
+        dashboards as a public map service and this site reads those dashboards directly. Only flights
+        on Skydio aircraft appear there, so an agency that also flies other manufacturers&rsquo; drones
+        may not have all data represented here.
       </p>
       <p>
-        <strong>Flock Aerodome community dashboards — {bySource('flock_aerodome')} agencies, {fmtInt(flightsFrom('flock_aerodome'))} flights.</strong> These
+        <strong>Flock Aerodome community dashboards — {bySource('flock_aerodome')} agencies.</strong> These
         carry the most detail of any source: the type of call, the agency&rsquo;s own case number, the
-        priority assigned to it, and a block-level address. Each dashboard shows about a month at a
-        time by default, and there is no index of them anywhere — the ones here were found by
-        searching public certificate records for the hostnames the vendor issues.
+        priority assigned to it, and a block-level address.
       </p>
       <p>
-        <strong>Motorola CAPE transparency portals — {bySource('motorola_cape')} agencies, {fmtInt(flightsFrom('motorola_cape'))} flights.</strong> Each
-        agency chooses how much history to expose. Three publish everything; the rest publish only the last
-        thirty or sixty days, after which a flight disappears from the source permanently. For those
-        agencies this site holds flights the original portal can no longer show.
+        <strong>Motorola CAPE transparency portals — {bySource('motorola_cape')} agencies.</strong> Each
+        agency chooses how much history to expose. Three agencies publish everything while the rest
+        publish only the last thirty or sixty days. The site holds flight data the original portal can
+        no longer show for those agencies.
       </p>
       <p>
-        <strong>AirData public flight logs — {bySource('airdata')} agencies, {fmtInt(flightsFrom('airdata'))} flights.</strong> The
-        oldest records collected here, reaching back to 2019 for Sacramento and 2021 for Chula Vista.
-        AirData publishes no flight duration at all, so those agencies have flight counts but no hours.
+        <strong>AirData public flight logs — {bySource('airdata')} agencies.</strong> The oldest records
+        collected here reaching back to 2019 for Sacramento and 2021 for Chula Vista. AirData publishes
+        no flight duration time, so those agencies have flight counts but no hours.
       </p>
       <p>
-        <strong>San Francisco Police Department — {bySource('sfpd_datasf')} agency, {fmtInt(flightsFrom('sfpd_datasf'))} flights.</strong> SFPD does not
-        publish through a vendor. Under the city&rsquo;s surveillance-technology ordinance it publishes its
-        own flight log to San Francisco&rsquo;s open-data portal, and that log covers its whole fleet
-        regardless of manufacturer. It records a date but no time of day, so its page has no
-        hour-of-day view. That is a property of the source, not a defect in the records.
+        <strong>San Francisco Police Department open data — {bySource('sfpd_datasf')} agency.</strong> SFPD
+        publishes open data regarding its drone program. SFPD&rsquo;s log covers its whole fleet regardless
+        of manufacturer. It records a date but no time of day so its page has no hour-of-day view.
       </p>
-
-      <h3>Counting</h3>
-      <p>
-        Every figure here counts <strong>distinct flights</strong>, never rows of data. That distinction
-        matters more than it sounds: several of the published map services contain duplicate rows —
-        the same flight, with the same takeoff time, landing time and stated purpose, published two or
-        three times over. Cincinnati&rsquo;s service holds 30,071 rows for 17,938 real flights. Counting
-        rows would overstate the total on this site by roughly fifteen percent.
-      </p>
-      {multi.length > 0 && (
-        <p>
-          <strong>{multi.length} agencies publish the same programme in more than one place.</strong> The
-          platforms do not agree about what a flight is called, so a shared flight is recognised by what
-          it describes: the same case number on the same day, or takeoff times within five minutes of
-          each other. Where two platforms describe one flight, the fuller account is kept and the flight
-          is counted once
-          {site.overlap_count > 0 ? `. ${fmtInt(site.overlap_count)} flights across the site were published twice` : ''}.
-          Each agency page lists the platforms it draws on.
-        </p>
-      )}
 
       <h3>What is not here</h3>
       <ul>
-        <li>Agencies decide which flights to publish. Every count is a floor, not a total.</li>
         <li>
-          <strong>No flight paths.</strong> Several sources publish the full track of every flight as a
-          list of coordinates. None of it is stored here; it is discarded at the moment the page is
-          read, before anything is written down. Each agency page links to that agency&rsquo;s own official
-          map, which is the authoritative view of where its drones flew.
+          Agencies decide which flights to publish. It is unclear whether all flights are being reported
+          for any specific agency.
         </li>
         <li>
-          Where an agency itself publishes a place for a flight, that text is kept as the agency wrote
-          it — usually a block-level address or an intersection, which is what Flock dashboards show,
-          and never a precise coordinate.
-        </li>
-        <li>
-          No pilot names, aircraft serial numbers or dock identifiers, even where a source technically
-          exposes those fields.
+          Several sources publish the full track of every flight as a list of coordinates though no
+          flight paths are stored here. Each agency&rsquo;s page links to that agency&rsquo;s own official
+          map &ndash; where available.
         </li>
         <li>
           Stated purposes appear exactly as the agency recorded them. Agencies use different
           vocabularies — some write a statute citation, some an incident type, some nothing at all — so
-          purposes are not comparable between agencies and this site does not try to make them so.
+          purposes may not be comparable between agencies.
         </li>
         <li>
-          No national totals or national trends. Aggregate counts across agencies mostly reflect when
-          each agency started publishing rather than how much anyone flies, so a rising national line
-          would say more about dashboard adoption than about drones.
+          There are no national totals or national trends. Aggregate counts across agencies mostly
+          reflect when each agency started publishing rather than how much anyone flies, so a rising
+          national line would say more about dashboard adoption than about drones.
         </li>
-        <li>
-          <strong>{hidden.length} agencies are collected but not shown</strong>, because their published
-          record is too thin to describe a drone programme: flights on fewer than three separate days,
-          or a record that is entirely testing and training. Together they account for{' '}
-          {fmtInt(hidden.reduce((t, h) => t + (h.agency.flight_count || 0), 0))} flights, about a tenth
-          of one percent of the data.
-          {' '}This matters more than the numbers suggest. A department that opened a dashboard, posted
-          three test flights and never returned to it is not a department that has flown three times.
-          Showing that number would not be a small error; it would be a false impression, and a caveat
-          elsewhere on this page would not repair it. Where such an agency turns out to publish properly
-          on another platform, the merge above finds it and the real record appears instead.
-        </li>
-        <li>
-          Dashboards whose owner could not be identified are not shown, and a set belonging to the
-          vendors themselves — internal test orgs, employee sandboxes and template dashboards — is
-          excluded deliberately and counted nowhere on this site.
-        </li>
-      </ul>
-
-      <h3>Status labels</h3>
-      <ul>
-        <li><strong>current</strong> — a flight was published within the last 60 days. {byStatus('ok')} agencies.</li>
-        <li>
-          <strong>stale</strong> — no flight published in more than 60 days. {byStatus('stale')} agencies.
-          It may mean the drones stopped flying, or only that the publishing stopped: many agencies
-          upload in batches, weeks apart.
-        </li>
-        <li><strong>unreachable</strong> — the last refresh could not read the source, so the previous data is shown.</li>
-        <li><strong>retired</strong> — the source dashboard no longer exists; the last data collected is kept.</li>
       </ul>
 
       <h3>The map</h3>
@@ -168,20 +105,22 @@ export default function About() {
 
       <h3>Refreshing and corrections</h3>
       <p>
-        This is a monthly snapshot, not a live feed. An agency page is not a picture of what flew last
-        night; it is the shape of a programme over months and years. The date above is when the data was
-        last collected, and each collection is committed to a public repository, so any past version can
-        be reconstructed.
+        This is a monthly snapshot, not a live feed. The date above is when the data was last collected,
+        and each collection is committed to a public repository, so any past version can be
+        reconstructed. Just because an agency&rsquo;s drone data has not been updated in days, weeks, or
+        months does not inherently mean there have been no drone flights over that time.
       </p>
       <p>
         How a refresh behaves depends on the source. Skydio and San Francisco are re-read in full each
         time, so a flight an agency later removes disappears here too. Flock and Motorola publish only a
-        recent window, so those are additive: once a flight has been collected it is kept, even after
-        the original portal stops showing it. That is the point of collecting them at all.
+        recent window, so those are additive: once a flight has been collected it is kept, even after the
+        original portal stops showing it.
       </p>
       <p className="small">
-        Spotted something wrong? The most useful thing you can do is compare a figure here against the
-        agency&rsquo;s own official map, linked from its page, and report the discrepancy.
+        Reported flights per source before merging: Skydio {fmtInt(flightsFrom('skydio_arcgis'))}, Flock{' '}
+        {fmtInt(flightsFrom('flock_aerodome'))}, AirData {fmtInt(flightsFrom('airdata'))}, Motorola{' '}
+        {fmtInt(flightsFrom('motorola_cape'))}, San Francisco {fmtInt(flightsFrom('sfpd_datasf'))}.
+        {site.overlap_count > 0 ? ` ${fmtInt(site.overlap_count)} flights were published on two platforms and are counted once.` : ''}
       </p>
     </>
   );
