@@ -15,7 +15,7 @@ import type { FeatureCollection, Geometry } from 'geojson';
  * Three ways to find it, in order of how much they can be trusted:
  *
  *   1. Skydio publishes each dashboard as a map service whose extent is the
- *      box its flights fall inside. The centre of that box is the agency's own
+ *      box its flights fall inside. The center of that box is the agency's own
  *      account of where it operates, and it costs one request to nobody else.
  *   2. A Flock dashboard's hostname carries the municipality and state, which
  *      geocodes cleanly.
@@ -89,8 +89,8 @@ export function savePlaces(places: Map<string, Place>): void {
   }, null, 1) + '\n');
 }
 
-/** The bounding box of a Skydio dashboard's map service, centred. */
-export async function skydioExtentCentre(orgUuid: string): Promise<{ lat: number; lon: number } | null> {
+/** The bounding box of a Skydio dashboard's map service, centerd. */
+export async function skydioExtentCenter(orgUuid: string): Promise<{ lat: number; lon: number } | null> {
   const url = `https://services7.arcgis.com/mnhQTdIYDA7UoY2l/arcgis/rest/services/${orgUuid}-production/FeatureServer/0?f=json`;
   try {
     const res = await fetch(url, { headers: { 'user-agent': 'police-drone-logs pipeline', accept: 'application/json' } });
@@ -143,7 +143,7 @@ const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
  * Geocode one place through OpenStreetMap's Nominatim.
  *
  * Its usage policy asks for an identifiable client and no more than one
- * request a second, both of which this honours. Results are cached to disk, so
+ * request a second, both of which this honors. Results are cached to disk, so
  * the service is asked once per agency for the life of the project.
  */
 export async function geocode(query: string): Promise<{ lat: number; lon: number } | null> {
@@ -183,7 +183,7 @@ export async function resolvePlaces(targets: ResolveTarget[], log: (m: string) =
     let query: string | null = null;
 
     if (t.skydio_org_uuid) {
-      found = await skydioExtentCentre(t.skydio_org_uuid);
+      found = await skydioExtentCenter(t.skydio_org_uuid);
       if (found) { via = 'skydio_extent'; viaExtent++; }
     }
 

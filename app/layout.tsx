@@ -13,7 +13,7 @@ const plexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600
 
 const SITE_NAME = 'Law Enforcement Drone Flight Log';
 const DESCRIPTION =
-  'What law-enforcement drone programmes actually do, agency by agency: how often they fly, for how long, at what hours, and for what stated reason. Built from the flight logs agencies publish themselves.';
+  'What law-enforcement drone programs actually do, agency by agency: how often they fly, for how long, at what hours, and for what stated reason. Built from the flight logs agencies publish themselves.';
 
 export const metadata: Metadata = {
   title: { default: SITE_NAME, template: `%s — ${SITE_NAME}` },

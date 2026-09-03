@@ -96,7 +96,7 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
    rather than a fixed-column grid -- that was leaving an empty column at some widths
    and squeezing the purpose chart's long labels. A compact chart (the duration
    histogram) caps its own inner width via .chart-compact instead of sharing a track
-   with a neighbour. */
+   with a neighbor. */
 .charts { display: flex; flex-direction: column; gap: 36px; margin-top: 10px; }
 .chart { min-width: 0; }
 /* The two categorical breakdowns read as a pair: same shape, same question asked
@@ -134,7 +134,7 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .filter-chip button:hover { text-decoration-thickness: 2px; }
 
 /* weekday x hour heatmaps: plain CSS grid, cells kept square via aspect-ratio so the
-   shape reads correctly at any container width. Colour is a sequential ramp mixed from
+   shape reads correctly at any container width. Color is a sequential ramp mixed from
    the accent token toward the page background -- never a hardcoded hex -- so it tracks
    light/dark automatically. */
 .heatmap-wrap { max-width: 980px; }
@@ -145,7 +145,7 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .heatmap-row { margin-bottom: 2px; }
 /* Diverging blue-to-red ramp. Quiet hours read cool, busy hours read hot, and the
    midpoint is the page background rather than a fixed white, so the same scale works
-   in both themes. Two variables drive it: --hue picks the end colour, --mix its
+   in both themes. Two variables drive it: --hue picks the end color, --mix its
    strength. */
 .heatcell { aspect-ratio: 1; background: color-mix(in srgb, var(--hue, var(--heat-cold)) var(--mix, 0%), var(--bg)); border: 1px solid var(--line); cursor: default; }
 .heatcell.empty { background: repeating-linear-gradient(135deg, var(--bg-2), var(--bg-2) 3px, var(--bg-3) 3px, var(--bg-3) 6px); }

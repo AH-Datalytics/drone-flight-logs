@@ -133,7 +133,7 @@ export function eventRecords(recs: (FlightRecord & { source?: string })[]): (Fli
  *
  * Agencies enter these by hand, so one category arrives in several spellings:
  * Colorado Springs alone publishes DISTURBANCE, Disturbance and disturbance as
- * separate values. They are counted together and labelled with whichever
+ * separate values. They are counted together and labeled with whichever
  * spelling that agency uses most, because a list of the fifteen most common
  * events should not spend three of its rows on one event.
  */
@@ -211,18 +211,18 @@ export function stats(recs: FlightRecord[], now: Date) {
 }
 
 /**
- * Whether an agency's published record is too thin to characterise its drone programme,
+ * Whether an agency's published record is too thin to characterise its drone program,
  * and why. Returns null when the agency should be shown.
  *
- * This exists because a published count is not the same as a programme. Las Vegas
+ * This exists because a published count is not the same as a program. Las Vegas
  * Metropolitan Police Department published three flights to its Skydio dashboard on a
- * single day in May 2026 and nothing since, while its real programme publishes elsewhere
+ * single day in May 2026 and nothing since, while its real program publishes elsewhere
  * and flew at least 72 times in August alone. Showing "3 flights" for one of the largest
  * departments in the country is not a small number — it is a false impression, and no
  * caveat elsewhere on the site repairs it.
  *
  * The test is active days rather than flight count, because that is what separates a
- * trial from a small programme. Every agency in the dataset with three or fewer flights
+ * trial from a small program. Every agency in the dataset with three or fewer flights
  * flew them across one or two days; agencies with a handful of flights spread over five
  * different days are genuinely small but real. A record that is entirely training and
  * testing is excluded at any size, since it describes a pilot rather than operations.

@@ -32,7 +32,7 @@ describe('agencyKind', () => {
     expect(agencyKind('Hamilton Police Department')).toBe('police');
   });
 
-  it('recognises the kinds that would otherwise look like police', () => {
+  it('recognizes the kinds that would otherwise look like police', () => {
     expect(agencyKind('Los Angeles Port Police')).toBe('port');
     expect(agencyKind('Georgia Tech PD')).toBe('university');
     expect(agencyKind('Sedona Fire District')).toBe('fire');

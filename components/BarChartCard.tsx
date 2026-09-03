@@ -5,7 +5,7 @@ import type { Bar as BarDatum } from '@/lib/aggregate';
 import { planTicks } from '@/lib/format';
 
 export default function BarChartCard({ title, data, horizontal = false, height = 220, note, tickFormatter, compact = false }: { title: string; data: BarDatum[]; horizontal?: boolean; height?: number; note?: string; tickFormatter?: (label: string) => string; compact?: boolean }) {
-  // Chart colours come from the CSS custom properties so the light/dark palette in
+  // Chart colors come from the CSS custom properties so the light/dark palette in
   // globals.css is the single source of truth. Hardcoding hex here would leave dark
   // mode with a light-mode chart on a dark page. Read on mount, not at module scope,
   // because the properties do not exist during server rendering.

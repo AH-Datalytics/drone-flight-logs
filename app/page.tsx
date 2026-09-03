@@ -32,7 +32,7 @@ export default function Home() {
       <p className="lede">
         A few hundred police and public-safety agencies publish a log of their drone flights,
         scattered across five different vendors&rsquo; dashboards. This site gathers them so you can
-        look up one agency and see the shape of its programme: how often it flies, for how long, at
+        look up one agency and see the shape of its program: how often it flies, for how long, at
         what hours of which days, and for what stated reason. It is a periodic snapshot rather than a
         live feed, and every count is a floor, because agencies publish only the flights they choose to.
       </p>

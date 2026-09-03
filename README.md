@@ -1,6 +1,6 @@
 # Law Enforcement Drone Flight Log
 
-What law-enforcement drone programmes actually do, agency by agency: how often they fly, for how long, at what hours of which days, and for what stated reason.
+What law-enforcement drone programs actually do, agency by agency: how often they fly, for how long, at what hours of which days, and for what stated reason.
 
 There is no national register of police drone flights and no law requiring one. What exists is a scattering of vendor dashboards, each publishing a different subset of a different set of fields, with no index of who has one. This repository finds them, collects what they publish, merges the agencies that publish in more than one place, and serves the result as a site.
 
@@ -17,7 +17,7 @@ A project of [AH Datalytics](https://ahdatalytics.com).
 | San Francisco open data | 1 | 7,481 | Whole fleet; date but no time of day |
 | **Merged** | **226** | **294,652** | 13 agencies publish in more than one place |
 
-182 agencies are shown on the site. The rest are collected but hidden, because a record of a few test flights describes a dashboard rather than a drone programme.
+182 agencies are shown on the site. The rest are collected but hidden, because a record of a few test flights describes a dashboard rather than a drone program.
 
 Every figure counts **distinct flights**, never rows: several published services contain the same flight two or three times over.
 
@@ -75,8 +75,8 @@ No flight paths. Several sources publish the full track of every flight; it is d
 
 ## Attribution
 
-Agency locations for the map were geocoded through OpenStreetMap's Nominatim service, so map data is © OpenStreetMap contributors, available under the [Open Database Licence](https://www.openstreetmap.org/copyright). State outlines come from the US Census Bureau via [us-atlas](https://github.com/topojson/us-atlas).
+Agency locations for the map were geocoded through OpenStreetMap's Nominatim service, so map data is © OpenStreetMap contributors, available under the [Open Database License](https://www.openstreetmap.org/copyright). State outlines come from the US Census Bureau via [us-atlas](https://github.com/topojson/us-atlas).
 
-The favicon is [drone case icons created by Magnific – Flaticon](https://www.flaticon.com/free-icons/drone-case), used under Flaticon's free licence, which requires that attribution. It appears in the site's footer.
+The favicon is [drone case icons created by Magnific – Flaticon](https://www.flaticon.com/free-icons/drone-case), used under Flaticon's free license, which requires that attribution. It appears in the site's footer.
 
 The flight records themselves are published by the agencies named alongside them; each agency page links to that agency's own dashboard, which is the authoritative source.

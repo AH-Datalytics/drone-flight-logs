@@ -13,7 +13,7 @@ import { acquireLock } from '../lock.js';
  * reported rather than quietly accepted.
  *
  * The portal's robots.txt asks for a two-second crawl delay, which this
- * honours, and disallows /kml, which this never requests.
+ * honors, and disallows /kml, which this never requests.
  */
 
 export type AirDataSite = { agency_id: string; slug: string; display_name: string; state: string | null; timezone: string };

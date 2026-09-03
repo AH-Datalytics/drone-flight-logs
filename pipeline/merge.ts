@@ -3,10 +3,10 @@ import type { FlightRecord } from './schema.js';
 /**
  * Merging one agency's flights across the platforms it publishes on.
  *
- * Fourteen agencies publish the same programme in two or three places, and the
+ * Fourteen agencies publish the same program in two or three places, and the
  * platforms do not agree about what a flight is called. Skydio issues its own
  * flight ids, Flock numbers flights per day, AirData exposes an internal row
- * id. None of them survive a crossing, so a shared flight has to be recognised
+ * id. None of them survive a crossing, so a shared flight has to be recognized
  * from what it describes rather than from what it is called.
  *
  * Two independent pieces of evidence, either of which is enough:

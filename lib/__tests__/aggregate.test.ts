@@ -112,14 +112,14 @@ describe('suppressionReason', () => {
     expect(suppressionReason(recs)).toBe('every published flight is testing or training');
   });
 
-  it('keeps a small but genuine programme spread across days', () => {
+  it('keeps a small but genuine program spread across days', () => {
     // A handful of real flights over several days is small, not unrepresentative.
     const recs = ['2026-01-01', '2026-02-14', '2026-03-30', '2026-05-02', '2026-06-11']
       .map(d => f({ flight_date_local: d, purpose: 'Missing Person' }));
     expect(suppressionReason(recs)).toBeNull();
   });
 
-  it('keeps a programme that merely includes training among real flights', () => {
+  it('keeps a program that merely includes training among real flights', () => {
     const recs = [
       f({ flight_date_local: '2026-01-01', purpose: 'Training' }),
       f({ flight_date_local: '2026-02-01', purpose: 'Training' }),

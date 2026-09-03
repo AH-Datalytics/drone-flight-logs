@@ -18,7 +18,7 @@ function cellTitle(weekday: string, hour: number, v: number): string {
 }
 
 /**
- * The cell's colour on a diverging blue-to-red ramp: quiet hours cool, busy hours hot,
+ * The cell's color on a diverging blue-to-red ramp: quiet hours cool, busy hours hot,
  * and the middle of the range left as the page background so nothing shouts in the
  * middle. Below the midpoint the cell mixes toward blue and above it toward red, each
  * at full strength only at the extremes.
@@ -37,7 +37,7 @@ function heatStyle(value: number, max: number): React.CSSProperties {
  * A plain CSS-grid heatmap rather than a Recharts chart: 168 discrete, individually
  * addressable cells with their own tooltip/title is a poor fit for an SVG chart library
  * built around continuous scales and series -- a grid gives per-cell accessibility
- * (title + aria-label), guaranteed-square cells via aspect-ratio, and a colour ramp
+ * (title + aria-label), guaranteed-square cells via aspect-ratio, and a color ramp
  * mixed straight from the theme's tokens with zero extra markup.
  */
 export default function Heatmap({ title, grid, max, note }: Props) {

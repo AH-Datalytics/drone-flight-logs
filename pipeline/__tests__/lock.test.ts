@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { acquireLock, readLock, isAlive } from '../lock.js';
 
 describe('isAlive', () => {
-  it('recognises this process', () => {
+  it('recognizes this process', () => {
     expect(isAlive(process.pid)).toBe(true);
   });
 

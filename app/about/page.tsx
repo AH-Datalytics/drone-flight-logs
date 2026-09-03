@@ -78,11 +78,11 @@ export default function About() {
       <h3>The map</h3>
       <p>
         The dot for each agency is a single coarse point — where the department operates, not where any
-        drone went. For agencies on Skydio it is the centre of the extent that agency&rsquo;s own dashboard
+        drone went. For agencies on Skydio it is the center of the extent that agency&rsquo;s own dashboard
         publishes. For the rest it is the municipality, looked up once through OpenStreetMap&rsquo;s Nominatim
         service and then cached, so nothing is geocoded twice. Map data{' '}
         <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">&copy; OpenStreetMap contributors</a>,
-        available under the Open Database Licence. State outlines come from the US Census Bureau via{' '}
+        available under the Open Database License. State outlines come from the US Census Bureau via{' '}
         <a href="https://github.com/topojson/us-atlas" target="_blank" rel="noopener noreferrer">us-atlas</a>.
       </p>
 

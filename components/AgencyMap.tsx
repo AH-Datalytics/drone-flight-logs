@@ -29,10 +29,10 @@ type Props = {
  * rather than magnifying one large circle.
  *
  * Dot area, not radius, is proportional to flight count, so the largest
- * programmes do not swamp the map by squaring a difference the reader is being
+ * programs do not swamp the map by squaring a difference the reader is being
  * shown once already.
  *
- * Colours and the legend's size are SVG presentation attributes as well as CSS
+ * Colors and the legend's size are SVG presentation attributes as well as CSS
  * rules. CSS wins whenever it loads and carries the light and dark themes; the
  * attributes are there because an SVG with no styling at all fills solid black
  * and sizes itself to its container.
@@ -84,7 +84,7 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
     });
   }, [clamp]);
 
-  const zoomCentre = (factor: number) => zoomAbout(factor, width / 2, height / 2);
+  const zoomCenter = (factor: number) => zoomAbout(factor, width / 2, height / 2);
   const reset = () => setView({ scale: 1, x: 0, y: 0 });
 
   // Wheel zoom is registered by hand because React's onWheel is passive, and a
@@ -171,8 +171,8 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
         </svg>
 
         <div className="map-zoom">
-          <button type="button" onClick={() => zoomCentre(ZOOM_STEP)} disabled={view.scale >= MAX_SCALE} aria-label="Zoom in">+</button>
-          <button type="button" onClick={() => zoomCentre(1 / ZOOM_STEP)} disabled={!zoomed} aria-label="Zoom out">−</button>
+          <button type="button" onClick={() => zoomCenter(ZOOM_STEP)} disabled={view.scale >= MAX_SCALE} aria-label="Zoom in">+</button>
+          <button type="button" onClick={() => zoomCenter(1 / ZOOM_STEP)} disabled={!zoomed} aria-label="Zoom out">−</button>
           <button type="button" onClick={reset} disabled={!zoomed} aria-label="Reset the map">Reset</button>
         </div>
 
@@ -204,7 +204,7 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
           <span className="small">published flights</span>
         </div>
         <div className="small">
-          Scroll or double-click to zoom, drag to pan. Each dot is one agency, placed at the centre of
+          Scroll or double-click to zoom, drag to pan. Each dot is one agency, placed at the center of
           the area it flies in, not at any individual flight. Click a dot to open that agency.
           {offMap > 0 ? ` ${offMap} ${offMap === 1 ? 'agency is' : 'agencies are'} outside the map and appear only in the full list.` : ''}
         </div>

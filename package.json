@@ -23,7 +23,8 @@
     "refresh": "tsx pipeline/refresh.ts",
     "overnight": "tsx pipeline/overnight.ts",
     "census:csv": "tsx scripts/census-csv.ts",
-    "places": "tsx scripts/resolve-places.ts"
+    "places": "tsx scripts/resolve-places.ts",
+    "og": "tsx scripts/make-og-image.ts"
   },
   "devDependencies": {
     "@types/d3-geo": "^3.1.1",

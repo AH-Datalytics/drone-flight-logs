@@ -86,7 +86,7 @@ export default async function AgencyPage({ params }: { params: Promise<{ agency_
         </ul>
         {a.sources.length > 1 && (
           <p className="small">
-            This agency publishes the same programme in more than one place, and the platforms do not
+            This agency publishes the same program in more than one place, and the platforms do not
             agree about what a flight is called. Flights that appear on two of them are matched by date
             and takeoff time and counted once
             {a.overlap_count > 0 ? `; ${fmtInt(a.overlap_count)} were published twice` : ''}.
