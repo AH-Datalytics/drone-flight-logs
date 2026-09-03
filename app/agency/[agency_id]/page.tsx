@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getAgency, publicAgencies, loadManifest, loadFlights } from '@/lib/data';
-import { fmtDate } from '@/lib/format';
+import { fmtDate, fmtInt } from '@/lib/format';
 import { monthly, durationBins, purposeTop, stats, heatmapGrids, PURPOSE_OPTION_CAP } from '@/lib/aggregate';
 import StatusBadge from '@/components/StatusBadge';
 import AgencyInteractive, { type AgencyInitial } from '@/components/AgencyInteractive';
@@ -12,7 +12,13 @@ export async function generateMetadata({ params }: { params: Promise<{ agency_id
   const a = getAgency((await params).agency_id); return { title: a ? `${a.display_name} — drone flights` : 'Agency' };
 }
 
-const SOURCE: Record<string, string> = { skydio_arcgis: 'Skydio transparency dashboard (Skydio aircraft only)', sfpd_datasf: 'City open-data portal (all aircraft)' };
+const SOURCE: Record<string, { name: string; note: string }> = {
+  skydio_arcgis: { name: 'Skydio transparency dashboard', note: 'Skydio aircraft only' },
+  sfpd_datasf: { name: 'City open-data portal', note: 'the whole fleet, any manufacturer' },
+  flock_aerodome: { name: 'Flock Aerodome community dashboard', note: 'call type and case number per flight' },
+  airdata: { name: 'AirData public flight log', note: 'no flight durations published' },
+  motorola_cape: { name: 'Motorola CAPE transparency portal', note: 'most portals show only the last 30 to 60 days' },
+};
 
 export default async function AgencyPage({ params }: { params: Promise<{ agency_id: string }> }) {
   const { agency_id } = await params;
@@ -46,9 +52,32 @@ export default async function AgencyPage({ params }: { params: Promise<{ agency_
       <div className="agency-head">
         <div>
           <h2 style={{ marginBottom: 4 }}>{a.display_name}{a.state ? `, ${a.state}` : ''}</h2>
-          <div className="meta"><StatusBadge status={a.status} /> &nbsp; Source: {SOURCE[a.source] ?? a.source}. Data as of {fmtDate(m.run_utc?.slice(0, 10))}.</div>
+          <div className="meta"><StatusBadge status={a.status} /> &nbsp; Data as of {fmtDate(m.run_utc?.slice(0, 10))}.</div>
         </div>
-        <a className="btn" href={a.official_url} target="_blank" rel="noopener noreferrer">View official flight map ↗</a>
+        <a className="btn" href={a.official_url} target="_blank" rel="noopener noreferrer">View official flight log ↗</a>
+      </div>
+
+      <div className="sources">
+        <span className="sources-label">{a.sources.length > 1 ? 'Published on' : 'Published on'}</span>
+        <ul>
+          {a.sources.map(s => (
+            <li key={s.source + s.source_agency_id}>
+              <a href={s.official_url} target="_blank" rel="noopener noreferrer">{SOURCE[s.source]?.name ?? s.source}</a>
+              {' — '}{fmtInt(s.flight_count)} flights
+              {s.first_flight ? `, ${fmtDate(s.first_flight)} to ${fmtDate(s.last_flight)}` : ''}
+              {SOURCE[s.source] ? <span className="small"> ({SOURCE[s.source].note})</span> : null}
+            </li>
+          ))}
+        </ul>
+        {a.sources.length > 1 && (
+          <p className="small">
+            This agency publishes the same programme in more than one place, and the platforms do not
+            agree about what a flight is called. Flights that appear on two of them are matched by date
+            and takeoff time and counted once
+            {a.overlap_count > 0 ? `; ${fmtInt(a.overlap_count)} were published twice` : ''}.
+            The figures below are the merged record.
+          </p>
+        )}
       </div>
       {a.notes && <div className="note">{a.notes}</div>}
       <AgencyInteractive agencyId={agency_id} timezone={a.timezone} nowIso={now.toISOString()} initial={initial} />

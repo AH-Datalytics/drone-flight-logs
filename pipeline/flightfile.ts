@@ -2,7 +2,9 @@ import type { FlightRecord } from './schema.js';
 
 export const COLUMNS = ['source_flight_id', 'takeoff_utc', 'flight_date_local', 'landing_utc', 'duration_min', 'purpose', 'description', 'case_number', 'data_quality', 'extra'] as const;
 export type Column = typeof COLUMNS[number];
-export type FlightFile = { agency_id: string; columns: typeof COLUMNS; rows: unknown[][] };
+/** The site's merged store carries provenance the per-source stores do not need. */
+export const SOURCED_COLUMNS = [...COLUMNS, 'source'] as const;
+export type FlightFile = { agency_id: string; columns: readonly string[]; rows: unknown[][] };
 
 function cmp(a: FlightRecord, b: FlightRecord): number {
   if (a.takeoff_utc === null && b.takeoff_utc !== null) return 1;
@@ -14,6 +16,15 @@ function cmp(a: FlightRecord, b: FlightRecord): number {
 export function encodeFlightFile(agencyId: string, records: FlightRecord[]): FlightFile {
   const rows = [...records].sort(cmp).map(r => COLUMNS.map(c => r[c]));
   return { agency_id: agencyId, columns: COLUMNS, rows };
+}
+
+/** Same layout with a trailing column naming the platform each flight came from. */
+export function encodeSourcedFlightFile(
+  agencyId: string,
+  records: (FlightRecord & { source: string })[],
+): FlightFile {
+  const rows = [...records].sort(cmp).map(r => SOURCED_COLUMNS.map(c => (r as Record<string, unknown>)[c]));
+  return { agency_id: agencyId, columns: SOURCED_COLUMNS, rows };
 }
 
 export function decodeFlightFile(file: FlightFile): FlightRecord[] {

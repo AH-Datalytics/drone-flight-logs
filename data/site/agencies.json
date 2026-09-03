@@ -1,0 +1,5777 @@
+{
+ "built_utc": "2026-09-03T01:21:38.725Z",
+ "agency_count": 226,
+ "flight_count": 152920,
+ "overlap_count": 0,
+ "by_source": {
+  "skydio_arcgis": 102052,
+  "flock_aerodome": 29466,
+  "sfpd_datasf": 7481,
+  "motorola_cape": 8746,
+  "airdata": 5175
+ },
+ "agencies": [
+  {
+   "agency_id": "cincinnati-pd",
+   "display_name": "Cincinnati Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "cincinnati-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/49102a57e82a4755b015ea84dcd39b01",
+     "flight_count": 18043,
+     "first_flight": "2025-03-19",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/49102a57e82a4755b015ea84dcd39b01",
+   "status": "ok",
+   "first_flight": "2025-03-19",
+   "last_flight": "2026-09-01",
+   "flight_count": 18043,
+   "total_hours": 3690.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "cspd-real-time-crime-center",
+   "display_name": "CSPD Real-Time Crime Center",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "cspd-real-time-crime-center",
+     "official_url": "https://www.arcgis.com/apps/dashboards/77fe7c984946489aaf32ca7564667c0b",
+     "flight_count": 10307,
+     "first_flight": "2025-09-21",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/77fe7c984946489aaf32ca7564667c0b",
+   "status": "ok",
+   "first_flight": "2025-09-21",
+   "last_flight": "2026-09-02",
+   "flight_count": 10307,
+   "total_hours": 1939.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "los-angeles-pd",
+   "display_name": "Los Angeles Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "los-angeles-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/lapd",
+     "flight_count": 9685,
+     "first_flight": "2025-07-29",
+     "last_flight": "2026-09-01"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "los-angeles-pd-ca",
+     "official_url": "https://community.los-angeles.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/lapd",
+   "status": "ok",
+   "first_flight": "2025-07-29",
+   "last_flight": "2026-09-01",
+   "flight_count": 9685,
+   "total_hours": 1963.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "aurora-pd-co",
+   "display_name": "Aurora PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "aurora-pd-co",
+     "official_url": "https://community.aurora.co.us.aerodome.com/",
+     "flight_count": 7873,
+     "first_flight": "2025-08-12",
+     "last_flight": "2026-08-01"
+    }
+   ],
+   "official_url": "https://community.aurora.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-08-12",
+   "last_flight": "2026-08-01",
+   "flight_count": 7873,
+   "total_hours": 2058.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "sfpd",
+   "display_name": "San Francisco Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "sfpd_datasf",
+     "source_agency_id": "sfpd",
+     "official_url": "https://www.sanfranciscopolice.org/your-sfpd/explore-department/drones",
+     "flight_count": 7481,
+     "first_flight": "2024-05-16",
+     "last_flight": "2026-06-30"
+    }
+   ],
+   "official_url": "https://www.sanfranciscopolice.org/your-sfpd/explore-department/drones",
+   "status": "stale",
+   "first_flight": "2024-05-16",
+   "last_flight": "2026-06-30",
+   "flight_count": 7481,
+   "total_hours": 2104.7,
+   "overlap_count": 0,
+   "notes": "Published by the city under its surveillance ordinance, not through a vendor. Covers SFPD's whole fleet (DJI, Skydio, Flock Safety and others), whereas Skydio-sourced agencies show Skydio flights only. Dates only; no takeoff times."
+  },
+  {
+   "agency_id": "wichita-pd",
+   "display_name": "Wichita Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "UTC",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "wichita-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/wichita",
+     "flight_count": 6653,
+     "first_flight": "2024-05-29",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/wichita",
+   "status": "ok",
+   "first_flight": "2024-05-29",
+   "last_flight": "2026-09-02",
+   "flight_count": 6653,
+   "total_hours": 1698.7,
+   "overlap_count": 0,
+   "notes": "timezone not detected automatically; set manually."
+  },
+  {
+   "agency_id": "redondo-beach-pd-ca",
+   "display_name": "Redondo Beach Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "redondo-beach-pd-ca",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/redondobeachpd",
+     "flight_count": 5709,
+     "first_flight": "2020-04-07",
+     "last_flight": "2024-02-09"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "redondo-beach-pd-ca",
+     "official_url": "https://community.rbpd.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/redondobeachpd",
+   "status": "stale",
+   "first_flight": "2020-04-07",
+   "last_flight": "2024-02-09",
+   "flight_count": 5709,
+   "total_hours": 1156.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "alhambra-pd-ca",
+   "display_name": "Alhambra PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "alhambra-pd-ca",
+     "official_url": "https://community.alhambra.ca.us.aerodome.com/",
+     "flight_count": 4827,
+     "first_flight": "2024-06-20",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.alhambra.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2024-06-20",
+   "last_flight": "2026-09-02",
+   "flight_count": 4827,
+   "total_hours": 1215.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "laredo-pd",
+   "display_name": "Laredo Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "laredo-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/laredopd",
+     "flight_count": 4688,
+     "first_flight": "2026-01-30",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/laredopd",
+   "status": "ok",
+   "first_flight": "2026-01-30",
+   "last_flight": "2026-09-02",
+   "flight_count": 4688,
+   "total_hours": 826.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "azusa-pd-ca",
+   "display_name": "Azusa PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "azusa-pd-ca",
+     "official_url": "https://community.azusa.ca.us.aerodome.com/",
+     "flight_count": 4446,
+     "first_flight": "2023-12-18",
+     "last_flight": "2026-05-01"
+    }
+   ],
+   "official_url": "https://community.azusa.ca.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2023-12-18",
+   "last_flight": "2026-05-01",
+   "flight_count": 4446,
+   "total_hours": 2682.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "philadelphia-pd",
+   "display_name": "Philadelphia Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "philadelphia-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/acc28d9c9fbd48c68d1059452bf2bb1c",
+     "flight_count": 4258,
+     "first_flight": "2025-03-08",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/acc28d9c9fbd48c68d1059452bf2bb1c",
+   "status": "ok",
+   "first_flight": "2025-03-08",
+   "last_flight": "2026-09-01",
+   "flight_count": 4258,
+   "total_hours": 853.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dearborn-pd-mi",
+   "display_name": "Dearborn Police Department",
+   "state": "MI",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "dearborn-pd-mi",
+     "official_url": "https://www.arcgis.com/apps/dashboards/13937d18670e44d5a20a5a3821f01775",
+     "flight_count": 4193,
+     "first_flight": "2026-01-28",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/13937d18670e44d5a20a5a3821f01775",
+   "status": "ok",
+   "first_flight": "2026-01-28",
+   "last_flight": "2026-09-01",
+   "flight_count": 4193,
+   "total_hours": 663,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "aspen-pd-co",
+   "display_name": "Aspen PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "aspen-pd-co",
+     "official_url": "https://community.aspen.co.us.aerodome.com/",
+     "flight_count": 4146,
+     "first_flight": "2023-11-15",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.aspen.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2023-11-15",
+   "last_flight": "2026-09-02",
+   "flight_count": 4146,
+   "total_hours": 11155.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "milwaukee-pd",
+   "display_name": "Milwaukee Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "milwaukee-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/milwaukee",
+     "flight_count": 4130,
+     "first_flight": "2025-03-08",
+     "last_flight": "2026-08-23"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/milwaukee",
+   "status": "ok",
+   "first_flight": "2025-03-08",
+   "last_flight": "2026-08-23",
+   "flight_count": 4130,
+   "total_hours": 879.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "brookhaven-pd",
+   "display_name": "Brookhaven Police Department",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "brookhaven-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
+     "flight_count": 3268,
+     "first_flight": "2025-05-22",
+     "last_flight": "2026-09-01"
+    },
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "brookhaven-pd-ga",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/brookhavenga",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
+   "status": "ok",
+   "first_flight": "2025-05-22",
+   "last_flight": "2026-09-01",
+   "flight_count": 3268,
+   "total_hours": 562.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "rochester-pd-mn",
+   "display_name": "Rochester Police Department - MN",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "rochester-pd-mn",
+     "official_url": "https://www.arcgis.com/apps/dashboards/fc2491c66ec9416aaab58eb84865d51b",
+     "flight_count": 3111,
+     "first_flight": "2025-09-09",
+     "last_flight": "2026-08-13"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/fc2491c66ec9416aaab58eb84865d51b",
+   "status": "ok",
+   "first_flight": "2025-09-09",
+   "last_flight": "2026-08-13",
+   "flight_count": 3111,
+   "total_hours": 511.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "concord-pd-ca",
+   "display_name": "Concord Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "concord-pd-ca",
+     "official_url": "https://cloud.skydio.com/dashboard/concordpd",
+     "flight_count": 3081,
+     "first_flight": "2025-10-01",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/concordpd",
+   "status": "ok",
+   "first_flight": "2025-10-01",
+   "last_flight": "2026-09-01",
+   "flight_count": 3081,
+   "total_hours": 555,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "brea-pd-ca",
+   "display_name": "Brea Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "brea-pd-ca",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/breapd-ca",
+     "flight_count": 2944,
+     "first_flight": "2024-05-22",
+     "last_flight": "2026-08-29"
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/breapd-ca",
+   "status": "ok",
+   "first_flight": "2024-05-22",
+   "last_flight": "2026-08-29",
+   "flight_count": 2944,
+   "total_hours": 529.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "greeley-pd-co",
+   "display_name": "Greeley Police Department",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "greeley-pd-co",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e6b0a17763154df2b33112c954ef6b0d",
+     "flight_count": 2322,
+     "first_flight": "2026-01-28",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e6b0a17763154df2b33112c954ef6b0d",
+   "status": "ok",
+   "first_flight": "2026-01-28",
+   "last_flight": "2026-09-01",
+   "flight_count": 2322,
+   "total_hours": 423.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "anne-arundel-county-police-md",
+   "display_name": "Anne Arundel County Police",
+   "state": "MD",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "anne-arundel-county-police-md",
+     "official_url": "https://app.airdata.com/u/annearundelpd",
+     "flight_count": 2266,
+     "first_flight": "2025-07-02",
+     "last_flight": "2026-08-03"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/annearundelpd",
+   "status": "ok",
+   "first_flight": "2025-07-02",
+   "last_flight": "2026-08-03",
+   "flight_count": 2266,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "brooklyn-park-pd",
+   "display_name": "Brooklyn Park Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "brooklyn-park-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/b230d35acc124c4080b591a99fc3b28d",
+     "flight_count": 2006,
+     "first_flight": "2025-11-14",
+     "last_flight": "2026-08-31"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/b230d35acc124c4080b591a99fc3b28d",
+   "status": "ok",
+   "first_flight": "2025-11-14",
+   "last_flight": "2026-08-31",
+   "flight_count": 2006,
+   "total_hours": 394.1,
+   "overlap_count": 0,
+   "notes": "Combines 2 Skydio dashboards published by this agency."
+  },
+  {
+   "agency_id": "denver-pd",
+   "display_name": "Denver Police Department",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "denver-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/denverpd",
+     "flight_count": 1841,
+     "first_flight": "2025-10-21",
+     "last_flight": "2026-09-01"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "denver-pd-co",
+     "official_url": "https://community.denver.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/denverpd",
+   "status": "ok",
+   "first_flight": "2025-10-21",
+   "last_flight": "2026-09-01",
+   "flight_count": 1841,
+   "total_hours": 290.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "chico-pd-ca",
+   "display_name": "Chico Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "chico-pd-ca",
+     "official_url": "https://app.airdata.com/u/chicopd",
+     "flight_count": 1797,
+     "first_flight": "2021-07-22",
+     "last_flight": "2026-08-16"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/chicopd",
+   "status": "ok",
+   "first_flight": "2021-07-22",
+   "last_flight": "2026-08-16",
+   "flight_count": 1797,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "south-san-francisco-pd-ca",
+   "display_name": "South San Francisco Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "south-san-francisco-pd-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/c62d7fea1f524f2ebe9f10ff5569e0c8",
+     "flight_count": 1637,
+     "first_flight": "2025-10-06",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/c62d7fea1f524f2ebe9f10ff5569e0c8",
+   "status": "ok",
+   "first_flight": "2025-10-06",
+   "last_flight": "2026-09-01",
+   "flight_count": 1637,
+   "total_hours": 319,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "santa-ana-pd-ca",
+   "display_name": "Santa Ana Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "santa-ana-pd-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe",
+     "flight_count": 1599,
+     "first_flight": "2026-05-21",
+     "last_flight": "2026-08-27"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe",
+   "status": "ok",
+   "first_flight": "2026-05-21",
+   "last_flight": "2026-08-27",
+   "flight_count": 1599,
+   "total_hours": 252.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "conyers-pd-ga",
+   "display_name": "Conyers PD",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "conyers-pd-ga",
+     "official_url": "https://community.conyers.ga.us.aerodome.com/",
+     "flight_count": 1596,
+     "first_flight": "2025-09-25",
+     "last_flight": "2026-08-01"
+    }
+   ],
+   "official_url": "https://community.conyers.ga.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-09-25",
+   "last_flight": "2026-08-01",
+   "flight_count": 1596,
+   "total_hours": 372,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "st-paul-pd-mn",
+   "display_name": "St. Paul Police Department",
+   "state": "MN",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "st-paul-pd-mn",
+     "official_url": "https://cloud.skydio.com/dashboard/sppd",
+     "flight_count": 1517,
+     "first_flight": "2026-06-01",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/sppd",
+   "status": "ok",
+   "first_flight": "2026-06-01",
+   "last_flight": "2026-09-01",
+   "flight_count": 1517,
+   "total_hours": 277,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "castle-rock-pd-co",
+   "display_name": "Castle Rock PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "castle-rock-pd-co",
+     "official_url": "https://community.castle-rock.co.us.aerodome.com/",
+     "flight_count": 1384,
+     "first_flight": "2025-07-31",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.castle-rock.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-07-31",
+   "last_flight": "2026-09-02",
+   "flight_count": 1384,
+   "total_hours": 331.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "caldwell-pd-id",
+   "display_name": "Caldwell Police Department",
+   "state": "ID",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "caldwell-pd-id",
+     "official_url": "https://www.arcgis.com/apps/dashboards/62c4003416fb4c52ad4e03766e9ad32a",
+     "flight_count": 1249,
+     "first_flight": "2026-01-07",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/62c4003416fb4c52ad4e03766e9ad32a",
+   "status": "ok",
+   "first_flight": "2026-01-07",
+   "last_flight": "2026-09-01",
+   "flight_count": 1249,
+   "total_hours": 213.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "minnetonka-pd",
+   "display_name": "Minnetonka Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "minnetonka-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/864a017ece0f4aa898e0026032f8ce92",
+     "flight_count": 1220,
+     "first_flight": "2025-02-13",
+     "last_flight": "2026-08-26"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/864a017ece0f4aa898e0026032f8ce92",
+   "status": "ok",
+   "first_flight": "2025-02-13",
+   "last_flight": "2026-08-26",
+   "flight_count": 1220,
+   "total_hours": 239.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "arvada-pd-co",
+   "display_name": "Arvada Police Department",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "arvada-pd-co",
+     "official_url": "https://www.arcgis.com/apps/dashboards/b7c9dafc9f1047f4af6f3df05a7fae2e",
+     "flight_count": 1176,
+     "first_flight": "2026-05-22",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/b7c9dafc9f1047f4af6f3df05a7fae2e",
+   "status": "ok",
+   "first_flight": "2026-05-22",
+   "last_flight": "2026-09-01",
+   "flight_count": 1176,
+   "total_hours": 204.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "town-of-ramapo-pd",
+   "display_name": "Town of Ramapo Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "town-of-ramapo-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/91bfbf2aaa034122810ad9120c1213b9",
+     "flight_count": 1163,
+     "first_flight": "2026-03-31",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/91bfbf2aaa034122810ad9120c1213b9",
+   "status": "ok",
+   "first_flight": "2026-03-31",
+   "last_flight": "2026-09-02",
+   "flight_count": 1163,
+   "total_hours": 182.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "elk-grove-pd-ca",
+   "display_name": "Elk Grove PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "elk-grove-pd-ca",
+     "official_url": "https://community.elk-grove.ca.us.aerodome.com/",
+     "flight_count": 1083,
+     "first_flight": "2026-07-01",
+     "last_flight": "2026-09-02"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "elk-grove-pd-ca",
+     "official_url": "https://app.airdata.com/u/egpd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.elk-grove.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-07-01",
+   "last_flight": "2026-09-02",
+   "flight_count": 1083,
+   "total_hours": 212.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "st-cloud-pd",
+   "display_name": "St. Cloud Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "st-cloud-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/a72c3583084241528c5dc488d59892ba",
+     "flight_count": 1061,
+     "first_flight": "2025-02-09",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/a72c3583084241528c5dc488d59892ba",
+   "status": "ok",
+   "first_flight": "2025-02-09",
+   "last_flight": "2026-09-02",
+   "flight_count": 1061,
+   "total_hours": 213.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "lewisville-pd-dfr-tx",
+   "display_name": "Lewisville Police Department DFR",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "lewisville-pd-dfr-tx",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f93f7ce5e9f447ce8fdb8593dd11442d",
+     "flight_count": 945,
+     "first_flight": "2026-02-26",
+     "last_flight": "2026-07-30"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f93f7ce5e9f447ce8fdb8593dd11442d",
+   "status": "ok",
+   "first_flight": "2026-02-26",
+   "last_flight": "2026-07-30",
+   "flight_count": 945,
+   "total_hours": 162.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "buena-park-pd-ca",
+   "display_name": "Buena Park PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "buena-park-pd-ca",
+     "official_url": "https://community.buena-park.ca.us.aerodome.com/",
+     "flight_count": 920,
+     "first_flight": "2025-12-15",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.buena-park.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-15",
+   "last_flight": "2026-09-02",
+   "flight_count": 920,
+   "total_hours": 205.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "casa-grande-pd-az",
+   "display_name": "Casa Grande PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "casa-grande-pd-az",
+     "official_url": "https://community.casa-grande.az.us.aerodome.com/",
+     "flight_count": 868,
+     "first_flight": "2026-02-11",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.casa-grande.az.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-02-11",
+   "last_flight": "2026-09-02",
+   "flight_count": 868,
+   "total_hours": 238.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "durango-pd-co",
+   "display_name": "Durango Police Department",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "durango-pd-co",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e9e298e4ce57474c96908c82dfe2c8d8",
+     "flight_count": 854,
+     "first_flight": "2026-05-28",
+     "last_flight": "2026-09-01"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "durango-pd-co",
+     "official_url": "https://community.durango.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e9e298e4ce57474c96908c82dfe2c8d8",
+   "status": "ok",
+   "first_flight": "2026-05-28",
+   "last_flight": "2026-09-01",
+   "flight_count": 854,
+   "total_hours": 160.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "duluth-pd-mn",
+   "display_name": "Duluth Police Department",
+   "state": "MN",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "duluth-pd-mn",
+     "official_url": "https://www.arcgis.com/apps/dashboards/c916825c24e04d3bbd226e8e5aeb56c5",
+     "flight_count": 813,
+     "first_flight": "2025-12-16",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/c916825c24e04d3bbd226e8e5aeb56c5",
+   "status": "ok",
+   "first_flight": "2025-12-16",
+   "last_flight": "2026-09-01",
+   "flight_count": 813,
+   "total_hours": 126.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "vanderbilt-university-pd",
+   "display_name": "Vanderbilt University Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "vanderbilt-university-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/a8cd850f37644d7ca7d50dde2ab9733a",
+     "flight_count": 753,
+     "first_flight": "2026-04-21",
+     "last_flight": "2026-08-30"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/a8cd850f37644d7ca7d50dde2ab9733a",
+   "status": "ok",
+   "first_flight": "2026-04-21",
+   "last_flight": "2026-08-30",
+   "flight_count": 753,
+   "total_hours": 91.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "cottonwood-pd-az",
+   "display_name": "Cottonwood PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "cottonwood-pd-az",
+     "official_url": "https://community.cottonwood.az.us.aerodome.com/",
+     "flight_count": 729,
+     "first_flight": "2025-12-11",
+     "last_flight": "2026-08-31"
+    }
+   ],
+   "official_url": "https://community.cottonwood.az.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-11",
+   "last_flight": "2026-08-31",
+   "flight_count": 729,
+   "total_hours": 237.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "santa-clara-county-so",
+   "display_name": "Santa Clara County Sheriff's Office",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "santa-clara-county-so",
+     "official_url": "https://www.arcgis.com/apps/dashboards/06fa738e00f84de6a9fa587a01ab159e",
+     "flight_count": 698,
+     "first_flight": "2024-12-09",
+     "last_flight": "2026-07-27"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/06fa738e00f84de6a9fa587a01ab159e",
+   "status": "ok",
+   "first_flight": "2024-12-09",
+   "last_flight": "2026-07-27",
+   "flight_count": 698,
+   "total_hours": 182.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "bothell-pd-wa",
+   "display_name": "Bothell Police",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "bothell-pd-wa",
+     "official_url": "https://app.airdata.com/u/bothellpd",
+     "flight_count": 672,
+     "first_flight": "2021-09-23",
+     "last_flight": "2026-08-11"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/bothellpd",
+   "status": "ok",
+   "first_flight": "2021-09-23",
+   "last_flight": "2026-08-11",
+   "flight_count": 672,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "cobb-county-pd",
+   "display_name": "Cobb County Police Department",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "cobb-county-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/b8e5c097e1bb44c7bd3912fb79037cba",
+     "flight_count": 649,
+     "first_flight": "2025-11-06",
+     "last_flight": "2026-09-01"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "cobb-county-pd-ga",
+     "official_url": "https://community.cobb-county.ga.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/b8e5c097e1bb44c7bd3912fb79037cba",
+   "status": "ok",
+   "first_flight": "2025-11-06",
+   "last_flight": "2026-09-01",
+   "flight_count": 649,
+   "total_hours": 101.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "alameda-county-so-ca",
+   "display_name": "Alameda County SO",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "alameda-county-so-ca",
+     "official_url": "https://community.alameda-county.ca.us.aerodome.com/",
+     "flight_count": 645,
+     "first_flight": "2025-09-01",
+     "last_flight": "2026-08-23"
+    }
+   ],
+   "official_url": "https://community.alameda-county.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-09-01",
+   "last_flight": "2026-08-23",
+   "flight_count": 645,
+   "total_hours": 147.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "tampa-pd",
+   "display_name": "Tampa Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "tampa-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/tampa",
+     "flight_count": 593,
+     "first_flight": "2026-01-03",
+     "last_flight": "2026-08-20"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/tampa",
+   "status": "ok",
+   "first_flight": "2026-01-03",
+   "last_flight": "2026-08-20",
+   "flight_count": 593,
+   "total_hours": 129,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "colony-pd-tx",
+   "display_name": "Colony PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "colony-pd-tx",
+     "official_url": "https://community.colony.tx.us.aerodome.com/",
+     "flight_count": 477,
+     "first_flight": "2026-03-05",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.colony.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-03-05",
+   "last_flight": "2026-09-02",
+   "flight_count": 477,
+   "total_hours": 118.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "lee-county-government",
+   "display_name": "Lee County Government",
+   "state": null,
+   "org_type": "government_other",
+   "timezone": "UTC",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "lee-county-government",
+     "official_url": "https://www.arcgis.com/apps/dashboards/efe67bb8531c4907b4b355403485e2fc",
+     "flight_count": 461,
+     "first_flight": "2024-04-04",
+     "last_flight": "2026-08-03"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/efe67bb8531c4907b4b355403485e2fc",
+   "status": "ok",
+   "first_flight": "2024-04-04",
+   "last_flight": "2026-08-03",
+   "flight_count": 461,
+   "total_hours": 96,
+   "overlap_count": 0,
+   "notes": "timezone not detected automatically; set manually."
+  },
+  {
+   "agency_id": "montgomery-county-pd-g47-beta",
+   "display_name": "Montgomery County PD - G47 Beta",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "montgomery-county-pd-g47-beta",
+     "official_url": "https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9",
+     "flight_count": 450,
+     "first_flight": "2025-04-01",
+     "last_flight": "2026-06-12"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9",
+   "status": "stale",
+   "first_flight": "2025-04-01",
+   "last_flight": "2026-06-12",
+   "flight_count": 450,
+   "total_hours": 92.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "belmont-pd",
+   "display_name": "Belmont Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "belmont-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/32ec77cf9c7346cbba65b8c3830142a2",
+     "flight_count": 438,
+     "first_flight": "2025-03-27",
+     "last_flight": "2026-08-21"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/32ec77cf9c7346cbba65b8c3830142a2",
+   "status": "ok",
+   "first_flight": "2025-03-27",
+   "last_flight": "2026-08-21",
+   "flight_count": 438,
+   "total_hours": 99.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "detroit-fire-department",
+   "display_name": "Detroit Fire Department",
+   "state": null,
+   "org_type": "fire_ems",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "detroit-fire-department",
+     "official_url": "https://www.arcgis.com/apps/dashboards/00013c28bfd349089a62f87b1cab5fd2",
+     "flight_count": 435,
+     "first_flight": "2024-02-04",
+     "last_flight": "2026-03-09"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/00013c28bfd349089a62f87b1cab5fd2",
+   "status": "stale",
+   "first_flight": "2024-02-04",
+   "last_flight": "2026-03-09",
+   "flight_count": 435,
+   "total_hours": 101.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "chula-vista-pd-ca",
+   "display_name": "Chula Vista Police",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "chula-vista-pd-ca",
+     "official_url": "https://app.airdata.com/u/cvpd",
+     "flight_count": 414,
+     "first_flight": "2021-04-03",
+     "last_flight": "2021-04-30"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/cvpd",
+   "status": "stale",
+   "first_flight": "2021-04-03",
+   "last_flight": "2021-04-30",
+   "flight_count": 414,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "bloomington-pd-il",
+   "display_name": "Bloomington Police Department",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "bloomington-pd-il",
+     "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
+     "flight_count": 404,
+     "first_flight": "2026-04-04",
+     "last_flight": "2026-08-14"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
+   "status": "ok",
+   "first_flight": "2026-04-04",
+   "last_flight": "2026-08-14",
+   "flight_count": 404,
+   "total_hours": 70.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "metropolitan-nashville-pd-tn",
+   "display_name": "Metropolitan Nashville Police Department",
+   "state": "TN",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "metropolitan-nashville-pd-tn",
+     "official_url": "https://www.arcgis.com/apps/dashboards/a190b98bd45c40bd9c35cc054a004f49",
+     "flight_count": 395,
+     "first_flight": "2026-05-26",
+     "last_flight": "2026-08-07"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/a190b98bd45c40bd9c35cc054a004f49",
+   "status": "ok",
+   "first_flight": "2026-05-26",
+   "last_flight": "2026-08-07",
+   "flight_count": 395,
+   "total_hours": 95.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "los-altos-pd-ca",
+   "display_name": "Los Altos Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "UTC",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "los-altos-pd-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
+     "flight_count": 386,
+     "first_flight": "2026-03-05",
+     "last_flight": "2026-08-25"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "los-altos-pd-ca",
+     "official_url": "https://app.airdata.com/u/losaltospd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
+   "status": "ok",
+   "first_flight": "2026-03-05",
+   "last_flight": "2026-08-25",
+   "flight_count": 386,
+   "total_hours": 70.3,
+   "overlap_count": 0,
+   "notes": "timezone not detected automatically; set manually."
+  },
+  {
+   "agency_id": "conroe-pd",
+   "display_name": "Conroe Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "conroe-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/conroepd",
+     "flight_count": 363,
+     "first_flight": "2026-05-11",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/conroepd",
+   "status": "ok",
+   "first_flight": "2026-05-11",
+   "last_flight": "2026-09-01",
+   "flight_count": 363,
+   "total_hours": 74.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "menifee-pd",
+   "display_name": "Menifee Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "menifee-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/a6e459fbc6194f17ac08084aec34e603",
+     "flight_count": 346,
+     "first_flight": "2025-11-21",
+     "last_flight": "2026-08-31"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/a6e459fbc6194f17ac08084aec34e603",
+   "status": "ok",
+   "first_flight": "2025-11-21",
+   "last_flight": "2026-08-31",
+   "flight_count": 346,
+   "total_hours": 67.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "copper-mountain-pd-co",
+   "display_name": "Copper Mountain PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "copper-mountain-pd-co",
+     "official_url": "https://community.copper.co.us.aerodome.com/",
+     "flight_count": 344,
+     "first_flight": "2024-09-16",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://community.copper.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2024-09-16",
+   "last_flight": "2026-08-25",
+   "flight_count": 344,
+   "total_hours": 5846.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "glendale-pd-trial-ca",
+   "display_name": "Glendale Police Department - Trial",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "glendale-pd-trial-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/45470a6e60354b068d1ddb6076fcc26c",
+     "flight_count": 315,
+     "first_flight": "2026-02-10",
+     "last_flight": "2026-03-05"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/45470a6e60354b068d1ddb6076fcc26c",
+   "status": "stale",
+   "first_flight": "2026-02-10",
+   "last_flight": "2026-03-05",
+   "flight_count": 315,
+   "total_hours": 58.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "laurel-pd-uas-flight-data",
+   "display_name": "Laurel Police Department UAS Flight Data",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "laurel-pd-uas-flight-data",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f9e4f009b02b43628e8d259acbe14a68",
+     "flight_count": 313,
+     "first_flight": "2026-07-02",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f9e4f009b02b43628e8d259acbe14a68",
+   "status": "ok",
+   "first_flight": "2026-07-02",
+   "last_flight": "2026-09-01",
+   "flight_count": 313,
+   "total_hours": 55.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "new-orleans-pd",
+   "display_name": "New Orleans Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "new-orleans-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/nopd",
+     "flight_count": 297,
+     "first_flight": "2026-01-13",
+     "last_flight": "2026-06-28"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/nopd",
+   "status": "stale",
+   "first_flight": "2026-01-13",
+   "last_flight": "2026-06-28",
+   "flight_count": 297,
+   "total_hours": 100.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "overland-park-pd-ks",
+   "display_name": "Overland Park Police Department",
+   "state": "KS",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "overland-park-pd-ks",
+     "official_url": "https://www.arcgis.com/apps/dashboards/046b94ec93f84a599e69d5f1b1b01eb1",
+     "flight_count": 294,
+     "first_flight": "2026-05-12",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/046b94ec93f84a599e69d5f1b1b01eb1",
+   "status": "ok",
+   "first_flight": "2026-05-12",
+   "last_flight": "2026-09-01",
+   "flight_count": 294,
+   "total_hours": 64.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "cherry-hill-pd",
+   "display_name": "Cherry Hill Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "cherry-hill-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/94993e7062594865ab808e13b4373669",
+     "flight_count": 286,
+     "first_flight": "2023-03-24",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/94993e7062594865ab808e13b4373669",
+   "status": "ok",
+   "first_flight": "2023-03-24",
+   "last_flight": "2026-08-25",
+   "flight_count": 286,
+   "total_hours": 47,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "university-of-illinois-division-of-public-safety",
+   "display_name": "University of Illinois Division of Public Safety",
+   "state": null,
+   "org_type": "university",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "university-of-illinois-division-of-public-safety",
+     "official_url": "https://www.arcgis.com/apps/dashboards/d4a3d2851dba46149858ce525b941b90",
+     "flight_count": 249,
+     "first_flight": "2026-05-14",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/d4a3d2851dba46149858ce525b941b90",
+   "status": "ok",
+   "first_flight": "2026-05-14",
+   "last_flight": "2026-09-01",
+   "flight_count": 249,
+   "total_hours": 32,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "cleveland-division-of-police",
+   "display_name": "Cleveland Division of Police",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "cleveland-division-of-police",
+     "official_url": "https://cloud.skydio.com/dashboard/clevelandpolice",
+     "flight_count": 248,
+     "first_flight": "2024-11-24",
+     "last_flight": "2026-08-30"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/clevelandpolice",
+   "status": "ok",
+   "first_flight": "2024-11-24",
+   "last_flight": "2026-08-30",
+   "flight_count": 248,
+   "total_hours": 78.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "monroe-county-so",
+   "display_name": "Monroe County Sheriff's Office",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "monroe-county-so",
+     "official_url": "https://www.arcgis.com/apps/dashboards/57633537efa44d2eb774f49ef3c2bf59",
+     "flight_count": 247,
+     "first_flight": "2026-03-09",
+     "last_flight": "2026-08-28"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/57633537efa44d2eb774f49ef3c2bf59",
+   "status": "ok",
+   "first_flight": "2026-03-09",
+   "last_flight": "2026-08-28",
+   "flight_count": 247,
+   "total_hours": 42.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "chesterfield-county-pd-va",
+   "display_name": "Chesterfield County Police Department",
+   "state": "VA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "chesterfield-county-pd-va",
+     "official_url": "https://cloud.skydio.com/dashboard/chesterfieldpublicsafety",
+     "flight_count": 238,
+     "first_flight": "2026-07-15",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/chesterfieldpublicsafety",
+   "status": "ok",
+   "first_flight": "2026-07-15",
+   "last_flight": "2026-09-01",
+   "flight_count": 238,
+   "total_hours": 36.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "melrose-park-pd-il",
+   "display_name": "Melrose PARK Police Department",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "melrose-park-pd-il",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e0d00aa615684f678bdd7cda8cf29083",
+     "flight_count": 226,
+     "first_flight": "2026-05-01",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e0d00aa615684f678bdd7cda8cf29083",
+   "status": "ok",
+   "first_flight": "2026-05-01",
+   "last_flight": "2026-09-02",
+   "flight_count": 226,
+   "total_hours": 34.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "calcasieu-parish-so",
+   "display_name": "Calcasieu Parish Sheriff's Office",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "calcasieu-parish-so",
+     "official_url": "https://cloud.skydio.com/dashboard/cpso",
+     "flight_count": 183,
+     "first_flight": "2025-11-14",
+     "last_flight": "2026-07-22"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/cpso",
+   "status": "ok",
+   "first_flight": "2025-11-14",
+   "last_flight": "2026-07-22",
+   "flight_count": 183,
+   "total_hours": 41.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "killeen-pd-tx",
+   "display_name": "Killeen Police Department",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "killeen-pd-tx",
+     "official_url": "https://www.arcgis.com/apps/dashboards/71bd05b0f73341c5a8caaa6ef84c4b1f",
+     "flight_count": 172,
+     "first_flight": "2026-03-24",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/71bd05b0f73341c5a8caaa6ef84c4b1f",
+   "status": "ok",
+   "first_flight": "2026-03-24",
+   "last_flight": "2026-09-02",
+   "flight_count": 172,
+   "total_hours": 33.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "milford-pd",
+   "display_name": "Milford Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "milford-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/0ed27de487774b9eb6b7fd249f91ef65",
+     "flight_count": 141,
+     "first_flight": "2025-07-04",
+     "last_flight": "2026-03-24"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/0ed27de487774b9eb6b7fd249f91ef65",
+   "status": "stale",
+   "first_flight": "2025-07-04",
+   "last_flight": "2026-03-24",
+   "flight_count": 141,
+   "total_hours": 29.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "university-of-arizona-real-time-coordination-center",
+   "display_name": "University of Arizona - Real Time Coordination Center",
+   "state": null,
+   "org_type": "university",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "university-of-arizona-real-time-coordination-center",
+     "official_url": "https://www.arcgis.com/apps/dashboards/8946d06a91434fc6898da9bafbdfd953",
+     "flight_count": 121,
+     "first_flight": "2026-03-09",
+     "last_flight": "2026-04-04"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/8946d06a91434fc6898da9bafbdfd953",
+   "status": "stale",
+   "first_flight": "2026-03-09",
+   "last_flight": "2026-04-04",
+   "flight_count": 121,
+   "total_hours": 27.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "berkeley-pd-il",
+   "display_name": "Berkeley PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "berkeley-pd-il",
+     "official_url": "https://community.berkeley.il.us.aerodome.com/",
+     "flight_count": 120,
+     "first_flight": "2025-12-30",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.berkeley.il.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-30",
+   "last_flight": "2026-09-02",
+   "flight_count": 120,
+   "total_hours": 21.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hollywood-pd",
+   "display_name": "Hollywood Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "hollywood-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/bc2e1abd9acb4917b48fc189f26239aa",
+     "flight_count": 107,
+     "first_flight": "2024-11-22",
+     "last_flight": "2026-04-23"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/bc2e1abd9acb4917b48fc189f26239aa",
+   "status": "stale",
+   "first_flight": "2024-11-22",
+   "last_flight": "2026-04-23",
+   "flight_count": 107,
+   "total_hours": 18.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "metropolitan-pd",
+   "display_name": "Metropolitan Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "metropolitan-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f9cf6e64c7c246a68596da24f904e47f",
+     "flight_count": 100,
+     "first_flight": "2024-09-23",
+     "last_flight": "2026-05-26"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f9cf6e64c7c246a68596da24f904e47f",
+   "status": "stale",
+   "first_flight": "2024-09-23",
+   "last_flight": "2026-05-26",
+   "flight_count": 100,
+   "total_hours": 18,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fitchburg-pd-wi",
+   "display_name": "Fitchburg Police Department",
+   "state": "WI",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "fitchburg-pd-wi",
+     "official_url": "https://www.arcgis.com/apps/dashboards/0249cfdd63684f5a81dd5c33b710a464",
+     "flight_count": 94,
+     "first_flight": "2026-07-13",
+     "last_flight": "2026-07-17"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/0249cfdd63684f5a81dd5c33b710a464",
+   "status": "ok",
+   "first_flight": "2026-07-13",
+   "last_flight": "2026-07-17",
+   "flight_count": 94,
+   "total_hours": 12.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "pacifica-pd-drone-transparency-portal-ca",
+   "display_name": "Pacifica Police Department Drone Transparency Portal",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "pacifica-pd-drone-transparency-portal-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/5866d865778a41a0bb200e9131070fc2",
+     "flight_count": 86,
+     "first_flight": "2025-11-17",
+     "last_flight": "2026-07-04"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/5866d865778a41a0bb200e9131070fc2",
+   "status": "stale",
+   "first_flight": "2025-11-17",
+   "last_flight": "2026-07-04",
+   "flight_count": 86,
+   "total_hours": 16.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "glendale-pd-az",
+   "display_name": "Glendale Police Department",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "glendale-pd-az",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/glendaleaz",
+     "flight_count": 83,
+     "first_flight": "2021-03-31",
+     "last_flight": "2022-06-29"
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/glendaleaz",
+   "status": "stale",
+   "first_flight": "2021-03-31",
+   "last_flight": "2022-06-29",
+   "flight_count": 83,
+   "total_hours": 5.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "watchung-pd",
+   "display_name": "Watchung Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "watchung-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/dfb49fccd26940159ad80ab2e7ee8dd6",
+     "flight_count": 76,
+     "first_flight": "2025-05-06",
+     "last_flight": "2026-05-30"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/dfb49fccd26940159ad80ab2e7ee8dd6",
+   "status": "stale",
+   "first_flight": "2025-05-06",
+   "last_flight": "2026-05-30",
+   "flight_count": 76,
+   "total_hours": 12.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "tulsa-fire-department",
+   "display_name": "Tulsa Fire Department",
+   "state": null,
+   "org_type": "fire_ems",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "tulsa-fire-department",
+     "official_url": "https://cloud.skydio.com/dashboard/tulsafire",
+     "flight_count": 66,
+     "first_flight": "2025-09-12",
+     "last_flight": "2026-08-27"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/tulsafire",
+   "status": "ok",
+   "first_flight": "2025-09-12",
+   "last_flight": "2026-08-27",
+   "flight_count": 66,
+   "total_hours": 17.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "crubier",
+   "display_name": "Crubier",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "UTC",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "crubier",
+     "official_url": "https://www.arcgis.com/apps/dashboards/ea32f26fbba4458c9dcd12bdaceda7a9",
+     "flight_count": 51,
+     "first_flight": "2024-04-11",
+     "last_flight": "2026-01-18"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/ea32f26fbba4458c9dcd12bdaceda7a9",
+   "status": "stale",
+   "first_flight": "2024-04-11",
+   "last_flight": "2026-01-18",
+   "flight_count": 51,
+   "total_hours": 14.1,
+   "overlap_count": 0,
+   "notes": "timezone not detected automatically; set manually."
+  },
+  {
+   "agency_id": "west-palm-beach-pd",
+   "display_name": "West Palm Beach Police Department",
+   "state": "FL",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "west-palm-beach-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/92ead0d3c5c6434a8272625b91d3e40e",
+     "flight_count": 46,
+     "first_flight": "2024-12-10",
+     "last_flight": "2025-08-02"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "west-palm-beach-pd-fl",
+     "official_url": "https://app.airdata.com/u/wpb",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/92ead0d3c5c6434a8272625b91d3e40e",
+   "status": "stale",
+   "first_flight": "2024-12-10",
+   "last_flight": "2025-08-02",
+   "flight_count": 46,
+   "total_hours": 8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "axon-air-psm",
+   "display_name": "Axon Air PSM",
+   "state": null,
+   "org_type": "vendor_partner",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "axon-air-psm",
+     "official_url": "https://www.arcgis.com/apps/dashboards/490bbd4e23aa4d2683c48a53b2a38e6d",
+     "flight_count": 40,
+     "first_flight": "2025-03-12",
+     "last_flight": "2026-07-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/490bbd4e23aa4d2683c48a53b2a38e6d",
+   "status": "stale",
+   "first_flight": "2025-03-12",
+   "last_flight": "2026-07-01",
+   "flight_count": 40,
+   "total_hours": 6.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fairfax-county-pd",
+   "display_name": "Fairfax County Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "fairfax-county-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/c47a7c0ff6d5465884f182588bd2a15f",
+     "flight_count": 38,
+     "first_flight": "2026-03-19",
+     "last_flight": "2026-07-28"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/c47a7c0ff6d5465884f182588bd2a15f",
+   "status": "ok",
+   "first_flight": "2026-03-19",
+   "last_flight": "2026-07-28",
+   "flight_count": 38,
+   "total_hours": 8.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "csu-long-beach-pd",
+   "display_name": "CSU Long Beach Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "csu-long-beach-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/4fc07c3ce464428d98bdc9cc449c8454",
+     "flight_count": 37,
+     "first_flight": "2026-05-17",
+     "last_flight": "2026-05-21"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/4fc07c3ce464428d98bdc9cc449c8454",
+   "status": "stale",
+   "first_flight": "2026-05-17",
+   "last_flight": "2026-05-21",
+   "flight_count": 37,
+   "total_hours": 10.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "oklahoma-city-pd",
+   "display_name": "Oklahoma City Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "oklahoma-city-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/c7a3fac3b8024e2098e8d98aede302b5",
+     "flight_count": 37,
+     "first_flight": "2024-11-16",
+     "last_flight": "2025-02-04"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/c7a3fac3b8024e2098e8d98aede302b5",
+   "status": "stale",
+   "first_flight": "2024-11-16",
+   "last_flight": "2025-02-04",
+   "flight_count": 37,
+   "total_hours": 5.2,
+   "overlap_count": 0,
+   "notes": "Combines 2 Skydio dashboards published by this agency."
+  },
+  {
+   "agency_id": "upper-arlington-police-division-oh",
+   "display_name": "Upper Arlington Police Division",
+   "state": "OH",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "upper-arlington-police-division-oh",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f5ea9137103a48d78bb5f2504d2a9d6e",
+     "flight_count": 37,
+     "first_flight": "2026-05-30",
+     "last_flight": "2026-08-27"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f5ea9137103a48d78bb5f2504d2a9d6e",
+   "status": "ok",
+   "first_flight": "2026-05-30",
+   "last_flight": "2026-08-27",
+   "flight_count": 37,
+   "total_hours": 7.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "virginia-beach-pd",
+   "display_name": "Virginia Beach Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "virginia-beach-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/vbpd",
+     "flight_count": 37,
+     "first_flight": "2026-07-04",
+     "last_flight": "2026-08-29"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/vbpd",
+   "status": "ok",
+   "first_flight": "2026-07-04",
+   "last_flight": "2026-08-29",
+   "flight_count": 37,
+   "total_hours": 6.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "axon",
+   "display_name": "Axon",
+   "state": null,
+   "org_type": "vendor_partner",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "axon",
+     "official_url": "https://www.arcgis.com/apps/dashboards/c7819204066a4f71af6a5463be0f8b30",
+     "flight_count": 36,
+     "first_flight": "2024-10-23",
+     "last_flight": "2026-05-07"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/c7819204066a4f71af6a5463be0f8b30",
+   "status": "stale",
+   "first_flight": "2024-10-23",
+   "last_flight": "2026-05-07",
+   "flight_count": 36,
+   "total_hours": 7.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "gerrittsen-beach-fire-department",
+   "display_name": "Gerrittsen Beach Fire Department",
+   "state": null,
+   "org_type": "fire_ems",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "gerrittsen-beach-fire-department",
+     "official_url": "https://www.arcgis.com/apps/dashboards/5feb59dab107420f9e040fecca5a41d2",
+     "flight_count": 35,
+     "first_flight": "2025-06-05",
+     "last_flight": "2026-06-21"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/5feb59dab107420f9e040fecca5a41d2",
+   "status": "stale",
+   "first_flight": "2025-06-05",
+   "last_flight": "2026-06-21",
+   "flight_count": 35,
+   "total_hours": 7.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "tennessee-department-of-transportation-tdot",
+   "display_name": "Tennessee Department of Transportation (TDOT)",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "tennessee-department-of-transportation-tdot",
+     "official_url": "https://www.arcgis.com/apps/dashboards/59e75c20358a47759f3ef694bc438f50",
+     "flight_count": 33,
+     "first_flight": "2024-09-20",
+     "last_flight": "2024-12-11"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/59e75c20358a47759f3ef694bc438f50",
+   "status": "stale",
+   "first_flight": "2024-09-20",
+   "last_flight": "2024-12-11",
+   "flight_count": 33,
+   "total_hours": 9.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "chiefland-pd-fl",
+   "display_name": "Chiefland Police Department",
+   "state": "FL",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "chiefland-pd-fl",
+     "official_url": "https://www.arcgis.com/apps/dashboards/cd48d90615b748d9ad10b51f6e30b0bd",
+     "flight_count": 29,
+     "first_flight": "2026-03-06",
+     "last_flight": "2026-07-08"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/cd48d90615b748d9ad10b51f6e30b0bd",
+   "status": "ok",
+   "first_flight": "2026-03-06",
+   "last_flight": "2026-07-08",
+   "flight_count": 29,
+   "total_hours": 3.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "niles-pd-il",
+   "display_name": "Niles Police Department",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "niles-pd-il",
+     "official_url": "https://www.arcgis.com/apps/dashboards/46325aa313e94f36864c2afb254fa69c",
+     "flight_count": 29,
+     "first_flight": "2026-07-04",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/46325aa313e94f36864c2afb254fa69c",
+   "status": "ok",
+   "first_flight": "2026-07-04",
+   "last_flight": "2026-08-25",
+   "flight_count": 29,
+   "total_hours": 6.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "australian-federal-police-drone-flights-for-missing-person-sharon-granites",
+   "display_name": "Australian Federal Police Drone Flights for Missing Person (Sharon Granites)",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "Australia/Sydney",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "australian-federal-police-drone-flights-for-missing-person-sharon-granites",
+     "official_url": "https://www.arcgis.com/apps/dashboards/fc5e3073f45f480e8a96e7a896861700",
+     "flight_count": 28,
+     "first_flight": "2026-04-26",
+     "last_flight": "2026-04-30"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/fc5e3073f45f480e8a96e7a896861700",
+   "status": "stale",
+   "first_flight": "2026-04-26",
+   "last_flight": "2026-04-30",
+   "flight_count": 28,
+   "total_hours": 8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "gray-fire-rescue",
+   "display_name": "Gray Fire Rescue",
+   "state": null,
+   "org_type": "fire_ems",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "gray-fire-rescue",
+     "official_url": "https://www.arcgis.com/apps/dashboards/5a75354712194028989ec53180676b56",
+     "flight_count": 27,
+     "first_flight": "2025-05-27",
+     "last_flight": "2026-06-30"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/5a75354712194028989ec53180676b56",
+   "status": "stale",
+   "first_flight": "2025-05-27",
+   "last_flight": "2026-06-30",
+   "flight_count": 27,
+   "total_hours": 5.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dallas-pd",
+   "display_name": "Dallas Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "dallas-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/50131d633d314eef8408f834f22c19b3",
+     "flight_count": 26,
+     "first_flight": "2026-05-20",
+     "last_flight": "2026-08-12"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/50131d633d314eef8408f834f22c19b3",
+   "status": "ok",
+   "first_flight": "2026-05-20",
+   "last_flight": "2026-08-12",
+   "flight_count": 26,
+   "total_hours": 2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "paradise-pd-ca",
+   "display_name": "Paradise PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "paradise-pd-ca",
+     "official_url": "https://app.airdata.com/u/ppd",
+     "flight_count": 26,
+     "first_flight": "2024-02-22",
+     "last_flight": "2025-02-19"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/ppd",
+   "status": "stale",
+   "first_flight": "2024-02-22",
+   "last_flight": "2025-02-19",
+   "flight_count": 26,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "appleton-pd-wi",
+   "display_name": "Appleton Police Department",
+   "state": "WI",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "appleton-pd-wi",
+     "official_url": "https://www.arcgis.com/apps/dashboards/dc72264a9fcf40eca84e78661ed37a16",
+     "flight_count": 25,
+     "first_flight": "2026-08-01",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/dc72264a9fcf40eca84e78661ed37a16",
+   "status": "ok",
+   "first_flight": "2026-08-01",
+   "last_flight": "2026-09-01",
+   "flight_count": 25,
+   "total_hours": 5.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hamilton-pd-oh",
+   "display_name": "Hamilton Police Department",
+   "state": "OH",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "hamilton-pd-oh",
+     "official_url": "https://www.arcgis.com/apps/dashboards/d34653ae03a74404a75b2ee4ea53ce53",
+     "flight_count": 25,
+     "first_flight": "2026-05-05",
+     "last_flight": "2026-06-03"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/d34653ae03a74404a75b2ee4ea53ce53",
+   "status": "stale",
+   "first_flight": "2026-05-05",
+   "last_flight": "2026-06-03",
+   "flight_count": 25,
+   "total_hours": 5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "adams-county-so-wa",
+   "display_name": "Adams County Sheriffs Office",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "adams-county-so-wa",
+     "official_url": "https://www.arcgis.com/apps/dashboards/a9c7cf7faa2e4aae81cfaeab65a401c5",
+     "flight_count": 24,
+     "first_flight": "2026-04-16",
+     "last_flight": "2026-08-27"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/a9c7cf7faa2e4aae81cfaeab65a401c5",
+   "status": "ok",
+   "first_flight": "2026-04-16",
+   "last_flight": "2026-08-27",
+   "flight_count": 24,
+   "total_hours": 5.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "norton-pd-oh",
+   "display_name": "Norton Police Department",
+   "state": "OH",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "norton-pd-oh",
+     "official_url": "https://www.arcgis.com/apps/dashboards/9e47de96be8a4dec90b98064bff26c12",
+     "flight_count": 23,
+     "first_flight": "2026-07-30",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/9e47de96be8a4dec90b98064bff26c12",
+   "status": "ok",
+   "first_flight": "2026-07-30",
+   "last_flight": "2026-09-01",
+   "flight_count": 23,
+   "total_hours": 4.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "terrebonne-parish-so-la",
+   "display_name": "Terrebonne Parish Sheriff's Office",
+   "state": "LA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "terrebonne-parish-so-la",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f84e8578eb4e4deeb0e4d7785b3d4982",
+     "flight_count": 20,
+     "first_flight": "2026-06-29",
+     "last_flight": "2026-08-26"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f84e8578eb4e4deeb0e4d7785b3d4982",
+   "status": "ok",
+   "first_flight": "2026-06-29",
+   "last_flight": "2026-08-26",
+   "flight_count": 20,
+   "total_hours": 4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "el-dorado-pd-kansas",
+   "display_name": "El Dorado Police Department- Kansas",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "el-dorado-pd-kansas",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f3b2fd312cc24ba99fdafc4387f4bb0f",
+     "flight_count": 19,
+     "first_flight": "2026-05-22",
+     "last_flight": "2026-08-22"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f3b2fd312cc24ba99fdafc4387f4bb0f",
+   "status": "ok",
+   "first_flight": "2026-05-22",
+   "last_flight": "2026-08-22",
+   "flight_count": 19,
+   "total_hours": 5.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "providence-pd-ri",
+   "display_name": "Providence Police Department",
+   "state": "RI",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "providence-pd-ri",
+     "official_url": "https://www.arcgis.com/apps/dashboards/b1c8de98bc844f54b881a64aa3c7a93b",
+     "flight_count": 17,
+     "first_flight": "2026-07-24",
+     "last_flight": "2026-08-02"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/b1c8de98bc844f54b881a64aa3c7a93b",
+   "status": "ok",
+   "first_flight": "2026-07-24",
+   "last_flight": "2026-08-02",
+   "flight_count": 17,
+   "total_hours": 4.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "titusville-pd-suas-transparency-dashboard",
+   "display_name": "Titusville Police Department sUAS Transparency Dashboard",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "titusville-pd-suas-transparency-dashboard",
+     "official_url": "https://www.arcgis.com/apps/dashboards/5378b0bf683744ccb1f7493d70c3c39f",
+     "flight_count": 16,
+     "first_flight": "2025-12-29",
+     "last_flight": "2026-08-11"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/5378b0bf683744ccb1f7493d70c3c39f",
+   "status": "ok",
+   "first_flight": "2025-12-29",
+   "last_flight": "2026-08-11",
+   "flight_count": 16,
+   "total_hours": 4.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "lake-county-so-fl",
+   "display_name": "Lake County Sheriff's Office",
+   "state": "FL",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "lake-county-so-fl",
+     "official_url": "https://www.arcgis.com/apps/dashboards/20e1ba0f975a49c3b0431ad9ec569b1b",
+     "flight_count": 15,
+     "first_flight": "2025-01-03",
+     "last_flight": "2025-01-29"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/20e1ba0f975a49c3b0431ad9ec569b1b",
+   "status": "stale",
+   "first_flight": "2025-01-03",
+   "last_flight": "2025-01-29",
+   "flight_count": 15,
+   "total_hours": 3.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fayette-county-so-ga",
+   "display_name": "Fayette County Sheriff's Office",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "fayette-county-so-ga",
+     "official_url": "https://cloud.skydio.com/dashboard/fayettecountysheriff",
+     "flight_count": 14,
+     "first_flight": "2026-03-11",
+     "last_flight": "2026-06-04"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/fayettecountysheriff",
+   "status": "stale",
+   "first_flight": "2026-03-11",
+   "last_flight": "2026-06-04",
+   "flight_count": 14,
+   "total_hours": 3.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "pickens-county-so-ga",
+   "display_name": "Pickens County Sheriffs Office",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "pickens-county-so-ga",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f2e26f7a271249c6a9935b99fddb4d0b",
+     "flight_count": 14,
+     "first_flight": "2026-06-29",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f2e26f7a271249c6a9935b99fddb4d0b",
+   "status": "ok",
+   "first_flight": "2026-06-29",
+   "last_flight": "2026-09-01",
+   "flight_count": 14,
+   "total_hours": 2.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hampton-pd-va",
+   "display_name": "Hampton Police Department",
+   "state": "VA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "hampton-pd-va",
+     "official_url": "https://www.arcgis.com/apps/dashboards/7f548a7c0fe54c2989d1f5beb949736f",
+     "flight_count": 13,
+     "first_flight": "2026-07-28",
+     "last_flight": "2026-08-21"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/7f548a7c0fe54c2989d1f5beb949736f",
+   "status": "ok",
+   "first_flight": "2026-07-28",
+   "last_flight": "2026-08-21",
+   "flight_count": 13,
+   "total_hours": 1.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "miami-beach-pd-g47-beta",
+   "display_name": "Miami Beach PD - G47 Beta",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "miami-beach-pd-g47-beta",
+     "official_url": "https://www.arcgis.com/apps/dashboards/6a4e721a3d1d4493bfd1f3caf7c0b59a",
+     "flight_count": 12,
+     "first_flight": "2025-10-31",
+     "last_flight": "2025-11-04"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/6a4e721a3d1d4493bfd1f3caf7c0b59a",
+   "status": "stale",
+   "first_flight": "2025-10-31",
+   "last_flight": "2025-11-04",
+   "flight_count": 12,
+   "total_hours": 1.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "oakland-county-so",
+   "display_name": "Oakland County Sheriff's Office",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "oakland-county-so",
+     "official_url": "https://www.arcgis.com/apps/dashboards/11517f673dc847f4bcf7f48fd3139e7f",
+     "flight_count": 12,
+     "first_flight": "2025-09-05",
+     "last_flight": "2026-07-16"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/11517f673dc847f4bcf7f48fd3139e7f",
+   "status": "ok",
+   "first_flight": "2025-09-05",
+   "last_flight": "2026-07-16",
+   "flight_count": 12,
+   "total_hours": 2.5,
+   "overlap_count": 0,
+   "notes": "Combines 2 Skydio dashboards published by this agency."
+  },
+  {
+   "agency_id": "arkansas-dot",
+   "display_name": "Arkansas DOT",
+   "state": null,
+   "org_type": "government_other",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "arkansas-dot",
+     "official_url": "https://www.arcgis.com/apps/dashboards/88c4f1e8bda644668f3c363a821225a0",
+     "flight_count": 11,
+     "first_flight": "2025-02-24",
+     "last_flight": "2025-03-10"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/88c4f1e8bda644668f3c363a821225a0",
+   "status": "stale",
+   "first_flight": "2025-02-24",
+   "last_flight": "2025-03-10",
+   "flight_count": 11,
+   "total_hours": 1.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "honolulu-pd",
+   "display_name": "Honolulu Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "Pacific/Honolulu",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "honolulu-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/276109f23c14448bb789ece9d88e83a7",
+     "flight_count": 11,
+     "first_flight": "2026-08-03",
+     "last_flight": "2026-08-20"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/276109f23c14448bb789ece9d88e83a7",
+   "status": "ok",
+   "first_flight": "2026-08-03",
+   "last_flight": "2026-08-20",
+   "flight_count": 11,
+   "total_hours": 3.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "amarillo-pd",
+   "display_name": "Amarillo Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "amarillo-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f34686592a37474e830e95065fcca6d8",
+     "flight_count": 10,
+     "first_flight": "2025-03-03",
+     "last_flight": "2025-03-08"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f34686592a37474e830e95065fcca6d8",
+   "status": "stale",
+   "first_flight": "2025-03-03",
+   "last_flight": "2025-03-08",
+   "flight_count": 10,
+   "total_hours": 2,
+   "overlap_count": 0,
+   "notes": "Combines 2 Skydio dashboards published by this agency."
+  },
+  {
+   "agency_id": "everett-pd-wa",
+   "display_name": "Everett Police Department",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "everett-pd-wa",
+     "official_url": "https://www.arcgis.com/apps/dashboards/698d0105df8e45f7906b57ea1e596465",
+     "flight_count": 10,
+     "first_flight": "2026-08-03",
+     "last_flight": "2026-08-26"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "everett-pd-wa",
+     "official_url": "https://community.everett.wa.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "everett-pd-wa",
+     "official_url": "https://app.airdata.com/u/everettpd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/698d0105df8e45f7906b57ea1e596465",
+   "status": "ok",
+   "first_flight": "2026-08-03",
+   "last_flight": "2026-08-26",
+   "flight_count": 10,
+   "total_hours": 1.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "quincy-pd",
+   "display_name": "Quincy Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "quincy-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/842da83f140c4bcb93f2164981ea0dec",
+     "flight_count": 8,
+     "first_flight": "2025-09-30",
+     "last_flight": "2026-01-06"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/842da83f140c4bcb93f2164981ea0dec",
+   "status": "stale",
+   "first_flight": "2025-09-30",
+   "last_flight": "2026-01-06",
+   "flight_count": 8,
+   "total_hours": 1.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "rowlett-pd-tx",
+   "display_name": "Rowlett Police Department",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "rowlett-pd-tx",
+     "official_url": "https://www.arcgis.com/apps/dashboards/8f9ba15b43564c2dad3299b74399b590",
+     "flight_count": 8,
+     "first_flight": "2026-07-02",
+     "last_flight": "2026-08-26"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/8f9ba15b43564c2dad3299b74399b590",
+   "status": "ok",
+   "first_flight": "2026-07-02",
+   "last_flight": "2026-08-26",
+   "flight_count": 8,
+   "total_hours": 2.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "breck-pd-co",
+   "display_name": "Breck PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "breck-pd-co",
+     "official_url": "https://community.breck.co.us.aerodome.com/",
+     "flight_count": 8,
+     "first_flight": "2024-10-08",
+     "last_flight": "2024-10-08"
+    }
+   ],
+   "official_url": "https://community.breck.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2024-10-08",
+   "last_flight": "2024-10-08",
+   "flight_count": 8,
+   "total_hours": 1.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "bernalillo-county-so",
+   "display_name": "Bernalillo County Sheriff's Office",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "bernalillo-county-so",
+     "official_url": "https://www.arcgis.com/apps/dashboards/831574a885f145c9ad80a2dbbed4e0be",
+     "flight_count": 7,
+     "first_flight": "2026-03-12",
+     "last_flight": "2026-03-24"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/831574a885f145c9ad80a2dbbed4e0be",
+   "status": "stale",
+   "first_flight": "2026-03-12",
+   "last_flight": "2026-03-24",
+   "flight_count": 7,
+   "total_hours": 1.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "el-centro-pd-ca",
+   "display_name": "El Centro Police Department - CA",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "el-centro-pd-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/987c3bcd7aa644bb876e9c401fd9b2a6",
+     "flight_count": 7,
+     "first_flight": "2025-03-21",
+     "last_flight": "2025-04-07"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/987c3bcd7aa644bb876e9c401fd9b2a6",
+   "status": "stale",
+   "first_flight": "2025-03-21",
+   "last_flight": "2025-04-07",
+   "flight_count": 7,
+   "total_hours": 1.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fsu-emhs",
+   "display_name": "FSU EMHS",
+   "state": null,
+   "org_type": "university",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "fsu-emhs",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e51b33d0cd5c4c0ca801dab88a739b90",
+     "flight_count": 7,
+     "first_flight": "2025-11-17",
+     "last_flight": "2025-12-12"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e51b33d0cd5c4c0ca801dab88a739b90",
+   "status": "stale",
+   "first_flight": "2025-11-17",
+   "last_flight": "2025-12-12",
+   "flight_count": 7,
+   "total_hours": 1.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "louisville-metro-government",
+   "display_name": "Louisville Metro Government",
+   "state": null,
+   "org_type": "government_other",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "louisville-metro-government",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e626c750dedc49e1ae572d103e188bb4",
+     "flight_count": 7,
+     "first_flight": "2025-10-21",
+     "last_flight": "2025-10-23"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e626c750dedc49e1ae572d103e188bb4",
+   "status": "stale",
+   "first_flight": "2025-10-21",
+   "last_flight": "2025-10-23",
+   "flight_count": 7,
+   "total_hours": 1.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "yonkers-pd-ny",
+   "display_name": "Yonkers Police Department",
+   "state": "NY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "yonkers-pd-ny",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/yonkerspd-ny",
+     "flight_count": 7,
+     "first_flight": "2026-07-16",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/yonkerspd-ny",
+   "status": "ok",
+   "first_flight": "2026-07-16",
+   "last_flight": "2026-09-01",
+   "flight_count": 7,
+   "total_hours": 0.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "kootenai-county-so-id",
+   "display_name": "Kootenai County Sheriff's Office",
+   "state": "ID",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "kootenai-county-so-id",
+     "official_url": "https://www.arcgis.com/apps/dashboards/28e40b58334948d5a551f831c83db142",
+     "flight_count": 6,
+     "first_flight": "2026-06-17",
+     "last_flight": "2026-06-21"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/28e40b58334948d5a551f831c83db142",
+   "status": "stale",
+   "first_flight": "2026-06-17",
+   "last_flight": "2026-06-21",
+   "flight_count": 6,
+   "total_hours": 2.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "los-gatos-monte-sereno-pd",
+   "display_name": "Los Gatos/Monte Sereno Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "los-gatos-monte-sereno-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f766075aa8694f0dba75b8a350e5c131",
+     "flight_count": 6,
+     "first_flight": "2026-02-04",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f766075aa8694f0dba75b8a350e5c131",
+   "status": "ok",
+   "first_flight": "2026-02-04",
+   "last_flight": "2026-08-25",
+   "flight_count": 6,
+   "total_hours": 1.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "niras-emea",
+   "display_name": "NIRAS EMEA",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "Europe/Copenhagen",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "niras-emea",
+     "official_url": "https://www.arcgis.com/apps/dashboards/37b99114b5d843fabfa7cd05b0ecbbd1",
+     "flight_count": 6,
+     "first_flight": "2025-01-21",
+     "last_flight": "2025-01-21"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/37b99114b5d843fabfa7cd05b0ecbbd1",
+   "status": "stale",
+   "first_flight": "2025-01-21",
+   "last_flight": "2025-01-21",
+   "flight_count": 6,
+   "total_hours": 1.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "frederick-county-so",
+   "display_name": "Frederick County Sheriff's Office",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "frederick-county-so",
+     "official_url": "https://www.arcgis.com/apps/dashboards/757a3ca500934bfa9de33669a5d473e8",
+     "flight_count": 5,
+     "first_flight": "2026-01-23",
+     "last_flight": "2026-02-23"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/757a3ca500934bfa9de33669a5d473e8",
+   "status": "stale",
+   "first_flight": "2026-01-23",
+   "last_flight": "2026-02-23",
+   "flight_count": 5,
+   "total_hours": 1.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "knox-county-so-tn",
+   "display_name": "Knox County Sheriffs Office",
+   "state": "TN",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "knox-county-so-tn",
+     "official_url": "https://www.arcgis.com/apps/dashboards/2fedc6d0fa3a4ff3b8bc0608e708b768",
+     "flight_count": 5,
+     "first_flight": "2026-04-10",
+     "last_flight": "2026-04-10"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/2fedc6d0fa3a4ff3b8bc0608e708b768",
+   "status": "stale",
+   "first_flight": "2026-04-10",
+   "last_flight": "2026-04-10",
+   "flight_count": 5,
+   "total_hours": 1.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "nevada-county-so",
+   "display_name": "Nevada County Sheriff's Office",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "nevada-county-so",
+     "official_url": "https://www.arcgis.com/apps/dashboards/c414beda48c0421ba36d9a81b31a5a4a",
+     "flight_count": 5,
+     "first_flight": "2025-02-03",
+     "last_flight": "2025-02-28"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/c414beda48c0421ba36d9a81b31a5a4a",
+   "status": "stale",
+   "first_flight": "2025-02-03",
+   "last_flight": "2025-02-28",
+   "flight_count": 5,
+   "total_hours": 2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "new-berlin-marshal-s-office-tx",
+   "display_name": "New Berlin Marshal's Office",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "new-berlin-marshal-s-office-tx",
+     "official_url": "https://www.arcgis.com/apps/dashboards/82eadbba84e7480f9e614ba2c7d5c5f5",
+     "flight_count": 5,
+     "first_flight": "2026-08-26",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/82eadbba84e7480f9e614ba2c7d5c5f5",
+   "status": "ok",
+   "first_flight": "2026-08-26",
+   "last_flight": "2026-09-01",
+   "flight_count": 5,
+   "total_hours": 1.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "trial-fargo-pd",
+   "display_name": "TRIAL - Fargo Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "trial-fargo-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/c95c74d0abbd4b588f233a04a893e25a",
+     "flight_count": 5,
+     "first_flight": "2025-12-07",
+     "last_flight": "2025-12-08"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/c95c74d0abbd4b588f233a04a893e25a",
+   "status": "stale",
+   "first_flight": "2025-12-07",
+   "last_flight": "2025-12-08",
+   "flight_count": 5,
+   "total_hours": 0.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "cherry-valley-pd",
+   "display_name": "Cherry Valley Police Department",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "cherry-valley-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/cvpd",
+     "flight_count": 4,
+     "first_flight": "2024-11-09",
+     "last_flight": "2025-12-25"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/cvpd",
+   "status": "stale",
+   "first_flight": "2024-11-09",
+   "last_flight": "2025-12-25",
+   "flight_count": 4,
+   "total_hours": 0.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "escambia-county-so-fl",
+   "display_name": "Escambia County Sheriffs Office",
+   "state": "FL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "escambia-county-so-fl",
+     "official_url": "https://www.arcgis.com/apps/dashboards/d2a0e9c04fca4bcda91af3d52ef18e3c",
+     "flight_count": 4,
+     "first_flight": "2025-04-12",
+     "last_flight": "2026-01-29"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/d2a0e9c04fca4bcda91af3d52ef18e3c",
+   "status": "stale",
+   "first_flight": "2025-04-12",
+   "last_flight": "2026-01-29",
+   "flight_count": 4,
+   "total_hours": 1.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "marysville-pd-sno911",
+   "display_name": "Marysville Police Department - Sno911",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "marysville-pd-sno911",
+     "official_url": "https://www.arcgis.com/apps/dashboards/882eadd9bfef4ca58b9b20f73781d6dc",
+     "flight_count": 4,
+     "first_flight": "2025-08-09",
+     "last_flight": "2025-08-09"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/882eadd9bfef4ca58b9b20f73781d6dc",
+   "status": "stale",
+   "first_flight": "2025-08-09",
+   "last_flight": "2025-08-09",
+   "flight_count": 4,
+   "total_hours": 1.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "middlefield-vol-fire-co",
+   "display_name": "Middlefield Vol. Fire Co.",
+   "state": null,
+   "org_type": "fire_ems",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "middlefield-vol-fire-co",
+     "official_url": "https://www.arcgis.com/apps/dashboards/61dfcc89c4804cb5aefd93ffbb3219e4",
+     "flight_count": 4,
+     "first_flight": "2024-11-16",
+     "last_flight": "2025-06-16"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/61dfcc89c4804cb5aefd93ffbb3219e4",
+   "status": "stale",
+   "first_flight": "2024-11-16",
+   "last_flight": "2025-06-16",
+   "flight_count": 4,
+   "total_hours": 1.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "boston-pd",
+   "display_name": "Boston PD",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "boston-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/bostonpolice",
+     "flight_count": 3,
+     "first_flight": "2026-01-20",
+     "last_flight": "2026-02-08"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/bostonpolice",
+   "status": "stale",
+   "first_flight": "2026-01-20",
+   "last_flight": "2026-02-08",
+   "flight_count": 3,
+   "total_hours": 0.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "foxborough-pd-ma",
+   "display_name": "Foxborough Police Department",
+   "state": "MA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "foxborough-pd-ma",
+     "official_url": "https://www.arcgis.com/apps/dashboards/d8e670915cd6437c985ee831219964d8",
+     "flight_count": 3,
+     "first_flight": "2026-03-26",
+     "last_flight": "2026-03-26"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/d8e670915cd6437c985ee831219964d8",
+   "status": "stale",
+   "first_flight": "2026-03-26",
+   "last_flight": "2026-03-26",
+   "flight_count": 3,
+   "total_hours": 0.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "indian-river-county-emergency-services-fl",
+   "display_name": "Indian River County Emergency Services",
+   "state": "FL",
+   "org_type": "fire_ems",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "indian-river-county-emergency-services-fl",
+     "official_url": "https://www.arcgis.com/apps/dashboards/5c38bed763624cedbc63178f11687739",
+     "flight_count": 3,
+     "first_flight": "2026-08-11",
+     "last_flight": "2026-08-11"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/5c38bed763624cedbc63178f11687739",
+   "status": "ok",
+   "first_flight": "2026-08-11",
+   "last_flight": "2026-08-11",
+   "flight_count": 3,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "las-vegas-metropolitan-pd",
+   "display_name": "Las Vegas Metropolitan Police Department",
+   "state": "NV",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "las-vegas-metropolitan-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
+     "flight_count": 3,
+     "first_flight": "2026-05-27",
+     "last_flight": "2026-05-27"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "las-vegas-metro-pd-nv",
+     "official_url": "https://app.airdata.com/u/lvmpd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
+   "status": "stale",
+   "first_flight": "2026-05-27",
+   "last_flight": "2026-05-27",
+   "flight_count": 3,
+   "total_hours": 0.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "mlgw",
+   "display_name": "MLGW",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "mlgw",
+     "official_url": "https://www.arcgis.com/apps/dashboards/1baaf00e2bd14cfc82e8e9df06d60cf4",
+     "flight_count": 3,
+     "first_flight": "2025-06-17",
+     "last_flight": "2025-06-18"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/1baaf00e2bd14cfc82e8e9df06d60cf4",
+   "status": "stale",
+   "first_flight": "2025-06-17",
+   "last_flight": "2025-06-18",
+   "flight_count": 3,
+   "total_hours": 1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "amherst-pd-oh",
+   "display_name": "Amherst Police Department",
+   "state": "OH",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "amherst-pd-oh",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/amherstpd-oh",
+     "flight_count": 3,
+     "first_flight": "2026-09-01",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/amherstpd-oh",
+   "status": "ok",
+   "first_flight": "2026-09-01",
+   "last_flight": "2026-09-01",
+   "flight_count": 3,
+   "total_hours": 0.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "alaska-dot-pf",
+   "display_name": "Alaska DOT&PF",
+   "state": null,
+   "org_type": "government_other",
+   "timezone": "America/Anchorage",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "alaska-dot-pf",
+     "official_url": "https://www.arcgis.com/apps/dashboards/fb9447dc4b354c99850366254b6c7c0f",
+     "flight_count": 2,
+     "first_flight": "2026-06-22",
+     "last_flight": "2026-06-22"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/fb9447dc4b354c99850366254b6c7c0f",
+   "status": "stale",
+   "first_flight": "2026-06-22",
+   "last_flight": "2026-06-22",
+   "flight_count": 2,
+   "total_hours": 0.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dutchess-county-so-uas-unit",
+   "display_name": "Dutchess County Sheriff's Office UAS Unit",
+   "state": "NY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "dutchess-county-so-uas-unit",
+     "official_url": "https://www.arcgis.com/apps/dashboards/332a8432ca584035a71c69a08afb34d9",
+     "flight_count": 2,
+     "first_flight": "2026-08-10",
+     "last_flight": "2026-08-21"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "dutchess-so-ny",
+     "official_url": "https://community.dutchess.ny.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/332a8432ca584035a71c69a08afb34d9",
+   "status": "ok",
+   "first_flight": "2026-08-10",
+   "last_flight": "2026-08-21",
+   "flight_count": 2,
+   "total_hours": 0.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hennepin-ems",
+   "display_name": "Hennepin EMS",
+   "state": null,
+   "org_type": "fire_ems",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "hennepin-ems",
+     "official_url": "https://www.arcgis.com/apps/dashboards/65bd58e97fb44d15b05949d5b7ad6097",
+     "flight_count": 2,
+     "first_flight": "2025-08-29",
+     "last_flight": "2025-08-29"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/65bd58e97fb44d15b05949d5b7ad6097",
+   "status": "stale",
+   "first_flight": "2025-08-29",
+   "last_flight": "2025-08-29",
+   "flight_count": 2,
+   "total_hours": 0.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "medicine-hat-police-service",
+   "display_name": "Medicine Hat Police Service",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Edmonton",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "medicine-hat-police-service",
+     "official_url": "https://www.arcgis.com/apps/dashboards/dc06dea91597478ea122684bdbffdb3d",
+     "flight_count": 2,
+     "first_flight": "2026-08-12",
+     "last_flight": "2026-08-12"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/dc06dea91597478ea122684bdbffdb3d",
+   "status": "ok",
+   "first_flight": "2026-08-12",
+   "last_flight": "2026-08-12",
+   "flight_count": 2,
+   "total_hours": 0.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "miami-pd-org",
+   "display_name": "Miami PD - Org",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "miami-pd-org",
+     "official_url": "https://www.arcgis.com/apps/dashboards/bcb6529dfdff4a7093bc7feb91b435e0",
+     "flight_count": 2,
+     "first_flight": "2025-09-18",
+     "last_flight": "2025-09-18"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/bcb6529dfdff4a7093bc7feb91b435e0",
+   "status": "stale",
+   "first_flight": "2025-09-18",
+   "last_flight": "2025-09-18",
+   "flight_count": 2,
+   "total_hours": 0.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "pseg-long-island-power-authority",
+   "display_name": "PSEG Long Island Power Authority",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "pseg-long-island-power-authority",
+     "official_url": "https://www.arcgis.com/apps/dashboards/a97a09c800f44b08b4450be0a82af604",
+     "flight_count": 2,
+     "first_flight": "2026-05-27",
+     "last_flight": "2026-05-29"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/a97a09c800f44b08b4450be0a82af604",
+   "status": "stale",
+   "first_flight": "2026-05-27",
+   "last_flight": "2026-05-29",
+   "flight_count": 2,
+   "total_hours": 0.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "turner-construction-company",
+   "display_name": "Turner Construction Company",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "turner-construction-company",
+     "official_url": "https://www.arcgis.com/apps/dashboards/980c6bec15754d998e45b726e8eca6b9",
+     "flight_count": 2,
+     "first_flight": "2024-12-01",
+     "last_flight": "2024-12-01"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/980c6bec15754d998e45b726e8eca6b9",
+   "status": "stale",
+   "first_flight": "2024-12-01",
+   "last_flight": "2024-12-01",
+   "flight_count": 2,
+   "total_hours": 0.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "aep-gen-shared-services-engineering",
+   "display_name": "AEP Gen Shared Services Engineering",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "aep-gen-shared-services-engineering",
+     "official_url": "https://www.arcgis.com/apps/dashboards/a1e7692c854140ffaaf2fbf165e9d3f4",
+     "flight_count": 1,
+     "first_flight": "2025-05-07",
+     "last_flight": "2025-05-07"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/a1e7692c854140ffaaf2fbf165e9d3f4",
+   "status": "stale",
+   "first_flight": "2025-05-07",
+   "last_flight": "2025-05-07",
+   "flight_count": 1,
+   "total_hours": 0.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "azimuth-inc",
+   "display_name": "Azimuth, Inc.",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "azimuth-inc",
+     "official_url": "https://www.arcgis.com/apps/dashboards/cf8880ca0f654cfeac6f2d402be880d8",
+     "flight_count": 1,
+     "first_flight": "2025-09-22",
+     "last_flight": "2025-09-22"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/cf8880ca0f654cfeac6f2d402be880d8",
+   "status": "stale",
+   "first_flight": "2025-09-22",
+   "last_flight": "2025-09-22",
+   "flight_count": 1,
+   "total_hours": 0.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "bellingham-pd-wa",
+   "display_name": "Bellingham Police Department",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "bellingham-pd-wa",
+     "official_url": "https://www.arcgis.com/apps/dashboards/ac4bcc12e9e4420897665747e8c2c5d0",
+     "flight_count": 1,
+     "first_flight": "2026-08-19",
+     "last_flight": "2026-08-19"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/ac4bcc12e9e4420897665747e8c2c5d0",
+   "status": "ok",
+   "first_flight": "2026-08-19",
+   "last_flight": "2026-08-19",
+   "flight_count": 1,
+   "total_hours": 0.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "birmingham-pd-al",
+   "display_name": "Birmingham Police Department",
+   "state": "AL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "birmingham-pd-al",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f3736746a3c9430d98cc8ca03ab5c53a",
+     "flight_count": 1,
+     "first_flight": "2026-03-30",
+     "last_flight": "2026-03-30"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f3736746a3c9430d98cc8ca03ab5c53a",
+   "status": "stale",
+   "first_flight": "2026-03-30",
+   "last_flight": "2026-03-30",
+   "flight_count": 1,
+   "total_hours": 0.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "columbus-pd-oh",
+   "display_name": "Columbus Police Department - OH",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "columbus-pd-oh",
+     "official_url": "https://www.arcgis.com/apps/dashboards/be1daa5b5d4f486eaf15770cb0dd0bb1",
+     "flight_count": 1,
+     "first_flight": "2025-11-19",
+     "last_flight": "2025-11-19"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/be1daa5b5d4f486eaf15770cb0dd0bb1",
+   "status": "stale",
+   "first_flight": "2025-11-19",
+   "last_flight": "2025-11-19",
+   "flight_count": 1,
+   "total_hours": 0.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dock-trial-vancouver-pd-wa",
+   "display_name": "Dock Trial - Vancouver PD",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "dock-trial-vancouver-pd-wa",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e0f70ef9724b4d6c9f26261c51757310",
+     "flight_count": 1,
+     "first_flight": "2025-08-26",
+     "last_flight": "2025-08-26"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e0f70ef9724b4d6c9f26261c51757310",
+   "status": "stale",
+   "first_flight": "2025-08-26",
+   "last_flight": "2025-08-26",
+   "flight_count": 1,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "duquesne-light-company",
+   "display_name": "Duquesne Light Company",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "duquesne-light-company",
+     "official_url": "https://www.arcgis.com/apps/dashboards/9ae8824a0caf4b3dacbc3596122eb282",
+     "flight_count": 1,
+     "first_flight": "2025-08-06",
+     "last_flight": "2025-08-06"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/9ae8824a0caf4b3dacbc3596122eb282",
+   "status": "stale",
+   "first_flight": "2025-08-06",
+   "last_flight": "2025-08-06",
+   "flight_count": 1,
+   "total_hours": 0.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "el-cajon-pd",
+   "display_name": "El Cajon PD",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "el-cajon-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e82d5b26aff9427f88026be731055113",
+     "flight_count": 1,
+     "first_flight": "2026-08-25",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e82d5b26aff9427f88026be731055113",
+   "status": "ok",
+   "first_flight": "2026-08-25",
+   "last_flight": "2026-08-25",
+   "flight_count": 1,
+   "total_hours": 0.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fort-collins-police-services",
+   "display_name": "Fort Collins Police Services",
+   "state": null,
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "fort-collins-police-services",
+     "official_url": "https://www.arcgis.com/apps/dashboards/2d104fe503674c2395e36fdacb4205fa",
+     "flight_count": 1,
+     "first_flight": "2026-04-22",
+     "last_flight": "2026-04-22"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/2d104fe503674c2395e36fdacb4205fa",
+   "status": "stale",
+   "first_flight": "2026-04-22",
+   "last_flight": "2026-04-22",
+   "flight_count": 1,
+   "total_hours": 0.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "granite-defense-technologies-nfr",
+   "display_name": "Granite Defense & Technologies NFR",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "granite-defense-technologies-nfr",
+     "official_url": "https://www.arcgis.com/apps/dashboards/50427cbddf194c359ca2ff1ac41d578f",
+     "flight_count": 1,
+     "first_flight": "2025-09-03",
+     "last_flight": "2025-09-03"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/50427cbddf194c359ca2ff1ac41d578f",
+   "status": "stale",
+   "first_flight": "2025-09-03",
+   "last_flight": "2025-09-03",
+   "flight_count": 1,
+   "total_hours": 0.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "lafayette-pd-la",
+   "display_name": "Lafayette Police Department",
+   "state": "LA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "lafayette-pd-la",
+     "official_url": "https://www.arcgis.com/apps/dashboards/652aee69f955462f9a788b4e60e6fa23",
+     "flight_count": 1,
+     "first_flight": "2025-03-25",
+     "last_flight": "2025-03-25"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/652aee69f955462f9a788b4e60e6fa23",
+   "status": "stale",
+   "first_flight": "2025-03-25",
+   "last_flight": "2025-03-25",
+   "flight_count": 1,
+   "total_hours": 0.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "newmont-lihir-papua-new-guinea",
+   "display_name": "Newmont Lihir Papua New Guinea",
+   "state": null,
+   "org_type": "corporate_utility",
+   "timezone": "Pacific/Port_Moresby",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "newmont-lihir-papua-new-guinea",
+     "official_url": "https://www.arcgis.com/apps/dashboards/d30c85a1e8a74201a2825591eda0fed1",
+     "flight_count": 1,
+     "first_flight": "2026-07-19",
+     "last_flight": "2026-07-19"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/d30c85a1e8a74201a2825591eda0fed1",
+   "status": "ok",
+   "first_flight": "2026-07-19",
+   "last_flight": "2026-07-19",
+   "flight_count": 1,
+   "total_hours": 0.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "trophy-club-pd-tx",
+   "display_name": "Trophy Club Police Department",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "trophy-club-pd-tx",
+     "official_url": "https://www.arcgis.com/apps/dashboards/b82c0141ee054a41ac56d9b9b36e393f",
+     "flight_count": 1,
+     "first_flight": "2026-07-23",
+     "last_flight": "2026-07-23"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/b82c0141ee054a41ac56d9b9b36e393f",
+   "status": "ok",
+   "first_flight": "2026-07-23",
+   "last_flight": "2026-07-23",
+   "flight_count": 1,
+   "total_hours": 0.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "boynton-beach-pd-fl",
+   "display_name": "Boynton Beach PD",
+   "state": "FL",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "boynton-beach-pd-fl",
+     "official_url": "https://community.boynton-beach.fl.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.boynton-beach.fl.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dekalb-county-pd-ga",
+   "display_name": "Dekalb County PD",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "dekalb-county-pd-ga",
+     "official_url": "https://community.dekalb.ga.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.dekalb.ga.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dunwoody-pd-ga",
+   "display_name": "Dunwoody PD",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "dunwoody-pd-ga",
+     "official_url": "https://community.dunwoody.ga.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.dunwoody.ga.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "edinburg-pd-tx",
+   "display_name": "Edinburg PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "edinburg-pd-tx",
+     "official_url": "https://community.edinburg.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.edinburg.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "el-segundo-pd-ca",
+   "display_name": "El Segundo PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "el-segundo-pd-ca",
+     "official_url": "https://community.el-segundo.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.el-segundo.ca.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "elizabethtown-pd-ky",
+   "display_name": "Elizabethtown PD",
+   "state": "KY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "elizabethtown-pd-ky",
+     "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "elm-ridge-pd-tx",
+   "display_name": "Elm Ridge PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "elm-ridge-pd-tx",
+     "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "emporia-pd-va",
+   "display_name": "Emporia PD",
+   "state": "VA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "emporia-pd-va",
+     "official_url": "https://community.emporia.va.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.emporia.va.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "farmers-branch-pd-tx",
+   "display_name": "Farmers Branch PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "farmers-branch-pd-tx",
+     "official_url": "https://community.farmers-branch.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.farmers-branch.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fort-worth-pd-tx",
+   "display_name": "Fort Worth PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "fort-worth-pd-tx",
+     "official_url": "https://community.fort-worth.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.fort-worth.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "franklin-township-pd-nj",
+   "display_name": "Franklin Township PD",
+   "state": "NJ",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "franklin-township-pd-nj",
+     "official_url": "https://community.franklin-somerset.nj.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.franklin-somerset.nj.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fulton-county-so-ga",
+   "display_name": "Fulton County SO",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "fulton-county-so-ga",
+     "official_url": "https://community.fulton-county.ga.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.fulton-county.ga.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "galveston-pd-tx",
+   "display_name": "Galveston PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "galveston-pd-tx",
+     "official_url": "https://community.galveston.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.galveston.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "georgia-tech-pd-ga",
+   "display_name": "Georgia Tech PD",
+   "state": "GA",
+   "org_type": "university",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "georgia-tech-pd-ga",
+     "official_url": "https://community.georgia-tech.ga.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.georgia-tech.ga.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "gilbert-pd-az",
+   "display_name": "Gilbert PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "gilbert-pd-az",
+     "official_url": "https://community.gilbert.az.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.gilbert.az.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hamilton-county-so-in",
+   "display_name": "Hamilton County SO",
+   "state": "IN",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "hamilton-county-so-in",
+     "official_url": "https://community.hamilton.in.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.hamilton.in.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "harvey-pd-il",
+   "display_name": "Harvey PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "harvey-pd-il",
+     "official_url": "https://community.harvey.il.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.harvey.il.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hawthorne-pd-ca",
+   "display_name": "Hawthorne PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "hawthorne-pd-ca",
+     "official_url": "https://community.hawthorne.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.hawthorne.ca.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hemet-pd-ca",
+   "display_name": "Hemet Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "hemet-pd-ca",
+     "official_url": "https://community.hemet.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    },
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "hemet-pd-ca",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/hemetpd-ca",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.hemet.ca.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hempstead-pd-ny",
+   "display_name": "Hempstead PD",
+   "state": "NY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "hempstead-pd-ny",
+     "official_url": "https://community.hempstead.ny.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.hempstead.ny.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "humble-pd-tx",
+   "display_name": "Humble PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "humble-pd-tx",
+     "official_url": "https://community.humble.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.humble.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "keystone-pd-co",
+   "display_name": "Keystone PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "keystone-pd-co",
+     "official_url": "https://community.keystone.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.keystone.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "las-cruces-pd-nm",
+   "display_name": "Las Cruces PD",
+   "state": "NM",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "las-cruces-pd-nm",
+     "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "longmont-pd-co",
+   "display_name": "Longmont PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "longmont-pd-co",
+     "official_url": "https://community.longmont.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.longmont.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "loveland-pd-co",
+   "display_name": "Loveland PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "loveland-pd-co",
+     "official_url": "https://community.loveland.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.loveland.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "mansfield-tx-pd-tx",
+   "display_name": "Mansfield TX PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "mansfield-tx-pd-tx",
+     "official_url": "https://community.mansfield.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.mansfield.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "mesa-pd-az",
+   "display_name": "Mesa PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "mesa-pd-az",
+     "official_url": "https://community.mesa.az.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.mesa.az.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "midwest-city-pd-ok",
+   "display_name": "Midwest City PD",
+   "state": "OK",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "midwest-city-pd-ok",
+     "official_url": "https://community.midwest.ok.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.midwest.ok.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "mmozol-co",
+   "display_name": "Mmozol",
+   "state": "CO",
+   "org_type": "corporate_utility",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "mmozol-co",
+     "official_url": "https://community.vail.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.vail.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "monarch-pd-co",
+   "display_name": "Monarch PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "monarch-pd-co",
+     "official_url": "https://community.monarch.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.monarch.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "mooresville-pd-nc",
+   "display_name": "Mooresville PD",
+   "state": "NC",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "mooresville-pd-nc",
+     "official_url": "https://community.mooresville.nc.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.mooresville.nc.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "oak-brook-pd-il",
+   "display_name": "Oak Brook PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "oak-brook-pd-il",
+     "official_url": "https://community.oak-brook.il.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.oak-brook.il.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "peoria-pd-az",
+   "display_name": "Peoria PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "peoria-pd-az",
+     "official_url": "https://community.peoria.az.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.peoria.az.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "perth-amboy-nj",
+   "display_name": "Perth Amboy",
+   "state": "NJ",
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "perth-amboy-nj",
+     "official_url": "https://community.perth-amboy.nj.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.perth-amboy.nj.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "prosper-pd-tx",
+   "display_name": "Prosper PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "prosper-pd-tx",
+     "official_url": "https://community.prosper.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.prosper.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "raleigh-pd-nc",
+   "display_name": "Raleigh PD",
+   "state": "NC",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "raleigh-pd-nc",
+     "official_url": "https://community.raleigh.nc.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.raleigh.nc.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "riverside-county-so-ca",
+   "display_name": "Riverside County SO",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "riverside-county-so-ca",
+     "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "roanoke-pd-tx",
+   "display_name": "Roanoke PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "roanoke-pd-tx",
+     "official_url": "https://community.roanoke.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.roanoke.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "san-angelo-tx-pd-tx",
+   "display_name": "San Angelo TX PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "san-angelo-tx-pd-tx",
+     "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "san-rafael-pd-ca",
+   "display_name": "San Rafael PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "san-rafael-pd-ca",
+     "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "sansom-park-pd-tx",
+   "display_name": "Sansom Park PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "sansom-park-pd-tx",
+     "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "scottsdale-pd-az",
+   "display_name": "Scottsdale PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "scottsdale-pd-az",
+     "official_url": "https://community.scottsdale.az.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.scottsdale.az.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "show-low-pd-az",
+   "display_name": "Show Low PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "show-low-pd-az",
+     "official_url": "https://community.show-low.az.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.show-low.az.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "south-bend-pd-in",
+   "display_name": "South Bend PD",
+   "state": "IN",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "south-bend-pd-in",
+     "official_url": "https://community.south-bend.in.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.south-bend.in.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "southern-illinois-university-pd-il",
+   "display_name": "Southern Illinois University PD",
+   "state": "IL",
+   "org_type": "university",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "southern-illinois-university-pd-il",
+     "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "southington-pd-ct",
+   "display_name": "Southington PD",
+   "state": "CT",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "southington-pd-ct",
+     "official_url": "https://community.southington.ct.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.southington.ct.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "steamboat-pd-co",
+   "display_name": "Steamboat PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "steamboat-pd-co",
+     "official_url": "https://community.steamboat.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.steamboat.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "suisun-city-pd-ca",
+   "display_name": "Suisun City PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "suisun-city-pd-ca",
+     "official_url": "https://community.suisun-city.ca.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.suisun-city.ca.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "telluride-co",
+   "display_name": "Telluride",
+   "state": "CO",
+   "org_type": "corporate_utility",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "telluride-co",
+     "official_url": "https://community.telluride.co.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.telluride.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "temple-pd-tx",
+   "display_name": "Temple PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "temple-pd-tx",
+     "official_url": "https://community.temple.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.temple.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "toledo-pd-oh",
+   "display_name": "Toledo PD",
+   "state": "OH",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "toledo-pd-oh",
+     "official_url": "https://community.toledo.oh.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.toledo.oh.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "university-st-thomas-pd-tx",
+   "display_name": "University St. Thomas PD",
+   "state": "TX",
+   "org_type": "university",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "university-st-thomas-pd-tx",
+     "official_url": "https://community.university-st-thomas.tx.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.university-st-thomas.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "washoe-county-so-nv",
+   "display_name": "Washoe County SO",
+   "state": "NV",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "washoe-county-so-nv",
+     "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "coachella-valley-rtic-ca",
+   "display_name": "Coachella Valley RTIC",
+   "state": "CA",
+   "org_type": "corporate_utility",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "coachella-valley-rtic-ca",
+     "official_url": "https://app.airdata.com/u/cvrtic",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/cvrtic",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "irvine-pd-ca",
+   "display_name": "Irvine PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "irvine-pd-ca",
+     "official_url": "https://app.airdata.com/u/irvinepd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/irvinepd",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "king-county-so-wa",
+   "display_name": "King County Sheriff's Office",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "king-county-so-wa",
+     "official_url": "https://app.airdata.com/u/kcso",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/kcso",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "la-port-police-ca",
+   "display_name": "Los Angeles Port Police",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "la-port-police-ca",
+     "official_url": "https://app.airdata.com/u/lapp",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/lapp",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "lancaster-pd-ca",
+   "display_name": "Lancaster Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "lancaster-pd-ca",
+     "official_url": "https://app.airdata.com/u/lpdviper",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/lpdviper",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "mankato-mn",
+   "display_name": "City of Mankato",
+   "state": "MN",
+   "org_type": "corporate_utility",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "mankato-mn",
+     "official_url": "https://app.airdata.com/u/mankato",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/mankato",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "sacramento-pd-ca",
+   "display_name": "Sacramento Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "sacramento-pd-ca",
+     "official_url": "https://app.airdata.com/u/spduas",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/spduas",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "snohomish-county-so-wa",
+   "display_name": "Snohomish County Sheriff's Office",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "snohomish-county-so-wa",
+     "official_url": "https://app.airdata.com/u/scso",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/scso",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "ventura-county-so-es-ca",
+   "display_name": "Ventura County Sheriff Emergency Services",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "ventura-county-so-es-ca",
+     "official_url": "https://app.airdata.com/u/vcsoes",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/vcsoes",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "westmont-pd-il",
+   "display_name": "Westmont PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "westmont-pd-il",
+     "official_url": "https://app.airdata.com/u/vwpd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/vwpd",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "boulder-pd-co",
+   "display_name": "Boulder Police Department",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "boulder-pd-co",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/boulderpd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/boulderpd",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "roswell-pd-ga",
+   "display_name": "Roswell Police",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "roswell-pd-ga",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/roswellpd",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/roswellpd",
+   "status": "stale",
+   "first_flight": null,
+   "last_flight": null,
+   "flight_count": 0,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  }
+ ]
+}
