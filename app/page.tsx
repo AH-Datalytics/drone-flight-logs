@@ -48,7 +48,7 @@ export default function Home() {
           how you enter the data, the other is how old it is. */}
       <div className="map-head">
         <AgencySearch items={items} />
-        <p className="map-updated">Date of last update: {fmtDate(collected.toISOString().slice(0, 10))}</p>
+        <p className="map-updated">Updated monthly. Date of last update: {fmtDate(collected.toISOString().slice(0, 10))}</p>
       </div>
       <AgencyMap
         outlines={outlines}
