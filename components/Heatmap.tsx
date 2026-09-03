@@ -23,14 +23,30 @@ function cellTitle(mode: Props['mode'], weekday: string, hour: number, v: number
 }
 
 /**
+ * The cell's colour on a diverging blue-to-red ramp: quiet hours cool, busy hours hot,
+ * and the middle of the range left as the page background so nothing shouts in the
+ * middle. Below the midpoint the cell mixes toward blue and above it toward red, each
+ * at full strength only at the extremes.
+ */
+function heatStyle(value: number, max: number): React.CSSProperties {
+  const t = max > 0 ? value / max : 0;
+  const cold = t <= 0.5;
+  const strength = Math.round(Math.abs(t - 0.5) * 2 * 100);
+  return {
+    '--hue': cold ? 'var(--heat-cold)' : 'var(--heat-hot)',
+    '--mix': `${strength}%`,
+  } as React.CSSProperties;
+}
+
+/**
  * A plain CSS-grid heatmap rather than a Recharts chart: 168 discrete, individually
  * addressable cells with their own tooltip/title is a poor fit for an SVG chart library
  * built around continuous scales and series -- a grid gives per-cell accessibility
  * (title + aria-label), guaranteed-square cells via aspect-ratio, and a colour ramp
- * mixed straight from the theme's --accent token with zero extra markup.
+ * mixed straight from the theme's tokens with zero extra markup.
  */
 export default function Heatmap({ title, grid, max, mode, note }: Props) {
-  const ramp = [0, 25, 50, 75, 100];
+  const ramp = [0, 0.25, 0.5, 0.75, 1];
   return (
     <div className="chart">
       <h3>{title}</h3>
@@ -45,14 +61,13 @@ export default function Heatmap({ title, grid, max, mode, note }: Props) {
               <span className="heatmap-rowlabel" role="rowheader">{wd}</span>
               {grid[ri].map((v, hi) => {
                 const empty = v === null;
-                const pct = empty || max <= 0 ? 0 : Math.round((v / max) * 100);
                 return (
                   <span
                     key={hi}
                     role="cell"
                     tabIndex={0}
                     className={`heatcell${empty ? ' empty' : ''}`}
-                    style={empty ? undefined : ({ '--mix': `${pct}%` } as React.CSSProperties)}
+                    style={empty ? undefined : heatStyle(v, max)}
                     title={cellTitle(mode, wd, hi, v)}
                     aria-label={cellTitle(mode, wd, hi, v)}
                   />
@@ -64,9 +79,9 @@ export default function Heatmap({ title, grid, max, mode, note }: Props) {
       </div>
       <div className="heatmap-legend">
         <div className="heatmap-ramp">
-          <span className="lbl">0</span>
-          {ramp.map(pct => <span key={pct} className="swatch" style={{ '--mix': `${pct}%` } as React.CSSProperties} />)}
-          <span className="lbl">{mode === 'count' ? `${max.toLocaleString('en-US')} flights` : `${fmtMinutes(max)} min (median)`}</span>
+          <span className="lbl">{mode === 'count' ? 'quiet' : 'shortest'}</span>
+          {ramp.map(t => <span key={t} className="swatch" style={heatStyle(t * max, max)} />)}
+          <span className="lbl">{mode === 'count' ? `busiest — ${max.toLocaleString('en-US')} flights` : `longest — ${fmtMinutes(max)} min (median)`}</span>
         </div>
         {mode === 'duration' && <div className="heatmap-ramp"><span className="swatch empty" /><span className="lbl">No flights</span></div>}
       </div>

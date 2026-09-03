@@ -27,8 +27,14 @@ export default function Home() {
 
   return (
     <>
-      <h2>Published police drone flight logs, by agency</h2>
-      <p className="lede">Some police and public-safety agencies publish a log of their drone flights. This site collects those logs in one place so you can look up a single agency and see how often it flies, for how long, when, and for what stated reason. Two things to keep in mind: agencies choose which flights to publish, and agencies sourced from Skydio's transparency dashboards show only flights on Skydio aircraft.</p>
+      <h2>How law enforcement uses drones</h2>
+      <p className="lede">
+        A few hundred police and public-safety agencies publish a log of their drone flights, scattered
+        across five different vendors&rsquo; dashboards. This site gathers them so you can look up one
+        agency and see the shape of its programme: how often it flies, for how long, at what hours of
+        which days, and for what stated reason. It is a periodic snapshot rather than a live feed, and
+        every count is a floor, because agencies publish only the flights they choose to.
+      </p>
       <StatRow items={stats} />
       <AgencyTable rows={rows} />
     </>

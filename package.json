@@ -19,7 +19,8 @@
     "flock:collect": "tsx pipeline/flock/collect.ts",
     "airdata:collect": "tsx pipeline/airdata/collect.ts",
     "cape:collect": "tsx pipeline/cape/collect.ts",
-    "build:data": "tsx pipeline/build.ts"
+    "build:data": "tsx pipeline/build.ts",
+    "refresh": "tsx pipeline/refresh.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

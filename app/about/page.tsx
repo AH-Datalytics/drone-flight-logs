@@ -100,8 +100,15 @@ export default function About() {
       <ul>
         <li>Agencies decide which flights to publish. Every count is a floor, not a total.</li>
         <li>
-          No flight paths or locations are stored. Each agency page links to that agency&rsquo;s own
-          official map, which is the authoritative view of where its drones flew.
+          <strong>No flight paths.</strong> Several sources publish the full track of every flight as a
+          list of coordinates. None of it is stored here; it is discarded at the moment the page is
+          read, before anything is written down. Each agency page links to that agency&rsquo;s own official
+          map, which is the authoritative view of where its drones flew.
+        </li>
+        <li>
+          Where an agency itself publishes a place for a flight, that text is kept as the agency wrote
+          it — usually a block-level address or an intersection, which is what Flock dashboards show,
+          and never a precise coordinate.
         </li>
         <li>
           No pilot names, aircraft serial numbers or dock identifiers, even where a source technically
@@ -151,10 +158,16 @@ export default function About() {
 
       <h3>Refreshing and corrections</h3>
       <p>
-        Every refresh re-reads each agency in full, so a flight an agency later removes disappears here
-        too. Refreshes are currently run by hand rather than on a schedule; the date above is when the
-        data was last collected. Each refresh is committed to a public repository, so any past version
-        can be reconstructed.
+        This is a monthly snapshot, not a live feed. An agency page is not a picture of what flew last
+        night; it is the shape of a programme over months and years. The date above is when the data was
+        last collected, and each collection is committed to a public repository, so any past version can
+        be reconstructed.
+      </p>
+      <p>
+        How a refresh behaves depends on the source. Skydio and San Francisco are re-read in full each
+        time, so a flight an agency later removes disappears here too. Flock and Motorola publish only a
+        recent window, so those are additive: once a flight has been collected it is kept, even after
+        the original portal stops showing it. That is the point of collecting them at all.
       </p>
       <p className="small">
         Spotted something wrong? The most useful thing you can do is compare a figure here against the

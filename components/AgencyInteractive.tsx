@@ -87,12 +87,12 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
         {/* Always the full breakdown: filtered to one purpose it would be a single bar,
             and it doubles as the legend for the filter above. */}
         <BarChartCard
-          title="Stated purpose, in the agency's own words"
+          title="The 15 most common stated purposes, in the agency's own words"
           data={initial.purposeAll}
           horizontal
           note={filtering
             ? 'Always the full breakdown, not the current filter — it is the key to what the filter can select.'
-            : 'Labels are exactly as the agency recorded them; blank entries are shown as “Not stated”.'}
+            : 'Labels are exactly as the agency recorded them; blank entries are shown as “Not stated”. Vocabularies differ by agency, so these are not comparable between departments.'}
         />
       </div>
       <h3 style={{ marginTop: 32 }}>All published flights</h3>

@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <nav><Link href="/">Agencies</Link><Link href="/about">About the data</Link></nav>
         </header>
         <main>{children}</main>
-        <footer className="footer">Data as of {m.run_utc ? fmtDate(m.run_utc.slice(0, 10)) : 'n/a'}. Agencies publish only the flights they choose to publish. Skydio-sourced agencies show Skydio flights only.</footer>
+        <footer className="footer">Collected {m.run_utc ? fmtDate(m.run_utc.slice(0, 10)) : 'n/a'}. A monthly snapshot, not a live feed. Agencies publish only the flights they choose to.</footer>
       </div>
     </body></html>
   );
