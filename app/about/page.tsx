@@ -1,17 +1,11 @@
-import { publicAgencies, collectedAt } from '@/lib/data';
-import { fmtDate, fmtInt } from '@/lib/format';
-import StatRow from '@/components/StatRow';
+import { publicAgencies } from '@/lib/data';
+import { fmtInt } from '@/lib/format';
 
 export const metadata = { title: 'About the data' };
 
 export default function About() {
-  const collected = collectedAt();
   const served = publicAgencies();
   const bySource = (s: string) => served.filter(a => a.sources.some(x => x.source === s)).length;
-  const flights = served.reduce((t, a) => t + (a.flight_count || 0), 0);
-  const hours = served.reduce((t, a) => t + (a.total_hours || 0), 0);
-  const firsts = served.map(a => a.first_flight).filter(Boolean).sort() as string[];
-  const lasts = served.map(a => a.last_flight).filter(Boolean).sort() as string[];
 
   return (
     <>
@@ -21,15 +15,6 @@ export default function About() {
         made public. It does not change them, and it does not obtain anything that was not already
         published.
       </p>
-
-      <StatRow items={[
-        { label: 'Agencies', value: fmtInt(served.length) },
-        { label: 'Reported flights', value: fmtInt(flights) },
-        { label: 'Reported flight hours', value: fmtInt(Math.round(hours)) },
-        { label: 'Earliest flight', value: fmtDate(firsts[0]) },
-        { label: 'Latest flight', value: fmtDate(lasts[lasts.length - 1]) },
-        { label: 'Collected', value: fmtDate(collected.toISOString().slice(0, 10)) },
-      ]} />
 
       <h3>Where it comes from</h3>
       <p>
