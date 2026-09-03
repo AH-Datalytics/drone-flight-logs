@@ -134,8 +134,26 @@ export type CollectOptions = {
   only?: string[];
   requestDelayMs?: number;
   maxPagesPerMonth?: number;
+  concurrency?: number;
   log?: (msg: string) => void;
 };
+
+/**
+ * Split work across N workers, each taking the next agency when it finishes
+ * one. Every agency is a separate host, so concurrency here does not raise the
+ * request rate any single dashboard sees — that stays governed by the delay
+ * between page fetches.
+ */
+export async function inParallel<T>(items: T[], workers: number, run: (item: T, index: number) => Promise<void>): Promise<void> {
+  let next = 0;
+  const take = async () => {
+    while (next < items.length) {
+      const i = next++;
+      await run(items[i], i);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.max(1, Math.min(workers, items.length)) }, take));
+}
 
 export async function collectAgency(
   page: Page,
@@ -221,21 +239,22 @@ export async function collect(opts: CollectOptions = {}): Promise<void> {
   let ok = 0, failed = 0, totalAdded = 0;
 
   try {
-    for (const [i, site] of targets.entries()) {
+    await inParallel(targets, opts.concurrency ?? 3, async (site, i) => {
+      const label = `[${i + 1}/${targets.length}] ${site.display_name}`;
       const months = allMonths.filter(m => needsCollection(state.agencies[site.agency_id], m, today));
-      if (months.length === 0) { log(`[${i + 1}/${targets.length}] ${site.agency_id}: up to date`); ok++; continue; }
-      log(`[${i + 1}/${targets.length}] ${site.display_name} (${site.agency_id}) — ${months.length} month(s)`);
+      if (months.length === 0) { log(`${label}: up to date`); ok++; return; }
+      log(`${label} (${site.agency_id}) — ${months.length} month(s)`);
 
       const ctx = await browser.newContext({ userAgent: UA, viewport: { width: 1400, height: 900 } });
       try {
         const page = await openDashboard(ctx, site.host);
-        const added = await collectAgency(page, site, state, months, { requestDelayMs, maxPagesPerMonth, log });
+        const added = await collectAgency(page, site, state, months, { requestDelayMs, maxPagesPerMonth, log: m => log(m) });
         totalAdded += added;
-        log(`    +${added} new flights (${state.agencies[site.agency_id].total_flights} stored)`);
+        log(`${label}: +${added} new flights (${state.agencies[site.agency_id].total_flights} stored)`);
         ok++;
       } catch (e) {
         const msg = e instanceof Error ? e.message : String(e);
-        log(`    FAILED: ${msg}`);
+        log(`${label}: FAILED — ${msg}`);
         const prev = state.agencies[site.agency_id];
         state.agencies[site.agency_id] = prev
           ? { ...prev, last_run_utc: new Date().toISOString(), last_error: msg }
@@ -245,7 +264,7 @@ export async function collect(opts: CollectOptions = {}): Promise<void> {
       } finally {
         await ctx.close();
       }
-    }
+    });
   } finally {
     await browser.close();
   }
@@ -262,6 +281,7 @@ function parseArgs(argv: string[]): CollectOptions {
     if (a === '--since') o.since = argv[++i];
     else if (a === '--agency') (o.only ??= []).push(argv[++i]);
     else if (a === '--delay') o.requestDelayMs = Number(argv[++i]);
+    else if (a === '--concurrency') o.concurrency = Number(argv[++i]);
   }
   return o;
 }

@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { monthsBetween, monthRange, needsCollection, knownFlightIds, type AgencyState } from '../flock/collect.js';
+import { monthsBetween, monthRange, needsCollection, knownFlightIds, inParallel, type AgencyState } from '../flock/collect.js';
 
 describe('monthsBetween', () => {
   it('walks months inclusively, oldest first', () => {
@@ -74,5 +74,27 @@ describe('knownFlightIds', () => {
     const p = join(dir, 'a.jsonl');
     writeFileSync(p, '{"flight_number":"A-1"}\n{"flight_number":"A-2","dur');
     expect([...knownFlightIds(p)]).toEqual(['A-1']);
+  });
+});
+
+describe('inParallel', () => {
+  it('runs every item exactly once', async () => {
+    const seen: number[] = [];
+    await inParallel([1, 2, 3, 4, 5], 2, async n => { seen.push(n); });
+    expect(seen.sort()).toEqual([1, 2, 3, 4, 5]);
+  });
+
+  it('never runs more than the requested number at a time', async () => {
+    let running = 0, peak = 0;
+    await inParallel([1, 2, 3, 4, 5, 6], 2, async () => {
+      running++; peak = Math.max(peak, running);
+      await new Promise(r => setTimeout(r, 5));
+      running--;
+    });
+    expect(peak).toBe(2);
+  });
+
+  it('handles an empty list', async () => {
+    await expect(inParallel([], 3, async () => {})).resolves.toBeUndefined();
   });
 });
