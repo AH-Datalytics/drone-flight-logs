@@ -4,7 +4,7 @@ import { publicAgencies, collectedAt } from '@/lib/data';
 import { daysSince, fmtInt } from '@/lib/format';
 import type { Row } from '@/lib/table';
 
-export const metadata = { title: 'All agencies — Police Drone Flight Logs' };
+export const metadata = { title: 'All agencies' };
 
 export default function AllAgencies() {
   const now = collectedAt();

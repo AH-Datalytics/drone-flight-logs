@@ -2,7 +2,7 @@ import { publicAgencies, collectedAt, loadSite, suppressedAgencies } from '@/lib
 import { fmtDate, fmtInt } from '@/lib/format';
 import StatRow from '@/components/StatRow';
 
-export const metadata = { title: 'About the data — Police Drone Flight Logs' };
+export const metadata = { title: 'About the data' };
 
 export default function About() {
   const collected = collectedAt();
@@ -154,6 +154,17 @@ export default function About() {
         <li><strong>unreachable</strong> — the last refresh could not read the source, so the previous data is shown.</li>
         <li><strong>retired</strong> — the source dashboard no longer exists; the last data collected is kept.</li>
       </ul>
+
+      <h3>The map</h3>
+      <p>
+        The dot for each agency is a single coarse point — where the department operates, not where any
+        drone went. For agencies on Skydio it is the centre of the extent that agency&rsquo;s own dashboard
+        publishes. For the rest it is the municipality, looked up once through OpenStreetMap&rsquo;s Nominatim
+        service and then cached, so nothing is geocoded twice. Map data{' '}
+        <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">&copy; OpenStreetMap contributors</a>,
+        available under the Open Database Licence. State outlines come from the US Census Bureau via{' '}
+        <a href="https://github.com/topojson/us-atlas" target="_blank" rel="noopener noreferrer">us-atlas</a>.
+      </p>
 
       <h3>Refreshing and corrections</h3>
       <p>

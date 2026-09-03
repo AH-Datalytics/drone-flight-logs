@@ -11,7 +11,24 @@ import { fmtDate } from '@/lib/format';
 const plexSans = IBM_Plex_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-sans', display: 'swap' });
 const plexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-mono', display: 'swap' });
 
-export const metadata: Metadata = { title: 'Police Drone Flight Logs', description: 'Published drone flight logs from police and public-safety agencies, by agency.' };
+const SITE_NAME = 'Law Enforcement Drone Flight Log';
+const DESCRIPTION =
+  'What law-enforcement drone programmes actually do, agency by agency: how often they fly, for how long, at what hours, and for what stated reason. Built from the flight logs agencies publish themselves.';
+
+export const metadata: Metadata = {
+  title: { default: SITE_NAME, template: `%s — ${SITE_NAME}` },
+  description: DESCRIPTION,
+  applicationName: SITE_NAME,
+  // Absolute URLs for social cards. Set NEXT_PUBLIC_SITE_URL for the
+  // deployment; Vercel's own URL is the fallback on previews.
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL
+      ?? (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
+  ),
+  openGraph: { title: SITE_NAME, description: DESCRIPTION, siteName: SITE_NAME, type: 'website', locale: 'en_US' },
+  twitter: { card: 'summary', title: SITE_NAME, description: DESCRIPTION },
+  robots: { index: true, follow: true },
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const collected = collectedAt();
@@ -19,11 +36,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${plexSans.variable} ${plexMono.variable}`}><body>
       <div className="wrap">
         <header className="masthead">
-          <h1><Link href="/">Police Drone Flight Logs</Link></h1>
+          <h1><Link href="/">{SITE_NAME}</Link></h1>
           <nav><Link href="/">Map</Link><Link href="/agencies">All agencies</Link><Link href="/about">About the data</Link></nav>
         </header>
         <main>{children}</main>
-        <footer className="footer">Collected {fmtDate(collected.toISOString().slice(0, 10))}. A monthly snapshot, not a live feed. Agencies publish only the flights they choose to.</footer>
+        <footer className="footer">
+          <span>
+            Collected {fmtDate(collected.toISOString().slice(0, 10))}. A monthly snapshot, not a live
+            feed. Agencies publish only the flights they choose to.
+          </span>
+          <span>
+            A project of <a href="https://ahdatalytics.com" target="_blank" rel="noopener noreferrer">AH Datalytics</a>.
+            {' '}<Link href="/about">How this was built</Link>.
+          </span>
+        </footer>
       </div>
     </body></html>
   );

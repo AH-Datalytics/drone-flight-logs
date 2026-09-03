@@ -9,7 +9,12 @@ import AgencyInteractive, { type AgencyInitial } from '@/components/AgencyIntera
 export const dynamicParams = false;
 export function generateStaticParams() { return publicAgencies().map(a => ({ agency_id: a.agency_id })); }
 export async function generateMetadata({ params }: { params: Promise<{ agency_id: string }> }): Promise<Metadata> {
-  const a = getAgency((await params).agency_id); return { title: a ? `${a.display_name} — drone flights` : 'Agency' };
+  const a = getAgency((await params).agency_id);
+  if (!a) return { title: 'Agency' };
+  return {
+    title: `${a.display_name} drone flights`,
+    description: `${a.display_name} has published ${a.flight_count.toLocaleString('en-US')} drone flights. How often it flies, when, and for what stated reason.`,
+  };
 }
 
 const SOURCE: Record<string, { name: string; note: string }> = {
