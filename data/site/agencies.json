@@ -1,10 +1,10 @@
 {
- "built_utc": "2026-09-03T13:24:08.271Z",
+ "built_utc": "2026-09-03T14:49:20.951Z",
  "agency_count": 226,
- "flight_count": 284030,
- "overlap_count": 161,
+ "flight_count": 294782,
+ "overlap_count": 200,
  "by_source": {
-  "airdata": 66420,
+  "airdata": 77211,
   "skydio_arcgis": 102052,
   "flock_aerodome": 99492,
   "motorola_cape": 8746,
@@ -287,6 +287,33 @@
    "notes": "timezone not detected automatically; set manually."
   },
   {
+   "agency_id": "sacramento-pd-ca",
+   "display_name": "Sacramento Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "sacramento-pd-ca",
+     "official_url": "https://app.airdata.com/u/spduas",
+     "flight_count": 5905,
+     "first_flight": "2019-10-17",
+     "last_flight": "2026-08-30"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/spduas",
+   "status": "ok",
+   "first_flight": "2019-10-17",
+   "last_flight": "2026-08-30",
+   "flight_count": 5905,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 38.58106,
+   "lon": -121.49389,
+   "notes": null
+  },
+  {
    "agency_id": "azusa-pd-ca",
    "display_name": "Azusa PD",
    "state": "CA",
@@ -530,30 +557,38 @@
    "notes": null
   },
   {
-   "agency_id": "sacramento-pd-ca",
-   "display_name": "Sacramento Police Department",
-   "state": "CA",
+   "agency_id": "west-palm-beach-pd",
+   "display_name": "West Palm Beach Police Department",
+   "state": "FL",
    "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
+   "timezone": "America/New_York",
    "sources": [
     {
      "source": "airdata",
-     "source_agency_id": "sacramento-pd-ca",
-     "official_url": "https://app.airdata.com/u/spduas",
-     "flight_count": 3682,
-     "first_flight": "2019-10-17",
-     "last_flight": "2024-03-31"
+     "source_agency_id": "west-palm-beach-pd-fl",
+     "official_url": "https://app.airdata.com/u/wpb",
+     "flight_count": 3908,
+     "first_flight": "2024-03-29",
+     "last_flight": "2026-09-02"
+    },
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "west-palm-beach-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/92ead0d3c5c6434a8272625b91d3e40e",
+     "flight_count": 46,
+     "first_flight": "2024-12-10",
+     "last_flight": "2025-08-02"
     }
    ],
-   "official_url": "https://app.airdata.com/u/spduas",
-   "status": "stale",
-   "first_flight": "2019-10-17",
-   "last_flight": "2024-03-31",
-   "flight_count": 3682,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "lat": 38.58106,
-   "lon": -121.49389,
+   "official_url": "https://app.airdata.com/u/wpb",
+   "status": "ok",
+   "first_flight": "2024-03-29",
+   "last_flight": "2026-09-02",
+   "flight_count": 3915,
+   "total_hours": 1.9,
+   "overlap_count": 39,
+   "lat": 26.72661,
+   "lon": -80.11543,
    "notes": null
   },
   {
@@ -778,6 +813,33 @@
    "overlap_count": 0,
    "lat": 33.49422,
    "lon": -111.92602,
+   "notes": null
+  },
+  {
+   "agency_id": "ventura-county-so-es-ca",
+   "display_name": "Ventura County Sheriff Emergency Services",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "ventura-county-so-es-ca",
+     "official_url": "https://app.airdata.com/u/vcsoes",
+     "flight_count": 2768,
+     "first_flight": "2023-01-05",
+     "last_flight": "2026-08-30"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/vcsoes",
+   "status": "ok",
+   "first_flight": "2023-01-05",
+   "last_flight": "2026-08-30",
+   "flight_count": 2768,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 34.44582,
+   "lon": -119.07794,
    "notes": null
   },
   {
@@ -1269,6 +1331,33 @@
    "overlap_count": 0,
    "lat": 34.69811,
    "lon": -118.13662,
+   "notes": null
+  },
+  {
+   "agency_id": "snohomish-county-so-wa",
+   "display_name": "Snohomish County Sheriff's Office",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "snohomish-county-so-wa",
+     "official_url": "https://app.airdata.com/u/scso",
+     "flight_count": 1645,
+     "first_flight": "2024-01-09",
+     "last_flight": "2026-08-30"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/scso",
+   "status": "ok",
+   "first_flight": "2024-01-09",
+   "last_flight": "2026-08-30",
+   "flight_count": 1645,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 48.00747,
+   "lon": -121.73049,
    "notes": null
   },
   {
@@ -3213,6 +3302,33 @@
    "notes": null
   },
   {
+   "agency_id": "westmont-pd-il",
+   "display_name": "Westmont PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "westmont-pd-il",
+     "official_url": "https://app.airdata.com/u/vwpd",
+     "flight_count": 247,
+     "first_flight": "2023-07-04",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/vwpd",
+   "status": "ok",
+   "first_flight": "2023-07-04",
+   "last_flight": "2026-08-25",
+   "flight_count": 247,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 41.79505,
+   "lon": -87.9752,
+   "notes": null
+  },
+  {
    "agency_id": "chesterfield-county-pd-va",
    "display_name": "Chesterfield County Police Department",
    "state": "VA",
@@ -3759,41 +3875,6 @@
    "lat": null,
    "lon": null,
    "notes": "timezone not detected automatically; set manually."
-  },
-  {
-   "agency_id": "west-palm-beach-pd",
-   "display_name": "West Palm Beach Police Department",
-   "state": "FL",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "west-palm-beach-pd",
-     "official_url": "https://www.arcgis.com/apps/dashboards/92ead0d3c5c6434a8272625b91d3e40e",
-     "flight_count": 46,
-     "first_flight": "2024-12-10",
-     "last_flight": "2025-08-02"
-    },
-    {
-     "source": "airdata",
-     "source_agency_id": "west-palm-beach-pd-fl",
-     "official_url": "https://app.airdata.com/u/wpb",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/92ead0d3c5c6434a8272625b91d3e40e",
-   "status": "stale",
-   "first_flight": "2024-12-10",
-   "last_flight": "2025-08-02",
-   "flight_count": 46,
-   "total_hours": 8,
-   "overlap_count": 0,
-   "lat": 26.72661,
-   "lon": -80.11543,
-   "notes": null
   },
   {
    "agency_id": "axon-air-psm",
@@ -6088,87 +6169,6 @@
    "overlap_count": 0,
    "lat": 40.39776,
    "lon": -105.07498,
-   "notes": null
-  },
-  {
-   "agency_id": "snohomish-county-so-wa",
-   "display_name": "Snohomish County Sheriff's Office",
-   "state": "WA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "snohomish-county-so-wa",
-     "official_url": "https://app.airdata.com/u/scso",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/scso",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "lat": 48.00747,
-   "lon": -121.73049,
-   "notes": null
-  },
-  {
-   "agency_id": "ventura-county-so-es-ca",
-   "display_name": "Ventura County Sheriff Emergency Services",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "ventura-county-so-es-ca",
-     "official_url": "https://app.airdata.com/u/vcsoes",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/vcsoes",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "lat": 34.44582,
-   "lon": -119.07794,
-   "notes": null
-  },
-  {
-   "agency_id": "westmont-pd-il",
-   "display_name": "Westmont PD",
-   "state": "IL",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "westmont-pd-il",
-     "official_url": "https://app.airdata.com/u/vwpd",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/vwpd",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "lat": 41.79505,
-   "lon": -87.9752,
    "notes": null
   },
   {
