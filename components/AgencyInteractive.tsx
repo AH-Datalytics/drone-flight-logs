@@ -110,8 +110,8 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
       />
       {err && <div className="note">Could not load the full flight log: {err}. The figures and charts below are complete; the table shows only the most recent flights.</div>}
       <StatRow items={[
-        { label: 'Published flights', value: fmtInt(view.stats.flights) },
-        { label: 'Flight hours', value: fmtHours(view.stats.hours) },
+        { label: 'Reported flights', value: fmtInt(view.stats.flights) },
+        { label: 'Reported flight hours', value: fmtHours(view.stats.hours) },
         { label: 'Median minutes', value: initial.durationCount >= initial.minDurationsToChart ? fmtMinutes(view.stats.medianMin) : '—' },
         { label: 'Flights, last 30 days', value: fmtInt(view.stats.last30) },
         { label: 'Days since last published flight', value: view.stats.daysSinceLast === null ? '—' : String(view.stats.daysSinceLast) },

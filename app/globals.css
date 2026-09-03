@@ -6,7 +6,7 @@
   --accent: #0060df; --accent-fg: #ffffff; --accent-dim: #cfe0f8;
   --ok: #0a7d4a; --warn: #9a6100; --bad: #b3261e;
   --heat-cold: #1d4ed8; --heat-hot: #c81e1e;
-  --map-land: #e8ecf2; --map-border: #b8c1d0; --map-dot: #0060df;
+  --map-land: #e8ecf2; --map-border: #b8c1d0; --map-dot: #0060df; --map-water: #f4f6f9;
   --mono: var(--font-mono), ui-monospace, "JetBrains Mono", "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
   --sans: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -18,7 +18,7 @@
     --accent: #4d9bff; --accent-fg: #06121f; --accent-dim: #16304f;
     --ok: #4ade80; --warn: #fbbf24; --bad: #f87171;
     --heat-cold: #5b8dff; --heat-hot: #ff6b6b;
-    --map-land: #222a34; --map-border: #46525f; --map-dot: #63a4ff;
+    --map-land: #222a34; --map-border: #46525f; --map-dot: #63a4ff; --map-water: #14181e;
   }
 }
 * { box-sizing: border-box; }
@@ -176,6 +176,18 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 
 .mapcard { margin: 6px 0 4px; border: 1px solid var(--line-2); background: var(--bg); }
 .mapwrap { position: relative; }
+/* A faint water tone, so the Great Lakes and the sea read as absent land
+   rather than as holes in the drawing. */
+.mapwrap svg { touch-action: none; cursor: grab; background: var(--map-water); }
+.mapwrap svg.is-zoomed { cursor: grab; }
+.mapwrap svg:active { cursor: grabbing; }
+
+/* Zoom controls sit on the map, top-right, out of the way of the coasts. */
+.map-zoom { position: absolute; top: 10px; right: 10px; display: flex; flex-direction: column; gap: 1px; background: var(--line-2); border: 1px solid var(--line-2); }
+.map-zoom button { font: 500 14px var(--mono); min-width: 34px; min-height: 34px; padding: 0 8px; border: 0; background: var(--bg); color: var(--fg); cursor: pointer; line-height: 1; }
+.map-zoom button:last-child { font-size: 10px; letter-spacing: .06em; text-transform: uppercase; padding: 0 6px; }
+.map-zoom button:hover:not(:disabled) { background: var(--accent); color: var(--accent-fg); }
+.map-zoom button:disabled { color: var(--fg-3); cursor: default; }
 .mapwrap svg { display: block; width: 100%; height: auto; }
 .map-states path { fill: var(--map-land); stroke: var(--map-border); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
 .map-dots circle { fill: color-mix(in srgb, var(--map-dot) 72%, transparent); stroke: var(--bg); stroke-width: 1.1; paint-order: stroke; cursor: pointer; transition: fill 90ms linear; }
@@ -230,13 +242,12 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
      the whole row instead. */
   .stats > .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
-  /* The country is wide. Rather than shrink it to a strip, let the map keep a
-     usable size and scroll sideways inside its own frame — the page itself
-     still never scrolls horizontally. */
-  .mapwrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .mapwrap svg { min-width: 720px; }
+  /* The whole country fits the width; pinch or double-tap to get into a metro.
+     touch-action: none on the svg means a drag pans the map instead of
+     scrolling the page. */
   .map-foot { padding: 12px 14px 14px; gap: 14px; }
-  .map-hint { display: block; }
+  .map-zoom { top: 8px; right: 8px; }
+  .map-zoom button { min-width: 38px; min-height: 38px; }
 
   .agency-search { margin-top: 22px; }
   .agency-search input { font-size: 16px; }   /* 16px stops iOS zooming the page on focus */

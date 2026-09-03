@@ -29,8 +29,8 @@ export default function About() {
 
       <StatRow items={[
         { label: 'Agencies', value: fmtInt(served.length) },
-        { label: 'Distinct flights', value: fmtInt(flights) },
-        { label: 'Flight hours', value: fmtInt(Math.round(hours)) },
+        { label: 'Reported flights', value: fmtInt(flights) },
+        { label: 'Reported flight hours', value: fmtInt(Math.round(hours)) },
         { label: 'Earliest flight', value: fmtDate(firsts[0]) },
         { label: 'Latest flight', value: fmtDate(lasts[lasts.length - 1]) },
         { label: 'Collected', value: fmtDate(collected.toISOString().slice(0, 10)) },

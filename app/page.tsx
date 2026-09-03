@@ -40,8 +40,8 @@ export default function Home() {
       <StatRow items={[
         { label: 'Agencies', value: fmtInt(agencies.length) },
         { label: 'States', value: fmtInt(states) },
-        { label: 'Distinct flights', value: fmtInt(totalFlights) },
-        { label: 'Flight hours', value: fmtHours(totalHours) },
+        { label: 'Reported flights', value: fmtInt(totalFlights) },
+        { label: 'Reported flight hours', value: fmtHours(totalHours) },
         { label: 'Collected', value: fmtDate(collected.toISOString().slice(0, 10)) },
       ]} />
 
