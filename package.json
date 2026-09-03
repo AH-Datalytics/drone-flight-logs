@@ -21,7 +21,8 @@
     "cape:collect": "tsx pipeline/cape/collect.ts",
     "build:data": "tsx pipeline/build.ts",
     "refresh": "tsx pipeline/refresh.ts",
-    "overnight": "tsx pipeline/overnight.ts"
+    "overnight": "tsx pipeline/overnight.ts",
+    "census:csv": "tsx scripts/census-csv.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
