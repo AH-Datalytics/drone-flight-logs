@@ -15,12 +15,14 @@
     "build": "next build",
     "start": "next start",
     "prebuild": "tsx scripts/prebuild.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "flock:collect": "tsx pipeline/flock/collect.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
+    "playwright": "^1.62.1",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
     "vitest": "^3.0.0"

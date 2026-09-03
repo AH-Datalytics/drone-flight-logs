@@ -1,0 +1,531 @@
+{
+ "generated_utc": "2026-09-02T23:29:58.910Z",
+ "note": "Live Flock Aerodome community dashboards, verified 2026-09-02 by loading each host once. Enumerated from Certificate Transparency (crt.sh) for aerodome.com.",
+ "sites": [
+  {
+   "host": "community.alameda-county.ca.us.aerodome.com",
+   "display_name": "ALAMEDA COUNTY SO",
+   "state": "CA",
+   "agency_id": "alameda-county-so-ca",
+   "url": "https://community.alameda-county.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.alhambra.ca.us.aerodome.com",
+   "display_name": "ALHAMBRA PD",
+   "state": "CA",
+   "agency_id": "alhambra-pd-ca",
+   "url": "https://community.alhambra.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.aspen.co.us.aerodome.com",
+   "display_name": "ASPEN PD",
+   "state": "CO",
+   "agency_id": "aspen-pd-co",
+   "url": "https://community.aspen.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.aurora.co.us.aerodome.com",
+   "display_name": "AURORA PD",
+   "state": "CO",
+   "agency_id": "aurora-pd-co",
+   "url": "https://community.aurora.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.azusa.ca.us.aerodome.com",
+   "display_name": "AZUSA PD",
+   "state": "CA",
+   "agency_id": "azusa-pd-ca",
+   "url": "https://community.azusa.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.berkeley.il.us.aerodome.com",
+   "display_name": "BERKELEY PD",
+   "state": "IL",
+   "agency_id": "berkeley-pd-il",
+   "url": "https://community.berkeley.il.us.aerodome.com/"
+  },
+  {
+   "host": "community.boynton-beach.fl.us.aerodome.com",
+   "display_name": "BOYNTON BEACH PD",
+   "state": "FL",
+   "agency_id": "boynton-beach-pd-fl",
+   "url": "https://community.boynton-beach.fl.us.aerodome.com/"
+  },
+  {
+   "host": "community.breck.co.us.aerodome.com",
+   "display_name": "BRECK PD",
+   "state": "CO",
+   "agency_id": "breck-pd-co",
+   "url": "https://community.breck.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.buena-park.ca.us.aerodome.com",
+   "display_name": "BUENA PARK PD",
+   "state": "CA",
+   "agency_id": "buena-park-pd-ca",
+   "url": "https://community.buena-park.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.casa-grande.az.us.aerodome.com",
+   "display_name": "CASA GRANDE PD",
+   "state": "AZ",
+   "agency_id": "casa-grande-pd-az",
+   "url": "https://community.casa-grande.az.us.aerodome.com/"
+  },
+  {
+   "host": "community.castle-rock.co.us.aerodome.com",
+   "display_name": "CASTLE ROCK PD",
+   "state": "CO",
+   "agency_id": "castle-rock-pd-co",
+   "url": "https://community.castle-rock.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.cobb-county.ga.us.aerodome.com",
+   "display_name": "COBB COUNTY PD",
+   "state": "GA",
+   "agency_id": "cobb-county-pd-ga",
+   "url": "https://community.cobb-county.ga.us.aerodome.com/"
+  },
+  {
+   "host": "community.colony.tx.us.aerodome.com",
+   "display_name": "COLONY PD",
+   "state": "TX",
+   "agency_id": "colony-pd-tx",
+   "url": "https://community.colony.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.conyers.ga.us.aerodome.com",
+   "display_name": "CONYERS PD",
+   "state": "GA",
+   "agency_id": "conyers-pd-ga",
+   "url": "https://community.conyers.ga.us.aerodome.com/"
+  },
+  {
+   "host": "community.copper.co.us.aerodome.com",
+   "display_name": "COPPER MOUNTAIN PD",
+   "state": "CO",
+   "agency_id": "copper-mountain-pd-co",
+   "url": "https://community.copper.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.cottonwood.az.us.aerodome.com",
+   "display_name": "COTTONWOOD PD",
+   "state": "AZ",
+   "agency_id": "cottonwood-pd-az",
+   "url": "https://community.cottonwood.az.us.aerodome.com/"
+  },
+  {
+   "host": "community.dekalb.ga.us.aerodome.com",
+   "display_name": "DEKALB COUNTY PD",
+   "state": "GA",
+   "agency_id": "dekalb-county-pd-ga",
+   "url": "https://community.dekalb.ga.us.aerodome.com/"
+  },
+  {
+   "host": "community.denver.co.us.aerodome.com",
+   "display_name": "DENVER PD",
+   "state": "CO",
+   "agency_id": "denver-pd-co",
+   "url": "https://community.denver.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.dunwoody.ga.us.aerodome.com",
+   "display_name": "DUNWOODY PD",
+   "state": "GA",
+   "agency_id": "dunwoody-pd-ga",
+   "url": "https://community.dunwoody.ga.us.aerodome.com/"
+  },
+  {
+   "host": "community.durango.co.us.aerodome.com",
+   "display_name": "DURANGO PD",
+   "state": "CO",
+   "agency_id": "durango-pd-co",
+   "url": "https://community.durango.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.dutchess.ny.us.aerodome.com",
+   "display_name": "DUTCHESS SO",
+   "state": "NY",
+   "agency_id": "dutchess-so-ny",
+   "url": "https://community.dutchess.ny.us.aerodome.com/"
+  },
+  {
+   "host": "community.edinburg.tx.us.aerodome.com",
+   "display_name": "EDINBURG PD",
+   "state": "TX",
+   "agency_id": "edinburg-pd-tx",
+   "url": "https://community.edinburg.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.el-segundo.ca.us.aerodome.com",
+   "display_name": "EL SEGUNDO PD",
+   "state": "CA",
+   "agency_id": "el-segundo-pd-ca",
+   "url": "https://community.el-segundo.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.elizabethtown.ky.us.aerodome.com",
+   "display_name": "ELIZABETHTOWN PD",
+   "state": "KY",
+   "agency_id": "elizabethtown-pd-ky",
+   "url": "https://community.elizabethtown.ky.us.aerodome.com/"
+  },
+  {
+   "host": "community.elk-grove.ca.us.aerodome.com",
+   "display_name": "ELK GROVE PD",
+   "state": "CA",
+   "agency_id": "elk-grove-pd-ca",
+   "url": "https://community.elk-grove.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.elm-ridge.tx.us.aerodome.com",
+   "display_name": "ELM RIDGE PD",
+   "state": "TX",
+   "agency_id": "elm-ridge-pd-tx",
+   "url": "https://community.elm-ridge.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.emporia.va.us.aerodome.com",
+   "display_name": "EMPORIA PD",
+   "state": "VA",
+   "agency_id": "emporia-pd-va",
+   "url": "https://community.emporia.va.us.aerodome.com/"
+  },
+  {
+   "host": "community.everett.wa.us.aerodome.com",
+   "display_name": "EVERETT PD",
+   "state": "WA",
+   "agency_id": "everett-pd-wa",
+   "url": "https://community.everett.wa.us.aerodome.com/"
+  },
+  {
+   "host": "community.farmers-branch.tx.us.aerodome.com",
+   "display_name": "FARMERS BRANCH PD",
+   "state": "TX",
+   "agency_id": "farmers-branch-pd-tx",
+   "url": "https://community.farmers-branch.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.fort-worth.tx.us.aerodome.com",
+   "display_name": "FORT WORTH PD",
+   "state": "TX",
+   "agency_id": "fort-worth-pd-tx",
+   "url": "https://community.fort-worth.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.franklin-somerset.nj.us.aerodome.com",
+   "display_name": "FRANKLIN TOWNSHIP PD",
+   "state": "NJ",
+   "agency_id": "franklin-township-pd-nj",
+   "url": "https://community.franklin-somerset.nj.us.aerodome.com/"
+  },
+  {
+   "host": "community.fulton-county.ga.us.aerodome.com",
+   "display_name": "FULTON COUNTY SO",
+   "state": "GA",
+   "agency_id": "fulton-county-so-ga",
+   "url": "https://community.fulton-county.ga.us.aerodome.com/"
+  },
+  {
+   "host": "community.galveston.tx.us.aerodome.com",
+   "display_name": "GALVESTON PD",
+   "state": "TX",
+   "agency_id": "galveston-pd-tx",
+   "url": "https://community.galveston.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.georgia-tech.ga.us.aerodome.com",
+   "display_name": "GEORGIA TECH PD",
+   "state": "GA",
+   "agency_id": "georgia-tech-pd-ga",
+   "url": "https://community.georgia-tech.ga.us.aerodome.com/"
+  },
+  {
+   "host": "community.gilbert.az.us.aerodome.com",
+   "display_name": "GILBERT PD",
+   "state": "AZ",
+   "agency_id": "gilbert-pd-az",
+   "url": "https://community.gilbert.az.us.aerodome.com/"
+  },
+  {
+   "host": "community.hamilton.in.us.aerodome.com",
+   "display_name": "HAMILTON COUNTY SO",
+   "state": "IN",
+   "agency_id": "hamilton-county-so-in",
+   "url": "https://community.hamilton.in.us.aerodome.com/"
+  },
+  {
+   "host": "community.harvey.il.us.aerodome.com",
+   "display_name": "HARVEY PD",
+   "state": "IL",
+   "agency_id": "harvey-pd-il",
+   "url": "https://community.harvey.il.us.aerodome.com/"
+  },
+  {
+   "host": "community.hawthorne.ca.us.aerodome.com",
+   "display_name": "HAWTHORNE PD",
+   "state": "CA",
+   "agency_id": "hawthorne-pd-ca",
+   "url": "https://community.hawthorne.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.hemet.ca.us.aerodome.com",
+   "display_name": "HEMET PD",
+   "state": "CA",
+   "agency_id": "hemet-pd-ca",
+   "url": "https://community.hemet.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.hempstead.ny.us.aerodome.com",
+   "display_name": "HEMPSTEAD PD",
+   "state": "NY",
+   "agency_id": "hempstead-pd-ny",
+   "url": "https://community.hempstead.ny.us.aerodome.com/"
+  },
+  {
+   "host": "community.humble.tx.us.aerodome.com",
+   "display_name": "HUMBLE PD",
+   "state": "TX",
+   "agency_id": "humble-pd-tx",
+   "url": "https://community.humble.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.keystone.co.us.aerodome.com",
+   "display_name": "KEYSTONE PD",
+   "state": "CO",
+   "agency_id": "keystone-pd-co",
+   "url": "https://community.keystone.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.las-cruces.nm.us.aerodome.com",
+   "display_name": "LAS CRUCES PD",
+   "state": "NM",
+   "agency_id": "las-cruces-pd-nm",
+   "url": "https://community.las-cruces.nm.us.aerodome.com/"
+  },
+  {
+   "host": "community.longmont.co.us.aerodome.com",
+   "display_name": "LONGMONT PD",
+   "state": "CO",
+   "agency_id": "longmont-pd-co",
+   "url": "https://community.longmont.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.los-angeles.ca.us.aerodome.com",
+   "display_name": "LOS ANGELES PD",
+   "state": "CA",
+   "agency_id": "los-angeles-pd-ca",
+   "url": "https://community.los-angeles.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.loveland.co.us.aerodome.com",
+   "display_name": "LOVELAND PD",
+   "state": "CO",
+   "agency_id": "loveland-pd-co",
+   "url": "https://community.loveland.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.mansfield.tx.us.aerodome.com",
+   "display_name": "MANSFIELD TX PD",
+   "state": "TX",
+   "agency_id": "mansfield-tx-pd-tx",
+   "url": "https://community.mansfield.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.mesa.az.us.aerodome.com",
+   "display_name": "MESA PD",
+   "state": "AZ",
+   "agency_id": "mesa-pd-az",
+   "url": "https://community.mesa.az.us.aerodome.com/"
+  },
+  {
+   "host": "community.midwest.ok.us.aerodome.com",
+   "display_name": "MIDWEST CITY PD",
+   "state": "OK",
+   "agency_id": "midwest-city-pd-ok",
+   "url": "https://community.midwest.ok.us.aerodome.com/"
+  },
+  {
+   "host": "community.vail.co.us.aerodome.com",
+   "display_name": "MMOZOL",
+   "state": "CO",
+   "agency_id": "mmozol-co",
+   "url": "https://community.vail.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.monarch.co.us.aerodome.com",
+   "display_name": "MONARCH PD",
+   "state": "CO",
+   "agency_id": "monarch-pd-co",
+   "url": "https://community.monarch.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.mooresville.nc.us.aerodome.com",
+   "display_name": "MOORESVILLE PD",
+   "state": "NC",
+   "agency_id": "mooresville-pd-nc",
+   "url": "https://community.mooresville.nc.us.aerodome.com/"
+  },
+  {
+   "host": "community.oak-brook.il.us.aerodome.com",
+   "display_name": "OAK BROOK PD",
+   "state": "IL",
+   "agency_id": "oak-brook-pd-il",
+   "url": "https://community.oak-brook.il.us.aerodome.com/"
+  },
+  {
+   "host": "community.peoria.az.us.aerodome.com",
+   "display_name": "PEORIA PD",
+   "state": "AZ",
+   "agency_id": "peoria-pd-az",
+   "url": "https://community.peoria.az.us.aerodome.com/"
+  },
+  {
+   "host": "community.perth-amboy.nj.us.aerodome.com",
+   "display_name": "PERTH AMBOY",
+   "state": "NJ",
+   "agency_id": "perth-amboy-nj",
+   "url": "https://community.perth-amboy.nj.us.aerodome.com/"
+  },
+  {
+   "host": "community.prosper.tx.us.aerodome.com",
+   "display_name": "PROSPER PD",
+   "state": "TX",
+   "agency_id": "prosper-pd-tx",
+   "url": "https://community.prosper.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.raleigh.nc.us.aerodome.com",
+   "display_name": "RALEIGH PD",
+   "state": "NC",
+   "agency_id": "raleigh-pd-nc",
+   "url": "https://community.raleigh.nc.us.aerodome.com/"
+  },
+  {
+   "host": "community.rbpd.ca.us.aerodome.com",
+   "display_name": "REDONDO BEACH PD",
+   "state": "CA",
+   "agency_id": "redondo-beach-pd-ca",
+   "url": "https://community.rbpd.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.riverside-county.ca.us.aerodome.com",
+   "display_name": "RIVERSIDE COUNTY SO",
+   "state": "CA",
+   "agency_id": "riverside-county-so-ca",
+   "url": "https://community.riverside-county.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.roanoke.tx.us.aerodome.com",
+   "display_name": "ROANOKE PD",
+   "state": "TX",
+   "agency_id": "roanoke-pd-tx",
+   "url": "https://community.roanoke.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.san-angelo.tx.us.aerodome.com",
+   "display_name": "SAN ANGELO TX PD",
+   "state": "TX",
+   "agency_id": "san-angelo-tx-pd-tx",
+   "url": "https://community.san-angelo.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.san-rafael.ca.us.aerodome.com",
+   "display_name": "SAN RAFAEL PD",
+   "state": "CA",
+   "agency_id": "san-rafael-pd-ca",
+   "url": "https://community.san-rafael.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.sansom-park.tx.us.aerodome.com",
+   "display_name": "SANSOM PARK PD",
+   "state": "TX",
+   "agency_id": "sansom-park-pd-tx",
+   "url": "https://community.sansom-park.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.scottsdale.az.us.aerodome.com",
+   "display_name": "SCOTTSDALE PD",
+   "state": "AZ",
+   "agency_id": "scottsdale-pd-az",
+   "url": "https://community.scottsdale.az.us.aerodome.com/"
+  },
+  {
+   "host": "community.show-low.az.us.aerodome.com",
+   "display_name": "SHOW LOW PD",
+   "state": "AZ",
+   "agency_id": "show-low-pd-az",
+   "url": "https://community.show-low.az.us.aerodome.com/"
+  },
+  {
+   "host": "community.south-bend.in.us.aerodome.com",
+   "display_name": "SOUTH BEND PD",
+   "state": "IN",
+   "agency_id": "south-bend-pd-in",
+   "url": "https://community.south-bend.in.us.aerodome.com/"
+  },
+  {
+   "host": "community.southern-illinois-university.il.us.aerodome.com",
+   "display_name": "SOUTHERN ILLINOIS UNIVERSITY PD",
+   "state": "IL",
+   "agency_id": "southern-illinois-university-pd-il",
+   "url": "https://community.southern-illinois-university.il.us.aerodome.com/"
+  },
+  {
+   "host": "community.southington.ct.us.aerodome.com",
+   "display_name": "SOUTHINGTON PD",
+   "state": "CT",
+   "agency_id": "southington-pd-ct",
+   "url": "https://community.southington.ct.us.aerodome.com/"
+  },
+  {
+   "host": "community.steamboat.co.us.aerodome.com",
+   "display_name": "STEAMBOAT PD",
+   "state": "CO",
+   "agency_id": "steamboat-pd-co",
+   "url": "https://community.steamboat.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.suisun-city.ca.us.aerodome.com",
+   "display_name": "SUISUN CITY PD",
+   "state": "CA",
+   "agency_id": "suisun-city-pd-ca",
+   "url": "https://community.suisun-city.ca.us.aerodome.com/"
+  },
+  {
+   "host": "community.telluride.co.us.aerodome.com",
+   "display_name": "TELLURIDE",
+   "state": "CO",
+   "agency_id": "telluride-co",
+   "url": "https://community.telluride.co.us.aerodome.com/"
+  },
+  {
+   "host": "community.temple.tx.us.aerodome.com",
+   "display_name": "TEMPLE PD",
+   "state": "TX",
+   "agency_id": "temple-pd-tx",
+   "url": "https://community.temple.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.toledo.oh.us.aerodome.com",
+   "display_name": "TOLEDO PD",
+   "state": "OH",
+   "agency_id": "toledo-pd-oh",
+   "url": "https://community.toledo.oh.us.aerodome.com/"
+  },
+  {
+   "host": "community.university-st-thomas.tx.us.aerodome.com",
+   "display_name": "UNIVERSITY ST. THOMAS PD",
+   "state": "TX",
+   "agency_id": "university-st-thomas-pd-tx",
+   "url": "https://community.university-st-thomas.tx.us.aerodome.com/"
+  },
+  {
+   "host": "community.washoe-county.nv.us.aerodome.com",
+   "display_name": "WASHOE COUNTY SO",
+   "state": "NV",
+   "agency_id": "washoe-county-so-nv",
+   "url": "https://community.washoe-county.nv.us.aerodome.com/"
+  }
+ ]
+}
