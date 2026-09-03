@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { monthly, byWeekday, byHour, durationBins, purposeTop, stats, normalizePurpose, heatmapGrids, medianPublishGapDays, suppressionReason } from '../aggregate';
+import { monthly, byWeekday, byHour, durationBins, purposeTop, stats, normalizePurpose, heatmapGrids, medianPublishGapDays, suppressionReason, eventTop, eventRecords } from '../aggregate';
 import type { FlightRecord } from '@/pipeline/schema';
 
 const r = (o: Partial<FlightRecord>): FlightRecord => ({ agency_id: 'a', source_flight_id: Math.random().toString(36), takeoff_utc: null, flight_date_local: null, landing_utc: null, duration_min: null, purpose: null, description: null, case_number: null, extra: {}, data_quality: null, ...o });
@@ -73,12 +73,8 @@ describe('heatmapGrids', () => {
       r({ takeoff_utc: '2026-09-01T15:10:00.000Z', duration_min: 30 }), // Tue, no case_number relevance
     ], 'America/Chicago')!;
     expect(g.count[0][10]).toBe(2); // Mon, 10am
-    expect(g.medianMin[0][10]).toBe(20); // even count -> upper of the two (Math.floor(n/2) index)
     expect(g.count[1][10]).toBe(1); // Tue, 10am
-    expect(g.medianMin[1][10]).toBe(30);
-    expect(g.medianMin[0][11]).toBeNull(); // no flights in that cell
     expect(g.maxCount).toBe(2);
-    expect(g.maxMedian).toBe(30);
     expect(g.count.length).toBe(7); expect(g.count[0].length).toBe(24);
   });
   it('returns null when no record has a takeoff time', () => {
@@ -130,5 +126,106 @@ describe('suppressionReason', () => {
       f({ flight_date_local: '2026-03-01', purpose: 'Pursuit' }),
     ];
     expect(suppressionReason(recs)).toBeNull();
+  });
+});
+
+describe('eventTop', () => {
+  const rec = (source: string, description: string | null) => ({
+    agency_id: 'a', source_flight_id: Math.random().toString(36).slice(2),
+    takeoff_utc: null, flight_date_local: '2026-01-01', landing_utc: null, duration_min: null,
+    purpose: null, description, case_number: null, extra: {}, data_quality: null, source,
+  });
+
+  it('counts event descriptions from sources that publish one', () => {
+    const bars = eventTop([
+      rec('skydio_arcgis', 'DISTURBANCE'),
+      rec('skydio_arcgis', 'DISTURBANCE'),
+      rec('skydio_arcgis', 'BURGLARY'),
+      rec('sfpd_datasf', 'PERSON W/GUN'),
+    ], 15);
+    expect(bars).toEqual([
+      { label: 'DISTURBANCE', value: 2 },
+      { label: 'BURGLARY', value: 1 },
+      { label: 'PERSON W/GUN', value: 1 },
+    ]);
+  });
+
+  it('ignores sources whose description is a street address', () => {
+    const bars = eventTop([
+      rec('flock_aerodome', '85XX ALLISTER WAY, ELK GROVE'),
+      rec('airdata', '315 4th Ave'),
+      rec('motorola_cape', '1 Civic Center Cir'),
+    ], 15);
+    expect(bars).toEqual([]);
+  });
+
+  it('keeps events and drops addresses for an agency publishing on both', () => {
+    const bars = eventTop([
+      rec('skydio_arcgis', 'TRAFFIC CRASH'),
+      rec('flock_aerodome', '41XX RUCKER AVE, EVERETT'),
+    ], 15);
+    expect(bars).toEqual([{ label: 'TRAFFIC CRASH', value: 1 }]);
+  });
+
+  it('gathers everything past the cap into one bar', () => {
+    const bars = eventTop(['a', 'b', 'c', 'd'].map(d => rec('skydio_arcgis', d)), 2);
+    expect(bars).toHaveLength(3);
+    expect(bars[2]).toEqual({ label: 'Other (2 values)', value: 2 });
+  });
+
+  it('skips blank descriptions rather than charting an empty label', () => {
+    expect(eventTop([rec('skydio_arcgis', ''), rec('skydio_arcgis', null), rec('skydio_arcgis', '  ')], 15)).toEqual([]);
+  });
+
+  it('returns nothing when no record names its source', () => {
+    const noSource = { ...rec('skydio_arcgis', 'DISTURBANCE'), source: undefined };
+    expect(eventTop([noSource], 15)).toEqual([]);
+  });
+});
+
+describe('eventRecords', () => {
+  it('counts only the flights an event chart can draw on', () => {
+    const mk = (source: string, description: string | null) => ({
+      agency_id: 'a', source_flight_id: 's', takeoff_utc: null, flight_date_local: null, landing_utc: null,
+      duration_min: null, purpose: null, description, case_number: null, extra: {}, data_quality: null, source,
+    });
+    expect(eventRecords([
+      mk('skydio_arcgis', 'DISTURBANCE'),
+      mk('skydio_arcgis', null),
+      mk('flock_aerodome', '1 Main St'),
+    ])).toHaveLength(1);
+  });
+});
+
+describe('eventTop case folding', () => {
+  const rec = (description: string) => ({
+    agency_id: 'a', source_flight_id: description + Math.random(), takeoff_utc: null,
+    flight_date_local: null, landing_utc: null, duration_min: null, purpose: null,
+    description, case_number: null, extra: {}, data_quality: null, source: 'skydio_arcgis',
+  });
+
+  it('counts spellings of one event together', () => {
+    const recs = [
+      ...Array(5).fill(0).map(() => rec('DISTURBANCE')),
+      ...Array(3).fill(0).map(() => rec('Disturbance')),
+      rec('disturbance'),
+    ];
+    expect(eventTop(recs, 15)).toEqual([{ label: 'DISTURBANCE', value: 9 }]);
+  });
+
+  it('labels the group with the agency’s most-used spelling', () => {
+    const recs = [rec('DISTURBANCE'), ...Array(4).fill(0).map(() => rec('Disturbance'))];
+    expect(eventTop(recs, 15)[0].label).toBe('Disturbance');
+  });
+
+  it('treats runs of whitespace as one space', () => {
+    expect(eventTop([rec('TRAFFIC  CRASH'), rec('TRAFFIC CRASH')], 15)).toEqual([
+      { label: 'TRAFFIC CRASH', value: 2 },
+    ]);
+  });
+
+  it('keeps genuinely different events apart', () => {
+    const bars = eventTop([rec('BURGLARY'), rec('burglary'), rec('ROBBERY')], 15);
+    expect(bars).toEqual([{ label: 'BURGLARY', value: 2 }, { label: 'ROBBERY', value: 1 }]);
   });
 });

@@ -15,6 +15,9 @@ export type AgencyInitial = {
   monthly: Bar[];
   durationBins: Bar[];
   purposeAll: Bar[];
+  eventAll: Bar[];
+  eventCount: number;
+  minEventsToChart: number;
   heat: HeatGrids | null;
   anyTime: boolean;
   allCount: number;
@@ -81,19 +84,26 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
       ]} />
       <div className="charts">
         <BarChartCard title="Flights per month" data={view.monthly} tickFormatter={fmtMonthLabel} />
-        {view.heat && <Heatmap title={`When it flies — flight count by weekday and hour (${tzLabel})`} grid={view.heat.count} max={view.heat.maxCount} mode="count" />}
-        {view.heat && <Heatmap title={`When the long flights happen — median flight length by weekday and hour (${tzLabel})`} grid={view.heat.medianMin} max={view.heat.maxMedian} mode="duration" note="Cells with no published flights are shown with a hatch pattern, not as a zero-minute flight." />}
+        {view.heat && <Heatmap title={`When it flies — flight count by weekday and hour (${tzLabel})`} grid={view.heat.count} max={view.heat.maxCount} />}
         <BarChartCard compact title="Flight length (minutes)" data={view.durationBins} height={220} />
         {/* Always the full breakdown: filtered to one purpose it would be a single bar,
             and it doubles as the legend for the filter above. */}
         <BarChartCard
-          title="The 15 most common stated purposes, in the agency's own words"
+          title="15 most common stated purposes"
           data={initial.purposeAll}
           horizontal
           note={filtering
             ? 'Always the full breakdown, not the current filter — it is the key to what the filter can select.'
-            : 'Labels are exactly as the agency recorded them; blank entries are shown as “Not stated”. Vocabularies differ by agency, so these are not comparable between departments.'}
+            : 'Blank entries are shown as “Not stated”. Vocabularies differ by agency, so these do not compare between departments.'}
         />
+        {initial.eventCount >= initial.minEventsToChart && initial.eventAll.length > 0 && (
+          <BarChartCard
+            title="15 most common event descriptions"
+            data={initial.eventAll}
+            horizontal
+            note={`What the flight was sent to, as recorded on ${fmtInt(initial.eventCount)} of ${fmtInt(initial.allCount)} flights.`}
+          />
+        )}
       </div>
       <h3 style={{ marginTop: 32 }}>All published flights</h3>
       {filtered

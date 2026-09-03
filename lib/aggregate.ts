@@ -35,43 +35,27 @@ function localWeekday(utcMs: number, tz: string): number {
 export type HeatGrids = {
   /** [weekday 0=Mon..6=Sun][hour 0..23] -> flight count. */
   count: number[][];
-  /** [weekday][hour] -> median flight length in minutes, or null when that cell has no flights with a known duration. */
-  medianMin: (number | null)[][];
   maxCount: number;
-  maxMedian: number;
 };
 
 /**
- * Buckets flights into a 7 (weekday) x 24 (hour) grid, keyed off the same local instant
- * (derived from takeoff_utc + the agency's timezone) for both axes so the count grid and
- * the duration grid line up cell-for-cell. Returns null when no record has a takeoff time,
- * mirroring byHour's "no time data published" case.
+ * Buckets flights into a 7 (weekday) x 24 (hour) grid, using the local instant derived
+ * from takeoff_utc and the agency's timezone for both axes. Returns null when no record
+ * has a takeoff time, mirroring byHour's "no time data published" case.
  */
 export function heatmapGrids(recs: FlightRecord[], tz: string): HeatGrids | null {
   const count: number[][] = Array.from({ length: 7 }, () => new Array(24).fill(0));
-  const durs: number[][][] = Array.from({ length: 7 }, () => Array.from({ length: 24 }, () => [] as number[]));
   let any = false;
   for (const r of recs) {
     if (!r.takeoff_utc) continue;
     any = true;
     const ms = Date.parse(r.takeoff_utc);
-    const wd = localWeekday(ms, tz);
-    const hr = localHour(ms, tz);
-    count[wd][hr]++;
-    if (typeof r.duration_min === 'number') durs[wd][hr].push(r.duration_min);
+    count[localWeekday(ms, tz)][localHour(ms, tz)]++;
   }
   if (!any) return null;
-  let maxCount = 0, maxMedian = 0;
-  const medianMin: (number | null)[][] = count.map((row, wd) => row.map((c, hr) => {
-    if (c > maxCount) maxCount = c;
-    const arr = durs[wd][hr];
-    if (!arr.length) return null;
-    arr.sort((a, b) => a - b);
-    const med = arr[Math.floor(arr.length / 2)];
-    if (med > maxMedian) maxMedian = med;
-    return med;
-  }));
-  return { count, medianMin, maxCount, maxMedian };
+  let maxCount = 0;
+  for (const row of count) for (const c of row) if (c > maxCount) maxCount = c;
+  return { count, maxCount };
 }
 
 export function byHour(recs: FlightRecord[], tz: string): Bar[] | null {
@@ -104,6 +88,68 @@ export function normalizePurpose(p: string | null | undefined): string {
  * returns an empty array rather than throwing.
  */
 export const PURPOSE_OPTION_CAP = 20;
+
+/**
+ * Whether a source's description field holds what the incident was, or where it
+ * happened. Skydio and San Francisco publish an event type — DISTURBANCE,
+ * PERSON W/GUN. Flock, AirData and Motorola publish a street address in the
+ * same slot. Charting them together would mix crime types with intersections,
+ * so the event chart draws only on the sources that mean an event by it.
+ */
+export const DESCRIPTION_IS_EVENT: Record<string, boolean> = {
+  skydio_arcgis: true,
+  sfpd_datasf: true,
+  flock_aerodome: false,
+  airdata: false,
+  motorola_cape: false,
+};
+
+/** Below this many event descriptions the chart says more about the gap than the flights. */
+export const MIN_EVENTS_TO_CHART = 20;
+
+/** Flights whose source publishes an event description rather than an address. */
+export function eventRecords(recs: (FlightRecord & { source?: string })[]): (FlightRecord & { source?: string })[] {
+  return recs.filter(r => r.source !== undefined && DESCRIPTION_IS_EVENT[r.source] === true && r.description);
+}
+
+/**
+ * The most common event descriptions, with the rest gathered into one bar.
+ *
+ * Agencies enter these by hand, so one category arrives in several spellings:
+ * Colorado Springs alone publishes DISTURBANCE, Disturbance and disturbance as
+ * separate values. They are counted together and labelled with whichever
+ * spelling that agency uses most, because a list of the fifteen most common
+ * events should not spend three of its rows on one event.
+ */
+export function eventTop(recs: (FlightRecord & { source?: string })[], n: number): Bar[] {
+  const counts = new Map<string, number>();
+  const spellings = new Map<string, Map<string, number>>();
+  for (const r of eventRecords(recs)) {
+    // Collapse runs of whitespace before anything else, so a stray double
+    // space cannot become a label or a category of its own.
+    const raw = (r.description ?? '').trim().replace(/\s+/g, ' ');
+    if (!raw) continue;
+    const key = raw.toLowerCase();
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+    const seen = spellings.get(key) ?? new Map<string, number>();
+    seen.set(raw, (seen.get(raw) ?? 0) + 1);
+    spellings.set(key, seen);
+  }
+  // Plain string order for the tie-break, not localeCompare: locale collation
+  // sorts "burglary" ahead of "BURGLARY", which would label a group by whichever
+  // casing happened to sort first rather than predictably.
+  const label = (key: string): string => {
+    const seen = spellings.get(key);
+    if (!seen) return key;
+    return [...seen.entries()].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))[0][0];
+  };
+  const c = new Map<string, number>([...counts.entries()].map(([k, v]) => [label(k), v]));
+  const sorted = [...c.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const head = sorted.slice(0, n).map(([label, value]) => ({ label, value }));
+  const tail = sorted.slice(n);
+  if (tail.length) head.push({ label: `Other (${tail.length} values)`, value: tail.reduce((s, [, v]) => s + v, 0) });
+  return head;
+}
 
 export function purposeTop(recs: FlightRecord[], n: number): Bar[] {
   const c = new Map<string, number>();

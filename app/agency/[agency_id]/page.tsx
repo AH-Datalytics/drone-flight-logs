@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getAgency, publicAgencies, loadManifest, loadFlights } from '@/lib/data';
 import { fmtDate, fmtInt } from '@/lib/format';
-import { monthly, durationBins, purposeTop, stats, heatmapGrids, PURPOSE_OPTION_CAP } from '@/lib/aggregate';
+import { monthly, durationBins, purposeTop, eventTop, eventRecords, stats, heatmapGrids, PURPOSE_OPTION_CAP, MIN_EVENTS_TO_CHART } from '@/lib/aggregate';
 import StatusBadge from '@/components/StatusBadge';
 import AgencyInteractive, { type AgencyInitial } from '@/components/AgencyInteractive';
 
@@ -38,6 +38,9 @@ export default async function AgencyPage({ params }: { params: Promise<{ agency_
     monthly: monthly(recs),
     durationBins: durationBins(recs) ?? [],
     purposeAll: purposeTop(recs, 15),
+    eventAll: eventTop(recs, 15),
+    eventCount: eventRecords(recs).length,
+    minEventsToChart: MIN_EVENTS_TO_CHART,
     heat,
     anyTime,
     allCount: recs.length,
