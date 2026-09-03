@@ -1,4 +1,4 @@
-import { publicAgencies, collectedAt, loadSite } from '@/lib/data';
+import { publicAgencies, collectedAt } from '@/lib/data';
 import { fmtDate, fmtInt } from '@/lib/format';
 import StatRow from '@/components/StatRow';
 
@@ -7,9 +7,7 @@ export const metadata = { title: 'About the data' };
 export default function About() {
   const collected = collectedAt();
   const served = publicAgencies();
-  const site = loadSite();
   const bySource = (s: string) => served.filter(a => a.sources.some(x => x.source === s)).length;
-  const flightsFrom = (s: string) => site.by_source[s] ?? 0;
   const flights = served.reduce((t, a) => t + (a.flight_count || 0), 0);
   const hours = served.reduce((t, a) => t + (a.total_hours || 0), 0);
   const firsts = served.map(a => a.first_flight).filter(Boolean).sort() as string[];
@@ -115,12 +113,6 @@ export default function About() {
         time, so a flight an agency later removes disappears here too. Flock and Motorola publish only a
         recent window, so those are additive: once a flight has been collected it is kept, even after the
         original portal stops showing it.
-      </p>
-      <p className="small">
-        Reported flights per source before merging: Skydio {fmtInt(flightsFrom('skydio_arcgis'))}, Flock{' '}
-        {fmtInt(flightsFrom('flock_aerodome'))}, AirData {fmtInt(flightsFrom('airdata'))}, Motorola{' '}
-        {fmtInt(flightsFrom('motorola_cape'))}, San Francisco {fmtInt(flightsFrom('sfpd_datasf'))}.
-        {site.overlap_count > 0 ? ` ${fmtInt(site.overlap_count)} flights were published on two platforms and are counted once.` : ''}
       </p>
     </>
   );
