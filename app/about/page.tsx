@@ -59,7 +59,7 @@ export default function About() {
       </p>
       <p>
         <strong>Motorola CAPE transparency portals — {bySource('motorola_cape')} agencies, {fmtInt(flightsFrom('motorola_cape'))} flights.</strong> Each
-        agency chooses how much history to expose. Two publish everything; most publish only the last
+        agency chooses how much history to expose. Three publish everything; the rest publish only the last
         thirty or sixty days, after which a flight disappears from the source permanently. For those
         agencies this site holds flights the original portal can no longer show.
       </p>
