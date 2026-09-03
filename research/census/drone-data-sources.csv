@@ -1,11 +1,13 @@
 agency,state,platform,status,flights,first_flight,last_flight,url,notes
 Chula Vista Police,CA,AirData,collected,24348,2021-04-01,2026-09-02,https://app.airdata.com/u/cvpd,"No flight durations published. Portal states 24,348 flights across 66 months."
+Las Vegas Metropolitan Police Department,NV,AirData,collected,22199,2025-09-03,2026-08-26,https://app.airdata.com/u/lvmpd,"No flight durations published. Portal states 22,199 flights across 12 months."
 Cincinnati Police Department,,Skydio,collected,18043,2025-03-19,2026-09-01,https://www.arcgis.com/apps/dashboards/49102a57e82a4755b015ea84dcd39b01,Skydio aircraft only.
 CSPD Real-Time Crime Center,,Skydio,collected,10307,2025-09-21,2026-09-02,https://www.arcgis.com/apps/dashboards/77fe7c984946489aaf32ca7564667c0b,Skydio aircraft only.
 ELK GROVE PD,CA,Flock Aerodome,collected,10201,2024-04-20,2026-09-02,https://community.elk-grove.ca.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Los Angeles Police Department,,Skydio,collected,9685,2025-07-29,2026-09-01,https://cloud.skydio.com/dashboard/lapd,Skydio aircraft only.
 San Francisco Police Department,CA,City open data (DataSF),collected,7481,2024-05-16,2026-06-30,https://www.sanfranciscopolice.org/your-sfpd/explore-department/drones,Whole fleet. Date but no time of day.
 Wichita Police Department,,Skydio,collected,6653,2024-05-29,2026-09-02,https://cloud.skydio.com/dashboard/wichita,Skydio aircraft only.
+Sacramento Police Department,CA,AirData,collected,5905,2019-10-17,2026-08-30,https://app.airdata.com/u/spduas,"No flight durations published. Portal states 5,908 flights across 80 months."
 Redondo Beach Police Department,CA,Motorola CAPE,collected,5709,2020-04-07,2024-02-09,https://www.aerial.motorolasolutions.com/transparency/redondobeachpd,Publishes full history.
 AZUSA PD,CA,Flock Aerodome,collected,5381,2023-12-18,2026-09-02,https://community.azusa.ca.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 AURORA PD,CO,Flock Aerodome,collected,4959,2025-08-12,2026-08-30,https://community.aurora.co.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
@@ -17,6 +19,7 @@ Philadelphia Police Department,,Skydio,collected,4258,2025-03-08,2026-09-01,http
 Dearborn Police Department,MI,Skydio,collected,4193,2026-01-28,2026-09-01,https://www.arcgis.com/apps/dashboards/13937d18670e44d5a20a5a3821f01775,Skydio aircraft only.
 ASPEN PD,CO,Flock Aerodome,collected,4146,2023-11-15,2026-09-02,https://community.aspen.co.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Milwaukee Police Department,,Skydio,collected,4130,2025-03-08,2026-08-23,https://cloud.skydio.com/dashboard/milwaukee,Skydio aircraft only.
+West Palm Beach PD,FL,AirData,collected,3908,2024-03-29,2026-09-02,https://app.airdata.com/u/wpb,"No flight durations published. Portal states 3,913 flights across 31 months."
 MESA PD,AZ,Flock Aerodome,collected,3280,2025-01-30,2026-09-02,https://community.mesa.az.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Brookhaven Police Department,,Skydio,collected,3268,2025-05-22,2026-09-01,https://cloud.skydio.com/dashboard/brookhavenpd,Skydio aircraft only.
 Irvine PD,CA,AirData,collected,3259,2025-01-01,2026-09-01,https://app.airdata.com/u/irvinepd,"No flight durations published. Portal states 3,259 flights across 21 months."
@@ -25,6 +28,7 @@ Concord Police Department,CA,Skydio,collected,3081,2025-10-01,2026-09-01,https:/
 LAS CRUCES PD,NM,Flock Aerodome,collected,2978,2026-01-15,2026-09-02,https://community.las-cruces.nm.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Brea Police Department,CA,Motorola CAPE,collected,2944,2024-05-22,2026-08-29,https://www.aerial.motorolasolutions.com/transparency/breapd-ca,Publishes full history.
 SCOTTSDALE PD,AZ,Flock Aerodome,collected,2936,2024-05-01,2026-06-26,https://community.scottsdale.az.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
+Ventura County Sheriff Emergency Services,CA,AirData,collected,2768,2023-01-05,2026-08-30,https://app.airdata.com/u/vcsoes,"No flight durations published. Portal states 2,768 flights across 43 months."
 TOLEDO PD,OH,Flock Aerodome,collected,2741,2025-09-15,2026-09-02,https://community.toledo.oh.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 PROSPER PD,TX,Flock Aerodome,collected,2528,2025-02-11,2026-09-02,https://community.prosper.tx.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 EVERETT PD,WA,Flock Aerodome,collected,2523,2025-09-30,2026-09-02,https://community.everett.wa.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
@@ -43,6 +47,7 @@ Denver Police Department,,Skydio,collected,1841,2025-10-21,2026-09-01,https://cl
 Chico Police Department,CA,AirData,collected,1797,2021-07-22,2026-08-16,https://app.airdata.com/u/chicopd,"No flight durations published. Portal states 1,797 flights across 62 months."
 HEMET PD,CA,Flock Aerodome,collected,1739,2025-09-26,2026-09-02,https://community.hemet.ca.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Lancaster Police Department,CA,AirData,collected,1647,2024-08-15,2026-08-25,https://app.airdata.com/u/lpdviper,"No flight durations published. Portal states 1,647 flights across 25 months."
+Snohomish County Sheriff's Office,WA,AirData,collected,1645,2024-01-09,2026-08-30,https://app.airdata.com/u/scso,"No flight durations published. Portal states 1,645 flights across 32 months."
 South San Francisco Police Department,CA,Skydio,collected,1637,2025-10-06,2026-09-01,https://www.arcgis.com/apps/dashboards/c62d7fea1f524f2ebe9f10ff5569e0c8,Skydio aircraft only.
 Santa Ana Police Department,CA,Skydio,collected,1599,2026-05-21,2026-08-27,https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe,Skydio aircraft only.
 DEKALB COUNTY PD,GA,Flock Aerodome,collected,1585,2025-12-03,2026-09-02,https://community.dekalb.ga.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
@@ -85,6 +90,7 @@ ALAMEDA COUNTY SO,CA,Flock Aerodome,collected,645,2025-09-01,2026-08-23,https://
 FORT WORTH PD,TX,Flock Aerodome,collected,617,2025-10-14,2026-09-01,https://community.fort-worth.tx.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Tampa Police Department,,Skydio,collected,593,2026-01-03,2026-08-20,https://cloud.skydio.com/dashboard/tampa,Skydio aircraft only.
 SUISUN CITY PD,CA,Flock Aerodome,collected,554,2025-11-17,2026-08-25,https://community.suisun-city.ca.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
+City of Mankato,MN,AirData,collected,512,2022-07-18,2026-08-26,https://app.airdata.com/u/mankato,No flight durations published. Portal states 512 flights across 50 months.
 COLONY PD,TX,Flock Aerodome,collected,477,2026-03-05,2026-09-02,https://community.colony.tx.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Lee County Government,,Skydio,collected,461,2024-04-04,2026-08-03,https://www.arcgis.com/apps/dashboards/efe67bb8531c4907b4b355403485e2fc,Skydio aircraft only.
 Montgomery County PD - G47 Beta,,Skydio,collected,450,2025-04-01,2026-06-12,https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9,Skydio aircraft only.
@@ -113,6 +119,7 @@ SHOW LOW PD,AZ,Flock Aerodome,collected,263,2026-03-19,2026-09-02,https://commun
 University of Illinois Division of Public Safety,,Skydio,collected,249,2026-05-14,2026-09-01,https://www.arcgis.com/apps/dashboards/d4a3d2851dba46149858ce525b941b90,Skydio aircraft only.
 Cleveland Division of Police,,Skydio,collected,248,2024-11-24,2026-08-30,https://cloud.skydio.com/dashboard/clevelandpolice,Skydio aircraft only.
 Monroe County Sheriff's Office,,Skydio,collected,247,2026-03-09,2026-08-28,https://www.arcgis.com/apps/dashboards/57633537efa44d2eb774f49ef3c2bf59,Skydio aircraft only.
+Westmont PD,IL,AirData,collected,247,2023-07-04,2026-08-25,https://app.airdata.com/u/vwpd,No flight durations published. Portal states 247 flights across 30 months.
 Chesterfield County Police Department,VA,Skydio,collected,238,2026-07-15,2026-09-01,https://cloud.skydio.com/dashboard/chesterfieldpublicsafety,Skydio aircraft only.
 Melrose PARK Police Department,IL,Skydio,collected,226,2026-05-01,2026-09-02,https://www.arcgis.com/apps/dashboards/e0d00aa615684f678bdd7cda8cf29083,Skydio aircraft only.
 SANSOM PARK PD,TX,Flock Aerodome,collected,219,2025-08-19,2026-09-02,https://community.sansom-park.tx.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
@@ -136,6 +143,7 @@ Tulsa Fire Department,,Skydio,collected,66,2025-09-12,2026-08-27,https://cloud.s
 ELM RIDGE PD,TX,Flock Aerodome,collected,63,2026-03-02,2026-08-25,https://community.elm-ridge.tx.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 DENVER PD,CO,Flock Aerodome,collected,58,2025-10-06,2025-10-21,https://community.denver.co.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Crubier,,Skydio,collected,51,2024-04-11,2026-01-18,https://www.arcgis.com/apps/dashboards/ea32f26fbba4458c9dcd12bdaceda7a9,Skydio aircraft only.
+Los Altos PD,CA,AirData,collected,50,2025-04-08,2026-08-04,https://app.airdata.com/u/losaltospd,No flight durations published. Portal states 50 flights across 14 months.
 West Palm Beach Police Department,,Skydio,collected,46,2024-12-10,2025-08-02,https://www.arcgis.com/apps/dashboards/92ead0d3c5c6434a8272625b91d3e40e,Skydio aircraft only.
 Axon Air PSM,,Skydio,collected,40,2025-03-12,2026-07-01,https://www.arcgis.com/apps/dashboards/490bbd4e23aa4d2683c48a53b2a38e6d,Skydio aircraft only.
 Fairfax County Police Department,,Skydio,collected,38,2026-03-19,2026-07-28,https://www.arcgis.com/apps/dashboards/c47a7c0ff6d5465884f182588bd2a15f,Skydio aircraft only.
@@ -229,24 +237,16 @@ City of Bloomington,IN,Self-published (Socrata),not yet collected,,,,https://dat
 Medford Police Department,OR,Self-published (ArcGIS),not yet collected,,,,https://www.arcgis.com/apps/dashboards/ebd0652bbefd420ea390974eb0a0047a,"Per-flight rows: case number, date, incident type."
 Roselle Police Department,IL,Self-published (ArcGIS),not yet collected,,,,https://www.arcgis.com/apps/dashboards/4850e50ec6a24f20bad3bf18c387e09b,Per-flight rows including total flight duration and type of call.
 Sedona Fire District,AZ,Self-published (ArcGIS),not yet collected,,,,https://www.arcgis.com/home/item.html?id=sedona-fire-uav,"Fire, not police. Last updated 2022. Contains pilot names, which would have to be dropped."
-Las Vegas Metropolitan Police Department,NV,AirData,"live, nothing yet",17954,2025-09-03,2026-07-31,https://app.airdata.com/u/lvmpd,"No flight durations published. Portal states 17,756 flights across 10 months."
 Boulder Police Department,CO,Motorola CAPE,"live, nothing yet",0,,,https://www.aerial.motorolasolutions.com/transparency/boulderpd,Rolling 30-day window: flights age out of the source permanently. Feed is currently empty; a future run will pick up new flights.
 BOYNTON BEACH PD,FL,Flock Aerodome,"live, nothing yet",0,,,https://community.boynton-beach.fl.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Brookhaven Police Department,GA,Motorola CAPE,"live, nothing yet",0,,,https://www.aerial.motorolasolutions.com/transparency/brookhavenga,Rolling 30-day window: flights age out of the source permanently. Feed is currently empty; a future run will pick up new flights.
-City of Mankato,MN,AirData,"live, nothing yet",0,,,https://app.airdata.com/u/mankato,No flight durations published.
 COBB COUNTY PD,GA,Flock Aerodome,"live, nothing yet",0,,,https://community.cobb-county.ga.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 DURANGO PD,CO,Flock Aerodome,"live, nothing yet",0,,,https://community.durango.co.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 FRANKLIN TOWNSHIP PD,NJ,Flock Aerodome,"live, nothing yet",0,,,https://community.franklin-somerset.nj.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Hemet Police Department,CA,Motorola CAPE,"live, nothing yet",0,,,https://www.aerial.motorolasolutions.com/transparency/hemetpd-ca,Rolling 30-day window: flights age out of the source permanently. Feed is currently empty; a future run will pick up new flights.
 LONGMONT PD,CO,Flock Aerodome,"live, nothing yet",0,,,https://community.longmont.co.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
-Los Altos PD,CA,AirData,"live, nothing yet",0,,,https://app.airdata.com/u/losaltospd,No flight durations published.
 LOVELAND PD,CO,Flock Aerodome,"live, nothing yet",0,,,https://community.loveland.co.us.aerodome.com/,"Richest source: call type, case number, priority, block-level address. Default view shows about a month; history reachable by date range."
 Roswell Police,GA,Motorola CAPE,"live, nothing yet",0,,,https://www.aerial.motorolasolutions.com/transparency/roswellpd,Rolling 30-day window: flights age out of the source permanently. Feed is currently empty; a future run will pick up new flights.
-Sacramento Police Department,CA,AirData,"live, nothing yet",0,,,https://app.airdata.com/u/spduas,No flight durations published.
-Snohomish County Sheriff's Office,WA,AirData,"live, nothing yet",0,,,https://app.airdata.com/u/scso,No flight durations published.
-Ventura County Sheriff Emergency Services,CA,AirData,"live, nothing yet",0,,,https://app.airdata.com/u/vcsoes,No flight durations published.
-West Palm Beach PD,FL,AirData,"live, nothing yet",0,,,https://app.airdata.com/u/wpb,No flight durations published.
-Westmont PD,IL,AirData,"live, nothing yet",0,,,https://app.airdata.com/u/vwpd,No flight durations published.
 AEP ED TFS Line East,,Skydio,owner unidentified,0,,,https://www.arcgis.com/apps/dashboards/78367bc1ae0944a9b47fe179a13f5c5f,"Dashboard is real; which agency publishes it is unconfirmed, so it is not shown on the site."
 Alsip Police Department,IL,Skydio,owner unidentified,0,,,https://www.arcgis.com/apps/dashboards/6b1a7b24351f4d399fa2513569c85aa0,"Dashboard is real; which agency publishes it is unconfirmed, so it is not shown on the site."
 Austintown Fire Department,OH,Skydio,owner unidentified,0,,,https://www.arcgis.com/apps/dashboards/cec559ab9a04433db43889b30156cedc,"Dashboard is real; which agency publishes it is unconfirmed, so it is not shown on the site."
