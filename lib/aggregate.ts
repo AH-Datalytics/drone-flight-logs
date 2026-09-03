@@ -104,6 +104,22 @@ export const DESCRIPTION_IS_EVENT: Record<string, boolean> = {
   motorola_cape: false,
 };
 
+/**
+ * Below this many recorded durations, a length histogram or a median describes
+ * a handful of flights while looking like it describes the agency. Las Vegas
+ * has durations on three of twenty-two thousand flights — the three that came
+ * from a second platform — and charting those three would be worse than
+ * showing nothing.
+ */
+export const MIN_DURATIONS_TO_CHART = 20;
+
+/** How many flights carry a recorded duration. */
+export function durationCount(recs: FlightRecord[]): number {
+  let n = 0;
+  for (const r of recs) if (typeof r.duration_min === 'number') n++;
+  return n;
+}
+
 /** Below this many event descriptions the chart says more about the gap than the flights. */
 export const MIN_EVENTS_TO_CHART = 20;
 

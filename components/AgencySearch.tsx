@@ -8,11 +8,11 @@ export type SearchItem = { agency_id: string; display_name: string; state: strin
 /**
  * Type-to-find over every agency on the site.
  *
- * A plain select with two hundred and twenty-six options is unusable, so this
- * is a combobox: it filters as you type, matches on the agency name or its
- * state, and goes straight to the agency page. Arrow keys and Enter work
- * because a reader who knows the department they want should not have to
- * reach for the mouse.
+ * A combobox rather than a select: it filters as you type, matches on the
+ * agency name or its state, and goes straight to the agency page. Opened
+ * empty, it lists every agency, largest first, in one scrollable list — the
+ * box is also the site's index, so nothing is held back behind a minimum
+ * query. Arrow keys and Enter work throughout.
  */
 export default function AgencySearch({ items }: { items: SearchItem[] }) {
   const router = useRouter();
@@ -24,7 +24,7 @@ export default function AgencySearch({ items }: { items: SearchItem[] }) {
 
   const results = useMemo(() => {
     const needle = q.trim().toLowerCase();
-    if (!needle) return items.slice(0, 12);
+    if (!needle) return items;
     const scored = items
       .map(a => {
         const name = a.display_name.toLowerCase();
@@ -38,8 +38,14 @@ export default function AgencySearch({ items }: { items: SearchItem[] }) {
       })
       .filter((x): x is { a: SearchItem; rank: number; at: number } => x !== null)
       .sort((x, y) => x.rank - y.rank || x.at - y.at || y.a.flight_count - x.a.flight_count);
-    return scored.slice(0, 12).map(s => s.a);
+    return scored.map(s => s.a);
   }, [q, items]);
+
+  /** Keep the active option in view while arrowing through the full list. */
+  const move = (i: number) => {
+    setActive(i);
+    document.getElementById(`${listId}-${i}`)?.scrollIntoView({ block: 'nearest' });
+  };
 
   const go = (item: SearchItem | undefined) => {
     if (!item) return;
@@ -65,8 +71,8 @@ export default function AgencySearch({ items }: { items: SearchItem[] }) {
           onFocus={() => setOpen(true)}
           onBlur={() => { blurTimer.current = setTimeout(() => setOpen(false), 120); }}
           onKeyDown={e => {
-            if (e.key === 'ArrowDown') { e.preventDefault(); setOpen(true); setActive(i => Math.min(i + 1, results.length - 1)); }
-            else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(i => Math.max(i - 1, 0)); }
+            if (e.key === 'ArrowDown') { e.preventDefault(); setOpen(true); move(Math.min(active + 1, results.length - 1)); }
+            else if (e.key === 'ArrowUp') { e.preventDefault(); move(Math.max(active - 1, 0)); }
             else if (e.key === 'Enter') { e.preventDefault(); go(results[active]); }
             else if (e.key === 'Escape') { setOpen(false); }
           }}

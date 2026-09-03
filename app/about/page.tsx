@@ -148,9 +148,8 @@ export default function About() {
         <li><strong>current</strong> — a flight was published within the last 60 days. {byStatus('ok')} agencies.</li>
         <li>
           <strong>stale</strong> — no flight published in more than 60 days. {byStatus('stale')} agencies.
-          Read this alongside the agency&rsquo;s typical publishing gap: a long silence is unremarkable for
-          an agency that uploads monthly and notable for one that uploads daily. It may mean the drones
-          stopped flying, or only that the publishing stopped.
+          It may mean the drones stopped flying, or only that the publishing stopped: many agencies
+          upload in batches, weeks apart.
         </li>
         <li><strong>unreachable</strong> — the last refresh could not read the source, so the previous data is shown.</li>
         <li><strong>retired</strong> — the source dashboard no longer exists; the last data collected is kept.</li>

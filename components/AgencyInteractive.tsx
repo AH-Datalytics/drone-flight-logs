@@ -18,6 +18,8 @@ export type AgencyInitial = {
   eventAll: Bar[];
   eventCount: number;
   minEventsToChart: number;
+  durationCount: number;
+  minDurationsToChart: number;
   heat: HeatGrids | null;
   anyTime: boolean;
   allCount: number;
@@ -84,16 +86,25 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
       <StatRow items={[
         { label: 'Published flights', value: fmtInt(view.stats.flights) },
         { label: 'Flight hours', value: fmtHours(view.stats.hours) },
-        { label: 'Median minutes', value: fmtMinutes(view.stats.medianMin) },
+        { label: 'Median minutes', value: initial.durationCount >= initial.minDurationsToChart ? fmtMinutes(view.stats.medianMin) : '—' },
         { label: 'Flights, last 30 days', value: fmtInt(view.stats.last30) },
         { label: 'Days since last published flight', value: view.stats.daysSinceLast === null ? '—' : String(view.stats.daysSinceLast) },
-        { label: 'Typical publish gap (days)', value: view.stats.medianGapDays === null ? '—' : String(view.stats.medianGapDays) },
         { label: 'With case number', value: `${view.stats.pctWithCase}%` },
       ]} />
       <div className="charts">
         <BarChartCard title="Flights per month" data={view.monthly} tickFormatter={fmtMonthLabel} />
         {view.heat && <Heatmap title={`When it flies — flight count by weekday and hour (${tzLabel})`} grid={view.heat.count} max={view.heat.maxCount} />}
-        <BarChartCard compact title="Flight length (minutes)" data={view.durationBins} height={220} />
+        {initial.durationCount >= initial.minDurationsToChart && (
+          <BarChartCard
+            compact
+            title="Flight length (minutes)"
+            data={view.durationBins}
+            height={220}
+            note={initial.durationCount < initial.allCount
+              ? `Durations are recorded on ${fmtInt(initial.durationCount)} of ${fmtInt(initial.allCount)} flights; this chart covers those.`
+              : undefined}
+          />
+        )}
         {/* Always the full breakdown: filtered to one purpose it would be a single bar,
             and it doubles as the legend for the filter above. */}
         <div className="chart-pair">
