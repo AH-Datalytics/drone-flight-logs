@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Chula Vista Police - Drone Program Historical Flight Data | Airdata UAV</title>
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=6" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=6" />
+<link rel="shortcut icon" href="/favicon.ico?v=6" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=6" />
+<meta name="apple-mobile-web-app-title" content="AirData" />
+<link rel="manifest" href="/site.webmanifest?v=6" /><link rel="StyleSheet" href="/AirdataCustom.css" type="text/css" />
+<link rel="StyleSheet" href="/styleNN.css?ver=1743469668" type="text/css" />
+<link rel="StyleSheet" href="/style.css?ver=1754074634" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800|Raleway" rel="stylesheet" type="text/css">
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel="stylesheet" href="/jquery-ui-1.11.4.custom/themes/smoothness/jquery-ui.css">
+<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/css/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+<link rel="stylesheet" href="/css/hamburgers/shymenu.css" type="text/css">
+<script src="/jquery2.2.4/jquery.min.js"></script>
+<script src="/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/js/js.cookie.js"></script>
+<script src="/js/markerclusterer.js"></script>
+<script>
+        if(history.pushState){
+            var clean = "https://"+ location.hostname + "/u/cvpd";
+                                    history.pushState(null, null, clean );
+        }
+</script>
+<style>
+		#bottom_help{
+			font-size: 12px;
+			padding-top:60px;
+			color: #808080;
+			text-align:center;
+			line-height: 20px;
+		}
+		.close-icon {
+			border:1px solid transparent;
+			background-color: transparent;
+			display: inline-block;
+			vertical-align: middle;
+			outline: 0;
+			cursor: pointer;
+			position: relative;
+			padding: 0px;
+		}
+		.close-icon:after {
+			content: "X";
+			display: block;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			background-color: #FA9595;
+			z-index:1;
+			right: 15px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			padding: 2px;
+			border-radius: 50%;
+			text-align: center;
+			color: white;
+			font-weight: normal;
+			font-size: 12px;
+			box-shadow: 0 0 2px #E50F0F;
+			cursor: pointer;
+		}
+        .top_shadow {
+            box-shadow: 0px 0px 10px 0px rgba(95,101,103,0.5);
+        }
+        .map_shadow {
+        	box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.16);
+        }
+
+        #main_content{
+            position:absolute;
+            top:72px;
+            left:0px;
+            width: 100%;
+            align-items: stretch;
+            display: flex;
+            flex-direction:column;
+        }
+        body{
+            background-color:#f2f9ff;
+            height:100%;
+        }
+
+        #row_nav_and_main {
+            flex: 1 1 auto;
+            display:flex;
+            align-items: stretch;
+        }
+        .left_panel_class {
+            border-right: 1px solid #c8e5ed;
+            float:left;
+            text-align:left;
+            /*height:100%;*/
+            position: relative;
+            min-width: 200px;
+            width: 200px;
+            /*flex: 1 1 auto;*/
+            left: 0;
+            font-size: inherit;
+            background-color: #ddf2f8;
+
+            vertical-align: top;
+        }
+        .left_panel_class_top_only {
+            border-top: 1px solid #c8e5ed;
+            min-height: 600px;
+        }
+
+        .left-menu-item, a.left-menu-item {
+            /*color:white !important;*/
+            /*color:#5e6466 !important;*/
+            /*color: #7e7e7e  !important;*/
+            /*color: #8f8f8f !important;*/
+            color:#131415 !important;
+            font-size:16px !important;
+            text-decoration: none !important;
+            /*font-family: 'Open Sans', sans-serif !important;*/
+            font-family: sans-serif,"Open Sans",Helvetica,Arial;
+            /*font-family: Verdana, Tahoma, sans-serif !important;*/
+            font-weight: 400 !important;
+            white-space: nowrap;
+        }
+        a.left-menu-item:hover {
+            background-color:transparent;
+            color: #2bb0d4  !important;
+        }
+
+        .left-menu-item-td {
+            width:100%;
+            text-align: left;
+            padding-left: 8px;
+        }
+        .left-menu-item-tr{
+            height:30px;
+        }
+
+        a.selected_item {
+            color: #2a78a2 !important;
+            font-weight: 700 !important;
+        }
+        .flight-table{
+            background-color: white;
+        }
+
+        .flight-table td {
+            /*border: 1px solid #d3d3d3;*/
+            text-align: center;
+            font-size: 11px;
+            line-height: 15px;
+
+        }
+        .flight-table tr.flight_info td:nth-child(even) {
+        	background: #f8f9fa;
+        }
+        .flight-table tr.flight_header td{
+            font-weight: bold;
+            border-bottom: 1px solid #b7b7b7;
+            height: 25px;
+            line-height: 30px;
+            color:#384047;
+        }
+        .flight-table tr.flight_info td{
+            height: 30px;
+            color:#6b7175;
+        }
+
+        .switch-map-mode-btn{
+            height: 40px;
+            font-size: 15px !important;
+            line-height:19px;
+            width: 150px;
+            border-radius: 3px;
+            padding:0px;
+            padding-top:1px;
+            outline: none !important;
+        }
+        .search-filter-sm{
+            position: absolute;
+            top: 74px;
+            right: 20px;
+            width: 80%;
+            height: 40px;
+            background-color: #ddf2f8;
+            border: 1px solid #C0C0C0;
+            border-radius: 10px;
+            padding: 5px;
+            z-index: 99;
+        }
+        .search-input, .label-select {
+
+            border: 1px solid #C0C0C0;
+            padding: 0 10px 0 10px;
+            margin:0 5px 0 0;
+            border-radius: 3px;
+            outline: none;
+            color: #384047;
+            background-color:#eff1f7;
+            font-size:14px;
+            line-height:19px;
+            /*line-height:22px;*/
+            vertical-align: bottom;
+        }
+        .search-input{
+            width: 320px;
+            height: 40px;
+        }
+
+        .search-input:focus{
+            color: #404040;
+        }
+        .search-input::placeholder{
+            color: #384047;
+        }
+
+        .search-field-select{
+            background-color:#eff1f7;
+            color: #404040;
+            font-size: 14px;
+            line-height:19px;
+            display: inline-block;
+            border: 0;
+            height: 40px;
+            width: 100%;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        .label-select {
+            height: 40px;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            display: inline-block;
+        }
+
+        .label-select:after {
+            font-size: 20px;
+            font-weight: bold;
+            content:"\f107"; /*"f0d7";*/
+            font-family: FontAwesome;
+            color: #fff;
+            padding: 10px 8px;
+            position: absolute;
+            right: 0;
+            /*top: 1px;*/
+            background: #C0C0C0;
+            /*z-index: 1;*/
+            text-align: center;
+            line-height: 20px;
+            /*width: 10%;*/
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .label-select:hover:after{
+            opacity: .6;
+        }
+
+        .search-location:hover{
+            opacity: .6;
+        }
+        .search-location {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 30px;
+            color: #C0C0C0;
+
+        }
+
+        .search-location-sm{
+            display: none;
+        }
+
+        .pagination-item {
+            font-size: 16px;
+            height: 100%;
+            padding: 15px;
+            color: #131415;
+        }
+
+        .pagination-prev-btn, .pagination-next-btn{
+            cursor: pointer;
+                        user-select: none; /* standerd */
+			-moz-user-select: none; /* firefox specific */
+			-webkit-user-select: none; /* Chrome, Opera and Safari*/
+			-ms-user-select: none; /* IE, ms-edge */
+        }
+
+        .pagination-prev-btn:hover, .pagination-next-btn:hover{
+            background-color: #f7f7f7;
+        }
+
+        .pagination-item.disabled-item{
+            color: #d3d3d3;
+            cursor: auto;
+            pointer-events: none;
+        }
+
+        .page-topbar{
+            background-color:#ffffff;
+            width:100%;
+            height:72px;
+            padding:0px;
+            margin:0px;
+        }
+        .department-text{
+        	/*color:#545A5C;*/
+        	color:#131415;
+        	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+        }
+        .department-link{
+        	/*color:#545A5C;*/
+        	color:#131415 !important;
+        	font-family: "Open Sans",Helvetica,Arial,sans-serif !important;
+        	text-decoration:none !important;
+        }
+        .department-link:hover{
+        	background-color:transparent !important;
+        }
+        .shy-menu.is-open{
+            height: 450px;
+            overflow-y: auto;
+            background-color: #ddf2f8;
+        }
+
+        .record-view td{
+            text-align: left;
+            padding-left: 5px;
+            border-bottom: 1px solid #e0e0e0;
+            height: 20px;
+            color:#384047;
+        }
+        .record-view tr td:first-child{
+            font-weight: bold;
+        }
+        .record-view tr:last-child td{
+        	border-bottom: 0px solid #b7b7b7;
+        }
+        	
+        
+        #prev_short_text,  #next_short_text, #page_short_text{
+            display: none;
+        }
+        #filter_fields_form{
+            display: inline-block;
+        }
+        @media screen and (min-width: 1101px){
+            #filter_fields_form{
+                display: inline-block !important;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1100px){
+                    .left_panel_class{
+                display: none;
+            }
+
+            #prev_long_text{
+                display: none;
+            }
+
+            #next_long_text{
+                display: none;
+            }
+
+            #page_long_text{
+                display: none;
+            }
+                    .shy-menu{
+                display: block;
+            }
+
+            #prev_short_text{
+                display: inline-block;
+            }
+
+            #next_short_text{
+                display: inline-block;
+            }
+
+            #page_short_text{
+                display: inline-block;
+            }
+
+            #filter_fields_form{
+                display: none;
+                position: absolute;
+                top: 74px;
+                right: 10px;
+                width: 80% !important;
+                height: 40px;
+                background-color: #ddf2f8;
+                border: 1px solid #C0C0C0;
+                border-radius: 10px;
+                padding: 5px;
+                z-index: 99;
+            }
+
+            .search-location-sm{
+                display: block;
+            }
+            #search_big_wrapper{
+            	padding-left: 8px;
+            }
+            #search_input_wrapper{
+            	flex-basis: 85%;
+				max-width: 85%;
+            }
+            #magnifying_glass_wrapper{
+            	flex-basis: 12%;
+            	max-width: 12%;
+            }
+            #search_input {
+            	width:90%;
+            }
+            .search-input{
+            	height:39px;
+            }
+            
+        }
+        
+        #large_map_td{
+        	padding-right:10px;
+        }
+        
+        @media screen and (max-width: 600px){
+        	#large_map_td{
+	        	padding-right:2px;
+	        }
+        }
+        #grouped_map_section{
+	        padding:50px;
+    	}
+    	@media screen and (max-width: 1100px){
+	        #grouped_map_section{
+		        padding-left:0px;
+		        padding-right:0px;
+	    	}
+        }
+
+        #flight_dtl_record_view{
+            display: none;
+        }
+
+        #flight_dtl_table_view{
+            display: block;
+        }
+
+
+                @media screen and (max-width: 650px){
+
+            #flight_dtl_record_view{
+                display: block;
+            }
+
+            #flight_dtl_table_view{
+                display: none;
+            }
+        }
+        #filter_fields{
+            display: none;
+        }
+
+        @media screen and (max-width: 630px){
+
+            .search-input{
+                width: 220px;
+            }
+            .label-select{
+                width: 80px;
+            }
+        }
+
+        #title-text{
+            display: inline-block;
+        }
+        #title-text-wide{
+        	display: inline-block;
+        }
+        #powered_by_section{
+            left: 160px;
+        }
+        #powered_by_section_wide_text{
+        	left: 250px;
+        }
+        @media screen and (min-width: 501px) and (max-width: 700px) {
+        	#powered_by_section_wide_text{
+	        	left: 100px;
+	        }
+        	#title-text-wide{
+                display: none;
+            }
+        }    
+        @media screen and (max-width: 500px){
+        	#title-text-wide{
+                display: none;
+            }
+            .search-input{
+                width: 150px;
+            }
+            .label-select{
+                width: 60px;
+            }
+            #title-text{
+                display: none;
+            }
+            #powered_by_section_mot{
+            	left: 123px !important;
+            }
+
+            #powered_by_section{
+                left: 52px;
+            }
+            
+            #powered_by_section_wide_text{
+	        	left: 52px;
+	        }
+
+            .switch-map-mode-btn{
+                width: 80px;
+                line-height: 16px;
+            }
+        }
+        .poweredBy{
+        	font-size: 10px !important;
+        	display: block;
+        	font-family: 'Open Sans',Helvetica,Arial,sans-serif !important;
+        	color:#5e6466 !important;
+        	text-decoration: none !important;
+        	outline: 0 !important;
+        }
+        .poweredBy:hover{
+        	background-color:transparent !important;
+        }
+        .ui-menu-item-address {
+            font-size:10px;
+        }
+        li.ui-menu-item.disabled{
+            text-decoration: none;
+            font-style: italic;
+            display: block;
+            color: #868686;
+        }
+
+        
+</style>
+</head>
+    <body class="body-bg-style">
+    	                <input type="hidden" id="search_longitude" value="">
+        <input type="hidden" id="search_latitude" value="">
+        <center>
+            <div id="top-bar" class="page-topbar top_shadow">
+                <table width="100%" cellspacing=0 cellpadding=0 border=0 align="center" style="height: 100%;">
+                    <tr>
+                        <td width="1.5%"> </td>
+                        <td width="43%">
+                            <div style='position: relative;height:72px;'>
+                                <div style="position: absolute; top:6px;left:0px;z-index: 999;">
+                                	                                    	<a href='https://www.chulavistaca.gov/departments/police-department/programs/uas-drone-program' class='TextNoButton' style='padding-left:0px;padding-right:0px;' target="_blank"><img src='/images/u/cvpd_badge_transparent.png' style='height:62px; position: relative; top: -1px;' border=0 alt="Chula Vista PD" title="Chula Vista PD" style="float:left;"></a>
+                                	                                    <div id="title-text" style='top: 8px;left:5px; position: relative;text-align: center;    float: right;'>
+                                                                        	<a href='https://www.chulavistaca.gov/departments/police-department/programs/uas-drone-program' class="department-link" style="font-size: 16px; font-weight: bold; line-height:22px; display: block;" target="_blank">Chula Vista</a>
+	                                    <a href='https://www.chulavistaca.gov/departments/police-department/programs/uas-drone-program' class="department-link" style="font-size: 16px; font-weight: bold; line-height:22px; display: block;" target="_blank">Police</a>
+	                                	                                </div>
+                                </div>
+
+                                <div id="powered_by_section" style="position: absolute; top:8px; z-index: 999;">
+                                    <a href='https://airdata.com/' class='TextNoButton' style='float:bottom; padding-left:0px;padding-right:0px;'  target="_blank"
+                                    	                                    	><img src='/images/airdata-logo-color-vertical-brownText.svg' style="height:62px;" border=0 alt="AirData.com"
+                                    ></a>
+                                </div>
+                                                                <div id="powered_by_section_mot" style="position: absolute; top:7px; z-index: 999;left: 250px;">
+                                    <a href='https://www.motorolasolutions.com/en_us/products/command-center-software/field-response-and-reporting/cape.html' class='TextNoButton' style='float:bottom; padding-left:0px;padding-right:0px;'  target="_blank"
+                                    	><img src='/images/u/logo_motorola_blue_withtext.png'  style="height:62px"  border=0 alt="Motorola Solutions - Cape"
+                                    ></a>
+                                </div>
+                            	                            </div>
+                        </td>
+                        
+                        <td width="45%">
+                            <div id="search_location_button_sm" class="search-location search-location-sm end-xs" style="width: 100%; height: 36px;">
+                                <i class="fa fa-search" style="margin-right: 20px;"></i>
+                            </div>
+                            <div id="filter_fields_form" style="width: 100%;">
+                                <div id="search_big_wrapper" class="row" >
+                                    <div id="search_input_wrapper" class="col-xs-8 start-xs end-sm" style="text-align: right; padding: 0;">
+                                        <input id="search_input" type="text" class="autocomplete search-input" placeholder="Search by address" value="">
+                                    </div>
+                                    <input type=hidden id="address_radius" value='0.5'>
+                                                                                                            <div id="magnifying_glass_wrapper" class="col-xs-2" style="text-align: center; padding: 0;">
+										<span id="search_location_button" class="search-location ">
+											<i class="fa fa-search"></i>
+										</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        
+                        <td width="10%" align="left" id="large_map_td">
+                            <button id="large_map_btn" type="button" name="button" class="switch-map-mode-btn flat-button button-primary nowrap_class" >
+                                Large Map                        </td>
+                    </tr>
+                </table>
+            </div>
+<!--            <div id="filter_fields" class="search-filter-sm"></div>-->
+        </center>
+
+        <div id="main_content">
+            <div id="row_nav_and_main" style=''>
+                <div class="shy-menu">
+                    <a class="shy-menu__hamburger hamburger" style="">
+                        <span class="hamburger__layer hamburger__layer--top"></span>
+                        <span class="hamburger__layer hamburger__layer--mid"></span>
+                        <span class="hamburger__layer hamburger__layer--btm"></span>
+                    </a>
+                    <div class="shy-menu__panel">
+							                    <table width=85% cellspacing=0 cellpadding=2 border=0 align=center style=''>
+                        <tr>
+                            <td style="height: 50px;" align="center">
+                                <div style="">
+                                    <span class="department-text" style="font-size: 14px; line-height:20px; display: block">Drone Program</span>
+                                    <span class="department-text" style="font-size: 14px;  line-height:20px; display: block; padding-top: 2px">Historical Flight Data</span>
+                                </div>
+                                <div style="">
+                                    <hr style="width: 140px; size:1px;width:95%; border:0; border-top:1px solid #bfd0d8; height:1px;">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width=50% cellspacing=0 cellpadding=2 border=0 align=center style=''>
+                        <tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92026'});" class='left-menu-item '>Sep 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(8)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82026'});" class='left-menu-item '>Aug 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(390)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72026'});" class='left-menu-item selected_item'>Jul 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(339)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62026'});" class='left-menu-item '>Jun 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(323)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52026'});" class='left-menu-item '>May 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(357)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42026'});" class='left-menu-item '>Apr 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(231)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32026'});" class='left-menu-item '>Mar 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(291)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22026'});" class='left-menu-item '>Feb 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(205)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12026'});" class='left-menu-item '>Jan 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(252)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122025'});" class='left-menu-item '>Dec 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(208)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112025'});" class='left-menu-item '>Nov 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(218)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102025'});" class='left-menu-item '>Oct 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(342)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92025'});" class='left-menu-item '>Sep 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(274)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82025'});" class='left-menu-item '>Aug 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(203)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72025'});" class='left-menu-item '>Jul 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(279)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62025'});" class='left-menu-item '>Jun 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(297)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52025'});" class='left-menu-item '>May 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(307)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42025'});" class='left-menu-item '>Apr 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(340)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32025'});" class='left-menu-item '>Mar 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(316)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22025'});" class='left-menu-item '>Feb 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(159)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12025'});" class='left-menu-item '>Jan 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(193)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122024'});" class='left-menu-item '>Dec 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(182)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112024'});" class='left-menu-item '>Nov 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(189)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102024'});" class='left-menu-item '>Oct 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(271)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92024'});" class='left-menu-item '>Sep 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(174)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82024'});" class='left-menu-item '>Aug 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(298)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72024'});" class='left-menu-item '>Jul 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(373)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62024'});" class='left-menu-item '>Jun 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(338)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52024'});" class='left-menu-item '>May 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(357)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42024'});" class='left-menu-item '>Apr 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(305)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32024'});" class='left-menu-item '>Mar 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(321)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22024'});" class='left-menu-item '>Feb 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(295)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12024'});" class='left-menu-item '>Jan 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(308)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122023'});" class='left-menu-item '>Dec 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(415)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112023'});" class='left-menu-item '>Nov 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(314)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102023'});" class='left-menu-item '>Oct 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(491)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92023'});" class='left-menu-item '>Sep 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(551)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82023'});" class='left-menu-item '>Aug 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(519)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72023'});" class='left-menu-item '>Jul 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(625)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62023'});" class='left-menu-item '>Jun 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(523)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52023'});" class='left-menu-item '>May 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(527)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42023'});" class='left-menu-item '>Apr 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(529)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32023'});" class='left-menu-item '>Mar 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(403)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22023'});" class='left-menu-item '>Feb 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(378)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12023'});" class='left-menu-item '>Jan 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(354)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122022'});" class='left-menu-item '>Dec 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(394)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112022'});" class='left-menu-item '>Nov 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(515)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102022'});" class='left-menu-item '>Oct 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(546)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92022'});" class='left-menu-item '>Sep 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(452)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82022'});" class='left-menu-item '>Aug 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(484)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72022'});" class='left-menu-item '>Jul 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(407)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62022'});" class='left-menu-item '>Jun 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(306)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52022'});" class='left-menu-item '>May 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(378)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42022'});" class='left-menu-item '>Apr 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(502)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32022'});" class='left-menu-item '>Mar 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(644)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22022'});" class='left-menu-item '>Feb 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(482)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12022'});" class='left-menu-item '>Jan 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(439)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122021'});" class='left-menu-item '>Dec 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(322)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112021'});" class='left-menu-item '>Nov 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(398)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102021'});" class='left-menu-item '>Oct 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(455)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92021'});" class='left-menu-item '>Sep 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(489)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82021'});" class='left-menu-item '>Aug 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(586)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72021'});" class='left-menu-item '>Jul 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(616)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62021'});" class='left-menu-item '>Jun 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(441)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52021'});" class='left-menu-item '>May 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(451)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42021'});" class='left-menu-item '>Apr 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(469)</span></td></tr>                    </table>
+                                        </div>
+                </div>
+                <div id="left_panel" class="left_panel_class left_panel_class_top_only">
+					                    <table width=85% cellspacing=0 cellpadding=2 border=0 align=center style='padding-top:10px;'>
+                        <tr>
+                            <td style="height: 100px;" align="center">
+                                <div style="padding-top:15px;">
+                                    <span class="department-text" style="font-size: 14px; line-height:20px; display: block">Drone Program</span>
+                                    <span class="department-text" style="font-size: 14px;  line-height:20px; display: block; padding-top: 2px">Historical Flight Data</span>
+                                </div>
+                                <div style="padding-top:25px;">
+                                    <hr style="width: 140px; size:1px;width:95%; border:0; border-top:1px solid #bfd0d8; height:1px;">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width=50% cellspacing=0 cellpadding=2 border=0 align=center style=''>
+                        <tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92026'});" class='left-menu-item '>Sep 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(8)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82026'});" class='left-menu-item '>Aug 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(390)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72026'});" class='left-menu-item selected_item'>Jul 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(339)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62026'});" class='left-menu-item '>Jun 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(323)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52026'});" class='left-menu-item '>May 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(357)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42026'});" class='left-menu-item '>Apr 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(231)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32026'});" class='left-menu-item '>Mar 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(291)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22026'});" class='left-menu-item '>Feb 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(205)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12026'});" class='left-menu-item '>Jan 2026</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(252)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122025'});" class='left-menu-item '>Dec 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(208)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112025'});" class='left-menu-item '>Nov 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(218)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102025'});" class='left-menu-item '>Oct 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(342)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92025'});" class='left-menu-item '>Sep 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(274)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82025'});" class='left-menu-item '>Aug 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(203)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72025'});" class='left-menu-item '>Jul 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(279)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62025'});" class='left-menu-item '>Jun 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(297)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52025'});" class='left-menu-item '>May 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(307)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42025'});" class='left-menu-item '>Apr 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(340)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32025'});" class='left-menu-item '>Mar 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(316)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22025'});" class='left-menu-item '>Feb 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(159)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12025'});" class='left-menu-item '>Jan 2025</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(193)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122024'});" class='left-menu-item '>Dec 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(182)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112024'});" class='left-menu-item '>Nov 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(189)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102024'});" class='left-menu-item '>Oct 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(271)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92024'});" class='left-menu-item '>Sep 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(174)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82024'});" class='left-menu-item '>Aug 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(298)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72024'});" class='left-menu-item '>Jul 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(373)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62024'});" class='left-menu-item '>Jun 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(338)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52024'});" class='left-menu-item '>May 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(357)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42024'});" class='left-menu-item '>Apr 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(305)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32024'});" class='left-menu-item '>Mar 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(321)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22024'});" class='left-menu-item '>Feb 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(295)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12024'});" class='left-menu-item '>Jan 2024</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(308)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122023'});" class='left-menu-item '>Dec 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(415)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112023'});" class='left-menu-item '>Nov 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(314)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102023'});" class='left-menu-item '>Oct 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(491)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92023'});" class='left-menu-item '>Sep 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(551)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82023'});" class='left-menu-item '>Aug 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(519)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72023'});" class='left-menu-item '>Jul 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(625)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62023'});" class='left-menu-item '>Jun 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(523)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52023'});" class='left-menu-item '>May 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(527)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42023'});" class='left-menu-item '>Apr 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(529)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32023'});" class='left-menu-item '>Mar 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(403)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22023'});" class='left-menu-item '>Feb 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(378)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12023'});" class='left-menu-item '>Jan 2023</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(354)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122022'});" class='left-menu-item '>Dec 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(394)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112022'});" class='left-menu-item '>Nov 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(515)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102022'});" class='left-menu-item '>Oct 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(546)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92022'});" class='left-menu-item '>Sep 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(452)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82022'});" class='left-menu-item '>Aug 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(484)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72022'});" class='left-menu-item '>Jul 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(407)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62022'});" class='left-menu-item '>Jun 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(306)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52022'});" class='left-menu-item '>May 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(378)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42022'});" class='left-menu-item '>Apr 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(502)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'32022'});" class='left-menu-item '>Mar 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(644)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'22022'});" class='left-menu-item '>Feb 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(482)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'12022'});" class='left-menu-item '>Jan 2022</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(439)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'122021'});" class='left-menu-item '>Dec 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(322)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'112021'});" class='left-menu-item '>Nov 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(398)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'102021'});" class='left-menu-item '>Oct 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(455)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'92021'});" class='left-menu-item '>Sep 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(489)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'82021'});" class='left-menu-item '>Aug 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(586)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'72021'});" class='left-menu-item '>Jul 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(616)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'62021'});" class='left-menu-item '>Jun 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(441)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'52021'});" class='left-menu-item '>May 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(451)</span></td></tr><tr class='left-menu-item-tr'>    <td class='left-menu-item-td'><a href='#' onclick="return navigatePage('change_month',{'month':'42021'});" class='left-menu-item '>Apr 2021</a></td><td align=right><span class=left-menu-item style='font-size:12px !important;color: #7e7e7e  !important;'>(469)</span></td></tr>                    </table>
+                                    </div>
+                <div style="display: inline-block; width: 100%;">
+                    	                    <div id="individual_maps_section">
+	                        <table width=90% cellspacing=0 cellpadding=2 border=0 align=center style='padding-top:10px;'>
+								<tr><td width='100%' align=center><div class='row center-lg center-sm center-md center-xs'><div class='col-xs-12 col-sm-12  col-md-6  col-lg-6' style='padding-top: 40px;'><table id='flight_main_content' class='flight-table map_shadow' style='width:96%; height: 100%;' cellspacing='0' cellpadding='0'  align='center'> <tr style='height:75%'><td colspan='5'>     <div id='map-canvas-50102421' class='map-canvas' data-flightid='50102421' data-hash='86248ff9b2c7335f5d3e1cf0787a1ce1' style='min-height: 300px; height:100%; width: 100%;'></div> </td></tr><tr><td><div id='flight_dtl_table_view'>    <table  style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr class='flight_header'>        <td width='12%'> Date </td>        <td width='10%'> Time </td>        <td width='15%'> Case/Incident </td>        <td width='30%'> Location </td>        <td width='33%'> Summary </td>     </tr>     <tr class=flight_info>        <td> 7-31-26 </td>        <td> 10:47pm </td>        <td> CVL075642 </td>        <td> 500 Flower St </td>        <td style='text-align: left; padding-left: 10px;'>Fire</td>     </tr>    </table></div><div id='flight_dtl_record_view'>    <table class='record-view' style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr>        <td width='30%'> Date </td>        <td width='70%' style='text-align: left; padding-left: 10px;'> 7-31-26 </td>     </tr>     <tr>        <td width='30%'> Time </td>        <td style='text-align: left; padding-left: 10px;'> 10:47pm </td>     </tr>     <tr>        <td> Case/Incident </td>        <td style='text-align: left; padding-left: 10px;'> CVL075642 </td>     </tr>     <tr>        <td> Location </td>        <td style='text-align: left; padding-left: 10px;'> 500 Flower St </td>     </tr>     <tr>        <td width='30%'> Summary </td>        <td style='text-align: left; padding-left: 10px;'>Fire</td>     </tr>    </table></div></td></tr></table></div><div class='col-xs-12 col-sm-12  col-md-6  col-lg-6' style='padding-top: 40px;'><table id='flight_main_content' class='flight-table map_shadow' style='width:96%; height: 100%;' cellspacing='0' cellpadding='0'  align='center'> <tr style='height:75%'><td colspan='5'>     <div id='map-canvas-50102765' class='map-canvas' data-flightid='50102765' data-hash='e5d29815adb99739f43818ad856b321f' style='min-height: 300px; height:100%; width: 100%;'></div> </td></tr><tr><td><div id='flight_dtl_table_view'>    <table  style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr class='flight_header'>        <td width='12%'> Date </td>        <td width='10%'> Time </td>        <td width='30%'> Location </td>     </tr>     <tr class=flight_info>        <td> 7-31-26 </td>        <td> 8:02pm </td>        <td> 330 Moss St </td>     </tr>    </table></div><div id='flight_dtl_record_view'>    <table class='record-view' style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr>        <td width='30%'> Date </td>        <td width='70%' style='text-align: left; padding-left: 10px;'> 7-31-26 </td>     </tr>     <tr>        <td width='30%'> Time </td>        <td style='text-align: left; padding-left: 10px;'> 8:02pm </td>     </tr>     <tr>        <td> Location </td>        <td style='text-align: left; padding-left: 10px;'> 330 Moss St </td>     </tr>    </table></div></td></tr></table></div></div><div class='row  center-lg center-sm center-md center-xs'><div class='col-xs-12 col-sm-12  col-md-6  col-lg-6' style='padding-top: 40px;'><table id='flight_main_content' class='flight-table map_shadow' style='width:96%; height: 100%;' cellspacing='0' cellpadding='0'  align='center'> <tr style='height:75%'><td colspan='5'>     <div id='map-canvas-50100326' class='map-canvas' data-flightid='50100326' data-hash='3040957fdfb4eaa0963ba7c1f3a6dc60' style='min-height: 300px; height:100%; width: 100%;'></div> </td></tr><tr><td><div id='flight_dtl_table_view'>    <table  style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr class='flight_header'>        <td width='12%'> Date </td>        <td width='10%'> Time </td>        <td width='15%'> Case/Incident </td>        <td width='30%'> Location </td>        <td width='33%'> Summary </td>     </tr>     <tr class=flight_info>        <td> 7-31-26 </td>        <td> 7:44pm </td>        <td> CVL075597 </td>        <td> 300 Park Wy </td>        <td style='text-align: left; padding-left: 10px;'>Disorderly Persons</td>     </tr>    </table></div><div id='flight_dtl_record_view'>    <table class='record-view' style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr>        <td width='30%'> Date </td>        <td width='70%' style='text-align: left; padding-left: 10px;'> 7-31-26 </td>     </tr>     <tr>        <td width='30%'> Time </td>        <td style='text-align: left; padding-left: 10px;'> 7:44pm </td>     </tr>     <tr>        <td> Case/Incident </td>        <td style='text-align: left; padding-left: 10px;'> CVL075597 </td>     </tr>     <tr>        <td> Location </td>        <td style='text-align: left; padding-left: 10px;'> 300 Park Wy </td>     </tr>     <tr>        <td width='30%'> Summary </td>        <td style='text-align: left; padding-left: 10px;'>Disorderly Persons</td>     </tr>    </table></div></td></tr></table></div><div class='col-xs-12 col-sm-12  col-md-6  col-lg-6' style='padding-top: 40px;'><table id='flight_main_content' class='flight-table map_shadow' style='width:96%; height: 100%;' cellspacing='0' cellpadding='0'  align='center'> <tr style='height:75%'><td colspan='5'>     <div id='map-canvas-50100252' class='map-canvas' data-flightid='50100252' data-hash='609f8ec5390ed4a64a098bb22b2564e1' style='min-height: 300px; height:100%; width: 100%;'></div> </td></tr><tr><td><div id='flight_dtl_table_view'>    <table  style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr class='flight_header'>        <td width='12%'> Date </td>        <td width='10%'> Time </td>        <td width='15%'> Case/Incident </td>        <td width='30%'> Location </td>        <td width='33%'> Summary </td>     </tr>     <tr class=flight_info>        <td> 7-31-26 </td>        <td> 6:51pm </td>        <td> CVL075577 </td>        <td> 100 Landis Ave </td>        <td style='text-align: left; padding-left: 10px;'>Threats</td>     </tr>    </table></div><div id='flight_dtl_record_view'>    <table class='record-view' style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr>        <td width='30%'> Date </td>        <td width='70%' style='text-align: left; padding-left: 10px;'> 7-31-26 </td>     </tr>     <tr>        <td width='30%'> Time </td>        <td style='text-align: left; padding-left: 10px;'> 6:51pm </td>     </tr>     <tr>        <td> Case/Incident </td>        <td style='text-align: left; padding-left: 10px;'> CVL075577 </td>     </tr>     <tr>        <td> Location </td>        <td style='text-align: left; padding-left: 10px;'> 100 Landis Ave </td>     </tr>     <tr>        <td width='30%'> Summary </td>        <td style='text-align: left; padding-left: 10px;'>Threats</td>     </tr>    </table></div></td></tr></table></div></div><div class='row  center-lg center-sm center-md center-xs'><div class='col-xs-12 col-sm-12  col-md-6  col-lg-6' style='padding-top: 40px;'><table id='flight_main_content' class='flight-table map_shadow' style='width:96%; height: 100%;' cellspacing='0' cellpadding='0'  align='center'> <tr style='height:75%'><td colspan='5'>     <div id='map-canvas-50102766' class='map-canvas' data-flightid='50102766' data-hash='69277c77ce7d7ceabd08d2abb988b9af' style='min-height: 300px; height:100%; width: 100%;'></div> </td></tr><tr><td><div id='flight_dtl_table_view'>    <table  style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr class='flight_header'>        <td width='12%'> Date </td>        <td width='10%'> Time </td>        <td width='15%'> Case/Incident </td>        <td width='30%'> Location </td>        <td width='33%'> Summary </td>     </tr>     <tr class=flight_info>        <td> 7-31-26 </td>        <td> 6:08pm </td>        <td> CVL075520 </td>        <td> 200 Jamul Ave </td>        <td style='text-align: left; padding-left: 10px;'>Disturbance</td>     </tr>    </table></div><div id='flight_dtl_record_view'>    <table class='record-view' style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr>        <td width='30%'> Date </td>        <td width='70%' style='text-align: left; padding-left: 10px;'> 7-31-26 </td>     </tr>     <tr>        <td width='30%'> Time </td>        <td style='text-align: left; padding-left: 10px;'> 6:08pm </td>     </tr>     <tr>        <td> Case/Incident </td>        <td style='text-align: left; padding-left: 10px;'> CVL075520 </td>     </tr>     <tr>        <td> Location </td>        <td style='text-align: left; padding-left: 10px;'> 200 Jamul Ave </td>     </tr>     <tr>        <td width='30%'> Summary </td>        <td style='text-align: left; padding-left: 10px;'>Disturbance</td>     </tr>    </table></div></td></tr></table></div><div class='col-xs-12 col-sm-12  col-md-6  col-lg-6' style='padding-top: 40px;'><table id='flight_main_content' class='flight-table map_shadow' style='width:96%; height: 100%;' cellspacing='0' cellpadding='0'  align='center'> <tr style='height:75%'><td colspan='5'>     <div id='map-canvas-50099456' class='map-canvas' data-flightid='50099456' data-hash='e5c2bfe162e67f6a048f83ba81bf925a' style='min-height: 300px; height:100%; width: 100%;'></div> </td></tr><tr><td><div id='flight_dtl_table_view'>    <table  style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr class='flight_header'>        <td width='12%'> Date </td>        <td width='10%'> Time </td>        <td width='15%'> Case/Incident </td>        <td width='30%'> Location </td>        <td width='33%'> Summary </td>     </tr>     <tr class=flight_info>        <td> 7-31-26 </td>        <td> 5:59pm </td>        <td> CVL075548 </td>        <td> 400 F St </td>        <td style='text-align: left; padding-left: 10px;'>Mental Health Evaluation</td>     </tr>    </table></div><div id='flight_dtl_record_view'>    <table class='record-view' style='height: 100%;' cellspacing='0' cellpadding='0'  align='center'>     <tr>        <td width='30%'> Date </td>        <td width='70%' style='text-align: left; padding-left: 10px;'> 7-31-26 </td>     </tr>     <tr>        <td width='30%'> Time </td>        <td style='text-align: left; padding-left: 10px;'> 5:59pm </td>     </tr>     <tr>        <td> Case/Incident </td>        <td style='text-align: left; padding-left: 10px;'> CVL075548 </td>     </tr>     <tr>        <td> Location </td>        <td style='text-align: left; padding-left: 10px;'> 400 F St </td>     </tr>     <tr>        <td width='30%'> Summary </td>        <td style='text-align: left; padding-left: 10px;'>Mental Health Evaluation</td>     </tr>    </table></div></td></tr></table></div></div></td></tr>	                            <tr>
+	                                <td colspan="2">
+											                                        <table class='pagination-table' width='80%' style='height: 50px; margin-top: 50px;' cellspacing='0' border="0" cellpadding='2' align="center">
+	                                            <tr>
+	                                                <td width="30%" align='center'>
+	                                                	<NOBR>
+	                                                    <span id="prev_long_text" class="pagination-item pagination-prev-btn disabled-item" data-prevpage="0"><i class="fa fa-chevron-left"></i> Previous page</span>
+	                                                    <span id="prev_short_text" class="pagination-item pagination-prev-btn disabled-item" data-prevpage="0"><i class="fa fa-chevron-left"></i> Prev</span>
+	                                                	</NOBR>
+	                                                </td>
+	                                                <td width="40%" align='center'>
+	                                                    <span id="page_long_text" class="pagination-item  pagination-page-btn">Showing 1 - 6 from 339 flights</span>
+	                                                    <span id="page_short_text"  class="pagination-item  pagination-page-btn">Showing 1 - 6<br>from 339 flights</span>
+	                                                </td>
+	                                                <td  width="30%" align='center'>
+	                                                	<NOBR>
+	                                                    <span id="next_long_text" class="pagination-item  pagination-next-btn " data-nextpage="2">Next page <i class="fa fa-chevron-right"></i> </span>
+	                                                    <span id="next_short_text" class="pagination-item  pagination-next-btn " data-nextpage="2">Next <i class="fa fa-chevron-right"></i> </span>
+	                                                    </NOBR>
+	                                                </td>
+	                                            </tr>
+	                                            	                                        </table>
+											                                </td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                    	                    <div id=bottom_help>
+	                    	All Chula Vista Police Department public flights will show up on this page 2 hours after taking place.<BR>The addresses and flight paths do not accurately represent the specific locations of the incidents.	                    </div>
+	                                                        </div>
+            </div>
+            <div id='row_bottom_footer' style='/*padding-left:270px;*/ flex: 1 1 auto;display:flex;' >
+                <div id='left_panel_bottom' class="left_panel_class" ></div>
+                <div style='flex: 2 1 auto;'>
+                    <BR><BR><BR><BR>
+<CENTER>
+	<div  id='footer_div'>
+	<span >
+		<font class=midget>
+			Copyright &copy; 2015-2026 AirData UAV, Inc. All Rights Reserved.&nbsp;&nbsp;&nbsp;<a href="https://airdata.com/privacy-policy" target="_blank">Privacy Policy</a>&nbsp;&nbsp;&nbsp;<a href="https://airdata.com/terms-of-service" target="_blank">Terms of Use</a>
+		</font>
+				<SCRIPT>
+			$(document).ready(function(){
+				$("#social_facebook").css("background-image", "url('/images/sprite/facebook-dark.png')"); 
+				$("#social_twitter").css("background-image", "url('/images/sprite/twitter-dark.png')"); 
+				$("#social_instagram").css("background-image", "url('/images/sprite/instagram-dark.png')"); 
+				$("#social_linkedin").css("background-image", "url('/images/sprite/linkedin-dark.png')"); 
+			});
+		</SCRIPT>
+		<STYLE>
+			.socialdiv {
+				width:29px;
+				height:29px;
+				background-size: 29px 29px !important;
+				margin-right:16px;
+				margin-left:16px;
+				margin-top:9px;
+			}
+			#social_facebook:hover { background: url("/images/sprite/facebook-light.png") no-repeat !important; background-size: 29px 29px !important;	}
+			#social_twitter:hover { background: url("/images/sprite/twitter-light.png") no-repeat !important; background-size: 29px 29px !important;	}
+			#social_instagram:hover { background: url("/images/sprite/instagram-light.png") no-repeat !important; background-size: 29px 29px !important;	}
+			#social_linkedin:hover { background: url("/images/sprite/linkedin-light.png") no-repeat !important; background-size: 29px 29px !important;	}
+			
+			.cleanimagelink:hover{
+				background-color:transparent;
+			}
+			.socialnav li {
+				margin-left: 12px;
+				margin-right: 12px;
+			}
+			.socialnav li a {
+				display: block;
+				width: 36px;
+				height: 36px;
+				background: url("/images/sprite-social-blue.svg") 0 0 no-repeat;
+				text-indent: -9999px;
+				transform: scale(0.8);
+			}
+		    .socialnav li a.icon-facebook {
+		      background-position-x: 0; }
+		    .socialnav li a.icon-linkedin {
+		      background-position-x: -36px; }
+		    .socialnav li a.icon-twitter {
+		      background-position-x: -72px; }
+		    .socialnav li a.icon-instagram {
+		      background-position-x: -108px; }
+		    .socialnav li a:hover {
+		      background-position-y: -36px; }
+		    .socialnav li a.icon-facebookdark {
+		      background-position-x: 0;
+		      background-position-y: -36px;}
+		    .socialnav li a.icon-linkedindark {
+		      background-position-x: -36px;
+		      background-position-y: -36px; }
+		    .socialnav li a.icon-twitterdark {
+		      background-position-x: -72px;
+		      background-position-y: -36px; }
+		    .socialnav li a.icon-instagramdark {
+		      background-position-x: -108px;
+		      background-position-y: -36px; }
+		    .socialnav li a.icon-facebookdark:hover {
+		      background-position-y: 0px; }
+		    .socialnav li a.icon-linkedindark:hover {
+		      background-position-y: 0px; }
+		    .socialnav li a.icon-twitterdark:hover {
+		      background-position-y: 0px; }
+		    .socialnav li a.icon-instagramdark:hover {
+		      background-position-y: 0px; }
+		    .socialUL {
+		    	margin: 0;
+				list-style-type: none;
+				
+				/*align-items: center;
+				justify-content: center; */
+				padding:0;
+				padding-top: 8px;
+		    }
+		    .noOutline{
+		    	outline: 0;
+		    }
+		</STYLE>
+		<table cellspacing=0 cellpadding=0 border=0>
+			<tr>
+			<td><a href="https://www.facebook.com/AirdataUAV/" target="_blank" class="noOutline cleanimagelink">
+				<div id=social_facebook class=socialdiv style='background: url("/images/sprite/facebook-light.png") no-repeat;' ></div>
+			</a></td>
+			<td><a href="https://twitter.com/AirdataUAV" target="_blank" class="noOutline cleanimagelink">
+				<div id=social_twitter class=socialdiv style='background: url("/images/sprite/twitter-light.png") no-repeat;' ></div>
+			</a></td>
+			<td><a href="https://www.instagram.com/airdatauav/" target="_blank" class="noOutline cleanimagelink">
+				<div id=social_instagram class=socialdiv style='background: url("/images/sprite/instagram-light.png") no-repeat;' ></div>
+			</a></td>
+			<td><a href="https://www.linkedin.com/company/airdatauav" target="_blank" class="noOutline cleanimagelink">
+				<div id=social_linkedin class=socialdiv style='background: url("/images/sprite/linkedin-light.png") no-repeat;' ></div>
+			</a></td>
+			</tr>
+		</table>
+		
+			</span>
+	</div>
+</center>
+<BR>&nbsp;
+                                    </div>
+            </div>
+        </div>
+        <script>
+        	        	var globalMap;
+        	var globalMapLoaded = 0 ;
+        	var globalMapReadyToAttach = 0 ;
+        	var globalKMLLayer;
+
+            var infoWindow,map,heatmap,makerCluster,markers,bounds,heatmapData,labels,data,center,zoom,previous_zoom,max_zoom;
+            var controlDivBack,ControlUIBack,ControlUIBackContainer,controlDivHeat,ControlUIHeat,ControlUIHeatContainer,controlDivCluster,ControlUICluster,ControlUIClusterContainer;
+            var refreshFrequency=1000;
+            var fullscreen=false;
+            var fullscreen_lauched_zoom_fix=0;
+            var zoom_center=[];
+            var cluster_selected = 1;
+            var autorefresh_selected = 0;
+            var mapMode = 'individual';
+            
+            var global_input_listener;
+            function codeAddress(address, geocoder, resultsMap) {
+    geocoder.geocode({
+        'address': address
+    }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+        	resultsMap.setCenter(results[0].geometry.location);
+            globalManualMapMarker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location
+            });
+            resultsMap.setZoom(16);
+            resultsMap.setMapTypeId('hybrid');
+        } else {
+			var latlng = new google.maps.LatLng( 0, 0 );
+        	resultsMap.setCenter(latlng);
+            resultsMap.setZoom(1);
+        }
+    });
+}
+
+function codeLatLong(lati, long, geocoder, resultsMap) {
+	var latlng = new google.maps.LatLng( lati, long );
+	resultsMap.setCenter(latlng);
+	resultsMap.setZoom(16);
+    globalManualMapMarker = new google.maps.Marker({
+    	map: resultsMap,
+    	position: latlng 
+    });
+    resultsMap.setMapTypeId('hybrid');
+}
+
+function debugMessageGoogle(msg,bggcolor){
+	return;
+	if(bggcolor === undefined) { bggcolor = "red"; }
+	$('body').append("<div style='position:absolute;top:250px;left:20px;background-color:"+bggcolor+";width:200px'>"+msg+"<BR><BR><BR><BR><BR><BR><BR><BR>&nbsp;</div");
+	console.log(msg);
+}
+	var mapIsIdle = 0;
+	var maxZoomFromService=0;
+	var mapRendered=0;
+	
+	var mapZoomIn;
+	var ZoomToCurrentAttempt;
+	var ZoomToCurrentAttemptCounter=0;
+	var preventRepeatingMaxZoomTests=0;
+
+	var loadKmlLayerGlobal = function(src, mapParam) {
+		globalKMLLayer = new google.maps.KmlLayer(src, {
+			suppressInfoWindows: true,
+			preserveViewport: false,
+			map: mapParam
+		});
+		google.maps.event.addListener(globalKMLLayer, 'click', function(event) {
+			var content = event.featureData.infoWindowHtml;
+			var popup = document.getElementById('capture');
+			if (popup) popup.innerHTML = content;
+		});
+	}
+
+	var requestMapCounter=0;
+		var requestMap = function(divName,kml_src,lat,long,address,country){
+			if(!jQuery.isReady){
+				if(requestMapCounter<10){
+					requestMapCounter++;
+										window.setTimeout(function () {
+						requestMap(divName,kml_src,lat,long,address,country);
+					},50);
+					return;
+								}
+						}
+			requestMapCounter=0;
+
+	        if(typeof globalGeocoder === 'undefined' || !globalGeocoder){
+								globalGeocoder= new google.maps.Geocoder();
+						}
+			if(typeof globalMaxZoomService === 'undefined' || !globalMaxZoomService){
+								globalMaxZoomService= new google.maps.MaxZoomService();
+						}
+			
+						
+			if(typeof globalMapReadyToAttach !== 'undefined' && globalMapReadyToAttach){
+				if(kml_src){
+					$('#debugDiv').append("<p>About to load KML layer#171   perf:"+performance.now()+"</p>");
+					loadKmlLayerGlobal(kml_src, globalMap);
+					$('#debugDiv').append("<p>Done loading KML layer#173   perf:"+performance.now()+"</p>");
+				}
+				if(typeof globalPendingTerrainKml !== 'undefined' && globalPendingTerrainKml){
+					globalTerrainKMLLayer = new google.maps.KmlLayer(globalPendingTerrainKml, {
+						suppressInfoWindows: true,
+						preserveViewport: true,
+						map: globalMap
+					});
+					// Re-apply terrain KML after initial load to work around
+					// Google Maps KML renderer sometimes returning unstyled on first load
+					google.maps.event.addListenerOnce(globalTerrainKMLLayer, 'status_changed', function() {
+						setTimeout(function() {
+							if (globalTerrainKMLLayer) {
+								globalTerrainKMLLayer.setMap(null);
+								globalTerrainKMLLayer.setMap(globalMap);
+							}
+						}, 500);
+					});
+					globalPendingTerrainKml = null;
+				}
+								loadMapIfExists();
+			} else {
+				globalMapLoaded=1;
+								var gestureHandlingVar = "greedy";
+				if(typeof mobileappJS !== "undefined" && mobileappJS) {
+					gestureHandlingVar = "cooperative";
+				}
+								$('#debugDiv').append("<p>About to initialize globalMap divName:"+divName+"  perf:"+performance.now()+"</p>");
+
+				globalMap = new google.maps.Map(document.getElementById(divName), {
+					zoom: 15,
+					mapTypeId: google.maps.MapTypeId.SATELLITE,
+					rotateControl: true,
+					gestureHandling: gestureHandlingVar,
+					controlSize: 23
+				});
+				$('#debugDiv').append("<p>DONE  initialize globalMap   perf:"+performance.now()+"</p>");
+				if(kml_src){
+					$('#debugDiv').append("<p>loading KML#196   perf:"+performance.now()+"</p>");
+					loadKmlLayerGlobal(kml_src, globalMap);
+					$('#debugDiv').append("<p>DONE loading KML#198  google.maps.version: "+google.maps.version+" perf:"+performance.now()+"</p>");
+				}
+				if(typeof globalPendingTerrainKml !== 'undefined' && globalPendingTerrainKml){
+					globalTerrainKMLLayer = new google.maps.KmlLayer(globalPendingTerrainKml, {
+						suppressInfoWindows: true,
+						preserveViewport: true,
+						map: globalMap
+					});
+					google.maps.event.addListenerOnce(globalTerrainKMLLayer, 'status_changed', function() {
+						setTimeout(function() {
+							if (globalTerrainKMLLayer) {
+								globalTerrainKMLLayer.setMap(null);
+								globalTerrainKMLLayer.setMap(globalMap);
+							}
+						}, 500);
+					});
+					globalPendingTerrainKml = null;
+				}
+			}
+
+			globalMap.setTilt(0);
+			if(!kml_src){
+				if(lat || long){
+					if(typeof globalGeocoder !== undefined) codeLatLong(lat, long , globalGeocoder,globalMap);
+				} else if(country) {
+					if(typeof globalGeocoder !== undefined) codeAddress(address + ", " + country, globalGeocoder, globalMap);
+				} else if(address) {
+					if(typeof globalGeocoder !== undefined) codeAddress(address, globalGeocoder, globalMap);
+				}
+			}
+			$('#debugDiv').append("<p>globalMap:"+globalMap+"   perf:"+performance.now()+"</p>");
+			google.maps.event.addListenerOnce(globalMap, 'idle', function(){
+												$('#debugDiv').append("<p>About to call zoom   perf:"+performance.now()+"</p>");
+				ZoomToCurrentAttempt(globalMap,0);
+			});
+			globalMap.addListener('zoom_changed', function() {
+				if(mapIsIdle){
+					$('#debugDiv').append("<p>Map is IDLE   perf:"+performance.now()+"</p>");
+					run_on_zoom_change(globalMap);
+					
+				}
+			});
+	}
+	
+	var zoomServiceLastTitle="";
+	var run_on_zoom_change = function(testMap){
+		var currentZoom = testMap.getZoom();
+		
+		if(document.title === zoomServiceLastTitle){
+						return;
+				}
+		zoomServiceLastTitle = document.title;
+		
+		
+				
+		
+				
+		window.setTimeout(function() {
+						if(mapIsIdle && !preventRepeatingMaxZoomTests){
+				var myCenter = testMap.getCenter();
+		        if (myCenter !== undefined) {
+			        					var newLat = Math.round(myCenter.lat()*10000)/10000;
+					var newLong = Math.round(myCenter.lng()*10000)/10000;
+					if(newLat!=90 && newLong!=0){
+						var newCenter = new google.maps.LatLng(newLat,newLong);
+			            globalMaxZoomService.getMaxZoomAtLatLng(newCenter,function(response) {
+			            	if(response.status === 'OK'){
+			            					            						                var maxZoomFromServiceTmp = (response.zoom);					                if(maxZoomFromServiceTmp && !isNaN(maxZoomFromServiceTmp) && maxZoomFromServiceTmp!=0){
+				                    maxZoomFromService = maxZoomFromServiceTmp;
+				                    globalCalledMaxZoomService=0;
+				                    var currentZoom = testMap.getZoom();
+				                    				                    if (currentZoom >= maxZoomFromService ) {						                        				                        preventRepeatingMaxZoomTests=1;
+				                        if(maxZoomFromService>0){
+				                        				                        		testMap.setZoom(maxZoomFromService);
+			                        	} else {
+			                        		if (typeof debugMessageGoogle === "function") { debugMessageGoogle("maxZoomFromService is 0, not calling setZoom");}
+			                        	}
+			                        	window.setTimeout(function() {
+			                        		preventRepeatingMaxZoomTests=0;
+			                        	},300);
+			                        	
+				                    				                    }
+				                				                }
+														}
+							globalCalledMaxZoomService=0;
+							//zoomServiceIsRunning=0;
+			            });
+										}
+		        		        }
+						}
+		},500);
+		
+	}
+	
+	ZoomToCurrentAttempt = function(testMap,zoomTo) {
+				zoomTo = typeof zoomTo === 'undefined' ? 0 : zoomTo;
+		ZoomToCurrentAttemptCounter++;
+		var zoom = testMap.getZoom();
+		var center=testMap.getCenter();
+		if( zoom === undefined || !zoom || center=== undefined || !center){
+						if(ZoomToCurrentAttemptCounter<31){
+				window.setTimeout(function() {
+					ZoomToCurrentAttempt(testMap,zoomTo);
+				},100);
+						}
+		} else {
+						mapIsIdle=1;
+			globalCalledMaxZoomService=1;
+			if(zoomTo){
+				if(zoomTo>0){
+					testMap.setZoom(zoomTo);
+				} else {
+										var currentZoom = testMap.getZoom();
+					var newZoom = currentZoom;
+					if(currentZoom>17) newZoom = 17;
+										testMap.setZoom(newZoom);
+				}
+			} else {
+				run_on_zoom_change(testMap);
+			}
+		}
+	}
+		
+	var requestMapCounterArray = new Array();
+	var globalMapReadyToAttachArray = new Array();
+	var globalMapLoadedArray = new Array();
+	var globalMapArray = new Array();
+	
+	var requestMultiMap = function(divName,kml_src,map_id){
+		if(!requestMapCounterArray[map_id]){
+			requestMapCounterArray[map_id]=0;
+		}
+		if(!jQuery.isReady){
+			if(requestMapCounterArray[map_id]<10){
+				requestMapCounterArray[map_id]++;
+								window.setTimeout(function () {
+					requestMultiMap(divName,kml_src,map_id);
+				},50);
+				return;
+						}
+				}
+		requestMapCounterArray[map_id]=0;
+
+		if(typeof globalMaxZoomService === 'undefined' || !globalMaxZoomService){
+						globalMaxZoomService= new google.maps.MaxZoomService();
+				}
+		
+				
+		if(globalMapReadyToAttachArray[map_id]){
+			if(kml_src){
+				loadKmlLayerGlobal(kml_src, globalMapArray[map_id]); //#-#
+			}
+									loadMapIfExists();							//#-#
+		} else {
+			globalMapLoadedArray[map_id]=1;
+						var gestureHandlingVar = "greedy";
+						//if(typeof mobileappJS !== "undefined" && mobileappJS) {
+				gestureHandlingVar = "cooperative";
+			//}
+												globalMapArray[map_id] = new google.maps.Map(document.getElementById(divName), {
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+mapTypeControl: false,
+				rotateControl: true,
+				gestureHandling: gestureHandlingVar,
+				controlSize: 23
+			});
+			if(kml_src){
+				//console.log("src: " + kml_src);
+				loadKmlLayerGlobal(kml_src, globalMapArray[map_id]);		//#-#
+			}
+					}
+			
+		globalMapArray[map_id].setTilt(0);
+		google.maps.event.addListenerOnce(globalMapArray[map_id], 'idle', function(){
+												//window.setTimeout(function() {
+				ZoomToCurrentAttempt(globalMapArray[map_id],(-1*map_id) );
+			//},200);
+		});
+		//globalMap.addListener('zoom_changed', function() {
+		//	if(mapIsIdle){
+		//		run_on_zoom_change(globalMap);
+		//		
+		//	}
+		//});
+	}
+	
+			var lockLargeButton=0;
+            $(document).ready(function() {
+            	                $('#large_map_btn').click(function() {
+                	if(lockLargeButton==0){
+	                	lockLargeButton=1;
+	                	$('#large_map_btn').html("Loading...");
+	                    var selMapMode = "individual";
+	                    if(mapMode === "individual"){
+	                        selMapMode = "large"
+	                    }
+	                    mapMode = selMapMode;
+	                    navigatePage('change_map',{'month':'72026'});
+	                    /*window.location.href="?month=72026&mapmode="+selMapMode; */
+	                }
+                });
+
+                $('.pagination-next-btn').click(function() {
+                    var pageNo = $(this).data("nextpage");
+                    navigatePage('pagination',{'month':'72026', 'pageno':pageNo});
+                    /*window.location.href="?month=72026&pageno="+pageNo;*/
+                });
+
+                $('.pagination-prev-btn').click(function() {
+                    var pageNo = $(this).data("prevpage");
+                    if(pageNo >0){
+                        navigatePage('pagination',{'month':'72026', 'pageno':pageNo});
+                        /*window.location.href="?month=72026&pageno="+pageNo;*/
+                    }
+                });
+
+                $('#search_location_button').click(function() {
+                	                	var suggestion_selected = $(".pac-item-selected").length > 0;
+                	var pac_input = document.getElementById('search_input');
+	                if (!suggestion_selected) { 
+	                    var simulated_downarrow = $.Event("keydown", {keyCode: 40, which: 40}); 
+	                    global_input_listener.apply(pac_input, [simulated_downarrow]); 
+	                }
+	                var simulated_enter = $.Event("keydown", {keyCode: 13, which: 13}); 
+	                global_input_listener.apply(pac_input, [simulated_enter]); 
+	                //orig_listener.apply(input, [event]);
+                    //executeSearch(skipGeoService=0);
+                });
+
+                $('#search_location_button_sm').click(function() {
+                    $('#filter_fields_form').toggle();
+                });
+
+
+                $('#address_radius').change(function() {
+                    var searchInputText = $("#search_input").val() ;
+                    if(searchInputText){
+                        executeSearch(skipGeoService=0);
+                    }
+                });
+                
+                $('.close-icon').click(function(){
+                	clearSearch();
+                });
+                
+                
+                	
+
+                /*$("#top-bar input").keypress(function(event) {
+                    if (event.which == 13) {
+                        executeSearch();
+                    }
+                });*/
+
+                /**
+                 * Address Auto complete function
+                 *
+                 */
+				
+                /* $("#search_input").autocomplete({
+                    source : function(request,response){
+                        var data = {type:'public_location', userid:'129926' ,keyword:$("#search_input").val()};
+                        $.ajax({
+                            url:"/autocomplete_data",
+                            data: data,
+                            success: function(data){
+                                response($.map(JSON.parse(data), function(item){
+                                    return {
+                                        label: item.address,
+                                        value: item
+                                    };
+                                }));
+                            }
+                        });
+                    },
+                    select: function(event, ui){
+                        event.preventDefault();
+                        $("#search_input").val(ui.item.label);
+                        // set longitude and latitude from autocomplete list
+                        var latitude = ui.item.value.latitude;
+                        var longitude = ui.item.value.longitude;
+                        $("#search_latitude").val(latitude);
+                        $("#search_longitude").val(longitude);
+
+                    },
+                    change: function(event,ui){
+                        if(ui.item==null){
+                            // if type search text which is not in autocomplete list, clear previous longitude and latitude value
+                            $("#search_latitude").val('');
+                            $("#search_longitude").val('');
+                        }
+                    },
+                    focus: function(event,ui) {
+                        event.preventDefault();
+                    },
+                    open: function (event, ui) {
+                        if (iOS()) {
+                            $('.ui-autocomplete').off('menufocus hover mouseover');
+                        }
+                    },
+                    response: function( event, ui ) {
+                        $("#search_latitude").val('');
+                        $("#search_longitude").val('');
+                    },
+                    minLength: 1
+                }).data("ui-autocomplete")._renderItem = function (ul, item) {
+
+                    return $("<li></li>")
+                        .addClass('ui-menu-item-address')
+                        .append("<span>" + item.label + "</span>")
+                        .data("ui-autocomplete-item", item)
+                        .appendTo(ul);
+                };
+                */
+                
+                
+
+                initialize = function() {
+                	
+                	                	var pac_input = document.getElementById('search_input');
+
+				    var selectFirstOnEnter = function(input) {  // store the original event binding function
+					    var _addEventListener = (input.addEventListener) ? input.addEventListener : input.attachEvent;
+					    function addEventListenerWrapper(type, listener) {  // Simulate a 'down arrow' keypress on hitting 'return' when no pac suggestion is selected, and then trigger the original listener.
+					        if (type == "keydown") { 
+					            global_input_listener = listener;
+					            listener = function(event) {
+					                var suggestion_selected = $(".pac-item-selected").length > 0;
+					                if (event.which == 13 && !suggestion_selected) { 
+					                    var simulated_downarrow = $.Event("keydown", {keyCode: 40, which: 40}); 
+					                    global_input_listener.apply(input, [simulated_downarrow]); 
+					                }
+					                global_input_listener.apply(input, [event]);
+					            };
+					        }
+					        _addEventListener.apply(input, [type, listener]); // add the modified listener
+					    }
+					    if (input.addEventListener) { 
+					        input.addEventListener = addEventListenerWrapper; 
+					    } else if (input.attachEvent) { 
+					        input.attachEvent = addEventListenerWrapper; 
+					    }
+					}
+					const defaultBounds = {south: 32.57,west: -117.12, north: 32.69,east: -116.90};
+					var autocomplete = new google.maps.places.Autocomplete(pac_input,{bounds: defaultBounds});
+					selectFirstOnEnter(pac_input);
+                	
+                	                    
+					google.maps.event.addListener(autocomplete, 'place_changed', function() {
+												var place = autocomplete.getPlace();
+						if(place.geometry){
+							var search_latitude = place.geometry.location.lat();
+							var search_longitude = place.geometry.location.lng();
+							if(search_latitude && search_longitude){
+								//console.log("place_changed] Searching: "+search_latitude+","+search_longitude);
+								$("#search_latitude").val(search_latitude);
+	                        	$("#search_longitude").val(search_longitude);
+	                        	executeSearch(skipGeoService=1);
+	                        }
+	                    	                    } 
+					});
+											
+					                                            var map_id_count=1;
+                        $(".map-canvas").each(function(){
+                            var flightHash = $(this).data('hash');
+                            var flightId = $(this).data('flightid');
+							                            var kml_src = 'http://app.airdata.com/kml?flight='+flightHash+'&maps=1&pointer=27&default_color=fff4c530&default_width=2&color_width=3&o=1';                 
+                                                        globalMapReadyToAttach = null;
+                            globalMap = null;
+                            globalKMLLayer = null
+							                            requestMultiMap('map-canvas-'+flightId,kml_src,map_id_count);
+                            map_id_count++;
+							                        });
+                        
+                        
+						
+                                    }
+						
+	if(!window.google || !window.google.maps){
+		var script = document.createElement('script');
+		script.type= 'text/javascript';
+									script.src = 'https://maps.googleapis.com/maps/api/js?v=quarterly&key=AIzaSyCiaf_45HFcHgIqKAszXLFmuXXCtQJ8jn0&libraries=visualization,places&callback=initialize';
+					document.body.appendChild(script);
+	}else{
+		initialize();
+	}
+
+                initBurgerMenu($("div.shy-menu"));
+            });
+
+            function executeSearch(skipGeoService){
+            	
+                //var latitude = $("#search_latitude").val();
+                //var longitude = $("#search_longitude").val();
+                var searchText = $("#search_input").val();
+                
+                var callGoogle = 1;
+                if(skipGeoService){
+                	                	callGoogle=0;
+                }
+                //if(latitude && longitude){
+                	                //	callGoogle=0;
+                //}
+                                
+                if(searchText && callGoogle){
+                    //findLocation($("#search_input").val(),function(){       // callback function after latitude, longitude setting
+                        navigatePage('search');
+                    //});
+                }else{
+                	                	if(!searchText){
+                		$("#search_longitude").val(0);
+                		$("#search_latitude").val(0);
+                	}
+                    navigatePage('search');
+                }
+            }
+
+            function initBurgerMenu(allMenus) {
+                allMenus.children(".shy-menu__hamburger").on("click", function() {
+
+                    var thisTrigger = jQuery(this),
+                        thisMenu = thisTrigger.parent(),
+                        thisPanel = thisTrigger.next();
+
+                    if (thisMenu.hasClass("is-open")) {
+
+                        thisMenu.removeClass("is-open");
+
+                        jQuery(document).off("click");
+                        thisPanel.off("click");
+
+                    } else {
+
+                        allMenus.removeClass("is-open");
+                        thisMenu.addClass("is-open");
+
+                        jQuery(document).on("click", function() {
+                            allMenus.removeClass("is-open");
+                        });
+                        thisPanel.on("click", function(e) {
+                            e.stopPropagation();
+                        });
+                    }
+
+                    return false;
+                });
+            }
+            /**
+             * check whether ios device or not
+             */
+            function iOS() {
+                var iDevices = [
+                    'iPad Simulator',
+                    'iPhone Simulator',
+                    'iPod Simulator',
+                    'iPad',
+                    'iPhone',
+                    'iPod'
+                ];
+
+                if (!!navigator.platform) {
+                    while (iDevices.length) {
+                        if (navigator.platform === iDevices.pop()){ return true; }
+                    }
+                }
+                return false;
+            }
+            /**
+             * Find location from google geocoder
+             * after finding location, call callback function
+             * @param addressText
+             * @param callback
+             */
+            function findLocation(addressText, callback){
+            	            	const defaultBounds = {south: 32.57,west: -117.12, north: 32.69,east: -116.90};
+                var geoCoder = new google.maps.Geocoder();
+                geoCoder.geocode({ 'address':addressText,bounds: defaultBounds }, function(result, status){
+                    if(status==google.maps.GeocoderStatus.OK){
+                    	var formatted = result[0].formatted_address;
+                    	$("#search_input").val(formatted);
+                        var latitude = result[0].geometry.location.lat();
+                        var longitude = result[0].geometry.location.lng();
+                        $("#search_latitude").val(latitude);
+                        $("#search_longitude").val(longitude);
+                        
+                        //console.log("Found lat: "+latitude + " address:"+ formatted);
+                        // after getting location info, call callback function
+                        if(callback) {callback();}
+                    }else{
+                    	console.log("Unable to find address:");
+                    	console.log(status);
+                    	console.log(result);
+                        alert('Unable to find address.');
+                    }
+                });
+            }
+
+            function navigatePage(action, parameters){
+                var longitude = $("#search_longitude").val();
+                var latitude = $("#search_latitude").val();
+                var address  = $("#search_input").val();
+                var radius = ($('#address_radius').val() >=0 ?$('#address_radius').val():"") ;
+
+                var searcParams = "&address="+address+"&lat="+latitude+"&long="+longitude+"&radius="+radius;
+
+                var url =  "/u/"+"cvpd";
+                if(action === "change_month" || action === "change_map"){
+                    url += "?month="+parameters.month+"&mapmode="+mapMode+searcParams;
+                }else if(action === "pagination"){
+                    url += "?month="+parameters.month+"&pageno="+parameters.pageno+searcParams;
+                }else if(action === "search"){
+                    url += "?mapmode="+mapMode+searcParams;
+                }
+                //console.log("going to: "+url);
+
+                window.location.href= url;
+                return false;
+            }
+						            function clearSearch(){
+            	$("#search_input").val("");
+            	var url =  "/u/"+"cvpd";
+                window.location.href= url;
+            }
+        </script>
+    </body>
+</html>

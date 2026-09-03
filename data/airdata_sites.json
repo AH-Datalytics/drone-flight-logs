@@ -1,0 +1,25 @@
+{
+ "note": "Public AirData flight-log portals, verified live 2026-09-02. Enumerated from Common Crawl and Wayback indexes of app.airdata.com/u/, plus leads from agency sites. This is a floor, not a complete list: AirData publishes no directory of public portals, so a portal is only findable if something on the open web links to it.",
+ "sites": [
+  { "agency_id": "anne-arundel-county-police-md", "slug": "annearundelpd", "display_name": "Anne Arundel County Police", "state": "MD", "timezone": "America/New_York" },
+  { "agency_id": "bothell-pd-wa", "slug": "bothellpd", "display_name": "Bothell Police", "state": "WA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "chico-pd-ca", "slug": "chicopd", "display_name": "Chico Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "chula-vista-pd-ca", "slug": "cvpd", "display_name": "Chula Vista Police", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "coachella-valley-rtic-ca", "slug": "cvrtic", "display_name": "Coachella Valley RTIC", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "elk-grove-pd-ca", "slug": "egpd", "display_name": "Elk Grove PD", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "everett-pd-wa", "slug": "everettpd", "display_name": "Everett Police", "state": "WA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "irvine-pd-ca", "slug": "irvinepd", "display_name": "Irvine PD", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "king-county-so-wa", "slug": "kcso", "display_name": "King County Sheriff's Office", "state": "WA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "la-port-police-ca", "slug": "lapp", "display_name": "Los Angeles Port Police", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "lancaster-pd-ca", "slug": "lpdviper", "display_name": "Lancaster Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "las-vegas-metro-pd-nv", "slug": "lvmpd", "display_name": "Las Vegas Metropolitan Police Department", "state": "NV", "timezone": "America/Los_Angeles" },
+  { "agency_id": "los-altos-pd-ca", "slug": "losaltospd", "display_name": "Los Altos PD", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "mankato-mn", "slug": "mankato", "display_name": "City of Mankato", "state": "MN", "timezone": "America/Chicago" },
+  { "agency_id": "paradise-pd-ca", "slug": "ppd", "display_name": "Paradise PD", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "sacramento-pd-ca", "slug": "spduas", "display_name": "Sacramento Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "snohomish-county-so-wa", "slug": "scso", "display_name": "Snohomish County Sheriff's Office", "state": "WA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "ventura-county-so-es-ca", "slug": "vcsoes", "display_name": "Ventura County Sheriff Emergency Services", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "west-palm-beach-pd-fl", "slug": "wpb", "display_name": "West Palm Beach PD", "state": "FL", "timezone": "America/New_York" },
+  { "agency_id": "westmont-pd-il", "slug": "vwpd", "display_name": "Westmont PD", "state": "IL", "timezone": "America/Chicago" }
+ ]
+}
