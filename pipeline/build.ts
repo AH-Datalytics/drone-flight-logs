@@ -35,6 +35,8 @@ export type SourceRef = {
   flight_count: number;
   first_flight: string | null;
   last_flight: string | null;
+  /** When this platform was last read for this agency. */
+  collected_utc: string | null;
 };
 
 export type SiteAgency = {
@@ -55,11 +57,14 @@ export type SiteAgency = {
   /** A coarse point for the map: where the agency operates, not where a drone went. */
   lat: number | null;
   lon: number | null;
+  /** The most recent collection across this agency's platforms. */
+  collected_utc: string | null;
   notes: string | null;
 };
 
 type Entry = Candidate & {
   source: string;
+  collectedUtc: string | null;
   displayName: string;
   timezone: string;
   orgType: OrgType;
@@ -113,9 +118,26 @@ function timezoneForState(state: string | null): string {
   return (state && TZ_BY_STATE[state]) || 'America/New_York';
 }
 
+type RawState = { agencies: Record<string, { last_run_utc?: string | null }> };
+
+/** Each collector records when it last read an agency; this reads that back. */
+function collectorTimes(source: 'flock' | 'airdata' | 'cape'): Record<string, string | null> {
+  const p = join(DATA, 'raw', source, '_state.json');
+  if (!existsSync(p)) return {};
+  try {
+    const st = readJson<RawState>(p);
+    return Object.fromEntries(Object.entries(st.agencies).map(([k, v]) => [k, v.last_run_utc ?? null]));
+  } catch {
+    return {};
+  }
+}
+
 /** Every published dashboard in the census, with how to read its flights. */
 export function collectEntries(): Entry[] {
   const entries: Entry[] = [];
+  const flockTimes = collectorTimes('flock');
+  const airTimes = collectorTimes('airdata');
+  const capeTimes = collectorTimes('cape');
 
   for (const a of readJson<{ agencies: any[] }>(join(DATA, 'registry.json')).agencies) {
     if (a.status === 'needs_review') continue;
@@ -123,6 +145,7 @@ export function collectEntries(): Entry[] {
       key: a.agency_id, name: a.display_name, state: a.state, source: a.source,
       displayName: a.display_name, timezone: a.timezone, orgType: a.org_type,
       officialUrl: a.official_url, notes: a.notes ?? null,
+      collectedUtc: a.last_pulled_utc ?? null,
       load: () => {
         const p = join(DATA, 'flights', `${a.agency_id}.json`);
         return existsSync(p) ? decodeFlightFile(readJson<FlightFile>(p)) : [];
@@ -136,6 +159,7 @@ export function collectEntries(): Entry[] {
       key: s.agency_id, name: s.display_name, state: s.state, source: 'flock_aerodome',
       displayName: titleCase(s.display_name), timezone: tz, orgType: orgTypeFor(s.display_name),
       officialUrl: s.url, notes: null,
+      collectedUtc: flockTimes[s.agency_id] ?? null,
       load: () => readJsonl<Parameters<typeof flockRecord>[2]>(join(DATA, 'raw', 'flock', `${s.agency_id}.jsonl`), 'flight_number')
         .map(f => flockRecord(s.agency_id, tz, f))
         .filter((r): r is FlightRecord => r !== null),
@@ -147,6 +171,7 @@ export function collectEntries(): Entry[] {
       key: s.agency_id, name: s.display_name, state: s.state, source: 'airdata',
       displayName: s.display_name, timezone: s.timezone, orgType: orgTypeFor(s.display_name),
       officialUrl: `https://app.airdata.com/u/${s.slug}`, notes: null,
+      collectedUtc: airTimes[s.agency_id] ?? null,
       load: () => readJsonl<AirDataFlight>(join(DATA, 'raw', 'airdata', `${s.agency_id}.jsonl`), 'flight_id')
         .map(f => airDataRecord(s.agency_id, s.timezone, f))
         .filter((r): r is FlightRecord => r !== null),
@@ -158,6 +183,7 @@ export function collectEntries(): Entry[] {
       key: s.agency_id, name: s.display_name, state: s.state, source: 'motorola_cape',
       displayName: s.display_name, timezone: s.timezone, orgType: orgTypeFor(s.display_name),
       officialUrl: `https://www.aerial.motorolasolutions.com/transparency/${s.slug}`, notes: null,
+      collectedUtc: capeTimes[s.agency_id] ?? null,
       load: () => readJsonl<CapeFlight>(join(DATA, 'raw', 'cape', `${s.agency_id}.jsonl`), 'id')
         .map(f => capeRecord(s.agency_id, s.timezone, f, localDate))
         .filter((r): r is FlightRecord => r !== null),
@@ -236,6 +262,7 @@ export function build(log: (m: string) => void = console.log): void {
       refs.push({
         source: entry.source, source_agency_id: entry.key, official_url: entry.officialUrl,
         flight_count: s.flight_count, first_flight: s.first_flight, last_flight: s.last_flight,
+        collected_utc: entry.collectedUtc,
       });
     }
 
@@ -269,6 +296,7 @@ export function build(log: (m: string) => void = console.log): void {
       overlap_count: merged.overlaps,
       lat: place?.lat ?? null,
       lon: place?.lon ?? null,
+      collected_utc: refs.map(r => r.collected_utc).filter(Boolean).sort().pop() ?? null,
       notes: group.map(e => e.notes).find(Boolean) ?? null,
     });
   }
@@ -277,8 +305,14 @@ export function build(log: (m: string) => void = console.log): void {
   const bySourceTotals: Record<string, number> = {};
   for (const a of agencies) for (const s of a.sources) bySourceTotals[s.source] = (bySourceTotals[s.source] ?? 0) + s.flight_count;
 
+  // The newest collection anywhere. The site says this rather than the Skydio
+  // manifest's date, which was a day stale the moment Flock and AirData ran on
+  // their own schedule.
+  const collectedUtc = agencies.map(a => a.collected_utc).filter(Boolean).sort().pop() ?? null;
+
   writeFileSync(join(SITE_DIR, 'agencies.json'), JSON.stringify({
     built_utc: new Date().toISOString(),
+    collected_utc: collectedUtc,
     agency_count: agencies.length,
     flight_count: agencies.reduce((t, a) => t + a.flight_count, 0),
     overlap_count: totalOverlaps,
@@ -294,6 +328,7 @@ export function build(log: (m: string) => void = console.log): void {
   for (const a of multi) {
     log(`    ${a.display_name}: ${a.sources.map(s => `${s.source} ${s.flight_count}`).join(', ')} -> ${a.flight_count} (${a.overlap_count} shared)`);
   }
+  log(`collected through ${collectedUtc ?? 'unknown'}`);
   log('per platform, before merging: ' + Object.entries(bySourceTotals).map(([k, v]) => `${k} ${v}`).join(', '));
 }
 

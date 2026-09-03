@@ -2,7 +2,7 @@ import './globals.css';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
-import { loadManifest } from '@/lib/data';
+import { collectedAt } from '@/lib/data';
 import { fmtDate } from '@/lib/format';
 
 // An engineering typeface pairing -- IBM Plex Sans for body/UI text, IBM Plex Mono for
@@ -14,7 +14,7 @@ const plexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600
 export const metadata: Metadata = { title: 'Police Drone Flight Logs', description: 'Published drone flight logs from police and public-safety agencies, by agency.' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const m = loadManifest();
+  const collected = collectedAt();
   return (
     <html lang="en" className={`${plexSans.variable} ${plexMono.variable}`}><body>
       <div className="wrap">
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <nav><Link href="/">Map</Link><Link href="/agencies">All agencies</Link><Link href="/about">About the data</Link></nav>
         </header>
         <main>{children}</main>
-        <footer className="footer">Collected {m.run_utc ? fmtDate(m.run_utc.slice(0, 10)) : 'n/a'}. A monthly snapshot, not a live feed. Agencies publish only the flights they choose to.</footer>
+        <footer className="footer">Collected {fmtDate(collected.toISOString().slice(0, 10))}. A monthly snapshot, not a live feed. Agencies publish only the flights they choose to.</footer>
       </div>
     </body></html>
   );

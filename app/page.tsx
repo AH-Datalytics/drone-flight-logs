@@ -2,12 +2,12 @@ import Link from 'next/link';
 import StatRow from '@/components/StatRow';
 import AgencyMap from '@/components/AgencyMap';
 import AgencySearch, { type SearchItem } from '@/components/AgencySearch';
-import { publicAgencies, loadManifest } from '@/lib/data';
+import { publicAgencies, collectedAt } from '@/lib/data';
 import { stateOutlines, agencyDots, radiusFor, MAP_W, MAP_H } from '@/lib/map';
 import { fmtInt, fmtHours, fmtDate } from '@/lib/format';
 
 export default function Home() {
-  const m = loadManifest();
+  const collected = collectedAt();
   const agencies = publicAgencies();
 
   // Projected on the server: the browser gets path strings and dot positions,
@@ -42,7 +42,7 @@ export default function Home() {
         { label: 'States', value: fmtInt(states) },
         { label: 'Distinct flights', value: fmtInt(totalFlights) },
         { label: 'Flight hours', value: fmtHours(totalHours) },
-        { label: 'Collected', value: m.run_utc ? fmtDate(m.run_utc.slice(0, 10)) : '—' },
+        { label: 'Collected', value: fmtDate(collected.toISOString().slice(0, 10)) },
       ]} />
 
       <AgencySearch items={items} />

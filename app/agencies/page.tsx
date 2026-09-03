@@ -1,14 +1,13 @@
 import Link from 'next/link';
 import AgencyTable from '@/components/AgencyTable';
-import { publicAgencies, loadManifest } from '@/lib/data';
+import { publicAgencies, collectedAt } from '@/lib/data';
 import { daysSince, fmtInt } from '@/lib/format';
 import type { Row } from '@/lib/table';
 
 export const metadata = { title: 'All agencies — Police Drone Flight Logs' };
 
 export default function AllAgencies() {
-  const m = loadManifest();
-  const now = m.run_utc ? new Date(m.run_utc) : new Date();
+  const now = collectedAt();
   const rows: Row[] = publicAgencies().map(a => ({
     agency_id: a.agency_id, display_name: a.display_name, state: a.state, org_type: a.org_type,
     flight_count: a.flight_count, total_hours: a.total_hours,

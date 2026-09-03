@@ -12,6 +12,7 @@ const SITE = join(DATA, 'site');
 
 export type SiteData = {
   built_utc: string;
+  collected_utc: string | null;
   agency_count: number;
   flight_count: number;
   overlap_count: number;
@@ -27,6 +28,20 @@ export function loadSite(): SiteData {
 }
 
 export function loadManifest(): Manifest { return JSON.parse(readFileSync(join(DATA, 'manifest.json'), 'utf8')); }
+
+/**
+ * When the data was last collected, across every source.
+ *
+ * Not the Skydio manifest's timestamp, which the site used to show: the five
+ * collectors run on their own schedules, so that date was already a day behind
+ * Flock and AirData by the time a refresh finished.
+ */
+export function collectedAt(): Date {
+  const site = loadSite();
+  if (site.collected_utc) return new Date(site.collected_utc);
+  const m = loadManifest();
+  return m.run_utc ? new Date(m.run_utc) : new Date();
+}
 
 const suppressed = new Map<string, string | null>();
 /** Memoised: reads each agency's flight file once per build, not once per page. */

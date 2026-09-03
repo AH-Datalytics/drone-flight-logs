@@ -1,11 +1,11 @@
-import { publicAgencies, loadManifest, loadSite, suppressedAgencies, collectedAgencies } from '@/lib/data';
+import { publicAgencies, collectedAt, loadSite, suppressedAgencies } from '@/lib/data';
 import { fmtDate, fmtInt } from '@/lib/format';
 import StatRow from '@/components/StatRow';
 
 export const metadata = { title: 'About the data — Police Drone Flight Logs' };
 
 export default function About() {
-  const m = loadManifest();
+  const collected = collectedAt();
   const served = publicAgencies();
   const site = loadSite();
   const hidden = suppressedAgencies();
@@ -33,7 +33,7 @@ export default function About() {
         { label: 'Flight hours', value: fmtInt(Math.round(hours)) },
         { label: 'Earliest flight', value: fmtDate(firsts[0]) },
         { label: 'Latest flight', value: fmtDate(lasts[lasts.length - 1]) },
-        { label: 'Data as of', value: fmtDate(m.run_utc?.slice(0, 10)) },
+        { label: 'Collected', value: fmtDate(collected.toISOString().slice(0, 10)) },
       ]} />
 
       <h3>Where it comes from</h3>

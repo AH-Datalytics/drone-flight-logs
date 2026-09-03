@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getAgency, publicAgencies, loadManifest, loadFlights } from '@/lib/data';
+import { getAgency, publicAgencies, collectedAt, loadFlights } from '@/lib/data';
 import { fmtDate, fmtInt } from '@/lib/format';
 import { monthly, durationBins, purposeTop, eventTop, eventRecords, durationCount, stats, heatmapGrids, PURPOSE_OPTION_CAP, MIN_EVENTS_TO_CHART, MIN_DURATIONS_TO_CHART } from '@/lib/aggregate';
 import StatusBadge from '@/components/StatusBadge';
@@ -23,7 +23,8 @@ const SOURCE: Record<string, { name: string; note: string }> = {
 export default async function AgencyPage({ params }: { params: Promise<{ agency_id: string }> }) {
   const { agency_id } = await params;
   const a = getAgency(agency_id); if (!a) notFound();
-  const m = loadManifest(); const now = m.run_utc ? new Date(m.run_utc) : new Date();
+  // This agency's own collection date, which differs by platform.
+  const now = a.collected_utc ? new Date(a.collected_utc) : collectedAt();
 
   // Compute the unfiltered view on the server so the page paints complete on first
   // load. The client component refetches the records for filtering and for the flight
@@ -43,6 +44,10 @@ export default async function AgencyPage({ params }: { params: Promise<{ agency_
     minEventsToChart: MIN_EVENTS_TO_CHART,
     durationCount: durationCount(recs),
     minDurationsToChart: MIN_DURATIONS_TO_CHART,
+    // The newest flights, rendered with the page. Enough to fill the table's
+    // first pages, so the common visit never downloads the full log — Chula
+    // Vista's is four megabytes.
+    previewFlights: [...recs].reverse().slice(0, 120),
     heat,
     anyTime,
     allCount: recs.length,
@@ -57,7 +62,7 @@ export default async function AgencyPage({ params }: { params: Promise<{ agency_
       <div className="agency-head">
         <div>
           <h2 style={{ marginBottom: 4 }}>{a.display_name}{a.state ? `, ${a.state}` : ''}</h2>
-          <div className="meta"><StatusBadge status={a.status} /> &nbsp; Data as of {fmtDate(m.run_utc?.slice(0, 10))}.</div>
+          <div className="meta"><StatusBadge status={a.status} /> &nbsp; Collected {fmtDate(now.toISOString().slice(0, 10))}.</div>
         </div>
         <a className="btn" href={a.official_url} target="_blank" rel="noopener noreferrer">View official flight log ↗</a>
       </div>

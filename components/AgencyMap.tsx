@@ -98,8 +98,9 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
           <span className="small">published flights</span>
         </div>
         <div className="small">
+          <span className="map-hint">Drag the map sideways to see the whole country. </span>
           Each dot is one agency, placed at the centre of the area it flies in, not at any individual
-          flight. Click a dot to open that agency.
+          flight. Tap a dot to open that agency.
           {offMap > 0 ? ` ${offMap} ${offMap === 1 ? 'agency is' : 'agencies are'} outside the map and appear only in the full list.` : ''}
         </div>
       </div>

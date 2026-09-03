@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { decodeFlightFile, type FlightFile } from '@/pipeline/flightfile';
 import type { FlightRecord } from '@/pipeline/schema';
 import { monthly, durationBins, purposeTop, stats, heatmapGrids, normalizePurpose, type Bar, type HeatGrids } from '@/lib/aggregate';
@@ -20,6 +20,7 @@ export type AgencyInitial = {
   minEventsToChart: number;
   durationCount: number;
   minDurationsToChart: number;
+  previewFlights: FlightRecord[];
   heat: HeatGrids | null;
   anyTime: boolean;
   allCount: number;
@@ -30,22 +31,47 @@ export type AgencyInitial = {
 
 export default function AgencyInteractive({ agencyId, timezone, nowIso, initial }: { agencyId: string; timezone: string; nowIso: string; initial: AgencyInitial }) {
   const [recs, setRecs] = useState<FlightRecord[] | null>(null);
+  const [loading, setLoading] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [purpose, setPurpose] = useState('all');
   const now = useMemo(() => new Date(nowIso), [nowIso]);
 
+  // A ref, not the loading flag: several handlers can fire in one tick — a
+  // click that both sorts and pages — and state has not committed yet, which
+  // let the four-megabyte log be requested three times over.
+  const requested = useRef<string | null>(null);
+
   useEffect(() => {
-    setRecs(null); setErr(null); setPurpose('all');
+    setRecs(null); setErr(null); setLoading(false); setPurpose('all');
+    requested.current = null;
+  }, [agencyId]);
+
+  /**
+   * Fetch the agency's full flight log, once, on the first action that actually
+   * needs it: filtering by purpose, searching, sorting, or paging past the
+   * flights sent with the page. Most visits read the charts and leave, and the
+   * largest logs are several megabytes.
+   */
+  const loadFull = useCallback(() => {
+    if (requested.current === agencyId) return;
+    requested.current = agencyId;
+    setLoading(true);
     fetch(`/data/flights/${agencyId}.json`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-      .then((f: FlightFile) => setRecs(decodeFlightFile(f)))
-      .catch(e => setErr(String(e)));
+      .then((f: FlightFile) => { setRecs(decodeFlightFile(f)); setErr(null); })
+      .catch(e => { setErr(String(e)); requested.current = null; })
+      .finally(() => setLoading(false));
   }, [agencyId]);
 
   const filtered = useMemo(() => {
     if (!recs) return null;
     return purpose === 'all' ? recs : recs.filter(r => normalizePurpose(r.purpose) === purpose);
   }, [recs, purpose]);
+
+  // What the table shows: the full log once it has arrived, otherwise the
+  // flights that came with the page.
+  const tableRecs = filtered ?? initial.previewFlights;
+  const tablePartial = recs === null;
 
   // Until the records arrive — and whenever nothing is filtered — render the server's
   // figures. They are identical to what the client would compute, so there is nothing
@@ -79,10 +105,10 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
         hiddenCount={initial.purposeOptionsHidden}
         total={initial.allCount}
         value={purpose}
-        onChange={setPurpose}
-        disabled={!recs && !err}
+        onChange={v => { loadFull(); setPurpose(v); }}
+        disabled={false}
       />
-      {err && <div className="note">Could not load flight data for filtering or the flight table: {err}. The figures below are the full unfiltered dataset.</div>}
+      {err && <div className="note">Could not load the full flight log: {err}. The figures and charts below are complete; the table shows only the most recent flights.</div>}
       <StatRow items={[
         { label: 'Published flights', value: fmtInt(view.stats.flights) },
         { label: 'Flight hours', value: fmtHours(view.stats.hours) },
@@ -129,9 +155,18 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
         </div>
       </div>
       <h3 style={{ marginTop: 32 }}>All published flights</h3>
-      {filtered
-        ? <FlightTable agencyId={agencyId} recs={filtered} allCount={initial.allCount} timezone={timezone} hasTimes={initial.anyTime} extraKeys={initial.extraKeys} csvNote={filtering ? 'all flights, unfiltered' : undefined} />
-        : <div className="small">Loading the flight table…</div>}
+      <FlightTable
+        agencyId={agencyId}
+        recs={tableRecs}
+        allCount={initial.allCount}
+        timezone={timezone}
+        hasTimes={initial.anyTime}
+        extraKeys={initial.extraKeys}
+        csvNote={filtering ? 'all flights, unfiltered' : undefined}
+        partial={tablePartial}
+        loading={loading}
+        onNeedFull={loadFull}
+      />
     </>
   );
 }
