@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseMonthCounts, parseFlights, PAGE_SIZE, type AirDataFlight } from './parse.js';
+import { acquireLock } from '../lock.js';
 
 /**
  * Collector for AirData public flight-log portals.
@@ -114,6 +115,7 @@ export type CollectOptions = {
 export async function collect(opts: CollectOptions = {}): Promise<void> {
   const log = opts.log ?? ((m: string) => console.log(m));
   mkdirSync(RAW_DIR, { recursive: true });
+  const release = acquireLock(RAW_DIR, 'airdata');
 
   const sites: AirDataSite[] = JSON.parse(readFileSync(join('data', 'airdata_sites.json'), 'utf8')).sites;
   const targets = opts.only?.length ? sites.filter(s => opts.only!.includes(s.agency_id) || opts.only!.includes(s.slug)) : sites;
@@ -188,6 +190,7 @@ export async function collect(opts: CollectOptions = {}): Promise<void> {
     saveState(state);
   }
 
+  release();
   log(`Done. ${ok} portals collected, ${failed} failed, ${totalAdded} new flights this run.`);
   const short = Object.values(state.agencies).flatMap(a =>
     Object.entries(a.months).filter(([, m]) => !m.complete).map(([mo, m]) => `${a.agency_id} ${mo} ${m.collected}/${m.published}`));

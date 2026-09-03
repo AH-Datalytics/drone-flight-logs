@@ -1,16 +1,41 @@
 {
- "built_utc": "2026-09-03T01:21:38.725Z",
+ "built_utc": "2026-09-03T11:47:09.656Z",
  "agency_count": 226,
- "flight_count": 152920,
- "overlap_count": 0,
+ "flight_count": 275541,
+ "overlap_count": 161,
  "by_source": {
+  "airdata": 57931,
   "skydio_arcgis": 102052,
-  "flock_aerodome": 29466,
-  "sfpd_datasf": 7481,
+  "flock_aerodome": 99492,
   "motorola_cape": 8746,
-  "airdata": 5175
+  "sfpd_datasf": 7481
  },
  "agencies": [
+  {
+   "agency_id": "chula-vista-pd-ca",
+   "display_name": "Chula Vista Police",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "chula-vista-pd-ca",
+     "official_url": "https://app.airdata.com/u/cvpd",
+     "flight_count": 24348,
+     "first_flight": "2021-04-01",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/cvpd",
+   "status": "ok",
+   "first_flight": "2021-04-01",
+   "last_flight": "2026-09-02",
+   "flight_count": 24348,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
   {
    "agency_id": "cincinnati-pd",
    "display_name": "Cincinnati Police Department",
@@ -34,6 +59,72 @@
    "flight_count": 18043,
    "total_hours": 3690.4,
    "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "las-vegas-metropolitan-pd",
+   "display_name": "Las Vegas Metropolitan Police Department",
+   "state": "NV",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "las-vegas-metro-pd-nv",
+     "official_url": "https://app.airdata.com/u/lvmpd",
+     "flight_count": 17954,
+     "first_flight": "2025-09-03",
+     "last_flight": "2026-07-31"
+    },
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "las-vegas-metropolitan-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
+     "flight_count": 3,
+     "first_flight": "2026-05-27",
+     "last_flight": "2026-05-27"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/lvmpd",
+   "status": "ok",
+   "first_flight": "2025-09-03",
+   "last_flight": "2026-07-31",
+   "flight_count": 17955,
+   "total_hours": 0.4,
+   "overlap_count": 2,
+   "notes": null
+  },
+  {
+   "agency_id": "elk-grove-pd-ca",
+   "display_name": "Elk Grove PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "elk-grove-pd-ca",
+     "official_url": "https://community.elk-grove.ca.us.aerodome.com/",
+     "flight_count": 10201,
+     "first_flight": "2024-04-20",
+     "last_flight": "2026-09-02"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "elk-grove-pd-ca",
+     "official_url": "https://app.airdata.com/u/egpd",
+     "flight_count": 2503,
+     "first_flight": "2023-01-01",
+     "last_flight": "2026-08-28"
+    }
+   ],
+   "official_url": "https://community.elk-grove.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2023-01-01",
+   "last_flight": "2026-09-02",
+   "flight_count": 12548,
+   "total_hours": 2378.3,
+   "overlap_count": 156,
    "notes": null
   },
   {
@@ -62,6 +153,39 @@
    "notes": null
   },
   {
+   "agency_id": "redondo-beach-pd-ca",
+   "display_name": "Redondo Beach Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "redondo-beach-pd-ca",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/redondobeachpd",
+     "flight_count": 5709,
+     "first_flight": "2020-04-07",
+     "last_flight": "2024-02-09"
+    },
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "redondo-beach-pd-ca",
+     "official_url": "https://community.rbpd.ca.us.aerodome.com/",
+     "flight_count": 4591,
+     "first_flight": "2023-11-02",
+     "last_flight": "2026-08-28"
+    }
+   ],
+   "official_url": "https://www.aerial.motorolasolutions.com/transparency/redondobeachpd",
+   "status": "ok",
+   "first_flight": "2020-04-07",
+   "last_flight": "2026-08-28",
+   "flight_count": 10300,
+   "total_hours": 3233.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "los-angeles-pd",
    "display_name": "Los Angeles Police Department",
    "state": "CA",
@@ -80,43 +204,18 @@
      "source": "flock_aerodome",
      "source_agency_id": "los-angeles-pd-ca",
      "official_url": "https://community.los-angeles.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
+     "flight_count": 84,
+     "first_flight": "2025-07-16",
+     "last_flight": "2025-08-01"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/lapd",
    "status": "ok",
-   "first_flight": "2025-07-29",
+   "first_flight": "2025-07-16",
    "last_flight": "2026-09-01",
-   "flight_count": 9685,
-   "total_hours": 1963.3,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "aurora-pd-co",
-   "display_name": "Aurora PD",
-   "state": "CO",
-   "org_type": "law_enforcement",
-   "timezone": "America/Denver",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "aurora-pd-co",
-     "official_url": "https://community.aurora.co.us.aerodome.com/",
-     "flight_count": 7873,
-     "first_flight": "2025-08-12",
-     "last_flight": "2026-08-01"
-    }
-   ],
-   "official_url": "https://community.aurora.co.us.aerodome.com/",
-   "status": "ok",
-   "first_flight": "2025-08-12",
-   "last_flight": "2026-08-01",
-   "flight_count": 7873,
-   "total_hours": 2058.7,
-   "overlap_count": 0,
+   "flight_count": 9767,
+   "total_hours": 1985.8,
+   "overlap_count": 2,
    "notes": null
   },
   {
@@ -170,35 +269,52 @@
    "notes": "timezone not detected automatically; set manually."
   },
   {
-   "agency_id": "redondo-beach-pd-ca",
-   "display_name": "Redondo Beach Police Department",
+   "agency_id": "azusa-pd-ca",
+   "display_name": "Azusa PD",
    "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
     {
-     "source": "motorola_cape",
-     "source_agency_id": "redondo-beach-pd-ca",
-     "official_url": "https://www.aerial.motorolasolutions.com/transparency/redondobeachpd",
-     "flight_count": 5709,
-     "first_flight": "2020-04-07",
-     "last_flight": "2024-02-09"
-    },
-    {
      "source": "flock_aerodome",
-     "source_agency_id": "redondo-beach-pd-ca",
-     "official_url": "https://community.rbpd.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
+     "source_agency_id": "azusa-pd-ca",
+     "official_url": "https://community.azusa.ca.us.aerodome.com/",
+     "flight_count": 5381,
+     "first_flight": "2023-12-18",
+     "last_flight": "2026-09-02"
     }
    ],
-   "official_url": "https://www.aerial.motorolasolutions.com/transparency/redondobeachpd",
-   "status": "stale",
-   "first_flight": "2020-04-07",
-   "last_flight": "2024-02-09",
-   "flight_count": 5709,
-   "total_hours": 1156.3,
+   "official_url": "https://community.azusa.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2023-12-18",
+   "last_flight": "2026-09-02",
+   "flight_count": 5381,
+   "total_hours": 2910.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "aurora-pd-co",
+   "display_name": "Aurora PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "aurora-pd-co",
+     "official_url": "https://community.aurora.co.us.aerodome.com/",
+     "flight_count": 4959,
+     "first_flight": "2025-08-12",
+     "last_flight": "2026-08-30"
+    }
+   ],
+   "official_url": "https://community.aurora.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-08-12",
+   "last_flight": "2026-08-30",
+   "flight_count": 4959,
+   "total_hours": 1281.3,
    "overlap_count": 0,
    "notes": null
   },
@@ -213,7 +329,7 @@
      "source": "flock_aerodome",
      "source_agency_id": "alhambra-pd-ca",
      "official_url": "https://community.alhambra.ca.us.aerodome.com/",
-     "flight_count": 4827,
+     "flight_count": 4829,
      "first_flight": "2024-06-20",
      "last_flight": "2026-09-02"
     }
@@ -222,8 +338,8 @@
    "status": "ok",
    "first_flight": "2024-06-20",
    "last_flight": "2026-09-02",
-   "flight_count": 4827,
-   "total_hours": 1215.3,
+   "flight_count": 4829,
+   "total_hours": 1215.7,
    "overlap_count": 0,
    "notes": null
   },
@@ -253,27 +369,27 @@
    "notes": null
   },
   {
-   "agency_id": "azusa-pd-ca",
-   "display_name": "Azusa PD",
+   "agency_id": "hawthorne-pd-ca",
+   "display_name": "Hawthorne PD",
    "state": "CA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
     {
      "source": "flock_aerodome",
-     "source_agency_id": "azusa-pd-ca",
-     "official_url": "https://community.azusa.ca.us.aerodome.com/",
-     "flight_count": 4446,
-     "first_flight": "2023-12-18",
-     "last_flight": "2026-05-01"
+     "source_agency_id": "hawthorne-pd-ca",
+     "official_url": "https://community.hawthorne.ca.us.aerodome.com/",
+     "flight_count": 4450,
+     "first_flight": "2024-04-15",
+     "last_flight": "2026-09-02"
     }
    ],
-   "official_url": "https://community.azusa.ca.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": "2023-12-18",
-   "last_flight": "2026-05-01",
-   "flight_count": 4446,
-   "total_hours": 2682.8,
+   "official_url": "https://community.hawthorne.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2024-04-15",
+   "last_flight": "2026-09-02",
+   "flight_count": 4450,
+   "total_hours": 1025.9,
    "overlap_count": 0,
    "notes": null
   },
@@ -378,6 +494,31 @@
    "notes": null
   },
   {
+   "agency_id": "mesa-pd-az",
+   "display_name": "Mesa PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "mesa-pd-az",
+     "official_url": "https://community.mesa.az.us.aerodome.com/",
+     "flight_count": 3280,
+     "first_flight": "2025-01-30",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.mesa.az.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-01-30",
+   "last_flight": "2026-09-02",
+   "flight_count": 3280,
+   "total_hours": 663.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "brookhaven-pd",
    "display_name": "Brookhaven Police Department",
    "state": "GA",
@@ -407,6 +548,31 @@
    "last_flight": "2026-09-01",
    "flight_count": 3268,
    "total_hours": 562.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "irvine-pd-ca",
+   "display_name": "Irvine PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "irvine-pd-ca",
+     "official_url": "https://app.airdata.com/u/irvinepd",
+     "flight_count": 3259,
+     "first_flight": "2025-01-01",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/irvinepd",
+   "status": "ok",
+   "first_flight": "2025-01-01",
+   "last_flight": "2026-09-01",
+   "flight_count": 3259,
+   "total_hours": 0,
    "overlap_count": 0,
    "notes": null
   },
@@ -461,6 +627,31 @@
    "notes": null
   },
   {
+   "agency_id": "las-cruces-pd-nm",
+   "display_name": "Las Cruces PD",
+   "state": "NM",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "las-cruces-pd-nm",
+     "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
+     "flight_count": 2978,
+     "first_flight": "2026-01-15",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-01-15",
+   "last_flight": "2026-09-02",
+   "flight_count": 2978,
+   "total_hours": 770.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "brea-pd-ca",
    "display_name": "Brea Police Department",
    "state": "CA",
@@ -482,6 +673,122 @@
    "last_flight": "2026-08-29",
    "flight_count": 2944,
    "total_hours": 529.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "scottsdale-pd-az",
+   "display_name": "Scottsdale PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "scottsdale-pd-az",
+     "official_url": "https://community.scottsdale.az.us.aerodome.com/",
+     "flight_count": 2936,
+     "first_flight": "2024-05-01",
+     "last_flight": "2026-06-26"
+    }
+   ],
+   "official_url": "https://community.scottsdale.az.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2024-05-01",
+   "last_flight": "2026-06-26",
+   "flight_count": 2936,
+   "total_hours": 765.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "toledo-pd-oh",
+   "display_name": "Toledo PD",
+   "state": "OH",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "toledo-pd-oh",
+     "official_url": "https://community.toledo.oh.us.aerodome.com/",
+     "flight_count": 2741,
+     "first_flight": "2025-09-15",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.toledo.oh.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-09-15",
+   "last_flight": "2026-09-02",
+   "flight_count": 2741,
+   "total_hours": 4915.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "everett-pd-wa",
+   "display_name": "Everett Police Department",
+   "state": "WA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "everett-pd-wa",
+     "official_url": "https://community.everett.wa.us.aerodome.com/",
+     "flight_count": 2523,
+     "first_flight": "2025-09-30",
+     "last_flight": "2026-09-02"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "everett-pd-wa",
+     "official_url": "https://app.airdata.com/u/everettpd",
+     "flight_count": 82,
+     "first_flight": "2022-07-13",
+     "last_flight": "2026-08-11"
+    },
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "everett-pd-wa",
+     "official_url": "https://www.arcgis.com/apps/dashboards/698d0105df8e45f7906b57ea1e596465",
+     "flight_count": 10,
+     "first_flight": "2026-08-03",
+     "last_flight": "2026-08-26"
+    }
+   ],
+   "official_url": "https://community.everett.wa.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2022-07-13",
+   "last_flight": "2026-09-02",
+   "flight_count": 2614,
+   "total_hours": 546.3,
+   "overlap_count": 1,
+   "notes": null
+  },
+  {
+   "agency_id": "prosper-pd-tx",
+   "display_name": "Prosper PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "prosper-pd-tx",
+     "official_url": "https://community.prosper.tx.us.aerodome.com/",
+     "flight_count": 2528,
+     "first_flight": "2025-02-11",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.prosper.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-02-11",
+   "last_flight": "2026-09-02",
+   "flight_count": 2528,
+   "total_hours": 589.3,
    "overlap_count": 0,
    "notes": null
   },
@@ -521,7 +828,7 @@
      "source": "airdata",
      "source_agency_id": "anne-arundel-county-police-md",
      "official_url": "https://app.airdata.com/u/annearundelpd",
-     "flight_count": 2266,
+     "flight_count": 2267,
      "first_flight": "2025-07-02",
      "last_flight": "2026-08-03"
     }
@@ -530,7 +837,57 @@
    "status": "ok",
    "first_flight": "2025-07-02",
    "last_flight": "2026-08-03",
-   "flight_count": 2266,
+   "flight_count": 2267,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "south-bend-pd-in",
+   "display_name": "South Bend PD",
+   "state": "IN",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "south-bend-pd-in",
+     "official_url": "https://community.south-bend.in.us.aerodome.com/",
+     "flight_count": 2232,
+     "first_flight": "2026-01-08",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.south-bend.in.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-01-08",
+   "last_flight": "2026-09-02",
+   "flight_count": 2232,
+   "total_hours": 510.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "coachella-valley-rtic-ca",
+   "display_name": "Coachella Valley RTIC",
+   "state": "CA",
+   "org_type": "corporate_utility",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "coachella-valley-rtic-ca",
+     "official_url": "https://app.airdata.com/u/cvrtic",
+     "flight_count": 2011,
+     "first_flight": "2025-09-04",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/cvrtic",
+   "status": "ok",
+   "first_flight": "2025-09-04",
+   "last_flight": "2026-09-02",
+   "flight_count": 2011,
    "total_hours": 0,
    "overlap_count": 0,
    "notes": null
@@ -561,6 +918,106 @@
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
+   "agency_id": "edinburg-pd-tx",
+   "display_name": "Edinburg PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "edinburg-pd-tx",
+     "official_url": "https://community.edinburg.tx.us.aerodome.com/",
+     "flight_count": 1927,
+     "first_flight": "2025-05-13",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.edinburg.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-05-13",
+   "last_flight": "2026-09-02",
+   "flight_count": 1927,
+   "total_hours": 424.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "peoria-pd-az",
+   "display_name": "Peoria PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "peoria-pd-az",
+     "official_url": "https://community.peoria.az.us.aerodome.com/",
+     "flight_count": 1919,
+     "first_flight": "2025-12-02",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.peoria.az.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-02",
+   "last_flight": "2026-09-02",
+   "flight_count": 1919,
+   "total_hours": 376.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "washoe-county-so-nv",
+   "display_name": "Washoe County SO",
+   "state": "NV",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "washoe-county-so-nv",
+     "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
+     "flight_count": 1910,
+     "first_flight": "2025-12-11",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-11",
+   "last_flight": "2026-09-02",
+   "flight_count": 1910,
+   "total_hours": 504.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "perth-amboy-nj",
+   "display_name": "Perth Amboy",
+   "state": "NJ",
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "perth-amboy-nj",
+     "official_url": "https://community.perth-amboy.nj.us.aerodome.com/",
+     "flight_count": 1907,
+     "first_flight": "2025-01-22",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.perth-amboy.nj.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-01-22",
+   "last_flight": "2026-09-02",
+   "flight_count": 1907,
+   "total_hours": 517.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "denver-pd",
    "display_name": "Denver Police Department",
    "state": "CO",
@@ -579,17 +1036,42 @@
      "source": "flock_aerodome",
      "source_agency_id": "denver-pd-co",
      "official_url": "https://community.denver.co.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
+     "flight_count": 58,
+     "first_flight": "2025-10-06",
+     "last_flight": "2025-10-21"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/denverpd",
    "status": "ok",
-   "first_flight": "2025-10-21",
+   "first_flight": "2025-10-06",
    "last_flight": "2026-09-01",
-   "flight_count": 1841,
-   "total_hours": 290.1,
+   "flight_count": 1899,
+   "total_hours": 304.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "conyers-pd-ga",
+   "display_name": "Conyers PD",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "conyers-pd-ga",
+     "official_url": "https://community.conyers.ga.us.aerodome.com/",
+     "flight_count": 1857,
+     "first_flight": "2025-09-25",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.conyers.ga.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-09-25",
+   "last_flight": "2026-09-02",
+   "flight_count": 1857,
+   "total_hours": 438.7,
    "overlap_count": 0,
    "notes": null
   },
@@ -614,6 +1096,64 @@
    "first_flight": "2021-07-22",
    "last_flight": "2026-08-16",
    "flight_count": 1797,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hemet-pd-ca",
+   "display_name": "Hemet Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "hemet-pd-ca",
+     "official_url": "https://community.hemet.ca.us.aerodome.com/",
+     "flight_count": 1739,
+     "first_flight": "2025-09-26",
+     "last_flight": "2026-09-02"
+    },
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "hemet-pd-ca",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/hemetpd-ca",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null
+    }
+   ],
+   "official_url": "https://community.hemet.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-09-26",
+   "last_flight": "2026-09-02",
+   "flight_count": 1739,
+   "total_hours": 367.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "lancaster-pd-ca",
+   "display_name": "Lancaster Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "lancaster-pd-ca",
+     "official_url": "https://app.airdata.com/u/lpdviper",
+     "flight_count": 1647,
+     "first_flight": "2024-08-15",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/lpdviper",
+   "status": "ok",
+   "first_flight": "2024-08-15",
+   "last_flight": "2026-08-25",
+   "flight_count": 1647,
    "total_hours": 0,
    "overlap_count": 0,
    "notes": null
@@ -669,27 +1209,52 @@
    "notes": null
   },
   {
-   "agency_id": "conyers-pd-ga",
-   "display_name": "Conyers PD",
+   "agency_id": "dekalb-county-pd-ga",
+   "display_name": "Dekalb County PD",
    "state": "GA",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
     {
      "source": "flock_aerodome",
-     "source_agency_id": "conyers-pd-ga",
-     "official_url": "https://community.conyers.ga.us.aerodome.com/",
-     "flight_count": 1596,
-     "first_flight": "2025-09-25",
-     "last_flight": "2026-08-01"
+     "source_agency_id": "dekalb-county-pd-ga",
+     "official_url": "https://community.dekalb.ga.us.aerodome.com/",
+     "flight_count": 1585,
+     "first_flight": "2025-12-03",
+     "last_flight": "2026-09-02"
     }
    ],
-   "official_url": "https://community.conyers.ga.us.aerodome.com/",
+   "official_url": "https://community.dekalb.ga.us.aerodome.com/",
    "status": "ok",
-   "first_flight": "2025-09-25",
-   "last_flight": "2026-08-01",
-   "flight_count": 1596,
-   "total_hours": 372,
+   "first_flight": "2025-12-03",
+   "last_flight": "2026-09-02",
+   "flight_count": 1585,
+   "total_hours": 436.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "oak-brook-pd-il",
+   "display_name": "Oak Brook PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "oak-brook-pd-il",
+     "official_url": "https://community.oak-brook.il.us.aerodome.com/",
+     "flight_count": 1558,
+     "first_flight": "2025-05-20",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.oak-brook.il.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-05-20",
+   "last_flight": "2026-09-02",
+   "flight_count": 1558,
+   "total_hours": 283.5,
    "overlap_count": 0,
    "notes": null
   },
@@ -719,6 +1284,31 @@
    "notes": null
   },
   {
+   "agency_id": "humble-pd-tx",
+   "display_name": "Humble PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "humble-pd-tx",
+     "official_url": "https://community.humble.tx.us.aerodome.com/",
+     "flight_count": 1420,
+     "first_flight": "2025-05-09",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://community.humble.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-05-09",
+   "last_flight": "2026-09-01",
+   "flight_count": 1420,
+   "total_hours": 331.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "castle-rock-pd-co",
    "display_name": "Castle Rock PD",
    "state": "CO",
@@ -740,6 +1330,106 @@
    "last_flight": "2026-09-02",
    "flight_count": 1384,
    "total_hours": 331.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "mooresville-pd-nc",
+   "display_name": "Mooresville PD",
+   "state": "NC",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "mooresville-pd-nc",
+     "official_url": "https://community.mooresville.nc.us.aerodome.com/",
+     "flight_count": 1367,
+     "first_flight": "2025-04-23",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.mooresville.nc.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-04-23",
+   "last_flight": "2026-09-02",
+   "flight_count": 1367,
+   "total_hours": 785.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "riverside-county-so-ca",
+   "display_name": "Riverside County SO",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "riverside-county-so-ca",
+     "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
+     "flight_count": 1336,
+     "first_flight": "2025-10-16",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-10-16",
+   "last_flight": "2026-09-02",
+   "flight_count": 1336,
+   "total_hours": 304.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "el-segundo-pd-ca",
+   "display_name": "El Segundo PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "el-segundo-pd-ca",
+     "official_url": "https://community.el-segundo.ca.us.aerodome.com/",
+     "flight_count": 1298,
+     "first_flight": "2025-04-01",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.el-segundo.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-04-01",
+   "last_flight": "2026-09-02",
+   "flight_count": 1298,
+   "total_hours": 229.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hamilton-county-so-in",
+   "display_name": "Hamilton County SO",
+   "state": "IN",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "hamilton-county-so-in",
+     "official_url": "https://community.hamilton.in.us.aerodome.com/",
+     "flight_count": 1269,
+     "first_flight": "2025-09-29",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.hamilton.in.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-09-29",
+   "last_flight": "2026-09-02",
+   "flight_count": 1269,
+   "total_hours": 240.9,
    "overlap_count": 0,
    "notes": null
   },
@@ -769,6 +1459,56 @@
    "notes": null
   },
   {
+   "agency_id": "san-rafael-pd-ca",
+   "display_name": "San Rafael PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "san-rafael-pd-ca",
+     "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
+     "flight_count": 1248,
+     "first_flight": "2025-10-29",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-10-29",
+   "last_flight": "2026-09-02",
+   "flight_count": 1248,
+   "total_hours": 228.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "hempstead-pd-ny",
+   "display_name": "Hempstead PD",
+   "state": "NY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "hempstead-pd-ny",
+     "official_url": "https://community.hempstead.ny.us.aerodome.com/",
+     "flight_count": 1241,
+     "first_flight": "2025-06-12",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.hempstead.ny.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-06-12",
+   "last_flight": "2026-09-02",
+   "flight_count": 1241,
+   "total_hours": 354.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "minnetonka-pd",
    "display_name": "Minnetonka Police Department",
    "state": null,
@@ -790,6 +1530,31 @@
    "last_flight": "2026-08-26",
    "flight_count": 1220,
    "total_hours": 239.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "midwest-city-pd-ok",
+   "display_name": "Midwest City PD",
+   "state": "OK",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "midwest-city-pd-ok",
+     "official_url": "https://community.midwest.ok.us.aerodome.com/",
+     "flight_count": 1189,
+     "first_flight": "2025-12-18",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.midwest.ok.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-18",
+   "last_flight": "2026-09-02",
+   "flight_count": 1189,
+   "total_hours": 287.8,
    "overlap_count": 0,
    "notes": null
   },
@@ -844,35 +1609,52 @@
    "notes": null
   },
   {
-   "agency_id": "elk-grove-pd-ca",
-   "display_name": "Elk Grove PD",
-   "state": "CA",
+   "agency_id": "mansfield-tx-pd-tx",
+   "display_name": "Mansfield TX PD",
+   "state": "TX",
    "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
+   "timezone": "America/Chicago",
    "sources": [
     {
      "source": "flock_aerodome",
-     "source_agency_id": "elk-grove-pd-ca",
-     "official_url": "https://community.elk-grove.ca.us.aerodome.com/",
-     "flight_count": 1083,
-     "first_flight": "2026-07-01",
+     "source_agency_id": "mansfield-tx-pd-tx",
+     "official_url": "https://community.mansfield.tx.us.aerodome.com/",
+     "flight_count": 1107,
+     "first_flight": "2025-12-05",
      "last_flight": "2026-09-02"
-    },
-    {
-     "source": "airdata",
-     "source_agency_id": "elk-grove-pd-ca",
-     "official_url": "https://app.airdata.com/u/egpd",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
     }
    ],
-   "official_url": "https://community.elk-grove.ca.us.aerodome.com/",
+   "official_url": "https://community.mansfield.tx.us.aerodome.com/",
    "status": "ok",
-   "first_flight": "2026-07-01",
+   "first_flight": "2025-12-05",
    "last_flight": "2026-09-02",
-   "flight_count": 1083,
-   "total_hours": 212.4,
+   "flight_count": 1107,
+   "total_hours": 248.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dunwoody-pd-ga",
+   "display_name": "Dunwoody PD",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "dunwoody-pd-ga",
+     "official_url": "https://community.dunwoody.ga.us.aerodome.com/",
+     "flight_count": 1089,
+     "first_flight": "2024-10-31",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.dunwoody.ga.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2024-10-31",
+   "last_flight": "2026-09-02",
+   "flight_count": 1089,
+   "total_hours": 194.7,
    "overlap_count": 0,
    "notes": null
   },
@@ -927,6 +1709,31 @@
    "notes": null
   },
   {
+   "agency_id": "la-port-police-ca",
+   "display_name": "Los Angeles Port Police",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "la-port-police-ca",
+     "official_url": "https://app.airdata.com/u/lapp",
+     "flight_count": 934,
+     "first_flight": "2025-06-05",
+     "last_flight": "2026-08-30"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/lapp",
+   "status": "ok",
+   "first_flight": "2025-06-05",
+   "last_flight": "2026-08-30",
+   "flight_count": 934,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "buena-park-pd-ca",
    "display_name": "Buena Park PD",
    "state": "CA",
@@ -937,7 +1744,7 @@
      "source": "flock_aerodome",
      "source_agency_id": "buena-park-pd-ca",
      "official_url": "https://community.buena-park.ca.us.aerodome.com/",
-     "flight_count": 920,
+     "flight_count": 921,
      "first_flight": "2025-12-15",
      "last_flight": "2026-09-02"
     }
@@ -946,8 +1753,8 @@
    "status": "ok",
    "first_flight": "2025-12-15",
    "last_flight": "2026-09-02",
-   "flight_count": 920,
-   "total_hours": 205.3,
+   "flight_count": 921,
+   "total_hours": 205.7,
    "overlap_count": 0,
    "notes": null
   },
@@ -962,7 +1769,7 @@
      "source": "flock_aerodome",
      "source_agency_id": "casa-grande-pd-az",
      "official_url": "https://community.casa-grande.az.us.aerodome.com/",
-     "flight_count": 868,
+     "flight_count": 869,
      "first_flight": "2026-02-11",
      "last_flight": "2026-09-02"
     }
@@ -971,8 +1778,8 @@
    "status": "ok",
    "first_flight": "2026-02-11",
    "last_flight": "2026-09-02",
-   "flight_count": 868,
-   "total_hours": 238.1,
+   "flight_count": 869,
+   "total_hours": 238.4,
    "overlap_count": 0,
    "notes": null
   },
@@ -1010,6 +1817,31 @@
    "notes": null
   },
   {
+   "agency_id": "southern-illinois-university-pd-il",
+   "display_name": "Southern Illinois University PD",
+   "state": "IL",
+   "org_type": "university",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "southern-illinois-university-pd-il",
+     "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
+     "flight_count": 846,
+     "first_flight": "2025-07-31",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-07-31",
+   "last_flight": "2026-09-02",
+   "flight_count": 846,
+   "total_hours": 173.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "duluth-pd-mn",
    "display_name": "Duluth Police Department",
    "state": "MN",
@@ -1031,6 +1863,31 @@
    "last_flight": "2026-09-01",
    "flight_count": 813,
    "total_hours": 126.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "roanoke-pd-tx",
+   "display_name": "Roanoke PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "roanoke-pd-tx",
+     "official_url": "https://community.roanoke.tx.us.aerodome.com/",
+     "flight_count": 760,
+     "first_flight": "2025-10-28",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.roanoke.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-10-28",
+   "last_flight": "2026-09-02",
+   "flight_count": 760,
+   "total_hours": 143.5,
    "overlap_count": 0,
    "notes": null
   },
@@ -1060,6 +1917,31 @@
    "notes": null
   },
   {
+   "agency_id": "elizabethtown-pd-ky",
+   "display_name": "Elizabethtown PD",
+   "state": "KY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "elizabethtown-pd-ky",
+     "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
+     "flight_count": 739,
+     "first_flight": "2026-02-12",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-02-12",
+   "last_flight": "2026-09-01",
+   "flight_count": 739,
+   "total_hours": 150.7,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "cottonwood-pd-az",
    "display_name": "Cottonwood PD",
    "state": "AZ",
@@ -1081,6 +1963,31 @@
    "last_flight": "2026-08-31",
    "flight_count": 729,
    "total_hours": 237.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "san-angelo-tx-pd-tx",
+   "display_name": "San Angelo TX PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "san-angelo-tx-pd-tx",
+     "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
+     "flight_count": 699,
+     "first_flight": "2026-04-30",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-04-30",
+   "last_flight": "2026-09-02",
+   "flight_count": 699,
+   "total_hours": 148.7,
    "overlap_count": 0,
    "notes": null
   },
@@ -1110,6 +2017,31 @@
    "notes": null
   },
   {
+   "agency_id": "harvey-pd-il",
+   "display_name": "Harvey PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "harvey-pd-il",
+     "official_url": "https://community.harvey.il.us.aerodome.com/",
+     "flight_count": 689,
+     "first_flight": "2025-10-08",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.harvey.il.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-10-08",
+   "last_flight": "2026-09-02",
+   "flight_count": 689,
+   "total_hours": 134.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "bothell-pd-wa",
    "display_name": "Bothell Police",
    "state": "WA",
@@ -1131,6 +2063,31 @@
    "last_flight": "2026-08-11",
    "flight_count": 672,
    "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "farmers-branch-pd-tx",
+   "display_name": "Farmers Branch PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "farmers-branch-pd-tx",
+     "official_url": "https://community.farmers-branch.tx.us.aerodome.com/",
+     "flight_count": 667,
+     "first_flight": "2026-02-05",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.farmers-branch.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-02-05",
+   "last_flight": "2026-09-02",
+   "flight_count": 667,
+   "total_hours": 161.3,
    "overlap_count": 0,
    "notes": null
   },
@@ -1193,6 +2150,31 @@
    "notes": null
   },
   {
+   "agency_id": "fort-worth-pd-tx",
+   "display_name": "Fort Worth PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "fort-worth-pd-tx",
+     "official_url": "https://community.fort-worth.tx.us.aerodome.com/",
+     "flight_count": 617,
+     "first_flight": "2025-10-14",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://community.fort-worth.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-10-14",
+   "last_flight": "2026-09-01",
+   "flight_count": 617,
+   "total_hours": 157.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "tampa-pd",
    "display_name": "Tampa Police Department",
    "state": null,
@@ -1214,6 +2196,31 @@
    "last_flight": "2026-08-20",
    "flight_count": 593,
    "total_hours": 129,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "suisun-city-pd-ca",
+   "display_name": "Suisun City PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "suisun-city-pd-ca",
+     "official_url": "https://community.suisun-city.ca.us.aerodome.com/",
+     "flight_count": 554,
+     "first_flight": "2025-11-17",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://community.suisun-city.ca.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-11-17",
+   "last_flight": "2026-08-25",
+   "flight_count": 554,
+   "total_hours": 104.8,
    "overlap_count": 0,
    "notes": null
   },
@@ -1343,27 +2350,77 @@
    "notes": null
   },
   {
-   "agency_id": "chula-vista-pd-ca",
-   "display_name": "Chula Vista Police",
-   "state": "CA",
+   "agency_id": "king-county-so-wa",
+   "display_name": "King County Sheriff's Office",
+   "state": "WA",
    "org_type": "law_enforcement",
    "timezone": "America/Los_Angeles",
    "sources": [
     {
      "source": "airdata",
-     "source_agency_id": "chula-vista-pd-ca",
-     "official_url": "https://app.airdata.com/u/cvpd",
-     "flight_count": 414,
-     "first_flight": "2021-04-03",
-     "last_flight": "2021-04-30"
+     "source_agency_id": "king-county-so-wa",
+     "official_url": "https://app.airdata.com/u/kcso",
+     "flight_count": 431,
+     "first_flight": "2025-12-02",
+     "last_flight": "2026-08-28"
     }
    ],
-   "official_url": "https://app.airdata.com/u/cvpd",
-   "status": "stale",
-   "first_flight": "2021-04-03",
-   "last_flight": "2021-04-30",
-   "flight_count": 414,
+   "official_url": "https://app.airdata.com/u/kcso",
+   "status": "ok",
+   "first_flight": "2025-12-02",
+   "last_flight": "2026-08-28",
+   "flight_count": 431,
    "total_hours": 0,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "telluride-co",
+   "display_name": "Telluride",
+   "state": "CO",
+   "org_type": "corporate_utility",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "telluride-co",
+     "official_url": "https://community.telluride.co.us.aerodome.com/",
+     "flight_count": 430,
+     "first_flight": "2025-03-17",
+     "last_flight": "2026-08-31"
+    }
+   ],
+   "official_url": "https://community.telluride.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-03-17",
+   "last_flight": "2026-08-31",
+   "flight_count": 430,
+   "total_hours": 261.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "galveston-pd-tx",
+   "display_name": "Galveston PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "galveston-pd-tx",
+     "official_url": "https://community.galveston.tx.us.aerodome.com/",
+     "flight_count": 409,
+     "first_flight": "2026-02-04",
+     "last_flight": "2026-08-31"
+    }
+   ],
+   "official_url": "https://community.galveston.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-02-04",
+   "last_flight": "2026-08-31",
+   "flight_count": 409,
+   "total_hours": 130.1,
    "overlap_count": 0,
    "notes": null
   },
@@ -1389,6 +2446,56 @@
    "last_flight": "2026-08-14",
    "flight_count": 404,
    "total_hours": 70.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "temple-pd-tx",
+   "display_name": "Temple PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "temple-pd-tx",
+     "official_url": "https://community.temple.tx.us.aerodome.com/",
+     "flight_count": 402,
+     "first_flight": "2026-03-27",
+     "last_flight": "2026-09-01"
+    }
+   ],
+   "official_url": "https://community.temple.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-03-27",
+   "last_flight": "2026-09-01",
+   "flight_count": 402,
+   "total_hours": 98.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "gilbert-pd-az",
+   "display_name": "Gilbert PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "gilbert-pd-az",
+     "official_url": "https://community.gilbert.az.us.aerodome.com/",
+     "flight_count": 396,
+     "first_flight": "2025-11-19",
+     "last_flight": "2026-01-16"
+    }
+   ],
+   "official_url": "https://community.gilbert.az.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2025-11-19",
+   "last_flight": "2026-01-16",
+   "flight_count": 396,
+   "total_hours": 100.3,
    "overlap_count": 0,
    "notes": null
   },
@@ -1449,6 +2556,31 @@
    "total_hours": 70.3,
    "overlap_count": 0,
    "notes": "timezone not detected automatically; set manually."
+  },
+  {
+   "agency_id": "mmozol-co",
+   "display_name": "Mmozol",
+   "state": "CO",
+   "org_type": "corporate_utility",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "mmozol-co",
+     "official_url": "https://community.vail.co.us.aerodome.com/",
+     "flight_count": 376,
+     "first_flight": "2023-11-17",
+     "last_flight": "2026-08-27"
+    }
+   ],
+   "official_url": "https://community.vail.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2023-11-17",
+   "last_flight": "2026-08-27",
+   "flight_count": 376,
+   "total_hours": 6093.8,
+   "overlap_count": 0,
+   "notes": null
   },
   {
    "agency_id": "conroe-pd",
@@ -1522,6 +2654,31 @@
    "last_flight": "2026-08-25",
    "flight_count": 344,
    "total_hours": 5846.8,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "fulton-county-so-ga",
+   "display_name": "Fulton County SO",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "fulton-county-so-ga",
+     "official_url": "https://community.fulton-county.ga.us.aerodome.com/",
+     "flight_count": 322,
+     "first_flight": "2026-02-06",
+     "last_flight": "2026-08-31"
+    }
+   ],
+   "official_url": "https://community.fulton-county.ga.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-02-06",
+   "last_flight": "2026-08-31",
+   "flight_count": 322,
+   "total_hours": 82,
    "overlap_count": 0,
    "notes": null
   },
@@ -1626,6 +2783,31 @@
    "notes": null
   },
   {
+   "agency_id": "georgia-tech-pd-ga",
+   "display_name": "Georgia Tech PD",
+   "state": "GA",
+   "org_type": "university",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "georgia-tech-pd-ga",
+     "official_url": "https://community.georgia-tech.ga.us.aerodome.com/",
+     "flight_count": 293,
+     "first_flight": "2025-11-24",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.georgia-tech.ga.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-11-24",
+   "last_flight": "2026-09-02",
+   "flight_count": 293,
+   "total_hours": 57.4,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "cherry-hill-pd",
    "display_name": "Cherry Hill Police Department",
    "state": null,
@@ -1647,6 +2829,31 @@
    "last_flight": "2026-08-25",
    "flight_count": 286,
    "total_hours": 47,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "show-low-pd-az",
+   "display_name": "Show Low PD",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "show-low-pd-az",
+     "official_url": "https://community.show-low.az.us.aerodome.com/",
+     "flight_count": 263,
+     "first_flight": "2026-03-19",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.show-low.az.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-03-19",
+   "last_flight": "2026-09-02",
+   "flight_count": 263,
+   "total_hours": 76.9,
    "overlap_count": 0,
    "notes": null
   },
@@ -1776,6 +2983,31 @@
    "notes": null
   },
   {
+   "agency_id": "sansom-park-pd-tx",
+   "display_name": "Sansom Park PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "sansom-park-pd-tx",
+     "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
+     "flight_count": 219,
+     "first_flight": "2025-08-19",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-08-19",
+   "last_flight": "2026-09-02",
+   "flight_count": 219,
+   "total_hours": 57.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "calcasieu-parish-so",
    "display_name": "Calcasieu Parish Sheriff's Office",
    "state": null,
@@ -1851,6 +3083,31 @@
    "notes": null
   },
   {
+   "agency_id": "southington-pd-ct",
+   "display_name": "Southington PD",
+   "state": "CT",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "southington-pd-ct",
+     "official_url": "https://community.southington.ct.us.aerodome.com/",
+     "flight_count": 135,
+     "first_flight": "2026-05-13",
+     "last_flight": "2026-09-02"
+    }
+   ],
+   "official_url": "https://community.southington.ct.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-05-13",
+   "last_flight": "2026-09-02",
+   "flight_count": 135,
+   "total_hours": 29.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "university-of-arizona-real-time-coordination-center",
    "display_name": "University of Arizona - Real Time Coordination Center",
    "state": null,
@@ -1897,6 +3154,39 @@
    "last_flight": "2026-09-02",
    "flight_count": 120,
    "total_hours": 21.6,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "dutchess-county-so-uas-unit",
+   "display_name": "Dutchess County Sheriff's Office UAS Unit",
+   "state": "NY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "dutchess-so-ny",
+     "official_url": "https://community.dutchess.ny.us.aerodome.com/",
+     "flight_count": 115,
+     "first_flight": "2025-05-20",
+     "last_flight": "2025-07-09"
+    },
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "dutchess-county-so-uas-unit",
+     "official_url": "https://www.arcgis.com/apps/dashboards/332a8432ca584035a71c69a08afb34d9",
+     "flight_count": 2,
+     "first_flight": "2026-08-10",
+     "last_flight": "2026-08-21"
+    }
+   ],
+   "official_url": "https://community.dutchess.ny.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-05-20",
+   "last_flight": "2026-08-21",
+   "flight_count": 117,
+   "total_hours": 24.5,
    "overlap_count": 0,
    "notes": null
   },
@@ -2026,6 +3316,31 @@
    "notes": null
   },
   {
+   "agency_id": "steamboat-pd-co",
+   "display_name": "Steamboat PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "steamboat-pd-co",
+     "official_url": "https://community.steamboat.co.us.aerodome.com/",
+     "flight_count": 81,
+     "first_flight": "2025-09-15",
+     "last_flight": "2026-07-27"
+    }
+   ],
+   "official_url": "https://community.steamboat.co.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-09-15",
+   "last_flight": "2026-07-27",
+   "flight_count": 81,
+   "total_hours": 11.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "watchung-pd",
    "display_name": "Watchung Police Department",
    "state": null,
@@ -2072,6 +3387,31 @@
    "last_flight": "2026-08-27",
    "flight_count": 66,
    "total_hours": 17.3,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "elm-ridge-pd-tx",
+   "display_name": "Elm Ridge PD",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "elm-ridge-pd-tx",
+     "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
+     "flight_count": 63,
+     "first_flight": "2026-03-02",
+     "last_flight": "2026-08-25"
+    }
+   ],
+   "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2026-03-02",
+   "last_flight": "2026-08-25",
+   "flight_count": 63,
+   "total_hours": 15.4,
    "overlap_count": 0,
    "notes": null
   },
@@ -2684,6 +4024,31 @@
    "notes": null
   },
   {
+   "agency_id": "university-st-thomas-pd-tx",
+   "display_name": "University St. Thomas PD",
+   "state": "TX",
+   "org_type": "university",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "university-st-thomas-pd-tx",
+     "official_url": "https://community.university-st-thomas.tx.us.aerodome.com/",
+     "flight_count": 17,
+     "first_flight": "2026-02-12",
+     "last_flight": "2026-04-16"
+    }
+   ],
+   "official_url": "https://community.university-st-thomas.tx.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2026-02-12",
+   "last_flight": "2026-04-16",
+   "flight_count": 17,
+   "total_hours": 2.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "titusville-pd-suas-transparency-dashboard",
    "display_name": "Titusville Police Department sUAS Transparency Dashboard",
    "state": null,
@@ -2934,47 +4299,6 @@
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
-   "agency_id": "everett-pd-wa",
-   "display_name": "Everett Police Department",
-   "state": "WA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "everett-pd-wa",
-     "official_url": "https://www.arcgis.com/apps/dashboards/698d0105df8e45f7906b57ea1e596465",
-     "flight_count": 10,
-     "first_flight": "2026-08-03",
-     "last_flight": "2026-08-26"
-    },
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "everett-pd-wa",
-     "official_url": "https://community.everett.wa.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    },
-    {
-     "source": "airdata",
-     "source_agency_id": "everett-pd-wa",
-     "official_url": "https://app.airdata.com/u/everettpd",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/698d0105df8e45f7906b57ea1e596465",
-   "status": "ok",
-   "first_flight": "2026-08-03",
-   "last_flight": "2026-08-26",
-   "flight_count": 10,
-   "total_hours": 1.5,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
    "agency_id": "quincy-pd",
    "display_name": "Quincy Police Department",
    "state": null,
@@ -3146,6 +4470,56 @@
    "last_flight": "2025-10-23",
    "flight_count": 7,
    "total_hours": 1.5,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "keystone-pd-co",
+   "display_name": "Keystone PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "keystone-pd-co",
+     "official_url": "https://community.keystone.co.us.aerodome.com/",
+     "flight_count": 7,
+     "first_flight": "2025-07-11",
+     "last_flight": "2025-11-13"
+    }
+   ],
+   "official_url": "https://community.keystone.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2025-07-11",
+   "last_flight": "2025-11-13",
+   "flight_count": 7,
+   "total_hours": 24.2,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "monarch-pd-co",
+   "display_name": "Monarch PD",
+   "state": "CO",
+   "org_type": "law_enforcement",
+   "timezone": "America/Denver",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "monarch-pd-co",
+     "official_url": "https://community.monarch.co.us.aerodome.com/",
+     "flight_count": 7,
+     "first_flight": "2025-08-21",
+     "last_flight": "2026-02-17"
+    }
+   ],
+   "official_url": "https://community.monarch.co.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2025-08-21",
+   "last_flight": "2026-02-17",
+   "flight_count": 7,
+   "total_hours": 1.3,
    "overlap_count": 0,
    "notes": null
   },
@@ -3475,6 +4849,31 @@
    "notes": null
   },
   {
+   "agency_id": "raleigh-pd-nc",
+   "display_name": "Raleigh PD",
+   "state": "NC",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "raleigh-pd-nc",
+     "official_url": "https://community.raleigh.nc.us.aerodome.com/",
+     "flight_count": 4,
+     "first_flight": "2026-01-22",
+     "last_flight": "2026-01-22"
+    }
+   ],
+   "official_url": "https://community.raleigh.nc.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2026-01-22",
+   "last_flight": "2026-01-22",
+   "flight_count": 4,
+   "total_hours": 0.1,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
    "agency_id": "boston-pd",
    "display_name": "Boston PD",
    "state": null,
@@ -3550,39 +4949,6 @@
    "notes": null
   },
   {
-   "agency_id": "las-vegas-metropolitan-pd",
-   "display_name": "Las Vegas Metropolitan Police Department",
-   "state": "NV",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "las-vegas-metropolitan-pd",
-     "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
-     "flight_count": 3,
-     "first_flight": "2026-05-27",
-     "last_flight": "2026-05-27"
-    },
-    {
-     "source": "airdata",
-     "source_agency_id": "las-vegas-metro-pd-nv",
-     "official_url": "https://app.airdata.com/u/lvmpd",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/70a0fe191f6d407e8044e416df7910b2",
-   "status": "stale",
-   "first_flight": "2026-05-27",
-   "last_flight": "2026-05-27",
-   "flight_count": 3,
-   "total_hours": 0.4,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
    "agency_id": "mlgw",
    "display_name": "MLGW",
    "state": null,
@@ -3654,39 +5020,6 @@
    "last_flight": "2026-06-22",
    "flight_count": 2,
    "total_hours": 0.4,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "dutchess-county-so-uas-unit",
-   "display_name": "Dutchess County Sheriff's Office UAS Unit",
-   "state": "NY",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "dutchess-county-so-uas-unit",
-     "official_url": "https://www.arcgis.com/apps/dashboards/332a8432ca584035a71c69a08afb34d9",
-     "flight_count": 2,
-     "first_flight": "2026-08-10",
-     "last_flight": "2026-08-21"
-    },
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "dutchess-so-ny",
-     "official_url": "https://community.dutchess.ny.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/332a8432ca584035a71c69a08afb34d9",
-   "status": "ok",
-   "first_flight": "2026-08-10",
-   "last_flight": "2026-08-21",
-   "flight_count": 2,
-   "total_hours": 0.3,
    "overlap_count": 0,
    "notes": null
   },
@@ -3812,6 +5145,31 @@
    "last_flight": "2024-12-01",
    "flight_count": 2,
    "total_hours": 0.9,
+   "overlap_count": 0,
+   "notes": null
+  },
+  {
+   "agency_id": "emporia-pd-va",
+   "display_name": "Emporia PD",
+   "state": "VA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "emporia-pd-va",
+     "official_url": "https://community.emporia.va.us.aerodome.com/",
+     "flight_count": 2,
+     "first_flight": "2026-03-12",
+     "last_flight": "2026-03-12"
+    }
+   ],
+   "official_url": "https://community.emporia.va.us.aerodome.com/",
+   "status": "stale",
+   "first_flight": "2026-03-12",
+   "last_flight": "2026-03-12",
+   "flight_count": 2,
+   "total_hours": 0.2,
    "overlap_count": 0,
    "notes": null
   },
@@ -4166,231 +5524,6 @@
    "notes": null
   },
   {
-   "agency_id": "dekalb-county-pd-ga",
-   "display_name": "Dekalb County PD",
-   "state": "GA",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "dekalb-county-pd-ga",
-     "official_url": "https://community.dekalb.ga.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.dekalb.ga.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "dunwoody-pd-ga",
-   "display_name": "Dunwoody PD",
-   "state": "GA",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "dunwoody-pd-ga",
-     "official_url": "https://community.dunwoody.ga.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.dunwoody.ga.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "edinburg-pd-tx",
-   "display_name": "Edinburg PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "edinburg-pd-tx",
-     "official_url": "https://community.edinburg.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.edinburg.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "el-segundo-pd-ca",
-   "display_name": "El Segundo PD",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "el-segundo-pd-ca",
-     "official_url": "https://community.el-segundo.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.el-segundo.ca.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "elizabethtown-pd-ky",
-   "display_name": "Elizabethtown PD",
-   "state": "KY",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "elizabethtown-pd-ky",
-     "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "elm-ridge-pd-tx",
-   "display_name": "Elm Ridge PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "elm-ridge-pd-tx",
-     "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "emporia-pd-va",
-   "display_name": "Emporia PD",
-   "state": "VA",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "emporia-pd-va",
-     "official_url": "https://community.emporia.va.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.emporia.va.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "farmers-branch-pd-tx",
-   "display_name": "Farmers Branch PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "farmers-branch-pd-tx",
-     "official_url": "https://community.farmers-branch.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.farmers-branch.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "fort-worth-pd-tx",
-   "display_name": "Fort Worth PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "fort-worth-pd-tx",
-     "official_url": "https://community.fort-worth.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.fort-worth.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
    "agency_id": "franklin-township-pd-nj",
    "display_name": "Franklin Township PD",
    "state": "NJ",
@@ -4407,314 +5540,6 @@
     }
    ],
    "official_url": "https://community.franklin-somerset.nj.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "fulton-county-so-ga",
-   "display_name": "Fulton County SO",
-   "state": "GA",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "fulton-county-so-ga",
-     "official_url": "https://community.fulton-county.ga.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.fulton-county.ga.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "galveston-pd-tx",
-   "display_name": "Galveston PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "galveston-pd-tx",
-     "official_url": "https://community.galveston.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.galveston.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "georgia-tech-pd-ga",
-   "display_name": "Georgia Tech PD",
-   "state": "GA",
-   "org_type": "university",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "georgia-tech-pd-ga",
-     "official_url": "https://community.georgia-tech.ga.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.georgia-tech.ga.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "gilbert-pd-az",
-   "display_name": "Gilbert PD",
-   "state": "AZ",
-   "org_type": "law_enforcement",
-   "timezone": "America/Phoenix",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "gilbert-pd-az",
-     "official_url": "https://community.gilbert.az.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.gilbert.az.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "hamilton-county-so-in",
-   "display_name": "Hamilton County SO",
-   "state": "IN",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "hamilton-county-so-in",
-     "official_url": "https://community.hamilton.in.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.hamilton.in.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "harvey-pd-il",
-   "display_name": "Harvey PD",
-   "state": "IL",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "harvey-pd-il",
-     "official_url": "https://community.harvey.il.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.harvey.il.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "hawthorne-pd-ca",
-   "display_name": "Hawthorne PD",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "hawthorne-pd-ca",
-     "official_url": "https://community.hawthorne.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.hawthorne.ca.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "hemet-pd-ca",
-   "display_name": "Hemet Police Department",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "hemet-pd-ca",
-     "official_url": "https://community.hemet.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    },
-    {
-     "source": "motorola_cape",
-     "source_agency_id": "hemet-pd-ca",
-     "official_url": "https://www.aerial.motorolasolutions.com/transparency/hemetpd-ca",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.hemet.ca.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "hempstead-pd-ny",
-   "display_name": "Hempstead PD",
-   "state": "NY",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "hempstead-pd-ny",
-     "official_url": "https://community.hempstead.ny.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.hempstead.ny.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "humble-pd-tx",
-   "display_name": "Humble PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "humble-pd-tx",
-     "official_url": "https://community.humble.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.humble.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "keystone-pd-co",
-   "display_name": "Keystone PD",
-   "state": "CO",
-   "org_type": "law_enforcement",
-   "timezone": "America/Denver",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "keystone-pd-co",
-     "official_url": "https://community.keystone.co.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.keystone.co.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "las-cruces-pd-nm",
-   "display_name": "Las Cruces PD",
-   "state": "NM",
-   "org_type": "law_enforcement",
-   "timezone": "America/Denver",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "las-cruces-pd-nm",
-     "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
    "status": "stale",
    "first_flight": null,
    "last_flight": null,
@@ -4765,831 +5590,6 @@
     }
    ],
    "official_url": "https://community.loveland.co.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "mansfield-tx-pd-tx",
-   "display_name": "Mansfield TX PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "mansfield-tx-pd-tx",
-     "official_url": "https://community.mansfield.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.mansfield.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "mesa-pd-az",
-   "display_name": "Mesa PD",
-   "state": "AZ",
-   "org_type": "law_enforcement",
-   "timezone": "America/Phoenix",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "mesa-pd-az",
-     "official_url": "https://community.mesa.az.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.mesa.az.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "midwest-city-pd-ok",
-   "display_name": "Midwest City PD",
-   "state": "OK",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "midwest-city-pd-ok",
-     "official_url": "https://community.midwest.ok.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.midwest.ok.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "mmozol-co",
-   "display_name": "Mmozol",
-   "state": "CO",
-   "org_type": "corporate_utility",
-   "timezone": "America/Denver",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "mmozol-co",
-     "official_url": "https://community.vail.co.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.vail.co.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "monarch-pd-co",
-   "display_name": "Monarch PD",
-   "state": "CO",
-   "org_type": "law_enforcement",
-   "timezone": "America/Denver",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "monarch-pd-co",
-     "official_url": "https://community.monarch.co.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.monarch.co.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "mooresville-pd-nc",
-   "display_name": "Mooresville PD",
-   "state": "NC",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "mooresville-pd-nc",
-     "official_url": "https://community.mooresville.nc.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.mooresville.nc.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "oak-brook-pd-il",
-   "display_name": "Oak Brook PD",
-   "state": "IL",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "oak-brook-pd-il",
-     "official_url": "https://community.oak-brook.il.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.oak-brook.il.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "peoria-pd-az",
-   "display_name": "Peoria PD",
-   "state": "AZ",
-   "org_type": "law_enforcement",
-   "timezone": "America/Phoenix",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "peoria-pd-az",
-     "official_url": "https://community.peoria.az.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.peoria.az.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "perth-amboy-nj",
-   "display_name": "Perth Amboy",
-   "state": "NJ",
-   "org_type": "corporate_utility",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "perth-amboy-nj",
-     "official_url": "https://community.perth-amboy.nj.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.perth-amboy.nj.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "prosper-pd-tx",
-   "display_name": "Prosper PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "prosper-pd-tx",
-     "official_url": "https://community.prosper.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.prosper.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "raleigh-pd-nc",
-   "display_name": "Raleigh PD",
-   "state": "NC",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "raleigh-pd-nc",
-     "official_url": "https://community.raleigh.nc.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.raleigh.nc.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "riverside-county-so-ca",
-   "display_name": "Riverside County SO",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "riverside-county-so-ca",
-     "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "roanoke-pd-tx",
-   "display_name": "Roanoke PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "roanoke-pd-tx",
-     "official_url": "https://community.roanoke.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.roanoke.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "san-angelo-tx-pd-tx",
-   "display_name": "San Angelo TX PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "san-angelo-tx-pd-tx",
-     "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "san-rafael-pd-ca",
-   "display_name": "San Rafael PD",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "san-rafael-pd-ca",
-     "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "sansom-park-pd-tx",
-   "display_name": "Sansom Park PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "sansom-park-pd-tx",
-     "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "scottsdale-pd-az",
-   "display_name": "Scottsdale PD",
-   "state": "AZ",
-   "org_type": "law_enforcement",
-   "timezone": "America/Phoenix",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "scottsdale-pd-az",
-     "official_url": "https://community.scottsdale.az.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.scottsdale.az.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "show-low-pd-az",
-   "display_name": "Show Low PD",
-   "state": "AZ",
-   "org_type": "law_enforcement",
-   "timezone": "America/Phoenix",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "show-low-pd-az",
-     "official_url": "https://community.show-low.az.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.show-low.az.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "south-bend-pd-in",
-   "display_name": "South Bend PD",
-   "state": "IN",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "south-bend-pd-in",
-     "official_url": "https://community.south-bend.in.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.south-bend.in.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "southern-illinois-university-pd-il",
-   "display_name": "Southern Illinois University PD",
-   "state": "IL",
-   "org_type": "university",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "southern-illinois-university-pd-il",
-     "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "southington-pd-ct",
-   "display_name": "Southington PD",
-   "state": "CT",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "southington-pd-ct",
-     "official_url": "https://community.southington.ct.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.southington.ct.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "steamboat-pd-co",
-   "display_name": "Steamboat PD",
-   "state": "CO",
-   "org_type": "law_enforcement",
-   "timezone": "America/Denver",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "steamboat-pd-co",
-     "official_url": "https://community.steamboat.co.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.steamboat.co.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "suisun-city-pd-ca",
-   "display_name": "Suisun City PD",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "suisun-city-pd-ca",
-     "official_url": "https://community.suisun-city.ca.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.suisun-city.ca.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "telluride-co",
-   "display_name": "Telluride",
-   "state": "CO",
-   "org_type": "corporate_utility",
-   "timezone": "America/Denver",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "telluride-co",
-     "official_url": "https://community.telluride.co.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.telluride.co.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "temple-pd-tx",
-   "display_name": "Temple PD",
-   "state": "TX",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "temple-pd-tx",
-     "official_url": "https://community.temple.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.temple.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "toledo-pd-oh",
-   "display_name": "Toledo PD",
-   "state": "OH",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "toledo-pd-oh",
-     "official_url": "https://community.toledo.oh.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.toledo.oh.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "university-st-thomas-pd-tx",
-   "display_name": "University St. Thomas PD",
-   "state": "TX",
-   "org_type": "university",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "university-st-thomas-pd-tx",
-     "official_url": "https://community.university-st-thomas.tx.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.university-st-thomas.tx.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "washoe-county-so-nv",
-   "display_name": "Washoe County SO",
-   "state": "NV",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "washoe-county-so-nv",
-     "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "coachella-valley-rtic-ca",
-   "display_name": "Coachella Valley RTIC",
-   "state": "CA",
-   "org_type": "corporate_utility",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "coachella-valley-rtic-ca",
-     "official_url": "https://app.airdata.com/u/cvrtic",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/cvrtic",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "irvine-pd-ca",
-   "display_name": "Irvine PD",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "irvine-pd-ca",
-     "official_url": "https://app.airdata.com/u/irvinepd",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/irvinepd",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "king-county-so-wa",
-   "display_name": "King County Sheriff's Office",
-   "state": "WA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "king-county-so-wa",
-     "official_url": "https://app.airdata.com/u/kcso",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/kcso",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "la-port-police-ca",
-   "display_name": "Los Angeles Port Police",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "la-port-police-ca",
-     "official_url": "https://app.airdata.com/u/lapp",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/lapp",
-   "status": "stale",
-   "first_flight": null,
-   "last_flight": null,
-   "flight_count": 0,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "notes": null
-  },
-  {
-   "agency_id": "lancaster-pd-ca",
-   "display_name": "Lancaster Police Department",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "lancaster-pd-ca",
-     "official_url": "https://app.airdata.com/u/lpdviper",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/lpdviper",
    "status": "stale",
    "first_flight": null,
    "last_flight": null,

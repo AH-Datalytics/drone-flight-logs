@@ -2,6 +2,7 @@ import { chromium, type BrowserContext, type Page } from 'playwright';
 import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { extractFlights, PAGE_SIZE, type FlockFlight } from './parse.js';
+import { acquireLock } from '../lock.js';
 
 /**
  * Collector for Flock Aerodome community dashboards.
@@ -227,6 +228,7 @@ export async function collect(opts: CollectOptions = {}): Promise<void> {
   const today = new Date().toISOString().slice(0, 10);
 
   mkdirSync(RAW_DIR, { recursive: true });
+  const release = acquireLock(RAW_DIR, 'flock');
   const sites: Site[] = JSON.parse(readFileSync(join('data', 'flock_sites.json'), 'utf8')).sites;
   const targets = opts.only?.length ? sites.filter(s => opts.only!.includes(s.agency_id)) : sites;
   if (targets.length === 0) throw new Error('No matching Flock sites. Check --agency values against data/flock_sites.json.');
@@ -267,6 +269,7 @@ export async function collect(opts: CollectOptions = {}): Promise<void> {
     });
   } finally {
     await browser.close();
+    release();
   }
 
   log(`Done. ${ok} agencies collected, ${failed} failed, ${totalAdded} new flights this run.`);

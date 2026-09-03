@@ -68,12 +68,30 @@ function readJson<T>(path: string): T {
   return JSON.parse(readFileSync(path, 'utf8')) as T;
 }
 
-function readJsonl<T>(path: string): T[] {
+/**
+ * Read a raw store, keeping the first record for each id.
+ *
+ * The stores are append-only logs, and an append-only log can hold the same
+ * record twice: two collectors running at once each dedupe against their own
+ * view of the file and neither sees the other's writes. That happened once, and
+ * it doubled the flight count for eight agencies. Deduplicating here rather
+ * than trusting the file means the count is right whatever state the log is in
+ * — including while a collector is still appending to it.
+ */
+function readJsonl<T>(path: string, idKey: string): T[] {
   if (!existsSync(path)) return [];
   const out: T[] = [];
+  const seen = new Set<string>();
   for (const line of readFileSync(path, 'utf8').split('\n')) {
     if (!line.trim()) continue;
-    try { out.push(JSON.parse(line) as T); } catch { /* truncated final line */ }
+    let rec: T;
+    try { rec = JSON.parse(line) as T; } catch { continue; /* truncated final line */ }
+    const id = (rec as Record<string, unknown>)[idKey];
+    if (typeof id === 'string' || typeof id === 'number') {
+      if (seen.has(String(id))) continue;
+      seen.add(String(id));
+    }
+    out.push(rec);
   }
   return out;
 }
@@ -114,7 +132,7 @@ export function collectEntries(): Entry[] {
       key: s.agency_id, name: s.display_name, state: s.state, source: 'flock_aerodome',
       displayName: titleCase(s.display_name), timezone: tz, orgType: orgTypeFor(s.display_name),
       officialUrl: s.url, notes: null,
-      load: () => readJsonl<Parameters<typeof flockRecord>[2]>(join(DATA, 'raw', 'flock', `${s.agency_id}.jsonl`))
+      load: () => readJsonl<Parameters<typeof flockRecord>[2]>(join(DATA, 'raw', 'flock', `${s.agency_id}.jsonl`), 'flight_number')
         .map(f => flockRecord(s.agency_id, tz, f))
         .filter((r): r is FlightRecord => r !== null),
     });
@@ -125,7 +143,7 @@ export function collectEntries(): Entry[] {
       key: s.agency_id, name: s.display_name, state: s.state, source: 'airdata',
       displayName: s.display_name, timezone: s.timezone, orgType: orgTypeFor(s.display_name),
       officialUrl: `https://app.airdata.com/u/${s.slug}`, notes: null,
-      load: () => readJsonl<AirDataFlight>(join(DATA, 'raw', 'airdata', `${s.agency_id}.jsonl`))
+      load: () => readJsonl<AirDataFlight>(join(DATA, 'raw', 'airdata', `${s.agency_id}.jsonl`), 'flight_id')
         .map(f => airDataRecord(s.agency_id, s.timezone, f))
         .filter((r): r is FlightRecord => r !== null),
     });
@@ -136,7 +154,7 @@ export function collectEntries(): Entry[] {
       key: s.agency_id, name: s.display_name, state: s.state, source: 'motorola_cape',
       displayName: s.display_name, timezone: s.timezone, orgType: orgTypeFor(s.display_name),
       officialUrl: `https://www.aerial.motorolasolutions.com/transparency/${s.slug}`, notes: null,
-      load: () => readJsonl<CapeFlight>(join(DATA, 'raw', 'cape', `${s.agency_id}.jsonl`))
+      load: () => readJsonl<CapeFlight>(join(DATA, 'raw', 'cape', `${s.agency_id}.jsonl`), 'id')
         .map(f => capeRecord(s.agency_id, s.timezone, f, localDate))
         .filter((r): r is FlightRecord => r !== null),
     });

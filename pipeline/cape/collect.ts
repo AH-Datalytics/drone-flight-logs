@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import type { CapeFlight } from './parse.js';
+import { acquireLock } from '../lock.js';
 
 /**
  * Collector for Motorola CAPE transparency portals.
@@ -95,6 +96,7 @@ async function getJson(url: string, tries = 4): Promise<unknown> {
 export async function collect(opts: { only?: string[]; log?: (m: string) => void } = {}): Promise<void> {
   const log = opts.log ?? ((m: string) => console.log(m));
   mkdirSync(RAW_DIR, { recursive: true });
+  const release = acquireLock(RAW_DIR, 'cape');
 
   const sites: CapeSite[] = JSON.parse(readFileSync(join('data', 'cape_sites.json'), 'utf8')).sites;
   const targets = opts.only?.length ? sites.filter(s => opts.only!.includes(s.agency_id) || opts.only!.includes(s.slug)) : sites;
@@ -153,6 +155,7 @@ export async function collect(opts: { only?: string[]; log?: (m: string) => void
     await sleep(1000);
   }
 
+  release();
   log(`Done. ${ok} portals collected, ${failed} failed, ${totalAdded} new flights this run.`);
   const rolling = Object.values(state.agencies).filter(a => a.window_days !== null && a.total_flights > a.in_window);
   if (rolling.length) {
