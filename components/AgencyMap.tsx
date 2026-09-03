@@ -25,6 +25,12 @@ type Props = {
  * Dot area, not radius, is proportional to flight count, so the largest
  * programmes do not swamp the map by squaring a difference the reader is being
  * shown once already.
+ *
+ * Colours and the legend's size are set as SVG presentation attributes as well
+ * as in CSS. CSS wins whenever it loads and carries the light and dark themes;
+ * the attributes are there because an SVG with no styling at all fills solid
+ * black and sizes itself to its container, which turns this map into a black
+ * silhouette followed by three enormous black circles.
  */
 export default function AgencyMap({ outlines, dots, offMap, width, height, legend }: Props) {
   const router = useRouter();
@@ -41,7 +47,7 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
           aria-label={`Map of ${dots.length} agencies that publish drone flight logs, each sized by number of published flights`}
         >
           <g className="map-states">
-            {outlines.map(s => <path key={s.name} d={s.d} />)}
+            {outlines.map(s => <path key={s.name} d={s.d} fill="#e8ecf2" stroke="#b8c1d0" strokeWidth={0.8} />)}
           </g>
           <g className="map-dots">
             {dots.map(d => (
@@ -50,6 +56,9 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
                 cx={d.x}
                 cy={d.y}
                 r={d.r}
+                fill="#0060df"
+                stroke="#ffffff"
+                strokeWidth={1.1}
                 tabIndex={0}
                 role="link"
                 aria-label={`${d.display_name}${d.state ? `, ${d.state}` : ''} — ${fmtInt(d.flight_count)} published flights`}
@@ -80,7 +89,9 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
         <div className="map-legend" aria-hidden="true">
           {legend.map(l => (
             <span key={l.flights} className="map-legend-item">
-              <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r={l.r} /></svg>
+              <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+                <circle cx="20" cy="20" r={l.r} fill="#0060df" stroke="#ffffff" />
+              </svg>
               {fmtInt(l.flights)}
             </span>
           ))}

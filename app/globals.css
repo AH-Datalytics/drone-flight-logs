@@ -6,6 +6,7 @@
   --accent: #0060df; --accent-fg: #ffffff; --accent-dim: #cfe0f8;
   --ok: #0a7d4a; --warn: #9a6100; --bad: #b3261e;
   --heat-cold: #1d4ed8; --heat-hot: #c81e1e;
+  --map-land: #e8ecf2; --map-border: #b8c1d0; --map-dot: #0060df;
   --mono: var(--font-mono), ui-monospace, "JetBrains Mono", "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
   --sans: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -17,6 +18,7 @@
     --accent: #4d9bff; --accent-fg: #06121f; --accent-dim: #16304f;
     --ok: #4ade80; --warn: #fbbf24; --bad: #f87171;
     --heat-cold: #5b8dff; --heat-hot: #ff6b6b;
+    --map-land: #222a34; --map-border: #46525f; --map-dot: #63a4ff;
   }
 }
 * { box-sizing: border-box; }
@@ -167,11 +169,11 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .agency-search-meta { font: 12px var(--mono); color: var(--fg-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .agency-search-list li.is-active .agency-search-meta { color: var(--accent-fg); opacity: 0.85; }
 
-.mapcard { margin: 6px 0 4px; border: 1px solid var(--line); background: var(--bg); }
+.mapcard { margin: 6px 0 4px; border: 1px solid var(--line-2); background: var(--bg); }
 .mapwrap { position: relative; }
 .mapwrap svg { display: block; width: 100%; height: auto; }
-.map-states path { fill: var(--bg-2); stroke: var(--line-2); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
-.map-dots circle { fill: color-mix(in srgb, var(--accent) 55%, transparent); stroke: var(--accent); stroke-width: 1; cursor: pointer; transition: fill 90ms linear; }
+.map-states path { fill: var(--map-land); stroke: var(--map-border); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
+.map-dots circle { fill: color-mix(in srgb, var(--map-dot) 72%, transparent); stroke: var(--bg); stroke-width: 1.1; paint-order: stroke; cursor: pointer; transition: fill 90ms linear; }
 .map-dots circle:hover, .map-dots circle.is-focus { fill: color-mix(in srgb, var(--heat-hot) 70%, transparent); stroke: var(--heat-hot); }
 .map-dots circle:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 
@@ -186,7 +188,7 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .map-legend { display: flex; align-items: center; gap: 10px; }
 .map-legend-item { display: flex; align-items: center; gap: 4px; font: 11px var(--mono); color: var(--fg-2); font-variant-numeric: tabular-nums; }
 .map-legend-item svg { width: 40px; height: 40px; }
-.map-legend-item circle { fill: color-mix(in srgb, var(--accent) 55%, transparent); stroke: var(--accent); stroke-width: 1; }
+.map-legend-item circle { fill: color-mix(in srgb, var(--map-dot) 72%, transparent); stroke: var(--bg); stroke-width: 1.1; paint-order: stroke; }
 
 .see-all { display: flex; align-items: center; gap: 16px; margin: 18px 0 8px; flex-wrap: wrap; }
 
