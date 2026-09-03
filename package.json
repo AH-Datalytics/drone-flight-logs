@@ -17,7 +17,8 @@
     "prebuild": "tsx scripts/prebuild.ts",
     "typecheck": "tsc --noEmit",
     "flock:collect": "tsx pipeline/flock/collect.ts",
-    "airdata:collect": "tsx pipeline/airdata/collect.ts"
+    "airdata:collect": "tsx pipeline/airdata/collect.ts",
+    "cape:collect": "tsx pipeline/cape/collect.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

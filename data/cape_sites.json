@@ -1,0 +1,14 @@
+{
+ "note": "Motorola CAPE transparency portals, verified live 2026-09-02. Enumerated from Common Crawl and Wayback indexes of aerial.motorolasolutions.com/transparency/, plus slug-pattern probing against the project-settings endpoint. A floor, not a complete list: Motorola publishes no directory of these portals.",
+ "sites": [
+  { "agency_id": "amherst-pd-oh", "slug": "amherstpd-oh", "display_name": "Amherst Police Department", "state": "OH", "timezone": "America/New_York" },
+  { "agency_id": "boulder-pd-co", "slug": "boulderpd", "display_name": "Boulder Police Department", "state": "CO", "timezone": "America/Denver" },
+  { "agency_id": "brea-pd-ca", "slug": "breapd-ca", "display_name": "Brea Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "brookhaven-pd-ga", "slug": "brookhavenga", "display_name": "Brookhaven Police Department", "state": "GA", "timezone": "America/New_York" },
+  { "agency_id": "glendale-pd-az", "slug": "glendaleaz", "display_name": "Glendale Police Department", "state": "AZ", "timezone": "America/Phoenix" },
+  { "agency_id": "hemet-pd-ca", "slug": "hemetpd-ca", "display_name": "Hemet Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "redondo-beach-pd-ca", "slug": "redondobeachpd", "display_name": "Redondo Beach Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+  { "agency_id": "roswell-pd-ga", "slug": "roswellpd", "display_name": "Roswell Police", "state": "GA", "timezone": "America/New_York" },
+  { "agency_id": "yonkers-pd-ny", "slug": "yonkerspd-ny", "display_name": "Yonkers Police Department", "state": "NY", "timezone": "America/New_York" }
+ ]
+}
