@@ -26,7 +26,8 @@
     "places": "tsx scripts/resolve-places.ts",
     "og": "tsx scripts/make-og-image.ts",
     "unnamed:csv": "tsx scripts/unnamed-csv.ts",
-    "check:unnamed": "tsx scripts/check-unnamed.ts"
+    "check:unnamed": "tsx scripts/check-unnamed.ts",
+    "selfpub:collect": "tsx pipeline/selfpub/collect.ts"
   },
   "devDependencies": {
     "@types/d3-geo": "^3.1.1",

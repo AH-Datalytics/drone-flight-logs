@@ -10,6 +10,7 @@ import { loadPlaces } from './places.js';
 import { extractFlights as extractFlock, toRecord as flockRecord } from './flock/parse.js';
 import { parseFlights as parseAirData, toRecord as airDataRecord, type AirDataFlight } from './airdata/parse.js';
 import { toRecord as capeRecord, type CapeFlight } from './cape/parse.js';
+import { toRecord as selfpubRecord, type SelfPubSite } from './selfpub/parse.js';
 
 /**
  * Builds the view the site reads.
@@ -121,7 +122,7 @@ function timezoneForState(state: string | null): string {
 type RawState = { agencies: Record<string, { last_run_utc?: string | null }> };
 
 /** Each collector records when it last read an agency; this reads that back. */
-function collectorTimes(source: 'flock' | 'airdata' | 'cape'): Record<string, string | null> {
+function collectorTimes(source: 'flock' | 'airdata' | 'cape' | 'selfpub'): Record<string, string | null> {
   const p = join(DATA, 'raw', source, '_state.json');
   if (!existsSync(p)) return {};
   try {
@@ -138,6 +139,7 @@ export function collectEntries(): Entry[] {
   const flockTimes = collectorTimes('flock');
   const airTimes = collectorTimes('airdata');
   const capeTimes = collectorTimes('cape');
+  const selfpubTimes = collectorTimes('selfpub');
 
   for (const a of readJson<{ agencies: any[] }>(join(DATA, 'registry.json')).agencies) {
     if (a.status === 'needs_review') continue;
@@ -178,6 +180,22 @@ export function collectEntries(): Entry[] {
     });
   }
 
+  for (const s of readJson<{ sites: SelfPubSite[] }>(join(DATA, 'selfpub_sites.json')).sites) {
+    entries.push({
+      key: s.agency_id, name: s.display_name, state: s.state, source: 'self_published',
+      displayName: s.display_name, timezone: s.timezone, orgType: orgTypeFor(s.display_name),
+      officialUrl: s.official_url, notes: s.note ?? null,
+      collectedUtc: selfpubTimes[s.agency_id] ?? null,
+      load: () => {
+        const p = join(DATA, 'raw', 'selfpub', `${s.agency_id}.json`);
+        if (!existsSync(p)) return [];
+        return (readJson<Record<string, unknown>[]>(p))
+          .map(row => selfpubRecord(s, row))
+          .filter((r): r is FlightRecord => r !== null);
+      },
+    });
+  }
+
   for (const s of readJson<{ sites: any[] }>(join(DATA, 'cape_sites.json')).sites) {
     entries.push({
       key: s.agency_id, name: s.display_name, state: s.state, source: 'motorola_cape',
@@ -215,7 +233,7 @@ export function titleCase(name: string): string {
  * of whichever source has been published longest keeps existing links working.
  */
 export function chooseIdentity(group: Entry[]): { key: string; displayName: string; state: string | null; timezone: string; orgType: OrgType } {
-  const order = ['skydio_arcgis', 'sfpd_datasf', 'flock_aerodome', 'airdata', 'motorola_cape'];
+  const order = ['skydio_arcgis', 'sfpd_datasf', 'self_published', 'flock_aerodome', 'airdata', 'motorola_cape'];
   const primary = [...group].sort((a, b) => order.indexOf(a.source) - order.indexOf(b.source))[0];
   const displayName = [...group].map(e => e.displayName).sort((a, b) => b.length - a.length)[0];
   return {

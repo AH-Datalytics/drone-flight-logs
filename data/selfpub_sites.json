@@ -1,0 +1,112 @@
+{
+  "note": "Agencies that publish their own flight log to an ArcGIS feature service they run themselves, with no vendor involved. Found during the source census by searching ArcGIS Hub. The field mapping is an allow-list: several of these services expose pilot names, pilot email addresses, employee numbers and takeoff coordinates, and nothing reaches a record unless it is named here.",
+  "sites": [
+    {
+      "agency_id": "bloomington-pd-il",
+      "display_name": "Bloomington Police Department",
+      "state": "IL",
+      "timezone": "America/Chicago",
+      "service_url": "https://services3.arcgis.com/8EQ1HhogM827boPC/arcgis/rest/services/Police_Drone_Flights/FeatureServer/0",
+      "official_url": "https://services3.arcgis.com/8EQ1HhogM827boPC/arcgis/rest/services/Police_Drone_Flights/FeatureServer/0",
+      "id_field": "OBJECTID",
+      "fields": {
+        "date": "Start_Date",
+        "time": "Start_Time",
+        "duration_hours": "Flight_Hours",
+        "purpose": "Flight_Type",
+        "location": "Location_Name",
+        "case_number": "Call_For_Service",
+        "extra": {
+          "drone_model": "Drone_Model"
+        },
+        "purpose_labelled": {
+          "field": "Notes",
+          "label": "Reason"
+        }
+      },
+      "note": "Also publishes to Skydio; the two cover different periods, its own log to March 2026 and Skydio after. Its service exposes Pilot_First_Name, Pilot_Last_Name, Pilot_Email, Takeoff_Latitude and Takeoff_Longitude, none of which are mapped. Its Notes field also names pilots in prose with no label to match on \u2014 \"Gallion at controls\" \u2014 so the prose is not published; only the labelled Reason is read out of it."
+    },
+    {
+      "agency_id": "medford-pd-or",
+      "display_name": "Medford Police Department",
+      "state": "OR",
+      "timezone": "America/Los_Angeles",
+      "service_url": "https://services.arcgis.com/ogdeCdziRfIzuoFs/arcgis/rest/services/Drone_Deployments_FS/FeatureServer/0",
+      "official_url": "https://www.arcgis.com/apps/dashboards/ebd0652bbefd420ea390974eb0a0047a",
+      "id_field": "OBJECTID",
+      "fields": {
+        "date": "DepDATE",
+        "purpose": "INCIDENT",
+        "case_number": "CaseNum"
+      },
+      "data_quality": "Medford publishes a date, a case number and an incident type, but no time of day or flight duration."
+    },
+    {
+      "agency_id": "roselle-pd-il",
+      "display_name": "Roselle Police Department",
+      "state": "IL",
+      "timezone": "America/Chicago",
+      "service_url": "https://services3.arcgis.com/2IQcjBhWvUWNwrY8/arcgis/rest/services/VRO_DroneFlightLog_gdb_view/FeatureServer/0",
+      "official_url": "https://www.arcgis.com/apps/dashboards/4850e50ec6a24f20bad3bf18c387e09b",
+      "id_field": "OBJECTID",
+      "fields": {
+        "date": "USER_Date_",
+        "duration_text": "USER_Total_Duration_of_Flight",
+        "purpose": "USER_Type_of_Call_",
+        "location": "USER_Location_",
+        "case_number": "USER_Case___",
+        "extra": {
+          "city": "USER_City",
+          "category": "General_Category"
+        }
+      },
+      "data_quality": "Roselle publishes a date and a flight duration, but no time of day."
+    },
+    {
+      "agency_id": "scott-county-so-ia",
+      "display_name": "Scott County Sheriff's Office",
+      "state": "IA",
+      "timezone": "America/Chicago",
+      "service_url": "https://services.arcgis.com/ovln19YRWV44nBqV/arcgis/rest/services/SC_Drone_Flights/FeatureServer/0",
+      "official_url": "https://services.arcgis.com/ovln19YRWV44nBqV/arcgis/rest/services/SC_Drone_Flights/FeatureServer/0",
+      "id_field": "OBJECTID",
+      "fields": {
+        "date": "Date",
+        "purpose": "Notes",
+        "extra": {
+          "flight_type": "Type",
+          "requesting_agency": "Agency",
+          "requesting_department": "Department",
+          "aircraft": "Drone"
+        }
+      },
+      "data_quality": "A county program that flies for other agencies too: the requesting agency is recorded alongside each flight. A date but no time of day or duration.",
+      "note": "Exposes Pilot and PilotAgency, neither mapped."
+    },
+    {
+      "agency_id": "yuma-pd-az",
+      "display_name": "Yuma Police Department",
+      "state": "AZ",
+      "timezone": "America/Phoenix",
+      "service_url": "https://services1.arcgis.com/tzW2OKwR84ufoH3y/arcgis/rest/services/City_of_Yuma_Drone_Flights_2_view/FeatureServer/0",
+      "official_url": "https://services1.arcgis.com/tzW2OKwR84ufoH3y/arcgis/rest/services/City_of_Yuma_Drone_Flights_2_view/FeatureServer/0",
+      "id_field": "OBJECTID",
+      "fields": {
+        "date": "FlightDate",
+        "duration_text": "Duration",
+        "purpose": "FlightInfo",
+        "extra": {
+          "department": "Department"
+        }
+      },
+      "row_filter": {
+        "field": "Department",
+        "values": [
+          "Police"
+        ]
+      },
+      "data_quality": "Yuma publishes one log for the whole city; only the police department's rows are collected here. Its duration is free text, so a flight length is recorded only where the text states one.",
+      "note": "Exposes DroneOperator, which carries an employee number and name. Not mapped."
+    }
+  ]
+}

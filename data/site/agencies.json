@@ -1,15 +1,16 @@
 {
- "built_utc": "2026-09-04T13:40:31.330Z",
- "collected_utc": "2026-09-04T13:40:23.696Z",
- "agency_count": 226,
- "flight_count": 296421,
+ "built_utc": "2026-09-04T16:12:54.634Z",
+ "collected_utc": "2026-09-04T16:02:12.956Z",
+ "agency_count": 230,
+ "flight_count": 297738,
  "overlap_count": 200,
  "by_source": {
   "airdata": 77396,
   "skydio_arcgis": 103251,
   "flock_aerodome": 99738,
   "motorola_cape": 8755,
-  "sfpd_datasf": 7481
+  "sfpd_datasf": 7481,
+  "self_published": 1317
  },
  "agencies": [
   {
@@ -2162,6 +2163,44 @@
    "notes": null
   },
   {
+   "agency_id": "bloomington-pd-il",
+   "display_name": "Bloomington Police Department",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "self_published",
+     "source_agency_id": "bloomington-pd-il",
+     "official_url": "https://services3.arcgis.com/8EQ1HhogM827boPC/arcgis/rest/services/Police_Drone_Flights/FeatureServer/0",
+     "flight_count": 458,
+     "first_flight": "2025-01-05",
+     "last_flight": "2026-03-02",
+     "collected_utc": "2026-09-04T16:02:08.968Z"
+    },
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "bloomington-pd-il",
+     "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
+     "flight_count": 430,
+     "first_flight": "2026-04-04",
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://services3.arcgis.com/8EQ1HhogM827boPC/arcgis/rest/services/Police_Drone_Flights/FeatureServer/0",
+   "status": "ok",
+   "first_flight": "2025-01-05",
+   "last_flight": "2026-09-02",
+   "flight_count": 888,
+   "total_hours": 132.3,
+   "overlap_count": 0,
+   "lat": 40.54037,
+   "lon": -88.88686,
+   "collected_utc": "2026-09-04T16:02:08.968Z",
+   "notes": "Also publishes to Skydio; the two cover different periods, its own log to March 2026 and Skydio after. Its service exposes Pilot_First_Name, Pilot_Last_Name, Pilot_Email, Takeoff_Latitude and Takeoff_Longitude, none of which are mapped. Its Notes field also names pilots in prose with no label to match on — \"Gallion at controls\" — so the prose is not published; only the labelled Reason is read out of it."
+  },
+  {
    "agency_id": "casa-grande-pd-az",
    "display_name": "Casa Grande PD",
    "state": "AZ",
@@ -2943,35 +2982,6 @@
    "notes": null
   },
   {
-   "agency_id": "bloomington-pd-il",
-   "display_name": "Bloomington Police Department",
-   "state": "IL",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "bloomington-pd-il",
-     "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
-     "flight_count": 430,
-     "first_flight": "2026-04-04",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-04T12:25:53.971Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
-   "status": "ok",
-   "first_flight": "2026-04-04",
-   "last_flight": "2026-09-02",
-   "flight_count": 430,
-   "total_hours": 73.9,
-   "overlap_count": 0,
-   "lat": 40.54037,
-   "lon": -88.88686,
-   "collected_utc": "2026-09-04T12:25:53.971Z",
-   "notes": null
-  },
-  {
    "agency_id": "telluride-co",
    "display_name": "Telluride",
    "state": "CO",
@@ -3262,6 +3272,35 @@
    "notes": null
   },
   {
+   "agency_id": "scott-county-so-ia",
+   "display_name": "Scott County Sheriff's Office",
+   "state": "IA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "self_published",
+     "source_agency_id": "scott-county-so-ia",
+     "official_url": "https://services.arcgis.com/ovln19YRWV44nBqV/arcgis/rest/services/SC_Drone_Flights/FeatureServer/0",
+     "flight_count": 333,
+     "first_flight": "2019-05-03",
+     "last_flight": "2026-09-01",
+     "collected_utc": "2026-09-04T16:02:11.964Z"
+    }
+   ],
+   "official_url": "https://services.arcgis.com/ovln19YRWV44nBqV/arcgis/rest/services/SC_Drone_Flights/FeatureServer/0",
+   "status": "ok",
+   "first_flight": "2019-05-03",
+   "last_flight": "2026-09-01",
+   "flight_count": 333,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 41.62518,
+   "lon": -90.61642,
+   "collected_utc": "2026-09-04T16:02:11.964Z",
+   "notes": "Exposes Pilot and PilotAgency, neither mapped."
+  },
+  {
    "agency_id": "laurel-pd-uas-flight-data",
    "display_name": "Laurel Police Department UAS Flight Data",
    "state": "MD",
@@ -3462,6 +3501,35 @@
    "lat": 37.45731,
    "lon": -77.50905,
    "collected_utc": "2026-09-04T12:25:53.971Z",
+   "notes": null
+  },
+  {
+   "agency_id": "medford-pd-or",
+   "display_name": "Medford Police Department",
+   "state": "OR",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "self_published",
+     "source_agency_id": "medford-pd-or",
+     "official_url": "https://www.arcgis.com/apps/dashboards/ebd0652bbefd420ea390974eb0a0047a",
+     "flight_count": 265,
+     "first_flight": "2022-09-16",
+     "last_flight": "2026-07-30",
+     "collected_utc": "2026-09-04T16:02:10.109Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/ebd0652bbefd420ea390974eb0a0047a",
+   "status": "ok",
+   "first_flight": "2022-09-16",
+   "last_flight": "2026-07-30",
+   "flight_count": 265,
+   "total_hours": 0,
+   "overlap_count": 0,
+   "lat": 42.32642,
+   "lon": -122.87186,
+   "collected_utc": "2026-09-04T16:02:10.109Z",
    "notes": null
   },
   {
@@ -3782,6 +3850,64 @@
    "lon": -72.87829,
    "collected_utc": "2026-09-04T12:40:22.106Z",
    "notes": null
+  },
+  {
+   "agency_id": "roselle-pd-il",
+   "display_name": "Roselle Police Department",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "self_published",
+     "source_agency_id": "roselle-pd-il",
+     "official_url": "https://www.arcgis.com/apps/dashboards/4850e50ec6a24f20bad3bf18c387e09b",
+     "flight_count": 133,
+     "first_flight": "2023-06-21",
+     "last_flight": "2026-06-15",
+     "collected_utc": "2026-09-04T16:02:11.027Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/4850e50ec6a24f20bad3bf18c387e09b",
+   "status": "stale",
+   "first_flight": "2023-06-21",
+   "last_flight": "2026-06-15",
+   "flight_count": 133,
+   "total_hours": 111,
+   "overlap_count": 0,
+   "lat": 41.98526,
+   "lon": -88.07996,
+   "collected_utc": "2026-09-04T16:02:11.027Z",
+   "notes": null
+  },
+  {
+   "agency_id": "yuma-pd-az",
+   "display_name": "Yuma Police Department",
+   "state": "AZ",
+   "org_type": "law_enforcement",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "self_published",
+     "source_agency_id": "yuma-pd-az",
+     "official_url": "https://services1.arcgis.com/tzW2OKwR84ufoH3y/arcgis/rest/services/City_of_Yuma_Drone_Flights_2_view/FeatureServer/0",
+     "flight_count": 128,
+     "first_flight": "2024-11-26",
+     "last_flight": "2026-08-18",
+     "collected_utc": "2026-09-04T16:02:12.956Z"
+    }
+   ],
+   "official_url": "https://services1.arcgis.com/tzW2OKwR84ufoH3y/arcgis/rest/services/City_of_Yuma_Drone_Flights_2_view/FeatureServer/0",
+   "status": "ok",
+   "first_flight": "2024-11-26",
+   "last_flight": "2026-08-18",
+   "flight_count": 128,
+   "total_hours": 258,
+   "overlap_count": 0,
+   "lat": 32.72103,
+   "lon": -114.62032,
+   "collected_utc": "2026-09-04T16:02:12.956Z",
+   "notes": "Exposes DroneOperator, which carries an employee number and name. Not mapped."
   },
   {
    "agency_id": "dutchess-county-so-uas-unit",

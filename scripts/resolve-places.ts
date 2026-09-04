@@ -29,7 +29,7 @@ function targets(): ResolveTarget[] {
   for (const s of read<{ sites: any[] }>('flock_sites.json').sites) {
     out.push({ agency_id: s.agency_id, display_name: s.display_name, state: s.state ?? null, skydio_org_uuid: null, flock_host: s.host });
   }
-  for (const f of ['airdata_sites.json', 'cape_sites.json']) {
+  for (const f of ['airdata_sites.json', 'cape_sites.json', 'selfpub_sites.json']) {
     for (const s of read<{ sites: any[] }>(f).sites) {
       out.push({ agency_id: s.agency_id, display_name: s.display_name, state: s.state ?? null, skydio_org_uuid: null, flock_host: null });
     }

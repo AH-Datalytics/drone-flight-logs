@@ -1271,6 +1271,15 @@
    "resolved_utc": "2026-09-03T13:19:20.588Z"
   },
   {
+   "agency_id": "medford-pd-or",
+   "lat": 42.32642,
+   "lon": -122.87186,
+   "state": "OR",
+   "via": "geocode_name",
+   "query": "Medford, OR, USA",
+   "resolved_utc": "2026-09-04T15:55:02.017Z"
+  },
+  {
    "agency_id": "medicine-hat-police-service",
    "lat": 50.0399,
    "lon": -110.67291,
@@ -1676,6 +1685,15 @@
    "resolved_utc": "2026-09-03T13:19:27.411Z"
   },
   {
+   "agency_id": "roselle-pd-il",
+   "lat": 41.98526,
+   "lon": -88.07996,
+   "state": "IL",
+   "via": "geocode_name",
+   "query": "Roselle, IL, USA",
+   "resolved_utc": "2026-09-04T15:55:03.543Z"
+  },
+  {
    "agency_id": "roswell-pd-ga",
    "lat": 34.02332,
    "lon": -84.36002,
@@ -1746,6 +1764,15 @@
    "via": "skydio_extent",
    "query": null,
    "resolved_utc": "2026-09-03T13:19:28.025Z"
+  },
+  {
+   "agency_id": "scott-county-so-ia",
+   "lat": 41.62518,
+   "lon": -90.61642,
+   "state": "IA",
+   "via": "geocode_name",
+   "query": "Scott County, IA, USA",
+   "resolved_utc": "2026-09-04T15:55:05.165Z"
   },
   {
    "agency_id": "scottsdale-pd-az",
@@ -2088,6 +2115,15 @@
    "via": "geocode_name",
    "query": "Yonkers, NY, USA",
    "resolved_utc": "2026-09-03T13:22:23.086Z"
+  },
+  {
+   "agency_id": "yuma-pd-az",
+   "lat": 32.72103,
+   "lon": -114.62032,
+   "state": "AZ",
+   "via": "geocode_name",
+   "query": "Yuma, AZ, USA",
+   "resolved_utc": "2026-09-04T15:55:06.787Z"
   }
  ]
 }

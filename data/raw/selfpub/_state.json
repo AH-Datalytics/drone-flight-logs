@@ -1,0 +1,40 @@
+{
+ "updated_utc": "2026-09-04T16:02:12.956Z",
+ "agencies": {
+  "bloomington-pd-il": {
+   "agency_id": "bloomington-pd-il",
+   "rows": 458,
+   "expected": 458,
+   "last_run_utc": "2026-09-04T16:02:08.968Z",
+   "last_error": null
+  },
+  "medford-pd-or": {
+   "agency_id": "medford-pd-or",
+   "rows": 265,
+   "expected": 265,
+   "last_run_utc": "2026-09-04T16:02:10.109Z",
+   "last_error": null
+  },
+  "roselle-pd-il": {
+   "agency_id": "roselle-pd-il",
+   "rows": 133,
+   "expected": 133,
+   "last_run_utc": "2026-09-04T16:02:11.027Z",
+   "last_error": null
+  },
+  "scott-county-so-ia": {
+   "agency_id": "scott-county-so-ia",
+   "rows": 334,
+   "expected": 334,
+   "last_run_utc": "2026-09-04T16:02:11.964Z",
+   "last_error": null
+  },
+  "yuma-pd-az": {
+   "agency_id": "yuma-pd-az",
+   "rows": 128,
+   "expected": 226,
+   "last_run_utc": "2026-09-04T16:02:12.956Z",
+   "last_error": null
+  }
+ }
+}
