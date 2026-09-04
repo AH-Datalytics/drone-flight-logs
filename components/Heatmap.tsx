@@ -17,19 +17,20 @@ function cellTitle(weekday: string, hour: number, v: number): string {
 }
 
 /**
- * The cell's color on a diverging blue-to-red ramp: quiet hours cool, busy hours hot,
- * and the middle of the range left as the page background so nothing shouts in the
- * middle. Below the midpoint the cell mixes toward blue and above it toward red, each
- * at full strength only at the extremes.
+ * The cell's color: a sequential ramp from the page background at no flights to full
+ * red at the agency's busiest hour, so ink tracks magnitude and an empty hour recedes
+ * instead of shouting. A diverging blue-white-red ramp was wrong here — a flight count
+ * has no meaningful midpoint to put the white on, and anchoring it at half the busiest
+ * hour painted empty hours the loudest color on the chart.
+ *
+ * The square root, not the raw share: flight counts are heavily skewed, and on a linear
+ * ramp a quarter of the hours that actually had flights render under 15% ink. Aspen PD
+ * is the extreme — one Tuesday hour holds 1,977 of its 4,146 flights, which on a linear
+ * scale erases 99% of its real activity.
  */
 function heatStyle(value: number, max: number): React.CSSProperties {
-  const t = max > 0 ? value / max : 0.5;
-  const cold = t <= 0.5;
-  const strength = Math.round(Math.abs(t - 0.5) * 2 * 100);
-  return {
-    '--hue': cold ? 'var(--heat-cold)' : 'var(--heat-hot)',
-    '--mix': `${strength}%`,
-  } as React.CSSProperties;
+  const t = max > 0 ? Math.min(1, Math.max(0, value / max)) : 0;
+  return { '--mix': `${Math.round(Math.sqrt(t) * 100)}%` } as React.CSSProperties;
 }
 
 /**
