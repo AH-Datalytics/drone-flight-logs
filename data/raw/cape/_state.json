@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-09-04T11:32:15.314Z",
+ "updated_utc": "2026-09-04T11:39:32.152Z",
  "agencies": {
   "amherst-pd-oh": {
    "agency_id": "amherst-pd-oh",
@@ -10,7 +10,7 @@
    "in_window": 3,
    "total_flights": 3,
    "first_seen_utc": "2026-09-03T00:49:10.774Z",
-   "last_run_utc": "2026-09-04T11:31:39.424Z",
+   "last_run_utc": "2026-09-04T11:39:05.189Z",
    "last_error": null
   },
   "boulder-pd-co": {
@@ -22,7 +22,7 @@
    "in_window": 0,
    "total_flights": 0,
    "first_seen_utc": "2026-09-03T00:49:12.361Z",
-   "last_run_utc": "2026-09-04T11:31:40.997Z",
+   "last_run_utc": "2026-09-04T11:39:06.687Z",
    "last_error": null
   },
   "brea-pd-ca": {
@@ -34,7 +34,7 @@
    "in_window": 2953,
    "total_flights": 2953,
    "first_seen_utc": "2026-09-03T00:49:19.694Z",
-   "last_run_utc": "2026-09-04T11:31:52.324Z",
+   "last_run_utc": "2026-09-04T11:39:13.167Z",
    "last_error": null
   },
   "brookhaven-pd-ga": {
@@ -46,7 +46,7 @@
    "in_window": 0,
    "total_flights": 0,
    "first_seen_utc": "2026-09-03T00:49:21.183Z",
-   "last_run_utc": "2026-09-04T11:31:54.812Z",
+   "last_run_utc": "2026-09-04T11:39:14.691Z",
    "last_error": null
   },
   "glendale-pd-az": {
@@ -58,7 +58,7 @@
    "in_window": 83,
    "total_flights": 83,
    "first_seen_utc": "2026-09-03T00:49:22.832Z",
-   "last_run_utc": "2026-09-04T11:31:57.073Z",
+   "last_run_utc": "2026-09-04T11:39:16.478Z",
    "last_error": null
   },
   "hemet-pd-ca": {
@@ -70,7 +70,7 @@
    "in_window": 0,
    "total_flights": 0,
    "first_seen_utc": "2026-09-03T00:49:24.518Z",
-   "last_run_utc": "2026-09-04T11:31:58.833Z",
+   "last_run_utc": "2026-09-04T11:39:17.949Z",
    "last_error": null
   },
   "redondo-beach-pd-ca": {
@@ -82,7 +82,7 @@
    "in_window": 5709,
    "total_flights": 5709,
    "first_seen_utc": "2026-09-03T00:49:37.794Z",
-   "last_run_utc": "2026-09-04T11:32:12.072Z",
+   "last_run_utc": "2026-09-04T11:39:29.178Z",
    "last_error": null
   },
   "roswell-pd-ga": {
@@ -94,7 +94,7 @@
    "in_window": 0,
    "total_flights": 0,
    "first_seen_utc": "2026-09-03T00:49:39.332Z",
-   "last_run_utc": "2026-09-04T11:32:13.602Z",
+   "last_run_utc": "2026-09-04T11:39:30.654Z",
    "last_error": null
   },
   "yonkers-pd-ny": {
@@ -106,7 +106,7 @@
    "in_window": 7,
    "total_flights": 7,
    "first_seen_utc": "2026-09-03T00:49:41.082Z",
-   "last_run_utc": "2026-09-04T11:32:15.314Z",
+   "last_run_utc": "2026-09-04T11:39:32.152Z",
    "last_error": null
   }
  }
