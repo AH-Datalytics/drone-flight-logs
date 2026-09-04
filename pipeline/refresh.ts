@@ -24,6 +24,7 @@ export const STEPS: Step[] = [
   { name: 'flock', args: ['pipeline/flock/collect.ts', '--concurrency', '4'], note: 'additive; the source keeps about a month' },
   { name: 'airdata', args: ['pipeline/airdata/collect.ts'], note: 'count-verified against each month the portal publishes' },
   { name: 'motorola cape', args: ['pipeline/cape/collect.ts'], note: 'additive; most portals keep 30 to 60 days' },
+  { name: 'locate new agencies', args: ['scripts/resolve-places.ts'], note: 'cached; only agencies without a point are looked up' },
   { name: 'merge', args: ['pipeline/build.ts'], note: 'one agency per department, shared flights counted once' },
   { name: 'site files', args: ['scripts/prebuild.ts'], note: 'per-agency JSON and CSV for the site' },
 ];
