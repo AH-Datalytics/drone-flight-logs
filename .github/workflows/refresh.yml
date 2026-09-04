@@ -89,8 +89,10 @@ jobs:
 
       - name: Commit and publish
         run: |
-          git config user.name "drone-log-refresh"
-          git config user.email "noreply@ahdatalytics.com"
+          # GitHub's own bot identity, so the commit reads plainly as a machine
+          # and no address is invented on a domain AH Datalytics actually owns.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data app/opengraph-image.png
           # Judge "did anything change" on flights only. Collector state files
           # carry a timestamp and the card is re-encoded every run, so both
