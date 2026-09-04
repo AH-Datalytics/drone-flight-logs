@@ -1,0 +1,113 @@
+{
+ "updated_utc": "2026-09-03T00:49:41.082Z",
+ "agencies": {
+  "amherst-pd-oh": {
+   "agency_id": "amherst-pd-oh",
+   "slug": "amherstpd-oh",
+   "project_id": "14700a01-3d04-4bff-92e8-3fe7d78012d4",
+   "window_days": 30,
+   "publish_delay_hours": 0,
+   "in_window": 3,
+   "total_flights": 3,
+   "first_seen_utc": "2026-09-03T00:49:10.774Z",
+   "last_run_utc": "2026-09-03T00:49:10.774Z",
+   "last_error": null
+  },
+  "boulder-pd-co": {
+   "agency_id": "boulder-pd-co",
+   "slug": "boulderpd",
+   "project_id": "606f4a6e-0761-4706-acbe-23b9ddd60984",
+   "window_days": 30,
+   "publish_delay_hours": 0,
+   "in_window": 0,
+   "total_flights": 0,
+   "first_seen_utc": "2026-09-03T00:49:12.361Z",
+   "last_run_utc": "2026-09-03T00:49:12.361Z",
+   "last_error": null
+  },
+  "brea-pd-ca": {
+   "agency_id": "brea-pd-ca",
+   "slug": "breapd-ca",
+   "project_id": "108b1fa9-efab-4390-9d8e-df38d5ec76c5",
+   "window_days": null,
+   "publish_delay_hours": 12,
+   "in_window": 2944,
+   "total_flights": 2944,
+   "first_seen_utc": "2026-09-03T00:49:19.694Z",
+   "last_run_utc": "2026-09-03T00:49:19.694Z",
+   "last_error": null
+  },
+  "brookhaven-pd-ga": {
+   "agency_id": "brookhaven-pd-ga",
+   "slug": "brookhavenga",
+   "project_id": "f56f2a27-77de-40e3-80bd-21bad6598c06",
+   "window_days": 30,
+   "publish_delay_hours": 24,
+   "in_window": 0,
+   "total_flights": 0,
+   "first_seen_utc": "2026-09-03T00:49:21.183Z",
+   "last_run_utc": "2026-09-03T00:49:21.183Z",
+   "last_error": null
+  },
+  "glendale-pd-az": {
+   "agency_id": "glendale-pd-az",
+   "slug": "glendaleaz",
+   "project_id": "3499d507-1b8b-4179-85d5-51695fe773f9",
+   "window_days": null,
+   "publish_delay_hours": null,
+   "in_window": 83,
+   "total_flights": 83,
+   "first_seen_utc": "2026-09-03T00:49:22.832Z",
+   "last_run_utc": "2026-09-03T00:49:22.832Z",
+   "last_error": null
+  },
+  "hemet-pd-ca": {
+   "agency_id": "hemet-pd-ca",
+   "slug": "hemetpd-ca",
+   "project_id": "44d1f64f-202d-4726-98a4-8b414da52f8b",
+   "window_days": 30,
+   "publish_delay_hours": 6,
+   "in_window": 0,
+   "total_flights": 0,
+   "first_seen_utc": "2026-09-03T00:49:24.518Z",
+   "last_run_utc": "2026-09-03T00:49:24.518Z",
+   "last_error": null
+  },
+  "redondo-beach-pd-ca": {
+   "agency_id": "redondo-beach-pd-ca",
+   "slug": "redondobeachpd",
+   "project_id": "ea35a629-260c-46dc-b7b3-4886c684566a",
+   "window_days": null,
+   "publish_delay_hours": null,
+   "in_window": 5709,
+   "total_flights": 5709,
+   "first_seen_utc": "2026-09-03T00:49:37.794Z",
+   "last_run_utc": "2026-09-03T00:49:37.794Z",
+   "last_error": null
+  },
+  "roswell-pd-ga": {
+   "agency_id": "roswell-pd-ga",
+   "slug": "roswellpd",
+   "project_id": "0f93f428-0445-42ed-98c6-4d72f28ac973",
+   "window_days": 30,
+   "publish_delay_hours": 0,
+   "in_window": 0,
+   "total_flights": 0,
+   "first_seen_utc": "2026-09-03T00:49:39.332Z",
+   "last_run_utc": "2026-09-03T00:49:39.333Z",
+   "last_error": null
+  },
+  "yonkers-pd-ny": {
+   "agency_id": "yonkers-pd-ny",
+   "slug": "yonkerspd-ny",
+   "project_id": "3d712cab-18f8-451f-b1fe-762e7bfcdea2",
+   "window_days": 60,
+   "publish_delay_hours": 24,
+   "in_window": 7,
+   "total_flights": 7,
+   "first_seen_utc": "2026-09-03T00:49:41.082Z",
+   "last_run_utc": "2026-09-03T00:49:41.082Z",
+   "last_error": null
+  }
+ }
+}

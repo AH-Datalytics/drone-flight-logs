@@ -1,0 +1,8 @@
+{"flight_number":"BPD-241008-0008","time_period":{"begin":"2024-10-08T20:27:19.797Z","end":"2024-10-08T20:56:54.773Z"},"duration_seconds":1774.975498,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"BPD-241008-0007","time_period":{"begin":"2024-10-08T20:21:38.462Z","end":"2024-10-08T20:23:53.493Z"},"duration_seconds":135.031054,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"BPD-241008-0006","time_period":{"begin":"2024-10-08T20:17:06.809Z","end":"2024-10-08T20:21:27.742Z"},"duration_seconds":260.933401,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"BPD-241008-0005","time_period":{"begin":"2024-10-08T20:12:42.198Z","end":"2024-10-08T20:16:37.716Z"},"duration_seconds":235.518586,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"BPD-241008-0004","time_period":{"begin":"2024-10-08T20:07:56.996Z","end":"2024-10-08T20:12:11.705Z"},"duration_seconds":254.709187,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"BPD-241008-0003","time_period":{"begin":"2024-10-08T20:03:48.096Z","end":"2024-10-08T20:07:33.517Z"},"duration_seconds":225.421076,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"BPD-241008-0002","time_period":{"begin":"2024-10-08T18:03:05.484Z","end":"2024-10-08T18:49:57.517Z"},"duration_seconds":2812.033432,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"BPD-241008-0001","time_period":{"begin":"2024-10-08T18:02:02.583Z","end":"2024-10-08T18:02:41.309Z"},"duration_seconds":38.725676,"ce_hidden":false,"calls_for_service":[]}

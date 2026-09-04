@@ -1,0 +1,4007 @@
+{
+ "updated_utc": "2026-09-03T14:49:12.434Z",
+ "agencies": {
+  "paradise-pd-ca": {
+   "agency_id": "paradise-pd-ca",
+   "slug": "ppd",
+   "months": {
+    "2024-02": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:34.090Z"
+    },
+    "2024-03": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:36.398Z"
+    },
+    "2024-04": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:38.706Z"
+    },
+    "2024-05": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:41.092Z"
+    },
+    "2024-06": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:43.395Z"
+    },
+    "2024-07": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:45.718Z"
+    },
+    "2024-08": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:48.041Z"
+    },
+    "2024-10": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:50.312Z"
+    },
+    "2025-02": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:38:52.667Z"
+    }
+   },
+   "total_flights": 26,
+   "last_run_utc": "2026-09-03T12:54:55.788Z",
+   "last_error": null
+  },
+  "anne-arundel-county-police-md": {
+   "agency_id": "anne-arundel-county-police-md",
+   "slug": "annearundelpd",
+   "months": {
+    "2025-07": {
+     "published": 133,
+     "collected": 133,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:40:52.861Z"
+    },
+    "2025-08": {
+     "published": 242,
+     "collected": 242,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:42:39.714Z"
+    },
+    "2025-09": {
+     "published": 232,
+     "collected": 232,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:44:21.490Z"
+    },
+    "2025-10": {
+     "published": 233,
+     "collected": 233,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:46:03.718Z"
+    },
+    "2025-11": {
+     "published": 187,
+     "collected": 187,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:47:27.631Z"
+    },
+    "2025-12": {
+     "published": 194,
+     "collected": 194,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:48:54.082Z"
+    },
+    "2026-01": {
+     "published": 68,
+     "collected": 68,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:49:25.555Z"
+    },
+    "2026-02": {
+     "published": 100,
+     "collected": 100,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:50:10.376Z"
+    },
+    "2026-03": {
+     "published": 254,
+     "collected": 254,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:52:06.881Z"
+    },
+    "2026-04": {
+     "published": 184,
+     "collected": 184,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:53:29.021Z"
+    },
+    "2026-05": {
+     "published": 118,
+     "collected": 118,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:54:20.487Z"
+    },
+    "2026-06": {
+     "published": 185,
+     "collected": 185,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:55:40.515Z"
+    },
+    "2026-07": {
+     "published": 126,
+     "collected": 126,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:34.316Z"
+    },
+    "2026-08": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:41:03.721Z"
+    }
+   },
+   "total_flights": 2267,
+   "last_run_utc": "2026-09-03T01:41:03.721Z",
+   "last_error": null
+  },
+  "bothell-pd-wa": {
+   "agency_id": "bothell-pd-wa",
+   "slug": "bothellpd",
+   "months": {
+    "2021-09": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:44.846Z"
+    },
+    "2021-10": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:47.219Z"
+    },
+    "2021-11": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:49.550Z"
+    },
+    "2021-12": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:51.918Z"
+    },
+    "2022-03": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:54.244Z"
+    },
+    "2022-06": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:56.566Z"
+    },
+    "2022-08": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:56:58.942Z"
+    },
+    "2022-09": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:06.086Z"
+    },
+    "2022-10": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:10.746Z"
+    },
+    "2022-11": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:15.661Z"
+    },
+    "2022-12": {
+     "published": 24,
+     "collected": 24,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:25.219Z"
+    },
+    "2023-01": {
+     "published": 21,
+     "collected": 21,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:34.788Z"
+    },
+    "2023-02": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:39.443Z"
+    },
+    "2023-03": {
+     "published": 29,
+     "collected": 29,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:51.444Z"
+    },
+    "2023-04": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:57:53.776Z"
+    },
+    "2023-05": {
+     "published": 18,
+     "collected": 18,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:03.454Z"
+    },
+    "2023-06": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:08.502Z"
+    },
+    "2023-07": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:13.854Z"
+    },
+    "2023-08": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:16.506Z"
+    },
+    "2023-10": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:19.250Z"
+    },
+    "2023-11": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:22.147Z"
+    },
+    "2024-01": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:28.098Z"
+    },
+    "2024-02": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:34.544Z"
+    },
+    "2024-03": {
+     "published": 9,
+     "collected": 9,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:39.656Z"
+    },
+    "2024-04": {
+     "published": 33,
+     "collected": 33,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:58:56.468Z"
+    },
+    "2024-05": {
+     "published": 19,
+     "collected": 19,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:09.592Z"
+    },
+    "2024-06": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:15.312Z"
+    },
+    "2024-07": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:20.632Z"
+    },
+    "2024-08": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:26.355Z"
+    },
+    "2024-09": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:34.452Z"
+    },
+    "2024-10": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:40.225Z"
+    },
+    "2024-11": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:43.209Z"
+    },
+    "2024-12": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T00:59:48.565Z"
+    },
+    "2025-01": {
+     "published": 19,
+     "collected": 19,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:00:01.444Z"
+    },
+    "2025-02": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:00:11.183Z"
+    },
+    "2025-03": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:00:16.448Z"
+    },
+    "2025-04": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:00:21.204Z"
+    },
+    "2025-05": {
+     "published": 29,
+     "collected": 29,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:00:33.417Z"
+    },
+    "2025-06": {
+     "published": 32,
+     "collected": 32,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:00:48.725Z"
+    },
+    "2025-07": {
+     "published": 47,
+     "collected": 47,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:08.054Z"
+    },
+    "2025-08": {
+     "published": 29,
+     "collected": 29,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:19.846Z"
+    },
+    "2025-09": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:29.209Z"
+    },
+    "2025-10": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:33.873Z"
+    },
+    "2025-11": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:40.938Z"
+    },
+    "2025-12": {
+     "published": 14,
+     "collected": 14,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:48.027Z"
+    },
+    "2026-01": {
+     "published": 17,
+     "collected": 17,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:55.111Z"
+    },
+    "2026-02": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:01:59.789Z"
+    },
+    "2026-03": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:05.065Z"
+    },
+    "2026-04": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:12.145Z"
+    },
+    "2026-05": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:16.885Z"
+    },
+    "2026-06": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:21.647Z"
+    },
+    "2026-07": {
+     "published": 14,
+     "collected": 14,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:28.716Z"
+    },
+    "2026-08": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:41:06.600Z"
+    }
+   },
+   "total_flights": 672,
+   "last_run_utc": "2026-09-03T01:41:06.600Z",
+   "last_error": null
+  },
+  "chico-pd-ca": {
+   "agency_id": "chico-pd-ca",
+   "slug": "chicopd",
+   "months": {
+    "2021-07": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:34.972Z"
+    },
+    "2021-08": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:42.646Z"
+    },
+    "2021-09": {
+     "published": 17,
+     "collected": 17,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:50.333Z"
+    },
+    "2021-10": {
+     "published": 9,
+     "collected": 9,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:55.448Z"
+    },
+    "2021-11": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:02:58.031Z"
+    },
+    "2021-12": {
+     "published": 33,
+     "collected": 33,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:03:13.455Z"
+    },
+    "2022-01": {
+     "published": 22,
+     "collected": 22,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:03:23.687Z"
+    },
+    "2022-02": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:03:34.248Z"
+    },
+    "2022-03": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:03:44.565Z"
+    },
+    "2022-04": {
+     "published": 21,
+     "collected": 21,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:03:54.903Z"
+    },
+    "2022-05": {
+     "published": 9,
+     "collected": 9,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:04:00.119Z"
+    },
+    "2022-06": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:04:10.180Z"
+    },
+    "2022-07": {
+     "published": 24,
+     "collected": 24,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:04:20.462Z"
+    },
+    "2022-08": {
+     "published": 44,
+     "collected": 44,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:04:40.784Z"
+    },
+    "2022-09": {
+     "published": 25,
+     "collected": 25,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:04:53.394Z"
+    },
+    "2022-10": {
+     "published": 33,
+     "collected": 33,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:05:08.700Z"
+    },
+    "2022-11": {
+     "published": 30,
+     "collected": 30,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:05:21.586Z"
+    },
+    "2022-12": {
+     "published": 26,
+     "collected": 26,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:05:34.357Z"
+    },
+    "2023-01": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:05:36.858Z"
+    },
+    "2023-02": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:05:39.448Z"
+    },
+    "2023-03": {
+     "published": 24,
+     "collected": 24,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:05:49.756Z"
+    },
+    "2023-04": {
+     "published": 26,
+     "collected": 26,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:06:02.292Z"
+    },
+    "2023-05": {
+     "published": 40,
+     "collected": 40,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:06:19.990Z"
+    },
+    "2023-06": {
+     "published": 37,
+     "collected": 37,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:06:37.693Z"
+    },
+    "2023-07": {
+     "published": 45,
+     "collected": 45,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:06:58.466Z"
+    },
+    "2023-08": {
+     "published": 61,
+     "collected": 61,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:07:26.491Z"
+    },
+    "2023-09": {
+     "published": 36,
+     "collected": 36,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:07:43.008Z"
+    },
+    "2023-10": {
+     "published": 31,
+     "collected": 31,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:07:59.130Z"
+    },
+    "2023-11": {
+     "published": 42,
+     "collected": 42,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:08:17.800Z"
+    },
+    "2023-12": {
+     "published": 29,
+     "collected": 29,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:08:30.817Z"
+    },
+    "2024-01": {
+     "published": 28,
+     "collected": 28,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:08:43.566Z"
+    },
+    "2024-02": {
+     "published": 19,
+     "collected": 19,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:08:53.938Z"
+    },
+    "2024-03": {
+     "published": 28,
+     "collected": 28,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:09:07.013Z"
+    },
+    "2024-04": {
+     "published": 46,
+     "collected": 46,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:09:27.726Z"
+    },
+    "2024-05": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:09:35.400Z"
+    },
+    "2024-06": {
+     "published": 27,
+     "collected": 27,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:09:48.376Z"
+    },
+    "2024-07": {
+     "published": 21,
+     "collected": 21,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:09:59.157Z"
+    },
+    "2024-08": {
+     "published": 50,
+     "collected": 50,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:10:22.587Z"
+    },
+    "2024-09": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:10:27.599Z"
+    },
+    "2024-10": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:10:37.674Z"
+    },
+    "2024-11": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:10:40.211Z"
+    },
+    "2024-12": {
+     "published": 18,
+     "collected": 18,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:10:47.869Z"
+    },
+    "2025-01": {
+     "published": 17,
+     "collected": 17,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:10:55.515Z"
+    },
+    "2025-02": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:11:00.621Z"
+    },
+    "2025-03": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:11:05.780Z"
+    },
+    "2025-04": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:11:10.859Z"
+    },
+    "2025-05": {
+     "published": 80,
+     "collected": 80,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:11:48.681Z"
+    },
+    "2025-06": {
+     "published": 53,
+     "collected": 53,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:12:12.428Z"
+    },
+    "2025-07": {
+     "published": 48,
+     "collected": 48,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:12:33.386Z"
+    },
+    "2025-08": {
+     "published": 23,
+     "collected": 23,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:12:43.891Z"
+    },
+    "2025-09": {
+     "published": 39,
+     "collected": 39,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:13:01.899Z"
+    },
+    "2025-10": {
+     "published": 39,
+     "collected": 39,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:13:19.828Z"
+    },
+    "2025-11": {
+     "published": 42,
+     "collected": 42,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:13:39.174Z"
+    },
+    "2025-12": {
+     "published": 16,
+     "collected": 16,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:13:47.032Z"
+    },
+    "2026-01": {
+     "published": 102,
+     "collected": 102,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:14:31.021Z"
+    },
+    "2026-02": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:14:56.697Z"
+    },
+    "2026-03": {
+     "published": 26,
+     "collected": 26,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:15:09.561Z"
+    },
+    "2026-04": {
+     "published": 51,
+     "collected": 51,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:15:33.322Z"
+    },
+    "2026-05": {
+     "published": 54,
+     "collected": 54,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:15:57.979Z"
+    },
+    "2026-06": {
+     "published": 33,
+     "collected": 33,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:16:13.619Z"
+    },
+    "2026-07": {
+     "published": 22,
+     "collected": 22,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:16:24.015Z"
+    },
+    "2026-08": {
+     "published": 27,
+     "collected": 27,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:41:21.362Z"
+    }
+   },
+   "total_flights": 1797,
+   "last_run_utc": "2026-09-03T01:41:21.363Z",
+   "last_error": null
+  },
+  "chula-vista-pd-ca": {
+   "agency_id": "chula-vista-pd-ca",
+   "slug": "cvpd",
+   "months": {
+    "2021-04": {
+     "published": 469,
+     "collected": 469,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:22:20.140Z"
+    },
+    "2021-05": {
+     "published": 451,
+     "collected": 451,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:27:38.836Z"
+    },
+    "2021-06": {
+     "published": 441,
+     "collected": 441,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:32:52.110Z"
+    },
+    "2021-07": {
+     "published": 616,
+     "collected": 616,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:40:01.618Z"
+    },
+    "2021-08": {
+     "published": 586,
+     "collected": 586,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:48:13.680Z"
+    },
+    "2021-09": {
+     "published": 489,
+     "collected": 489,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:53:46.328Z"
+    },
+    "2021-10": {
+     "published": 455,
+     "collected": 455,
+     "complete": true,
+     "collected_utc": "2026-09-03T01:58:56.651Z"
+    },
+    "2021-11": {
+     "published": 398,
+     "collected": 398,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:03:37.058Z"
+    },
+    "2021-12": {
+     "published": 322,
+     "collected": 322,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:07:26.328Z"
+    },
+    "2022-01": {
+     "published": 439,
+     "collected": 439,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:12:39.473Z"
+    },
+    "2022-02": {
+     "published": 482,
+     "collected": 482,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:18:18.874Z"
+    },
+    "2022-03": {
+     "published": 644,
+     "collected": 644,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:25:58.288Z"
+    },
+    "2022-04": {
+     "published": 502,
+     "collected": 502,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:32:06.117Z"
+    },
+    "2022-05": {
+     "published": 378,
+     "collected": 378,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:36:33.677Z"
+    },
+    "2022-06": {
+     "published": 306,
+     "collected": 306,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:40:04.242Z"
+    },
+    "2022-07": {
+     "published": 407,
+     "collected": 407,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:44:45.933Z"
+    },
+    "2022-08": {
+     "published": 484,
+     "collected": 484,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:50:25.691Z"
+    },
+    "2022-09": {
+     "published": 452,
+     "collected": 452,
+     "complete": true,
+     "collected_utc": "2026-09-03T02:55:35.773Z"
+    },
+    "2022-10": {
+     "published": 546,
+     "collected": 546,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:01:48.199Z"
+    },
+    "2022-11": {
+     "published": 515,
+     "collected": 515,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:07:43.560Z"
+    },
+    "2022-12": {
+     "published": 394,
+     "collected": 394,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:12:28.092Z"
+    },
+    "2023-01": {
+     "published": 354,
+     "collected": 354,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:16:41.697Z"
+    },
+    "2023-02": {
+     "published": 378,
+     "collected": 378,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:21:02.745Z"
+    },
+    "2023-03": {
+     "published": 403,
+     "collected": 403,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:25:44.560Z"
+    },
+    "2023-04": {
+     "published": 529,
+     "collected": 529,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:31:49.323Z"
+    },
+    "2023-05": {
+     "published": 527,
+     "collected": 527,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:37:57.245Z"
+    },
+    "2023-06": {
+     "published": 523,
+     "collected": 523,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:43:54.386Z"
+    },
+    "2023-07": {
+     "published": 625,
+     "collected": 625,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:50:58.691Z"
+    },
+    "2023-08": {
+     "published": 519,
+     "collected": 519,
+     "complete": true,
+     "collected_utc": "2026-09-03T03:56:48.319Z"
+    },
+    "2023-09": {
+     "published": 551,
+     "collected": 551,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:03:11.238Z"
+    },
+    "2023-10": {
+     "published": 491,
+     "collected": 491,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:08:53.911Z"
+    },
+    "2023-11": {
+     "published": 314,
+     "collected": 314,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:12:35.989Z"
+    },
+    "2023-12": {
+     "published": 415,
+     "collected": 415,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:17:26.273Z"
+    },
+    "2024-01": {
+     "published": 308,
+     "collected": 308,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:20:59.628Z"
+    },
+    "2024-02": {
+     "published": 295,
+     "collected": 295,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:24:30.776Z"
+    },
+    "2024-03": {
+     "published": 321,
+     "collected": 321,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:28:17.560Z"
+    },
+    "2024-04": {
+     "published": 305,
+     "collected": 305,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:31:46.188Z"
+    },
+    "2024-05": {
+     "published": 357,
+     "collected": 357,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:35:54.573Z"
+    },
+    "2024-06": {
+     "published": 338,
+     "collected": 338,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:39:50.450Z"
+    },
+    "2024-07": {
+     "published": 373,
+     "collected": 373,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:44:07.954Z"
+    },
+    "2024-08": {
+     "published": 298,
+     "collected": 298,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:47:35.590Z"
+    },
+    "2024-09": {
+     "published": 174,
+     "collected": 174,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:49:34.586Z"
+    },
+    "2024-10": {
+     "published": 271,
+     "collected": 271,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:52:45.666Z"
+    },
+    "2024-11": {
+     "published": 189,
+     "collected": 189,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:54:57.788Z"
+    },
+    "2024-12": {
+     "published": 182,
+     "collected": 182,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:57:06.775Z"
+    },
+    "2025-01": {
+     "published": 193,
+     "collected": 193,
+     "complete": true,
+     "collected_utc": "2026-09-03T04:59:21.986Z"
+    },
+    "2025-02": {
+     "published": 159,
+     "collected": 159,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:01:15.024Z"
+    },
+    "2025-03": {
+     "published": 316,
+     "collected": 316,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:05:00.481Z"
+    },
+    "2025-04": {
+     "published": 340,
+     "collected": 340,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:09:05.459Z"
+    },
+    "2025-05": {
+     "published": 307,
+     "collected": 307,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:12:49.083Z"
+    },
+    "2025-06": {
+     "published": 297,
+     "collected": 297,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:16:15.443Z"
+    },
+    "2025-07": {
+     "published": 279,
+     "collected": 279,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:19:31.045Z"
+    },
+    "2025-08": {
+     "published": 203,
+     "collected": 203,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:22:00.527Z"
+    },
+    "2025-09": {
+     "published": 274,
+     "collected": 274,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:25:20.253Z"
+    },
+    "2025-10": {
+     "published": 342,
+     "collected": 342,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:29:14.630Z"
+    },
+    "2025-11": {
+     "published": 218,
+     "collected": 218,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:31:45.251Z"
+    },
+    "2025-12": {
+     "published": 208,
+     "collected": 208,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:34:06.742Z"
+    },
+    "2026-01": {
+     "published": 252,
+     "collected": 252,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:36:54.765Z"
+    },
+    "2026-02": {
+     "published": 205,
+     "collected": 205,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:39:15.209Z"
+    },
+    "2026-03": {
+     "published": 291,
+     "collected": 291,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:42:33.369Z"
+    },
+    "2026-04": {
+     "published": 231,
+     "collected": 231,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:45:13.545Z"
+    },
+    "2026-05": {
+     "published": 357,
+     "collected": 357,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:49:14.845Z"
+    },
+    "2026-06": {
+     "published": 323,
+     "collected": 323,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:52:49.916Z"
+    },
+    "2026-07": {
+     "published": 339,
+     "collected": 339,
+     "complete": true,
+     "collected_utc": "2026-09-03T05:56:39.511Z"
+    },
+    "2026-08": {
+     "published": 390,
+     "collected": 390,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:01:06.921Z"
+    },
+    "2026-09": {
+     "published": 8,
+     "collected": 9,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:01:15.251Z"
+    }
+   },
+   "total_flights": 24348,
+   "last_run_utc": "2026-09-03T06:01:15.251Z",
+   "last_error": null
+  },
+  "coachella-valley-rtic-ca": {
+   "agency_id": "coachella-valley-rtic-ca",
+   "slug": "cvrtic",
+   "months": {
+    "2025-09": {
+     "published": 89,
+     "collected": 89,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:01:54.039Z"
+    },
+    "2025-10": {
+     "published": 21,
+     "collected": 21,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:02:04.273Z"
+    },
+    "2025-11": {
+     "published": 53,
+     "collected": 53,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:02:27.132Z"
+    },
+    "2025-12": {
+     "published": 132,
+     "collected": 132,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:03:23.486Z"
+    },
+    "2026-01": {
+     "published": 108,
+     "collected": 108,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:04:08.332Z"
+    },
+    "2026-02": {
+     "published": 212,
+     "collected": 212,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:05:38.895Z"
+    },
+    "2026-03": {
+     "published": 269,
+     "collected": 269,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:07:31.661Z"
+    },
+    "2026-04": {
+     "published": 200,
+     "collected": 200,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:08:57.435Z"
+    },
+    "2026-05": {
+     "published": 224,
+     "collected": 224,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:10:32.305Z"
+    },
+    "2026-06": {
+     "published": 238,
+     "collected": 238,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:12:13.350Z"
+    },
+    "2026-07": {
+     "published": 280,
+     "collected": 280,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:14:11.924Z"
+    },
+    "2026-08": {
+     "published": 169,
+     "collected": 169,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:15:25.143Z"
+    },
+    "2026-09": {
+     "published": 16,
+     "collected": 16,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:15:32.662Z"
+    }
+   },
+   "total_flights": 2011,
+   "last_run_utc": "2026-09-03T06:15:32.663Z",
+   "last_error": null
+  },
+  "elk-grove-pd-ca": {
+   "agency_id": "elk-grove-pd-ca",
+   "slug": "egpd",
+   "months": {
+    "2023-01": {
+     "published": 62,
+     "collected": 62,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:16:01.314Z"
+    },
+    "2023-02": {
+     "published": 58,
+     "collected": 58,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:16:26.987Z"
+    },
+    "2023-03": {
+     "published": 78,
+     "collected": 78,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:17:00.602Z"
+    },
+    "2023-04": {
+     "published": 119,
+     "collected": 119,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:17:53.238Z"
+    },
+    "2023-05": {
+     "published": 62,
+     "collected": 62,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:18:21.455Z"
+    },
+    "2023-06": {
+     "published": 56,
+     "collected": 56,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:18:47.214Z"
+    },
+    "2023-07": {
+     "published": 70,
+     "collected": 70,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:19:18.230Z"
+    },
+    "2023-08": {
+     "published": 65,
+     "collected": 65,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:19:46.376Z"
+    },
+    "2023-09": {
+     "published": 81,
+     "collected": 81,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:20:22.215Z"
+    },
+    "2023-10": {
+     "published": 57,
+     "collected": 57,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:20:47.703Z"
+    },
+    "2023-11": {
+     "published": 49,
+     "collected": 49,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:21:10.758Z"
+    },
+    "2023-12": {
+     "published": 84,
+     "collected": 84,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:21:46.423Z"
+    },
+    "2024-01": {
+     "published": 47,
+     "collected": 47,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:22:06.278Z"
+    },
+    "2024-02": {
+     "published": 36,
+     "collected": 36,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:22:21.521Z"
+    },
+    "2024-03": {
+     "published": 42,
+     "collected": 42,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:22:39.508Z"
+    },
+    "2024-04": {
+     "published": 87,
+     "collected": 87,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:23:18.651Z"
+    },
+    "2024-05": {
+     "published": 52,
+     "collected": 52,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:23:41.607Z"
+    },
+    "2024-06": {
+     "published": 43,
+     "collected": 43,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:24:01.929Z"
+    },
+    "2024-07": {
+     "published": 59,
+     "collected": 59,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:24:27.409Z"
+    },
+    "2024-08": {
+     "published": 69,
+     "collected": 69,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:24:58.291Z"
+    },
+    "2024-09": {
+     "published": 39,
+     "collected": 39,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:25:16.190Z"
+    },
+    "2024-10": {
+     "published": 74,
+     "collected": 74,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:25:49.448Z"
+    },
+    "2024-11": {
+     "published": 75,
+     "collected": 75,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:26:22.513Z"
+    },
+    "2024-12": {
+     "published": 47,
+     "collected": 47,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:26:42.976Z"
+    },
+    "2025-01": {
+     "published": 90,
+     "collected": 90,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:27:22.464Z"
+    },
+    "2025-02": {
+     "published": 34,
+     "collected": 34,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:27:38.107Z"
+    },
+    "2025-03": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:28:03.919Z"
+    },
+    "2025-04": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:28:29.665Z"
+    },
+    "2025-05": {
+     "published": 24,
+     "collected": 24,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:28:39.818Z"
+    },
+    "2025-06": {
+     "published": 62,
+     "collected": 62,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:29:07.879Z"
+    },
+    "2025-07": {
+     "published": 74,
+     "collected": 74,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:29:41.552Z"
+    },
+    "2025-08": {
+     "published": 67,
+     "collected": 67,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:30:12.155Z"
+    },
+    "2025-09": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:30:22.324Z"
+    },
+    "2025-10": {
+     "published": 56,
+     "collected": 56,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:30:47.850Z"
+    },
+    "2025-11": {
+     "published": 37,
+     "collected": 37,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:31:05.615Z"
+    },
+    "2025-12": {
+     "published": 36,
+     "collected": 36,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:31:20.881Z"
+    },
+    "2026-01": {
+     "published": 26,
+     "collected": 26,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:31:33.611Z"
+    },
+    "2026-02": {
+     "published": 33,
+     "collected": 33,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:31:49.247Z"
+    },
+    "2026-03": {
+     "published": 38,
+     "collected": 38,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:32:06.937Z"
+    },
+    "2026-04": {
+     "published": 39,
+     "collected": 39,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:32:24.744Z"
+    },
+    "2026-05": {
+     "published": 142,
+     "collected": 142,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:33:26.589Z"
+    },
+    "2026-06": {
+     "published": 42,
+     "collected": 42,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:33:44.474Z"
+    },
+    "2026-07": {
+     "published": 46,
+     "collected": 46,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:04.907Z"
+    },
+    "2026-08": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:07.477Z"
+    }
+   },
+   "total_flights": 2503,
+   "last_run_utc": "2026-09-03T06:34:07.478Z",
+   "last_error": null
+  },
+  "everett-pd-wa": {
+   "agency_id": "everett-pd-wa",
+   "slug": "everettpd",
+   "months": {
+    "2022-07": {
+     "published": 17,
+     "collected": 17,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:15.226Z"
+    },
+    "2022-08": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:17.586Z"
+    },
+    "2025-05": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:22.362Z"
+    },
+    "2025-06": {
+     "published": 31,
+     "collected": 31,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:36.893Z"
+    },
+    "2025-07": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:39.271Z"
+    },
+    "2025-08": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:41.656Z"
+    },
+    "2025-09": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:46.454Z"
+    },
+    "2025-10": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:48.856Z"
+    },
+    "2025-11": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:51.220Z"
+    },
+    "2025-12": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:53.654Z"
+    },
+    "2026-01": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:56.041Z"
+    },
+    "2026-02": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:34:58.408Z"
+    },
+    "2026-03": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:35:00.772Z"
+    },
+    "2026-08": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:35:03.157Z"
+    }
+   },
+   "total_flights": 82,
+   "last_run_utc": "2026-09-03T06:35:03.160Z",
+   "last_error": null
+  },
+  "irvine-pd-ca": {
+   "agency_id": "irvine-pd-ca",
+   "slug": "irvinepd",
+   "months": {
+    "2025-01": {
+     "published": 141,
+     "collected": 141,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:36:11.603Z"
+    },
+    "2025-02": {
+     "published": 179,
+     "collected": 179,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:37:34.369Z"
+    },
+    "2025-03": {
+     "published": 161,
+     "collected": 161,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:38:48.952Z"
+    },
+    "2025-04": {
+     "published": 173,
+     "collected": 173,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:40:09.441Z"
+    },
+    "2025-05": {
+     "published": 214,
+     "collected": 214,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:41:48.824Z"
+    },
+    "2025-06": {
+     "published": 159,
+     "collected": 159,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:43:03.072Z"
+    },
+    "2025-07": {
+     "published": 173,
+     "collected": 173,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:44:23.398Z"
+    },
+    "2025-08": {
+     "published": 137,
+     "collected": 137,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:45:28.335Z"
+    },
+    "2025-09": {
+     "published": 110,
+     "collected": 110,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:46:21.211Z"
+    },
+    "2025-10": {
+     "published": 146,
+     "collected": 146,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:47:30.205Z"
+    },
+    "2025-11": {
+     "published": 143,
+     "collected": 143,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:48:36.344Z"
+    },
+    "2025-12": {
+     "published": 171,
+     "collected": 171,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:49:55.545Z"
+    },
+    "2026-01": {
+     "published": 206,
+     "collected": 206,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:51:31.396Z"
+    },
+    "2026-02": {
+     "published": 193,
+     "collected": 193,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:53:04.833Z"
+    },
+    "2026-03": {
+     "published": 188,
+     "collected": 188,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:54:33.267Z"
+    },
+    "2026-04": {
+     "published": 177,
+     "collected": 177,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:55:55.319Z"
+    },
+    "2026-05": {
+     "published": 145,
+     "collected": 145,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:57:04.630Z"
+    },
+    "2026-06": {
+     "published": 134,
+     "collected": 134,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:58:07.719Z"
+    },
+    "2026-07": {
+     "published": 170,
+     "collected": 170,
+     "complete": true,
+     "collected_utc": "2026-09-03T06:59:27.395Z"
+    },
+    "2026-08": {
+     "published": 138,
+     "collected": 138,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:00:30.268Z"
+    },
+    "2026-09": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:00:32.936Z"
+    }
+   },
+   "total_flights": 3259,
+   "last_run_utc": "2026-09-03T07:00:32.937Z",
+   "last_error": null
+  },
+  "king-county-so-wa": {
+   "agency_id": "king-county-so-wa",
+   "slug": "kcso",
+   "months": {
+    "2025-12": {
+     "published": 67,
+     "collected": 67,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:01:04.860Z"
+    },
+    "2026-01": {
+     "published": 62,
+     "collected": 62,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:01:33.770Z"
+    },
+    "2026-02": {
+     "published": 65,
+     "collected": 65,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:02:02.523Z"
+    },
+    "2026-03": {
+     "published": 45,
+     "collected": 45,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:02:23.537Z"
+    },
+    "2026-04": {
+     "published": 30,
+     "collected": 30,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:02:36.618Z"
+    },
+    "2026-05": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:03:02.742Z"
+    },
+    "2026-06": {
+     "published": 49,
+     "collected": 49,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:03:26.275Z"
+    },
+    "2026-07": {
+     "published": 39,
+     "collected": 39,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:03:44.376Z"
+    },
+    "2026-08": {
+     "published": 14,
+     "collected": 14,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:03:52.121Z"
+    }
+   },
+   "total_flights": 431,
+   "last_run_utc": "2026-09-03T07:03:52.123Z",
+   "last_error": null
+  },
+  "la-port-police-ca": {
+   "agency_id": "la-port-police-ca",
+   "slug": "lapp",
+   "months": {
+    "2025-06": {
+     "published": 81,
+     "collected": 81,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:04:27.461Z"
+    },
+    "2025-07": {
+     "published": 52,
+     "collected": 52,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:04:49.813Z"
+    },
+    "2025-08": {
+     "published": 37,
+     "collected": 37,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:05:06.998Z"
+    },
+    "2025-09": {
+     "published": 48,
+     "collected": 48,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:05:27.167Z"
+    },
+    "2025-10": {
+     "published": 40,
+     "collected": 40,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:05:44.321Z"
+    },
+    "2025-11": {
+     "published": 48,
+     "collected": 48,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:06:04.124Z"
+    },
+    "2025-12": {
+     "published": 14,
+     "collected": 14,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:06:11.495Z"
+    },
+    "2026-01": {
+     "published": 18,
+     "collected": 18,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:06:18.988Z"
+    },
+    "2026-02": {
+     "published": 74,
+     "collected": 74,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:06:51.285Z"
+    },
+    "2026-03": {
+     "published": 72,
+     "collected": 72,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:07:20.974Z"
+    },
+    "2026-04": {
+     "published": 94,
+     "collected": 94,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:08:00.659Z"
+    },
+    "2026-05": {
+     "published": 157,
+     "collected": 157,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:09:09.191Z"
+    },
+    "2026-06": {
+     "published": 31,
+     "collected": 31,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:09:24.238Z"
+    },
+    "2026-07": {
+     "published": 82,
+     "collected": 82,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:09:59.474Z"
+    },
+    "2026-08": {
+     "published": 86,
+     "collected": 86,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:10:37.407Z"
+    }
+   },
+   "total_flights": 934,
+   "last_run_utc": "2026-09-03T07:10:37.409Z",
+   "last_error": null
+  },
+  "lancaster-pd-ca": {
+   "agency_id": "lancaster-pd-ca",
+   "slug": "lpdviper",
+   "months": {
+    "2024-08": {
+     "published": 32,
+     "collected": 32,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:10:53.046Z"
+    },
+    "2024-09": {
+     "published": 73,
+     "collected": 73,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:11:25.689Z"
+    },
+    "2024-10": {
+     "published": 76,
+     "collected": 76,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:11:58.301Z"
+    },
+    "2024-11": {
+     "published": 52,
+     "collected": 52,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:12:20.855Z"
+    },
+    "2024-12": {
+     "published": 30,
+     "collected": 30,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:12:33.369Z"
+    },
+    "2025-01": {
+     "published": 23,
+     "collected": 23,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:12:43.374Z"
+    },
+    "2025-02": {
+     "published": 99,
+     "collected": 99,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:13:26.100Z"
+    },
+    "2025-03": {
+     "published": 70,
+     "collected": 70,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:13:56.533Z"
+    },
+    "2025-04": {
+     "published": 109,
+     "collected": 109,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:14:44.250Z"
+    },
+    "2025-05": {
+     "published": 52,
+     "collected": 52,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:15:06.935Z"
+    },
+    "2025-06": {
+     "published": 38,
+     "collected": 38,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:15:24.342Z"
+    },
+    "2025-07": {
+     "published": 45,
+     "collected": 45,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:15:44.315Z"
+    },
+    "2025-08": {
+     "published": 88,
+     "collected": 88,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:16:22.050Z"
+    },
+    "2025-09": {
+     "published": 152,
+     "collected": 152,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:17:27.701Z"
+    },
+    "2025-10": {
+     "published": 84,
+     "collected": 84,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:18:03.372Z"
+    },
+    "2025-11": {
+     "published": 49,
+     "collected": 49,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:18:25.915Z"
+    },
+    "2025-12": {
+     "published": 68,
+     "collected": 68,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:18:55.972Z"
+    },
+    "2026-01": {
+     "published": 78,
+     "collected": 78,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:19:28.559Z"
+    },
+    "2026-02": {
+     "published": 69,
+     "collected": 69,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:19:58.581Z"
+    },
+    "2026-03": {
+     "published": 55,
+     "collected": 55,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:20:23.910Z"
+    },
+    "2026-04": {
+     "published": 115,
+     "collected": 115,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:21:14.519Z"
+    },
+    "2026-05": {
+     "published": 62,
+     "collected": 62,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:21:42.424Z"
+    },
+    "2026-06": {
+     "published": 69,
+     "collected": 69,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:22:12.722Z"
+    },
+    "2026-07": {
+     "published": 47,
+     "collected": 47,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:22:32.819Z"
+    },
+    "2026-08": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:22:37.782Z"
+    }
+   },
+   "total_flights": 1647,
+   "last_run_utc": "2026-09-03T07:22:37.783Z",
+   "last_error": null
+  },
+  "las-vegas-metro-pd-nv": {
+   "agency_id": "las-vegas-metro-pd-nv",
+   "slug": "lvmpd",
+   "months": {
+    "2025-09": {
+     "published": 749,
+     "collected": 749,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:33:49.390Z"
+    },
+    "2025-10": {
+     "published": 1312,
+     "collected": 1312,
+     "complete": true,
+     "collected_utc": "2026-09-03T07:53:16.228Z"
+    },
+    "2025-11": {
+     "published": 1310,
+     "collected": 1310,
+     "complete": true,
+     "collected_utc": "2026-09-03T08:12:33.946Z"
+    },
+    "2025-12": {
+     "published": 1590,
+     "collected": 1590,
+     "complete": true,
+     "collected_utc": "2026-09-03T08:35:42.015Z"
+    },
+    "2026-01": {
+     "published": 1787,
+     "collected": 1787,
+     "complete": true,
+     "collected_utc": "2026-09-03T09:01:32.037Z"
+    },
+    "2026-02": {
+     "published": 1996,
+     "collected": 1996,
+     "complete": true,
+     "collected_utc": "2026-09-03T09:30:53.401Z"
+    },
+    "2026-03": {
+     "published": 2226,
+     "collected": 2226,
+     "complete": true,
+     "collected_utc": "2026-09-03T10:03:17.017Z"
+    },
+    "2026-04": {
+     "published": 2277,
+     "collected": 2277,
+     "complete": true,
+     "collected_utc": "2026-09-03T10:37:37.652Z"
+    },
+    "2026-05": {
+     "published": 2471,
+     "collected": 2471,
+     "complete": true,
+     "collected_utc": "2026-09-03T11:13:58.352Z"
+    },
+    "2026-06": {
+     "published": 2038,
+     "collected": 2038,
+     "complete": true,
+     "collected_utc": "2026-09-03T11:44:10.775Z"
+    },
+    "2026-07": {
+     "published": 2469,
+     "collected": 2469,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:20:40.778Z"
+    },
+    "2026-08": {
+     "published": 1974,
+     "collected": 1974,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:49:59.604Z"
+    }
+   },
+   "total_flights": 22199,
+   "last_run_utc": "2026-09-03T12:49:59.604Z",
+   "last_error": null
+  },
+  "los-altos-pd-ca": {
+   "agency_id": "los-altos-pd-ca",
+   "slug": "losaltospd",
+   "months": {
+    "2025-04": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:02.632Z"
+    },
+    "2025-05": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:04.969Z"
+    },
+    "2025-06": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:12.048Z"
+    },
+    "2025-07": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:14.362Z"
+    },
+    "2025-08": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:16.701Z"
+    },
+    "2025-09": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:19.012Z"
+    },
+    "2025-10": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:21.343Z"
+    },
+    "2025-11": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:23.644Z"
+    },
+    "2025-12": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:25.975Z"
+    },
+    "2026-01": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:28.300Z"
+    },
+    "2026-02": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:30.617Z"
+    },
+    "2026-03": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:32.970Z"
+    },
+    "2026-06": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:35.565Z"
+    },
+    "2026-08": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:37.857Z"
+    }
+   },
+   "total_flights": 50,
+   "last_run_utc": "2026-09-03T12:50:37.859Z",
+   "last_error": null
+  },
+  "mankato-mn": {
+   "agency_id": "mankato-mn",
+   "slug": "mankato",
+   "months": {
+    "2022-07": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:44.424Z"
+    },
+    "2022-08": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:46.839Z"
+    },
+    "2022-09": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:49.263Z"
+    },
+    "2022-10": {
+     "published": 10,
+     "collected": 10,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:50:54.162Z"
+    },
+    "2022-11": {
+     "published": 17,
+     "collected": 17,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:01.447Z"
+    },
+    "2022-12": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:03.846Z"
+    },
+    "2023-01": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:08.648Z"
+    },
+    "2023-02": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:10.997Z"
+    },
+    "2023-03": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:13.446Z"
+    },
+    "2023-04": {
+     "published": 19,
+     "collected": 19,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:23.175Z"
+    },
+    "2023-05": {
+     "published": 15,
+     "collected": 15,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:30.334Z"
+    },
+    "2023-06": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:35.257Z"
+    },
+    "2023-07": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:37.604Z"
+    },
+    "2023-08": {
+     "published": 14,
+     "collected": 14,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:44.879Z"
+    },
+    "2023-09": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:47.242Z"
+    },
+    "2023-10": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:49.604Z"
+    },
+    "2023-11": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:51.973Z"
+    },
+    "2023-12": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:54.376Z"
+    },
+    "2024-01": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:56.687Z"
+    },
+    "2024-02": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:51:59.045Z"
+    },
+    "2024-03": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:52:01.451Z"
+    },
+    "2024-04": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:52:03.751Z"
+    },
+    "2024-05": {
+     "published": 22,
+     "collected": 22,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:52:13.247Z"
+    },
+    "2024-06": {
+     "published": 59,
+     "collected": 59,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:52:36.675Z"
+    },
+    "2024-07": {
+     "published": 22,
+     "collected": 22,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:52:45.960Z"
+    },
+    "2024-08": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:52:50.605Z"
+    },
+    "2024-09": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:52:55.351Z"
+    },
+    "2024-10": {
+     "published": 33,
+     "collected": 33,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:09.479Z"
+    },
+    "2024-11": {
+     "published": 10,
+     "collected": 10,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:14.132Z"
+    },
+    "2024-12": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:16.509Z"
+    },
+    "2025-01": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:18.859Z"
+    },
+    "2025-02": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:23.523Z"
+    },
+    "2025-03": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:28.201Z"
+    },
+    "2025-04": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:32.910Z"
+    },
+    "2025-05": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:35.276Z"
+    },
+    "2025-06": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:37.646Z"
+    },
+    "2025-07": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:42.375Z"
+    },
+    "2025-08": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:47.015Z"
+    },
+    "2025-09": {
+     "published": 10,
+     "collected": 10,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:51.640Z"
+    },
+    "2025-10": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:53:58.735Z"
+    },
+    "2025-11": {
+     "published": 15,
+     "collected": 15,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:05.720Z"
+    },
+    "2025-12": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:08.077Z"
+    },
+    "2026-01": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:10.501Z"
+    },
+    "2026-02": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:15.230Z"
+    },
+    "2026-03": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:22.184Z"
+    },
+    "2026-04": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:24.498Z"
+    },
+    "2026-05": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:34.001Z"
+    },
+    "2026-06": {
+     "published": 15,
+     "collected": 15,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:41.069Z"
+    },
+    "2026-07": {
+     "published": 9,
+     "collected": 9,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:45.827Z"
+    },
+    "2026-08": {
+     "published": 20,
+     "collected": 20,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:55.219Z"
+    }
+   },
+   "total_flights": 512,
+   "last_run_utc": "2026-09-03T12:54:55.221Z",
+   "last_error": null
+  },
+  "sacramento-pd-ca": {
+   "agency_id": "sacramento-pd-ca",
+   "slug": "spduas",
+   "months": {
+    "2019-10": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:54:59.731Z"
+    },
+    "2019-11": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:55:02.393Z"
+    },
+    "2020-01": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:55:05.243Z"
+    },
+    "2020-03": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:55:07.884Z"
+    },
+    "2020-04": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:55:10.590Z"
+    },
+    "2020-06": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:55:13.327Z"
+    },
+    "2020-07": {
+     "published": 42,
+     "collected": 42,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:55:33.181Z"
+    },
+    "2020-08": {
+     "published": 43,
+     "collected": 43,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:55:55.737Z"
+    },
+    "2020-09": {
+     "published": 108,
+     "collected": 108,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:56:45.546Z"
+    },
+    "2020-10": {
+     "published": 83,
+     "collected": 83,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:57:24.427Z"
+    },
+    "2020-11": {
+     "published": 50,
+     "collected": 50,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:57:49.031Z"
+    },
+    "2020-12": {
+     "published": 28,
+     "collected": 28,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:58:02.539Z"
+    },
+    "2021-01": {
+     "published": 80,
+     "collected": 80,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:58:41.074Z"
+    },
+    "2021-02": {
+     "published": 71,
+     "collected": 71,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:59:15.130Z"
+    },
+    "2021-03": {
+     "published": 90,
+     "collected": 90,
+     "complete": true,
+     "collected_utc": "2026-09-03T12:59:58.036Z"
+    },
+    "2021-04": {
+     "published": 90,
+     "collected": 90,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:00:41.426Z"
+    },
+    "2021-05": {
+     "published": 77,
+     "collected": 77,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:01:17.967Z"
+    },
+    "2021-06": {
+     "published": 43,
+     "collected": 43,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:01:39.972Z"
+    },
+    "2021-07": {
+     "published": 74,
+     "collected": 74,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:02:16.275Z"
+    },
+    "2021-08": {
+     "published": 126,
+     "collected": 126,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:03:18.908Z"
+    },
+    "2021-09": {
+     "published": 161,
+     "collected": 161,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:04:33.019Z"
+    },
+    "2021-10": {
+     "published": 64,
+     "collected": 64,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:05:17.229Z"
+    },
+    "2021-11": {
+     "published": 118,
+     "collected": 118,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:06:11.869Z"
+    },
+    "2021-12": {
+     "published": 67,
+     "collected": 67,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:06:44.224Z"
+    },
+    "2022-01": {
+     "published": 84,
+     "collected": 84,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:07:22.153Z"
+    },
+    "2022-02": {
+     "published": 128,
+     "collected": 128,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:08:22.409Z"
+    },
+    "2022-03": {
+     "published": 81,
+     "collected": 81,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:09:00.208Z"
+    },
+    "2022-04": {
+     "published": 158,
+     "collected": 158,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:10:13.415Z"
+    },
+    "2022-05": {
+     "published": 66,
+     "collected": 66,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:10:43.626Z"
+    },
+    "2022-06": {
+     "published": 145,
+     "collected": 145,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:11:51.167Z"
+    },
+    "2022-07": {
+     "published": 130,
+     "collected": 130,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:12:50.278Z"
+    },
+    "2022-08": {
+     "published": 87,
+     "collected": 87,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:13:30.768Z"
+    },
+    "2022-09": {
+     "published": 58,
+     "collected": 58,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:13:57.605Z"
+    },
+    "2022-10": {
+     "published": 144,
+     "collected": 144,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:15:02.601Z"
+    },
+    "2022-11": {
+     "published": 70,
+     "collected": 70,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:15:35.328Z"
+    },
+    "2022-12": {
+     "published": 89,
+     "collected": 89,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:16:15.798Z"
+    },
+    "2023-01": {
+     "published": 59,
+     "collected": 59,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:16:43.484Z"
+    },
+    "2023-02": {
+     "published": 82,
+     "collected": 82,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:17:21.292Z"
+    },
+    "2023-03": {
+     "published": 46,
+     "collected": 46,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:17:42.882Z"
+    },
+    "2023-04": {
+     "published": 65,
+     "collected": 65,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:18:12.342Z"
+    },
+    "2023-05": {
+     "published": 91,
+     "collected": 91,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:18:55.235Z"
+    },
+    "2023-06": {
+     "published": 128,
+     "collected": 128,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:19:54.369Z"
+    },
+    "2023-07": {
+     "published": 68,
+     "collected": 68,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:20:26.761Z"
+    },
+    "2023-08": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:20:53.625Z"
+    },
+    "2023-09": {
+     "published": 55,
+     "collected": 55,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:21:20.375Z"
+    },
+    "2023-10": {
+     "published": 71,
+     "collected": 71,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:21:52.609Z"
+    },
+    "2023-11": {
+     "published": 69,
+     "collected": 69,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:22:24.989Z"
+    },
+    "2023-12": {
+     "published": 89,
+     "collected": 89,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:23:05.781Z"
+    },
+    "2024-01": {
+     "published": 63,
+     "collected": 63,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:23:35.141Z"
+    },
+    "2024-02": {
+     "published": 57,
+     "collected": 57,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:24:02.067Z"
+    },
+    "2024-03": {
+     "published": 66,
+     "collected": 66,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:24:31.706Z"
+    },
+    "2024-04": {
+     "published": 65,
+     "collected": 65,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:25:01.340Z"
+    },
+    "2024-05": {
+     "published": 39,
+     "collected": 39,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:25:20.216Z"
+    },
+    "2024-06": {
+     "published": 50,
+     "collected": 50,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:25:44.233Z"
+    },
+    "2024-07": {
+     "published": 91,
+     "collected": 91,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:26:27.130Z"
+    },
+    "2024-08": {
+     "published": 46,
+     "collected": 46,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:26:48.506Z"
+    },
+    "2024-09": {
+     "published": 61,
+     "collected": 61,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:27:18.028Z"
+    },
+    "2024-10": {
+     "published": 89,
+     "collected": 89,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:27:58.685Z"
+    },
+    "2024-11": {
+     "published": 67,
+     "collected": 67,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:28:30.415Z"
+    },
+    "2024-12": {
+     "published": 153,
+     "collected": 153,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:29:40.313Z"
+    },
+    "2025-01": {
+     "published": 116,
+     "collected": 116,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:30:34.157Z"
+    },
+    "2025-02": {
+     "published": 84,
+     "collected": 84,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:31:11.642Z"
+    },
+    "2025-03": {
+     "published": 64,
+     "collected": 64,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:31:41.092Z"
+    },
+    "2025-04": {
+     "published": 67,
+     "collected": 67,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:32:13.045Z"
+    },
+    "2025-05": {
+     "published": 70,
+     "collected": 70,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:32:45.088Z"
+    },
+    "2025-06": {
+     "published": 64,
+     "collected": 64,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:33:14.328Z"
+    },
+    "2025-07": {
+     "published": 78,
+     "collected": 78,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:33:49.498Z"
+    },
+    "2025-08": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:34:16.389Z"
+    },
+    "2025-09": {
+     "published": 65,
+     "collected": 65,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:34:45.852Z"
+    },
+    "2025-10": {
+     "published": 137,
+     "collected": 137,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:35:47.979Z"
+    },
+    "2025-11": {
+     "published": 70,
+     "collected": 70,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:36:19.857Z"
+    },
+    "2025-12": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:36:47.119Z"
+    },
+    "2026-01": {
+     "published": 87,
+     "collected": 87,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:37:27.118Z"
+    },
+    "2026-02": {
+     "published": 42,
+     "collected": 42,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:37:45.603Z"
+    },
+    "2026-03": {
+     "published": 70,
+     "collected": 70,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:38:17.541Z"
+    },
+    "2026-04": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:38:44.383Z"
+    },
+    "2026-05": {
+     "published": 83,
+     "collected": 83,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:39:21.871Z"
+    },
+    "2026-06": {
+     "published": 73,
+     "collected": 73,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:39:56.412Z"
+    },
+    "2026-07": {
+     "published": 71,
+     "collected": 71,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:40:28.397Z"
+    },
+    "2026-08": {
+     "published": 87,
+     "collected": 87,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:41:09.197Z"
+    }
+   },
+   "total_flights": 5905,
+   "last_run_utc": "2026-09-03T13:41:09.199Z",
+   "last_error": null
+  },
+  "snohomish-county-so-wa": {
+   "agency_id": "snohomish-county-so-wa",
+   "slug": "scso",
+   "months": {
+    "2024-01": {
+     "published": 28,
+     "collected": 28,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:41:27.154Z"
+    },
+    "2024-02": {
+     "published": 40,
+     "collected": 40,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:41:49.479Z"
+    },
+    "2024-03": {
+     "published": 68,
+     "collected": 68,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:42:27.339Z"
+    },
+    "2024-04": {
+     "published": 67,
+     "collected": 67,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:43:04.913Z"
+    },
+    "2024-05": {
+     "published": 80,
+     "collected": 80,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:43:48.500Z"
+    },
+    "2024-06": {
+     "published": 43,
+     "collected": 43,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:44:13.831Z"
+    },
+    "2024-07": {
+     "published": 15,
+     "collected": 15,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:44:22.930Z"
+    },
+    "2024-08": {
+     "published": 37,
+     "collected": 37,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:44:44.348Z"
+    },
+    "2024-09": {
+     "published": 54,
+     "collected": 54,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:45:11.922Z"
+    },
+    "2024-10": {
+     "published": 26,
+     "collected": 26,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:45:27.195Z"
+    },
+    "2024-11": {
+     "published": 25,
+     "collected": 25,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:45:42.621Z"
+    },
+    "2024-12": {
+     "published": 24,
+     "collected": 24,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:45:55.217Z"
+    },
+    "2025-01": {
+     "published": 47,
+     "collected": 47,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:46:19.662Z"
+    },
+    "2025-02": {
+     "published": 29,
+     "collected": 29,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:46:35.073Z"
+    },
+    "2025-03": {
+     "published": 50,
+     "collected": 50,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:47:02.665Z"
+    },
+    "2025-04": {
+     "published": 22,
+     "collected": 22,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:47:15.032Z"
+    },
+    "2025-05": {
+     "published": 50,
+     "collected": 50,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:47:42.808Z"
+    },
+    "2025-06": {
+     "published": 95,
+     "collected": 95,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:48:31.656Z"
+    },
+    "2025-07": {
+     "published": 73,
+     "collected": 73,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:49:11.873Z"
+    },
+    "2025-08": {
+     "published": 40,
+     "collected": 40,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:49:33.811Z"
+    },
+    "2025-09": {
+     "published": 76,
+     "collected": 76,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:50:14.215Z"
+    },
+    "2025-10": {
+     "published": 44,
+     "collected": 44,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:50:39.068Z"
+    },
+    "2025-11": {
+     "published": 51,
+     "collected": 51,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:51:07.356Z"
+    },
+    "2025-12": {
+     "published": 47,
+     "collected": 47,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:51:32.281Z"
+    },
+    "2026-01": {
+     "published": 64,
+     "collected": 64,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:52:06.778Z"
+    },
+    "2026-02": {
+     "published": 32,
+     "collected": 32,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:52:25.650Z"
+    },
+    "2026-03": {
+     "published": 46,
+     "collected": 46,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:52:50.426Z"
+    },
+    "2026-04": {
+     "published": 71,
+     "collected": 71,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:53:27.423Z"
+    },
+    "2026-05": {
+     "published": 66,
+     "collected": 66,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:54:01.433Z"
+    },
+    "2026-06": {
+     "published": 85,
+     "collected": 85,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:54:48.387Z"
+    },
+    "2026-07": {
+     "published": 83,
+     "collected": 83,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:55:31.796Z"
+    },
+    "2026-08": {
+     "published": 67,
+     "collected": 67,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:08.685Z"
+    }
+   },
+   "total_flights": 1645,
+   "last_run_utc": "2026-09-03T13:56:08.687Z",
+   "last_error": null
+  },
+  "ventura-county-so-es-ca": {
+   "agency_id": "ventura-county-so-es-ca",
+   "slug": "vcsoes",
+   "months": {
+    "2023-01": {
+     "published": 17,
+     "collected": 17,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:17.090Z"
+    },
+    "2023-02": {
+     "published": 10,
+     "collected": 10,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:22.408Z"
+    },
+    "2023-03": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:24.924Z"
+    },
+    "2023-04": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:27.387Z"
+    },
+    "2023-05": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:32.486Z"
+    },
+    "2023-06": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:35.066Z"
+    },
+    "2023-07": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:37.519Z"
+    },
+    "2023-08": {
+     "published": 15,
+     "collected": 15,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:44.823Z"
+    },
+    "2023-10": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:49.768Z"
+    },
+    "2023-11": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:52.254Z"
+    },
+    "2023-12": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:56:57.318Z"
+    },
+    "2024-01": {
+     "published": 7,
+     "collected": 7,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:57:02.296Z"
+    },
+    "2024-02": {
+     "published": 16,
+     "collected": 16,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:57:09.847Z"
+    },
+    "2024-03": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:57:12.345Z"
+    },
+    "2024-04": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:57:17.336Z"
+    },
+    "2024-05": {
+     "published": 16,
+     "collected": 16,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:57:24.892Z"
+    },
+    "2024-06": {
+     "published": 9,
+     "collected": 9,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:57:29.809Z"
+    },
+    "2024-07": {
+     "published": 53,
+     "collected": 53,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:57:52.967Z"
+    },
+    "2024-08": {
+     "published": 120,
+     "collected": 120,
+     "complete": true,
+     "collected_utc": "2026-09-03T13:58:43.276Z"
+    },
+    "2024-09": {
+     "published": 224,
+     "collected": 224,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:00:20.491Z"
+    },
+    "2024-10": {
+     "published": 163,
+     "collected": 163,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:01:33.116Z"
+    },
+    "2024-11": {
+     "published": 158,
+     "collected": 158,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:02:42.494Z"
+    },
+    "2024-12": {
+     "published": 180,
+     "collected": 180,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:03:59.126Z"
+    },
+    "2025-01": {
+     "published": 61,
+     "collected": 61,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:04:26.910Z"
+    },
+    "2025-02": {
+     "published": 138,
+     "collected": 138,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:05:25.847Z"
+    },
+    "2025-03": {
+     "published": 104,
+     "collected": 104,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:06:12.100Z"
+    },
+    "2025-04": {
+     "published": 113,
+     "collected": 113,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:07:00.059Z"
+    },
+    "2025-05": {
+     "published": 75,
+     "collected": 75,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:07:32.958Z"
+    },
+    "2025-06": {
+     "published": 133,
+     "collected": 133,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:08:31.785Z"
+    },
+    "2025-07": {
+     "published": 97,
+     "collected": 97,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:09:15.342Z"
+    },
+    "2025-08": {
+     "published": 60,
+     "collected": 60,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:09:40.649Z"
+    },
+    "2025-09": {
+     "published": 129,
+     "collected": 129,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:10:36.860Z"
+    },
+    "2025-10": {
+     "published": 69,
+     "collected": 69,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:11:07.355Z"
+    },
+    "2025-11": {
+     "published": 69,
+     "collected": 69,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:11:38.299Z"
+    },
+    "2025-12": {
+     "published": 127,
+     "collected": 127,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:12:34.375Z"
+    },
+    "2026-01": {
+     "published": 129,
+     "collected": 129,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:13:30.474Z"
+    },
+    "2026-02": {
+     "published": 46,
+     "collected": 46,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:13:50.851Z"
+    },
+    "2026-03": {
+     "published": 94,
+     "collected": 94,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:14:31.253Z"
+    },
+    "2026-04": {
+     "published": 83,
+     "collected": 83,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:15:06.588Z"
+    },
+    "2026-05": {
+     "published": 48,
+     "collected": 48,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:15:27.117Z"
+    },
+    "2026-06": {
+     "published": 41,
+     "collected": 41,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:15:45.205Z"
+    },
+    "2026-07": {
+     "published": 70,
+     "collected": 70,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:16:16.157Z"
+    },
+    "2026-08": {
+     "published": 27,
+     "collected": 27,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:16:28.895Z"
+    }
+   },
+   "total_flights": 2768,
+   "last_run_utc": "2026-09-03T14:16:28.896Z",
+   "last_error": null
+  },
+  "west-palm-beach-pd-fl": {
+   "agency_id": "west-palm-beach-pd-fl",
+   "slug": "wpb",
+   "months": {
+    "2024-03": {
+     "published": 21,
+     "collected": 21,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:16:41.626Z"
+    },
+    "2024-04": {
+     "published": 152,
+     "collected": 152,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:17:54.662Z"
+    },
+    "2024-05": {
+     "published": 106,
+     "collected": 106,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:18:44.210Z"
+    },
+    "2024-06": {
+     "published": 85,
+     "collected": 85,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:19:25.796Z"
+    },
+    "2024-07": {
+     "published": 92,
+     "collected": 92,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:20:10.108Z"
+    },
+    "2024-08": {
+     "published": 127,
+     "collected": 127,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:21:10.649Z"
+    },
+    "2024-09": {
+     "published": 112,
+     "collected": 112,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:22:03.002Z"
+    },
+    "2024-10": {
+     "published": 86,
+     "collected": 86,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:22:44.146Z"
+    },
+    "2024-11": {
+     "published": 51,
+     "collected": 51,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:23:08.817Z"
+    },
+    "2024-12": {
+     "published": 96,
+     "collected": 96,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:23:52.794Z"
+    },
+    "2025-01": {
+     "published": 113,
+     "collected": 113,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:24:44.697Z"
+    },
+    "2025-02": {
+     "published": 101,
+     "collected": 101,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:25:31.877Z"
+    },
+    "2025-03": {
+     "published": 97,
+     "collected": 97,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:26:19.158Z"
+    },
+    "2025-04": {
+     "published": 94,
+     "collected": 94,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:27:02.831Z"
+    },
+    "2025-05": {
+     "published": 132,
+     "collected": 132,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:28:03.112Z"
+    },
+    "2025-06": {
+     "published": 113,
+     "collected": 113,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:28:55.413Z"
+    },
+    "2025-07": {
+     "published": 126,
+     "collected": 126,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:29:52.969Z"
+    },
+    "2025-08": {
+     "published": 160,
+     "collected": 160,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:31:06.310Z"
+    },
+    "2025-09": {
+     "published": 136,
+     "collected": 136,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:32:09.680Z"
+    },
+    "2025-10": {
+     "published": 68,
+     "collected": 68,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:32:42.972Z"
+    },
+    "2025-11": {
+     "published": 94,
+     "collected": 94,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:33:26.615Z"
+    },
+    "2025-12": {
+     "published": 150,
+     "collected": 150,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:34:34.540Z"
+    },
+    "2026-01": {
+     "published": 198,
+     "collected": 198,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:36:04.133Z"
+    },
+    "2026-02": {
+     "published": 180,
+     "collected": 180,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:37:26.081Z"
+    },
+    "2026-03": {
+     "published": 175,
+     "collected": 175,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:38:47.188Z"
+    },
+    "2026-04": {
+     "published": 189,
+     "collected": 189,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:40:14.278Z"
+    },
+    "2026-05": {
+     "published": 209,
+     "collected": 209,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:41:50.075Z"
+    },
+    "2026-06": {
+     "published": 184,
+     "collected": 184,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:43:15.393Z"
+    },
+    "2026-07": {
+     "published": 217,
+     "collected": 217,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:44:57.156Z"
+    },
+    "2026-08": {
+     "published": 228,
+     "collected": 228,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:46:40.660Z"
+    },
+    "2026-09": {
+     "published": 21,
+     "collected": 21,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:46:51.310Z"
+    }
+   },
+   "total_flights": 3908,
+   "last_run_utc": "2026-09-03T14:46:51.312Z",
+   "last_error": null
+  },
+  "westmont-pd-il": {
+   "agency_id": "westmont-pd-il",
+   "slug": "vwpd",
+   "months": {
+    "2023-07": {
+     "published": 29,
+     "collected": 29,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:04.441Z"
+    },
+    "2023-08": {
+     "published": 14,
+     "collected": 14,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:11.808Z"
+    },
+    "2023-09": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:14.246Z"
+    },
+    "2023-10": {
+     "published": 6,
+     "collected": 6,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:16.610Z"
+    },
+    "2023-11": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:18.982Z"
+    },
+    "2023-12": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:21.335Z"
+    },
+    "2024-03": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:24.292Z"
+    },
+    "2024-04": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:26.667Z"
+    },
+    "2024-05": {
+     "published": 8,
+     "collected": 8,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:31.648Z"
+    },
+    "2024-06": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:34.005Z"
+    },
+    "2024-07": {
+     "published": 30,
+     "collected": 30,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:46.285Z"
+    },
+    "2024-08": {
+     "published": 11,
+     "collected": 11,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:51.004Z"
+    },
+    "2024-09": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:53.379Z"
+    },
+    "2024-12": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:55.861Z"
+    },
+    "2025-01": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:47:58.216Z"
+    },
+    "2025-02": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:00.649Z"
+    },
+    "2025-05": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:03.008Z"
+    },
+    "2025-07": {
+     "published": 32,
+     "collected": 32,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:19.555Z"
+    },
+    "2025-08": {
+     "published": 13,
+     "collected": 13,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:27.282Z"
+    },
+    "2025-09": {
+     "published": 9,
+     "collected": 9,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:32.882Z"
+    },
+    "2025-10": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:35.668Z"
+    },
+    "2025-11": {
+     "published": 14,
+     "collected": 14,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:43.624Z"
+    },
+    "2025-12": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:46.274Z"
+    },
+    "2026-02": {
+     "published": 4,
+     "collected": 4,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:48.632Z"
+    },
+    "2026-03": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:50.990Z"
+    },
+    "2026-04": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:53.358Z"
+    },
+    "2026-05": {
+     "published": 5,
+     "collected": 5,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:55.778Z"
+    },
+    "2026-06": {
+     "published": 1,
+     "collected": 1,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:48:58.141Z"
+    },
+    "2026-07": {
+     "published": 19,
+     "collected": 19,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:49:07.615Z"
+    },
+    "2026-08": {
+     "published": 12,
+     "collected": 12,
+     "complete": true,
+     "collected_utc": "2026-09-03T14:49:12.432Z"
+    }
+   },
+   "total_flights": 247,
+   "last_run_utc": "2026-09-03T14:49:12.434Z",
+   "last_error": null
+  }
+ }
+}

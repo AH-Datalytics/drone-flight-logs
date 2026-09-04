@@ -1,0 +1,17 @@
+{"flight_number":"USTPD-260212-0003","time_period":{"begin":"2026-02-12T17:14:53.217Z","end":"2026-02-12T17:16:23.999Z"},"duration_seconds":90.782281,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260212-0002","time_period":{"begin":"2026-02-12T17:10:04.366Z","end":"2026-02-12T17:11:10.705Z"},"duration_seconds":66.33867,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260212-0001","time_period":{"begin":"2026-02-12T16:56:22.062Z","end":"2026-02-12T16:59:45.824Z"},"duration_seconds":203.762062,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260317-0003","time_period":{"begin":"2026-03-17T23:02:22.465Z","end":"2026-03-17T23:12:43.049Z"},"duration_seconds":620.584532,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260317-0002","time_period":{"begin":"2026-03-17T22:51:36.797Z","end":"2026-03-17T22:57:03.739Z"},"duration_seconds":326.941446,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260317-0001","time_period":{"begin":"2026-03-17T22:47:55.438Z","end":"2026-03-17T22:50:48.367Z"},"duration_seconds":172.929312,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260416-0002","time_period":{"begin":"2026-04-16T16:21:41.595Z","end":"2026-04-16T16:28:03.449Z"},"duration_seconds":381.85391,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260416-0001","time_period":{"begin":"2026-04-16T14:52:07.677Z","end":"2026-04-16T14:55:55.969Z"},"duration_seconds":228.292246,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260410-0005","time_period":{"begin":"2026-04-10T16:12:09.767Z","end":"2026-04-10T16:16:31.559Z"},"duration_seconds":261.791793,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260410-0004","time_period":{"begin":"2026-04-10T15:30:16.315Z","end":"2026-04-10T15:52:47.881Z"},"duration_seconds":1351.56551,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260410-0003","time_period":{"begin":"2026-04-10T14:47:26.367Z","end":"2026-04-10T15:06:52.638Z"},"duration_seconds":1166.271064,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260410-0002","time_period":{"begin":"2026-04-10T14:02:27.175Z","end":"2026-04-10T14:29:31.032Z"},"duration_seconds":1623.856968,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260410-0001","time_period":{"begin":"2026-04-10T13:46:51.595Z","end":"2026-04-10T13:50:38.286Z"},"duration_seconds":226.691276,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260409-0004","time_period":{"begin":"2026-04-09T20:29:46.165Z","end":"2026-04-09T20:39:27.999Z"},"duration_seconds":581.833626,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260409-0003","time_period":{"begin":"2026-04-09T19:49:27.389Z","end":"2026-04-09T20:15:11.375Z"},"duration_seconds":1543.986403,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260409-0002","time_period":{"begin":"2026-04-09T18:44:20.388Z","end":"2026-04-09T19:10:34.688Z"},"duration_seconds":1574.300183,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"USTPD-260409-0001","time_period":{"begin":"2026-04-09T17:50:16.123Z","end":"2026-04-09T17:52:23.751Z"},"duration_seconds":127.628653,"ce_hidden":false,"calls_for_service":[]}

@@ -1,0 +1,115 @@
+name: Data refresh
+
+# Collects every source, merges, regenerates the link card, and commits the
+# result. Pushing to main is what publishes it: Vercel builds from this repo,
+# and the site reads data/site at build time.
+#
+# Two schedules, because the sources do not forget at the same rate:
+#
+#   monthly  — everything. Skydio and San Francisco are re-read in full; Flock
+#              and AirData re-read their recent months and skip months already
+#              recorded as complete.
+#   weekly   — Motorola only. Its portals expose a rolling thirty- or sixty-day
+#              window with no way to ask for older flights, so a month missed
+#              is a month lost. It is one API call per portal and takes about a
+#              minute, which is cheap insurance.
+#
+# Flock needs a real browser: every dashboard sits behind a Cloudflare
+# challenge. A GitHub runner clears it — verified before this was written —
+# so this does not have to run on anyone's laptop.
+
+on:
+  schedule:
+    - cron: '0 8 1 * *'   # 1st of the month, 08:00 UTC (03:00 CDT)
+    - cron: '0 8 * * 1'   # Mondays, Motorola only
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: What to collect
+        type: choice
+        default: full
+        options: [full, cape]
+
+# One refresh at a time. The collectors also hold their own locks, but two
+# runs would otherwise queue up behind each other pointlessly.
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Decide scope
+        id: scope
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ inputs.scope }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 8 * * 1" ]; then
+            echo "value=cape" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=full" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install a browser for Flock
+        if: steps.scope.outputs.value == 'full'
+        run: npx playwright install --with-deps chromium
+
+      - name: Collect everything
+        if: steps.scope.outputs.value == 'full'
+        run: npm run refresh
+
+      - name: Collect Motorola only
+        if: steps.scope.outputs.value == 'cape'
+        run: |
+          npm run cape:collect
+          npm run build:data
+          npx tsx scripts/prebuild.ts
+
+      - name: Regenerate the link card
+        run: npx playwright install chromium && npm run og
+
+      - name: Verify the data before committing
+        run: |
+          npm test
+          npm run validate:data
+
+      - name: Commit and publish
+        run: |
+          git config user.name "drone-log-refresh"
+          git config user.email "noreply@ahdatalytics.com"
+          git add data app/opengraph-image.png
+          if git diff --cached --quiet; then
+            echo "Nothing changed; no sources published anything new."
+            exit 0
+          fi
+          FLIGHTS=$(node -e "console.log(require('./data/site/agencies.json').flight_count.toLocaleString('en-US'))")
+          AGENCIES=$(node -e "console.log(require('./data/site/agencies.json').agency_count)")
+          git commit -m "data: ${{ steps.scope.outputs.value }} refresh — ${FLIGHTS} flights across ${AGENCIES} agencies
+
+          Collected by .github/workflows/refresh.yml on $(date -u +%Y-%m-%d)."
+          git push
+
+      - name: Keep the run log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: refresh-log-${{ github.run_id }}
+          path: |
+            data/refresh.log
+            data/overnight.log
+          if-no-files-found: ignore
+          retention-days: 90

@@ -11,8 +11,10 @@ playwright-report/
 test-results/
 tsconfig.tsbuildinfo
 
-# Raw vendor payloads collected overnight; large and rebuildable from the source.
-data/raw/
+# data/raw is committed on purpose. The merged view in data/site is built FROM
+# these payloads, so a refresh that starts without them would rebuild the site
+# from only the months it just fetched and lose the archive. It is also the only
+# copy of the Motorola flights that have aged out of their portals.
 shots/
 
 .vercel

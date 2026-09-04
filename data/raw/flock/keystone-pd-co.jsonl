@@ -1,0 +1,7 @@
+{"flight_number":"KEYSTONEPD-250728-0002","time_period":{"begin":"2025-07-28T17:26:31.196Z","end":"2025-07-28T17:26:45.676Z"},"duration_seconds":14.480114,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"KEYSTONEPD-250728-0001","time_period":{"begin":"2025-07-28T17:26:22.681Z","end":"2025-07-28T17:26:23.859Z"},"duration_seconds":1.178349,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"KEYSTONEPD-250717-0001","time_period":{"begin":"2025-07-17T14:51:46.552Z","end":"2025-07-18T14:30:40.523Z"},"duration_seconds":85133.970982,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"KEYSTONEPD-250711-0002","time_period":{"begin":"2025-07-11T12:30:29.319Z","end":"2025-07-11T12:32:34.875Z"},"duration_seconds":125.556267,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"KEYSTONEPD-250711-0001","time_period":{"begin":"2025-07-11T12:23:18.308Z","end":"2025-07-11T12:30:03.995Z"},"duration_seconds":405.68634,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"KEYSTONEPD-251113-0002","time_period":{"begin":"2025-11-13T15:37:51.715Z","end":"2025-11-13T16:01:19.370Z"},"duration_seconds":1407.655823,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"KEYSTONEPD-251113-0001","time_period":{"begin":"2025-11-13T15:30:42.772Z","end":"2025-11-13T15:32:12.358Z"},"duration_seconds":89.585934,"ce_hidden":false,"calls_for_service":[]}

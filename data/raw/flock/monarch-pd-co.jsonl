@@ -1,0 +1,7 @@
+{"flight_number":"MONARCHPD-250821-0001","time_period":{"begin":"2025-08-21T19:16:43.017Z","end":"2025-08-21T19:20:01.441Z"},"duration_seconds":198.424153,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MONARCHPD-250922-0002","time_period":{"begin":"2025-09-22T21:00:57.043Z","end":"2025-09-22T21:01:25.041Z"},"duration_seconds":27.997252,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MONARCHPD-250922-0001","time_period":{"begin":"2025-09-22T21:00:14.640Z","end":"2025-09-22T21:00:17.335Z"},"duration_seconds":2.694871,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MONARCHPD-250908-0001","time_period":{"begin":"2025-09-08T14:15:59.594Z","end":"2025-09-08T15:04:02.036Z"},"duration_seconds":2882.442409,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MONARCHPD-260217-0002","time_period":{"begin":"2026-02-17T13:47:33.744Z","end":"2026-02-17T13:50:03.620Z"},"duration_seconds":149.875842,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MONARCHPD-260217-0001","time_period":{"begin":"2026-02-17T13:46:59.870Z","end":"2026-02-17T13:47:01.108Z"},"duration_seconds":1.237845,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MONARCHPD-260216-0001","time_period":{"begin":"2026-02-16T16:32:56.994Z","end":"2026-02-16T16:57:48.968Z"},"duration_seconds":1491.974354,"ce_hidden":false,"calls_for_service":[]}
