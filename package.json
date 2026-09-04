@@ -27,7 +27,9 @@
     "og": "tsx scripts/make-og-image.ts",
     "unnamed:csv": "tsx scripts/unnamed-csv.ts",
     "check:unnamed": "tsx scripts/check-unnamed.ts",
-    "selfpub:collect": "tsx pipeline/selfpub/collect.ts"
+    "selfpub:collect": "tsx pipeline/selfpub/collect.ts",
+    "dronesense:collect": "tsx pipeline/dronesense/collect.ts",
+    "brinc:collect": "tsx pipeline/brinc/collect.ts"
   },
   "devDependencies": {
     "@types/d3-geo": "^3.1.1",

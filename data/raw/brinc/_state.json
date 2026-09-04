@@ -1,0 +1,29 @@
+{
+ "updated_utc": "2026-09-04T18:40:49.559Z",
+ "agencies": {
+  "schenectady-pd-ny": {
+   "agency_id": "schenectady-pd-ny",
+   "slug": "schenectadyny",
+   "total_flights": 1783,
+   "advertised": 1783,
+   "last_run_utc": "2026-09-04T18:40:35.174Z",
+   "last_error": null
+  },
+  "clovis-pd-ca": {
+   "agency_id": "clovis-pd-ca",
+   "slug": "clovisca",
+   "total_flights": 1288,
+   "advertised": 1288,
+   "last_run_utc": "2026-09-04T18:40:48.311Z",
+   "last_error": null
+  },
+  "paradise-pd-ca-brinc": {
+   "agency_id": "paradise-pd-ca-brinc",
+   "slug": "paradisepdca",
+   "total_flights": 26,
+   "advertised": 26,
+   "last_run_utc": "2026-09-04T18:40:49.559Z",
+   "last_error": null
+  }
+ }
+}

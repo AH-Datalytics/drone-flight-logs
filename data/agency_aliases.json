@@ -1,7 +1,14 @@
 {
- "note": "Agency identities the matching rules cannot settle, decided by hand. Keys are source entry ids, never display names, so a dashboard being retitled cannot silently change who gets merged.",
+ "note": "Agency identities the matching rules cannot settle, decided by hand. Keys are source entry ids, never display names, so a dashboard being retitled cannot silently change who gets merged. Dutchess: one platform drops the word County. Montgomery County: the Skydio dashboard is titled with a device and a beta label, \"Montgomery County PD - G47 Beta\", which no safe rule would reduce to the same place as \"Montgomery County Police Department\".",
  "link": [
-  ["dutchess-county-so-uas-unit", "dutchess-so-ny"]
+  [
+   "dutchess-county-so-uas-unit",
+   "dutchess-so-ny"
+  ],
+  [
+   "montgomery-county-pd-md-ds",
+   "montgomery-county-pd-g47-beta"
+  ]
  ],
  "separate": []
 }

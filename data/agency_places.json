@@ -92,6 +92,15 @@
    "resolved_utc": "2026-09-03T13:18:58.848Z"
   },
   {
+   "agency_id": "arlington-pd-tx-ds",
+   "lat": 32.73558,
+   "lon": -97.10712,
+   "state": "TX",
+   "via": "geocode_name",
+   "query": "Arlington, TX, USA",
+   "resolved_utc": "2026-09-04T18:41:36.929Z"
+  },
+  {
    "agency_id": "arvada-pd-co",
    "lat": 39.81821,
    "lon": -105.09519,
@@ -326,6 +335,15 @@
    "resolved_utc": "2026-09-03T13:19:02.088Z"
   },
   {
+   "agency_id": "campbell-pd-ca-ds",
+   "lat": 37.28706,
+   "lon": -121.94488,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Campbell, CA, USA",
+   "resolved_utc": "2026-09-04T18:41:35.438Z"
+  },
+  {
    "agency_id": "casa-grande-pd-az",
    "lat": 32.87728,
    "lon": -111.75368,
@@ -414,6 +432,15 @@
    "via": "skydio_extent",
    "query": null,
    "resolved_utc": "2026-09-03T13:19:03.229Z"
+  },
+  {
+   "agency_id": "clovis-pd-ca",
+   "lat": 36.82523,
+   "lon": -119.70292,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Clovis, CA, USA",
+   "resolved_utc": "2026-09-04T18:41:43.052Z"
   },
   {
    "agency_id": "coachella-valley-rtic-ca",
@@ -819,6 +846,15 @@
    "via": "skydio_extent",
    "query": null,
    "resolved_utc": "2026-09-03T13:19:10.806Z"
+  },
+  {
+   "agency_id": "fremont-public-safety-ca",
+   "lat": 37.51635,
+   "lon": -121.98018,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Fremont and, CA, USA",
+   "resolved_utc": "2026-09-04T18:41:40.209Z"
   },
   {
    "agency_id": "fsu-emhs",
@@ -1442,6 +1478,15 @@
    "resolved_utc": "2026-09-03T13:19:23.568Z"
   },
   {
+   "agency_id": "montgomery-county-pd-md-ds",
+   "lat": 39.14063,
+   "lon": -77.20756,
+   "state": "MD",
+   "via": "geocode_name",
+   "query": "Montgomery County, MD, USA",
+   "resolved_utc": "2026-09-04T18:41:32.108Z"
+  },
+  {
    "agency_id": "mooresville-pd-nc",
    "lat": 35.58486,
    "lon": -80.81007,
@@ -1559,6 +1604,15 @@
    "resolved_utc": "2026-09-03T13:19:26.159Z"
   },
   {
+   "agency_id": "palm-springs-pd-ca",
+   "lat": 33.82463,
+   "lon": -116.5403,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Palm Springs, CA, USA",
+   "resolved_utc": "2026-09-04T18:41:38.457Z"
+  },
+  {
    "agency_id": "paradise-pd-ca",
    "lat": 39.75961,
    "lon": -121.62192,
@@ -1566,6 +1620,15 @@
    "via": "geocode_name",
    "query": "Paradise, CA, USA",
    "resolved_utc": "2026-09-03T13:22:01.569Z"
+  },
+  {
+   "agency_id": "paradise-pd-ca-brinc",
+   "lat": 39.75961,
+   "lon": -121.62192,
+   "state": "CA",
+   "via": "geocode_name",
+   "query": "Paradise, CA, USA",
+   "resolved_utc": "2026-09-04T18:41:44.818Z"
   },
   {
    "agency_id": "peoria-pd-az",
@@ -1764,6 +1827,15 @@
    "via": "skydio_extent",
    "query": null,
    "resolved_utc": "2026-09-03T13:19:28.025Z"
+  },
+  {
+   "agency_id": "schenectady-pd-ny",
+   "lat": 42.80097,
+   "lon": -73.95917,
+   "state": "NY",
+   "via": "geocode_name",
+   "query": "Schenectady City, NY, USA",
+   "resolved_utc": "2026-09-04T18:41:41.685Z"
   },
   {
    "agency_id": "scott-county-so-ia",

@@ -1,15 +1,17 @@
 {
- "built_utc": "2026-09-04T16:12:54.634Z",
- "collected_utc": "2026-09-04T16:02:12.956Z",
- "agency_count": 230,
- "flight_count": 297738,
- "overlap_count": 200,
+ "built_utc": "2026-09-04T18:42:57.706Z",
+ "collected_utc": "2026-09-04T18:40:49.559Z",
+ "agency_count": 237,
+ "flight_count": 308878,
+ "overlap_count": 387,
  "by_source": {
   "airdata": 77396,
   "skydio_arcgis": 103251,
   "flock_aerodome": 99738,
   "motorola_cape": 8755,
   "sfpd_datasf": 7481,
+  "dronesense": 8230,
+  "brinc": 3097,
   "self_published": 1317
  },
  "agencies": [
@@ -309,6 +311,44 @@
    "lon": -97.33754,
    "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "timezone not detected automatically; set manually."
+  },
+  {
+   "agency_id": "montgomery-county-pd-g47-beta",
+   "display_name": "Montgomery County Police Department",
+   "state": "MD",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "dronesense",
+     "source_agency_id": "montgomery-county-pd-md-ds",
+     "official_url": "https://dashboard.dronesense.com/MCPDDFR",
+     "flight_count": 5756,
+     "first_flight": "2023-11-06",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T18:39:25.005Z"
+    },
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "montgomery-county-pd-g47-beta",
+     "official_url": "https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9",
+     "flight_count": 450,
+     "first_flight": "2025-04-01",
+     "last_flight": "2026-06-12",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://dashboard.dronesense.com/MCPDDFR",
+   "status": "ok",
+   "first_flight": "2023-11-06",
+   "last_flight": "2026-09-03",
+   "flight_count": 6019,
+   "total_hours": 1386.4,
+   "overlap_count": 187,
+   "lat": 39.12019,
+   "lon": -77.11755,
+   "collected_utc": "2026-09-04T18:39:25.005Z",
+   "notes": null
   },
   {
    "agency_id": "sacramento-pd-ca",
@@ -1371,6 +1411,35 @@
    "notes": null
   },
   {
+   "agency_id": "schenectady-pd-ny",
+   "display_name": "Schenectady City Police Department",
+   "state": "NY",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "brinc",
+     "source_agency_id": "schenectady-pd-ny",
+     "official_url": "https://dashboard.liveops.brincdrones.com/schenectadyny",
+     "flight_count": 1783,
+     "first_flight": "2025-05-13",
+     "last_flight": "2026-09-01",
+     "collected_utc": "2026-09-04T18:40:35.174Z"
+    }
+   ],
+   "official_url": "https://dashboard.liveops.brincdrones.com/schenectadyny",
+   "status": "ok",
+   "first_flight": "2025-05-13",
+   "last_flight": "2026-09-01",
+   "flight_count": 1783,
+   "total_hours": 429.7,
+   "overlap_count": 0,
+   "lat": 42.80097,
+   "lon": -73.95917,
+   "collected_utc": "2026-09-04T18:40:35.174Z",
+   "notes": null
+  },
+  {
    "agency_id": "hemet-pd-ca",
    "display_name": "Hemet Police Department",
    "state": "CA",
@@ -1754,6 +1823,35 @@
    "lat": 33.91703,
    "lon": -118.41563,
    "collected_utc": "2026-09-04T12:31:20.544Z",
+   "notes": null
+  },
+  {
+   "agency_id": "clovis-pd-ca",
+   "display_name": "Clovis Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "brinc",
+     "source_agency_id": "clovis-pd-ca",
+     "official_url": "https://dashboard.liveops.brincdrones.com/clovisca",
+     "flight_count": 1288,
+     "first_flight": "2023-03-02",
+     "last_flight": "2026-08-29",
+     "collected_utc": "2026-09-04T18:40:48.311Z"
+    }
+   ],
+   "official_url": "https://dashboard.liveops.brincdrones.com/clovisca",
+   "status": "ok",
+   "first_flight": "2023-03-02",
+   "last_flight": "2026-08-29",
+   "flight_count": 1288,
+   "total_hours": 271.7,
+   "overlap_count": 0,
+   "lat": 36.82523,
+   "lon": -119.70292,
+   "collected_utc": "2026-09-04T18:40:48.311Z",
    "notes": null
   },
   {
@@ -2201,6 +2299,35 @@
    "notes": "Also publishes to Skydio; the two cover different periods, its own log to March 2026 and Skydio after. Its service exposes Pilot_First_Name, Pilot_Last_Name, Pilot_Email, Takeoff_Latitude and Takeoff_Longitude, none of which are mapped. Its Notes field also names pilots in prose with no label to match on — \"Gallion at controls\" — so the prose is not published; only the labelled Reason is read out of it."
   },
   {
+   "agency_id": "oswego-county-em-ny",
+   "display_name": "Oswego County Emergency Management",
+   "state": "NY",
+   "org_type": "corporate_utility",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "dronesense",
+     "source_agency_id": "oswego-county-em-ny",
+     "official_url": "https://dashboard.dronesense.com/oswegocountyuas",
+     "flight_count": 874,
+     "first_flight": "2022-12-22",
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T18:39:36.233Z"
+    }
+   ],
+   "official_url": "https://dashboard.dronesense.com/oswegocountyuas",
+   "status": "ok",
+   "first_flight": "2022-12-22",
+   "last_flight": "2026-09-04",
+   "flight_count": 874,
+   "total_hours": 165.9,
+   "overlap_count": 0,
+   "lat": null,
+   "lon": null,
+   "collected_utc": "2026-09-04T18:39:36.233Z",
+   "notes": null
+  },
+  {
    "agency_id": "casa-grande-pd-az",
    "display_name": "Casa Grande PD",
    "state": "AZ",
@@ -2265,6 +2392,35 @@
    "lat": 37.27695,
    "lon": -107.8766,
    "collected_utc": "2026-09-04T12:30:46.907Z",
+   "notes": null
+  },
+  {
+   "agency_id": "campbell-pd-ca-ds",
+   "display_name": "Campbell Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "dronesense",
+     "source_agency_id": "campbell-pd-ca-ds",
+     "official_url": "https://dashboard.dronesense.com/campbellpddfr",
+     "flight_count": 851,
+     "first_flight": "2022-10-12",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T18:39:50.986Z"
+    }
+   ],
+   "official_url": "https://dashboard.dronesense.com/campbellpddfr",
+   "status": "ok",
+   "first_flight": "2022-10-12",
+   "last_flight": "2026-09-03",
+   "flight_count": 851,
+   "total_hours": 215.6,
+   "overlap_count": 0,
+   "lat": 37.28706,
+   "lon": -121.94488,
+   "collected_utc": "2026-09-04T18:39:50.986Z",
    "notes": null
   },
   {
@@ -2828,35 +2984,6 @@
    "notes": "timezone not detected automatically; set manually."
   },
   {
-   "agency_id": "montgomery-county-pd-g47-beta",
-   "display_name": "Montgomery County PD - G47 Beta",
-   "state": "MD",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "montgomery-county-pd-g47-beta",
-     "official_url": "https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9",
-     "flight_count": 450,
-     "first_flight": "2025-04-01",
-     "last_flight": "2026-06-12",
-     "collected_utc": "2026-09-04T12:25:53.971Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9",
-   "status": "stale",
-   "first_flight": "2025-04-01",
-   "last_flight": "2026-06-12",
-   "flight_count": 450,
-   "total_hours": 92.1,
-   "overlap_count": 0,
-   "lat": 39.12019,
-   "lon": -77.11755,
-   "collected_utc": "2026-09-04T12:25:53.971Z",
-   "notes": null
-  },
-  {
    "agency_id": "los-altos-pd-ca",
    "display_name": "Los Altos Police Department",
    "state": "CA",
@@ -3008,6 +3135,35 @@
    "lat": 37.93749,
    "lon": -107.81228,
    "collected_utc": "2026-09-04T12:41:23.987Z",
+   "notes": null
+  },
+  {
+   "agency_id": "arlington-pd-tx-ds",
+   "display_name": "Arlington Police Department",
+   "state": "TX",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "dronesense",
+     "source_agency_id": "arlington-pd-tx-ds",
+     "official_url": "https://dashboard.dronesense.com/arpdtx",
+     "flight_count": 426,
+     "first_flight": "2025-02-06",
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T18:39:56.440Z"
+    }
+   ],
+   "official_url": "https://dashboard.dronesense.com/arpdtx",
+   "status": "ok",
+   "first_flight": "2025-02-06",
+   "last_flight": "2026-09-04",
+   "flight_count": 426,
+   "total_hours": 98.2,
+   "overlap_count": 0,
+   "lat": 32.73558,
+   "lon": -97.10712,
+   "collected_utc": "2026-09-04T18:39:56.440Z",
    "notes": null
   },
   {
@@ -3736,6 +3892,35 @@
    "notes": null
   },
   {
+   "agency_id": "palm-springs-pd-ca",
+   "display_name": "Palm Springs Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "dronesense",
+     "source_agency_id": "palm-springs-pd-ca",
+     "official_url": "https://dashboard.dronesense.com/PSPDDFR",
+     "flight_count": 200,
+     "first_flight": "2025-05-17",
+     "last_flight": "2025-11-25",
+     "collected_utc": "2026-09-04T18:40:00.412Z"
+    }
+   ],
+   "official_url": "https://dashboard.dronesense.com/PSPDDFR",
+   "status": "stale",
+   "first_flight": "2025-05-17",
+   "last_flight": "2025-11-25",
+   "flight_count": 200,
+   "total_hours": 51.7,
+   "overlap_count": 0,
+   "lat": 33.82463,
+   "lon": -116.5403,
+   "collected_utc": "2026-09-04T18:40:00.412Z",
+   "notes": null
+  },
+  {
    "agency_id": "calcasieu-parish-so",
    "display_name": "Calcasieu Parish Sheriff's Office",
    "state": "LA",
@@ -3908,6 +4093,35 @@
    "lon": -114.62032,
    "collected_utc": "2026-09-04T16:02:12.956Z",
    "notes": "Exposes DroneOperator, which carries an employee number and name. Not mapped."
+  },
+  {
+   "agency_id": "fremont-public-safety-ca",
+   "display_name": "Fremont Police and Fire",
+   "state": "CA",
+   "org_type": "fire_ems",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "dronesense",
+     "source_agency_id": "fremont-public-safety-ca",
+     "official_url": "https://dashboard.dronesense.com/fremontpublicsafetydfr",
+     "flight_count": 123,
+     "first_flight": "2024-06-03",
+     "last_flight": "2025-06-15",
+     "collected_utc": "2026-09-04T18:40:04.483Z"
+    }
+   ],
+   "official_url": "https://dashboard.dronesense.com/fremontpublicsafetydfr",
+   "status": "stale",
+   "first_flight": "2024-06-03",
+   "last_flight": "2025-06-15",
+   "flight_count": 123,
+   "total_hours": 22.9,
+   "overlap_count": 0,
+   "lat": 37.51635,
+   "lon": -121.98018,
+   "collected_utc": "2026-09-04T18:40:04.483Z",
+   "notes": null
   },
   {
    "agency_id": "dutchess-county-so-uas-unit",
@@ -4264,6 +4478,44 @@
    "lat": 29.35526,
    "lon": -95.97244,
    "collected_utc": "2026-09-04T12:32:05.109Z",
+   "notes": null
+  },
+  {
+   "agency_id": "paradise-pd-ca-brinc",
+   "display_name": "Paradise Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "airdata",
+     "source_agency_id": "paradise-pd-ca",
+     "official_url": "https://app.airdata.com/u/ppd",
+     "flight_count": 26,
+     "first_flight": "2024-02-22",
+     "last_flight": "2025-02-19",
+     "collected_utc": "2026-09-04T13:33:26.800Z"
+    },
+    {
+     "source": "brinc",
+     "source_agency_id": "paradise-pd-ca-brinc",
+     "official_url": "https://dashboard.liveops.brincdrones.com/paradisepdca",
+     "flight_count": 26,
+     "first_flight": "2026-07-08",
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T18:40:49.559Z"
+    }
+   ],
+   "official_url": "https://app.airdata.com/u/ppd",
+   "status": "ok",
+   "first_flight": "2024-02-22",
+   "last_flight": "2026-09-02",
+   "flight_count": 52,
+   "total_hours": 2.6,
+   "overlap_count": 0,
+   "lat": 39.75961,
+   "lon": -121.62192,
+   "collected_utc": "2026-09-04T18:40:49.559Z",
    "notes": null
   },
   {
@@ -4728,35 +4980,6 @@
    "lat": 41.02019,
    "lon": -81.64224,
    "collected_utc": "2026-09-04T12:25:53.971Z",
-   "notes": null
-  },
-  {
-   "agency_id": "paradise-pd-ca",
-   "display_name": "Paradise PD",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "airdata",
-     "source_agency_id": "paradise-pd-ca",
-     "official_url": "https://app.airdata.com/u/ppd",
-     "flight_count": 26,
-     "first_flight": "2024-02-22",
-     "last_flight": "2025-02-19",
-     "collected_utc": "2026-09-04T13:33:26.800Z"
-    }
-   ],
-   "official_url": "https://app.airdata.com/u/ppd",
-   "status": "stale",
-   "first_flight": "2024-02-22",
-   "last_flight": "2025-02-19",
-   "flight_count": 26,
-   "total_hours": 0,
-   "overlap_count": 0,
-   "lat": 39.75961,
-   "lon": -121.62192,
-   "collected_utc": "2026-09-04T13:33:26.800Z",
    "notes": null
   },
   {

@@ -1,0 +1,8 @@
+{
+  "note": "BRINC LiveOps public dashboards. A sixth platform, found through the DRONERESPONDERS registry rather than by searching for it. Agencies are paths under one host, so certificate transparency returns only infrastructure and the slugs came from the Wayback archive.",
+  "sites": [
+    { "agency_id": "schenectady-pd-ny", "slug": "schenectadyny", "display_name": "Schenectady City Police Department", "state": "NY", "timezone": "America/New_York" },
+    { "agency_id": "clovis-pd-ca", "slug": "clovisca", "display_name": "Clovis Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+    { "agency_id": "paradise-pd-ca-brinc", "slug": "paradisepdca", "display_name": "Paradise Police Department", "state": "CA", "timezone": "America/Los_Angeles" }
+  ]
+}

@@ -21,7 +21,7 @@ const read = <T,>(p: string): T | null => (existsSync(p) ? JSON.parse(readFileSy
 const errors: string[] = [];
 const short: string[] = [];
 
-for (const source of ['flock', 'airdata', 'cape'] as const) {
+for (const source of ['flock', 'airdata', 'cape', 'selfpub', 'dronesense', 'brinc'] as const) {
   const state = read<RawState>(join('data', 'raw', source, '_state.json'));
   if (!state) continue;
   for (const [id, agency] of Object.entries(state.agencies)) {

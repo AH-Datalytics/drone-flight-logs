@@ -1,0 +1,11 @@
+{
+  "note": "DroneSense public dashboards. Found through the DRONERESPONDERS registry, which named Palm Springs, after which the Wayback archive gave the other slugs. Agencies are paths under one host, so certificate transparency cannot enumerate this platform. Its dashboards open on the current month, which is why an earlier pass wrongly concluded the platform was dead.",
+  "sites": [
+    { "agency_id": "montgomery-county-pd-md-ds", "slug": "MCPDDFR", "display_name": "Montgomery County Police Department", "state": "MD", "timezone": "America/New_York" },
+    { "agency_id": "oswego-county-em-ny", "slug": "oswegocountyuas", "display_name": "Oswego County Emergency Management", "state": "NY", "timezone": "America/New_York" },
+    { "agency_id": "campbell-pd-ca-ds", "slug": "campbellpddfr", "display_name": "Campbell Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+    { "agency_id": "arlington-pd-tx-ds", "slug": "arpdtx", "display_name": "Arlington Police Department", "state": "TX", "timezone": "America/Chicago" },
+    { "agency_id": "palm-springs-pd-ca", "slug": "PSPDDFR", "display_name": "Palm Springs Police Department", "state": "CA", "timezone": "America/Los_Angeles" },
+    { "agency_id": "fremont-public-safety-ca", "slug": "fremontpublicsafetydfr", "display_name": "Fremont Police and Fire", "state": "CA", "timezone": "America/Los_Angeles" }
+  ]
+}
