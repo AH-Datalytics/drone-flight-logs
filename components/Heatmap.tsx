@@ -11,7 +11,7 @@ type Props = {
   max: number;
   /**
    * The bottom of the scale. Counts start at zero, because an hour really can
-   * have no flights. Median durations do not: they cluster in a narrow band
+   * have no flights. Average durations do not: they cluster in a narrow band
    * well above zero, so anchoring their ramp at zero puts nearly every cell
    * above the midpoint and paints the whole table red. Passing the observed
    * minimum makes the diverging scale say what it is meant to — shorter than
@@ -29,7 +29,7 @@ function hourLabel(h: number): string { return String(h).padStart(2, '0'); }
 function cellTitle(weekday: string, hour: number, v: number | null, mode: 'count' | 'duration'): string {
   const when = `${weekday} ${hourLabel(hour)}:00–${hourLabel((hour + 1) % 24)}:00`;
   if (mode === 'duration') {
-    return v === null ? `${when} — no flight with a recorded length` : `${when} — ${v} min, typically`;
+    return v === null ? `${when} — no flight with a recorded length` : `${when} — ${v} min on average`;
   }
   return v === 0 ? `${when} — no published flights` : `${when} — ${(v ?? 0).toLocaleString('en-US')} flight${v === 1 ? '' : 's'}`;
 }
@@ -90,17 +90,17 @@ export default function Heatmap({ title, grid, max, min = 0, mode = 'count', not
       <div className="heatmap-legend">
         <div className="heatmap-ramp">
           <span className="lbl">
-            {mode === 'duration' ? `shortest — ${Math.round(min * 10) / 10} min` : 'quiet'}
+            {mode === 'duration' ? `Shortest — ${Math.round(min * 10) / 10} min` : 'Quiet'}
           </span>
           {ramp.map(t => <span key={t} className="swatch" style={heatStyle(min + t * (max - min), max, min)} />)}
           <span className="lbl">
-            {mode === 'duration' ? `longest — ${Math.round(max * 10) / 10} min` : `busiest — ${max.toLocaleString('en-US')} flights`}
+            {mode === 'duration' ? `Longest — ${Math.round(max * 10) / 10} min` : `Busiest — ${max.toLocaleString('en-US')} flights`}
           </span>
         </div>
         {mode === 'duration' && (
           <div className="heatmap-ramp">
             <span className="swatch empty" />
-            <span className="lbl">no flight with a recorded length</span>
+            <span className="lbl">No flight with a recorded length</span>
           </div>
         )}
       </div>

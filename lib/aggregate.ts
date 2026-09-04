@@ -37,15 +37,15 @@ export type HeatGrids = {
   count: number[][];
   maxCount: number;
   /**
-   * [weekday][hour] -> median flight length in minutes, or null where no flight
+   * [weekday][hour] -> average flight length in minutes, or null where no flight
    * in that hour has a recorded duration. Null is not zero: a cell with flights
    * but no durations is unknown, and drawing it as a zero-minute flight would
    * be a lie the eye reads as fact.
    */
-  medianMin: (number | null)[][];
-  maxMedian: number;
-  /** The shortest median in the grid, so the duration scale can start there. */
-  minMedian: number;
+  avgMin: (number | null)[][];
+  maxAvg: number;
+  /** The shortest average in the grid, so the duration scale can start there. */
+  minAvg: number;
 };
 
 /**
@@ -67,19 +67,20 @@ export function heatmapGrids(recs: FlightRecord[], tz: string): HeatGrids | null
   }
   if (!any) return null;
 
-  let maxCount = 0, maxMedian = 0, minMedian = Infinity;
+  let maxCount = 0, maxAvg = 0, minAvg = Infinity;
   for (const row of count) for (const c of row) if (c > maxCount) maxCount = c;
 
-  const medianMin: (number | null)[][] = durations.map(row => row.map(cell => {
+  // Rounded to a tenth: a mean of a handful of durations lands on a repeating
+  // decimal, and "12.333333333333334 min" in a tooltip is noise, not precision.
+  const avgMin: (number | null)[][] = durations.map(row => row.map(cell => {
     if (!cell.length) return null;
-    cell.sort((a, b) => a - b);
-    const med = cell[Math.floor(cell.length / 2)];
-    if (med > maxMedian) maxMedian = med;
-    if (med < minMedian) minMedian = med;
-    return med;
+    const avg = Math.round((cell.reduce((t, v) => t + v, 0) / cell.length) * 10) / 10;
+    if (avg > maxAvg) maxAvg = avg;
+    if (avg < minAvg) minAvg = avg;
+    return avg;
   }));
 
-  return { count, maxCount, medianMin, maxMedian, minMedian: Number.isFinite(minMedian) ? minMedian : 0 };
+  return { count, maxCount, avgMin, maxAvg, minAvg: Number.isFinite(minAvg) ? minAvg : 0 };
 }
 
 export function byHour(recs: FlightRecord[], tz: string): Bar[] | null {

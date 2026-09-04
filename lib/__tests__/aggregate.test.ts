@@ -65,8 +65,8 @@ describe('medianPublishGapDays', () => {
   });
 });
 describe('heatmapGrids', () => {
-  it('buckets by local weekday and hour, and computes per-cell median duration', () => {
-    // 2026-08-31 is a Monday. Two flights same weekday+hour in Chicago time -> one count cell, median of durations.
+  it('buckets by local weekday and hour, and computes per-cell average duration', () => {
+    // 2026-08-31 is a Monday. Two flights same weekday+hour in Chicago time -> one count cell, average of durations.
     const g = heatmapGrids([
       r({ takeoff_utc: '2026-08-31T15:10:00.000Z', duration_min: 10 }), // 10:10 CDT Mon
       r({ takeoff_utc: '2026-08-31T15:40:00.000Z', duration_min: 20 }), // 10:40 CDT Mon
@@ -237,28 +237,38 @@ describe('heatmapGrids duration grid', () => {
     purpose: null, description: null, case_number: null, extra: {}, data_quality: null,
   });
 
-  it('reports the median length for each weekday and hour', () => {
-    // 2026-01-05 is a Monday; 18:00 UTC is 10:00 in Los Angeles.
+  it('reports the average length for each weekday and hour', () => {
+    // 2026-01-05 is a Monday; 18:00 UTC is 10:00 in Los Angeles. The median of
+    // these three is 20; the mean is 30, so this pins which one is drawn.
     const g = heatmapGrids([
       at('2026-01-05T18:00:00.000Z', 10),
       at('2026-01-05T18:30:00.000Z', 20),
-      at('2026-01-05T18:45:00.000Z', 30),
+      at('2026-01-05T18:45:00.000Z', 60),
     ], 'America/Los_Angeles')!;
     expect(g.count[0][10]).toBe(3);
-    expect(g.medianMin[0][10]).toBe(20);
-    expect(g.maxMedian).toBe(20);
+    expect(g.avgMin[0][10]).toBe(30);
+    expect(g.maxAvg).toBe(30);
+  });
+
+  it('rounds an average to a tenth of a minute', () => {
+    const g = heatmapGrids([
+      at('2026-01-05T18:00:00.000Z', 10),
+      at('2026-01-05T18:30:00.000Z', 11),
+      at('2026-01-05T18:45:00.000Z', 11),
+    ], 'America/Los_Angeles')!;
+    expect(g.avgMin[0][10]).toBe(10.7);
   });
 
   it('leaves an hour with flights but no recorded lengths as unknown, not zero', () => {
     const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', null)], 'America/Los_Angeles')!;
     expect(g.count[0][10]).toBe(1);
-    expect(g.medianMin[0][10]).toBeNull();
-    expect(g.maxMedian).toBe(0);
+    expect(g.avgMin[0][10]).toBeNull();
+    expect(g.maxAvg).toBe(0);
   });
 
   it('leaves an hour with no flights at all as unknown', () => {
     const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', 10)], 'America/Los_Angeles')!;
-    expect(g.medianMin[0][11]).toBeNull();
+    expect(g.avgMin[0][11]).toBeNull();
   });
 
   it('still returns nothing when no flight has a time', () => {
