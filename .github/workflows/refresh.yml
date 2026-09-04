@@ -92,8 +92,13 @@ jobs:
           git config user.name "drone-log-refresh"
           git config user.email "noreply@ahdatalytics.com"
           git add data app/opengraph-image.png
-          if git diff --cached --quiet; then
-            echo "Nothing changed; no sources published anything new."
+          # Judge "did anything change" on flights only. Collector state files
+          # carry a timestamp and the card is re-encoded every run, so both
+          # differ byte-wise even when no agency published anything — which
+          # would mean a commit and a deploy every week for nothing.
+          if git diff --cached --quiet -- 'data/raw/**/*.jsonl' data/flights data/site/flights; then
+            echo "No agency published a new flight; leaving the repository alone."
+            git reset --quiet
             exit 0
           fi
           FLIGHTS=$(node -e "console.log(require('./data/site/agencies.json').flight_count.toLocaleString('en-US'))")
