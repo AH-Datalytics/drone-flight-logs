@@ -24,7 +24,8 @@
     "overnight": "tsx pipeline/overnight.ts",
     "census:csv": "tsx scripts/census-csv.ts",
     "places": "tsx scripts/resolve-places.ts",
-    "og": "tsx scripts/make-og-image.ts"
+    "og": "tsx scripts/make-og-image.ts",
+    "unnamed:csv": "tsx scripts/unnamed-csv.ts"
   },
   "devDependencies": {
     "@types/d3-geo": "^3.1.1",
@@ -35,7 +36,8 @@
     "playwright": "^1.62.1",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
-    "vitest": "^3.0.0"
+    "vitest": "^3.0.0",
+    "yaml": "^2.9.0"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

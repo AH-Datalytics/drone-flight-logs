@@ -90,47 +90,10 @@ jobs:
 
       # The collectors isolate failures per agency and exit zero, so a run can
       # look green while a source is quietly broken. This reads back what each
-      # collector recorded and fails the run if any agency errored.
+      # collector recorded, reports any AirData month that came up short of the
+      # count its portal published, and fails if any source errored.
       - name: Fail if any source errored
-        run: |
-          node -e "
-          const fs = require('fs');
-          const bad = [];
-          for (const dir of ['flock', 'airdata', 'cape']) {
-            const p = 'data/raw/' + dir + '/_state.json';
-            if (!fs.existsSync(p)) continue;
-            const st = JSON.parse(fs.readFileSync(p, 'utf8')).agencies;
-            for (const [id, a] of Object.entries(st)) {
-              if (a.last_error) bad.push(dir + '/' + id + ': ' + a.last_error);
-            }
-          }
-          const m = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
-          if (m.discovery_error) bad.push('skydio discovery: ' + m.discovery_error);
-          if (bad.length) {
-            console.error('Sources reporting an error:');
-            bad.forEach(b => console.error('  ' + b));
-            process.exit(1);
-          }
-          console.log('Every source reported clean.');
-          "
-
-      - name: Report months that came up short
-        run: |
-          node -e "
-          const fs = require('fs');
-          const p = 'data/raw/airdata/_state.json';
-          if (!fs.existsSync(p)) process.exit(0);
-          const st = JSON.parse(fs.readFileSync(p, 'utf8')).agencies;
-          const short = [];
-          for (const [id, a] of Object.entries(st)) {
-            for (const [mo, m] of Object.entries(a.months || {})) {
-              if (!m.complete) short.push(id + ' ' + mo + ': ' + m.collected + ' of ' + m.published);
-            }
-          }
-          console.log(short.length ? 'Short of the published count:
-  ' + short.join('
-  ') : 'Every AirData month matched its published count.');
-          "
+        run: npx tsx scripts/check-sources.ts
 
       - name: Commit and publish
         run: |
