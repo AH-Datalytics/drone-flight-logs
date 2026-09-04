@@ -36,7 +36,8 @@ export type CollectState = { updated_utc: string; agencies: Record<string, Agenc
 const RAW_DIR = join('data', 'raw', 'cape');
 const STATE_PATH = join(RAW_DIR, '_state.json');
 const BASE = 'https://www.aerial.motorolasolutions.com/transparency/api';
-const UA = 'police-drone-logs pipeline (jasher@ahdatalytics.com)';
+// Identifies the operator without publishing a harvestable address.
+const UA = 'drone-flight-logs (+https://github.com/AH-Datalytics/drone-flight-logs)';
 
 export type ProjectSettings = {
   name: string;

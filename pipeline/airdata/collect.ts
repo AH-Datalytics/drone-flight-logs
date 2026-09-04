@@ -31,7 +31,8 @@ export type CollectState = { updated_utc: string; agencies: Record<string, Agenc
 
 const RAW_DIR = join('data', 'raw', 'airdata');
 const STATE_PATH = join(RAW_DIR, '_state.json');
-const UA = 'police-drone-logs pipeline (jasher@ahdatalytics.com)';
+// Identifies the operator without publishing a harvestable address.
+const UA = 'drone-flight-logs (+https://github.com/AH-Datalytics/drone-flight-logs)';
 const CRAWL_DELAY_MS = 2000;
 
 /** AirData addresses a month as M + YYYY, with no zero padding. */
