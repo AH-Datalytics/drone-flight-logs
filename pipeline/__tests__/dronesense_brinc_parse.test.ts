@@ -19,7 +19,7 @@ describe('DroneSense slim', () => {
     imageUrl: 'https://example.invalid/scene.jpg',
   };
 
-  it('never carries the inline scene photograph', () => {
+  it('never carries the inline map of the flight path', () => {
     const serialized = JSON.stringify(dsSlim(raw));
     expect(serialized).not.toContain('9j/4AAQ');
     expect(serialized).not.toContain('scene.jpg');

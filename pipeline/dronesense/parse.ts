@@ -10,9 +10,12 @@ import { localDate } from '../time.js';
  * Asking the API for a wide date range instead shows six live agencies and
  * several thousand flights.
  *
- * The flight list carries a full-resolution JPEG of the scene inline, as
- * base64, on every record. It is never stored: it is imagery of an incident,
- * it is not a flight log, and it would be tens of megabytes per agency.
+ * Every record carries a JPEG inline, as base64, about sixty kilobytes each.
+ * It is not photography from the aircraft: it is a satellite map with the
+ * flight path drawn across it. That makes it the one thing this project most
+ * deliberately does not keep — the route the drone flew — arriving as a
+ * picture rather than as coordinates, which is how it would slip past a rule
+ * written about geometry. It is dropped at parse time and never written down.
  */
 
 export type DroneSenseFlight = {

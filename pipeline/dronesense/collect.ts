@@ -13,6 +13,9 @@ import { slim, type DroneSenseFlight } from './parse.js';
  *
  * Additive, like the other vendor sources: an agency that shortens what it
  * publishes should not silently shorten the archive.
+ *
+ * The API ignores images=false and returns a rendered map of each flight's
+ * path regardless, so the drop happens here rather than in the request.
  */
 
 export type DroneSenseSite = { agency_id: string; slug: string; display_name: string; state: string | null; timezone: string };
