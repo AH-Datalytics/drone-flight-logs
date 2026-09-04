@@ -1334,3 +1334,7 @@
 {"flight_number":"RCSO-260804-0001","time_period":{"begin":"2026-08-04T17:55:58.228Z","end":"2026-08-04T18:01:49.008Z"},"duration_seconds":350.779759,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"RCSO-260902-0002","time_period":{"begin":"2026-09-02T20:49:50.161Z","end":"2026-09-02T21:01:22.879Z"},"duration_seconds":692.718591,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"RCSO-260902-0001","time_period":{"begin":"2026-09-02T19:43:46.280Z","end":"2026-09-02T19:58:22.216Z"},"duration_seconds":875.936602,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"RCSO-260904-0001","time_period":{"begin":"2026-09-04T11:45:59.312Z","end":"2026-09-04T12:01:03.666Z"},"duration_seconds":904.353947,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"RCSO-260903-0003","time_period":{"begin":"2026-09-04T00:03:20.088Z","end":"2026-09-04T00:20:52.653Z"},"duration_seconds":1052.565131,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"RCSO-260903-0002","time_period":{"begin":"2026-09-03T22:39:08.468Z","end":"2026-09-03T22:54:33.585Z"},"duration_seconds":925.116757,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"RCSO-260903-0001","time_period":{"begin":"2026-09-03T14:54:15.022Z","end":"2026-09-03T14:57:29.816Z"},"duration_seconds":194.793756,"ce_hidden":false,"calls_for_service":[]}

@@ -844,3 +844,7 @@
 {"flight_number":"SIUPD-260803-0001","time_period":{"begin":"2026-08-03T15:01:21.732Z","end":"2026-08-03T15:25:02.468Z"},"duration_seconds":1420.735399,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"SIUPD-260902-0002","time_period":{"begin":"2026-09-02T15:18:27.301Z","end":"2026-09-02T15:31:21.294Z"},"duration_seconds":773.992529,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"SIUPD-260902-0001","time_period":{"begin":"2026-09-02T10:31:55.452Z","end":"2026-09-02T10:38:57.929Z"},"duration_seconds":422.477618,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"SIUPD-260903-0004","time_period":{"begin":"2026-09-04T01:29:12.923Z","end":"2026-09-04T01:41:03.082Z"},"duration_seconds":710.158861,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"SIUPD-260903-0003","time_period":{"begin":"2026-09-03T21:24:33.534Z","end":"2026-09-03T21:40:16.452Z"},"duration_seconds":942.917991,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"SIUPD-260903-0002","time_period":{"begin":"2026-09-03T16:11:57.438Z","end":"2026-09-03T16:25:47.310Z"},"duration_seconds":829.871996,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"SIUPD-260903-0001","time_period":{"begin":"2026-09-03T14:45:12.351Z","end":"2026-09-03T14:54:07.213Z"},"duration_seconds":534.862617,"ce_hidden":false,"calls_for_service":[]}

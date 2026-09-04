@@ -758,3 +758,7 @@
 {"flight_number":"TRPD-260803-0001","time_period":{"begin":"2026-08-03T13:53:07.382Z","end":"2026-08-03T13:53:37.742Z"},"duration_seconds":30.359593,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"TRPD-260902-0002","time_period":{"begin":"2026-09-03T00:37:14.571Z","end":"2026-09-03T00:45:24.394Z"},"duration_seconds":489.822914,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"TRPD-260902-0001","time_period":{"begin":"2026-09-02T20:54:46.786Z","end":"2026-09-02T21:03:34.423Z"},"duration_seconds":527.637413,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"TRPD-260903-0003","time_period":{"begin":"2026-09-03T22:42:16.615Z","end":"2026-09-03T22:47:28.463Z"},"duration_seconds":311.847593,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"TRPD-260903-0002","time_period":{"begin":"2026-09-03T20:53:38.039Z","end":"2026-09-03T20:57:23.687Z"},"duration_seconds":225.648005,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"TRPD-260903-0001","time_period":{"begin":"2026-09-03T05:16:58.591Z","end":"2026-09-03T05:39:56.744Z"},"duration_seconds":1378.153555,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"TRPD-260902-0003","time_period":{"begin":"2026-09-03T04:07:24.345Z","end":"2026-09-03T04:16:28.632Z"},"duration_seconds":544.28705,"ce_hidden":false,"calls_for_service":[]}

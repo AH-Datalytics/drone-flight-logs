@@ -61,3 +61,4 @@
 {"flight_number":"ERPD-260702-0001","time_period":{"begin":"2026-07-02T13:37:10.394Z","end":"2026-07-02T13:49:03.153Z"},"duration_seconds":712.758526,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"ERPD-260825-0001","time_period":{"begin":"2026-08-26T02:43:27.852Z","end":"2026-08-26T02:55:15.801Z"},"duration_seconds":707.949719,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"ERPD-260819-0001","time_period":{"begin":"2026-08-19T14:22:10.297Z","end":"2026-08-19T14:38:43.763Z"},"duration_seconds":993.46571,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"ERPD-260903-0001","time_period":{"begin":"2026-09-03T14:03:49.164Z","end":"2026-09-03T14:21:48.580Z"},"duration_seconds":1079.416294,"ce_hidden":false,"calls_for_service":[]}

@@ -2526,3 +2526,11 @@
 {"flight_number":"PROSPTXPD-260902-0003","time_period":{"begin":"2026-09-02T17:02:13.302Z","end":"2026-09-02T17:25:02.416Z"},"duration_seconds":1369.113777,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"PROSPTXPD-260902-0002","time_period":{"begin":"2026-09-02T16:03:53.166Z","end":"2026-09-02T16:14:00.687Z"},"duration_seconds":607.520895,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"PROSPTXPD-260902-0001","time_period":{"begin":"2026-09-02T15:49:28.397Z","end":"2026-09-02T15:53:38.549Z"},"duration_seconds":250.152062,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0012","time_period":{"begin":"2026-09-03T19:12:10.807Z","end":"2026-09-03T19:19:30.356Z"},"duration_seconds":439.5489,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0011","time_period":{"begin":"2026-09-03T19:05:53.764Z","end":"2026-09-03T19:07:00.399Z"},"duration_seconds":66.635631,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0010","time_period":{"begin":"2026-09-03T19:03:32.506Z","end":"2026-09-03T19:04:49.131Z"},"duration_seconds":76.62491,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0009","time_period":{"begin":"2026-09-03T18:42:42.782Z","end":"2026-09-03T18:56:34.167Z"},"duration_seconds":831.384625,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0008","time_period":{"begin":"2026-09-03T18:38:39.109Z","end":"2026-09-03T18:39:51.665Z"},"duration_seconds":72.555606,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0007","time_period":{"begin":"2026-09-03T18:36:29.310Z","end":"2026-09-03T18:37:39.353Z"},"duration_seconds":70.043153,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0006","time_period":{"begin":"2026-09-03T18:33:41.397Z","end":"2026-09-03T18:35:47.012Z"},"duration_seconds":125.615713,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"PROSPTXPD-260903-0005","time_period":{"begin":"2026-09-03T18:16:27.256Z","end":"2026-09-03T18:32:09.553Z"},"duration_seconds":942.296358,"ce_hidden":false,"calls_for_service":[]}

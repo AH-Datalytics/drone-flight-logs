@@ -1,13 +1,13 @@
 {
- "built_utc": "2026-09-04T11:39:37.624Z",
- "collected_utc": "2026-09-04T11:39:32.152Z",
+ "built_utc": "2026-09-04T13:40:31.330Z",
+ "collected_utc": "2026-09-04T13:40:23.696Z",
  "agency_count": 226,
- "flight_count": 294791,
+ "flight_count": 296421,
  "overlap_count": 200,
  "by_source": {
-  "airdata": 77211,
-  "skydio_arcgis": 102052,
-  "flock_aerodome": 99492,
+  "airdata": 77396,
+  "skydio_arcgis": 103251,
+  "flock_aerodome": 99738,
   "motorola_cape": 8755,
   "sfpd_datasf": 7481
  },
@@ -26,7 +26,7 @@
      "flight_count": 24348,
      "first_flight": "2021-04-01",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T06:01:15.251Z"
+     "collected_utc": "2026-09-04T12:49:16.284Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/cvpd",
@@ -38,7 +38,7 @@
    "overlap_count": 0,
    "lat": 32.64005,
    "lon": -117.08419,
-   "collected_utc": "2026-09-03T06:01:15.251Z",
+   "collected_utc": "2026-09-04T12:49:16.284Z",
    "notes": null
   },
   {
@@ -52,10 +52,10 @@
      "source": "airdata",
      "source_agency_id": "las-vegas-metro-pd-nv",
      "official_url": "https://app.airdata.com/u/lvmpd",
-     "flight_count": 22199,
+     "flight_count": 22293,
      "first_flight": "2025-09-03",
-     "last_flight": "2026-08-26",
-     "collected_utc": "2026-09-03T12:49:59.604Z"
+     "last_flight": "2026-08-27",
+     "collected_utc": "2026-09-04T13:33:14.803Z"
     },
     {
      "source": "skydio_arcgis",
@@ -64,19 +64,19 @@
      "flight_count": 3,
      "first_flight": "2026-05-27",
      "last_flight": "2026-05-27",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/lvmpd",
    "status": "ok",
    "first_flight": "2025-09-03",
-   "last_flight": "2026-08-26",
-   "flight_count": 22200,
+   "last_flight": "2026-08-27",
+   "flight_count": 22294,
    "total_hours": 0.4,
    "overlap_count": 2,
    "lat": 36.16985,
    "lon": -115.12827,
-   "collected_utc": "2026-09-03T12:49:59.604Z",
+   "collected_utc": "2026-09-04T13:33:14.803Z",
    "notes": null
   },
   {
@@ -90,22 +90,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "cincinnati-pd",
      "official_url": "https://www.arcgis.com/apps/dashboards/49102a57e82a4755b015ea84dcd39b01",
-     "flight_count": 18043,
+     "flight_count": 18258,
      "first_flight": "2025-03-19",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/49102a57e82a4755b015ea84dcd39b01",
    "status": "ok",
    "first_flight": "2025-03-19",
-   "last_flight": "2026-09-01",
-   "flight_count": 18043,
-   "total_hours": 3690.4,
+   "last_flight": "2026-09-03",
+   "flight_count": 18258,
+   "total_hours": 3736.2,
    "overlap_count": 0,
    "lat": 39.20393,
    "lon": -84.53302,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -122,28 +122,28 @@
      "flight_count": 10201,
      "first_flight": "2024-04-20",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:26:45.335Z"
+     "collected_utc": "2026-09-04T12:33:37.508Z"
     },
     {
      "source": "airdata",
      "source_agency_id": "elk-grove-pd-ca",
      "official_url": "https://app.airdata.com/u/egpd",
-     "flight_count": 2503,
+     "flight_count": 2508,
      "first_flight": "2023-01-01",
-     "last_flight": "2026-08-28",
-     "collected_utc": "2026-09-03T06:34:07.478Z"
+     "last_flight": "2026-08-31",
+     "collected_utc": "2026-09-04T12:51:04.561Z"
     }
    ],
    "official_url": "https://community.elk-grove.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2023-01-01",
    "last_flight": "2026-09-02",
-   "flight_count": 12548,
+   "flight_count": 12553,
    "total_hours": 2378.3,
    "overlap_count": 156,
    "lat": 38.4088,
    "lon": -121.37162,
-   "collected_utc": "2026-09-03T06:34:07.478Z",
+   "collected_utc": "2026-09-04T12:51:04.561Z",
    "notes": null
   },
   {
@@ -157,22 +157,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "cspd-real-time-crime-center",
      "official_url": "https://www.arcgis.com/apps/dashboards/77fe7c984946489aaf32ca7564667c0b",
-     "flight_count": 10307,
+     "flight_count": 10450,
      "first_flight": "2025-09-21",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/77fe7c984946489aaf32ca7564667c0b",
    "status": "ok",
    "first_flight": "2025-09-21",
-   "last_flight": "2026-09-02",
-   "flight_count": 10307,
-   "total_hours": 1939.4,
+   "last_flight": "2026-09-04",
+   "flight_count": 10450,
+   "total_hours": 1966.6,
    "overlap_count": 0,
    "lat": 38.89085,
    "lon": -104.77093,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -189,7 +189,7 @@
      "flight_count": 5709,
      "first_flight": "2020-04-07",
      "last_flight": "2024-02-09",
-     "collected_utc": "2026-09-04T11:39:29.178Z"
+     "collected_utc": "2026-09-04T13:40:20.869Z"
     },
     {
      "source": "flock_aerodome",
@@ -198,7 +198,7 @@
      "flight_count": 4591,
      "first_flight": "2023-11-02",
      "last_flight": "2026-08-28",
-     "collected_utc": "2026-09-03T02:59:47.209Z"
+     "collected_utc": "2026-09-04T12:38:31.873Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/redondobeachpd",
@@ -210,7 +210,7 @@
    "overlap_count": 0,
    "lat": 33.83983,
    "lon": -118.38459,
-   "collected_utc": "2026-09-04T11:39:29.178Z",
+   "collected_utc": "2026-09-04T13:40:20.869Z",
    "notes": null
   },
   {
@@ -224,10 +224,10 @@
      "source": "skydio_arcgis",
      "source_agency_id": "los-angeles-pd",
      "official_url": "https://cloud.skydio.com/dashboard/lapd",
-     "flight_count": 9685,
+     "flight_count": 9728,
      "first_flight": "2025-07-29",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     },
     {
      "source": "flock_aerodome",
@@ -236,19 +236,19 @@
      "flight_count": 84,
      "first_flight": "2025-07-16",
      "last_flight": "2025-08-01",
-     "collected_utc": "2026-09-03T02:15:02.101Z"
+     "collected_utc": "2026-09-04T12:35:15.863Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/lapd",
    "status": "ok",
    "first_flight": "2025-07-16",
-   "last_flight": "2026-09-01",
-   "flight_count": 9767,
-   "total_hours": 1985.8,
+   "last_flight": "2026-09-02",
+   "flight_count": 9810,
+   "total_hours": 1994.2,
    "overlap_count": 2,
    "lat": 34.02006,
    "lon": -118.41823,
-   "collected_utc": "2026-09-03T02:15:02.101Z",
+   "collected_utc": "2026-09-04T12:35:15.863Z",
    "notes": null
   },
   {
@@ -265,7 +265,7 @@
      "flight_count": 7481,
      "first_flight": "2024-05-16",
      "last_flight": "2026-06-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.sanfranciscopolice.org/your-sfpd/explore-department/drones",
@@ -277,7 +277,7 @@
    "overlap_count": 0,
    "lat": 37.78794,
    "lon": -122.40752,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "Published by the city under its surveillance ordinance, not through a vendor. Covers SFPD's whole fleet (DJI, Skydio, Flock Safety and others), whereas Skydio-sourced agencies show Skydio flights only. Dates only; no takeoff times."
   },
   {
@@ -291,22 +291,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "wichita-pd",
      "official_url": "https://cloud.skydio.com/dashboard/wichita",
-     "flight_count": 6653,
+     "flight_count": 6682,
      "first_flight": "2024-05-29",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/wichita",
    "status": "ok",
    "first_flight": "2024-05-29",
-   "last_flight": "2026-09-02",
-   "flight_count": 6653,
-   "total_hours": 1698.7,
+   "last_flight": "2026-09-03",
+   "flight_count": 6682,
+   "total_hours": 1704.8,
    "overlap_count": 0,
    "lat": 37.69224,
    "lon": -97.33754,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "timezone not detected automatically; set manually."
   },
   {
@@ -320,22 +320,22 @@
      "source": "airdata",
      "source_agency_id": "sacramento-pd-ca",
      "official_url": "https://app.airdata.com/u/spduas",
-     "flight_count": 5905,
+     "flight_count": 5915,
      "first_flight": "2019-10-17",
-     "last_flight": "2026-08-30",
-     "collected_utc": "2026-09-03T13:41:09.199Z"
+     "last_flight": "2026-09-01",
+     "collected_utc": "2026-09-04T13:35:25.753Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/spduas",
    "status": "ok",
    "first_flight": "2019-10-17",
-   "last_flight": "2026-08-30",
-   "flight_count": 5905,
+   "last_flight": "2026-09-01",
+   "flight_count": 5915,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 38.58106,
    "lon": -121.49389,
-   "collected_utc": "2026-09-03T13:41:09.199Z",
+   "collected_utc": "2026-09-04T13:35:25.753Z",
    "notes": null
   },
   {
@@ -349,22 +349,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "azusa-pd-ca",
      "official_url": "https://community.azusa.ca.us.aerodome.com/",
-     "flight_count": 5381,
+     "flight_count": 5394,
      "first_flight": "2023-12-18",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:42:44.483Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:29:10.627Z"
     }
    ],
    "official_url": "https://community.azusa.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2023-12-18",
-   "last_flight": "2026-09-02",
-   "flight_count": 5381,
-   "total_hours": 2910.4,
+   "last_flight": "2026-09-03",
+   "flight_count": 5394,
+   "total_hours": 2913.2,
    "overlap_count": 0,
    "lat": 34.13388,
    "lon": -117.9056,
-   "collected_utc": "2026-09-03T01:42:44.483Z",
+   "collected_utc": "2026-09-04T12:29:10.627Z",
    "notes": null
   },
   {
@@ -378,22 +378,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "aurora-pd-co",
      "official_url": "https://community.aurora.co.us.aerodome.com/",
-     "flight_count": 4959,
+     "flight_count": 4975,
      "first_flight": "2025-08-12",
-     "last_flight": "2026-08-30",
-     "collected_utc": "2026-09-03T01:44:16.553Z"
+     "last_flight": "2026-08-31",
+     "collected_utc": "2026-09-04T12:30:35.543Z"
     }
    ],
    "official_url": "https://community.aurora.co.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-08-12",
-   "last_flight": "2026-08-30",
-   "flight_count": 4959,
-   "total_hours": 1281.3,
+   "last_flight": "2026-08-31",
+   "flight_count": 4975,
+   "total_hours": 1284,
    "overlap_count": 0,
    "lat": 39.74014,
    "lon": -104.87334,
-   "collected_utc": "2026-09-03T01:44:16.553Z",
+   "collected_utc": "2026-09-04T12:30:35.543Z",
    "notes": null
   },
   {
@@ -407,22 +407,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "alhambra-pd-ca",
      "official_url": "https://community.alhambra.ca.us.aerodome.com/",
-     "flight_count": 4829,
+     "flight_count": 4837,
      "first_flight": "2024-06-20",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:42:21.215Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:28:50.495Z"
     }
    ],
    "official_url": "https://community.alhambra.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2024-06-20",
-   "last_flight": "2026-09-02",
-   "flight_count": 4829,
-   "total_hours": 1215.7,
+   "last_flight": "2026-09-04",
+   "flight_count": 4837,
+   "total_hours": 1217.8,
    "overlap_count": 0,
    "lat": 34.09304,
    "lon": -118.12706,
-   "collected_utc": "2026-09-03T01:42:21.215Z",
+   "collected_utc": "2026-09-04T12:28:50.495Z",
    "notes": null
   },
   {
@@ -436,22 +436,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "laredo-pd",
      "official_url": "https://cloud.skydio.com/dashboard/laredopd",
-     "flight_count": 4688,
+     "flight_count": 4695,
      "first_flight": "2026-01-30",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/laredopd",
    "status": "ok",
    "first_flight": "2026-01-30",
    "last_flight": "2026-09-02",
-   "flight_count": 4688,
-   "total_hours": 826.6,
+   "flight_count": 4695,
+   "total_hours": 827.5,
    "overlap_count": 0,
    "lat": 27.53948,
    "lon": -99.46496,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -468,7 +468,7 @@
      "flight_count": 4450,
      "first_flight": "2024-04-15",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:15:02.505Z"
+     "collected_utc": "2026-09-04T12:34:54.470Z"
     }
    ],
    "official_url": "https://community.hawthorne.ca.us.aerodome.com/",
@@ -480,7 +480,7 @@
    "overlap_count": 0,
    "lat": 33.91283,
    "lon": -118.34261,
-   "collected_utc": "2026-09-03T02:15:02.505Z",
+   "collected_utc": "2026-09-04T12:34:54.470Z",
    "notes": null
   },
   {
@@ -494,22 +494,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "philadelphia-pd",
      "official_url": "https://www.arcgis.com/apps/dashboards/acc28d9c9fbd48c68d1059452bf2bb1c",
-     "flight_count": 4258,
+     "flight_count": 4422,
      "first_flight": "2025-03-08",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/acc28d9c9fbd48c68d1059452bf2bb1c",
    "status": "ok",
    "first_flight": "2025-03-08",
-   "last_flight": "2026-09-01",
-   "flight_count": 4258,
-   "total_hours": 853.9,
+   "last_flight": "2026-09-03",
+   "flight_count": 4422,
+   "total_hours": 895.2,
    "overlap_count": 0,
    "lat": 40.01863,
    "lon": -75.0808,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -523,22 +523,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "dearborn-pd-mi",
      "official_url": "https://www.arcgis.com/apps/dashboards/13937d18670e44d5a20a5a3821f01775",
-     "flight_count": 4193,
+     "flight_count": 4217,
      "first_flight": "2026-01-28",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/13937d18670e44d5a20a5a3821f01775",
    "status": "ok",
    "first_flight": "2026-01-28",
-   "last_flight": "2026-09-01",
-   "flight_count": 4193,
-   "total_hours": 663,
+   "last_flight": "2026-09-02",
+   "flight_count": 4217,
+   "total_hours": 666.5,
    "overlap_count": 0,
    "lat": 42.3139,
    "lon": -83.22085,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -555,7 +555,7 @@
      "flight_count": 4146,
      "first_flight": "2023-11-15",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:42:01.443Z"
+     "collected_utc": "2026-09-04T12:28:20.737Z"
     }
    ],
    "official_url": "https://community.aspen.co.us.aerodome.com/",
@@ -567,7 +567,7 @@
    "overlap_count": 0,
    "lat": 39.19111,
    "lon": -106.82356,
-   "collected_utc": "2026-09-03T01:42:01.443Z",
+   "collected_utc": "2026-09-04T12:28:20.737Z",
    "notes": null
   },
   {
@@ -584,7 +584,7 @@
      "flight_count": 4130,
      "first_flight": "2025-03-08",
      "last_flight": "2026-08-23",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/milwaukee",
@@ -596,7 +596,7 @@
    "overlap_count": 0,
    "lat": 43.10262,
    "lon": -88.05467,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -610,10 +610,10 @@
      "source": "airdata",
      "source_agency_id": "west-palm-beach-pd-fl",
      "official_url": "https://app.airdata.com/u/wpb",
-     "flight_count": 3908,
+     "flight_count": 3912,
      "first_flight": "2024-03-29",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T14:46:51.312Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T13:39:49.596Z"
     },
     {
      "source": "skydio_arcgis",
@@ -622,19 +622,57 @@
      "flight_count": 46,
      "first_flight": "2024-12-10",
      "last_flight": "2025-08-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/wpb",
    "status": "ok",
    "first_flight": "2024-03-29",
-   "last_flight": "2026-09-02",
-   "flight_count": 3915,
+   "last_flight": "2026-09-03",
+   "flight_count": 3919,
    "total_hours": 1.9,
    "overlap_count": 39,
    "lat": 26.72661,
    "lon": -80.11543,
-   "collected_utc": "2026-09-03T14:46:51.312Z",
+   "collected_utc": "2026-09-04T13:39:49.596Z",
+   "notes": null
+  },
+  {
+   "agency_id": "brookhaven-pd",
+   "display_name": "Brookhaven Police Department",
+   "state": "GA",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "brookhaven-pd",
+     "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
+     "flight_count": 3281,
+     "first_flight": "2025-05-22",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    },
+    {
+     "source": "motorola_cape",
+     "source_agency_id": "brookhaven-pd-ga",
+     "official_url": "https://www.aerial.motorolasolutions.com/transparency/brookhavenga",
+     "flight_count": 0,
+     "first_flight": null,
+     "last_flight": null,
+     "collected_utc": "2026-09-04T13:40:07.496Z"
+    }
+   ],
+   "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
+   "status": "ok",
+   "first_flight": "2025-05-22",
+   "last_flight": "2026-09-03",
+   "flight_count": 3281,
+   "total_hours": 564.6,
+   "overlap_count": 0,
+   "lat": 33.86606,
+   "lon": -84.33297,
+   "collected_utc": "2026-09-04T13:40:07.496Z",
    "notes": null
   },
   {
@@ -651,7 +689,7 @@
      "flight_count": 3280,
      "first_flight": "2025-01-30",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:32:02.060Z"
+     "collected_utc": "2026-09-04T12:36:49.139Z"
     }
    ],
    "official_url": "https://community.mesa.az.us.aerodome.com/",
@@ -663,45 +701,7 @@
    "overlap_count": 0,
    "lat": 33.4151,
    "lon": -111.83145,
-   "collected_utc": "2026-09-03T02:32:02.060Z",
-   "notes": null
-  },
-  {
-   "agency_id": "brookhaven-pd",
-   "display_name": "Brookhaven Police Department",
-   "state": "GA",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "brookhaven-pd",
-     "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
-     "flight_count": 3268,
-     "first_flight": "2025-05-22",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    },
-    {
-     "source": "motorola_cape",
-     "source_agency_id": "brookhaven-pd-ga",
-     "official_url": "https://www.aerial.motorolasolutions.com/transparency/brookhavenga",
-     "flight_count": 0,
-     "first_flight": null,
-     "last_flight": null,
-     "collected_utc": "2026-09-04T11:39:14.691Z"
-    }
-   ],
-   "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
-   "status": "ok",
-   "first_flight": "2025-05-22",
-   "last_flight": "2026-09-01",
-   "flight_count": 3268,
-   "total_hours": 562.5,
-   "overlap_count": 0,
-   "lat": 33.86606,
-   "lon": -84.33297,
-   "collected_utc": "2026-09-04T11:39:14.691Z",
+   "collected_utc": "2026-09-04T12:36:49.139Z",
    "notes": null
   },
   {
@@ -715,22 +715,22 @@
      "source": "airdata",
      "source_agency_id": "irvine-pd-ca",
      "official_url": "https://app.airdata.com/u/irvinepd",
-     "flight_count": 3259,
+     "flight_count": 3276,
      "first_flight": "2025-01-01",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-03T07:00:32.937Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:52:22.499Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/irvinepd",
    "status": "ok",
    "first_flight": "2025-01-01",
-   "last_flight": "2026-09-01",
-   "flight_count": 3259,
+   "last_flight": "2026-09-02",
+   "flight_count": 3276,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 33.6857,
    "lon": -117.82598,
-   "collected_utc": "2026-09-03T07:00:32.937Z",
+   "collected_utc": "2026-09-04T12:52:22.499Z",
    "notes": null
   },
   {
@@ -747,7 +747,7 @@
      "flight_count": 3111,
      "first_flight": "2025-09-09",
      "last_flight": "2026-08-13",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/fc2491c66ec9416aaab58eb84865d51b",
@@ -759,7 +759,7 @@
    "overlap_count": 0,
    "lat": 44.02966,
    "lon": -92.46552,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -773,22 +773,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "concord-pd-ca",
      "official_url": "https://cloud.skydio.com/dashboard/concordpd",
-     "flight_count": 3081,
+     "flight_count": 3106,
      "first_flight": "2025-10-01",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/concordpd",
    "status": "ok",
    "first_flight": "2025-10-01",
-   "last_flight": "2026-09-01",
-   "flight_count": 3081,
-   "total_hours": 555,
+   "last_flight": "2026-09-03",
+   "flight_count": 3106,
+   "total_hours": 558.2,
    "overlap_count": 0,
    "lat": 37.96947,
    "lon": -121.90656,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -802,22 +802,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "las-cruces-pd-nm",
      "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
-     "flight_count": 2978,
+     "flight_count": 2986,
      "first_flight": "2026-01-15",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:25:44.259Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:36:47.845Z"
     }
    ],
    "official_url": "https://community.las-cruces.nm.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-01-15",
-   "last_flight": "2026-09-02",
-   "flight_count": 2978,
-   "total_hours": 770.8,
+   "last_flight": "2026-09-03",
+   "flight_count": 2986,
+   "total_hours": 772.5,
    "overlap_count": 0,
    "lat": 32.31404,
    "lon": -106.77981,
-   "collected_utc": "2026-09-03T02:25:44.259Z",
+   "collected_utc": "2026-09-04T12:36:47.845Z",
    "notes": null
   },
   {
@@ -834,7 +834,7 @@
      "flight_count": 2953,
      "first_flight": "2024-05-22",
      "last_flight": "2026-09-03",
-     "collected_utc": "2026-09-04T11:39:13.167Z"
+     "collected_utc": "2026-09-04T13:40:06.031Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/breapd-ca",
@@ -846,7 +846,7 @@
    "overlap_count": 0,
    "lat": 33.91704,
    "lon": -117.88885,
-   "collected_utc": "2026-09-04T11:39:13.167Z",
+   "collected_utc": "2026-09-04T13:40:06.031Z",
    "notes": null
   },
   {
@@ -863,7 +863,7 @@
      "flight_count": 2936,
      "first_flight": "2024-05-01",
      "last_flight": "2026-06-26",
-     "collected_utc": "2026-09-03T03:04:11.581Z"
+     "collected_utc": "2026-09-04T12:39:33.767Z"
     }
    ],
    "official_url": "https://community.scottsdale.az.us.aerodome.com/",
@@ -875,7 +875,7 @@
    "overlap_count": 0,
    "lat": 33.49422,
    "lon": -111.92602,
-   "collected_utc": "2026-09-03T03:04:11.581Z",
+   "collected_utc": "2026-09-04T12:39:33.767Z",
    "notes": null
   },
   {
@@ -892,7 +892,7 @@
      "flight_count": 2768,
      "first_flight": "2023-01-05",
      "last_flight": "2026-08-30",
-     "collected_utc": "2026-09-03T14:16:28.896Z"
+     "collected_utc": "2026-09-04T13:36:18.967Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/vcsoes",
@@ -904,7 +904,7 @@
    "overlap_count": 0,
    "lat": 34.44582,
    "lon": -119.07794,
-   "collected_utc": "2026-09-03T14:16:28.896Z",
+   "collected_utc": "2026-09-04T13:36:18.967Z",
    "notes": null
   },
   {
@@ -921,7 +921,7 @@
      "flight_count": 2741,
      "first_flight": "2025-09-15",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T03:20:52.620Z"
+     "collected_utc": "2026-09-04T12:43:14.925Z"
     }
    ],
    "official_url": "https://community.toledo.oh.us.aerodome.com/",
@@ -933,7 +933,7 @@
    "overlap_count": 0,
    "lat": 41.65291,
    "lon": -83.53782,
-   "collected_utc": "2026-09-03T03:20:52.620Z",
+   "collected_utc": "2026-09-04T12:43:14.925Z",
    "notes": null
   },
   {
@@ -950,7 +950,7 @@
      "flight_count": 2523,
      "first_flight": "2025-09-30",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:54:03.066Z"
+     "collected_utc": "2026-09-04T12:33:46.805Z"
     },
     {
      "source": "airdata",
@@ -959,7 +959,7 @@
      "flight_count": 82,
      "first_flight": "2022-07-13",
      "last_flight": "2026-08-11",
-     "collected_utc": "2026-09-03T06:35:03.160Z"
+     "collected_utc": "2026-09-04T12:51:07.323Z"
     },
     {
      "source": "skydio_arcgis",
@@ -968,7 +968,7 @@
      "flight_count": 10,
      "first_flight": "2026-08-03",
      "last_flight": "2026-08-26",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://community.everett.wa.us.aerodome.com/",
@@ -980,7 +980,7 @@
    "overlap_count": 1,
    "lat": 47.97934,
    "lon": -122.2127,
-   "collected_utc": "2026-09-03T06:35:03.160Z",
+   "collected_utc": "2026-09-04T12:51:07.323Z",
    "notes": null
   },
   {
@@ -994,22 +994,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "prosper-pd-tx",
      "official_url": "https://community.prosper.tx.us.aerodome.com/",
-     "flight_count": 2528,
+     "flight_count": 2536,
      "first_flight": "2025-02-11",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:47:41.422Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:38:30.867Z"
     }
    ],
    "official_url": "https://community.prosper.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-02-11",
-   "last_flight": "2026-09-02",
-   "flight_count": 2528,
-   "total_hours": 589.3,
+   "last_flight": "2026-09-03",
+   "flight_count": 2536,
+   "total_hours": 590,
    "overlap_count": 0,
    "lat": 33.23716,
    "lon": -96.7977,
-   "collected_utc": "2026-09-03T02:47:41.422Z",
+   "collected_utc": "2026-09-04T12:38:30.867Z",
    "notes": null
   },
   {
@@ -1023,22 +1023,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "greeley-pd-co",
      "official_url": "https://www.arcgis.com/apps/dashboards/e6b0a17763154df2b33112c954ef6b0d",
-     "flight_count": 2322,
+     "flight_count": 2351,
      "first_flight": "2026-01-28",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/e6b0a17763154df2b33112c954ef6b0d",
    "status": "ok",
    "first_flight": "2026-01-28",
-   "last_flight": "2026-09-01",
-   "flight_count": 2322,
-   "total_hours": 423.6,
+   "last_flight": "2026-09-04",
+   "flight_count": 2351,
+   "total_hours": 428.5,
    "overlap_count": 0,
    "lat": 40.33029,
    "lon": -104.853,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -1052,22 +1052,22 @@
      "source": "airdata",
      "source_agency_id": "anne-arundel-county-police-md",
      "official_url": "https://app.airdata.com/u/annearundelpd",
-     "flight_count": 2267,
+     "flight_count": 2289,
      "first_flight": "2025-07-02",
-     "last_flight": "2026-08-03",
-     "collected_utc": "2026-09-03T01:41:03.721Z"
+     "last_flight": "2026-08-05",
+     "collected_utc": "2026-09-04T12:43:39.009Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/annearundelpd",
    "status": "ok",
    "first_flight": "2025-07-02",
-   "last_flight": "2026-08-03",
-   "flight_count": 2267,
+   "last_flight": "2026-08-05",
+   "flight_count": 2289,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 38.97226,
    "lon": -76.57345,
-   "collected_utc": "2026-09-03T01:41:03.721Z",
+   "collected_utc": "2026-09-04T12:43:39.009Z",
    "notes": null
   },
   {
@@ -1081,22 +1081,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "south-bend-pd-in",
      "official_url": "https://community.south-bend.in.us.aerodome.com/",
-     "flight_count": 2232,
+     "flight_count": 2259,
      "first_flight": "2026-01-08",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T03:06:49.630Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:42:14.375Z"
     }
    ],
    "official_url": "https://community.south-bend.in.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-01-08",
-   "last_flight": "2026-09-02",
-   "flight_count": 2232,
-   "total_hours": 510.7,
+   "last_flight": "2026-09-03",
+   "flight_count": 2259,
+   "total_hours": 515.7,
    "overlap_count": 0,
    "lat": 41.68338,
    "lon": -86.25001,
-   "collected_utc": "2026-09-03T03:06:49.630Z",
+   "collected_utc": "2026-09-04T12:42:14.375Z",
    "notes": null
   },
   {
@@ -1110,22 +1110,22 @@
      "source": "airdata",
      "source_agency_id": "coachella-valley-rtic-ca",
      "official_url": "https://app.airdata.com/u/cvrtic",
-     "flight_count": 2011,
+     "flight_count": 2018,
      "first_flight": "2025-09-04",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T06:15:32.663Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:50:38.054Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/cvrtic",
    "status": "ok",
    "first_flight": "2025-09-04",
-   "last_flight": "2026-09-02",
-   "flight_count": 2011,
+   "last_flight": "2026-09-03",
+   "flight_count": 2018,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 33.76724,
    "lon": -116.35604,
-   "collected_utc": "2026-09-03T06:15:32.663Z",
+   "collected_utc": "2026-09-04T12:50:38.054Z",
    "notes": null
   },
   {
@@ -1142,7 +1142,7 @@
      "flight_count": 2006,
      "first_flight": "2025-11-14",
      "last_flight": "2026-08-31",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/b230d35acc124c4080b591a99fc3b28d",
@@ -1154,7 +1154,7 @@
    "overlap_count": 0,
    "lat": 44.69974,
    "lon": -93.34141,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
@@ -1168,22 +1168,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "edinburg-pd-tx",
      "official_url": "https://community.edinburg.tx.us.aerodome.com/",
-     "flight_count": 1927,
+     "flight_count": 1939,
      "first_flight": "2025-05-13",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:45:38.015Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:31:55.226Z"
     }
    ],
    "official_url": "https://community.edinburg.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-05-13",
-   "last_flight": "2026-09-02",
-   "flight_count": 1927,
-   "total_hours": 424.4,
+   "last_flight": "2026-09-04",
+   "flight_count": 1939,
+   "total_hours": 426.8,
    "overlap_count": 0,
    "lat": 26.3014,
    "lon": -98.16245,
-   "collected_utc": "2026-09-03T01:45:38.015Z",
+   "collected_utc": "2026-09-04T12:31:55.226Z",
    "notes": null
   },
   {
@@ -1197,22 +1197,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "peoria-pd-az",
      "official_url": "https://community.peoria.az.us.aerodome.com/",
-     "flight_count": 1919,
+     "flight_count": 1935,
      "first_flight": "2025-12-02",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:39:40.644Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:39:16.992Z"
     }
    ],
    "official_url": "https://community.peoria.az.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-12-02",
-   "last_flight": "2026-09-02",
-   "flight_count": 1919,
-   "total_hours": 376.9,
+   "last_flight": "2026-09-03",
+   "flight_count": 1935,
+   "total_hours": 380.7,
    "overlap_count": 0,
    "lat": 33.58061,
    "lon": -112.23729,
-   "collected_utc": "2026-09-03T02:39:40.644Z",
+   "collected_utc": "2026-09-04T12:39:16.992Z",
    "notes": null
   },
   {
@@ -1226,22 +1226,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "washoe-county-so-nv",
      "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
-     "flight_count": 1910,
+     "flight_count": 1923,
      "first_flight": "2025-12-11",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T03:16:35.575Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:43:22.733Z"
     }
    ],
    "official_url": "https://community.washoe-county.nv.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-12-11",
-   "last_flight": "2026-09-02",
-   "flight_count": 1910,
-   "total_hours": 504.5,
+   "last_flight": "2026-09-03",
+   "flight_count": 1923,
+   "total_hours": 508.2,
    "overlap_count": 0,
    "lat": 40.5849,
    "lon": -119.61316,
-   "collected_utc": "2026-09-03T03:16:35.575Z",
+   "collected_utc": "2026-09-04T12:43:22.733Z",
    "notes": null
   },
   {
@@ -1258,7 +1258,7 @@
      "flight_count": 1907,
      "first_flight": "2025-01-22",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:41:55.067Z"
+     "collected_utc": "2026-09-04T12:38:01.643Z"
     }
    ],
    "official_url": "https://community.perth-amboy.nj.us.aerodome.com/",
@@ -1270,7 +1270,7 @@
    "overlap_count": 0,
    "lat": 40.51332,
    "lon": -74.27242,
-   "collected_utc": "2026-09-03T02:41:55.067Z",
+   "collected_utc": "2026-09-04T12:38:01.643Z",
    "notes": null
   },
   {
@@ -1284,10 +1284,10 @@
      "source": "skydio_arcgis",
      "source_agency_id": "denver-pd",
      "official_url": "https://cloud.skydio.com/dashboard/denverpd",
-     "flight_count": 1841,
+     "flight_count": 1843,
      "first_flight": "2025-10-21",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     },
     {
      "source": "flock_aerodome",
@@ -1296,19 +1296,19 @@
      "flight_count": 58,
      "first_flight": "2025-10-06",
      "last_flight": "2025-10-21",
-     "collected_utc": "2026-09-03T01:44:17.504Z"
+     "collected_utc": "2026-09-04T12:30:39.090Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/denverpd",
    "status": "ok",
    "first_flight": "2025-10-06",
-   "last_flight": "2026-09-01",
-   "flight_count": 1899,
-   "total_hours": 304.4,
+   "last_flight": "2026-09-02",
+   "flight_count": 1901,
+   "total_hours": 304.6,
    "overlap_count": 0,
    "lat": 39.83372,
    "lon": -104.9017,
-   "collected_utc": "2026-09-03T01:44:17.504Z",
+   "collected_utc": "2026-09-04T12:30:39.090Z",
    "notes": null
   },
   {
@@ -1322,22 +1322,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "conyers-pd-ga",
      "official_url": "https://community.conyers.ga.us.aerodome.com/",
-     "flight_count": 1857,
+     "flight_count": 1864,
      "first_flight": "2025-09-25",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:44:23.981Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:30:42.555Z"
     }
    ],
    "official_url": "https://community.conyers.ga.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-09-25",
-   "last_flight": "2026-09-02",
-   "flight_count": 1857,
-   "total_hours": 438.7,
+   "last_flight": "2026-09-04",
+   "flight_count": 1864,
+   "total_hours": 440.8,
    "overlap_count": 0,
    "lat": 33.66761,
    "lon": -84.01769,
-   "collected_utc": "2026-09-03T01:44:23.981Z",
+   "collected_utc": "2026-09-04T12:30:42.555Z",
    "notes": null
   },
   {
@@ -1351,22 +1351,22 @@
      "source": "airdata",
      "source_agency_id": "chico-pd-ca",
      "official_url": "https://app.airdata.com/u/chicopd",
-     "flight_count": 1797,
+     "flight_count": 1817,
      "first_flight": "2021-07-22",
-     "last_flight": "2026-08-16",
-     "collected_utc": "2026-09-03T01:41:21.363Z"
+     "last_flight": "2026-08-26",
+     "collected_utc": "2026-09-04T12:44:26.948Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/chicopd",
    "status": "ok",
    "first_flight": "2021-07-22",
-   "last_flight": "2026-08-16",
-   "flight_count": 1797,
+   "last_flight": "2026-08-26",
+   "flight_count": 1817,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 39.72849,
    "lon": -121.83748,
-   "collected_utc": "2026-09-03T01:41:21.363Z",
+   "collected_utc": "2026-09-04T12:44:26.948Z",
    "notes": null
   },
   {
@@ -1380,10 +1380,10 @@
      "source": "flock_aerodome",
      "source_agency_id": "hemet-pd-ca",
      "official_url": "https://community.hemet.ca.us.aerodome.com/",
-     "flight_count": 1739,
+     "flight_count": 1743,
      "first_flight": "2025-09-26",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:07:22.135Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:34:55.643Z"
     },
     {
      "source": "motorola_cape",
@@ -1392,19 +1392,48 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-04T11:39:17.949Z"
+     "collected_utc": "2026-09-04T13:40:10.422Z"
     }
    ],
    "official_url": "https://community.hemet.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-09-26",
-   "last_flight": "2026-09-02",
-   "flight_count": 1739,
-   "total_hours": 367.3,
+   "last_flight": "2026-09-03",
+   "flight_count": 1743,
+   "total_hours": 368.4,
    "overlap_count": 0,
    "lat": 33.74752,
    "lon": -116.97197,
-   "collected_utc": "2026-09-04T11:39:17.949Z",
+   "collected_utc": "2026-09-04T13:40:10.422Z",
+   "notes": null
+  },
+  {
+   "agency_id": "santa-ana-pd-ca",
+   "display_name": "Santa Ana Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "santa-ana-pd-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe",
+     "flight_count": 1722,
+     "first_flight": "2026-05-21",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe",
+   "status": "ok",
+   "first_flight": "2026-05-21",
+   "last_flight": "2026-09-03",
+   "flight_count": 1722,
+   "total_hours": 270.2,
+   "overlap_count": 0,
+   "lat": 33.7376,
+   "lon": -117.88315,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -1421,7 +1450,7 @@
      "flight_count": 1647,
      "first_flight": "2024-08-15",
      "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-03T07:22:37.783Z"
+     "collected_utc": "2026-09-04T12:53:14.378Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/lpdviper",
@@ -1433,7 +1462,7 @@
    "overlap_count": 0,
    "lat": 34.69811,
    "lon": -118.13662,
-   "collected_utc": "2026-09-03T07:22:37.783Z",
+   "collected_utc": "2026-09-04T12:53:14.378Z",
    "notes": null
   },
   {
@@ -1447,22 +1476,22 @@
      "source": "airdata",
      "source_agency_id": "snohomish-county-so-wa",
      "official_url": "https://app.airdata.com/u/scso",
-     "flight_count": 1645,
+     "flight_count": 1647,
      "first_flight": "2024-01-09",
-     "last_flight": "2026-08-30",
-     "collected_utc": "2026-09-03T13:56:08.687Z"
+     "last_flight": "2026-09-01",
+     "collected_utc": "2026-09-04T13:36:06.266Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/scso",
    "status": "ok",
    "first_flight": "2024-01-09",
-   "last_flight": "2026-08-30",
-   "flight_count": 1645,
+   "last_flight": "2026-09-01",
+   "flight_count": 1647,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 48.00747,
    "lon": -121.73049,
-   "collected_utc": "2026-09-03T13:56:08.687Z",
+   "collected_utc": "2026-09-04T13:36:06.266Z",
    "notes": null
   },
   {
@@ -1476,51 +1505,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "south-san-francisco-pd-ca",
      "official_url": "https://www.arcgis.com/apps/dashboards/c62d7fea1f524f2ebe9f10ff5569e0c8",
-     "flight_count": 1637,
+     "flight_count": 1642,
      "first_flight": "2025-10-06",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/c62d7fea1f524f2ebe9f10ff5569e0c8",
    "status": "ok",
    "first_flight": "2025-10-06",
-   "last_flight": "2026-09-01",
-   "flight_count": 1637,
-   "total_hours": 319,
+   "last_flight": "2026-09-02",
+   "flight_count": 1642,
+   "total_hours": 319.8,
    "overlap_count": 0,
    "lat": 37.65337,
    "lon": -122.42305,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
-   "notes": null
-  },
-  {
-   "agency_id": "santa-ana-pd-ca",
-   "display_name": "Santa Ana Police Department",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "santa-ana-pd-ca",
-     "official_url": "https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe",
-     "flight_count": 1599,
-     "first_flight": "2026-05-21",
-     "last_flight": "2026-08-27",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/2a9b8236a99245dd99899b96495326fe",
-   "status": "ok",
-   "first_flight": "2026-05-21",
-   "last_flight": "2026-08-27",
-   "flight_count": 1599,
-   "total_hours": 252.2,
-   "overlap_count": 0,
-   "lat": 33.7376,
-   "lon": -117.88315,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -1534,22 +1534,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "dekalb-county-pd-ga",
      "official_url": "https://community.dekalb.ga.us.aerodome.com/",
-     "flight_count": 1585,
+     "flight_count": 1586,
      "first_flight": "2025-12-03",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:46:03.802Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:32:13.940Z"
     }
    ],
    "official_url": "https://community.dekalb.ga.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-12-03",
-   "last_flight": "2026-09-02",
-   "flight_count": 1585,
-   "total_hours": 436.5,
+   "last_flight": "2026-09-03",
+   "flight_count": 1586,
+   "total_hours": 436.9,
    "overlap_count": 0,
    "lat": 33.75756,
    "lon": -84.21865,
-   "collected_utc": "2026-09-03T01:46:03.802Z",
+   "collected_utc": "2026-09-04T12:32:13.940Z",
    "notes": null
   },
   {
@@ -1566,7 +1566,7 @@
      "flight_count": 1558,
      "first_flight": "2025-05-20",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:35:55.945Z"
+     "collected_utc": "2026-09-04T12:37:04.293Z"
     }
    ],
    "official_url": "https://community.oak-brook.il.us.aerodome.com/",
@@ -1578,7 +1578,7 @@
    "overlap_count": 0,
    "lat": 41.83271,
    "lon": -87.94841,
-   "collected_utc": "2026-09-03T02:35:55.945Z",
+   "collected_utc": "2026-09-04T12:37:04.293Z",
    "notes": null
   },
   {
@@ -1592,22 +1592,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "st-paul-pd-mn",
      "official_url": "https://cloud.skydio.com/dashboard/sppd",
-     "flight_count": 1517,
+     "flight_count": 1537,
      "first_flight": "2026-06-01",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/sppd",
    "status": "ok",
    "first_flight": "2026-06-01",
-   "last_flight": "2026-09-01",
-   "flight_count": 1517,
-   "total_hours": 277,
+   "last_flight": "2026-09-03",
+   "flight_count": 1537,
+   "total_hours": 280.6,
    "overlap_count": 0,
    "lat": 44.9532,
    "lon": -93.10323,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -1624,7 +1624,7 @@
      "flight_count": 1420,
      "first_flight": "2025-05-09",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-03T02:12:13.048Z"
+     "collected_utc": "2026-09-04T12:35:06.722Z"
     }
    ],
    "official_url": "https://community.humble.tx.us.aerodome.com/",
@@ -1636,7 +1636,7 @@
    "overlap_count": 0,
    "lat": 29.99883,
    "lon": -95.26216,
-   "collected_utc": "2026-09-03T02:12:13.048Z",
+   "collected_utc": "2026-09-04T12:35:06.722Z",
    "notes": null
   },
   {
@@ -1653,7 +1653,7 @@
      "flight_count": 1384,
      "first_flight": "2025-07-31",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:43:16.056Z"
+     "collected_utc": "2026-09-04T12:29:36.085Z"
     }
    ],
    "official_url": "https://community.castle-rock.co.us.aerodome.com/",
@@ -1665,7 +1665,7 @@
    "overlap_count": 0,
    "lat": 39.37226,
    "lon": -104.85868,
-   "collected_utc": "2026-09-03T01:43:16.056Z",
+   "collected_utc": "2026-09-04T12:29:36.085Z",
    "notes": null
   },
   {
@@ -1679,22 +1679,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "mooresville-pd-nc",
      "official_url": "https://community.mooresville.nc.us.aerodome.com/",
-     "flight_count": 1367,
+     "flight_count": 1378,
      "first_flight": "2025-04-23",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:35:34.275Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:36:54.113Z"
     }
    ],
    "official_url": "https://community.mooresville.nc.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-04-23",
-   "last_flight": "2026-09-02",
-   "flight_count": 1367,
-   "total_hours": 785.9,
+   "last_flight": "2026-09-04",
+   "flight_count": 1378,
+   "total_hours": 788.6,
    "overlap_count": 0,
    "lat": 35.58486,
    "lon": -80.81007,
-   "collected_utc": "2026-09-03T02:35:34.275Z",
+   "collected_utc": "2026-09-04T12:36:54.113Z",
    "notes": null
   },
   {
@@ -1708,22 +1708,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "riverside-county-so-ca",
      "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
-     "flight_count": 1336,
+     "flight_count": 1340,
      "first_flight": "2025-10-16",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:47:23.228Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:38:40.161Z"
     }
    ],
    "official_url": "https://community.riverside-county.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-10-16",
-   "last_flight": "2026-09-02",
-   "flight_count": 1336,
-   "total_hours": 304.3,
+   "last_flight": "2026-09-04",
+   "flight_count": 1340,
+   "total_hours": 305.2,
    "overlap_count": 0,
    "lat": 33.722,
    "lon": -116.03725,
-   "collected_utc": "2026-09-03T02:47:23.228Z",
+   "collected_utc": "2026-09-04T12:38:40.161Z",
    "notes": null
   },
   {
@@ -1740,7 +1740,7 @@
      "flight_count": 1298,
      "first_flight": "2025-04-01",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:45:00.212Z"
+     "collected_utc": "2026-09-04T12:31:20.544Z"
     }
    ],
    "official_url": "https://community.el-segundo.ca.us.aerodome.com/",
@@ -1752,7 +1752,7 @@
    "overlap_count": 0,
    "lat": 33.91703,
    "lon": -118.41563,
-   "collected_utc": "2026-09-03T01:45:00.212Z",
+   "collected_utc": "2026-09-04T12:31:20.544Z",
    "notes": null
   },
   {
@@ -1766,22 +1766,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "hamilton-county-so-in",
      "official_url": "https://community.hamilton.in.us.aerodome.com/",
-     "flight_count": 1269,
+     "flight_count": 1281,
      "first_flight": "2025-09-29",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:58:38.084Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:34:20.881Z"
     }
    ],
    "official_url": "https://community.hamilton.in.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-09-29",
-   "last_flight": "2026-09-02",
-   "flight_count": 1269,
-   "total_hours": 240.9,
+   "last_flight": "2026-09-03",
+   "flight_count": 1281,
+   "total_hours": 242.9,
    "overlap_count": 0,
    "lat": 40.07498,
    "lon": -86.04989,
-   "collected_utc": "2026-09-03T01:58:38.084Z",
+   "collected_utc": "2026-09-04T12:34:20.881Z",
    "notes": null
   },
   {
@@ -1795,22 +1795,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "caldwell-pd-id",
      "official_url": "https://www.arcgis.com/apps/dashboards/62c4003416fb4c52ad4e03766e9ad32a",
-     "flight_count": 1249,
+     "flight_count": 1279,
      "first_flight": "2026-01-07",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/62c4003416fb4c52ad4e03766e9ad32a",
    "status": "ok",
    "first_flight": "2026-01-07",
-   "last_flight": "2026-09-01",
-   "flight_count": 1249,
-   "total_hours": 213.7,
+   "last_flight": "2026-09-03",
+   "flight_count": 1279,
+   "total_hours": 217.4,
    "overlap_count": 0,
    "lat": 43.73261,
    "lon": -116.80328,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -1824,22 +1824,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "san-rafael-pd-ca",
      "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
-     "flight_count": 1248,
+     "flight_count": 1262,
      "first_flight": "2025-10-29",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:54:09.644Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:39:47.311Z"
     }
    ],
    "official_url": "https://community.san-rafael.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-10-29",
-   "last_flight": "2026-09-02",
-   "flight_count": 1248,
-   "total_hours": 228.5,
+   "last_flight": "2026-09-03",
+   "flight_count": 1262,
+   "total_hours": 231,
    "overlap_count": 0,
    "lat": 37.97478,
    "lon": -122.53167,
-   "collected_utc": "2026-09-03T02:54:09.644Z",
+   "collected_utc": "2026-09-04T12:39:47.311Z",
    "notes": null
   },
   {
@@ -1853,22 +1853,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "hempstead-pd-ny",
      "official_url": "https://community.hempstead.ny.us.aerodome.com/",
-     "flight_count": 1241,
+     "flight_count": 1246,
      "first_flight": "2025-06-12",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:05:20.480Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:35:14.340Z"
     }
    ],
    "official_url": "https://community.hempstead.ny.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-06-12",
-   "last_flight": "2026-09-02",
-   "flight_count": 1241,
-   "total_hours": 354.3,
+   "last_flight": "2026-09-03",
+   "flight_count": 1246,
+   "total_hours": 355.7,
    "overlap_count": 0,
    "lat": 40.67368,
    "lon": -73.61907,
-   "collected_utc": "2026-09-03T02:05:20.480Z",
+   "collected_utc": "2026-09-04T12:35:14.340Z",
    "notes": null
   },
   {
@@ -1882,51 +1882,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "minnetonka-pd",
      "official_url": "https://www.arcgis.com/apps/dashboards/864a017ece0f4aa898e0026032f8ce92",
-     "flight_count": 1220,
+     "flight_count": 1239,
      "first_flight": "2025-02-13",
-     "last_flight": "2026-08-26",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/864a017ece0f4aa898e0026032f8ce92",
    "status": "ok",
    "first_flight": "2025-02-13",
-   "last_flight": "2026-08-26",
-   "flight_count": 1220,
-   "total_hours": 239.2,
+   "last_flight": "2026-09-04",
+   "flight_count": 1239,
+   "total_hours": 243.3,
    "overlap_count": 0,
    "lat": 45.00821,
    "lon": -93.4415,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
-   "notes": null
-  },
-  {
-   "agency_id": "midwest-city-pd-ok",
-   "display_name": "Midwest City PD",
-   "state": "OK",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "midwest-city-pd-ok",
-     "official_url": "https://community.midwest.ok.us.aerodome.com/",
-     "flight_count": 1189,
-     "first_flight": "2025-12-18",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:27:55.471Z"
-    }
-   ],
-   "official_url": "https://community.midwest.ok.us.aerodome.com/",
-   "status": "ok",
-   "first_flight": "2025-12-18",
-   "last_flight": "2026-09-02",
-   "flight_count": 1189,
-   "total_hours": 287.8,
-   "overlap_count": 0,
-   "lat": 35.44951,
-   "lon": -97.3967,
-   "collected_utc": "2026-09-03T02:27:55.471Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -1940,22 +1911,51 @@
      "source": "skydio_arcgis",
      "source_agency_id": "arvada-pd-co",
      "official_url": "https://www.arcgis.com/apps/dashboards/b7c9dafc9f1047f4af6f3df05a7fae2e",
-     "flight_count": 1176,
+     "flight_count": 1208,
      "first_flight": "2026-05-22",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/b7c9dafc9f1047f4af6f3df05a7fae2e",
    "status": "ok",
    "first_flight": "2026-05-22",
-   "last_flight": "2026-09-01",
-   "flight_count": 1176,
-   "total_hours": 204.3,
+   "last_flight": "2026-09-03",
+   "flight_count": 1208,
+   "total_hours": 209.3,
    "overlap_count": 0,
    "lat": 39.81821,
    "lon": -105.09519,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
+   "notes": null
+  },
+  {
+   "agency_id": "midwest-city-pd-ok",
+   "display_name": "Midwest City PD",
+   "state": "OK",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "midwest-city-pd-ok",
+     "official_url": "https://community.midwest.ok.us.aerodome.com/",
+     "flight_count": 1194,
+     "first_flight": "2025-12-18",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:36:10.392Z"
+    }
+   ],
+   "official_url": "https://community.midwest.ok.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-18",
+   "last_flight": "2026-09-03",
+   "flight_count": 1194,
+   "total_hours": 289.3,
+   "overlap_count": 0,
+   "lat": 35.44951,
+   "lon": -97.3967,
+   "collected_utc": "2026-09-04T12:36:10.392Z",
    "notes": null
   },
   {
@@ -1969,22 +1969,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "town-of-ramapo-pd",
      "official_url": "https://www.arcgis.com/apps/dashboards/91bfbf2aaa034122810ad9120c1213b9",
-     "flight_count": 1163,
+     "flight_count": 1173,
      "first_flight": "2026-03-31",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/91bfbf2aaa034122810ad9120c1213b9",
    "status": "ok",
    "first_flight": "2026-03-31",
-   "last_flight": "2026-09-02",
-   "flight_count": 1163,
-   "total_hours": 182.9,
+   "last_flight": "2026-09-03",
+   "flight_count": 1173,
+   "total_hours": 185,
    "overlap_count": 0,
    "lat": 41.13317,
    "lon": -74.09366,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2001,7 +2001,7 @@
      "flight_count": 1107,
      "first_flight": "2025-12-05",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:21:17.957Z"
+     "collected_utc": "2026-09-04T12:36:15.237Z"
     }
    ],
    "official_url": "https://community.mansfield.tx.us.aerodome.com/",
@@ -2013,7 +2013,7 @@
    "overlap_count": 0,
    "lat": 32.56349,
    "lon": -97.14203,
-   "collected_utc": "2026-09-03T02:21:17.957Z",
+   "collected_utc": "2026-09-04T12:36:15.237Z",
    "notes": null
   },
   {
@@ -2030,7 +2030,7 @@
      "flight_count": 1089,
      "first_flight": "2024-10-31",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:44:42.392Z"
+     "collected_utc": "2026-09-04T12:31:00.216Z"
     }
    ],
    "official_url": "https://community.dunwoody.ga.us.aerodome.com/",
@@ -2042,7 +2042,7 @@
    "overlap_count": 0,
    "lat": 33.94638,
    "lon": -84.33427,
-   "collected_utc": "2026-09-03T01:44:42.392Z",
+   "collected_utc": "2026-09-04T12:31:00.216Z",
    "notes": null
   },
   {
@@ -2056,22 +2056,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "st-cloud-pd",
      "official_url": "https://www.arcgis.com/apps/dashboards/a72c3583084241528c5dc488d59892ba",
-     "flight_count": 1061,
+     "flight_count": 1070,
      "first_flight": "2025-02-09",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/a72c3583084241528c5dc488d59892ba",
    "status": "ok",
    "first_flight": "2025-02-09",
-   "last_flight": "2026-09-02",
-   "flight_count": 1061,
-   "total_hours": 213.3,
+   "last_flight": "2026-09-03",
+   "flight_count": 1070,
+   "total_hours": 215,
    "overlap_count": 0,
    "lat": 28.23623,
    "lon": -81.28348,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2085,22 +2085,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "lewisville-pd-dfr-tx",
      "official_url": "https://www.arcgis.com/apps/dashboards/f93f7ce5e9f447ce8fdb8593dd11442d",
-     "flight_count": 945,
+     "flight_count": 987,
      "first_flight": "2026-02-26",
-     "last_flight": "2026-07-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-08-01",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f93f7ce5e9f447ce8fdb8593dd11442d",
    "status": "ok",
    "first_flight": "2026-02-26",
-   "last_flight": "2026-07-30",
-   "flight_count": 945,
-   "total_hours": 162.1,
+   "last_flight": "2026-08-01",
+   "flight_count": 987,
+   "total_hours": 169.5,
    "overlap_count": 0,
    "lat": 33.03604,
    "lon": -96.98903,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2114,22 +2114,22 @@
      "source": "airdata",
      "source_agency_id": "la-port-police-ca",
      "official_url": "https://app.airdata.com/u/lapp",
-     "flight_count": 934,
+     "flight_count": 936,
      "first_flight": "2025-06-05",
-     "last_flight": "2026-08-30",
-     "collected_utc": "2026-09-03T07:10:37.409Z"
+     "last_flight": "2026-08-31",
+     "collected_utc": "2026-09-04T12:53:08.861Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/lapp",
    "status": "ok",
    "first_flight": "2025-06-05",
-   "last_flight": "2026-08-30",
-   "flight_count": 934,
+   "last_flight": "2026-08-31",
+   "flight_count": 936,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 33.70855,
    "lon": -118.25162,
-   "collected_utc": "2026-09-03T07:10:37.409Z",
+   "collected_utc": "2026-09-04T12:53:08.861Z",
    "notes": null
   },
   {
@@ -2143,22 +2143,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "buena-park-pd-ca",
      "official_url": "https://community.buena-park.ca.us.aerodome.com/",
-     "flight_count": 921,
+     "flight_count": 931,
      "first_flight": "2025-12-15",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:43:11.230Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:29:42.525Z"
     }
    ],
    "official_url": "https://community.buena-park.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-12-15",
-   "last_flight": "2026-09-02",
-   "flight_count": 921,
-   "total_hours": 205.7,
+   "last_flight": "2026-09-03",
+   "flight_count": 931,
+   "total_hours": 209.4,
    "overlap_count": 0,
    "lat": 33.87041,
    "lon": -117.99622,
-   "collected_utc": "2026-09-03T01:43:11.230Z",
+   "collected_utc": "2026-09-04T12:29:42.525Z",
    "notes": null
   },
   {
@@ -2175,7 +2175,7 @@
      "flight_count": 869,
      "first_flight": "2026-02-11",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:43:07.559Z"
+     "collected_utc": "2026-09-04T12:29:32.713Z"
     }
    ],
    "official_url": "https://community.casa-grande.az.us.aerodome.com/",
@@ -2187,7 +2187,7 @@
    "overlap_count": 0,
    "lat": 32.87728,
    "lon": -111.75368,
-   "collected_utc": "2026-09-03T01:43:07.559Z",
+   "collected_utc": "2026-09-04T12:29:32.713Z",
    "notes": null
   },
   {
@@ -2201,10 +2201,10 @@
      "source": "skydio_arcgis",
      "source_agency_id": "durango-pd-co",
      "official_url": "https://www.arcgis.com/apps/dashboards/e9e298e4ce57474c96908c82dfe2c8d8",
-     "flight_count": 854,
+     "flight_count": 859,
      "first_flight": "2026-05-28",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     },
     {
      "source": "flock_aerodome",
@@ -2213,19 +2213,19 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-03T01:44:25.446Z"
+     "collected_utc": "2026-09-04T12:30:46.907Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/e9e298e4ce57474c96908c82dfe2c8d8",
    "status": "ok",
    "first_flight": "2026-05-28",
-   "last_flight": "2026-09-01",
-   "flight_count": 854,
-   "total_hours": 160.9,
+   "last_flight": "2026-09-02",
+   "flight_count": 859,
+   "total_hours": 161.9,
    "overlap_count": 0,
    "lat": 37.27695,
    "lon": -107.8766,
-   "collected_utc": "2026-09-03T01:44:25.446Z",
+   "collected_utc": "2026-09-04T12:30:46.907Z",
    "notes": null
   },
   {
@@ -2239,22 +2239,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "southern-illinois-university-pd-il",
      "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
-     "flight_count": 846,
+     "flight_count": 850,
      "first_flight": "2025-07-31",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:58:52.902Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:40:20.486Z"
     }
    ],
    "official_url": "https://community.southern-illinois-university.il.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-07-31",
-   "last_flight": "2026-09-02",
-   "flight_count": 846,
-   "total_hours": 173.9,
+   "last_flight": "2026-09-03",
+   "flight_count": 850,
+   "total_hours": 174.7,
    "overlap_count": 0,
    "lat": 37.70834,
    "lon": -89.22756,
-   "collected_utc": "2026-09-03T02:58:52.902Z",
+   "collected_utc": "2026-09-04T12:40:20.486Z",
    "notes": null
   },
   {
@@ -2268,22 +2268,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "duluth-pd-mn",
      "official_url": "https://www.arcgis.com/apps/dashboards/c916825c24e04d3bbd226e8e5aeb56c5",
-     "flight_count": 813,
+     "flight_count": 822,
      "first_flight": "2025-12-16",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/c916825c24e04d3bbd226e8e5aeb56c5",
    "status": "ok",
    "first_flight": "2025-12-16",
-   "last_flight": "2026-09-01",
-   "flight_count": 813,
-   "total_hours": 126.6,
+   "last_flight": "2026-09-03",
+   "flight_count": 822,
+   "total_hours": 127.6,
    "overlap_count": 0,
    "lat": 46.76851,
    "lon": -92.14282,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2297,22 +2297,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "roanoke-pd-tx",
      "official_url": "https://community.roanoke.tx.us.aerodome.com/",
-     "flight_count": 760,
+     "flight_count": 764,
      "first_flight": "2025-10-28",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:46:19.892Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:39:26.081Z"
     }
    ],
    "official_url": "https://community.roanoke.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-10-28",
-   "last_flight": "2026-09-02",
-   "flight_count": 760,
-   "total_hours": 143.5,
+   "last_flight": "2026-09-03",
+   "flight_count": 764,
+   "total_hours": 144.1,
    "overlap_count": 0,
    "lat": 33.00401,
    "lon": -97.22585,
-   "collected_utc": "2026-09-03T02:46:19.892Z",
+   "collected_utc": "2026-09-04T12:39:26.081Z",
    "notes": null
   },
   {
@@ -2329,7 +2329,7 @@
      "flight_count": 753,
      "first_flight": "2026-04-21",
      "last_flight": "2026-08-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/a8cd850f37644d7ca7d50dde2ab9733a",
@@ -2341,7 +2341,7 @@
    "overlap_count": 0,
    "lat": 36.14209,
    "lon": -86.80214,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2355,22 +2355,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "elizabethtown-pd-ky",
      "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
-     "flight_count": 739,
+     "flight_count": 747,
      "first_flight": "2026-02-12",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-03T01:45:43.145Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:32:02.561Z"
     }
    ],
    "official_url": "https://community.elizabethtown.ky.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-02-12",
-   "last_flight": "2026-09-01",
-   "flight_count": 739,
-   "total_hours": 150.7,
+   "last_flight": "2026-09-03",
+   "flight_count": 747,
+   "total_hours": 152,
    "overlap_count": 0,
    "lat": 37.69395,
    "lon": -85.85913,
-   "collected_utc": "2026-09-03T01:45:43.145Z",
+   "collected_utc": "2026-09-04T12:32:02.561Z",
    "notes": null
   },
   {
@@ -2387,7 +2387,7 @@
      "flight_count": 729,
      "first_flight": "2025-12-11",
      "last_flight": "2026-08-31",
-     "collected_utc": "2026-09-03T01:44:09.515Z"
+     "collected_utc": "2026-09-04T12:30:29.947Z"
     }
    ],
    "official_url": "https://community.cottonwood.az.us.aerodome.com/",
@@ -2399,7 +2399,7 @@
    "overlap_count": 0,
    "lat": 34.74756,
    "lon": -112.02724,
-   "collected_utc": "2026-09-03T01:44:09.515Z",
+   "collected_utc": "2026-09-04T12:30:29.947Z",
    "notes": null
   },
   {
@@ -2413,22 +2413,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "san-angelo-tx-pd-tx",
      "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
-     "flight_count": 699,
+     "flight_count": 718,
      "first_flight": "2026-04-30",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:51:10.491Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:40:20.040Z"
     }
    ],
    "official_url": "https://community.san-angelo.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-04-30",
-   "last_flight": "2026-09-02",
-   "flight_count": 699,
-   "total_hours": 148.7,
+   "last_flight": "2026-09-03",
+   "flight_count": 718,
+   "total_hours": 153.9,
    "overlap_count": 0,
    "lat": 31.46497,
    "lon": -100.44051,
-   "collected_utc": "2026-09-03T02:51:10.491Z",
+   "collected_utc": "2026-09-04T12:40:20.040Z",
    "notes": null
   },
   {
@@ -2445,7 +2445,7 @@
      "flight_count": 698,
      "first_flight": "2024-12-09",
      "last_flight": "2026-07-27",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/06fa738e00f84de6a9fa587a01ab159e",
@@ -2457,7 +2457,7 @@
    "overlap_count": 0,
    "lat": 37.40206,
    "lon": -121.85235,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2471,22 +2471,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "harvey-pd-il",
      "official_url": "https://community.harvey.il.us.aerodome.com/",
-     "flight_count": 689,
+     "flight_count": 693,
      "first_flight": "2025-10-08",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:58:03.118Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:34:29.250Z"
     }
    ],
    "official_url": "https://community.harvey.il.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-10-08",
-   "last_flight": "2026-09-02",
-   "flight_count": 689,
-   "total_hours": 134.3,
+   "last_flight": "2026-09-03",
+   "flight_count": 693,
+   "total_hours": 134.9,
    "overlap_count": 0,
    "lat": 41.61003,
    "lon": -87.64671,
-   "collected_utc": "2026-09-03T01:58:03.118Z",
+   "collected_utc": "2026-09-04T12:34:29.250Z",
    "notes": null
   },
   {
@@ -2503,7 +2503,7 @@
      "flight_count": 672,
      "first_flight": "2021-09-23",
      "last_flight": "2026-08-11",
-     "collected_utc": "2026-09-03T01:41:06.600Z"
+     "collected_utc": "2026-09-04T12:43:41.586Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/bothellpd",
@@ -2515,7 +2515,7 @@
    "overlap_count": 0,
    "lat": 47.76232,
    "lon": -122.2054,
-   "collected_utc": "2026-09-03T01:41:06.600Z",
+   "collected_utc": "2026-09-04T12:43:41.586Z",
    "notes": null
   },
   {
@@ -2532,7 +2532,7 @@
      "flight_count": 667,
      "first_flight": "2026-02-05",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:46:33.836Z"
+     "collected_utc": "2026-09-04T12:32:53.936Z"
     }
    ],
    "official_url": "https://community.farmers-branch.tx.us.aerodome.com/",
@@ -2544,7 +2544,7 @@
    "overlap_count": 0,
    "lat": 32.92657,
    "lon": -96.89609,
-   "collected_utc": "2026-09-03T01:46:33.836Z",
+   "collected_utc": "2026-09-04T12:32:53.936Z",
    "notes": null
   },
   {
@@ -2558,10 +2558,10 @@
      "source": "skydio_arcgis",
      "source_agency_id": "cobb-county-pd",
      "official_url": "https://www.arcgis.com/apps/dashboards/b8e5c097e1bb44c7bd3912fb79037cba",
-     "flight_count": 649,
+     "flight_count": 653,
      "first_flight": "2025-11-06",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     },
     {
      "source": "flock_aerodome",
@@ -2570,19 +2570,19 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-03T01:43:15.493Z"
+     "collected_utc": "2026-09-04T12:29:41.735Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/b8e5c097e1bb44c7bd3912fb79037cba",
    "status": "ok",
    "first_flight": "2025-11-06",
-   "last_flight": "2026-09-01",
-   "flight_count": 649,
-   "total_hours": 101.4,
+   "last_flight": "2026-09-03",
+   "flight_count": 653,
+   "total_hours": 102.1,
    "overlap_count": 0,
    "lat": 34.07438,
    "lon": -81.34464,
-   "collected_utc": "2026-09-03T01:43:15.493Z",
+   "collected_utc": "2026-09-04T12:29:41.735Z",
    "notes": null
   },
   {
@@ -2596,22 +2596,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "alameda-county-so-ca",
      "official_url": "https://community.alameda-county.ca.us.aerodome.com/",
-     "flight_count": 645,
+     "flight_count": 646,
      "first_flight": "2025-09-01",
-     "last_flight": "2026-08-23",
-     "collected_utc": "2026-09-03T01:41:41.766Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:28:07.422Z"
     }
    ],
    "official_url": "https://community.alameda-county.ca.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-09-01",
-   "last_flight": "2026-08-23",
-   "flight_count": 645,
-   "total_hours": 147.7,
+   "last_flight": "2026-09-04",
+   "flight_count": 646,
+   "total_hours": 147.9,
    "overlap_count": 0,
    "lat": 37.60903,
    "lon": -121.89914,
-   "collected_utc": "2026-09-03T01:41:41.766Z",
+   "collected_utc": "2026-09-04T12:28:07.422Z",
    "notes": null
   },
   {
@@ -2628,7 +2628,7 @@
      "flight_count": 617,
      "first_flight": "2025-10-14",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-03T01:47:01.378Z"
+     "collected_utc": "2026-09-04T12:32:54.302Z"
     }
    ],
    "official_url": "https://community.fort-worth.tx.us.aerodome.com/",
@@ -2640,7 +2640,7 @@
    "overlap_count": 0,
    "lat": 32.75318,
    "lon": -97.33275,
-   "collected_utc": "2026-09-03T01:47:01.378Z",
+   "collected_utc": "2026-09-04T12:32:54.302Z",
    "notes": null
   },
   {
@@ -2657,7 +2657,7 @@
      "flight_count": 593,
      "first_flight": "2026-01-03",
      "last_flight": "2026-08-20",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/tampa",
@@ -2669,7 +2669,7 @@
    "overlap_count": 0,
    "lat": 27.99306,
    "lon": -82.42986,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2686,7 +2686,7 @@
      "flight_count": 554,
      "first_flight": "2025-11-17",
      "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-03T03:04:15.993Z"
+     "collected_utc": "2026-09-04T12:40:44.919Z"
     }
    ],
    "official_url": "https://community.suisun-city.ca.us.aerodome.com/",
@@ -2698,7 +2698,7 @@
    "overlap_count": 0,
    "lat": 38.23825,
    "lon": -122.04024,
-   "collected_utc": "2026-09-03T03:04:15.993Z",
+   "collected_utc": "2026-09-04T12:40:44.919Z",
    "notes": null
   },
   {
@@ -2715,7 +2715,7 @@
      "flight_count": 512,
      "first_flight": "2022-07-18",
      "last_flight": "2026-08-26",
-     "collected_utc": "2026-09-03T12:54:55.221Z"
+     "collected_utc": "2026-09-04T13:33:26.516Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/mankato",
@@ -2727,7 +2727,7 @@
    "overlap_count": 0,
    "lat": 44.16585,
    "lon": -94.0028,
-   "collected_utc": "2026-09-03T12:54:55.221Z",
+   "collected_utc": "2026-09-04T13:33:26.516Z",
    "notes": null
   },
   {
@@ -2741,22 +2741,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "colony-pd-tx",
      "official_url": "https://community.colony.tx.us.aerodome.com/",
-     "flight_count": 477,
+     "flight_count": 482,
      "first_flight": "2026-03-05",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:43:59.828Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:30:24.750Z"
     }
    ],
    "official_url": "https://community.colony.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-03-05",
-   "last_flight": "2026-09-02",
-   "flight_count": 477,
-   "total_hours": 118.1,
+   "last_flight": "2026-09-03",
+   "flight_count": 482,
+   "total_hours": 119.3,
    "overlap_count": 0,
    "lat": 32.78179,
    "lon": -95.68802,
-   "collected_utc": "2026-09-03T01:43:59.828Z",
+   "collected_utc": "2026-09-04T12:30:24.750Z",
    "notes": null
   },
   {
@@ -2773,7 +2773,7 @@
      "flight_count": 461,
      "first_flight": "2024-04-04",
      "last_flight": "2026-08-03",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/efe67bb8531c4907b4b355403485e2fc",
@@ -2785,7 +2785,7 @@
    "overlap_count": 0,
    "lat": 33.04442,
    "lon": -97.02121,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "timezone not detected automatically; set manually."
   },
   {
@@ -2802,7 +2802,7 @@
      "flight_count": 450,
      "first_flight": "2025-04-01",
      "last_flight": "2026-06-12",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/10da1489c7e441b99b824c1fc5faf0a9",
@@ -2814,8 +2814,46 @@
    "overlap_count": 0,
    "lat": 39.12019,
    "lon": -77.11755,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
+  },
+  {
+   "agency_id": "los-altos-pd-ca",
+   "display_name": "Los Altos Police Department",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "UTC",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "los-altos-pd-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
+     "flight_count": 395,
+     "first_flight": "2026-03-05",
+     "last_flight": "2026-08-31",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    },
+    {
+     "source": "airdata",
+     "source_agency_id": "los-altos-pd-ca",
+     "official_url": "https://app.airdata.com/u/losaltospd",
+     "flight_count": 50,
+     "first_flight": "2025-04-08",
+     "last_flight": "2026-08-04",
+     "collected_utc": "2026-09-04T13:33:17.457Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
+   "status": "ok",
+   "first_flight": "2025-04-08",
+   "last_flight": "2026-08-31",
+   "flight_count": 445,
+   "total_hours": 71.9,
+   "overlap_count": 0,
+   "lat": 37.37906,
+   "lon": -122.11658,
+   "collected_utc": "2026-09-04T13:33:17.457Z",
+   "notes": "timezone not detected automatically; set manually."
   },
   {
    "agency_id": "belmont-pd",
@@ -2831,7 +2869,7 @@
      "flight_count": 438,
      "first_flight": "2025-03-27",
      "last_flight": "2026-08-21",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/32ec77cf9c7346cbba65b8c3830142a2",
@@ -2843,46 +2881,8 @@
    "overlap_count": 0,
    "lat": 35.70046,
    "lon": -120.21509,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
-  },
-  {
-   "agency_id": "los-altos-pd-ca",
-   "display_name": "Los Altos Police Department",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "UTC",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "los-altos-pd-ca",
-     "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
-     "flight_count": 386,
-     "first_flight": "2026-03-05",
-     "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    },
-    {
-     "source": "airdata",
-     "source_agency_id": "los-altos-pd-ca",
-     "official_url": "https://app.airdata.com/u/losaltospd",
-     "flight_count": 50,
-     "first_flight": "2025-04-08",
-     "last_flight": "2026-08-04",
-     "collected_utc": "2026-09-03T12:50:37.859Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/555d9b93a2824197becd4066013775ea",
-   "status": "ok",
-   "first_flight": "2025-04-08",
-   "last_flight": "2026-08-25",
-   "flight_count": 436,
-   "total_hours": 70.3,
-   "overlap_count": 0,
-   "lat": 37.37906,
-   "lon": -122.11658,
-   "collected_utc": "2026-09-03T12:50:37.859Z",
-   "notes": "timezone not detected automatically; set manually."
   },
   {
    "agency_id": "detroit-fire-department",
@@ -2898,7 +2898,7 @@
      "flight_count": 435,
      "first_flight": "2024-02-04",
      "last_flight": "2026-03-09",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/00013c28bfd349089a62f87b1cab5fd2",
@@ -2910,7 +2910,7 @@
    "overlap_count": 0,
    "lat": 42.4278,
    "lon": -83.27661,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2924,22 +2924,51 @@
      "source": "airdata",
      "source_agency_id": "king-county-so-wa",
      "official_url": "https://app.airdata.com/u/kcso",
-     "flight_count": 431,
+     "flight_count": 433,
      "first_flight": "2025-12-02",
-     "last_flight": "2026-08-28",
-     "collected_utc": "2026-09-03T07:03:52.123Z"
+     "last_flight": "2026-08-31",
+     "collected_utc": "2026-09-04T12:52:30.942Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/kcso",
    "status": "ok",
    "first_flight": "2025-12-02",
-   "last_flight": "2026-08-28",
-   "flight_count": 431,
+   "last_flight": "2026-08-31",
+   "flight_count": 433,
    "total_hours": 0,
    "overlap_count": 0,
    "lat": 47.48734,
    "lon": -121.86221,
-   "collected_utc": "2026-09-03T07:03:52.123Z",
+   "collected_utc": "2026-09-04T12:52:30.942Z",
+   "notes": null
+  },
+  {
+   "agency_id": "bloomington-pd-il",
+   "display_name": "Bloomington Police Department",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "bloomington-pd-il",
+     "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
+     "flight_count": 430,
+     "first_flight": "2026-04-04",
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
+   "status": "ok",
+   "first_flight": "2026-04-04",
+   "last_flight": "2026-09-02",
+   "flight_count": 430,
+   "total_hours": 73.9,
+   "overlap_count": 0,
+   "lat": 40.54037,
+   "lon": -88.88686,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -2956,7 +2985,7 @@
      "flight_count": 430,
      "first_flight": "2025-03-17",
      "last_flight": "2026-08-31",
-     "collected_utc": "2026-09-03T03:04:17.102Z"
+     "collected_utc": "2026-09-04T12:41:23.987Z"
     }
    ],
    "official_url": "https://community.telluride.co.us.aerodome.com/",
@@ -2968,7 +2997,7 @@
    "overlap_count": 0,
    "lat": 37.93749,
    "lon": -107.81228,
-   "collected_utc": "2026-09-03T03:04:17.102Z",
+   "collected_utc": "2026-09-04T12:41:23.987Z",
    "notes": null
   },
   {
@@ -2982,51 +3011,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "galveston-pd-tx",
      "official_url": "https://community.galveston.tx.us.aerodome.com/",
-     "flight_count": 409,
+     "flight_count": 410,
      "first_flight": "2026-02-04",
-     "last_flight": "2026-08-31",
-     "collected_utc": "2026-09-03T01:50:53.334Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:33:27.035Z"
     }
    ],
    "official_url": "https://community.galveston.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-02-04",
-   "last_flight": "2026-08-31",
-   "flight_count": 409,
-   "total_hours": 130.1,
+   "last_flight": "2026-09-03",
+   "flight_count": 410,
+   "total_hours": 130.3,
    "overlap_count": 0,
    "lat": 29.38723,
    "lon": -94.99274,
-   "collected_utc": "2026-09-03T01:50:53.334Z",
-   "notes": null
-  },
-  {
-   "agency_id": "bloomington-pd-il",
-   "display_name": "Bloomington Police Department",
-   "state": "IL",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "bloomington-pd-il",
-     "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
-     "flight_count": 404,
-     "first_flight": "2026-04-04",
-     "last_flight": "2026-08-14",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/cc7f3e1ceb9d4e79a05d6e9f5e1ebe6b",
-   "status": "ok",
-   "first_flight": "2026-04-04",
-   "last_flight": "2026-08-14",
-   "flight_count": 404,
-   "total_hours": 70.1,
-   "overlap_count": 0,
-   "lat": 40.54037,
-   "lon": -88.88686,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:33:27.035Z",
    "notes": null
   },
   {
@@ -3040,22 +3040,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "temple-pd-tx",
      "official_url": "https://community.temple.tx.us.aerodome.com/",
-     "flight_count": 402,
+     "flight_count": 403,
      "first_flight": "2026-03-27",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-03T03:07:17.325Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:41:19.047Z"
     }
    ],
    "official_url": "https://community.temple.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-03-27",
-   "last_flight": "2026-09-01",
-   "flight_count": 402,
+   "last_flight": "2026-09-03",
+   "flight_count": 403,
    "total_hours": 98.1,
    "overlap_count": 0,
    "lat": 31.09837,
    "lon": -97.34296,
-   "collected_utc": "2026-09-03T03:07:17.325Z",
+   "collected_utc": "2026-09-04T12:41:19.047Z",
    "notes": null
   },
   {
@@ -3072,7 +3072,7 @@
      "flight_count": 396,
      "first_flight": "2025-11-19",
      "last_flight": "2026-01-16",
-     "collected_utc": "2026-09-03T01:53:58.465Z"
+     "collected_utc": "2026-09-04T12:33:34.705Z"
     }
    ],
    "official_url": "https://community.gilbert.az.us.aerodome.com/",
@@ -3084,7 +3084,7 @@
    "overlap_count": 0,
    "lat": 33.35276,
    "lon": -111.78904,
-   "collected_utc": "2026-09-03T01:53:58.465Z",
+   "collected_utc": "2026-09-04T12:33:34.705Z",
    "notes": null
   },
   {
@@ -3101,7 +3101,7 @@
      "flight_count": 395,
      "first_flight": "2026-05-26",
      "last_flight": "2026-08-07",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/a190b98bd45c40bd9c35cc054a004f49",
@@ -3113,7 +3113,7 @@
    "overlap_count": 0,
    "lat": 36.27571,
    "lon": -86.69176,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3130,7 +3130,7 @@
      "flight_count": 376,
      "first_flight": "2023-11-17",
      "last_flight": "2026-08-27",
-     "collected_utc": "2026-09-03T02:28:09.270Z"
+     "collected_utc": "2026-09-04T12:36:20.767Z"
     }
    ],
    "official_url": "https://community.vail.co.us.aerodome.com/",
@@ -3142,7 +3142,7 @@
    "overlap_count": 0,
    "lat": 39.6438,
    "lon": -106.38882,
-   "collected_utc": "2026-09-03T02:28:09.270Z",
+   "collected_utc": "2026-09-04T12:36:20.767Z",
    "notes": null
   },
   {
@@ -3156,22 +3156,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "conroe-pd",
      "official_url": "https://cloud.skydio.com/dashboard/conroepd",
-     "flight_count": 363,
+     "flight_count": 370,
      "first_flight": "2026-05-11",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/conroepd",
    "status": "ok",
    "first_flight": "2026-05-11",
-   "last_flight": "2026-09-01",
-   "flight_count": 363,
-   "total_hours": 74.1,
+   "last_flight": "2026-09-02",
+   "flight_count": 370,
+   "total_hours": 75.4,
    "overlap_count": 0,
    "lat": 30.31332,
    "lon": -95.462,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3185,22 +3185,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "menifee-pd",
      "official_url": "https://www.arcgis.com/apps/dashboards/a6e459fbc6194f17ac08084aec34e603",
-     "flight_count": 346,
+     "flight_count": 351,
      "first_flight": "2025-11-21",
-     "last_flight": "2026-08-31",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/a6e459fbc6194f17ac08084aec34e603",
    "status": "ok",
    "first_flight": "2025-11-21",
-   "last_flight": "2026-08-31",
-   "flight_count": 346,
-   "total_hours": 67.6,
+   "last_flight": "2026-09-02",
+   "flight_count": 351,
+   "total_hours": 68.1,
    "overlap_count": 0,
    "lat": 33.68696,
    "lon": -117.17973,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3217,7 +3217,7 @@
      "flight_count": 344,
      "first_flight": "2024-09-16",
      "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-03T01:43:27.219Z"
+     "collected_utc": "2026-09-04T12:29:52.997Z"
     }
    ],
    "official_url": "https://community.copper.co.us.aerodome.com/",
@@ -3229,7 +3229,65 @@
    "overlap_count": 0,
    "lat": 39.47809,
    "lon": -106.16289,
-   "collected_utc": "2026-09-03T01:43:27.219Z",
+   "collected_utc": "2026-09-04T12:29:52.997Z",
+   "notes": null
+  },
+  {
+   "agency_id": "cherry-hill-pd",
+   "display_name": "Cherry Hill Police Department",
+   "state": "NJ",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "cherry-hill-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/94993e7062594865ab808e13b4373669",
+     "flight_count": 338,
+     "first_flight": "2023-03-24",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/94993e7062594865ab808e13b4373669",
+   "status": "ok",
+   "first_flight": "2023-03-24",
+   "last_flight": "2026-09-03",
+   "flight_count": 338,
+   "total_hours": 56.6,
+   "overlap_count": 0,
+   "lat": 39.91189,
+   "lon": -74.88301,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
+   "notes": null
+  },
+  {
+   "agency_id": "laurel-pd-uas-flight-data",
+   "display_name": "Laurel Police Department UAS Flight Data",
+   "state": "MD",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "laurel-pd-uas-flight-data",
+     "official_url": "https://www.arcgis.com/apps/dashboards/f9e4f009b02b43628e8d259acbe14a68",
+     "flight_count": 326,
+     "first_flight": "2026-07-02",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/f9e4f009b02b43628e8d259acbe14a68",
+   "status": "ok",
+   "first_flight": "2026-07-02",
+   "last_flight": "2026-09-03",
+   "flight_count": 326,
+   "total_hours": 57.9,
+   "overlap_count": 0,
+   "lat": 39.08531,
+   "lon": -76.86464,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3246,7 +3304,7 @@
      "flight_count": 322,
      "first_flight": "2026-02-06",
      "last_flight": "2026-08-31",
-     "collected_utc": "2026-09-03T01:49:36.241Z"
+     "collected_utc": "2026-09-04T12:33:20.564Z"
     }
    ],
    "official_url": "https://community.fulton-county.ga.us.aerodome.com/",
@@ -3258,7 +3316,7 @@
    "overlap_count": 0,
    "lat": 34.05811,
    "lon": -84.29617,
-   "collected_utc": "2026-09-03T01:49:36.241Z",
+   "collected_utc": "2026-09-04T12:33:20.564Z",
    "notes": null
   },
   {
@@ -3275,7 +3333,7 @@
      "flight_count": 315,
      "first_flight": "2026-02-10",
      "last_flight": "2026-03-05",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/45470a6e60354b068d1ddb6076fcc26c",
@@ -3287,36 +3345,36 @@
    "overlap_count": 0,
    "lat": 34.15187,
    "lon": -118.25415,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
-   "agency_id": "laurel-pd-uas-flight-data",
-   "display_name": "Laurel Police Department UAS Flight Data",
-   "state": "MD",
+   "agency_id": "overland-park-pd-ks",
+   "display_name": "Overland Park Police Department",
+   "state": "KS",
    "org_type": "law_enforcement",
-   "timezone": "America/New_York",
+   "timezone": "America/Chicago",
    "sources": [
     {
      "source": "skydio_arcgis",
-     "source_agency_id": "laurel-pd-uas-flight-data",
-     "official_url": "https://www.arcgis.com/apps/dashboards/f9e4f009b02b43628e8d259acbe14a68",
-     "flight_count": 313,
-     "first_flight": "2026-07-02",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "source_agency_id": "overland-park-pd-ks",
+     "official_url": "https://www.arcgis.com/apps/dashboards/046b94ec93f84a599e69d5f1b1b01eb1",
+     "flight_count": 303,
+     "first_flight": "2026-05-12",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/f9e4f009b02b43628e8d259acbe14a68",
+   "official_url": "https://www.arcgis.com/apps/dashboards/046b94ec93f84a599e69d5f1b1b01eb1",
    "status": "ok",
-   "first_flight": "2026-07-02",
-   "last_flight": "2026-09-01",
-   "flight_count": 313,
-   "total_hours": 55.8,
+   "first_flight": "2026-05-12",
+   "last_flight": "2026-09-03",
+   "flight_count": 303,
+   "total_hours": 66,
    "overlap_count": 0,
-   "lat": 39.08531,
-   "lon": -76.86464,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "lat": 38.94061,
+   "lon": -94.68139,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3333,7 +3391,7 @@
      "flight_count": 297,
      "first_flight": "2026-01-13",
      "last_flight": "2026-06-28",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/nopd",
@@ -3345,36 +3403,7 @@
    "overlap_count": 0,
    "lat": 29.99384,
    "lon": -89.99597,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
-   "notes": null
-  },
-  {
-   "agency_id": "overland-park-pd-ks",
-   "display_name": "Overland Park Police Department",
-   "state": "KS",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "overland-park-pd-ks",
-     "official_url": "https://www.arcgis.com/apps/dashboards/046b94ec93f84a599e69d5f1b1b01eb1",
-     "flight_count": 294,
-     "first_flight": "2026-05-12",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/046b94ec93f84a599e69d5f1b1b01eb1",
-   "status": "ok",
-   "first_flight": "2026-05-12",
-   "last_flight": "2026-09-01",
-   "flight_count": 294,
-   "total_hours": 64.2,
-   "overlap_count": 0,
-   "lat": 38.94061,
-   "lon": -94.68139,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3391,7 +3420,7 @@
      "flight_count": 293,
      "first_flight": "2025-11-24",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:51:58.363Z"
+     "collected_utc": "2026-09-04T12:33:39.698Z"
     }
    ],
    "official_url": "https://community.georgia-tech.ga.us.aerodome.com/",
@@ -3403,36 +3432,36 @@
    "overlap_count": 0,
    "lat": 33.77609,
    "lon": -84.39881,
-   "collected_utc": "2026-09-03T01:51:58.363Z",
+   "collected_utc": "2026-09-04T12:33:39.698Z",
    "notes": null
   },
   {
-   "agency_id": "cherry-hill-pd",
-   "display_name": "Cherry Hill Police Department",
-   "state": "NJ",
+   "agency_id": "chesterfield-county-pd-va",
+   "display_name": "Chesterfield County Police Department",
+   "state": "VA",
    "org_type": "law_enforcement",
    "timezone": "America/New_York",
    "sources": [
     {
      "source": "skydio_arcgis",
-     "source_agency_id": "cherry-hill-pd",
-     "official_url": "https://www.arcgis.com/apps/dashboards/94993e7062594865ab808e13b4373669",
-     "flight_count": 286,
-     "first_flight": "2023-03-24",
-     "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "source_agency_id": "chesterfield-county-pd-va",
+     "official_url": "https://cloud.skydio.com/dashboard/chesterfieldpublicsafety",
+     "flight_count": 272,
+     "first_flight": "2026-07-15",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/94993e7062594865ab808e13b4373669",
+   "official_url": "https://cloud.skydio.com/dashboard/chesterfieldpublicsafety",
    "status": "ok",
-   "first_flight": "2023-03-24",
-   "last_flight": "2026-08-25",
-   "flight_count": 286,
-   "total_hours": 47,
+   "first_flight": "2026-07-15",
+   "last_flight": "2026-09-03",
+   "flight_count": 272,
+   "total_hours": 40.5,
    "overlap_count": 0,
-   "lat": 39.91189,
-   "lon": -74.88301,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "lat": 37.45731,
+   "lon": -77.50905,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3449,7 +3478,7 @@
      "flight_count": 263,
      "first_flight": "2026-03-19",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:53:36.636Z"
+     "collected_utc": "2026-09-04T12:39:59.398Z"
     }
    ],
    "official_url": "https://community.show-low.az.us.aerodome.com/",
@@ -3461,7 +3490,7 @@
    "overlap_count": 0,
    "lat": 34.25421,
    "lon": -110.02983,
-   "collected_utc": "2026-09-03T02:53:36.636Z",
+   "collected_utc": "2026-09-04T12:39:59.398Z",
    "notes": null
   },
   {
@@ -3475,22 +3504,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "university-of-illinois-division-of-public-safety",
      "official_url": "https://www.arcgis.com/apps/dashboards/d4a3d2851dba46149858ce525b941b90",
-     "flight_count": 249,
+     "flight_count": 253,
      "first_flight": "2026-05-14",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/d4a3d2851dba46149858ce525b941b90",
    "status": "ok",
    "first_flight": "2026-05-14",
-   "last_flight": "2026-09-01",
-   "flight_count": 249,
-   "total_hours": 32,
+   "last_flight": "2026-09-03",
+   "flight_count": 253,
+   "total_hours": 32.2,
    "overlap_count": 0,
    "lat": 40.04741,
    "lon": -88.18859,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3507,7 +3536,7 @@
      "flight_count": 248,
      "first_flight": "2024-11-24",
      "last_flight": "2026-08-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/clevelandpolice",
@@ -3519,7 +3548,7 @@
    "overlap_count": 0,
    "lat": 41.47352,
    "lon": -81.68242,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3536,7 +3565,7 @@
      "flight_count": 247,
      "first_flight": "2026-03-09",
      "last_flight": "2026-08-28",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/57633537efa44d2eb774f49ef3c2bf59",
@@ -3548,7 +3577,7 @@
    "overlap_count": 0,
    "lat": 43.07045,
    "lon": -77.60879,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3565,7 +3594,7 @@
      "flight_count": 247,
      "first_flight": "2023-07-04",
      "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-03T14:49:12.434Z"
+     "collected_utc": "2026-09-04T13:39:54.718Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/vwpd",
@@ -3577,36 +3606,7 @@
    "overlap_count": 0,
    "lat": 41.79505,
    "lon": -87.9752,
-   "collected_utc": "2026-09-03T14:49:12.434Z",
-   "notes": null
-  },
-  {
-   "agency_id": "chesterfield-county-pd-va",
-   "display_name": "Chesterfield County Police Department",
-   "state": "VA",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "chesterfield-county-pd-va",
-     "official_url": "https://cloud.skydio.com/dashboard/chesterfieldpublicsafety",
-     "flight_count": 238,
-     "first_flight": "2026-07-15",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://cloud.skydio.com/dashboard/chesterfieldpublicsafety",
-   "status": "ok",
-   "first_flight": "2026-07-15",
-   "last_flight": "2026-09-01",
-   "flight_count": 238,
-   "total_hours": 36.1,
-   "overlap_count": 0,
-   "lat": 37.45731,
-   "lon": -77.50905,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T13:39:54.718Z",
    "notes": null
   },
   {
@@ -3620,22 +3620,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "melrose-park-pd-il",
      "official_url": "https://www.arcgis.com/apps/dashboards/e0d00aa615684f678bdd7cda8cf29083",
-     "flight_count": 226,
+     "flight_count": 227,
      "first_flight": "2026-05-01",
      "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/e0d00aa615684f678bdd7cda8cf29083",
    "status": "ok",
    "first_flight": "2026-05-01",
    "last_flight": "2026-09-02",
-   "flight_count": 226,
-   "total_hours": 34.6,
+   "flight_count": 227,
+   "total_hours": 34.8,
    "overlap_count": 0,
    "lat": 41.90116,
    "lon": -87.86438,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3649,22 +3649,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "sansom-park-pd-tx",
      "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
-     "flight_count": 219,
+     "flight_count": 222,
      "first_flight": "2025-08-19",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T02:49:52.260Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-04T12:39:37.753Z"
     }
    ],
    "official_url": "https://community.sansom-park.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-08-19",
-   "last_flight": "2026-09-02",
-   "flight_count": 219,
-   "total_hours": 57.2,
+   "last_flight": "2026-09-04",
+   "flight_count": 222,
+   "total_hours": 57.7,
    "overlap_count": 0,
    "lat": 32.80596,
    "lon": -97.40307,
-   "collected_utc": "2026-09-03T02:49:52.260Z",
+   "collected_utc": "2026-09-04T12:39:37.753Z",
    "notes": null
   },
   {
@@ -3681,7 +3681,7 @@
      "flight_count": 183,
      "first_flight": "2025-11-14",
      "last_flight": "2026-07-22",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/cpso",
@@ -3693,7 +3693,7 @@
    "overlap_count": 0,
    "lat": 30.30704,
    "lon": -93.3867,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3707,22 +3707,22 @@
      "source": "skydio_arcgis",
      "source_agency_id": "killeen-pd-tx",
      "official_url": "https://www.arcgis.com/apps/dashboards/71bd05b0f73341c5a8caaa6ef84c4b1f",
-     "flight_count": 172,
+     "flight_count": 182,
      "first_flight": "2026-03-24",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/71bd05b0f73341c5a8caaa6ef84c4b1f",
    "status": "ok",
    "first_flight": "2026-03-24",
-   "last_flight": "2026-09-02",
-   "flight_count": 172,
-   "total_hours": 33.3,
+   "last_flight": "2026-09-03",
+   "flight_count": 182,
+   "total_hours": 35.3,
    "overlap_count": 0,
    "lat": 31.04374,
    "lon": -97.75101,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3739,7 +3739,7 @@
      "flight_count": 141,
      "first_flight": "2025-07-04",
      "last_flight": "2026-03-24",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/0ed27de487774b9eb6b7fd249f91ef65",
@@ -3751,7 +3751,7 @@
    "overlap_count": 0,
    "lat": 41.21937,
    "lon": -73.05063,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3765,80 +3765,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "southington-pd-ct",
      "official_url": "https://community.southington.ct.us.aerodome.com/",
-     "flight_count": 135,
+     "flight_count": 136,
      "first_flight": "2026-05-13",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T03:00:45.318Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:40:22.106Z"
     }
    ],
    "official_url": "https://community.southington.ct.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-05-13",
-   "last_flight": "2026-09-02",
-   "flight_count": 135,
+   "last_flight": "2026-09-03",
+   "flight_count": 136,
    "total_hours": 29.6,
    "overlap_count": 0,
    "lat": 41.60054,
    "lon": -72.87829,
-   "collected_utc": "2026-09-03T03:00:45.318Z",
-   "notes": null
-  },
-  {
-   "agency_id": "university-of-arizona-real-time-coordination-center",
-   "display_name": "University of Arizona - Real Time Coordination Center",
-   "state": "AZ",
-   "org_type": "university",
-   "timezone": "America/Phoenix",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "university-of-arizona-real-time-coordination-center",
-     "official_url": "https://www.arcgis.com/apps/dashboards/8946d06a91434fc6898da9bafbdfd953",
-     "flight_count": 121,
-     "first_flight": "2026-03-09",
-     "last_flight": "2026-04-04",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/8946d06a91434fc6898da9bafbdfd953",
-   "status": "stale",
-   "first_flight": "2026-03-09",
-   "last_flight": "2026-04-04",
-   "flight_count": 121,
-   "total_hours": 27.2,
-   "overlap_count": 0,
-   "lat": 32.23067,
-   "lon": -110.96761,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
-   "notes": null
-  },
-  {
-   "agency_id": "berkeley-pd-il",
-   "display_name": "Berkeley PD",
-   "state": "IL",
-   "org_type": "law_enforcement",
-   "timezone": "America/Chicago",
-   "sources": [
-    {
-     "source": "flock_aerodome",
-     "source_agency_id": "berkeley-pd-il",
-     "official_url": "https://community.berkeley.il.us.aerodome.com/",
-     "flight_count": 120,
-     "first_flight": "2025-12-30",
-     "last_flight": "2026-09-02",
-     "collected_utc": "2026-09-03T01:42:16.652Z"
-    }
-   ],
-   "official_url": "https://community.berkeley.il.us.aerodome.com/",
-   "status": "ok",
-   "first_flight": "2025-12-30",
-   "last_flight": "2026-09-02",
-   "flight_count": 120,
-   "total_hours": 21.6,
-   "overlap_count": 0,
-   "lat": 41.88892,
-   "lon": -87.9034,
-   "collected_utc": "2026-09-03T01:42:16.652Z",
+   "collected_utc": "2026-09-04T12:40:22.106Z",
    "notes": null
   },
   {
@@ -3855,28 +3797,86 @@
      "flight_count": 115,
      "first_flight": "2025-05-20",
      "last_flight": "2025-07-09",
-     "collected_utc": "2026-09-03T01:44:31.901Z"
+     "collected_utc": "2026-09-04T12:30:50.236Z"
     },
     {
      "source": "skydio_arcgis",
      "source_agency_id": "dutchess-county-so-uas-unit",
      "official_url": "https://www.arcgis.com/apps/dashboards/332a8432ca584035a71c69a08afb34d9",
-     "flight_count": 2,
-     "first_flight": "2026-08-10",
-     "last_flight": "2026-08-21",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "flight_count": 7,
+     "first_flight": "2026-08-04",
+     "last_flight": "2026-08-26",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://community.dutchess.ny.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2025-05-20",
-   "last_flight": "2026-08-21",
-   "flight_count": 117,
-   "total_hours": 24.5,
+   "last_flight": "2026-08-26",
+   "flight_count": 122,
+   "total_hours": 25.4,
    "overlap_count": 0,
    "lat": 41.64027,
    "lon": -73.8832,
-   "collected_utc": "2026-09-03T01:44:31.901Z",
+   "collected_utc": "2026-09-04T12:30:50.236Z",
+   "notes": null
+  },
+  {
+   "agency_id": "university-of-arizona-real-time-coordination-center",
+   "display_name": "University of Arizona - Real Time Coordination Center",
+   "state": "AZ",
+   "org_type": "university",
+   "timezone": "America/Phoenix",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "university-of-arizona-real-time-coordination-center",
+     "official_url": "https://www.arcgis.com/apps/dashboards/8946d06a91434fc6898da9bafbdfd953",
+     "flight_count": 121,
+     "first_flight": "2026-03-09",
+     "last_flight": "2026-04-04",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/8946d06a91434fc6898da9bafbdfd953",
+   "status": "stale",
+   "first_flight": "2026-03-09",
+   "last_flight": "2026-04-04",
+   "flight_count": 121,
+   "total_hours": 27.2,
+   "overlap_count": 0,
+   "lat": 32.23067,
+   "lon": -110.96761,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
+   "notes": null
+  },
+  {
+   "agency_id": "berkeley-pd-il",
+   "display_name": "Berkeley PD",
+   "state": "IL",
+   "org_type": "law_enforcement",
+   "timezone": "America/Chicago",
+   "sources": [
+    {
+     "source": "flock_aerodome",
+     "source_agency_id": "berkeley-pd-il",
+     "official_url": "https://community.berkeley.il.us.aerodome.com/",
+     "flight_count": 120,
+     "first_flight": "2025-12-30",
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:28:35.379Z"
+    }
+   ],
+   "official_url": "https://community.berkeley.il.us.aerodome.com/",
+   "status": "ok",
+   "first_flight": "2025-12-30",
+   "last_flight": "2026-09-02",
+   "flight_count": 120,
+   "total_hours": 21.6,
+   "overlap_count": 0,
+   "lat": 41.88892,
+   "lon": -87.9034,
+   "collected_utc": "2026-09-04T12:28:35.379Z",
    "notes": null
   },
   {
@@ -3893,7 +3893,7 @@
      "flight_count": 107,
      "first_flight": "2024-11-22",
      "last_flight": "2026-04-23",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/bc2e1abd9acb4917b48fc189f26239aa",
@@ -3905,7 +3905,7 @@
    "overlap_count": 0,
    "lat": 27.05209,
    "lon": -80.99306,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3922,7 +3922,7 @@
      "flight_count": 100,
      "first_flight": "2024-09-23",
      "last_flight": "2026-05-26",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f9cf6e64c7c246a68596da24f904e47f",
@@ -3934,7 +3934,36 @@
    "overlap_count": 0,
    "lat": 36.45699,
    "lon": -98.18986,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
+   "notes": null
+  },
+  {
+   "agency_id": "pacifica-pd-drone-transparency-portal-ca",
+   "display_name": "Pacifica Police Department Drone Transparency Portal",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "pacifica-pd-drone-transparency-portal-ca",
+     "official_url": "https://www.arcgis.com/apps/dashboards/5866d865778a41a0bb200e9131070fc2",
+     "flight_count": 97,
+     "first_flight": "2025-11-17",
+     "last_flight": "2026-08-31",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/5866d865778a41a0bb200e9131070fc2",
+   "status": "ok",
+   "first_flight": "2025-11-17",
+   "last_flight": "2026-08-31",
+   "flight_count": 97,
+   "total_hours": 18.6,
+   "overlap_count": 0,
+   "lat": 37.62245,
+   "lon": -122.49086,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -3951,7 +3980,7 @@
      "flight_count": 94,
      "first_flight": "2026-07-13",
      "last_flight": "2026-07-17",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/0249cfdd63684f5a81dd5c33b710a464",
@@ -3963,36 +3992,7 @@
    "overlap_count": 0,
    "lat": 43.01952,
    "lon": -89.41334,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
-   "notes": null
-  },
-  {
-   "agency_id": "pacifica-pd-drone-transparency-portal-ca",
-   "display_name": "Pacifica Police Department Drone Transparency Portal",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "pacifica-pd-drone-transparency-portal-ca",
-     "official_url": "https://www.arcgis.com/apps/dashboards/5866d865778a41a0bb200e9131070fc2",
-     "flight_count": 86,
-     "first_flight": "2025-11-17",
-     "last_flight": "2026-07-04",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/5866d865778a41a0bb200e9131070fc2",
-   "status": "stale",
-   "first_flight": "2025-11-17",
-   "last_flight": "2026-07-04",
-   "flight_count": 86,
-   "total_hours": 16.8,
-   "overlap_count": 0,
-   "lat": 37.62245,
-   "lon": -122.49086,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4009,7 +4009,7 @@
      "flight_count": 83,
      "first_flight": "2021-03-31",
      "last_flight": "2022-06-29",
-     "collected_utc": "2026-09-04T11:39:16.478Z"
+     "collected_utc": "2026-09-04T13:40:09.090Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/glendaleaz",
@@ -4021,7 +4021,7 @@
    "overlap_count": 0,
    "lat": 33.53869,
    "lon": -112.18599,
-   "collected_utc": "2026-09-04T11:39:16.478Z",
+   "collected_utc": "2026-09-04T13:40:09.090Z",
    "notes": null
   },
   {
@@ -4038,7 +4038,7 @@
      "flight_count": 81,
      "first_flight": "2025-09-15",
      "last_flight": "2026-07-27",
-     "collected_utc": "2026-09-03T03:01:17.645Z"
+     "collected_utc": "2026-09-04T12:40:29.020Z"
     }
    ],
    "official_url": "https://community.steamboat.co.us.aerodome.com/",
@@ -4050,7 +4050,7 @@
    "overlap_count": 0,
    "lat": 40.4848,
    "lon": -106.83173,
-   "collected_utc": "2026-09-03T03:01:17.645Z",
+   "collected_utc": "2026-09-04T12:40:29.020Z",
    "notes": null
   },
   {
@@ -4067,7 +4067,7 @@
      "flight_count": 76,
      "first_flight": "2025-05-06",
      "last_flight": "2026-05-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/dfb49fccd26940159ad80ab2e7ee8dd6",
@@ -4079,7 +4079,7 @@
    "overlap_count": 0,
    "lat": 40.64573,
    "lon": -74.43244,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4096,7 +4096,7 @@
      "flight_count": 66,
      "first_flight": "2025-09-12",
      "last_flight": "2026-08-27",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/tulsafire",
@@ -4108,7 +4108,7 @@
    "overlap_count": 0,
    "lat": 36.12194,
    "lon": -96.28682,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4122,22 +4122,22 @@
      "source": "flock_aerodome",
      "source_agency_id": "elm-ridge-pd-tx",
      "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
-     "flight_count": 63,
+     "flight_count": 64,
      "first_flight": "2026-03-02",
-     "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-03T01:45:47.872Z"
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:32:05.109Z"
     }
    ],
    "official_url": "https://community.elm-ridge.tx.us.aerodome.com/",
    "status": "ok",
    "first_flight": "2026-03-02",
-   "last_flight": "2026-08-25",
-   "flight_count": 63,
-   "total_hours": 15.4,
+   "last_flight": "2026-09-03",
+   "flight_count": 64,
+   "total_hours": 15.7,
    "overlap_count": 0,
    "lat": 29.35526,
    "lon": -95.97244,
-   "collected_utc": "2026-09-03T01:45:47.872Z",
+   "collected_utc": "2026-09-04T12:32:05.109Z",
    "notes": null
   },
   {
@@ -4154,7 +4154,7 @@
      "flight_count": 51,
      "first_flight": "2024-04-11",
      "last_flight": "2026-01-18",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/ea32f26fbba4458c9dcd12bdaceda7a9",
@@ -4166,7 +4166,7 @@
    "overlap_count": 0,
    "lat": null,
    "lon": null,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "timezone not detected automatically; set manually."
   },
   {
@@ -4183,7 +4183,7 @@
      "flight_count": 40,
      "first_flight": "2025-03-12",
      "last_flight": "2026-07-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/490bbd4e23aa4d2683c48a53b2a38e6d",
@@ -4195,7 +4195,7 @@
    "overlap_count": 0,
    "lat": 35.52045,
    "lon": -98.37566,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4212,7 +4212,7 @@
      "flight_count": 38,
      "first_flight": "2026-03-19",
      "last_flight": "2026-07-28",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/c47a7c0ff6d5465884f182588bd2a15f",
@@ -4224,7 +4224,7 @@
    "overlap_count": 0,
    "lat": 38.88399,
    "lon": -77.29102,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4241,7 +4241,7 @@
      "flight_count": 37,
      "first_flight": "2026-05-17",
      "last_flight": "2026-05-21",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/4fc07c3ce464428d98bdc9cc449c8454",
@@ -4253,7 +4253,7 @@
    "overlap_count": 0,
    "lat": 33.78828,
    "lon": -118.11108,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4270,7 +4270,7 @@
      "flight_count": 37,
      "first_flight": "2024-11-16",
      "last_flight": "2025-02-04",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/c7a3fac3b8024e2098e8d98aede302b5",
@@ -4282,7 +4282,7 @@
    "overlap_count": 0,
    "lat": 35.46931,
    "lon": -97.53377,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
@@ -4299,7 +4299,7 @@
      "flight_count": 37,
      "first_flight": "2026-05-30",
      "last_flight": "2026-08-27",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f5ea9137103a48d78bb5f2504d2a9d6e",
@@ -4311,7 +4311,7 @@
    "overlap_count": 0,
    "lat": 40.02382,
    "lon": -83.0978,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4328,7 +4328,7 @@
      "flight_count": 37,
      "first_flight": "2026-07-04",
      "last_flight": "2026-08-29",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/vbpd",
@@ -4340,7 +4340,7 @@
    "overlap_count": 0,
    "lat": 36.85433,
    "lon": -75.98239,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4357,7 +4357,7 @@
      "flight_count": 36,
      "first_flight": "2024-10-23",
      "last_flight": "2026-05-07",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/c7819204066a4f71af6a5463be0f8b30",
@@ -4369,7 +4369,7 @@
    "overlap_count": 0,
    "lat": 38.75958,
    "lon": -97.23933,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4386,7 +4386,7 @@
      "flight_count": 35,
      "first_flight": "2025-06-05",
      "last_flight": "2026-06-21",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/5feb59dab107420f9e040fecca5a41d2",
@@ -4398,7 +4398,7 @@
    "overlap_count": 0,
    "lat": 40.59641,
    "lon": -73.9231,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4415,7 +4415,7 @@
      "flight_count": 33,
      "first_flight": "2024-09-20",
      "last_flight": "2024-12-11",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/59e75c20358a47759f3ef694bc438f50",
@@ -4427,7 +4427,7 @@
    "overlap_count": 0,
    "lat": 35.8022,
    "lon": -85.66797,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4444,7 +4444,7 @@
      "flight_count": 29,
      "first_flight": "2026-03-06",
      "last_flight": "2026-07-08",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/cd48d90615b748d9ad10b51f6e30b0bd",
@@ -4456,7 +4456,7 @@
    "overlap_count": 0,
    "lat": 29.23918,
    "lon": -82.72099,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4473,7 +4473,7 @@
      "flight_count": 29,
      "first_flight": "2026-07-04",
      "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/46325aa313e94f36864c2afb254fa69c",
@@ -4485,7 +4485,7 @@
    "overlap_count": 0,
    "lat": 42.03015,
    "lon": -87.80988,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4502,7 +4502,7 @@
      "flight_count": 28,
      "first_flight": "2026-04-26",
      "last_flight": "2026-04-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/fc5e3073f45f480e8a96e7a896861700",
@@ -4514,7 +4514,7 @@
    "overlap_count": 0,
    "lat": -23.74609,
    "lon": 133.84788,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4531,7 +4531,7 @@
      "flight_count": 27,
      "first_flight": "2025-05-27",
      "last_flight": "2026-06-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/5a75354712194028989ec53180676b56",
@@ -4543,7 +4543,7 @@
    "overlap_count": 0,
    "lat": 43.88826,
    "lon": -70.30375,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4560,7 +4560,7 @@
      "flight_count": 26,
      "first_flight": "2026-05-20",
      "last_flight": "2026-08-12",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/50131d633d314eef8408f834f22c19b3",
@@ -4572,7 +4572,36 @@
    "overlap_count": 0,
    "lat": 32.79641,
    "lon": -96.75741,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
+   "notes": null
+  },
+  {
+   "agency_id": "norton-pd-oh",
+   "display_name": "Norton Police Department",
+   "state": "OH",
+   "org_type": "law_enforcement",
+   "timezone": "America/New_York",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "norton-pd-oh",
+     "official_url": "https://www.arcgis.com/apps/dashboards/9e47de96be8a4dec90b98064bff26c12",
+     "flight_count": 26,
+     "first_flight": "2026-07-30",
+     "last_flight": "2026-09-02",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/9e47de96be8a4dec90b98064bff26c12",
+   "status": "ok",
+   "first_flight": "2026-07-30",
+   "last_flight": "2026-09-02",
+   "flight_count": 26,
+   "total_hours": 6.1,
+   "overlap_count": 0,
+   "lat": 41.02019,
+   "lon": -81.64224,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4589,7 +4618,7 @@
      "flight_count": 26,
      "first_flight": "2024-02-22",
      "last_flight": "2025-02-19",
-     "collected_utc": "2026-09-03T12:54:55.788Z"
+     "collected_utc": "2026-09-04T13:33:26.800Z"
     }
    ],
    "official_url": "https://app.airdata.com/u/ppd",
@@ -4601,7 +4630,7 @@
    "overlap_count": 0,
    "lat": 39.75961,
    "lon": -121.62192,
-   "collected_utc": "2026-09-03T12:54:55.788Z",
+   "collected_utc": "2026-09-04T13:33:26.800Z",
    "notes": null
   },
   {
@@ -4618,7 +4647,7 @@
      "flight_count": 25,
      "first_flight": "2026-08-01",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/dc72264a9fcf40eca84e78661ed37a16",
@@ -4630,7 +4659,7 @@
    "overlap_count": 0,
    "lat": 44.28383,
    "lon": -88.39089,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4647,7 +4676,7 @@
      "flight_count": 25,
      "first_flight": "2026-05-05",
      "last_flight": "2026-06-03",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/d34653ae03a74404a75b2ee4ea53ce53",
@@ -4659,7 +4688,7 @@
    "overlap_count": 0,
    "lat": 39.38887,
    "lon": -84.55064,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4676,7 +4705,7 @@
      "flight_count": 24,
      "first_flight": "2026-04-16",
      "last_flight": "2026-08-27",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/a9c7cf7faa2e4aae81cfaeab65a401c5",
@@ -4688,36 +4717,7 @@
    "overlap_count": 0,
    "lat": 46.8817,
    "lon": -118.90332,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
-   "notes": null
-  },
-  {
-   "agency_id": "norton-pd-oh",
-   "display_name": "Norton Police Department",
-   "state": "OH",
-   "org_type": "law_enforcement",
-   "timezone": "America/New_York",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "norton-pd-oh",
-     "official_url": "https://www.arcgis.com/apps/dashboards/9e47de96be8a4dec90b98064bff26c12",
-     "flight_count": 23,
-     "first_flight": "2026-07-30",
-     "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/9e47de96be8a4dec90b98064bff26c12",
-   "status": "ok",
-   "first_flight": "2026-07-30",
-   "last_flight": "2026-09-01",
-   "flight_count": 23,
-   "total_hours": 4.9,
-   "overlap_count": 0,
-   "lat": 41.02019,
-   "lon": -81.64224,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4734,7 +4734,7 @@
      "flight_count": 20,
      "first_flight": "2026-06-29",
      "last_flight": "2026-08-26",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f84e8578eb4e4deeb0e4d7785b3d4982",
@@ -4746,7 +4746,7 @@
    "overlap_count": 0,
    "lat": 29.61362,
    "lon": -90.72358,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4763,7 +4763,7 @@
      "flight_count": 19,
      "first_flight": "2026-05-22",
      "last_flight": "2026-08-22",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f3b2fd312cc24ba99fdafc4387f4bb0f",
@@ -4775,7 +4775,7 @@
    "overlap_count": 0,
    "lat": 37.76632,
    "lon": -96.93048,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4792,7 +4792,7 @@
      "flight_count": 17,
      "first_flight": "2026-07-24",
      "last_flight": "2026-08-02",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/b1c8de98bc844f54b881a64aa3c7a93b",
@@ -4804,7 +4804,7 @@
    "overlap_count": 0,
    "lat": 41.81887,
    "lon": -71.42975,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4821,7 +4821,7 @@
      "flight_count": 17,
      "first_flight": "2026-02-12",
      "last_flight": "2026-04-16",
-     "collected_utc": "2026-09-03T03:05:34.490Z"
+     "collected_utc": "2026-09-04T12:41:27.875Z"
     }
    ],
    "official_url": "https://community.university-st-thomas.tx.us.aerodome.com/",
@@ -4833,7 +4833,7 @@
    "overlap_count": 0,
    "lat": 29.73684,
    "lon": -95.39417,
-   "collected_utc": "2026-09-03T03:05:34.490Z",
+   "collected_utc": "2026-09-04T12:41:27.875Z",
    "notes": null
   },
   {
@@ -4850,7 +4850,7 @@
      "flight_count": 16,
      "first_flight": "2025-12-29",
      "last_flight": "2026-08-11",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/5378b0bf683744ccb1f7493d70c3c39f",
@@ -4862,7 +4862,7 @@
    "overlap_count": 0,
    "lat": 28.58927,
    "lon": -80.83718,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4879,7 +4879,7 @@
      "flight_count": 15,
      "first_flight": "2025-01-03",
      "last_flight": "2025-01-29",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/20e1ba0f975a49c3b0431ad9ec569b1b",
@@ -4891,7 +4891,7 @@
    "overlap_count": 0,
    "lat": 28.84619,
    "lon": -81.5861,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4908,7 +4908,7 @@
      "flight_count": 14,
      "first_flight": "2026-03-11",
      "last_flight": "2026-06-04",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/fayettecountysheriff",
@@ -4920,7 +4920,7 @@
    "overlap_count": 0,
    "lat": 33.5268,
    "lon": -84.45083,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4937,7 +4937,7 @@
      "flight_count": 14,
      "first_flight": "2026-06-29",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f2e26f7a271249c6a9935b99fddb4d0b",
@@ -4949,7 +4949,7 @@
    "overlap_count": 0,
    "lat": 34.47967,
    "lon": -84.45081,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4966,7 +4966,7 @@
      "flight_count": 13,
      "first_flight": "2026-07-28",
      "last_flight": "2026-08-21",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/7f548a7c0fe54c2989d1f5beb949736f",
@@ -4978,7 +4978,7 @@
    "overlap_count": 0,
    "lat": 37.03317,
    "lon": -76.37449,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -4995,7 +4995,7 @@
      "flight_count": 12,
      "first_flight": "2025-10-31",
      "last_flight": "2025-11-04",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/6a4e721a3d1d4493bfd1f3caf7c0b59a",
@@ -5007,7 +5007,7 @@
    "overlap_count": 0,
    "lat": 25.78446,
    "lon": -80.13464,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5024,7 +5024,7 @@
      "flight_count": 12,
      "first_flight": "2025-09-05",
      "last_flight": "2026-07-16",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/11517f673dc847f4bcf7f48fd3139e7f",
@@ -5036,7 +5036,7 @@
    "overlap_count": 0,
    "lat": 42.64952,
    "lon": -83.29376,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "Combines 2 Skydio dashboards published by this agency."
   },
   {
@@ -5053,7 +5053,7 @@
      "flight_count": 11,
      "first_flight": "2025-02-24",
      "last_flight": "2025-03-10",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/88c4f1e8bda644668f3c363a821225a0",
@@ -5065,7 +5065,7 @@
    "overlap_count": 0,
    "lat": 34.38977,
    "lon": -92.23043,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5082,7 +5082,7 @@
      "flight_count": 11,
      "first_flight": "2026-08-03",
      "last_flight": "2026-08-20",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/276109f23c14448bb789ece9d88e83a7",
@@ -5094,7 +5094,7 @@
    "overlap_count": 0,
    "lat": 21.31703,
    "lon": -157.8506,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5111,7 +5111,7 @@
      "flight_count": 10,
      "first_flight": "2025-03-03",
      "last_flight": "2025-03-08",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f34686592a37474e830e95065fcca6d8",
@@ -5123,8 +5123,37 @@
    "overlap_count": 0,
    "lat": 36.36407,
    "lon": -112.07818,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": "Combines 2 Skydio dashboards published by this agency."
+  },
+  {
+   "agency_id": "el-cajon-pd",
+   "display_name": "El Cajon PD",
+   "state": "CA",
+   "org_type": "law_enforcement",
+   "timezone": "America/Los_Angeles",
+   "sources": [
+    {
+     "source": "skydio_arcgis",
+     "source_agency_id": "el-cajon-pd",
+     "official_url": "https://www.arcgis.com/apps/dashboards/e82d5b26aff9427f88026be731055113",
+     "flight_count": 9,
+     "first_flight": "2026-08-25",
+     "last_flight": "2026-09-03",
+     "collected_utc": "2026-09-04T12:25:53.971Z"
+    }
+   ],
+   "official_url": "https://www.arcgis.com/apps/dashboards/e82d5b26aff9427f88026be731055113",
+   "status": "ok",
+   "first_flight": "2026-08-25",
+   "last_flight": "2026-09-03",
+   "flight_count": 9,
+   "total_hours": 2.2,
+   "overlap_count": 0,
+   "lat": 32.79509,
+   "lon": -116.965,
+   "collected_utc": "2026-09-04T12:25:53.971Z",
+   "notes": null
   },
   {
    "agency_id": "quincy-pd",
@@ -5140,7 +5169,7 @@
      "flight_count": 8,
      "first_flight": "2025-09-30",
      "last_flight": "2026-01-06",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/842da83f140c4bcb93f2164981ea0dec",
@@ -5152,7 +5181,7 @@
    "overlap_count": 0,
    "lat": 30.5913,
    "lon": -84.57993,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5169,7 +5198,7 @@
      "flight_count": 8,
      "first_flight": "2026-07-02",
      "last_flight": "2026-08-26",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/8f9ba15b43564c2dad3299b74399b590",
@@ -5181,7 +5210,7 @@
    "overlap_count": 0,
    "lat": 32.90226,
    "lon": -96.54273,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5198,7 +5227,7 @@
      "flight_count": 8,
      "first_flight": "2024-10-08",
      "last_flight": "2024-10-08",
-     "collected_utc": "2026-09-03T01:42:29.201Z"
+     "collected_utc": "2026-09-04T12:28:51.804Z"
     }
    ],
    "official_url": "https://community.breck.co.us.aerodome.com/",
@@ -5210,7 +5239,7 @@
    "overlap_count": 0,
    "lat": 38.4959,
    "lon": -84.7355,
-   "collected_utc": "2026-09-03T01:42:29.201Z",
+   "collected_utc": "2026-09-04T12:28:51.804Z",
    "notes": null
   },
   {
@@ -5227,7 +5256,7 @@
      "flight_count": 7,
      "first_flight": "2026-03-12",
      "last_flight": "2026-03-24",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/831574a885f145c9ad80a2dbbed4e0be",
@@ -5239,7 +5268,7 @@
    "overlap_count": 0,
    "lat": 35.08056,
    "lon": -106.49623,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5256,7 +5285,7 @@
      "flight_count": 7,
      "first_flight": "2025-03-21",
      "last_flight": "2025-04-07",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/987c3bcd7aa644bb876e9c401fd9b2a6",
@@ -5268,7 +5297,7 @@
    "overlap_count": 0,
    "lat": 33.06171,
    "lon": -115.76944,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5285,7 +5314,7 @@
      "flight_count": 7,
      "first_flight": "2025-11-17",
      "last_flight": "2025-12-12",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/e51b33d0cd5c4c0ca801dab88a739b90",
@@ -5297,7 +5326,7 @@
    "overlap_count": 0,
    "lat": 30.42942,
    "lon": -84.29948,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5314,7 +5343,7 @@
      "flight_count": 7,
      "first_flight": "2025-10-21",
      "last_flight": "2025-10-23",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/e626c750dedc49e1ae572d103e188bb4",
@@ -5326,7 +5355,7 @@
    "overlap_count": 0,
    "lat": 38.22232,
    "lon": -85.71436,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5343,7 +5372,7 @@
      "flight_count": 7,
      "first_flight": "2025-07-11",
      "last_flight": "2025-11-13",
-     "collected_utc": "2026-09-03T02:08:36.992Z"
+     "collected_utc": "2026-09-04T12:35:03.400Z"
     }
    ],
    "official_url": "https://community.keystone.co.us.aerodome.com/",
@@ -5355,7 +5384,7 @@
    "overlap_count": 0,
    "lat": 39.59656,
    "lon": -105.93403,
-   "collected_utc": "2026-09-03T02:08:36.992Z",
+   "collected_utc": "2026-09-04T12:35:03.400Z",
    "notes": null
   },
   {
@@ -5372,7 +5401,7 @@
      "flight_count": 7,
      "first_flight": "2025-08-21",
      "last_flight": "2026-02-17",
-     "collected_utc": "2026-09-03T02:28:00.559Z"
+     "collected_utc": "2026-09-04T12:36:22.840Z"
     }
    ],
    "official_url": "https://community.monarch.co.us.aerodome.com/",
@@ -5384,7 +5413,7 @@
    "overlap_count": 0,
    "lat": 38.2151,
    "lon": -81.45706,
-   "collected_utc": "2026-09-03T02:28:00.559Z",
+   "collected_utc": "2026-09-04T12:36:22.840Z",
    "notes": null
   },
   {
@@ -5401,7 +5430,7 @@
      "flight_count": 7,
      "first_flight": "2026-07-16",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-04T11:39:32.152Z"
+     "collected_utc": "2026-09-04T13:40:23.696Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/yonkerspd-ny",
@@ -5413,7 +5442,7 @@
    "overlap_count": 0,
    "lat": 40.93121,
    "lon": -73.89875,
-   "collected_utc": "2026-09-04T11:39:32.152Z",
+   "collected_utc": "2026-09-04T13:40:23.696Z",
    "notes": null
   },
   {
@@ -5430,7 +5459,7 @@
      "flight_count": 6,
      "first_flight": "2026-06-17",
      "last_flight": "2026-06-21",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/28e40b58334948d5a551f831c83db142",
@@ -5442,7 +5471,7 @@
    "overlap_count": 0,
    "lat": 47.72946,
    "lon": -116.83431,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5459,7 +5488,7 @@
      "flight_count": 6,
      "first_flight": "2026-02-04",
      "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f766075aa8694f0dba75b8a350e5c131",
@@ -5471,7 +5500,7 @@
    "overlap_count": 0,
    "lat": 37.24148,
    "lon": -121.97152,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5488,7 +5517,7 @@
      "flight_count": 6,
      "first_flight": "2025-01-21",
      "last_flight": "2025-01-21",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/37b99114b5d843fabfa7cd05b0ecbbd1",
@@ -5500,7 +5529,7 @@
    "overlap_count": 0,
    "lat": 55.72114,
    "lon": 12.48251,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5517,7 +5546,7 @@
      "flight_count": 5,
      "first_flight": "2026-01-23",
      "last_flight": "2026-02-23",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/757a3ca500934bfa9de33669a5d473e8",
@@ -5529,7 +5558,7 @@
    "overlap_count": 0,
    "lat": 39.51202,
    "lon": -77.40782,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5546,7 +5575,7 @@
      "flight_count": 5,
      "first_flight": "2026-04-10",
      "last_flight": "2026-04-10",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/2fedc6d0fa3a4ff3b8bc0608e708b768",
@@ -5558,7 +5587,7 @@
    "overlap_count": 0,
    "lat": 36.08045,
    "lon": -83.77759,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5575,7 +5604,7 @@
      "flight_count": 5,
      "first_flight": "2025-02-03",
      "last_flight": "2025-02-28",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/c414beda48c0421ba36d9a81b31a5a4a",
@@ -5587,7 +5616,7 @@
    "overlap_count": 0,
    "lat": 39.16719,
    "lon": -120.6498,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5604,7 +5633,7 @@
      "flight_count": 5,
      "first_flight": "2026-08-26",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/82eadbba84e7480f9e614ba2c7d5c5f5",
@@ -5616,7 +5645,7 @@
    "overlap_count": 0,
    "lat": 29.50685,
    "lon": -98.10925,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5633,7 +5662,7 @@
      "flight_count": 5,
      "first_flight": "2025-12-07",
      "last_flight": "2025-12-08",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/c95c74d0abbd4b588f233a04a893e25a",
@@ -5645,7 +5674,7 @@
    "overlap_count": 0,
    "lat": 46.87151,
    "lon": -96.82109,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5662,7 +5691,7 @@
      "flight_count": 4,
      "first_flight": "2024-11-09",
      "last_flight": "2025-12-25",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/cvpd",
@@ -5674,7 +5703,7 @@
    "overlap_count": 0,
    "lat": 42.23776,
    "lon": -88.94195,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5691,7 +5720,7 @@
      "flight_count": 4,
      "first_flight": "2025-04-12",
      "last_flight": "2026-01-29",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/d2a0e9c04fca4bcda91af3d52ef18e3c",
@@ -5703,7 +5732,7 @@
    "overlap_count": 0,
    "lat": 30.49767,
    "lon": -87.29836,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5720,7 +5749,7 @@
      "flight_count": 4,
      "first_flight": "2025-08-09",
      "last_flight": "2025-08-09",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/882eadd9bfef4ca58b9b20f73781d6dc",
@@ -5732,7 +5761,7 @@
    "overlap_count": 0,
    "lat": 47.79835,
    "lon": -122.24739,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5749,7 +5778,7 @@
      "flight_count": 4,
      "first_flight": "2024-11-16",
      "last_flight": "2025-06-16",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/61dfcc89c4804cb5aefd93ffbb3219e4",
@@ -5761,7 +5790,7 @@
    "overlap_count": 0,
    "lat": 41.52497,
    "lon": -72.72063,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5778,7 +5807,7 @@
      "flight_count": 4,
      "first_flight": "2026-01-22",
      "last_flight": "2026-01-22",
-     "collected_utc": "2026-09-03T02:37:11.412Z"
+     "collected_utc": "2026-09-04T12:37:11.981Z"
     }
    ],
    "official_url": "https://community.raleigh.nc.us.aerodome.com/",
@@ -5790,7 +5819,7 @@
    "overlap_count": 0,
    "lat": 35.7804,
    "lon": -78.6391,
-   "collected_utc": "2026-09-03T02:37:11.412Z",
+   "collected_utc": "2026-09-04T12:37:11.981Z",
    "notes": null
   },
   {
@@ -5807,7 +5836,7 @@
      "flight_count": 3,
      "first_flight": "2026-01-20",
      "last_flight": "2026-02-08",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/bostonpolice",
@@ -5819,7 +5848,7 @@
    "overlap_count": 0,
    "lat": 42.34252,
    "lon": -71.07903,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5836,7 +5865,7 @@
      "flight_count": 3,
      "first_flight": "2026-03-26",
      "last_flight": "2026-03-26",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/d8e670915cd6437c985ee831219964d8",
@@ -5848,7 +5877,7 @@
    "overlap_count": 0,
    "lat": 42.08928,
    "lon": -71.2691,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5865,7 +5894,7 @@
      "flight_count": 3,
      "first_flight": "2026-08-11",
      "last_flight": "2026-08-11",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/5c38bed763624cedbc63178f11687739",
@@ -5877,7 +5906,7 @@
    "overlap_count": 0,
    "lat": 27.63892,
    "lon": -80.38397,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5894,7 +5923,7 @@
      "flight_count": 3,
      "first_flight": "2025-06-17",
      "last_flight": "2025-06-18",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/1baaf00e2bd14cfc82e8e9df06d60cf4",
@@ -5906,7 +5935,7 @@
    "overlap_count": 0,
    "lat": 35.03486,
    "lon": -89.79524,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5923,7 +5952,7 @@
      "flight_count": 3,
      "first_flight": "2026-09-01",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-04T11:39:05.189Z"
+     "collected_utc": "2026-09-04T13:39:55.954Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/amherstpd-oh",
@@ -5935,7 +5964,7 @@
    "overlap_count": 0,
    "lat": 41.39782,
    "lon": -82.22238,
-   "collected_utc": "2026-09-04T11:39:05.189Z",
+   "collected_utc": "2026-09-04T13:39:55.954Z",
    "notes": null
   },
   {
@@ -5952,7 +5981,7 @@
      "flight_count": 2,
      "first_flight": "2026-06-22",
      "last_flight": "2026-06-22",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/fb9447dc4b354c99850366254b6c7c0f",
@@ -5964,7 +5993,7 @@
    "overlap_count": 0,
    "lat": 61.0524,
    "lon": -149.62916,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -5981,7 +6010,7 @@
      "flight_count": 2,
      "first_flight": "2025-08-29",
      "last_flight": "2025-08-29",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/65bd58e97fb44d15b05949d5b7ad6097",
@@ -5993,7 +6022,7 @@
    "overlap_count": 0,
    "lat": 44.97377,
    "lon": -93.26296,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6010,7 +6039,7 @@
      "flight_count": 2,
      "first_flight": "2026-08-12",
      "last_flight": "2026-08-12",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/dc06dea91597478ea122684bdbffdb3d",
@@ -6022,7 +6051,7 @@
    "overlap_count": 0,
    "lat": 50.0399,
    "lon": -110.67291,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6039,7 +6068,7 @@
      "flight_count": 2,
      "first_flight": "2025-09-18",
      "last_flight": "2025-09-18",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/bcb6529dfdff4a7093bc7feb91b435e0",
@@ -6051,7 +6080,7 @@
    "overlap_count": 0,
    "lat": 25.7724,
    "lon": -80.20841,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6068,7 +6097,7 @@
      "flight_count": 2,
      "first_flight": "2026-05-27",
      "last_flight": "2026-05-29",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/a97a09c800f44b08b4450be0a82af604",
@@ -6080,7 +6109,7 @@
    "overlap_count": 0,
    "lat": 40.9376,
    "lon": -72.37262,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6097,7 +6126,7 @@
      "flight_count": 2,
      "first_flight": "2024-12-01",
      "last_flight": "2024-12-01",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/980c6bec15754d998e45b726e8eca6b9",
@@ -6109,7 +6138,7 @@
    "overlap_count": 0,
    "lat": 35.67568,
    "lon": -78.90638,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6126,7 +6155,7 @@
      "flight_count": 2,
      "first_flight": "2026-03-12",
      "last_flight": "2026-03-12",
-     "collected_utc": "2026-09-03T01:45:51.132Z"
+     "collected_utc": "2026-09-04T12:32:12.153Z"
     }
    ],
    "official_url": "https://community.emporia.va.us.aerodome.com/",
@@ -6138,7 +6167,7 @@
    "overlap_count": 0,
    "lat": 36.69376,
    "lon": -77.53571,
-   "collected_utc": "2026-09-03T01:45:51.132Z",
+   "collected_utc": "2026-09-04T12:32:12.153Z",
    "notes": null
   },
   {
@@ -6155,7 +6184,7 @@
      "flight_count": 1,
      "first_flight": "2025-05-07",
      "last_flight": "2025-05-07",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/a1e7692c854140ffaaf2fbf165e9d3f4",
@@ -6167,7 +6196,7 @@
    "overlap_count": 0,
    "lat": 39.38718,
    "lon": -82.17654,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6184,7 +6213,7 @@
      "flight_count": 1,
      "first_flight": "2025-09-22",
      "last_flight": "2025-09-22",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/cf8880ca0f654cfeac6f2d402be880d8",
@@ -6196,7 +6225,7 @@
    "overlap_count": 0,
    "lat": 39.67918,
    "lon": -79.86098,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6213,7 +6242,7 @@
      "flight_count": 1,
      "first_flight": "2026-08-19",
      "last_flight": "2026-08-19",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/ac4bcc12e9e4420897665747e8c2c5d0",
@@ -6225,7 +6254,7 @@
    "overlap_count": 0,
    "lat": 48.75827,
    "lon": -122.48414,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6242,7 +6271,7 @@
      "flight_count": 1,
      "first_flight": "2026-03-30",
      "last_flight": "2026-03-30",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/f3736746a3c9430d98cc8ca03ab5c53a",
@@ -6254,7 +6283,7 @@
    "overlap_count": 0,
    "lat": 33.50997,
    "lon": -86.81057,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6271,7 +6300,7 @@
      "flight_count": 1,
      "first_flight": "2025-11-19",
      "last_flight": "2025-11-19",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/be1daa5b5d4f486eaf15770cb0dd0bb1",
@@ -6283,7 +6312,7 @@
    "overlap_count": 0,
    "lat": 39.97813,
    "lon": -83.07734,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6300,7 +6329,7 @@
      "flight_count": 1,
      "first_flight": "2025-08-26",
      "last_flight": "2025-08-26",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/e0f70ef9724b4d6c9f26261c51757310",
@@ -6312,7 +6341,7 @@
    "overlap_count": 0,
    "lat": 45.64292,
    "lon": -122.61791,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6329,7 +6358,7 @@
      "flight_count": 1,
      "first_flight": "2025-08-06",
      "last_flight": "2025-08-06",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/9ae8824a0caf4b3dacbc3596122eb282",
@@ -6341,36 +6370,7 @@
    "overlap_count": 0,
    "lat": 40.4696,
    "lon": -79.86303,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
-   "notes": null
-  },
-  {
-   "agency_id": "el-cajon-pd",
-   "display_name": "El Cajon PD",
-   "state": "CA",
-   "org_type": "law_enforcement",
-   "timezone": "America/Los_Angeles",
-   "sources": [
-    {
-     "source": "skydio_arcgis",
-     "source_agency_id": "el-cajon-pd",
-     "official_url": "https://www.arcgis.com/apps/dashboards/e82d5b26aff9427f88026be731055113",
-     "flight_count": 1,
-     "first_flight": "2026-08-25",
-     "last_flight": "2026-08-25",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
-    }
-   ],
-   "official_url": "https://www.arcgis.com/apps/dashboards/e82d5b26aff9427f88026be731055113",
-   "status": "ok",
-   "first_flight": "2026-08-25",
-   "last_flight": "2026-08-25",
-   "flight_count": 1,
-   "total_hours": 0.2,
-   "overlap_count": 0,
-   "lat": 32.79509,
-   "lon": -116.965,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6387,7 +6387,7 @@
      "flight_count": 1,
      "first_flight": "2026-04-22",
      "last_flight": "2026-04-22",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/2d104fe503674c2395e36fdacb4205fa",
@@ -6399,7 +6399,7 @@
    "overlap_count": 0,
    "lat": 40.59154,
    "lon": -105.0625,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6416,7 +6416,7 @@
      "flight_count": 1,
      "first_flight": "2025-09-03",
      "last_flight": "2025-09-03",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/50427cbddf194c359ca2ff1ac41d578f",
@@ -6428,7 +6428,7 @@
    "overlap_count": 0,
    "lat": 30.80044,
    "lon": -98.33428,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6445,7 +6445,7 @@
      "flight_count": 1,
      "first_flight": "2025-03-25",
      "last_flight": "2025-03-25",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/652aee69f955462f9a788b4e60e6fa23",
@@ -6457,7 +6457,7 @@
    "overlap_count": 0,
    "lat": 30.22486,
    "lon": -92.01691,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6474,7 +6474,7 @@
      "flight_count": 1,
      "first_flight": "2026-07-19",
      "last_flight": "2026-07-19",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/d30c85a1e8a74201a2825591eda0fed1",
@@ -6486,7 +6486,7 @@
    "overlap_count": 0,
    "lat": -3.12826,
    "lon": 152.64474,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6503,7 +6503,7 @@
      "flight_count": 1,
      "first_flight": "2026-07-23",
      "last_flight": "2026-07-23",
-     "collected_utc": "2026-09-02T14:59:38.507Z"
+     "collected_utc": "2026-09-04T12:25:53.971Z"
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/b82c0141ee054a41ac56d9b9b36e393f",
@@ -6515,7 +6515,7 @@
    "overlap_count": 0,
    "lat": 33.01572,
    "lon": -97.20348,
-   "collected_utc": "2026-09-02T14:59:38.507Z",
+   "collected_utc": "2026-09-04T12:25:53.971Z",
    "notes": null
   },
   {
@@ -6532,7 +6532,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-03T01:42:24.656Z"
+     "collected_utc": "2026-09-04T12:28:44.098Z"
     }
    ],
    "official_url": "https://community.boynton-beach.fl.us.aerodome.com/",
@@ -6544,7 +6544,7 @@
    "overlap_count": 0,
    "lat": 26.52891,
    "lon": -80.05814,
-   "collected_utc": "2026-09-03T01:42:24.656Z",
+   "collected_utc": "2026-09-04T12:28:44.098Z",
    "notes": null
   },
   {
@@ -6561,7 +6561,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-03T01:47:50.218Z"
+     "collected_utc": "2026-09-04T12:33:01.696Z"
     }
    ],
    "official_url": "https://community.franklin-somerset.nj.us.aerodome.com/",
@@ -6573,7 +6573,7 @@
    "overlap_count": 0,
    "lat": 40.48407,
    "lon": -74.50916,
-   "collected_utc": "2026-09-03T01:47:50.218Z",
+   "collected_utc": "2026-09-04T12:33:01.696Z",
    "notes": null
   },
   {
@@ -6590,7 +6590,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-03T02:13:27.231Z"
+     "collected_utc": "2026-09-04T12:35:12.494Z"
     }
    ],
    "official_url": "https://community.longmont.co.us.aerodome.com/",
@@ -6602,7 +6602,7 @@
    "overlap_count": 0,
    "lat": 40.16721,
    "lon": -105.10193,
-   "collected_utc": "2026-09-03T02:13:27.231Z",
+   "collected_utc": "2026-09-04T12:35:12.494Z",
    "notes": null
   },
   {
@@ -6619,7 +6619,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-03T02:16:16.997Z"
+     "collected_utc": "2026-09-04T12:35:21.574Z"
     }
    ],
    "official_url": "https://community.loveland.co.us.aerodome.com/",
@@ -6631,7 +6631,7 @@
    "overlap_count": 0,
    "lat": 40.39776,
    "lon": -105.07498,
-   "collected_utc": "2026-09-03T02:16:16.997Z",
+   "collected_utc": "2026-09-04T12:35:21.574Z",
    "notes": null
   },
   {
@@ -6648,7 +6648,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-04T11:39:06.687Z"
+     "collected_utc": "2026-09-04T13:39:57.377Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/boulderpd",
@@ -6660,7 +6660,7 @@
    "overlap_count": 0,
    "lat": 40.01499,
    "lon": -105.27054,
-   "collected_utc": "2026-09-04T11:39:06.687Z",
+   "collected_utc": "2026-09-04T13:39:57.377Z",
    "notes": null
   },
   {
@@ -6677,7 +6677,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-04T11:39:30.654Z"
+     "collected_utc": "2026-09-04T13:40:22.257Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/roswellpd",
@@ -6689,7 +6689,7 @@
    "overlap_count": 0,
    "lat": 34.02332,
    "lon": -84.36002,
-   "collected_utc": "2026-09-04T11:39:30.654Z",
+   "collected_utc": "2026-09-04T13:40:22.257Z",
    "notes": null
   }
  ]

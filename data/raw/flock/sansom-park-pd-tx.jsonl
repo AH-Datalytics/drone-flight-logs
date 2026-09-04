@@ -217,3 +217,6 @@
 {"flight_number":"SPPD-260902-0003","time_period":{"begin":"2026-09-03T01:54:13.319Z","end":"2026-09-03T02:01:18.533Z"},"duration_seconds":425.21453,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"SPPD-260902-0002","time_period":{"begin":"2026-09-03T01:18:43.058Z","end":"2026-09-03T01:44:53.011Z"},"duration_seconds":1569.952317,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"SPPD-260902-0001","time_period":{"begin":"2026-09-02T16:45:29.374Z","end":"2026-09-02T17:12:25.362Z"},"duration_seconds":1615.988303,"ce_hidden":false,"calls_for_service":[{"cad_event_number":"26SP15582","cad_event_type":"Investigation","priority":2,"address":{"street_address":null,"locality":null,"region":null,"postal_code":null,"country":null}}]}
+{"flight_number":"SPPD-260904-0001","time_period":{"begin":"2026-09-04T05:42:11.636Z","end":"2026-09-04T05:46:52.642Z"},"duration_seconds":281.00576,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"SPPD-260903-0002","time_period":{"begin":"2026-09-04T02:15:14.123Z","end":"2026-09-04T02:33:30.236Z"},"duration_seconds":1096.113619,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"SPPD-260903-0001","time_period":{"begin":"2026-09-03T08:45:15.137Z","end":"2026-09-03T08:49:34.244Z"},"duration_seconds":259.107051,"ce_hidden":false,"calls_for_service":[]}

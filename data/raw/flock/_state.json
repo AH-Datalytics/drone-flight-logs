@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-09-03T03:20:52.620Z",
+ "updated_utc": "2026-09-04T12:43:22.733Z",
  "agencies": {
   "elk-grove-pd-ca": {
    "agency_id": "elk-grove-pd-ca",
@@ -13,12 +13,12 @@
     "2026-08": {
      "flights": 505,
      "pages": 64,
-     "collected_utc": "2026-09-03T02:26:37.402Z"
+     "collected_utc": "2026-09-04T12:33:30.191Z"
     },
     "2026-09": {
-     "flights": 24,
-     "pages": 3,
-     "collected_utc": "2026-09-03T02:26:44.131Z"
+     "flights": 25,
+     "pages": 4,
+     "collected_utc": "2026-09-04T12:33:36.306Z"
     },
     "2023-01": {
      "flights": 0,
@@ -231,8 +231,8 @@
      "collected_utc": "2026-09-03T02:24:01.943Z"
     }
    },
-   "total_flights": 10200,
-   "last_run_utc": "2026-09-03T02:26:45.335Z",
+   "total_flights": 10201,
+   "last_run_utc": "2026-09-04T12:33:37.508Z",
    "last_error": null
   },
   "alameda-county-so-ca": {
@@ -457,16 +457,16 @@
     "2026-08": {
      "flights": 60,
      "pages": 8,
-     "collected_utc": "2026-09-03T01:41:38.953Z"
+     "collected_utc": "2026-09-04T12:28:04.668Z"
     },
     "2026-09": {
-     "flights": 0,
-     "pages": 0,
-     "collected_utc": "2026-09-03T01:41:40.553Z"
+     "flights": 1,
+     "pages": 1,
+     "collected_utc": "2026-09-04T12:28:06.220Z"
     }
    },
-   "total_flights": 645,
-   "last_run_utc": "2026-09-03T01:41:41.766Z",
+   "total_flights": 646,
+   "last_run_utc": "2026-09-04T12:28:07.422Z",
    "last_error": null
   },
   "alhambra-pd-ca": {
@@ -691,16 +691,16 @@
     "2026-08": {
      "flights": 213,
      "pages": 27,
-     "collected_utc": "2026-09-03T01:42:15.091Z"
+     "collected_utc": "2026-09-04T12:28:41.285Z"
     },
     "2026-09": {
-     "flights": 23,
-     "pages": 3,
-     "collected_utc": "2026-09-03T01:42:20.001Z"
+     "flights": 35,
+     "pages": 5,
+     "collected_utc": "2026-09-04T12:28:49.294Z"
     }
    },
-   "total_flights": 4829,
-   "last_run_utc": "2026-09-03T01:42:21.215Z",
+   "total_flights": 4837,
+   "last_run_utc": "2026-09-04T12:28:50.495Z",
    "last_error": null
   },
   "aspen-pd-co": {
@@ -925,16 +925,16 @@
     "2026-08": {
      "flights": 216,
      "pages": 27,
-     "collected_utc": "2026-09-03T01:41:58.624Z"
+     "collected_utc": "2026-09-04T12:28:18.090Z"
     },
     "2026-09": {
      "flights": 3,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:42:00.228Z"
+     "collected_utc": "2026-09-04T12:28:19.531Z"
     }
    },
    "total_flights": 4146,
-   "last_run_utc": "2026-09-03T01:42:01.443Z",
+   "last_run_utc": "2026-09-04T12:28:20.737Z",
    "last_error": null
   },
   "aurora-pd-co": {
@@ -1159,16 +1159,16 @@
     "2026-08": {
      "flights": 646,
      "pages": 81,
-     "collected_utc": "2026-09-03T01:44:13.797Z"
+     "collected_utc": "2026-09-04T12:30:32.888Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:15.339Z"
+     "collected_utc": "2026-09-04T12:30:34.341Z"
     }
    },
-   "total_flights": 4959,
-   "last_run_utc": "2026-09-03T01:44:16.553Z",
+   "total_flights": 4975,
+   "last_run_utc": "2026-09-04T12:30:35.543Z",
    "last_error": null
   },
   "azusa-pd-ca": {
@@ -1393,16 +1393,16 @@
     "2026-08": {
      "flights": 192,
      "pages": 24,
-     "collected_utc": "2026-09-03T01:42:40.063Z"
+     "collected_utc": "2026-09-04T12:29:04.185Z"
     },
     "2026-09": {
-     "flights": 9,
-     "pages": 2,
-     "collected_utc": "2026-09-03T01:42:43.268Z"
+     "flights": 22,
+     "pages": 3,
+     "collected_utc": "2026-09-04T12:29:09.425Z"
     }
    },
-   "total_flights": 5381,
-   "last_run_utc": "2026-09-03T01:42:44.483Z",
+   "total_flights": 5394,
+   "last_run_utc": "2026-09-04T12:29:10.627Z",
    "last_error": null
   },
   "berkeley-pd-il": {
@@ -1627,16 +1627,16 @@
     "2026-08": {
      "flights": 7,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:42:12.345Z"
+     "collected_utc": "2026-09-04T12:28:31.461Z"
     },
     "2026-09": {
      "flights": 1,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:42:15.443Z"
+     "collected_utc": "2026-09-04T12:28:34.177Z"
     }
    },
    "total_flights": 120,
-   "last_run_utc": "2026-09-03T01:42:16.652Z",
+   "last_run_utc": "2026-09-04T12:28:35.379Z",
    "last_error": null
   },
   "boynton-beach-pd-fl": {
@@ -1861,16 +1861,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:42:21.937Z"
+     "collected_utc": "2026-09-04T12:28:41.475Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:42:23.454Z"
+     "collected_utc": "2026-09-04T12:28:42.896Z"
     }
    },
    "total_flights": 0,
-   "last_run_utc": "2026-09-03T01:42:24.656Z",
+   "last_run_utc": "2026-09-04T12:28:44.098Z",
    "last_error": null
   },
   "breck-pd-co": {
@@ -2095,16 +2095,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:42:26.447Z"
+     "collected_utc": "2026-09-04T12:28:49.093Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:42:27.996Z"
+     "collected_utc": "2026-09-04T12:28:50.600Z"
     }
    },
    "total_flights": 8,
-   "last_run_utc": "2026-09-03T01:42:29.201Z",
+   "last_run_utc": "2026-09-04T12:28:51.804Z",
    "last_error": null
   },
   "buena-park-pd-ca": {
@@ -2329,16 +2329,16 @@
     "2026-08": {
      "flights": 120,
      "pages": 15,
-     "collected_utc": "2026-09-03T01:43:05.054Z"
+     "collected_utc": "2026-09-04T12:29:32.928Z"
     },
     "2026-09": {
-     "flights": 18,
-     "pages": 3,
-     "collected_utc": "2026-09-03T01:43:10.021Z"
+     "flights": 36,
+     "pages": 5,
+     "collected_utc": "2026-09-04T12:29:41.322Z"
     }
    },
-   "total_flights": 921,
-   "last_run_utc": "2026-09-03T01:43:11.230Z",
+   "total_flights": 931,
+   "last_run_utc": "2026-09-04T12:29:42.525Z",
    "last_error": null
   },
   "casa-grande-pd-az": {
@@ -2563,16 +2563,16 @@
     "2026-08": {
      "flights": 91,
      "pages": 12,
-     "collected_utc": "2026-09-03T01:43:04.715Z"
+     "collected_utc": "2026-09-04T12:29:30.030Z"
     },
     "2026-09": {
      "flights": 5,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:43:06.351Z"
+     "collected_utc": "2026-09-04T12:29:31.512Z"
     }
    },
    "total_flights": 869,
-   "last_run_utc": "2026-09-03T01:43:07.559Z",
+   "last_run_utc": "2026-09-04T12:29:32.713Z",
    "last_error": null
   },
   "castle-rock-pd-co": {
@@ -2797,16 +2797,16 @@
     "2026-08": {
      "flights": 60,
      "pages": 8,
-     "collected_utc": "2026-09-03T01:43:11.596Z"
+     "collected_utc": "2026-09-04T12:29:31.992Z"
     },
     "2026-09": {
      "flights": 8,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:43:14.840Z"
+     "collected_utc": "2026-09-04T12:29:34.882Z"
     }
    },
    "total_flights": 1384,
-   "last_run_utc": "2026-09-03T01:43:16.056Z",
+   "last_run_utc": "2026-09-04T12:29:36.085Z",
    "last_error": null
   },
   "cobb-county-pd-ga": {
@@ -3031,16 +3031,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:43:12.742Z"
+     "collected_utc": "2026-09-04T12:29:39.049Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:43:14.282Z"
+     "collected_utc": "2026-09-04T12:29:40.532Z"
     }
    },
    "total_flights": 0,
-   "last_run_utc": "2026-09-03T01:43:15.493Z",
+   "last_run_utc": "2026-09-04T12:29:41.735Z",
    "last_error": null
   },
   "colony-pd-tx": {
@@ -3265,16 +3265,16 @@
     "2026-08": {
      "flights": 129,
      "pages": 17,
-     "collected_utc": "2026-09-03T01:43:56.937Z"
+     "collected_utc": "2026-09-04T12:30:20.380Z"
     },
     "2026-09": {
-     "flights": 7,
-     "pages": 1,
-     "collected_utc": "2026-09-03T01:43:58.615Z"
+     "flights": 12,
+     "pages": 2,
+     "collected_utc": "2026-09-04T12:30:23.548Z"
     }
    },
-   "total_flights": 477,
-   "last_run_utc": "2026-09-03T01:43:59.828Z",
+   "total_flights": 482,
+   "last_run_utc": "2026-09-04T12:30:24.750Z",
    "last_error": null
   },
   "conyers-pd-ga": {
@@ -3499,16 +3499,16 @@
     "2026-08": {
      "flights": 176,
      "pages": 22,
-     "collected_utc": "2026-09-03T01:44:21.145Z"
+     "collected_utc": "2026-09-04T12:30:38.104Z"
     },
     "2026-09": {
-     "flights": 7,
-     "pages": 1,
-     "collected_utc": "2026-09-03T01:44:22.778Z"
+     "flights": 14,
+     "pages": 2,
+     "collected_utc": "2026-09-04T12:30:41.352Z"
     }
    },
-   "total_flights": 1857,
-   "last_run_utc": "2026-09-03T01:44:23.981Z",
+   "total_flights": 1864,
+   "last_run_utc": "2026-09-04T12:30:42.555Z",
    "last_error": null
   },
   "copper-mountain-pd-co": {
@@ -3733,16 +3733,16 @@
     "2026-08": {
      "flights": 1,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:43:24.471Z"
+     "collected_utc": "2026-09-04T12:29:48.779Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:43:26.011Z"
+     "collected_utc": "2026-09-04T12:29:51.795Z"
     }
    },
    "total_flights": 344,
-   "last_run_utc": "2026-09-03T01:43:27.219Z",
+   "last_run_utc": "2026-09-04T12:29:52.997Z",
    "last_error": null
   },
   "cottonwood-pd-az": {
@@ -3967,16 +3967,16 @@
     "2026-08": {
      "flights": 99,
      "pages": 13,
-     "collected_utc": "2026-09-03T01:44:06.680Z"
+     "collected_utc": "2026-09-04T12:30:27.280Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:08.302Z"
+     "collected_utc": "2026-09-04T12:30:28.745Z"
     }
    },
    "total_flights": 729,
-   "last_run_utc": "2026-09-03T01:44:09.515Z",
+   "last_run_utc": "2026-09-04T12:30:29.947Z",
    "last_error": null
   },
   "dekalb-county-pd-ga": {
@@ -4201,16 +4201,16 @@
     "2026-08": {
      "flights": 380,
      "pages": 48,
-     "collected_utc": "2026-09-03T01:45:57.453Z"
+     "collected_utc": "2026-09-04T12:32:07.925Z"
     },
     "2026-09": {
      "flights": 23,
      "pages": 3,
-     "collected_utc": "2026-09-03T01:46:02.595Z"
+     "collected_utc": "2026-09-04T12:32:12.732Z"
     }
    },
-   "total_flights": 1585,
-   "last_run_utc": "2026-09-03T01:46:03.802Z",
+   "total_flights": 1586,
+   "last_run_utc": "2026-09-04T12:32:13.940Z",
    "last_error": null
   },
   "denver-pd-co": {
@@ -4435,16 +4435,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:14.737Z"
+     "collected_utc": "2026-09-04T12:30:36.438Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:16.296Z"
+     "collected_utc": "2026-09-04T12:30:37.888Z"
     }
    },
    "total_flights": 58,
-   "last_run_utc": "2026-09-03T01:44:17.504Z",
+   "last_run_utc": "2026-09-04T12:30:39.090Z",
    "last_error": null
   },
   "dunwoody-pd-ga": {
@@ -4669,16 +4669,16 @@
     "2026-08": {
      "flights": 52,
      "pages": 7,
-     "collected_utc": "2026-09-03T01:44:39.568Z"
+     "collected_utc": "2026-09-04T12:30:57.560Z"
     },
     "2026-09": {
      "flights": 4,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:44:41.184Z"
+     "collected_utc": "2026-09-04T12:30:59.013Z"
     }
    },
    "total_flights": 1089,
-   "last_run_utc": "2026-09-03T01:44:42.392Z",
+   "last_run_utc": "2026-09-04T12:31:00.216Z",
    "last_error": null
   },
   "durango-pd-co": {
@@ -4903,16 +4903,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:22.698Z"
+     "collected_utc": "2026-09-04T12:30:44.141Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:24.240Z"
+     "collected_utc": "2026-09-04T12:30:45.702Z"
     }
    },
    "total_flights": 0,
-   "last_run_utc": "2026-09-03T01:44:25.446Z",
+   "last_run_utc": "2026-09-04T12:30:46.907Z",
    "last_error": null
   },
   "dutchess-so-ny": {
@@ -5137,16 +5137,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:29.189Z"
+     "collected_utc": "2026-09-04T12:30:47.540Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:44:30.698Z"
+     "collected_utc": "2026-09-04T12:30:49.031Z"
     }
    },
    "total_flights": 115,
-   "last_run_utc": "2026-09-03T01:44:31.901Z",
+   "last_run_utc": "2026-09-04T12:30:50.236Z",
    "last_error": null
   },
   "edinburg-pd-tx": {
@@ -5371,16 +5371,16 @@
     "2026-08": {
      "flights": 219,
      "pages": 28,
-     "collected_utc": "2026-09-03T01:45:33.580Z"
+     "collected_utc": "2026-09-04T12:31:49.139Z"
     },
     "2026-09": {
-     "flights": 11,
-     "pages": 2,
-     "collected_utc": "2026-09-03T01:45:36.808Z"
+     "flights": 23,
+     "pages": 3,
+     "collected_utc": "2026-09-04T12:31:54.025Z"
     }
    },
-   "total_flights": 1927,
-   "last_run_utc": "2026-09-03T01:45:38.015Z",
+   "total_flights": 1939,
+   "last_run_utc": "2026-09-04T12:31:55.226Z",
    "last_error": null
   },
   "el-segundo-pd-ca": {
@@ -5605,16 +5605,16 @@
     "2026-08": {
      "flights": 25,
      "pages": 4,
-     "collected_utc": "2026-09-03T01:44:55.696Z"
+     "collected_utc": "2026-09-04T12:31:16.415Z"
     },
     "2026-09": {
      "flights": 10,
      "pages": 2,
-     "collected_utc": "2026-09-03T01:44:59.000Z"
+     "collected_utc": "2026-09-04T12:31:19.341Z"
     }
    },
    "total_flights": 1298,
-   "last_run_utc": "2026-09-03T01:45:00.212Z",
+   "last_run_utc": "2026-09-04T12:31:20.544Z",
    "last_error": null
   },
   "elizabethtown-pd-ky": {
@@ -5839,16 +5839,16 @@
     "2026-08": {
      "flights": 172,
      "pages": 22,
-     "collected_utc": "2026-09-03T01:45:38.789Z"
+     "collected_utc": "2026-09-04T12:31:58.388Z"
     },
     "2026-09": {
      "flights": 10,
      "pages": 2,
-     "collected_utc": "2026-09-03T01:45:41.945Z"
+     "collected_utc": "2026-09-04T12:32:01.357Z"
     }
    },
-   "total_flights": 739,
-   "last_run_utc": "2026-09-03T01:45:43.145Z",
+   "total_flights": 747,
+   "last_run_utc": "2026-09-04T12:32:02.561Z",
    "last_error": null
   },
   "elm-ridge-pd-tx": {
@@ -6073,16 +6073,16 @@
     "2026-08": {
      "flights": 2,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:45:45.116Z"
+     "collected_utc": "2026-09-04T12:32:02.420Z"
     },
     "2026-09": {
-     "flights": 0,
-     "pages": 0,
-     "collected_utc": "2026-09-03T01:45:46.657Z"
+     "flights": 1,
+     "pages": 1,
+     "collected_utc": "2026-09-04T12:32:03.906Z"
     }
    },
-   "total_flights": 63,
-   "last_run_utc": "2026-09-03T01:45:47.872Z",
+   "total_flights": 64,
+   "last_run_utc": "2026-09-04T12:32:05.109Z",
    "last_error": null
   },
   "emporia-pd-va": {
@@ -6307,16 +6307,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:45:48.374Z"
+     "collected_utc": "2026-09-04T12:32:09.404Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:45:49.918Z"
+     "collected_utc": "2026-09-04T12:32:10.951Z"
     }
    },
    "total_flights": 2,
-   "last_run_utc": "2026-09-03T01:45:51.132Z",
+   "last_run_utc": "2026-09-04T12:32:12.153Z",
    "last_error": null
   },
   "everett-pd-wa": {
@@ -6541,16 +6541,16 @@
     "2026-08": {
      "flights": 349,
      "pages": 44,
-     "collected_utc": "2026-09-03T01:54:00.265Z"
+     "collected_utc": "2026-09-04T12:33:44.054Z"
     },
     "2026-09": {
      "flights": 6,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:54:01.855Z"
+     "collected_utc": "2026-09-04T12:33:45.601Z"
     }
    },
    "total_flights": 2523,
-   "last_run_utc": "2026-09-03T01:54:03.066Z",
+   "last_run_utc": "2026-09-04T12:33:46.805Z",
    "last_error": null
   },
   "farmers-branch-pd-tx": {
@@ -6775,16 +6775,16 @@
     "2026-08": {
      "flights": 99,
      "pages": 13,
-     "collected_utc": "2026-09-03T01:46:29.305Z"
+     "collected_utc": "2026-09-04T12:32:49.774Z"
     },
     "2026-09": {
      "flights": 12,
      "pages": 2,
-     "collected_utc": "2026-09-03T01:46:32.621Z"
+     "collected_utc": "2026-09-04T12:32:52.733Z"
     }
    },
    "total_flights": 667,
-   "last_run_utc": "2026-09-03T01:46:33.836Z",
+   "last_run_utc": "2026-09-04T12:32:53.936Z",
    "last_error": null
   },
   "fort-worth-pd-tx": {
@@ -7009,16 +7009,16 @@
     "2026-08": {
      "flights": 86,
      "pages": 11,
-     "collected_utc": "2026-09-03T01:46:58.575Z"
+     "collected_utc": "2026-09-04T12:32:51.628Z"
     },
     "2026-09": {
      "flights": 2,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:47:00.168Z"
+     "collected_utc": "2026-09-04T12:32:53.099Z"
     }
    },
    "total_flights": 617,
-   "last_run_utc": "2026-09-03T01:47:01.378Z",
+   "last_run_utc": "2026-09-04T12:32:54.302Z",
    "last_error": null
   },
   "franklin-township-pd-nj": {
@@ -7243,16 +7243,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:47:47.432Z"
+     "collected_utc": "2026-09-04T12:32:58.944Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:47:49.007Z"
+     "collected_utc": "2026-09-04T12:33:00.494Z"
     }
    },
    "total_flights": 0,
-   "last_run_utc": "2026-09-03T01:47:50.218Z",
+   "last_run_utc": "2026-09-04T12:33:01.696Z",
    "last_error": null
   },
   "fulton-county-so-ga": {
@@ -7477,16 +7477,16 @@
     "2026-08": {
      "flights": 48,
      "pages": 6,
-     "collected_utc": "2026-09-03T01:49:33.523Z"
+     "collected_utc": "2026-09-04T12:33:17.876Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:49:35.037Z"
+     "collected_utc": "2026-09-04T12:33:19.362Z"
     }
    },
    "total_flights": 322,
-   "last_run_utc": "2026-09-03T01:49:36.241Z",
+   "last_run_utc": "2026-09-04T12:33:20.564Z",
    "last_error": null
   },
   "galveston-pd-tx": {
@@ -7711,16 +7711,16 @@
     "2026-08": {
      "flights": 47,
      "pages": 6,
-     "collected_utc": "2026-09-03T01:50:50.585Z"
+     "collected_utc": "2026-09-04T12:33:24.333Z"
     },
     "2026-09": {
-     "flights": 0,
-     "pages": 0,
-     "collected_utc": "2026-09-03T01:50:52.125Z"
+     "flights": 1,
+     "pages": 1,
+     "collected_utc": "2026-09-04T12:33:25.827Z"
     }
    },
-   "total_flights": 409,
-   "last_run_utc": "2026-09-03T01:50:53.334Z",
+   "total_flights": 410,
+   "last_run_utc": "2026-09-04T12:33:27.035Z",
    "last_error": null
   },
   "georgia-tech-pd-ga": {
@@ -7945,16 +7945,16 @@
     "2026-08": {
      "flights": 23,
      "pages": 3,
-     "collected_utc": "2026-09-03T01:51:55.495Z"
+     "collected_utc": "2026-09-04T12:33:36.935Z"
     },
     "2026-09": {
      "flights": 6,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:51:57.160Z"
+     "collected_utc": "2026-09-04T12:33:38.496Z"
     }
    },
    "total_flights": 293,
-   "last_run_utc": "2026-09-03T01:51:58.363Z",
+   "last_run_utc": "2026-09-04T12:33:39.698Z",
    "last_error": null
   },
   "gilbert-pd-az": {
@@ -8179,16 +8179,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:53:55.717Z"
+     "collected_utc": "2026-09-04T12:33:32.085Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T01:53:57.262Z"
+     "collected_utc": "2026-09-04T12:33:33.503Z"
     }
    },
    "total_flights": 396,
-   "last_run_utc": "2026-09-03T01:53:58.465Z",
+   "last_run_utc": "2026-09-04T12:33:34.705Z",
    "last_error": null
   },
   "hamilton-county-so-in": {
@@ -8413,16 +8413,16 @@
     "2026-08": {
      "flights": 81,
      "pages": 11,
-     "collected_utc": "2026-09-03T01:58:33.604Z"
+     "collected_utc": "2026-09-04T12:34:14.894Z"
     },
     "2026-09": {
-     "flights": 10,
-     "pages": 2,
-     "collected_utc": "2026-09-03T01:58:36.878Z"
+     "flights": 22,
+     "pages": 3,
+     "collected_utc": "2026-09-04T12:34:19.677Z"
     }
    },
-   "total_flights": 1269,
-   "last_run_utc": "2026-09-03T01:58:38.084Z",
+   "total_flights": 1281,
+   "last_run_utc": "2026-09-04T12:34:20.881Z",
    "last_error": null
   },
   "harvey-pd-il": {
@@ -8647,16 +8647,16 @@
     "2026-08": {
      "flights": 79,
      "pages": 10,
-     "collected_utc": "2026-09-03T01:58:00.239Z"
+     "collected_utc": "2026-09-04T12:34:24.973Z"
     },
     "2026-09": {
-     "flights": 4,
+     "flights": 8,
      "pages": 1,
-     "collected_utc": "2026-09-03T01:58:01.908Z"
+     "collected_utc": "2026-09-04T12:34:28.042Z"
     }
    },
-   "total_flights": 689,
-   "last_run_utc": "2026-09-03T01:58:03.118Z",
+   "total_flights": 693,
+   "last_run_utc": "2026-09-04T12:34:29.250Z",
    "last_error": null
   },
   "hawthorne-pd-ca": {
@@ -8881,16 +8881,16 @@
     "2026-08": {
      "flights": 172,
      "pages": 22,
-     "collected_utc": "2026-09-03T02:14:56.224Z"
+     "collected_utc": "2026-09-04T12:34:48.422Z"
     },
     "2026-09": {
      "flights": 17,
      "pages": 3,
-     "collected_utc": "2026-09-03T02:15:01.297Z"
+     "collected_utc": "2026-09-04T12:34:53.268Z"
     }
    },
    "total_flights": 4450,
-   "last_run_utc": "2026-09-03T02:15:02.505Z",
+   "last_run_utc": "2026-09-04T12:34:54.470Z",
    "last_error": null
   },
   "hemet-pd-ca": {
@@ -9115,16 +9115,16 @@
     "2026-08": {
      "flights": 139,
      "pages": 18,
-     "collected_utc": "2026-09-03T02:07:17.438Z"
+     "collected_utc": "2026-09-04T12:34:48.164Z"
     },
     "2026-09": {
-     "flights": 15,
-     "pages": 2,
-     "collected_utc": "2026-09-03T02:07:20.922Z"
+     "flights": 27,
+     "pages": 4,
+     "collected_utc": "2026-09-04T12:34:54.440Z"
     }
    },
-   "total_flights": 1739,
-   "last_run_utc": "2026-09-03T02:07:22.135Z",
+   "total_flights": 1743,
+   "last_run_utc": "2026-09-04T12:34:55.643Z",
    "last_error": null
   },
   "hempstead-pd-ny": {
@@ -9349,16 +9349,16 @@
     "2026-08": {
      "flights": 155,
      "pages": 20,
-     "collected_utc": "2026-09-03T02:05:17.651Z"
+     "collected_utc": "2026-09-04T12:35:10.028Z"
     },
     "2026-09": {
-     "flights": 4,
-     "pages": 1,
-     "collected_utc": "2026-09-03T02:05:19.268Z"
+     "flights": 9,
+     "pages": 2,
+     "collected_utc": "2026-09-04T12:35:13.138Z"
     }
    },
-   "total_flights": 1241,
-   "last_run_utc": "2026-09-03T02:05:20.480Z",
+   "total_flights": 1246,
+   "last_run_utc": "2026-09-04T12:35:14.340Z",
    "last_error": null
   },
   "humble-pd-tx": {
@@ -9583,16 +9583,16 @@
     "2026-08": {
      "flights": 102,
      "pages": 13,
-     "collected_utc": "2026-09-03T02:12:10.314Z"
+     "collected_utc": "2026-09-04T12:35:04.071Z"
     },
     "2026-09": {
      "flights": 1,
      "pages": 1,
-     "collected_utc": "2026-09-03T02:12:11.844Z"
+     "collected_utc": "2026-09-04T12:35:05.513Z"
     }
    },
    "total_flights": 1420,
-   "last_run_utc": "2026-09-03T02:12:13.048Z",
+   "last_run_utc": "2026-09-04T12:35:06.722Z",
    "last_error": null
   },
   "keystone-pd-co": {
@@ -9817,16 +9817,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:08:34.241Z"
+     "collected_utc": "2026-09-04T12:35:00.718Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:08:35.775Z"
+     "collected_utc": "2026-09-04T12:35:02.197Z"
     }
    },
    "total_flights": 7,
-   "last_run_utc": "2026-09-03T02:08:36.992Z",
+   "last_run_utc": "2026-09-04T12:35:03.400Z",
    "last_error": null
   },
   "las-cruces-pd-nm": {
@@ -10051,16 +10051,16 @@
     "2026-08": {
      "flights": 380,
      "pages": 48,
-     "collected_utc": "2026-09-03T02:25:37.984Z"
+     "collected_utc": "2026-09-04T12:36:42.225Z"
     },
     "2026-09": {
      "flights": 18,
      "pages": 3,
-     "collected_utc": "2026-09-03T02:25:43.043Z"
+     "collected_utc": "2026-09-04T12:36:46.643Z"
     }
    },
-   "total_flights": 2978,
-   "last_run_utc": "2026-09-03T02:25:44.259Z",
+   "total_flights": 2986,
+   "last_run_utc": "2026-09-04T12:36:47.845Z",
    "last_error": null
   },
   "longmont-pd-co": {
@@ -10285,16 +10285,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:13:24.513Z"
+     "collected_utc": "2026-09-04T12:35:09.858Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:13:26.025Z"
+     "collected_utc": "2026-09-04T12:35:11.292Z"
     }
    },
    "total_flights": 0,
-   "last_run_utc": "2026-09-03T02:13:27.231Z",
+   "last_run_utc": "2026-09-04T12:35:12.494Z",
    "last_error": null
   },
   "los-angeles-pd-ca": {
@@ -10519,16 +10519,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:14:59.356Z"
+     "collected_utc": "2026-09-04T12:35:13.205Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:15:00.897Z"
+     "collected_utc": "2026-09-04T12:35:14.662Z"
     }
    },
    "total_flights": 84,
-   "last_run_utc": "2026-09-03T02:15:02.101Z",
+   "last_run_utc": "2026-09-04T12:35:15.863Z",
    "last_error": null
   },
   "loveland-pd-co": {
@@ -10753,16 +10753,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:16:14.274Z"
+     "collected_utc": "2026-09-04T12:35:18.845Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:16:15.792Z"
+     "collected_utc": "2026-09-04T12:35:20.370Z"
     }
    },
    "total_flights": 0,
-   "last_run_utc": "2026-09-03T02:16:16.997Z",
+   "last_run_utc": "2026-09-04T12:35:21.574Z",
    "last_error": null
   },
   "mansfield-tx-pd-tx": {
@@ -10987,16 +10987,16 @@
     "2026-08": {
      "flights": 181,
      "pages": 23,
-     "collected_utc": "2026-09-03T02:21:13.497Z"
+     "collected_utc": "2026-09-04T12:36:10.954Z"
     },
     "2026-09": {
-     "flights": 8,
-     "pages": 1,
-     "collected_utc": "2026-09-03T02:21:16.750Z"
+     "flights": 15,
+     "pages": 2,
+     "collected_utc": "2026-09-04T12:36:14.035Z"
     }
    },
    "total_flights": 1107,
-   "last_run_utc": "2026-09-03T02:21:17.957Z",
+   "last_run_utc": "2026-09-04T12:36:15.237Z",
    "last_error": null
   },
   "mesa-pd-az": {
@@ -11221,16 +11221,16 @@
     "2026-08": {
      "flights": 273,
      "pages": 35,
-     "collected_utc": "2026-09-03T02:31:55.620Z"
+     "collected_utc": "2026-09-04T12:36:43.527Z"
     },
     "2026-09": {
      "flights": 19,
      "pages": 3,
-     "collected_utc": "2026-09-03T02:32:00.842Z"
+     "collected_utc": "2026-09-04T12:36:47.937Z"
     }
    },
    "total_flights": 3280,
-   "last_run_utc": "2026-09-03T02:32:02.060Z",
+   "last_run_utc": "2026-09-04T12:36:49.139Z",
    "last_error": null
   },
   "midwest-city-pd-ok": {
@@ -11455,16 +11455,16 @@
     "2026-08": {
      "flights": 97,
      "pages": 13,
-     "collected_utc": "2026-09-03T02:27:52.613Z"
+     "collected_utc": "2026-09-04T12:36:06.088Z"
     },
     "2026-09": {
-     "flights": 5,
-     "pages": 1,
-     "collected_utc": "2026-09-03T02:27:54.263Z"
+     "flights": 10,
+     "pages": 2,
+     "collected_utc": "2026-09-04T12:36:09.190Z"
     }
    },
-   "total_flights": 1189,
-   "last_run_utc": "2026-09-03T02:27:55.471Z",
+   "total_flights": 1194,
+   "last_run_utc": "2026-09-04T12:36:10.392Z",
    "last_error": null
   },
   "mmozol-co": {
@@ -11689,16 +11689,16 @@
     "2026-08": {
      "flights": 3,
      "pages": 1,
-     "collected_utc": "2026-09-03T02:28:06.458Z"
+     "collected_utc": "2026-09-04T12:36:18.149Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:28:08.059Z"
+     "collected_utc": "2026-09-04T12:36:19.565Z"
     }
    },
    "total_flights": 376,
-   "last_run_utc": "2026-09-03T02:28:09.270Z",
+   "last_run_utc": "2026-09-04T12:36:20.767Z",
    "last_error": null
   },
   "monarch-pd-co": {
@@ -11923,16 +11923,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:27:57.803Z"
+     "collected_utc": "2026-09-04T12:36:20.209Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:27:59.356Z"
+     "collected_utc": "2026-09-04T12:36:21.639Z"
     }
    },
    "total_flights": 7,
-   "last_run_utc": "2026-09-03T02:28:00.559Z",
+   "last_run_utc": "2026-09-04T12:36:22.840Z",
    "last_error": null
   },
   "mooresville-pd-nc": {
@@ -12157,16 +12157,16 @@
     "2026-08": {
      "flights": 69,
      "pages": 9,
-     "collected_utc": "2026-09-03T02:35:31.311Z"
+     "collected_utc": "2026-09-04T12:36:48.114Z"
     },
     "2026-09": {
-     "flights": 6,
-     "pages": 1,
-     "collected_utc": "2026-09-03T02:35:33.069Z"
+     "flights": 17,
+     "pages": 3,
+     "collected_utc": "2026-09-04T12:36:52.904Z"
     }
    },
-   "total_flights": 1367,
-   "last_run_utc": "2026-09-03T02:35:34.275Z",
+   "total_flights": 1378,
+   "last_run_utc": "2026-09-04T12:36:54.113Z",
    "last_error": null
   },
   "oak-brook-pd-il": {
@@ -12391,16 +12391,16 @@
     "2026-08": {
      "flights": 76,
      "pages": 10,
-     "collected_utc": "2026-09-03T02:35:51.388Z"
+     "collected_utc": "2026-09-04T12:37:00.184Z"
     },
     "2026-09": {
      "flights": 11,
      "pages": 2,
-     "collected_utc": "2026-09-03T02:35:54.724Z"
+     "collected_utc": "2026-09-04T12:37:03.086Z"
     }
    },
    "total_flights": 1558,
-   "last_run_utc": "2026-09-03T02:35:55.945Z",
+   "last_run_utc": "2026-09-04T12:37:04.293Z",
    "last_error": null
   },
   "peoria-pd-az": {
@@ -12625,16 +12625,16 @@
     "2026-08": {
      "flights": 413,
      "pages": 52,
-     "collected_utc": "2026-09-03T02:39:30.602Z"
+     "collected_utc": "2026-09-04T12:38:58.738Z"
     },
     "2026-09": {
-     "flights": 35,
-     "pages": 5,
-     "collected_utc": "2026-09-03T02:39:39.429Z"
+     "flights": 75,
+     "pages": 10,
+     "collected_utc": "2026-09-04T12:39:15.790Z"
     }
    },
-   "total_flights": 1919,
-   "last_run_utc": "2026-09-03T02:39:40.644Z",
+   "total_flights": 1935,
+   "last_run_utc": "2026-09-04T12:39:16.992Z",
    "last_error": null
   },
   "perth-amboy-nj": {
@@ -12859,16 +12859,16 @@
     "2026-08": {
      "flights": 175,
      "pages": 22,
-     "collected_utc": "2026-09-03T02:41:52.249Z"
+     "collected_utc": "2026-09-04T12:37:59.000Z"
     },
     "2026-09": {
      "flights": 4,
      "pages": 1,
-     "collected_utc": "2026-09-03T02:41:53.848Z"
+     "collected_utc": "2026-09-04T12:38:00.440Z"
     }
    },
    "total_flights": 1907,
-   "last_run_utc": "2026-09-03T02:41:55.067Z",
+   "last_run_utc": "2026-09-04T12:38:01.643Z",
    "last_error": null
   },
   "prosper-pd-tx": {
@@ -13093,16 +13093,16 @@
     "2026-08": {
      "flights": 251,
      "pages": 32,
-     "collected_utc": "2026-09-03T02:47:33.268Z"
+     "collected_utc": "2026-09-04T12:38:23.631Z"
     },
     "2026-09": {
      "flights": 29,
      "pages": 4,
-     "collected_utc": "2026-09-03T02:47:40.203Z"
+     "collected_utc": "2026-09-04T12:38:29.665Z"
     }
    },
-   "total_flights": 2528,
-   "last_run_utc": "2026-09-03T02:47:41.422Z",
+   "total_flights": 2536,
+   "last_run_utc": "2026-09-04T12:38:30.867Z",
    "last_error": null
   },
   "raleigh-pd-nc": {
@@ -13327,16 +13327,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:37:08.640Z"
+     "collected_utc": "2026-09-04T12:37:09.354Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:37:10.205Z"
+     "collected_utc": "2026-09-04T12:37:10.779Z"
     }
    },
    "total_flights": 4,
-   "last_run_utc": "2026-09-03T02:37:11.412Z",
+   "last_run_utc": "2026-09-04T12:37:11.981Z",
    "last_error": null
   },
   "redondo-beach-pd-ca": {
@@ -13561,16 +13561,16 @@
     "2026-08": {
      "flights": 250,
      "pages": 32,
-     "collected_utc": "2026-09-03T02:59:44.367Z"
+     "collected_utc": "2026-09-04T12:38:29.219Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T02:59:46.003Z"
+     "collected_utc": "2026-09-04T12:38:30.671Z"
     }
    },
    "total_flights": 4591,
-   "last_run_utc": "2026-09-03T02:59:47.209Z",
+   "last_run_utc": "2026-09-04T12:38:31.873Z",
    "last_error": null
   },
   "riverside-county-so-ca": {
@@ -13795,16 +13795,16 @@
     "2026-08": {
      "flights": 112,
      "pages": 14,
-     "collected_utc": "2026-09-03T02:47:20.413Z"
+     "collected_utc": "2026-09-04T12:38:37.390Z"
     },
     "2026-09": {
-     "flights": 3,
+     "flights": 7,
      "pages": 1,
-     "collected_utc": "2026-09-03T02:47:22.008Z"
+     "collected_utc": "2026-09-04T12:38:38.958Z"
     }
    },
-   "total_flights": 1336,
-   "last_run_utc": "2026-09-03T02:47:23.228Z",
+   "total_flights": 1340,
+   "last_run_utc": "2026-09-04T12:38:40.161Z",
    "last_error": null
   },
   "roanoke-pd-tx": {
@@ -14029,16 +14029,16 @@
     "2026-08": {
      "flights": 158,
      "pages": 20,
-     "collected_utc": "2026-09-03T02:46:16.981Z"
+     "collected_utc": "2026-09-04T12:39:21.836Z"
     },
     "2026-09": {
-     "flights": 6,
-     "pages": 1,
-     "collected_utc": "2026-09-03T02:46:18.674Z"
+     "flights": 10,
+     "pages": 2,
+     "collected_utc": "2026-09-04T12:39:24.871Z"
     }
    },
-   "total_flights": 760,
-   "last_run_utc": "2026-09-03T02:46:19.892Z",
+   "total_flights": 764,
+   "last_run_utc": "2026-09-04T12:39:26.081Z",
    "last_error": null
   },
   "san-angelo-tx-pd-tx": {
@@ -14263,16 +14263,16 @@
     "2026-08": {
      "flights": 306,
      "pages": 39,
-     "collected_utc": "2026-09-03T02:51:00.430Z"
+     "collected_utc": "2026-09-04T12:40:10.894Z"
     },
     "2026-09": {
      "flights": 36,
      "pages": 5,
-     "collected_utc": "2026-09-03T02:51:09.282Z"
+     "collected_utc": "2026-09-04T12:40:18.838Z"
     }
    },
-   "total_flights": 699,
-   "last_run_utc": "2026-09-03T02:51:10.491Z",
+   "total_flights": 718,
+   "last_run_utc": "2026-09-04T12:40:20.040Z",
    "last_error": null
   },
   "san-rafael-pd-ca": {
@@ -14497,16 +14497,16 @@
     "2026-08": {
      "flights": 171,
      "pages": 22,
-     "collected_utc": "2026-09-03T02:54:05.004Z"
+     "collected_utc": "2026-09-04T12:39:39.400Z"
     },
     "2026-09": {
-     "flights": 13,
-     "pages": 2,
-     "collected_utc": "2026-09-03T02:54:08.431Z"
+     "flights": 27,
+     "pages": 4,
+     "collected_utc": "2026-09-04T12:39:46.109Z"
     }
    },
-   "total_flights": 1248,
-   "last_run_utc": "2026-09-03T02:54:09.644Z",
+   "total_flights": 1262,
+   "last_run_utc": "2026-09-04T12:39:47.311Z",
    "last_error": null
   },
   "sansom-park-pd-tx": {
@@ -14731,16 +14731,16 @@
     "2026-08": {
      "flights": 29,
      "pages": 4,
-     "collected_utc": "2026-09-03T02:49:49.406Z"
+     "collected_utc": "2026-09-04T12:39:35.009Z"
     },
     "2026-09": {
-     "flights": 4,
+     "flights": 7,
      "pages": 1,
-     "collected_utc": "2026-09-03T02:49:51.038Z"
+     "collected_utc": "2026-09-04T12:39:36.550Z"
     }
    },
-   "total_flights": 219,
-   "last_run_utc": "2026-09-03T02:49:52.260Z",
+   "total_flights": 222,
+   "last_run_utc": "2026-09-04T12:39:37.753Z",
    "last_error": null
   },
   "scottsdale-pd-az": {
@@ -14965,16 +14965,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:04:08.790Z"
+     "collected_utc": "2026-09-04T12:39:31.105Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:04:10.365Z"
+     "collected_utc": "2026-09-04T12:39:32.565Z"
     }
    },
    "total_flights": 2936,
-   "last_run_utc": "2026-09-03T03:04:11.581Z",
+   "last_run_utc": "2026-09-04T12:39:33.767Z",
    "last_error": null
   },
   "show-low-pd-az": {
@@ -15199,16 +15199,16 @@
     "2026-08": {
      "flights": 49,
      "pages": 7,
-     "collected_utc": "2026-09-03T02:53:33.886Z"
+     "collected_utc": "2026-09-04T12:39:56.745Z"
     },
     "2026-09": {
      "flights": 1,
      "pages": 1,
-     "collected_utc": "2026-09-03T02:53:35.427Z"
+     "collected_utc": "2026-09-04T12:39:58.193Z"
     }
    },
    "total_flights": 263,
-   "last_run_utc": "2026-09-03T02:53:36.636Z",
+   "last_run_utc": "2026-09-04T12:39:59.398Z",
    "last_error": null
   },
   "south-bend-pd-in": {
@@ -15433,16 +15433,16 @@
     "2026-08": {
      "flights": 460,
      "pages": 58,
-     "collected_utc": "2026-09-03T03:06:41.255Z"
+     "collected_utc": "2026-09-04T12:41:59.840Z"
     },
     "2026-09": {
-     "flights": 29,
-     "pages": 4,
-     "collected_utc": "2026-09-03T03:06:48.422Z"
+     "flights": 56,
+     "pages": 7,
+     "collected_utc": "2026-09-04T12:42:13.174Z"
     }
    },
-   "total_flights": 2232,
-   "last_run_utc": "2026-09-03T03:06:49.630Z",
+   "total_flights": 2259,
+   "last_run_utc": "2026-09-04T12:42:14.375Z",
    "last_error": null
   },
   "southern-illinois-university-pd-il": {
@@ -15667,16 +15667,16 @@
     "2026-08": {
      "flights": 60,
      "pages": 8,
-     "collected_utc": "2026-09-03T02:58:50.055Z"
+     "collected_utc": "2026-09-04T12:40:16.268Z"
     },
     "2026-09": {
-     "flights": 4,
+     "flights": 8,
      "pages": 1,
-     "collected_utc": "2026-09-03T02:58:51.691Z"
+     "collected_utc": "2026-09-04T12:40:19.284Z"
     }
    },
-   "total_flights": 846,
-   "last_run_utc": "2026-09-03T02:58:52.902Z",
+   "total_flights": 850,
+   "last_run_utc": "2026-09-04T12:40:20.486Z",
    "last_error": null
   },
   "southington-pd-ct": {
@@ -15901,16 +15901,16 @@
     "2026-08": {
      "flights": 19,
      "pages": 3,
-     "collected_utc": "2026-09-03T03:00:42.376Z"
+     "collected_utc": "2026-09-04T12:40:17.864Z"
     },
     "2026-09": {
-     "flights": 7,
+     "flights": 8,
      "pages": 1,
-     "collected_utc": "2026-09-03T03:00:44.101Z"
+     "collected_utc": "2026-09-04T12:40:20.904Z"
     }
    },
-   "total_flights": 135,
-   "last_run_utc": "2026-09-03T03:00:45.318Z",
+   "total_flights": 136,
+   "last_run_utc": "2026-09-04T12:40:22.106Z",
    "last_error": null
   },
   "steamboat-pd-co": {
@@ -16135,16 +16135,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:01:14.835Z"
+     "collected_utc": "2026-09-04T12:40:26.362Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:01:16.436Z"
+     "collected_utc": "2026-09-04T12:40:27.815Z"
     }
    },
    "total_flights": 81,
-   "last_run_utc": "2026-09-03T03:01:17.645Z",
+   "last_run_utc": "2026-09-04T12:40:29.020Z",
    "last_error": null
   },
   "suisun-city-pd-ca": {
@@ -16369,16 +16369,16 @@
     "2026-08": {
      "flights": 21,
      "pages": 3,
-     "collected_utc": "2026-09-03T03:04:13.240Z"
+     "collected_utc": "2026-09-04T12:40:42.264Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:04:14.789Z"
+     "collected_utc": "2026-09-04T12:40:43.716Z"
     }
    },
    "total_flights": 554,
-   "last_run_utc": "2026-09-03T03:04:15.993Z",
+   "last_run_utc": "2026-09-04T12:40:44.919Z",
    "last_error": null
   },
   "telluride-co": {
@@ -16603,16 +16603,16 @@
     "2026-08": {
      "flights": 204,
      "pages": 26,
-     "collected_utc": "2026-09-03T03:04:14.343Z"
+     "collected_utc": "2026-09-04T12:41:21.360Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:04:15.894Z"
+     "collected_utc": "2026-09-04T12:41:22.786Z"
     }
    },
    "total_flights": 430,
-   "last_run_utc": "2026-09-03T03:04:17.102Z",
+   "last_run_utc": "2026-09-04T12:41:23.987Z",
    "last_error": null
   },
   "temple-pd-tx": {
@@ -16837,16 +16837,16 @@
     "2026-08": {
      "flights": 112,
      "pages": 14,
-     "collected_utc": "2026-09-03T03:07:14.550Z"
+     "collected_utc": "2026-09-04T12:41:16.364Z"
     },
     "2026-09": {
-     "flights": 2,
+     "flights": 3,
      "pages": 1,
-     "collected_utc": "2026-09-03T03:07:16.113Z"
+     "collected_utc": "2026-09-04T12:41:17.840Z"
     }
    },
-   "total_flights": 402,
-   "last_run_utc": "2026-09-03T03:07:17.325Z",
+   "total_flights": 403,
+   "last_run_utc": "2026-09-04T12:41:19.047Z",
    "last_error": null
   },
   "toledo-pd-oh": {
@@ -17071,16 +17071,16 @@
     "2026-08": {
      "flights": 448,
      "pages": 56,
-     "collected_utc": "2026-09-03T03:20:44.300Z"
+     "collected_utc": "2026-09-04T12:43:07.710Z"
     },
     "2026-09": {
      "flights": 25,
      "pages": 4,
-     "collected_utc": "2026-09-03T03:20:51.397Z"
+     "collected_utc": "2026-09-04T12:43:13.723Z"
     }
    },
    "total_flights": 2741,
-   "last_run_utc": "2026-09-03T03:20:52.620Z",
+   "last_run_utc": "2026-09-04T12:43:14.925Z",
    "last_error": null
   },
   "university-st-thomas-pd-tx": {
@@ -17305,16 +17305,16 @@
     "2026-08": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:05:31.710Z"
+     "collected_utc": "2026-09-04T12:41:25.252Z"
     },
     "2026-09": {
      "flights": 0,
      "pages": 0,
-     "collected_utc": "2026-09-03T03:05:33.276Z"
+     "collected_utc": "2026-09-04T12:41:26.672Z"
     }
    },
    "total_flights": 17,
-   "last_run_utc": "2026-09-03T03:05:34.490Z",
+   "last_run_utc": "2026-09-04T12:41:27.875Z",
    "last_error": null
   },
   "washoe-county-so-nv": {
@@ -17539,16 +17539,16 @@
     "2026-08": {
      "flights": 381,
      "pages": 48,
-     "collected_utc": "2026-09-03T03:16:29.294Z"
+     "collected_utc": "2026-09-04T12:43:16.909Z"
     },
     "2026-09": {
      "flights": 17,
      "pages": 3,
-     "collected_utc": "2026-09-03T03:16:34.352Z"
+     "collected_utc": "2026-09-04T12:43:21.530Z"
     }
    },
-   "total_flights": 1910,
-   "last_run_utc": "2026-09-03T03:16:35.575Z",
+   "total_flights": 1923,
+   "last_run_utc": "2026-09-04T12:43:22.733Z",
    "last_error": null
   }
  }

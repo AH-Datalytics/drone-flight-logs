@@ -1855,3 +1855,10 @@
 {"flight_number":"CONYERSPD-260902-0003","time_period":{"begin":"2026-09-02T19:52:35.984Z","end":"2026-09-02T19:54:16.266Z"},"duration_seconds":100.281701,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"CONYERSPD-260902-0002","time_period":{"begin":"2026-09-02T19:21:17.577Z","end":"2026-09-02T19:42:51.098Z"},"duration_seconds":1293.520634,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"CONYERSPD-260902-0001","time_period":{"begin":"2026-09-02T09:18:22.753Z","end":"2026-09-02T09:46:47.822Z"},"duration_seconds":1705.06888,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"CONYERSPD-260904-0002","time_period":{"begin":"2026-09-04T06:07:51.956Z","end":"2026-09-04T06:29:11.872Z"},"duration_seconds":1279.915971,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"CONYERSPD-260904-0001","time_period":{"begin":"2026-09-04T05:43:07.055Z","end":"2026-09-04T06:06:05.625Z"},"duration_seconds":1378.57001,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"CONYERSPD-260903-0005","time_period":{"begin":"2026-09-04T02:41:09.874Z","end":"2026-09-04T02:59:06.119Z"},"duration_seconds":1076.245463,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"CONYERSPD-260903-0004","time_period":{"begin":"2026-09-03T20:33:59.302Z","end":"2026-09-03T20:57:25.097Z"},"duration_seconds":1405.794583,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"CONYERSPD-260903-0003","time_period":{"begin":"2026-09-03T20:02:23.511Z","end":"2026-09-03T20:24:15.075Z"},"duration_seconds":1311.564014,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"CONYERSPD-260903-0002","time_period":{"begin":"2026-09-03T19:59:32.026Z","end":"2026-09-03T20:01:01.437Z"},"duration_seconds":89.410579,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"CONYERSPD-260903-0001","time_period":{"begin":"2026-09-03T13:01:46.530Z","end":"2026-09-03T13:20:46.573Z"},"duration_seconds":1140.043464,"ce_hidden":false,"calls_for_service":[]}

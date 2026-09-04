@@ -5379,3 +5379,16 @@
 {"flight_number":"AZPD-260902-0003","time_period":{"begin":"2026-09-02T21:35:19.817Z","end":"2026-09-02T21:42:02.427Z"},"duration_seconds":402.610601,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"AZPD-260902-0002","time_period":{"begin":"2026-09-02T21:23:05.363Z","end":"2026-09-02T21:32:57.057Z"},"duration_seconds":591.693506,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"AZPD-260902-0001","time_period":{"begin":"2026-09-02T17:20:52.156Z","end":"2026-09-02T17:29:29.604Z"},"duration_seconds":517.448491,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0012","time_period":{"begin":"2026-09-04T06:51:36.730Z","end":"2026-09-04T07:02:47.300Z"},"duration_seconds":670.57071,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0011","time_period":{"begin":"2026-09-04T05:10:17.048Z","end":"2026-09-04T05:16:43.840Z"},"duration_seconds":386.792589,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0010","time_period":{"begin":"2026-09-04T05:00:28.306Z","end":"2026-09-04T05:06:16.424Z"},"duration_seconds":348.118584,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0009","time_period":{"begin":"2026-09-04T04:07:49.944Z","end":"2026-09-04T04:31:07.296Z"},"duration_seconds":1397.352113,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0008","time_period":{"begin":"2026-09-04T03:54:58.842Z","end":"2026-09-04T04:01:59.079Z"},"duration_seconds":420.237354,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0007","time_period":{"begin":"2026-09-04T03:36:30.304Z","end":"2026-09-04T03:54:04.794Z"},"duration_seconds":1054.490237,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0006","time_period":{"begin":"2026-09-04T03:12:15.899Z","end":"2026-09-04T03:36:05.895Z"},"duration_seconds":1429.995869,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0005","time_period":{"begin":"2026-09-04T01:48:41.840Z","end":"2026-09-04T02:03:29.619Z"},"duration_seconds":887.778635,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0004","time_period":{"begin":"2026-09-04T01:22:20.180Z","end":"2026-09-04T01:34:45.189Z"},"duration_seconds":745.008129,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0003","time_period":{"begin":"2026-09-03T23:06:02.760Z","end":"2026-09-03T23:19:54.241Z"},"duration_seconds":831.481108,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0002","time_period":{"begin":"2026-09-03T21:56:30.925Z","end":"2026-09-03T22:15:58.764Z"},"duration_seconds":1167.839576,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260903-0001","time_period":{"begin":"2026-09-03T21:01:31.759Z","end":"2026-09-03T21:08:33.258Z"},"duration_seconds":421.498346,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"AZPD-260902-0010","time_period":{"begin":"2026-09-03T02:33:05.860Z","end":"2026-09-03T02:37:43.048Z"},"duration_seconds":277.187816,"ce_hidden":false,"calls_for_service":[]}

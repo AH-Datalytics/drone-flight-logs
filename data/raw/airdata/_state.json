@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-09-03T14:49:12.434Z",
+ "updated_utc": "2026-09-04T13:39:54.718Z",
  "agencies": {
   "paradise-pd-ca": {
    "agency_id": "paradise-pd-ca",
@@ -61,7 +61,7 @@
     }
    },
    "total_flights": 26,
-   "last_run_utc": "2026-09-03T12:54:55.788Z",
+   "last_run_utc": "2026-09-04T13:33:26.800Z",
    "last_error": null
   },
   "anne-arundel-county-police-md": {
@@ -147,14 +147,14 @@
      "collected_utc": "2026-09-03T00:56:34.316Z"
     },
     "2026-08": {
-     "published": 11,
-     "collected": 11,
+     "published": 33,
+     "collected": 33,
      "complete": true,
-     "collected_utc": "2026-09-03T01:41:03.721Z"
+     "collected_utc": "2026-09-04T12:43:39.009Z"
     }
    },
-   "total_flights": 2267,
-   "last_run_utc": "2026-09-03T01:41:03.721Z",
+   "total_flights": 2289,
+   "last_run_utc": "2026-09-04T12:43:39.009Z",
    "last_error": null
   },
   "bothell-pd-wa": {
@@ -477,11 +477,11 @@
      "published": 3,
      "collected": 3,
      "complete": true,
-     "collected_utc": "2026-09-03T01:41:06.600Z"
+     "collected_utc": "2026-09-04T12:43:41.586Z"
     }
    },
    "total_flights": 672,
-   "last_run_utc": "2026-09-03T01:41:06.600Z",
+   "last_run_utc": "2026-09-04T12:43:41.586Z",
    "last_error": null
   },
   "chico-pd-ca": {
@@ -843,26 +843,26 @@
      "collected_utc": "2026-09-03T01:15:57.979Z"
     },
     "2026-06": {
-     "published": 33,
-     "collected": 33,
+     "published": 35,
+     "collected": 35,
      "complete": true,
-     "collected_utc": "2026-09-03T01:16:13.619Z"
+     "collected_utc": "2026-09-04T12:43:57.177Z"
     },
     "2026-07": {
-     "published": 22,
-     "collected": 22,
+     "published": 32,
+     "collected": 32,
      "complete": true,
-     "collected_utc": "2026-09-03T01:16:24.015Z"
+     "collected_utc": "2026-09-04T12:44:12.135Z"
     },
     "2026-08": {
-     "published": 27,
-     "collected": 27,
+     "published": 35,
+     "collected": 35,
      "complete": true,
-     "collected_utc": "2026-09-03T01:41:21.362Z"
+     "collected_utc": "2026-09-04T12:44:26.948Z"
     }
    },
-   "total_flights": 1797,
-   "last_run_utc": "2026-09-03T01:41:21.363Z",
+   "total_flights": 1817,
+   "last_run_utc": "2026-09-04T12:44:26.948Z",
    "last_error": null
   },
   "chula-vista-pd-ca": {
@@ -1257,17 +1257,17 @@
      "published": 390,
      "collected": 390,
      "complete": true,
-     "collected_utc": "2026-09-03T06:01:06.921Z"
+     "collected_utc": "2026-09-04T12:49:08.252Z"
     },
     "2026-09": {
-     "published": 8,
+     "published": 9,
      "collected": 9,
      "complete": true,
-     "collected_utc": "2026-09-03T06:01:15.251Z"
+     "collected_utc": "2026-09-04T12:49:16.283Z"
     }
    },
    "total_flights": 24348,
-   "last_run_utc": "2026-09-03T06:01:15.251Z",
+   "last_run_utc": "2026-09-04T12:49:16.284Z",
    "last_error": null
   },
   "coachella-valley-rtic-ca": {
@@ -1344,17 +1344,17 @@
      "published": 169,
      "collected": 169,
      "complete": true,
-     "collected_utc": "2026-09-03T06:15:25.143Z"
+     "collected_utc": "2026-09-04T12:50:28.520Z"
     },
     "2026-09": {
-     "published": 16,
-     "collected": 16,
+     "published": 23,
+     "collected": 23,
      "complete": true,
-     "collected_utc": "2026-09-03T06:15:32.662Z"
+     "collected_utc": "2026-09-04T12:50:38.053Z"
     }
    },
-   "total_flights": 2011,
-   "last_run_utc": "2026-09-03T06:15:32.663Z",
+   "total_flights": 2018,
+   "last_run_utc": "2026-09-04T12:50:38.054Z",
    "last_error": null
   },
   "elk-grove-pd-ca": {
@@ -1614,20 +1614,20 @@
      "collected_utc": "2026-09-03T06:33:44.474Z"
     },
     "2026-07": {
-     "published": 46,
-     "collected": 46,
+     "published": 47,
+     "collected": 47,
      "complete": true,
-     "collected_utc": "2026-09-03T06:34:04.907Z"
+     "collected_utc": "2026-09-04T12:50:59.372Z"
     },
     "2026-08": {
-     "published": 6,
-     "collected": 6,
+     "published": 10,
+     "collected": 10,
      "complete": true,
-     "collected_utc": "2026-09-03T06:34:07.477Z"
+     "collected_utc": "2026-09-04T12:51:04.561Z"
     }
    },
-   "total_flights": 2503,
-   "last_run_utc": "2026-09-03T06:34:07.478Z",
+   "total_flights": 2508,
+   "last_run_utc": "2026-09-04T12:51:04.561Z",
    "last_error": null
   },
   "everett-pd-wa": {
@@ -1716,11 +1716,11 @@
      "published": 1,
      "collected": 1,
      "complete": true,
-     "collected_utc": "2026-09-03T06:35:03.157Z"
+     "collected_utc": "2026-09-04T12:51:07.323Z"
     }
    },
    "total_flights": 82,
-   "last_run_utc": "2026-09-03T06:35:03.160Z",
+   "last_run_utc": "2026-09-04T12:51:07.323Z",
    "last_error": null
   },
   "irvine-pd-ca": {
@@ -1845,17 +1845,17 @@
      "published": 138,
      "collected": 138,
      "complete": true,
-     "collected_utc": "2026-09-03T07:00:30.268Z"
+     "collected_utc": "2026-09-04T12:52:13.300Z"
     },
     "2026-09": {
-     "published": 1,
-     "collected": 1,
+     "published": 18,
+     "collected": 18,
      "complete": true,
-     "collected_utc": "2026-09-03T07:00:32.936Z"
+     "collected_utc": "2026-09-04T12:52:22.498Z"
     }
    },
-   "total_flights": 3259,
-   "last_run_utc": "2026-09-03T07:00:32.937Z",
+   "total_flights": 3276,
+   "last_run_utc": "2026-09-04T12:52:22.499Z",
    "last_error": null
   },
   "king-county-so-wa": {
@@ -1911,14 +1911,14 @@
      "collected_utc": "2026-09-03T07:03:44.376Z"
     },
     "2026-08": {
-     "published": 14,
-     "collected": 14,
+     "published": 16,
+     "collected": 16,
      "complete": true,
-     "collected_utc": "2026-09-03T07:03:52.121Z"
+     "collected_utc": "2026-09-04T12:52:30.941Z"
     }
    },
-   "total_flights": 431,
-   "last_run_utc": "2026-09-03T07:03:52.123Z",
+   "total_flights": 433,
+   "last_run_utc": "2026-09-04T12:52:30.942Z",
    "last_error": null
   },
   "la-port-police-ca": {
@@ -2010,14 +2010,14 @@
      "collected_utc": "2026-09-03T07:09:59.474Z"
     },
     "2026-08": {
-     "published": 86,
-     "collected": 86,
+     "published": 88,
+     "collected": 88,
      "complete": true,
-     "collected_utc": "2026-09-03T07:10:37.407Z"
+     "collected_utc": "2026-09-04T12:53:08.860Z"
     }
    },
-   "total_flights": 934,
-   "last_run_utc": "2026-09-03T07:10:37.409Z",
+   "total_flights": 936,
+   "last_run_utc": "2026-09-04T12:53:08.861Z",
    "last_error": null
   },
   "lancaster-pd-ca": {
@@ -2172,11 +2172,11 @@
      "published": 12,
      "collected": 12,
      "complete": true,
-     "collected_utc": "2026-09-03T07:22:37.782Z"
+     "collected_utc": "2026-09-04T12:53:14.377Z"
     }
    },
    "total_flights": 1647,
-   "last_run_utc": "2026-09-03T07:22:37.783Z",
+   "last_run_utc": "2026-09-04T12:53:14.378Z",
    "last_error": null
   },
   "las-vegas-metro-pd-nv": {
@@ -2184,10 +2184,10 @@
    "slug": "lvmpd",
    "months": {
     "2025-09": {
-     "published": 749,
-     "collected": 749,
+     "published": 725,
+     "collected": 725,
      "complete": true,
-     "collected_utc": "2026-09-03T07:33:49.390Z"
+     "collected_utc": "2026-09-04T13:03:30.470Z"
     },
     "2025-10": {
      "published": 1312,
@@ -2250,14 +2250,14 @@
      "collected_utc": "2026-09-03T12:20:40.778Z"
     },
     "2026-08": {
-     "published": 1974,
-     "collected": 1974,
+     "published": 2068,
+     "collected": 2069,
      "complete": true,
-     "collected_utc": "2026-09-03T12:49:59.604Z"
+     "collected_utc": "2026-09-04T13:33:14.803Z"
     }
    },
-   "total_flights": 22199,
-   "last_run_utc": "2026-09-03T12:49:59.604Z",
+   "total_flights": 22293,
+   "last_run_utc": "2026-09-04T13:33:14.803Z",
    "last_error": null
   },
   "los-altos-pd-ca": {
@@ -2346,11 +2346,11 @@
      "published": 2,
      "collected": 2,
      "complete": true,
-     "collected_utc": "2026-09-03T12:50:37.857Z"
+     "collected_utc": "2026-09-04T13:33:17.456Z"
     }
    },
    "total_flights": 50,
-   "last_run_utc": "2026-09-03T12:50:37.859Z",
+   "last_run_utc": "2026-09-04T13:33:17.457Z",
    "last_error": null
   },
   "mankato-mn": {
@@ -2655,11 +2655,11 @@
      "published": 20,
      "collected": 20,
      "complete": true,
-     "collected_utc": "2026-09-03T12:54:55.219Z"
+     "collected_utc": "2026-09-04T13:33:26.515Z"
     }
    },
    "total_flights": 512,
-   "last_run_utc": "2026-09-03T12:54:55.221Z",
+   "last_run_utc": "2026-09-04T13:33:26.516Z",
    "last_error": null
   },
   "sacramento-pd-ca": {
@@ -3093,10 +3093,10 @@
      "collected_utc": "2026-09-03T13:36:19.857Z"
     },
     "2025-12": {
-     "published": 60,
-     "collected": 60,
+     "published": 58,
+     "collected": 58,
      "complete": true,
-     "collected_utc": "2026-09-03T13:36:47.119Z"
+     "collected_utc": "2026-09-04T13:33:53.511Z"
     },
     "2026-01": {
      "published": 87,
@@ -3105,16 +3105,16 @@
      "collected_utc": "2026-09-03T13:37:27.118Z"
     },
     "2026-02": {
-     "published": 42,
-     "collected": 42,
+     "published": 40,
+     "collected": 40,
      "complete": true,
-     "collected_utc": "2026-09-03T13:37:45.603Z"
+     "collected_utc": "2026-09-04T13:34:11.299Z"
     },
     "2026-03": {
-     "published": 70,
-     "collected": 70,
+     "published": 69,
+     "collected": 69,
      "complete": true,
-     "collected_utc": "2026-09-03T13:38:17.541Z"
+     "collected_utc": "2026-09-04T13:34:41.635Z"
     },
     "2026-04": {
      "published": 60,
@@ -3141,14 +3141,20 @@
      "collected_utc": "2026-09-03T13:40:28.397Z"
     },
     "2026-08": {
-     "published": 87,
-     "collected": 87,
+     "published": 94,
+     "collected": 94,
      "complete": true,
-     "collected_utc": "2026-09-03T13:41:09.197Z"
+     "collected_utc": "2026-09-04T13:35:23.285Z"
+    },
+    "2026-09": {
+     "published": 3,
+     "collected": 3,
+     "complete": true,
+     "collected_utc": "2026-09-04T13:35:25.752Z"
     }
    },
-   "total_flights": 5905,
-   "last_run_utc": "2026-09-03T13:41:09.199Z",
+   "total_flights": 5915,
+   "last_run_utc": "2026-09-04T13:35:25.753Z",
    "last_error": null
   },
   "snohomish-county-so-wa": {
@@ -3345,11 +3351,17 @@
      "published": 67,
      "collected": 67,
      "complete": true,
-     "collected_utc": "2026-09-03T13:56:08.685Z"
+     "collected_utc": "2026-09-04T13:36:03.201Z"
+    },
+    "2026-09": {
+     "published": 2,
+     "collected": 2,
+     "complete": true,
+     "collected_utc": "2026-09-04T13:36:06.266Z"
     }
    },
-   "total_flights": 1645,
-   "last_run_utc": "2026-09-03T13:56:08.687Z",
+   "total_flights": 1647,
+   "last_run_utc": "2026-09-04T13:36:06.266Z",
    "last_error": null
   },
   "ventura-county-so-es-ca": {
@@ -3612,11 +3624,11 @@
      "published": 27,
      "collected": 27,
      "complete": true,
-     "collected_utc": "2026-09-03T14:16:28.895Z"
+     "collected_utc": "2026-09-04T13:36:18.967Z"
     }
    },
    "total_flights": 2768,
-   "last_run_utc": "2026-09-03T14:16:28.896Z",
+   "last_run_utc": "2026-09-04T13:36:18.967Z",
    "last_error": null
   },
   "west-palm-beach-pd-fl": {
@@ -3792,26 +3804,26 @@
      "collected_utc": "2026-09-03T14:43:15.393Z"
     },
     "2026-07": {
-     "published": 217,
-     "collected": 217,
+     "published": 218,
+     "collected": 218,
      "complete": true,
-     "collected_utc": "2026-09-03T14:44:57.156Z"
+     "collected_utc": "2026-09-04T13:37:57.067Z"
     },
     "2026-08": {
-     "published": 228,
-     "collected": 228,
+     "published": 229,
+     "collected": 229,
      "complete": true,
-     "collected_utc": "2026-09-03T14:46:40.660Z"
+     "collected_utc": "2026-09-04T13:39:39.030Z"
     },
     "2026-09": {
-     "published": 21,
-     "collected": 21,
+     "published": 23,
+     "collected": 23,
      "complete": true,
-     "collected_utc": "2026-09-03T14:46:51.310Z"
+     "collected_utc": "2026-09-04T13:39:49.596Z"
     }
    },
-   "total_flights": 3908,
-   "last_run_utc": "2026-09-03T14:46:51.312Z",
+   "total_flights": 3912,
+   "last_run_utc": "2026-09-04T13:39:49.596Z",
    "last_error": null
   },
   "westmont-pd-il": {
@@ -3996,11 +4008,11 @@
      "published": 12,
      "collected": 12,
      "complete": true,
-     "collected_utc": "2026-09-03T14:49:12.432Z"
+     "collected_utc": "2026-09-04T13:39:54.717Z"
     }
    },
    "total_flights": 247,
-   "last_run_utc": "2026-09-03T14:49:12.434Z",
+   "last_run_utc": "2026-09-04T13:39:54.718Z",
    "last_error": null
   }
  }

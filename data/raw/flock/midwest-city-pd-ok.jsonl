@@ -1187,3 +1187,8 @@
 {"flight_number":"MWPD-260902-0003","time_period":{"begin":"2026-09-03T01:59:36.412Z","end":"2026-09-03T02:13:51.927Z"},"duration_seconds":855.515031,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"MWPD-260902-0002","time_period":{"begin":"2026-09-03T01:44:08.074Z","end":"2026-09-03T01:55:34.645Z"},"duration_seconds":686.57087,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"MWPD-260902-0001","time_period":{"begin":"2026-09-02T22:43:40.297Z","end":"2026-09-02T22:48:32.603Z"},"duration_seconds":292.305502,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MWPD-260903-0005","time_period":{"begin":"2026-09-04T01:35:18.531Z","end":"2026-09-04T01:51:48.414Z"},"duration_seconds":989.882963,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MWPD-260903-0004","time_period":{"begin":"2026-09-03T23:28:07.820Z","end":"2026-09-03T23:44:19.978Z"},"duration_seconds":972.157894,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MWPD-260903-0003","time_period":{"begin":"2026-09-03T22:24:04.132Z","end":"2026-09-03T22:27:02.550Z"},"duration_seconds":178.418711,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MWPD-260903-0002","time_period":{"begin":"2026-09-03T14:47:16.501Z","end":"2026-09-03T15:09:46.315Z"},"duration_seconds":1349.813623,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"MWPD-260903-0001","time_period":{"begin":"2026-09-03T14:15:57.057Z","end":"2026-09-03T14:46:10.945Z"},"duration_seconds":1813.887179,"ce_hidden":false,"calls_for_service":[]}

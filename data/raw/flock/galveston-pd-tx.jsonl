@@ -407,3 +407,4 @@
 {"flight_number":"GVPD-260805-0001","time_period":{"begin":"2026-08-05T17:29:41.477Z","end":"2026-08-05T17:55:25.287Z"},"duration_seconds":1543.810556,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"GVPD-260802-0002","time_period":{"begin":"2026-08-03T03:03:09.303Z","end":"2026-08-03T03:12:50.971Z"},"duration_seconds":581.667449,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"GVPD-260802-0001","time_period":{"begin":"2026-08-02T21:38:08.585Z","end":"2026-08-02T21:59:59.423Z"},"duration_seconds":1310.838156,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"GVPD-260903-0001","time_period":{"begin":"2026-09-03T19:06:44.177Z","end":"2026-09-03T19:17:56.583Z"},"duration_seconds":672.405963,"ce_hidden":false,"calls_for_service":[]}

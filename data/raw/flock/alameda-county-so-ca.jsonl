@@ -643,3 +643,4 @@
 {"flight_number":"ACSO-260804-0003","time_period":{"begin":"2026-08-04T18:33:33.142Z","end":"2026-08-04T18:46:25.668Z"},"duration_seconds":772.5262,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"ACSO-260804-0002","time_period":{"begin":"2026-08-04T18:17:47.585Z","end":"2026-08-04T18:26:55.347Z"},"duration_seconds":547.762019,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"ACSO-260804-0001","time_period":{"begin":"2026-08-04T17:37:49.185Z","end":"2026-08-04T17:49:57.784Z"},"duration_seconds":728.59969,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"ACSO-260904-0001","time_period":{"begin":"2026-09-04T09:48:06.444Z","end":"2026-09-04T10:04:19.928Z"},"duration_seconds":973.483355,"ce_hidden":false,"calls_for_service":[]}

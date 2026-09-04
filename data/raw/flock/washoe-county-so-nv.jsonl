@@ -1908,3 +1908,16 @@
 {"flight_number":"WCSO-260902-0003","time_period":{"begin":"2026-09-02T17:21:22.398Z","end":"2026-09-02T17:50:12.051Z"},"duration_seconds":1729.652431,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"WCSO-260902-0002","time_period":{"begin":"2026-09-02T16:13:51.080Z","end":"2026-09-02T16:21:08.825Z"},"duration_seconds":437.745241,"ce_hidden":false,"calls_for_service":[]}
 {"flight_number":"WCSO-260902-0001","time_period":{"begin":"2026-09-02T15:32:46.104Z","end":"2026-09-02T15:49:36.507Z"},"duration_seconds":1010.402208,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0011","time_period":{"begin":"2026-09-04T06:12:22.148Z","end":"2026-09-04T06:23:54.615Z"},"duration_seconds":692.467159,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0010","time_period":{"begin":"2026-09-04T06:09:58.066Z","end":"2026-09-04T06:24:00.989Z"},"duration_seconds":842.922993,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0009","time_period":{"begin":"2026-09-04T02:04:29.312Z","end":"2026-09-04T02:28:55.079Z"},"duration_seconds":1465.767085,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0008","time_period":{"begin":"2026-09-04T01:34:39.280Z","end":"2026-09-04T01:56:45.585Z"},"duration_seconds":1326.304639,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0007","time_period":{"begin":"2026-09-04T00:29:07.471Z","end":"2026-09-04T00:49:26.892Z"},"duration_seconds":1219.421757,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0006","time_period":{"begin":"2026-09-03T21:37:58.608Z","end":"2026-09-03T21:45:34.341Z"},"duration_seconds":455.732282,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0005","time_period":{"begin":"2026-09-03T21:36:51.326Z","end":"2026-09-03T21:38:16.922Z"},"duration_seconds":85.596025,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0004","time_period":{"begin":"2026-09-03T20:38:28.801Z","end":"2026-09-03T21:00:20.669Z"},"duration_seconds":1311.86845,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0003","time_period":{"begin":"2026-09-03T19:01:09.900Z","end":"2026-09-03T19:19:47.504Z"},"duration_seconds":1117.604508,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0002","time_period":{"begin":"2026-09-03T16:04:42.901Z","end":"2026-09-03T16:19:03.021Z"},"duration_seconds":860.119598,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260903-0001","time_period":{"begin":"2026-09-03T13:47:07.653Z","end":"2026-09-03T14:13:20.835Z"},"duration_seconds":1573.182619,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260902-0009","time_period":{"begin":"2026-09-03T05:55:40.747Z","end":"2026-09-03T06:24:03.620Z"},"duration_seconds":1702.872414,"ce_hidden":false,"calls_for_service":[]}
+{"flight_number":"WCSO-260902-0008","time_period":{"begin":"2026-09-03T05:17:33.747Z","end":"2026-09-03T05:28:25.223Z"},"duration_seconds":651.476307,"ce_hidden":false,"calls_for_service":[]}
