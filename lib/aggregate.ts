@@ -36,6 +36,16 @@ export type HeatGrids = {
   /** [weekday 0=Mon..6=Sun][hour 0..23] -> flight count. */
   count: number[][];
   maxCount: number;
+  /**
+   * [weekday][hour] -> median flight length in minutes, or null where no flight
+   * in that hour has a recorded duration. Null is not zero: a cell with flights
+   * but no durations is unknown, and drawing it as a zero-minute flight would
+   * be a lie the eye reads as fact.
+   */
+  medianMin: (number | null)[][];
+  maxMedian: number;
+  /** The shortest median in the grid, so the duration scale can start there. */
+  minMedian: number;
 };
 
 /**
@@ -45,17 +55,31 @@ export type HeatGrids = {
  */
 export function heatmapGrids(recs: FlightRecord[], tz: string): HeatGrids | null {
   const count: number[][] = Array.from({ length: 7 }, () => new Array(24).fill(0));
+  const durations: number[][][] = Array.from({ length: 7 }, () => Array.from({ length: 24 }, () => [] as number[]));
   let any = false;
   for (const r of recs) {
     if (!r.takeoff_utc) continue;
     any = true;
     const ms = Date.parse(r.takeoff_utc);
-    count[localWeekday(ms, tz)][localHour(ms, tz)]++;
+    const wd = localWeekday(ms, tz), hr = localHour(ms, tz);
+    count[wd][hr]++;
+    if (typeof r.duration_min === 'number') durations[wd][hr].push(r.duration_min);
   }
   if (!any) return null;
-  let maxCount = 0;
+
+  let maxCount = 0, maxMedian = 0, minMedian = Infinity;
   for (const row of count) for (const c of row) if (c > maxCount) maxCount = c;
-  return { count, maxCount };
+
+  const medianMin: (number | null)[][] = durations.map(row => row.map(cell => {
+    if (!cell.length) return null;
+    cell.sort((a, b) => a - b);
+    const med = cell[Math.floor(cell.length / 2)];
+    if (med > maxMedian) maxMedian = med;
+    if (med < minMedian) minMedian = med;
+    return med;
+  }));
+
+  return { count, maxCount, medianMin, maxMedian, minMedian: Number.isFinite(minMedian) ? minMedian : 0 };
 }
 
 export function byHour(recs: FlightRecord[], tz: string): Bar[] | null {
@@ -102,6 +126,10 @@ export const DESCRIPTION_IS_EVENT: Record<string, boolean> = {
   flock_aerodome: false,
   airdata: false,
   motorola_cape: false,
+  // DroneSense puts a street address here; BRINC publishes none at all.
+  dronesense: false,
+  brinc: false,
+  self_published: false,
 };
 
 /**

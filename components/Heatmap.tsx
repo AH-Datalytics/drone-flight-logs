@@ -2,9 +2,23 @@ import { WEEKDAYS } from '@/lib/aggregate';
 
 type Props = {
   title: string;
-  /** 7 (Mon..Sun) x 24 (0..23) grid of flight counts. */
-  grid: number[][];
+  /**
+   * 7 (Mon..Sun) x 24 (0..23) grid. A null cell has nothing to say — no flights
+   * at that hour, or none with a recorded duration — and is drawn as absent
+   * rather than as a zero.
+   */
+  grid: (number | null)[][];
   max: number;
+  /**
+   * The bottom of the scale. Counts start at zero, because an hour really can
+   * have no flights. Median durations do not: they cluster in a narrow band
+   * well above zero, so anchoring their ramp at zero puts nearly every cell
+   * above the midpoint and paints the whole table red. Passing the observed
+   * minimum makes the diverging scale say what it is meant to — shorter than
+   * usual against longer than usual.
+   */
+  min?: number;
+  mode?: 'count' | 'duration';
   note?: string;
 };
 
@@ -12,9 +26,12 @@ const HOUR_STEP = 3;
 
 function hourLabel(h: number): string { return String(h).padStart(2, '0'); }
 
-function cellTitle(weekday: string, hour: number, v: number): string {
+function cellTitle(weekday: string, hour: number, v: number | null, mode: 'count' | 'duration'): string {
   const when = `${weekday} ${hourLabel(hour)}:00–${hourLabel((hour + 1) % 24)}:00`;
-  return v === 0 ? `${when} — no published flights` : `${when} — ${v.toLocaleString('en-US')} flight${v === 1 ? '' : 's'}`;
+  if (mode === 'duration') {
+    return v === null ? `${when} — no flight with a recorded length` : `${when} — ${v} min, typically`;
+  }
+  return v === 0 ? `${when} — no published flights` : `${when} — ${(v ?? 0).toLocaleString('en-US')} flight${v === 1 ? '' : 's'}`;
 }
 
 /**
@@ -23,8 +40,9 @@ function cellTitle(weekday: string, hour: number, v: number): string {
  * middle. Below the midpoint the cell mixes toward blue and above it toward red, each
  * at full strength only at the extremes.
  */
-function heatStyle(value: number, max: number): React.CSSProperties {
-  const t = max > 0 ? value / max : 0;
+function heatStyle(value: number, max: number, min = 0): React.CSSProperties {
+  const span = max - min;
+  const t = span > 0 ? (value - min) / span : 0.5;
   const cold = t <= 0.5;
   const strength = Math.round(Math.abs(t - 0.5) * 2 * 100);
   return {
@@ -40,7 +58,7 @@ function heatStyle(value: number, max: number): React.CSSProperties {
  * (title + aria-label), guaranteed-square cells via aspect-ratio, and a color ramp
  * mixed straight from the theme's tokens with zero extra markup.
  */
-export default function Heatmap({ title, grid, max, note }: Props) {
+export default function Heatmap({ title, grid, max, min = 0, mode = 'count', note }: Props) {
   const ramp = [0, 0.25, 0.5, 0.75, 1];
   return (
     <div className="chart">
@@ -59,10 +77,10 @@ export default function Heatmap({ title, grid, max, note }: Props) {
                   key={hi}
                   role="cell"
                   tabIndex={0}
-                  className="heatcell"
-                  style={heatStyle(v, max)}
-                  title={cellTitle(wd, hi, v)}
-                  aria-label={cellTitle(wd, hi, v)}
+                  className={`heatcell${v === null ? ' empty' : ''}`}
+                  style={v === null ? undefined : heatStyle(v, max, min)}
+                  title={cellTitle(wd, hi, v, mode)}
+                  aria-label={cellTitle(wd, hi, v, mode)}
                 />
               ))}
             </div>
@@ -71,10 +89,20 @@ export default function Heatmap({ title, grid, max, note }: Props) {
       </div>
       <div className="heatmap-legend">
         <div className="heatmap-ramp">
-          <span className="lbl">quiet</span>
-          {ramp.map(t => <span key={t} className="swatch" style={heatStyle(t * max, max)} />)}
-          <span className="lbl">busiest — {max.toLocaleString('en-US')} flights</span>
+          <span className="lbl">
+            {mode === 'duration' ? `shortest — ${Math.round(min * 10) / 10} min` : 'quiet'}
+          </span>
+          {ramp.map(t => <span key={t} className="swatch" style={heatStyle(min + t * (max - min), max, min)} />)}
+          <span className="lbl">
+            {mode === 'duration' ? `longest — ${Math.round(max * 10) / 10} min` : `busiest — ${max.toLocaleString('en-US')} flights`}
+          </span>
         </div>
+        {mode === 'duration' && (
+          <div className="heatmap-ramp">
+            <span className="swatch empty" />
+            <span className="lbl">no flight with a recorded length</span>
+          </div>
+        )}
       </div>
       {note && <div className="small">{note}</div>}
     </div>

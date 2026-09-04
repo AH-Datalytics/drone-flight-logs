@@ -229,3 +229,39 @@ describe('eventTop case folding', () => {
     expect(bars).toEqual([{ label: 'BURGLARY', value: 2 }, { label: 'ROBBERY', value: 1 }]);
   });
 });
+
+describe('heatmapGrids duration grid', () => {
+  const at = (iso: string, duration: number | null) => ({
+    agency_id: 'a', source_flight_id: iso + duration, takeoff_utc: iso,
+    flight_date_local: iso.slice(0, 10), landing_utc: null, duration_min: duration,
+    purpose: null, description: null, case_number: null, extra: {}, data_quality: null,
+  });
+
+  it('reports the median length for each weekday and hour', () => {
+    // 2026-01-05 is a Monday; 18:00 UTC is 10:00 in Los Angeles.
+    const g = heatmapGrids([
+      at('2026-01-05T18:00:00.000Z', 10),
+      at('2026-01-05T18:30:00.000Z', 20),
+      at('2026-01-05T18:45:00.000Z', 30),
+    ], 'America/Los_Angeles')!;
+    expect(g.count[0][10]).toBe(3);
+    expect(g.medianMin[0][10]).toBe(20);
+    expect(g.maxMedian).toBe(20);
+  });
+
+  it('leaves an hour with flights but no recorded lengths as unknown, not zero', () => {
+    const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', null)], 'America/Los_Angeles')!;
+    expect(g.count[0][10]).toBe(1);
+    expect(g.medianMin[0][10]).toBeNull();
+    expect(g.maxMedian).toBe(0);
+  });
+
+  it('leaves an hour with no flights at all as unknown', () => {
+    const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', 10)], 'America/Los_Angeles')!;
+    expect(g.medianMin[0][11]).toBeNull();
+  });
+
+  it('still returns nothing when no flight has a time', () => {
+    expect(heatmapGrids([{ ...at('2026-01-05T18:00:00.000Z', 10), takeoff_utc: null }], 'UTC')).toBeNull();
+  });
+});

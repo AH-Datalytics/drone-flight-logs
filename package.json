@@ -29,7 +29,8 @@
     "check:unnamed": "tsx scripts/check-unnamed.ts",
     "selfpub:collect": "tsx pipeline/selfpub/collect.ts",
     "dronesense:collect": "tsx pipeline/dronesense/collect.ts",
-    "brinc:collect": "tsx pipeline/brinc/collect.ts"
+    "brinc:collect": "tsx pipeline/brinc/collect.ts",
+    "agencies:csv": "tsx scripts/agencies-csv.ts"
   },
   "devDependencies": {
     "@types/d3-geo": "^3.1.1",
