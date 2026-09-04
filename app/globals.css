@@ -205,14 +205,9 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 .map-tip-state { font: 11px var(--mono); opacity: 0.7; }
 .map-tip-n { font: 12px var(--mono); font-variant-numeric: tabular-nums; margin-top: 1px; }
 
-.map-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 28px; padding: 14px 16px 16px; border-top: 1px solid var(--line); flex-wrap: wrap; }
-.map-foot .small { max-width: 62ch; }
+.map-foot { padding: 14px 16px 16px; border-top: 1px solid var(--line); }
 
 .see-all { display: flex; align-items: center; gap: 18px; margin: 24px 0 10px; flex-wrap: wrap; }
-
-@media (max-width: 700px) {
-  .map-foot { flex-direction: column; align-items: flex-start; }
-}
 
 /* ---- Phones ------------------------------------------------------------
    Written against an iPhone at 390px, where three things were wrong: the nav
@@ -245,7 +240,7 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
   /* The whole country fits the width; pinch or double-tap to get into a metro.
      touch-action: none on the svg means a drag pans the map instead of
      scrolling the page. */
-  .map-foot { padding: 12px 14px 14px; gap: 14px; }
+  .map-foot { padding: 12px 14px 14px; }
   .map-zoom { top: 8px; right: 8px; }
   .map-zoom button { min-width: 38px; min-height: 38px; }
 
