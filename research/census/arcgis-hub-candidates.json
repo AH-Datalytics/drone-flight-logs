@@ -1,0 +1,959 @@
+[
+ {
+  "name": "National Security UAS Flight Restrictions",
+  "org": "Federal Aviation Administration - AIS",
+  "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/arcgis/rest/services/DoD_Mar_13/FeatureServer/0",
+  "records": 2270,
+  "type": "Feature Layer",
+  "modified": 1788195479926
+ },
+ {
+  "name": "Multifamily Buildings for DroneSense",
+  "org": "City of McKinney",
+  "url": "https://services1.arcgis.com/B8MwidgHpU2dWUmv/arcgis/rest/services/MultifamilyBuildings/FeatureServer/0",
+  "records": 1016,
+  "type": "Feature Layer",
+  "modified": 1681225093240
+ },
+ {
+  "name": "2023 DOI UAS Flights Current20231211",
+  "org": "National Interagency Fire Center",
+  "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/FY20231211_DOI_UAS_Flights/FeatureServer/1",
+  "records": 462,
+  "type": "Feature Layer",
+  "modified": 1702997570997
+ },
+ {
+  "name": "UAS Pre Flight Survey Results",
+  "org": "tphillips_FCMAPS",
+  "url": "https://services3.arcgis.com/hSKL9bYjhP4rHxSD/arcgis/rest/services/survey123_b870ff7550ab4ee48c20b03e4275b9b0_results/FeatureServer/0",
+  "records": 449,
+  "type": "Feature Layer",
+  "modified": 1788272785630
+ },
+ {
+  "name": "Drone as First Responder Program",
+  "org": "AIRT / DRONERESPONDERS",
+  "url": "https://services8.arcgis.com/7VpIHiJ2eQinVcUU/arcgis/rest/services/service_580ac1d1e58c454cb27e0912574bf117/FeatureServer/0",
+  "records": 7,
+  "type": "Feature Layer",
+  "modified": 1727105063224
+ },
+ {
+  "name": "Part Time National Security UAS Flight Restrictions",
+  "org": "Federal Aviation Administration - AIS",
+  "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/arcgis/rest/services/Part_Time_National_Security_UAS_Flight_Restrictions/FeatureServer/0",
+  "records": 5,
+  "type": "Feature Layer",
+  "modified": 1787945140785
+ },
+ {
+  "name": "Drone flylogg",
+  "org": "Sør-Odal kommune",
+  "url": "https://services-eu1.arcgis.com/mZT9kIJ6BDKsWxMx/arcgis/rest/services/survey123_b1ef39ef24ae443ba28025bcc21dae10_results/FeatureServer/0",
+  "records": 1,
+  "type": "Feature Layer",
+  "modified": 1776755233337
+ },
+ {
+  "name": "Wichita Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1734732125000
+ },
+ {
+  "name": "Nevada County Sheriff's Office Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1745963232000
+ },
+ {
+  "name": "Killeen Police Department (TX) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1786450637000
+ },
+ {
+  "name": "Drone Flights",
+  "org": "City of Bend, Oregon",
+  "records": null,
+  "type": "Hub Page",
+  "modified": 1768505761000
+ },
+ {
+  "name": "Roselle Police Department Drone Deployments",
+  "org": "gdixon_RoselleIL",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1780588751000
+ },
+ {
+  "name": "Denver Police Department Drone as First Responder Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1766169377000
+ },
+ {
+  "name": "Puyallup Police Department Drone Flight Logs 2022-2025",
+  "org": "City of Puyallup",
+  "records": null,
+  "type": "Web Map",
+  "modified": 1770332672000
+ },
+ {
+  "name": "Santa Clara County Sheriff's Office UAS Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1746655768000
+ },
+ {
+  "name": "Drone Deployments",
+  "org": "City of Medford",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1784852544000
+ },
+ {
+  "name": "Drone Deployments",
+  "org": "City of Medford",
+  "url": "https://mpd-data.medfordoregon.gov/pages/drone-program",
+  "records": null,
+  "type": "Document Link",
+  "modified": 1727721220000
+ },
+ {
+  "name": "Pacifica Police Department (CA) Drone Transparency Portal",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1774283669000
+ },
+ {
+  "name": "Drone Assessment",
+  "org": "Merced County GIS",
+  "records": null,
+  "type": "Form",
+  "modified": 1680115817000
+ },
+ {
+  "name": "Complex Fire 2017 Larkfield Drone Imagery",
+  "org": "The County of Sonoma",
+  "url": "https://socogis.sonomacounty.ca.gov/image/rest/services/Rasters/Complex_Fire_2017_Larkfield_Drone_Imagery/ImageServer",
+  "records": null,
+  "type": "Image Service",
+  "modified": 1685709882000
+ },
+ {
+  "name": "Drone as First Responder Map",
+  "org": "Delaware Department of Safety and Homeland Security",
+  "records": null,
+  "type": "Web Map",
+  "modified": 1754666468000
+ },
+ {
+  "name": "Drone as First Responder Map Application",
+  "org": "Delaware Department of Safety and Homeland Security",
+  "url": "https://dshs.maps.arcgis.com/apps/instant/sidebar/index.html?appid=924ed0cb2fa240b18320d6ebe032cddb",
+  "records": null,
+  "type": "Web Mapping Application",
+  "modified": 1754666334000
+ },
+ {
+  "name": "Hampton Drone as First Responder",
+  "org": "City of Hampton, VA",
+  "url": "https://storymaps.arcgis.com/stories/4f7cca2355f0479aa392897e07848afe",
+  "records": null,
+  "type": "StoryMap",
+  "modified": 1785870645000
+ },
+ {
+  "name": "[VINCENT COPY FOR EXPERIMENT] Denver Police Department Drone as First Responder Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1766175140000
+ },
+ {
+  "name": "Hampton Drone as First Responder (Shareable) ",
+  "org": "City of Hampton, VA",
+  "url": "https://storymaps.arcgis.com/stories/8a631dad75ad4d8688bafc2f96612845",
+  "records": null,
+  "type": "StoryMap",
+  "modified": 1786015565000
+ },
+ {
+  "name": "Los Angeles Police Department Drone as First Responder",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1770414361000
+ },
+ {
+  "name": "Drone as First Responder",
+  "org": "City of Lakewood, Colorado",
+  "records": null,
+  "type": "Image",
+  "modified": 1775240265000
+ },
+ {
+  "name": "Drone as First Responder",
+  "org": "OGx Consulting",
+  "records": null,
+  "type": "Image",
+  "modified": 1772567426000
+ },
+ {
+  "name": "MLGW Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1750356314000
+ },
+ {
+  "name": "Axon Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1739457519000
+ },
+ {
+  "name": "NYPD Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1734379834000
+ },
+ {
+  "name": "JEA Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1740589398000
+ },
+ {
+  "name": "Drone as First Responder Map",
+  "org": "AIRT / DRONERESPONDERS",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1736460235000
+ },
+ {
+  "name": "Drone as First Responder Map",
+  "org": "AIRT / DRONERESPONDERS",
+  "records": null,
+  "type": "Web Map",
+  "modified": 1727178060000
+ },
+ {
+  "name": "Drone as First Responder Program",
+  "org": "AIRT / DRONERESPONDERS",
+  "records": null,
+  "type": "Form",
+  "modified": 1726752647000
+ },
+ {
+  "name": "[Paraverse] - CPSO Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1750783885000
+ },
+ {
+  "name": "[Paraverse] DroneTag Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1784786433000
+ },
+ {
+  "name": "Boston PD Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1770737742000
+ },
+ {
+  "name": "Hennepin EMS Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1753915993000
+ },
+ {
+  "name": "INT - Brumbaugh Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1745957098000
+ },
+ {
+  "name": "NOAA - Lakeland Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1751394486000
+ },
+ {
+  "name": "INT - Marvin A Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1755563674000
+ },
+ {
+  "name": "Watchung Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1746718691000
+ },
+ {
+  "name": "Belmont Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1746126413000
+ },
+ {
+  "name": "Philadelphia Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1783166268000
+ },
+ {
+  "name": "INT - Skydio Training  Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1781555792000
+ },
+ {
+  "name": "Axon Air PSM Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1779203802000
+ },
+ {
+  "name": "Miami PD - Org Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1758234430000
+ },
+ {
+  "name": "INT - NACHO CARNICERO Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1752240355000
+ },
+ {
+  "name": "INT - Reading Enterprises Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1734939948000
+ },
+ {
+  "name": "Tampa Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1772723398000
+ },
+ {
+  "name": "Louisville Metro Government Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1771360632000
+ },
+ {
+  "name": "Quincy Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1762801091000
+ },
+ {
+  "name": "Detroit Fire Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1741012838000
+ },
+ {
+  "name": "Amarillo Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1739373325000
+ },
+ {
+  "name": "INT - DFR Demo Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1734361227000
+ },
+ {
+  "name": "INT - Steve Lincoln Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1787324327000
+ },
+ {
+  "name": "Dallas Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1786718571000
+ },
+ {
+  "name": "INT - Nha Pham Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1786647105000
+ },
+ {
+  "name": "Cincinnati Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1765458153000
+ },
+ {
+  "name": "Minnetonka Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1764292122000
+ },
+ {
+  "name": "INT - Jason LaFond Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1741197324000
+ },
+ {
+  "name": "INT - Tommy Clare Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1741130064000
+ },
+ {
+  "name": "Long Beach Township Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1776273832000
+ },
+ {
+  "name": "Gray Fire Rescue Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1760557630000
+ },
+ {
+  "name": "Hollywood Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1739449008000
+ },
+ {
+  "name": "INT - Ignacio Villanueva Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1785351987000
+ },
+ {
+  "name": "Alaska DOT&PF Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1782241795000
+ },
+ {
+  "name": "Laredo Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1769869068000
+ },
+ {
+  "name": "JP-Kajima-Kanto Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1783668343000
+ },
+ {
+  "name": "Duquesne Light Company Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1755193635000
+ },
+ {
+  "name": "Milford Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1751749721000
+ },
+ {
+  "name": "JP-JIW-X10 Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1751597662000
+ },
+ {
+  "name": " Axon Demo Sim Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1744753207000
+ },
+ {
+  "name": "INT - DFR E2E Testing Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1787161320000
+ },
+ {
+  "name": "Alsip Police Department (IL) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1772198887000
+ },
+ {
+  "name": "Dearborn Police Department (MI) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1770816553000
+ },
+ {
+  "name": "Rochester Police Department - MN Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1764709628000
+ },
+ {
+  "name": "Calcasieu Parish Sheriff's Office Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1763152074000
+ },
+ {
+  "name": "INT - X10 Dock Training Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1752703588000
+ },
+ {
+  "name": "Columbus Police Department (GA) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1788186463000
+ },
+ {
+  "name": "Hampton Police Department (VA) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1785434525000
+ },
+ {
+  "name": "Foxborough Police Department (MA) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1774631592000
+ },
+ {
+  "name": "[Paraverse] Deus X Defense Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1773157662000
+ },
+ {
+  "name": "Granite Defense & Technologies NFR Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1757015918000
+ },
+ {
+  "name": "Menifee Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1764102250000
+ },
+ {
+  "name": "Arvada Police Department (CO) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1779820853000
+ },
+ {
+  "name": "Fort Collins Police Services Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1776961840000
+ },
+ {
+  "name": "Gerrittsen Beach Fire Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1775756963000
+ },
+ {
+  "name": "Birmingham Police Department (AL) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1774965380000
+ },
+ {
+  "name": "Duluth Police Department (MN) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1773177361000
+ },
+ {
+  "name": "Cobb County Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1769526481000
+ },
+ {
+  "name": "Columbus Police Department - OH Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1765476435000
+ },
+ {
+  "name": "INT - Online - Skydio Training Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1753390338000
+ },
+ {
+  "name": "Middlefield Vol. Fire Co. Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1747267675000
+ },
+ {
+  "name": "Medicine Hat Police Service Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1786551858000
+ },
+ {
+  "name": "Greeley Police Department (CO) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1777584337000
+ },
+ {
+  "name": "Huntington Beach Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1760038431000
+ },
+ {
+  "name": "lNT - SE X10 Docks Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1744905832000
+ },
+ {
+  "name": "Bellingham Police Department (WA) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1787245748000
+ },
+ {
+  "name": "Michigan State Police (MI) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1785251957000
+ },
+ {
+  "name": "Cherry Hill Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1782156302000
+ },
+ {
+  "name": "Hamilton Police Department (OH) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1781781183000
+ },
+ {
+  "name": "Bloomington Police Department (IL) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1776780124000
+ },
+ {
+  "name": "Chiefland Police Department (FL) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1774531360000
+ },
+ {
+  "name": "Ontario Police Department (CA) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1753285931000
+ },
+ {
+  "name": "Niles Police Department (IL) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1784672064000
+ },
+ {
+  "name": "TRIAL - Fargo Police Department Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1765206562000
+ },
+ {
+  "name": "Monroe County Sheriff's Office DFR Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1784471846000
+ },
+ {
+  "name": "Virginia Beach Police Department DFR Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1786644018000
+ },
+ {
+  "name": "INT-Nick Gilmour Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1734720213000
+ },
+ {
+  "name": "DFR Airspace Access Issue",
+  "org": "Skydio-Inc",
+  "url": "https://storymaps.arcgis.com/stories/808c418b84d54548a30ae9d7e12449b3",
+  "records": null,
+  "type": "StoryMap",
+  "modified": 1732133979000
+ },
+ {
+  "name": "Marysville Police Department - Sno911 DFR Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1754788596000
+ },
+ {
+  "name": "CSPD Real-Time Crime Center DFR Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1768237793000
+ },
+ {
+  "name": "Arizona DFR Initiative: A Strategic Rollout",
+  "org": "Scott Murray Agne",
+  "url": "https://storymaps.arcgis.com/stories/57f5b4ea5780479890d5960affafcaac",
+  "records": null,
+  "type": "StoryMap",
+  "modified": 1753838342000
+ },
+ {
+  "name": "AZ DFR Service Areas",
+  "org": "scottagne9",
+  "records": null,
+  "type": "Web Map",
+  "modified": 1753839237000
+ },
+ {
+  "name": "AZ DFR Service Areas",
+  "org": "Scott Murray Agne",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1753839313000
+ },
+ {
+  "name": "Everett Police Department (WA) Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1787857820000
+ },
+ {
+  "name": "INT - Dylan Brown DFR Drone Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1744218430000
+ },
+ {
+  "name": "Drone 90ft Med Res Web Scene",
+  "org": "Esri",
+  "records": null,
+  "type": "Web Scene",
+  "modified": 1589217166000
+ },
+ {
+  "name": "Cleveland Police UAS Drone Transparency Dashboard",
+  "org": "Cleveland | GIS",
+  "url": "https://experience.arcgis.com/experience/b95e43bfbf2b432693f67b31c21daffc",
+  "records": null,
+  "type": "Web Experience",
+  "modified": 1772816997000
+ },
+ {
+  "name": "HPD Flight1 90ft MedRes 3d mesh",
+  "org": "Esri",
+  "url": "https://tiles.arcgis.com/tiles/qZHw6MeShRaysmjj/arcgis/rest/services/HPD_Flight1_90ft_MedRes_3d_mesh/SceneServer",
+  "records": null,
+  "type": "Scene Service",
+  "modified": 1589217216000
+ },
+ {
+  "name": "Police Drone Map - Phone App",
+  "org": "City of Pasco",
+  "records": null,
+  "type": "Web Map",
+  "modified": 1765494515000
+ },
+ {
+  "name": "Australian Federal Police Drone Flights for Missing Person (Sharon Granites)",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1777392785000
+ },
+ {
+  "name": "Calls made to UK police in 2015 regarding drones",
+  "org": "Esri UK Bureau",
+  "url": "https://bureau.maps.arcgis.com/apps/Viewer/index.html?appid=59ac07f4af114b0f89486f431834d9ce",
+  "records": null,
+  "type": "Web Mapping Application",
+  "modified": 1461165567000
+ },
+ {
+  "name": "Roselle Police Dept Drone Map",
+  "org": "gdixon_RoselleIL",
+  "records": null,
+  "type": "Web Map",
+  "modified": 1749756139000
+ },
+ {
+  "name": "Boulder Police Department (BPD) Drone Service Calls",
+  "org": "City of Boulder, Colorado",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1739220887000
+ },
+ {
+  "name": "Drone Flights - City of Bloomington Police Department",
+  "org": "City of Bloomington, Illinois",
+  "url": "https://cityblm.maps.arcgis.com/apps/instant/basic/index.html?appid=4cf15d3d04ed401ab9dc0d76901d268d",
+  "records": null,
+  "type": "Web Mapping Application",
+  "modified": 1729195092000
+ },
+ {
+  "name": "Dashboard - City of Bloomington Police Department Drone Flights",
+  "org": "City of Bloomington, Illinois",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1773178393000
+ },
+ {
+  "name": "Norton Police Department (OH) sUAS Flights",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1787070378000
+ },
+ {
+  "name": "Titusville Police Department sUAS Transparency Dashboard",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1769610284000
+ },
+ {
+  "name": "Harris County Precinct 2 Parks – sUAS Designated Flight Areas",
+  "org": "Harris County Online Repository",
+  "url": "https://harriscounty.maps.arcgis.com/apps/instant/atlas/index.html?appid=902c47b9887b43478db92be870229271",
+  "records": null,
+  "type": "Web Mapping Application",
+  "modified": 1784905985000
+ },
+ {
+  "name": "Laurel Police Department UAS Flight Data",
+  "org": "Skydio-Inc",
+  "records": null,
+  "type": "Dashboard",
+  "modified": 1784901445000
+ },
+ {
+  "name": "Part Time National Security UAS Flight Restrictions",
+  "org": "Federal Aviation Administration - AIS",
+  "records": null,
+  "type": "Service Definition",
+  "modified": 1757675102000
+ }
+]

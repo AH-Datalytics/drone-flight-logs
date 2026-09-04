@@ -1,0 +1,351 @@
+{
+ "note": "Public registry of drone-as-first-responder programs published by AIRT/DRONERESPONDERS on ArcGIS, read for discovery. Contact names, email addresses and phone numbers are in the source and are deliberately not copied here.",
+ "source": "https://services8.arcgis.com/7VpIHiJ2eQinVcUU/arcgis/rest/services/service_580ac1d1e58c454cb27e0912574bf117/FeatureServer/0",
+ "read_utc": "2026-09-04T18:25:44.151Z",
+ "programs": [
+  {
+   "organization": "Pearland Police Department",
+   "city": "Pearland",
+   "state": "Texas_TX_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1488650400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Redmond Police Department ",
+   "city": "Redmond",
+   "state": "Washington_WA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1695063600000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Fort Wayne Police Department",
+   "city": "Fort Wayne",
+   "state": "Indiana_IN_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1483290000000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Irvine Police Department",
+   "city": "Irvine",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1541012400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Irving Police Department",
+   "city": "Irving",
+   "state": "Texas_TX_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1514829600000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Elk Grove Police Department",
+   "city": "Elk Grove",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1641067200000,
+   "transparency_page": "https://community.elk-grove.ca.us.aerodome.com/"
+  },
+  {
+   "organization": "Alhambra Police Dept",
+   "city": "Alhambra",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1546372800000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Carmel Police Department",
+   "city": "Carmel",
+   "state": "Indiana_IN_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1514826000000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Brookhaven Police Department",
+   "city": "Brookhaven",
+   "state": "Georgia_GA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1609520400000,
+   "transparency_page": "https://www.aerial.motorolasolutions.com/transparency/brookhavenga"
+  },
+  {
+   "organization": "Memorial Villages Police Department ",
+   "city": "Houston",
+   "state": null,
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1546970400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Beverly Hills Police Department",
+   "city": "Beverly Hills",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1610136000000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Montgomery County Police Department",
+   "city": "Rockville",
+   "state": "Maryland_MD_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1672592400000,
+   "transparency_page": "https://www.montgomerycountymd.gov/pol/howdoI/drone-as-first-responder.html"
+  },
+  {
+   "organization": "Redmond Police Department",
+   "city": "Redmond",
+   "state": "Washington_WA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1546372800000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Las Vegas Metropolitan Police Department",
+   "city": "Las Vegas",
+   "state": "Nevada_NV_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1483300800000,
+   "transparency_page": "https://app.airdata.com/u/lvmpd"
+  },
+  {
+   "organization": "Vacaville Police Department",
+   "city": "Vacaville",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1704139200000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Fredericksburg Police Department",
+   "city": "Fredericksburg",
+   "state": "Virginia_VA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1483290000000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Chula Vista Police Department",
+   "city": "Chula Vista",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1515441600000,
+   "transparency_page": "https://www.chulavistaca.gov/departments/police-department/programs/uas-drone-program"
+  },
+  {
+   "organization": "Fort Wayne Police Department",
+   "city": "Fort Wayne",
+   "state": "Indiana_IN_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1641056400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Lyon County Sheriff's Office",
+   "city": "Yerington",
+   "state": "Nevada_NV_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1452628800000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Alhambra Police Department",
+   "city": "Alhambra",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1672603200000,
+   "transparency_page": "https://community.alhambra.ca.us.aerodome.com/"
+  },
+  {
+   "organization": "Gloucester Fire Dept.",
+   "city": "gloucester",
+   "state": "Massachusetts_MA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1704128400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Fort Wayne Police Department",
+   "city": "Fort Wayne",
+   "state": "Indiana_IN_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1609520400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Bennington County Sheriff's Department",
+   "city": "Bennington",
+   "state": "Vermont_VT_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1735750800000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Medina County Sheriffs Office",
+   "city": "Medina",
+   "state": null,
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1146844800000,
+   "transparency_page": null
+  },
+  {
+   "organization": "El Paso county Sheriff's Office ",
+   "city": "Colorado Springs",
+   "state": "Colorado_CO_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1749146400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Whitehall Police Department",
+   "city": "Whitehall",
+   "state": "Ohio_OH_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1735750800000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Brookhaven Fire Dept",
+   "city": "Brookhaven",
+   "state": "New_York_NY_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1641056400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Palm Springs Police Department",
+   "city": "PALM SPRINGS",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1735761600000,
+   "transparency_page": "https://dashboard.dronesense.com/PSPDDFR"
+  },
+  {
+   "organization": "Sight Hawk Drone",
+   "city": "Spring",
+   "state": "Texas_TX_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1690304400000,
+   "transparency_page": "https://sighthawkdrone.com/"
+  },
+  {
+   "organization": "Irving Police Department",
+   "city": "Irving",
+   "state": "Texas_TX_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1735754400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "College Mound Fire Department",
+   "city": "Kaufman",
+   "state": "Texas_TX_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1595005200000,
+   "transparency_page": null
+  },
+  {
+   "organization": "San Francisco Police Department",
+   "city": "San Francisco ",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1724180400000,
+   "transparency_page": "https://www.sanfranciscopolice.org/your-sfpd/explore-department/drones"
+  },
+  {
+   "organization": "Maumee Police Division",
+   "city": "Maumee",
+   "state": "Ohio_OH_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1727107200000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Plymouth Police Department",
+   "city": "Plymouth",
+   "state": "Minnesota_MN_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1735754400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Lincoln Police Department",
+   "city": "Lincoln",
+   "state": "Maine_ME_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1735750800000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Archer County Sheriff's Office",
+   "city": "Archer City",
+   "state": "Texas_TX_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1704132000000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Gilmer County Sheriff's Office",
+   "city": "Ellijay",
+   "state": "Georgia_GA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1704128400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Lewisville Police Department",
+   "city": "Lewisville",
+   "state": "Texas_TX_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1735754400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Richfield Fire Department",
+   "city": "Hubertus",
+   "state": "Wisconsin_WI_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1769623200000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Madison County Emergency Management & Department of Homeland Security",
+   "city": "Anderson,",
+   "state": "Indiana_IN_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1616256000000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Aeroguard.co.za",
+   "city": "Johannesburg",
+   "state": null,
+   "country": "SouthAfrica",
+   "program_started": 1735725600000,
+   "transparency_page": "aeroguard.co.za"
+  },
+  {
+   "organization": "Owasso Police Dept. - OK",
+   "city": "Owasso",
+   "state": "Oklahoma_OK_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1767290400000,
+   "transparency_page": null
+  },
+  {
+   "organization": "Paradise Police Department",
+   "city": "Paradise",
+   "state": "California_CA_",
+   "country": "UnitedStatesofAmerica",
+   "program_started": 1767297600000,
+   "transparency_page": "https://dashboard.liveops.brincdrones.com/paradisepdca"
+  }
+ ]
+}

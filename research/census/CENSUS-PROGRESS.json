@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T23:13:05.039Z",
+ "generated": "2026-09-04T17:48:59.147Z",
  "airdata": {
   "count": 20,
   "method": "wayback+commoncrawl+guessing; FLOOR",
@@ -809,5 +809,15 @@
   "Santa Clara CA UAS deployment summary page",
   "DC MPD UAS page"
  ],
- "phase": "A+B complete 2026-09-02; awaiting decisions (Flock, ODOT scope) before Phase C/D"
+ "phase": "A+B complete 2026-09-02; awaiting decisions (Flock, ODOT scope) before Phase C/D",
+ "round_two_2026_09_04": {
+  "method": "ArcGIS Hub searched across all organizations, then the DRONERESPONDERS national DFR registry it surfaced, then Wayback slug discovery on the two vendors that registry named.",
+  "key_find": "AIRT/DRONERESPONDERS publishes a public registry of 43 DFR programs with a field Agency_DFR_Transparency_Page. That field named two platforms this census had missed.",
+  "registry_url": "https://services8.arcgis.com/7VpIHiJ2eQinVcUU/arcgis/rest/services/service_580ac1d1e58c454cb27e0912574bf117/FeatureServer/0",
+  "dronesense_CORRECTION": "NOT dead. The census retired DroneSense after four archived slugs returned page-not-found. Three are live with flights: arpdtx = Arlington PD TX (8), MCPDDFR = Montgomery County PD MD (34, also on Skydio), campbellpddfr = Campbell PD CA (12). PSPDDFR (Palm Springs) and fremontpublicsafetydfr render 0 flights. Host dashboard.dronesense.com/<slug>, per-agency paths not subdomains, so certificate transparency cannot enumerate it.",
+  "brinc_NEW_PLATFORM": "A sixth platform, never checked before. dashboard.liveops.brincdrones.com/<slug>. Live: clovisca = Clovis PD CA (1,288 flights), schenectadyny = Schenectady City PD NY (1,783), paradisepdca = Paradise PD CA (26, also on AirData). Certificate transparency on brincdrones.com returns 93 hostnames but they are infrastructure — agencies are paths, so slugs need archive or search discovery.",
+  "skydio_coverage_confirmed": "Hub knows of no Skydio dashboard the registry lacks. The only unmatched titles are vendor test orgs and the NYPD demo template, all excluded deliberately.",
+  "still_unresolved": "Bend OR, Puyallup WA, Merced County CA, Delaware DSHS and Hampton VA publish drone pages on ArcGIS but as story maps or apps with no queryable service found yet.",
+  "estimated_new_flights": "about 3,150 across six agency-sources, four of them agencies the site does not have at all"
+ }
 }
