@@ -1,0 +1,31 @@
+{
+ "note": "Row counts for discovered Skydio dashboards that have not been matched to an agency. The pull skips them, so this is what notices one starting to publish. A non-zero count means it should be named in data/registry.json and its status changed from needs_review to ok.",
+ "checked_utc": "2026-09-04T12:41:02.525Z",
+ "rows": {
+  "aep-ed-tfs-line-east": 0,
+  "alsip-pd-il": 0,
+  "austintown-fire-department-oh": 0,
+  "bradley-county-so-cleveland-tn": 0,
+  "columbus-ga-skydio-dfr-day": 0,
+  "columbus-pd-ga": 0,
+  "dare-county-so-nc": 0,
+  "elgin-pd-dock-trial": 0,
+  "eustis-pd-fl": 0,
+  "huntington-beach-pd": 0,
+  "jea": 0,
+  "jp-jiw-x10": 1,
+  "jp-kajima-kanto": 0,
+  "long-beach-township": 0,
+  "marion-county-fire-rescue": 0,
+  "michigan-state-police-mi": 0,
+  "noaa-lakeland": 0,
+  "odessa-police-fire-departments-tx": 0,
+  "olathe-pd-ks": 0,
+  "ontario-pd-ca": 0,
+  "skydio-fire-service-working-group": 0,
+  "surprise-pd-az": 0,
+  "suwannee-county-drone-department": 0,
+  "university-of-connecticut-t2-center": 0,
+  "usaf-87-abw-suas-agency-jb-mcguire-dix-lakehurst": 0
+ }
+}

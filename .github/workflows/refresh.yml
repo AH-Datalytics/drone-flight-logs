@@ -80,6 +80,13 @@ jobs:
           npm run build:data
           npx tsx scripts/prebuild.ts
 
+      # Reports, never fails: a dashboard starting to publish is news, not a
+      # fault. The pull skips unnamed dashboards, so without this one could
+      # fill up and stay invisible indefinitely.
+      - name: Watch the unnamed dashboards
+        if: steps.scope.outputs.value == 'full'
+        run: npx tsx scripts/check-unnamed.ts
+
       - name: Regenerate the link card
         run: npx playwright install chromium && npm run og
 
