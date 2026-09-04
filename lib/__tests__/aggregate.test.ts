@@ -237,38 +237,45 @@ describe('heatmapGrids duration grid', () => {
     purpose: null, description: null, case_number: null, extra: {}, data_quality: null,
   });
 
-  it('reports the average length for each weekday and hour', () => {
-    // 2026-01-05 is a Monday; 18:00 UTC is 10:00 in Los Angeles. The median of
-    // these three is 20; the mean is 30, so this pins which one is drawn.
+  it('totals the recorded flight time for each weekday and hour', () => {
+    // 2026-01-05 is a Monday; 18:00 UTC is 10:00 in Los Angeles.
     const g = heatmapGrids([
       at('2026-01-05T18:00:00.000Z', 10),
       at('2026-01-05T18:30:00.000Z', 20),
       at('2026-01-05T18:45:00.000Z', 60),
     ], 'America/Los_Angeles')!;
     expect(g.count[0][10]).toBe(3);
-    expect(g.avgMin[0][10]).toBe(30);
-    expect(g.maxAvg).toBe(30);
+    expect(g.totalMin[0][10]).toBe(90);
+    expect(g.maxTotal).toBe(90);
   });
 
-  it('rounds an average to a tenth of a minute', () => {
+  it('rounds a total to a tenth of a minute rather than a float artifact', () => {
+    const g = heatmapGrids([
+      at('2026-01-05T18:00:00.000Z', 0.1),
+      at('2026-01-05T18:30:00.000Z', 0.2),
+    ], 'America/Los_Angeles')!;
+    expect(g.totalMin[0][10]).toBe(0.3);
+  });
+
+  it('counts only the flights whose length was recorded', () => {
     const g = heatmapGrids([
       at('2026-01-05T18:00:00.000Z', 10),
-      at('2026-01-05T18:30:00.000Z', 11),
-      at('2026-01-05T18:45:00.000Z', 11),
+      at('2026-01-05T18:30:00.000Z', null),
     ], 'America/Los_Angeles')!;
-    expect(g.avgMin[0][10]).toBe(10.7);
+    expect(g.count[0][10]).toBe(2);
+    expect(g.totalMin[0][10]).toBe(10);
   });
 
   it('leaves an hour with flights but no recorded lengths as unknown, not zero', () => {
     const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', null)], 'America/Los_Angeles')!;
     expect(g.count[0][10]).toBe(1);
-    expect(g.avgMin[0][10]).toBeNull();
-    expect(g.maxAvg).toBe(0);
+    expect(g.totalMin[0][10]).toBeNull();
+    expect(g.maxTotal).toBe(0);
   });
 
-  it('leaves an hour with no flights at all as unknown', () => {
+  it('reads an hour with no flights at all as no time in the air', () => {
     const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', 10)], 'America/Los_Angeles')!;
-    expect(g.avgMin[0][11]).toBeNull();
+    expect(g.totalMin[0][11]).toBe(0);
   });
 
   it('still returns nothing when no flight has a time', () => {

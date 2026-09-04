@@ -37,15 +37,14 @@ export type HeatGrids = {
   count: number[][];
   maxCount: number;
   /**
-   * [weekday][hour] -> average flight length in minutes, or null where no flight
-   * in that hour has a recorded duration. Null is not zero: a cell with flights
-   * but no durations is unknown, and drawing it as a zero-minute flight would
-   * be a lie the eye reads as fact.
+   * [weekday][hour] -> total recorded flight time in minutes. Zero where the hour
+   * had no flights at all, and null where it had flights but none with a recorded
+   * length. Those two are not the same claim: the first really is no time in the
+   * air, the second is unknown, and drawing the second as a zero would be a lie
+   * the eye reads as fact.
    */
-  avgMin: (number | null)[][];
-  maxAvg: number;
-  /** The shortest average in the grid, so the duration scale can start there. */
-  minAvg: number;
+  totalMin: (number | null)[][];
+  maxTotal: number;
 };
 
 /**
@@ -67,20 +66,18 @@ export function heatmapGrids(recs: FlightRecord[], tz: string): HeatGrids | null
   }
   if (!any) return null;
 
-  let maxCount = 0, maxAvg = 0, minAvg = Infinity;
+  let maxCount = 0, maxTotal = 0;
   for (const row of count) for (const c of row) if (c > maxCount) maxCount = c;
 
-  // Rounded to a tenth: a mean of a handful of durations lands on a repeating
-  // decimal, and "12.333333333333334 min" in a tooltip is noise, not precision.
-  const avgMin: (number | null)[][] = durations.map(row => row.map(cell => {
-    if (!cell.length) return null;
-    const avg = Math.round((cell.reduce((t, v) => t + v, 0) / cell.length) * 10) / 10;
-    if (avg > maxAvg) maxAvg = avg;
-    if (avg < minAvg) minAvg = avg;
-    return avg;
+  const totalMin: (number | null)[][] = durations.map((row, wd) => row.map((cell, hr) => {
+    if (!cell.length) return count[wd][hr] > 0 ? null : 0;
+    // Rounded to a tenth: summing floats otherwise surfaces as 402.99999999999994.
+    const total = Math.round(cell.reduce((t, v) => t + v, 0) * 10) / 10;
+    if (total > maxTotal) maxTotal = total;
+    return total;
   }));
 
-  return { count, maxCount, avgMin, maxAvg, minAvg: Number.isFinite(minAvg) ? minAvg : 0 };
+  return { count, maxCount, totalMin, maxTotal };
 }
 
 export function byHour(recs: FlightRecord[], tz: string): Bar[] | null {
