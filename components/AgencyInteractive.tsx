@@ -120,14 +120,6 @@ export default function AgencyInteractive({ agencyId, timezone, nowIso, initial 
       <div className="charts">
         <BarChartCard title="Flights per month" data={view.monthly} tickFormatter={fmtMonthLabel} />
         {view.heat && <Heatmap title={`When it flies — flight count by weekday and hour (${tzLabel})`} grid={view.heat.count} max={view.heat.maxCount} />}
-        {view.heat && initial.durationCount >= initial.minDurationsToChart && view.heat.maxTotal > 0 && (
-          <Heatmap
-            title={`How long it flies — total minutes flown by weekday and hour (${tzLabel})`}
-            grid={view.heat.totalMin}
-            max={view.heat.maxTotal}
-            mode="duration"
-          />
-        )}
         {initial.durationCount >= initial.minDurationsToChart && (
           <BarChartCard
             compact

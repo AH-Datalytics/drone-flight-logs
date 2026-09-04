@@ -148,11 +148,9 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
    in both themes. Two variables drive it: --hue picks the end color, --mix its
    strength. */
 .heatcell { aspect-ratio: 1; background: color-mix(in srgb, var(--hue, var(--heat-cold)) var(--mix, 0%), var(--bg)); border: 1px solid var(--line); cursor: default; }
-.heatcell.empty { background: repeating-linear-gradient(135deg, var(--bg-2), var(--bg-2) 3px, var(--bg-3) 3px, var(--bg-3) 6px); }
 .heatmap-legend { display: flex; align-items: center; gap: 16px; margin-top: 14px; flex-wrap: wrap; }
 .heatmap-ramp { display: flex; align-items: center; gap: 6px; }
 .heatmap-ramp .swatch { width: 16px; height: 16px; border: 1px solid var(--line); background: color-mix(in srgb, var(--hue, var(--heat-cold)) var(--mix, 0%), var(--bg)); }
-.heatmap-ramp .swatch.empty { background: repeating-linear-gradient(135deg, var(--bg-2), var(--bg-2) 3px, var(--bg-3) 3px, var(--bg-3) 6px); }
 .heatmap-legend .lbl { font: 12px var(--mono); color: var(--fg-2); }
 
 /* ---- Landing: search, then map ---------------------------------------- */

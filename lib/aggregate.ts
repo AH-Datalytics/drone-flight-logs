@@ -36,15 +36,6 @@ export type HeatGrids = {
   /** [weekday 0=Mon..6=Sun][hour 0..23] -> flight count. */
   count: number[][];
   maxCount: number;
-  /**
-   * [weekday][hour] -> total recorded flight time in minutes. Zero where the hour
-   * had no flights at all, and null where it had flights but none with a recorded
-   * length. Those two are not the same claim: the first really is no time in the
-   * air, the second is unknown, and drawing the second as a zero would be a lie
-   * the eye reads as fact.
-   */
-  totalMin: (number | null)[][];
-  maxTotal: number;
 };
 
 /**
@@ -54,30 +45,19 @@ export type HeatGrids = {
  */
 export function heatmapGrids(recs: FlightRecord[], tz: string): HeatGrids | null {
   const count: number[][] = Array.from({ length: 7 }, () => new Array(24).fill(0));
-  const durations: number[][][] = Array.from({ length: 7 }, () => Array.from({ length: 24 }, () => [] as number[]));
   let any = false;
   for (const r of recs) {
     if (!r.takeoff_utc) continue;
     any = true;
     const ms = Date.parse(r.takeoff_utc);
-    const wd = localWeekday(ms, tz), hr = localHour(ms, tz);
-    count[wd][hr]++;
-    if (typeof r.duration_min === 'number') durations[wd][hr].push(r.duration_min);
+    count[localWeekday(ms, tz)][localHour(ms, tz)]++;
   }
   if (!any) return null;
 
-  let maxCount = 0, maxTotal = 0;
+  let maxCount = 0;
   for (const row of count) for (const c of row) if (c > maxCount) maxCount = c;
 
-  const totalMin: (number | null)[][] = durations.map((row, wd) => row.map((cell, hr) => {
-    if (!cell.length) return count[wd][hr] > 0 ? null : 0;
-    // Rounded to a tenth: summing floats otherwise surfaces as 402.99999999999994.
-    const total = Math.round(cell.reduce((t, v) => t + v, 0) * 10) / 10;
-    if (total > maxTotal) maxTotal = total;
-    return total;
-  }));
-
-  return { count, maxCount, totalMin, maxTotal };
+  return { count, maxCount };
 }
 
 export function byHour(recs: FlightRecord[], tz: string): Bar[] | null {

@@ -2,28 +2,18 @@ import { WEEKDAYS } from '@/lib/aggregate';
 
 type Props = {
   title: string;
-  /**
-   * 7 (Mon..Sun) x 24 (0..23) grid. A null cell has nothing to say — the hour
-   * had flights but none with a recorded length — and is drawn as absent rather
-   * than as a zero.
-   */
-  grid: (number | null)[][];
+  /** 7 (Mon..Sun) x 24 (0..23) grid of flight counts. */
+  grid: number[][];
   max: number;
-  mode?: 'count' | 'duration';
-  note?: string;
 };
 
 const HOUR_STEP = 3;
 
 function hourLabel(h: number): string { return String(h).padStart(2, '0'); }
 
-function cellTitle(weekday: string, hour: number, v: number | null, mode: 'count' | 'duration'): string {
+function cellTitle(weekday: string, hour: number, v: number): string {
   const when = `${weekday} ${hourLabel(hour)}:00–${hourLabel((hour + 1) % 24)}:00`;
-  if (mode === 'duration') {
-    if (v === null) return `${when} — no flight with a recorded length`;
-    return v === 0 ? `${when} — no published flights` : `${when} — ${v.toLocaleString('en-US')} min in the air`;
-  }
-  return v === 0 ? `${when} — no published flights` : `${when} — ${(v ?? 0).toLocaleString('en-US')} flight${v === 1 ? '' : 's'}`;
+  return v === 0 ? `${when} — no published flights` : `${when} — ${v.toLocaleString('en-US')} flight${v === 1 ? '' : 's'}`;
 }
 
 /**
@@ -49,7 +39,7 @@ function heatStyle(value: number, max: number): React.CSSProperties {
  * (title + aria-label), guaranteed-square cells via aspect-ratio, and a color ramp
  * mixed straight from the theme's tokens with zero extra markup.
  */
-export default function Heatmap({ title, grid, max, mode = 'count', note }: Props) {
+export default function Heatmap({ title, grid, max }: Props) {
   const ramp = [0, 0.25, 0.5, 0.75, 1];
   return (
     <div className="chart">
@@ -68,10 +58,10 @@ export default function Heatmap({ title, grid, max, mode = 'count', note }: Prop
                   key={hi}
                   role="cell"
                   tabIndex={0}
-                  className={`heatcell${v === null ? ' empty' : ''}`}
-                  style={v === null ? undefined : heatStyle(v, max)}
-                  title={cellTitle(wd, hi, v, mode)}
-                  aria-label={cellTitle(wd, hi, v, mode)}
+                  className="heatcell"
+                  style={heatStyle(v, max)}
+                  title={cellTitle(wd, hi, v)}
+                  aria-label={cellTitle(wd, hi, v)}
                 />
               ))}
             </div>
@@ -82,20 +72,9 @@ export default function Heatmap({ title, grid, max, mode = 'count', note }: Prop
         <div className="heatmap-ramp">
           <span className="lbl">Fewest</span>
           {ramp.map(t => <span key={t} className="swatch" style={heatStyle(t * max, max)} />)}
-          <span className="lbl">
-            {mode === 'duration'
-              ? `Most — ${Math.round(max).toLocaleString('en-US')} min`
-              : `Most — ${max.toLocaleString('en-US')} flights`}
-          </span>
+          <span className="lbl">{`Most — ${max.toLocaleString('en-US')} flights`}</span>
         </div>
-        {mode === 'duration' && (
-          <div className="heatmap-ramp">
-            <span className="swatch empty" />
-            <span className="lbl">No flight with a recorded length</span>
-          </div>
-        )}
       </div>
-      {note && <div className="small">{note}</div>}
     </div>
   );
 }

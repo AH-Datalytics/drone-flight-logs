@@ -65,12 +65,12 @@ describe('medianPublishGapDays', () => {
   });
 });
 describe('heatmapGrids', () => {
-  it('buckets by local weekday and hour, and computes per-cell average duration', () => {
-    // 2026-08-31 is a Monday. Two flights same weekday+hour in Chicago time -> one count cell, average of durations.
+  it('buckets by local weekday and hour', () => {
+    // 2026-08-31 is a Monday. Two flights same weekday+hour in Chicago time -> one count cell.
     const g = heatmapGrids([
-      r({ takeoff_utc: '2026-08-31T15:10:00.000Z', duration_min: 10 }), // 10:10 CDT Mon
-      r({ takeoff_utc: '2026-08-31T15:40:00.000Z', duration_min: 20 }), // 10:40 CDT Mon
-      r({ takeoff_utc: '2026-09-01T15:10:00.000Z', duration_min: 30 }), // Tue, no case_number relevance
+      r({ takeoff_utc: '2026-08-31T15:10:00.000Z' }), // 10:10 CDT Mon
+      r({ takeoff_utc: '2026-08-31T15:40:00.000Z' }), // 10:40 CDT Mon
+      r({ takeoff_utc: '2026-09-01T15:10:00.000Z' }), // Tue
     ], 'America/Chicago')!;
     expect(g.count[0][10]).toBe(2); // Mon, 10am
     expect(g.count[1][10]).toBe(1); // Tue, 10am
@@ -227,58 +227,5 @@ describe('eventTop case folding', () => {
   it('keeps genuinely different events apart', () => {
     const bars = eventTop([rec('BURGLARY'), rec('burglary'), rec('ROBBERY')], 15);
     expect(bars).toEqual([{ label: 'BURGLARY', value: 2 }, { label: 'ROBBERY', value: 1 }]);
-  });
-});
-
-describe('heatmapGrids duration grid', () => {
-  const at = (iso: string, duration: number | null) => ({
-    agency_id: 'a', source_flight_id: iso + duration, takeoff_utc: iso,
-    flight_date_local: iso.slice(0, 10), landing_utc: null, duration_min: duration,
-    purpose: null, description: null, case_number: null, extra: {}, data_quality: null,
-  });
-
-  it('totals the recorded flight time for each weekday and hour', () => {
-    // 2026-01-05 is a Monday; 18:00 UTC is 10:00 in Los Angeles.
-    const g = heatmapGrids([
-      at('2026-01-05T18:00:00.000Z', 10),
-      at('2026-01-05T18:30:00.000Z', 20),
-      at('2026-01-05T18:45:00.000Z', 60),
-    ], 'America/Los_Angeles')!;
-    expect(g.count[0][10]).toBe(3);
-    expect(g.totalMin[0][10]).toBe(90);
-    expect(g.maxTotal).toBe(90);
-  });
-
-  it('rounds a total to a tenth of a minute rather than a float artifact', () => {
-    const g = heatmapGrids([
-      at('2026-01-05T18:00:00.000Z', 0.1),
-      at('2026-01-05T18:30:00.000Z', 0.2),
-    ], 'America/Los_Angeles')!;
-    expect(g.totalMin[0][10]).toBe(0.3);
-  });
-
-  it('counts only the flights whose length was recorded', () => {
-    const g = heatmapGrids([
-      at('2026-01-05T18:00:00.000Z', 10),
-      at('2026-01-05T18:30:00.000Z', null),
-    ], 'America/Los_Angeles')!;
-    expect(g.count[0][10]).toBe(2);
-    expect(g.totalMin[0][10]).toBe(10);
-  });
-
-  it('leaves an hour with flights but no recorded lengths as unknown, not zero', () => {
-    const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', null)], 'America/Los_Angeles')!;
-    expect(g.count[0][10]).toBe(1);
-    expect(g.totalMin[0][10]).toBeNull();
-    expect(g.maxTotal).toBe(0);
-  });
-
-  it('reads an hour with no flights at all as no time in the air', () => {
-    const g = heatmapGrids([at('2026-01-05T18:00:00.000Z', 10)], 'America/Los_Angeles')!;
-    expect(g.totalMin[0][11]).toBe(0);
-  });
-
-  it('still returns nothing when no flight has a time', () => {
-    expect(heatmapGrids([{ ...at('2026-01-05T18:00:00.000Z', 10), takeoff_utc: null }], 'UTC')).toBeNull();
   });
 });
