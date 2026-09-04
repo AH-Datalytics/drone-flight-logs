@@ -207,16 +207,11 @@ table.data td:first-child a { display: block; overflow: hidden; text-overflow: e
 
 .map-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 28px; padding: 14px 16px 16px; border-top: 1px solid var(--line); flex-wrap: wrap; }
 .map-foot .small { max-width: 62ch; }
-.map-legend { display: flex; align-items: center; gap: 16px; }
-.map-legend-item { display: flex; align-items: center; gap: 7px; font: 11px var(--mono); color: var(--fg-2); font-variant-numeric: tabular-nums; }
-.map-legend-item svg { width: 40px; height: 40px; }
-.map-legend-item circle { fill: color-mix(in srgb, var(--map-dot) 72%, transparent); stroke: var(--bg); stroke-width: 1.1; paint-order: stroke; }
 
 .see-all { display: flex; align-items: center; gap: 18px; margin: 24px 0 10px; flex-wrap: wrap; }
 
 @media (max-width: 700px) {
   .map-foot { flex-direction: column; align-items: flex-start; }
-  .map-legend-item svg { width: 32px; height: 32px; }
 }
 
 /* ---- Phones ------------------------------------------------------------

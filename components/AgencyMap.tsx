@@ -11,8 +11,6 @@ type Props = {
   maxFlights: number;
   width: number;
   height: number;
-  /** Radii for the legend, computed with the same scale as the dots. */
-  legend: { flights: number; r: number }[];
 };
 
 /**
@@ -32,7 +30,7 @@ type Props = {
  * programs do not swamp the map by squaring a difference the reader is being
  * shown once already.
  *
- * Colors and the legend's size are SVG presentation attributes as well as CSS
+ * Colors and the dots' sizes are SVG presentation attributes as well as CSS
  * rules. CSS wins whenever it loads and carries the light and dark themes; the
  * attributes are there because an SVG with no styling at all fills solid black
  * and sizes itself to its container.
@@ -42,7 +40,7 @@ const MIN_SCALE = 1;
 const MAX_SCALE = 14;
 const ZOOM_STEP = 1.6;
 
-export default function AgencyMap({ outlines, dots, offMap, width, height, legend }: Props) {
+export default function AgencyMap({ outlines, dots, offMap, width, height }: Props) {
   const router = useRouter();
   const [hover, setHover] = useState<Dot | null>(null);
   const [view, setView] = useState({ scale: 1, x: 0, y: 0 });
@@ -192,20 +190,10 @@ export default function AgencyMap({ outlines, dots, offMap, width, height, legen
       </div>
 
       <div className="map-foot">
-        <div className="map-legend" aria-hidden="true">
-          {legend.map(l => (
-            <span key={l.flights} className="map-legend-item">
-              <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
-                <circle cx="20" cy="20" r={l.r} fill="#0060df" stroke="#ffffff" />
-              </svg>
-              {fmtInt(l.flights)}
-            </span>
-          ))}
-          <span className="small">published flights</span>
-        </div>
         <div className="small">
-          Scroll or double-click to zoom, drag to pan. Each dot is one agency, placed at the center of
-          the area it flies in, not at any individual flight. Click a dot to open that agency.
+          Scroll or double-click to zoom, drag to pan. Each dot is one agency, sized by its published
+          flights and placed at the center of the area it flies in, not at any individual flight.
+          Click a dot to open that agency.
           {offMap > 0 ? ` ${offMap} ${offMap === 1 ? 'agency is' : 'agencies are'} outside the map and appear only in the full list.` : ''}
         </div>
       </div>

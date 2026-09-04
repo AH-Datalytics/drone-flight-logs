@@ -3,7 +3,7 @@ import StatRow from '@/components/StatRow';
 import AgencyMap from '@/components/AgencyMap';
 import AgencySearch, { type SearchItem } from '@/components/AgencySearch';
 import { publicAgencies, collectedAt } from '@/lib/data';
-import { stateOutlines, agencyDots, radiusFor, MAP_W, MAP_H } from '@/lib/map';
+import { stateOutlines, agencyDots, MAP_W, MAP_H } from '@/lib/map';
 import { fmtInt, fmtHours, fmtDate } from '@/lib/format';
 
 export default function Home() {
@@ -14,10 +14,6 @@ export default function Home() {
   // never the outline coordinates or the projection library.
   const outlines = stateOutlines();
   const { dots, offMap, maxFlights } = agencyDots(agencies);
-  const legend = [maxFlights, Math.round(maxFlights / 10), Math.round(maxFlights / 100)]
-    .filter(n => n >= 1)
-    .map(n => ({ flights: n, r: radiusFor(n, maxFlights) }));
-
   const items: SearchItem[] = agencies
     .map(a => ({ agency_id: a.agency_id, display_name: a.display_name, state: a.state, flight_count: a.flight_count }))
     .sort((a, b) => b.flight_count - a.flight_count);
@@ -57,7 +53,6 @@ export default function Home() {
         maxFlights={maxFlights}
         width={MAP_W}
         height={MAP_H}
-        legend={legend}
       />
 
       <div className="see-all">
