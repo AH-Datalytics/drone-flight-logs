@@ -1,14 +1,14 @@
 {
- "built_utc": "2026-09-04T18:42:57.706Z",
- "collected_utc": "2026-09-04T18:40:49.559Z",
+ "built_utc": "2026-09-07T08:09:55.124Z",
+ "collected_utc": "2026-09-07T08:09:45.720Z",
  "agency_count": 237,
- "flight_count": 308878,
+ "flight_count": 308890,
  "overlap_count": 387,
  "by_source": {
   "airdata": 77396,
   "skydio_arcgis": 103251,
   "flock_aerodome": 99738,
-  "motorola_cape": 8755,
+  "motorola_cape": 8767,
   "sfpd_datasf": 7481,
   "dronesense": 8230,
   "brinc": 3097,
@@ -192,7 +192,7 @@
      "flight_count": 5709,
      "first_flight": "2020-04-07",
      "last_flight": "2024-02-09",
-     "collected_utc": "2026-09-04T13:40:20.869Z"
+     "collected_utc": "2026-09-07T08:09:42.864Z"
     },
     {
      "source": "flock_aerodome",
@@ -213,7 +213,7 @@
    "overlap_count": 0,
    "lat": 33.83983,
    "lon": -118.38459,
-   "collected_utc": "2026-09-04T13:40:20.869Z",
+   "collected_utc": "2026-09-07T08:09:42.864Z",
    "notes": null
   },
   {
@@ -701,7 +701,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-04T13:40:07.496Z"
+     "collected_utc": "2026-09-07T08:09:24.976Z"
     }
    ],
    "official_url": "https://cloud.skydio.com/dashboard/brookhavenpd",
@@ -713,7 +713,7 @@
    "overlap_count": 0,
    "lat": 33.86606,
    "lon": -84.33297,
-   "collected_utc": "2026-09-04T13:40:07.496Z",
+   "collected_utc": "2026-09-07T08:09:24.976Z",
    "notes": null
   },
   {
@@ -872,22 +872,22 @@
      "source": "motorola_cape",
      "source_agency_id": "brea-pd-ca",
      "official_url": "https://www.aerial.motorolasolutions.com/transparency/breapd-ca",
-     "flight_count": 2953,
+     "flight_count": 2965,
      "first_flight": "2024-05-22",
-     "last_flight": "2026-09-03",
-     "collected_utc": "2026-09-04T13:40:06.031Z"
+     "last_flight": "2026-09-04",
+     "collected_utc": "2026-09-07T08:09:23.510Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/breapd-ca",
    "status": "ok",
    "first_flight": "2024-05-22",
-   "last_flight": "2026-09-03",
-   "flight_count": 2953,
-   "total_hours": 534,
+   "last_flight": "2026-09-04",
+   "flight_count": 2965,
+   "total_hours": 536.3,
    "overlap_count": 0,
    "lat": 33.91704,
    "lon": -117.88885,
-   "collected_utc": "2026-09-04T13:40:06.031Z",
+   "collected_utc": "2026-09-07T08:09:23.510Z",
    "notes": null
   },
   {
@@ -1462,7 +1462,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-04T13:40:10.422Z"
+     "collected_utc": "2026-09-07T08:09:28.202Z"
     }
    ],
    "official_url": "https://community.hemet.ca.us.aerodome.com/",
@@ -1474,7 +1474,7 @@
    "overlap_count": 0,
    "lat": 33.74752,
    "lon": -116.97197,
-   "collected_utc": "2026-09-04T13:40:10.422Z",
+   "collected_utc": "2026-09-07T08:09:28.202Z",
    "notes": null
   },
   {
@@ -4349,7 +4349,7 @@
      "flight_count": 83,
      "first_flight": "2021-03-31",
      "last_flight": "2022-06-29",
-     "collected_utc": "2026-09-04T13:40:09.090Z"
+     "collected_utc": "2026-09-07T08:09:26.821Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/glendaleaz",
@@ -4361,7 +4361,7 @@
    "overlap_count": 0,
    "lat": 33.53869,
    "lon": -112.18599,
-   "collected_utc": "2026-09-04T13:40:09.090Z",
+   "collected_utc": "2026-09-07T08:09:26.821Z",
    "notes": null
   },
   {
@@ -4826,7 +4826,7 @@
     }
    ],
    "official_url": "https://www.arcgis.com/apps/dashboards/cd48d90615b748d9ad10b51f6e30b0bd",
-   "status": "ok",
+   "status": "stale",
    "first_flight": "2026-03-06",
    "last_flight": "2026-07-08",
    "flight_count": 29,
@@ -5779,7 +5779,7 @@
      "flight_count": 7,
      "first_flight": "2026-07-16",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-04T13:40:23.696Z"
+     "collected_utc": "2026-09-07T08:09:45.720Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/yonkerspd-ny",
@@ -5791,7 +5791,7 @@
    "overlap_count": 0,
    "lat": 40.93121,
    "lon": -73.89875,
-   "collected_utc": "2026-09-04T13:40:23.696Z",
+   "collected_utc": "2026-09-07T08:09:45.720Z",
    "notes": null
   },
   {
@@ -6301,7 +6301,7 @@
      "flight_count": 3,
      "first_flight": "2026-09-01",
      "last_flight": "2026-09-01",
-     "collected_utc": "2026-09-04T13:39:55.954Z"
+     "collected_utc": "2026-09-07T08:09:13.499Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/amherstpd-oh",
@@ -6313,7 +6313,7 @@
    "overlap_count": 0,
    "lat": 41.39782,
    "lon": -82.22238,
-   "collected_utc": "2026-09-04T13:39:55.954Z",
+   "collected_utc": "2026-09-07T08:09:13.499Z",
    "notes": null
   },
   {
@@ -6997,7 +6997,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-04T13:39:57.377Z"
+     "collected_utc": "2026-09-07T08:09:14.985Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/boulderpd",
@@ -7009,7 +7009,7 @@
    "overlap_count": 0,
    "lat": 40.01499,
    "lon": -105.27054,
-   "collected_utc": "2026-09-04T13:39:57.377Z",
+   "collected_utc": "2026-09-07T08:09:14.985Z",
    "notes": null
   },
   {
@@ -7026,7 +7026,7 @@
      "flight_count": 0,
      "first_flight": null,
      "last_flight": null,
-     "collected_utc": "2026-09-04T13:40:22.257Z"
+     "collected_utc": "2026-09-07T08:09:44.274Z"
     }
    ],
    "official_url": "https://www.aerial.motorolasolutions.com/transparency/roswellpd",
@@ -7038,7 +7038,7 @@
    "overlap_count": 0,
    "lat": 34.02332,
    "lon": -84.36002,
-   "collected_utc": "2026-09-04T13:40:22.257Z",
+   "collected_utc": "2026-09-07T08:09:44.274Z",
    "notes": null
   }
  ]
