@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
 import { collectedAt } from '@/lib/data';
 import { fmtDate } from '@/lib/format';
+import Script from 'next/script';
 
 // An engineering typeface pairing -- IBM Plex Sans for body/UI text, IBM Plex Mono for
 // numerals and instrument-panel labels -- wired through CSS variables so globals.css
@@ -52,6 +53,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </span>
         </footer>
       </div>
+      {/* Vercel Web Analytics */}
+      <Script id="vercel-analytics-queue" strategy="afterInteractive">
+        {'window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };'}
+      </Script>
+      <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
     </body></html>
   );
 }
