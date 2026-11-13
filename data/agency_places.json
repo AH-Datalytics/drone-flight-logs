@@ -273,12 +273,12 @@
   },
   {
    "agency_id": "breck-pd-co",
-   "lat": 38.4959,
-   "lon": -84.7355,
-   "state": "KY",
-   "via": "geocode_host",
-   "query": "breck, CO, USA",
-   "resolved_utc": "2026-09-03T13:19:48.302Z"
+   "lat": 39.48291,
+   "lon": -106.04655,
+   "state": "CO",
+   "via": "manual",
+   "query": "Breckenridge, Colorado",
+   "resolved_utc": "2026-11-13T00:00:00.000Z"
   },
   {
    "agency_id": "brookhaven-pd",
@@ -453,12 +453,12 @@
   },
   {
    "agency_id": "cobb-county-pd",
-   "lat": 34.07438,
-   "lon": -81.34464,
-   "state": "SC",
-   "via": "skydio_extent",
-   "query": null,
-   "resolved_utc": "2026-09-03T13:19:03.408Z"
+   "lat": 33.93739,
+   "lon": -84.5732,
+   "state": "GA",
+   "via": "manual",
+   "query": "cobb county, GA, USA",
+   "resolved_utc": "2026-11-13T00:00:00.000Z"
   },
   {
    "agency_id": "cobb-county-pd-ga",
@@ -1449,15 +1449,6 @@
    "via": "geocode_host",
    "query": "vail, CO, USA",
    "resolved_utc": "2026-09-03T13:20:56.744Z"
-  },
-  {
-   "agency_id": "monarch-pd-co",
-   "lat": 38.2151,
-   "lon": -81.45706,
-   "state": "WV",
-   "via": "geocode_host",
-   "query": "monarch, CO, USA",
-   "resolved_utc": "2026-09-03T13:21:00.125Z"
   },
   {
    "agency_id": "monroe-county-so",

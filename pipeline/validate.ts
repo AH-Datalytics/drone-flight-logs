@@ -4,10 +4,30 @@ import { fileURLToPath } from 'node:url';
 import { loadRegistry, type Registry } from './registry.js';
 import { COLUMNS, decodeFlightFile, type FlightFile } from './flightfile.js';
 import { validateRecord } from './schema.js';
+import { stateForPoint } from './places.js';
 
 const ORG_TYPES = new Set(['law_enforcement', 'fire_ems', 'university', 'government_other', 'corporate_utility', 'vendor_partner']);
 const STATUSES = new Set(['ok', 'stale', 'unreachable', 'retired', 'needs_review']);
 const SOURCES = new Set(['skydio_arcgis', 'sfpd_datasf']);
+
+type MapAgency = { agency_id: string; state: string | null; lat: number | null; lon: number | null };
+
+/**
+ * Every map point must fall inside the state its agency is listed in. A
+ * geocoder can return a same-named town elsewhere, and a dashboard's extent can
+ * be skewed; either one puts a dot in the wrong state without any other error.
+ */
+export function checkPlaceStates(agencies: MapAgency[]): string[] {
+  const p: string[] = [];
+  for (const a of agencies) {
+    if (!a.state || a.lat === null || a.lon === null) continue;
+    const at = stateForPoint(a.lon, a.lat);
+    if (at !== a.state) {
+      p.push(`site/agencies.json ${a.agency_id}: listed in ${a.state} but its map point (${a.lat}, ${a.lon}) is in ${at ?? 'no state'}; fix it in data/agency_places.json`);
+    }
+  }
+  return p;
+}
 
 export function validateDataDir(dataDir: string): string[] {
   const p: string[] = [];
@@ -62,6 +82,14 @@ export function validateDataDir(dataDir: string): string[] {
       if (seen.has(r.source_flight_id)) p.push(`${tag} (${id}): duplicate source_flight_id ${r.source_flight_id}`);
       seen.add(r.source_flight_id);
     });
+  }
+  const sitePath = join(dataDir, 'site', 'agencies.json');
+  if (existsSync(sitePath)) {
+    try {
+      p.push(...checkPlaceStates((JSON.parse(readFileSync(sitePath, 'utf8')) as { agencies: MapAgency[] }).agencies));
+    } catch (e) {
+      p.push(`site/agencies.json: unparsable JSON (${(e as Error).message})`);
+    }
   }
   return p;
 }
