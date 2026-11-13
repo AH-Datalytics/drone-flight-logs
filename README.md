@@ -23,14 +23,22 @@ Every figure counts **distinct flights**, never rows: several published services
 
 ## Running it
 
+Requires Node 22 or newer.
+
 ```bash
 npm install
 npm run dev            # the site at localhost:3000
-npm test               # 239 tests
+npm test               # the test suite
 npm run build          # production build, ~190 static pages
 ```
 
 ## Collecting
+
+The Flock collector (and `npm run og`) drive a real browser, so install Playwright's Chromium once:
+
+```bash
+npx playwright install chromium
+```
 
 ```bash
 npm run refresh        # every source, then merge, then the site's files
@@ -64,7 +72,7 @@ data/
   registry.json     Skydio and San Francisco agencies
   *_sites.json      the other sources' dashboards
   site/             the merged view the site reads — the committed record
-  raw/              raw vendor payloads (git-ignored, rebuildable)
+  raw/              raw vendor payloads (committed: the only copy of flights that have aged out of their sources)
 research/census/    how each source was found, and what has not been found yet
 docs/superpowers/   the spec and the plans
 ```
