@@ -453,12 +453,12 @@
   },
   {
    "agency_id": "cobb-county-pd",
-   "lat": 34.07438,
-   "lon": -81.34464,
-   "state": "SC",
-   "via": "skydio_extent",
-   "query": null,
-   "resolved_utc": "2026-09-03T13:19:03.408Z"
+   "lat": 33.93739,
+   "lon": -84.5732,
+   "state": "GA",
+   "via": "manual",
+   "query": "cobb county, GA, USA",
+   "resolved_utc": "2026-11-13T00:00:00.000Z"
   },
   {
    "agency_id": "cobb-county-pd-ga",
