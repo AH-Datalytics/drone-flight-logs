@@ -5586,8 +5586,8 @@
    "flight_count": 8,
    "total_hours": 1.6,
    "overlap_count": 0,
-   "lat": 38.4959,
-   "lon": -84.7355,
+   "lat": 39.48291,
+   "lon": -106.04655,
    "collected_utc": "2026-09-04T12:28:51.804Z",
    "notes": null
   },
@@ -5760,8 +5760,8 @@
    "flight_count": 7,
    "total_hours": 1.3,
    "overlap_count": 0,
-   "lat": 38.2151,
-   "lon": -81.45706,
+   "lat": null,
+   "lon": null,
    "collected_utc": "2026-09-04T12:36:22.840Z",
    "notes": null
   },

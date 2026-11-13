@@ -75,6 +75,17 @@ export function stateForPoint(lon: number, lat: number): string | null {
   return null;
 }
 
+/**
+ * Whether a point lies in the state an agency is listed in. A geocoder's top
+ * match can ignore the state in the query ("breck, CO" came back in Kentucky),
+ * so a point outside the expected state is treated as not found. With no
+ * expected state there is nothing to contradict.
+ */
+export function agreesWithState(point: { lat: number; lon: number }, expected: string | null): boolean {
+  if (!expected) return true;
+  return stateForPoint(point.lon, point.lat) === expected;
+}
+
 export function loadPlaces(): Map<string, Place> {
   if (!existsSync(PLACES_PATH)) return new Map();
   const file = JSON.parse(readFileSync(PLACES_PATH, 'utf8')) as PlaceFile;
@@ -182,15 +193,23 @@ export async function resolvePlaces(targets: ResolveTarget[], log: (m: string) =
     let via: Place['via'] = 'geocode_name';
     let query: string | null = null;
 
+    const hostState = t.flock_host ? placeFromFlockHost(t.flock_host).state : null;
+    const expected = t.state ?? hostState;
+    const rejected: string[] = [];
+    const check = (p: { lat: number; lon: number } | null, how: string) => {
+      if (p && !agreesWithState(p, expected)) { rejected.push(`${how} landed in ${stateForPoint(p.lon, p.lat) ?? 'no state'}`); return null; }
+      return p;
+    };
+
     if (t.skydio_org_uuid) {
-      found = await skydioExtentCenter(t.skydio_org_uuid);
+      found = check(await skydioExtentCenter(t.skydio_org_uuid), 'skydio extent');
       if (found) { via = 'skydio_extent'; viaExtent++; }
     }
 
     if (!found && t.flock_host) {
       const { place, state } = placeFromFlockHost(t.flock_host);
       query = [place, state, 'USA'].filter(Boolean).join(', ');
-      found = await geocode(query);
+      found = check(await geocode(query), `"${query}"`);
       if (found) { via = 'geocode_host'; viaGeocode++; }
       await sleep(1100);
     }
@@ -199,13 +218,16 @@ export async function resolvePlaces(targets: ResolveTarget[], log: (m: string) =
       const place = placeFromName(t.display_name);
       query = [place, t.state, 'USA'].filter(Boolean).join(', ');
       if (place) {
-        found = await geocode(query);
+        found = check(await geocode(query), `"${query}"`);
         if (found) { via = 'geocode_name'; viaGeocode++; }
         await sleep(1100);
       }
     }
 
-    if (!found) { unresolved.push(`${t.agency_id} (${t.display_name})`); continue; }
+    if (!found) {
+      unresolved.push(`${t.agency_id} (${t.display_name})${rejected.length ? ` — ${rejected.join('; ')}, outside ${expected}` : ''}`);
+      continue;
+    }
 
     places.set(t.agency_id, {
       agency_id: t.agency_id,

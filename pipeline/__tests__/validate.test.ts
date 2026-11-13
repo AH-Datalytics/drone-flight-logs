@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { validateDataDir } from '../validate.js';
+import { validateDataDir, checkPlaceStates } from '../validate.js';
 import { saveRegistry, type RegistryAgency } from '../registry.js';
 import { encodeFlightFile, COLUMNS } from '../flightfile.js';
 
@@ -58,5 +58,36 @@ describe('validateDataDir', () => {
     const p = validateDataDir(d);
     expect(p.some(x => /a-pd\.json.*rows/.test(x))).toBe(true);
     expect(p.some(x => /c-pd.*takeoff_utc/.test(x))).toBe(true);
+  });
+});
+
+describe('checkPlaceStates', () => {
+  const at = (agency_id: string, state: string | null, lat: number | null, lon: number | null) => ({ agency_id, state, lat, lon });
+
+  it('passes a point inside its listed state', () => {
+    expect(checkPlaceStates([at('cobb-county-pd', 'GA', 33.93739, -84.5732)])).toEqual([]);
+  });
+
+  it('reports a point in a different state, naming both', () => {
+    const p = checkPlaceStates([at('breck-pd-co', 'CO', 38.4959, -84.7355)]);
+    expect(p).toHaveLength(1);
+    expect(p[0]).toMatch(/breck-pd-co: listed in CO .* is in KY/);
+  });
+
+  it('reports a point outside every state', () => {
+    expect(checkPlaceStates([at('x', 'NY', 40, -30)])[0]).toMatch(/is in no state/);
+  });
+
+  it('skips an agency with no point or no listed state', () => {
+    expect(checkPlaceStates([at('a', 'CO', null, null), at('b', null, 38.4959, -84.7355)])).toEqual([]);
+  });
+});
+
+describe('validateDataDir with site data', () => {
+  it('reports a misplaced agency in site/agencies.json', () => {
+    const d = dir([ag('a-pd')], { 'a-pd.json': encodeFlightFile('a-pd', [rec('1')]) });
+    mkdirSync(join(d, 'site'));
+    writeFileSync(join(d, 'site', 'agencies.json'), JSON.stringify({ agencies: [{ agency_id: 'monarch-pd-co', state: 'CO', lat: 38.2151, lon: -81.45706 }] }));
+    expect(validateDataDir(d).some(x => /monarch-pd-co: listed in CO .* is in WV/.test(x))).toBe(true);
   });
 });
