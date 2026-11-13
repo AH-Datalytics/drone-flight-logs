@@ -25,7 +25,11 @@ import { acquireLock } from '../lock.js';
 
 export type Site = { host: string; display_name: string; state: string | null; agency_id: string; url: string };
 
-export type MonthState = { flights: number; pages: number; collected_utc: string };
+/**
+ * `error` is set when the month could not be read (a 403, a timeout), so it is
+ * never mistaken for a month that genuinely had no flights.
+ */
+export type MonthState = { flights: number; pages: number; collected_utc: string; error?: string };
 export type AgencyState = {
   agency_id: string;
   host: string;
@@ -67,7 +71,7 @@ export function monthRange(month: string): { start: string; end: string } {
  */
 export function needsCollection(state: AgencyState | undefined, month: string, today: string): boolean {
   const done = state?.months[month];
-  if (!done) return true;
+  if (!done || done.error) return true;
   const recent = monthsBetween(month, today.slice(0, 7)).length <= 2;
   return recent;
 }
@@ -156,6 +160,60 @@ export async function inParallel<T>(items: T[], workers: number, run: (item: T, 
   await Promise.all(Array.from({ length: Math.max(1, Math.min(workers, items.length)) }, take));
 }
 
+/** One line naming the months that failed, or null when every month was read. */
+export function summarizeMonthErrors(months: Record<string, MonthState>): string | null {
+  const failed = Object.entries(months).filter(([, m]) => m.error).map(([month, m]) => `${month} (${m.error})`);
+  if (failed.length === 0) return null;
+  return `${failed.length} month(s) could not be read: ${failed.slice(0, 3).join(', ')}${failed.length > 3 ? ' …' : ''}`;
+}
+
+export type MonthResult = { flights: number; pages: number; error: string | null };
+
+/**
+ * Page through one month. `fetchPage` returns a raw payload or throws; each
+ * page's flights go to `onFlights` as they arrive. A page that fails three
+ * times in a row ends the month with `error` set, rather than reading as empty.
+ */
+export async function crawlMonth(
+  fetchPage: (query: string) => Promise<string>,
+  month: string,
+  onFlights: (flights: FlockFlight[]) => void,
+  opts: { requestDelayMs: number; maxPagesPerMonth: number; log: (msg: string) => void; label: string },
+): Promise<MonthResult> {
+  const { start, end } = monthRange(month);
+  let pageNo = 1;
+  let flightsSeen = 0;
+  let failures = 0;
+
+  while (pageNo <= opts.maxPagesPerMonth) {
+    const query = `?start_datetime=${start}&end_datetime=${end}&page=${pageNo}`;
+    let payload: string;
+    try {
+      payload = await fetchPage(query);
+    } catch (e) {
+      // First line only: Playwright appends the page's stack to the message.
+      const msg = (e instanceof Error ? e.message : String(e)).split('\n')[0];
+      opts.log(`    ${opts.label} ${month} page ${pageNo}: ${msg}`);
+      if (++failures >= 3) return { flights: flightsSeen, pages: pageNo - 1, error: msg };
+      await sleep(opts.requestDelayMs * 4);
+      continue;
+    }
+    failures = 0;
+
+    const flights = extractFlights(payload);
+    if (flights.length === 0) break;
+    onFlights(flights);
+    flightsSeen += flights.length;
+
+    // A short page is the last page.
+    if (flights.length < PAGE_SIZE) { pageNo++; break; }
+    pageNo++;
+    await sleep(opts.requestDelayMs);
+  }
+
+  return { flights: flightsSeen, pages: pageNo - 1, error: null };
+}
+
 export async function collectAgency(
   page: Page,
   site: Site,
@@ -172,50 +230,32 @@ export async function collectAgency(
   let added = 0;
 
   for (const month of months) {
-    const { start, end } = monthRange(month);
-    let pageNo = 1;
-    let monthFlights = 0;
-    let emptyRun = 0;
+    const result = await crawlMonth(
+      q => fetchPage(page, q),
+      month,
+      flights => {
+        const fresh = flights.filter(f => f.flight_number && !known.has(f.flight_number));
+        for (const f of fresh) {
+          known.add(f.flight_number!);
+          appendFileSync(outPath, JSON.stringify(f) + '\n');
+        }
+        added += fresh.length;
+      },
+      { ...opts, label: site.agency_id },
+    );
 
-    while (pageNo <= opts.maxPagesPerMonth) {
-      const query = `?start_datetime=${start}&end_datetime=${end}&page=${pageNo}`;
-      let payload: string;
-      try {
-        payload = await fetchPage(page, query);
-      } catch (e) {
-        opts.log(`    ${site.agency_id} ${month} page ${pageNo}: ${e instanceof Error ? e.message : String(e)}`);
-        await sleep(opts.requestDelayMs * 4);
-        emptyRun++;
-        if (emptyRun >= 3) break;
-        continue;
-      }
-
-      const flights = extractFlights(payload);
-      if (flights.length === 0) break;
-
-      const fresh = flights.filter(f => f.flight_number && !known.has(f.flight_number));
-      for (const f of fresh) {
-        known.add(f.flight_number!);
-        appendFileSync(outPath, JSON.stringify(f) + '\n');
-      }
-      added += fresh.length;
-      monthFlights += flights.length;
-
-      // A short page is the last page.
-      if (flights.length < PAGE_SIZE) { pageNo++; break; }
-      pageNo++;
-      await sleep(opts.requestDelayMs);
-    }
-
-    agency.months[month] = { flights: monthFlights, pages: pageNo - 1, collected_utc: new Date().toISOString() };
-    if (monthFlights > 0) opts.log(`    ${month}: ${monthFlights} flights over ${pageNo - 1} pages`);
+    agency.months[month] = {
+      flights: result.flights, pages: result.pages, collected_utc: new Date().toISOString(),
+      ...(result.error ? { error: result.error } : {}),
+    };
+    if (result.flights > 0) opts.log(`    ${month}: ${result.flights} flights over ${result.pages} pages`);
     saveState(state);
     await sleep(opts.requestDelayMs);
   }
 
   agency.total_flights = known.size;
   agency.last_run_utc = new Date().toISOString();
-  agency.last_error = null;
+  agency.last_error = summarizeMonthErrors(agency.months);
   saveState(state);
   return added;
 }
@@ -252,8 +292,9 @@ export async function collect(opts: CollectOptions = {}): Promise<void> {
         const page = await openDashboard(ctx, site.host);
         const added = await collectAgency(page, site, state, months, { requestDelayMs, maxPagesPerMonth, log: m => log(m) });
         totalAdded += added;
-        log(`${label}: +${added} new flights (${state.agencies[site.agency_id].total_flights} stored)`);
-        ok++;
+        const { total_flights, last_error } = state.agencies[site.agency_id];
+        log(`${label}: +${added} new flights (${total_flights} stored)`);
+        if (last_error) { log(`${label}: FAILED — ${last_error}`); failed++; } else ok++;
       } catch (e) {
         const msg = e instanceof Error ? e.message : String(e);
         log(`${label}: FAILED — ${msg}`);

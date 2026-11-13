@@ -2,7 +2,11 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { monthsBetween, monthRange, needsCollection, knownFlightIds, inParallel, type AgencyState } from '../flock/collect.js';
+import {
+  monthsBetween, monthRange, needsCollection, knownFlightIds, inParallel, crawlMonth, summarizeMonthErrors,
+  type AgencyState,
+} from '../flock/collect.js';
+import type { FlockFlight } from '../flock/parse.js';
 
 describe('monthsBetween', () => {
   it('walks months inclusively, oldest first', () => {
@@ -47,6 +51,12 @@ describe('needsCollection', () => {
   it('trusts a settled older month', () => {
     expect(needsCollection(state(['2026-07']), '2026-07', '2026-09-02')).toBe(false);
     expect(needsCollection(state(['2025-01']), '2025-01', '2026-09-02')).toBe(false);
+  });
+
+  it('re-collects an older month that could not be read', () => {
+    const failed = state(['2025-01']);
+    failed.months['2025-01'] = { flights: 0, pages: 0, collected_utc: '2026-09-01T00:00:00Z', error: 'HTTP 403' };
+    expect(needsCollection(failed, '2025-01', '2026-09-02')).toBe(true);
   });
 
   it('treats December as the previous month in January', () => {
@@ -96,5 +106,77 @@ describe('inParallel', () => {
 
   it('handles an empty list', async () => {
     await expect(inParallel([], 3, async () => {})).resolves.toBeUndefined();
+  });
+});
+
+describe('crawlMonth', () => {
+  const opts = { requestDelayMs: 0, maxPagesPerMonth: 10, log: () => {}, label: 'a' };
+  /** A payload carrying `n` flights, numbered from `from`. */
+  const page = (from: number, n: number) =>
+    Array.from({ length: n }, (_, i) => `"flight":{"flight_number":"F-${from + i}"}`).join(',');
+  const collected = () => {
+    const seen: FlockFlight[] = [];
+    return { seen, onFlights: (f: FlockFlight[]) => { seen.push(...f); } };
+  };
+
+  it('reads pages until a short one, and reports no error', async () => {
+    const pages = [page(0, 8), page(8, 3)];
+    const { seen, onFlights } = collected();
+    const r = await crawlMonth(async q => pages[Number(q.split('page=')[1]) - 1] ?? '', '2026-01', onFlights, opts);
+    expect(r).toEqual({ flights: 11, pages: 2, error: null });
+    expect(seen).toHaveLength(11);
+  });
+
+  it('reports a genuinely empty month as empty, not failed', async () => {
+    const r = await crawlMonth(async () => '', '2026-01', () => {}, opts);
+    expect(r).toEqual({ flights: 0, pages: 0, error: null });
+  });
+
+  it('reports a blocked month as an error, not as an empty month', async () => {
+    const r = await crawlMonth(async () => { throw new Error('HTTP 403'); }, '2026-01', () => {}, opts);
+    expect(r).toEqual({ flights: 0, pages: 0, error: 'HTTP 403' });
+  });
+
+  it('records only the first line of an error, not the stack Playwright appends', async () => {
+    const r = await crawlMonth(async () => { throw new Error('page.evaluate: Error: HTTP 403\n    at eval (x:1:84)'); }, '2026-01', () => {}, opts);
+    expect(r.error).toBe('page.evaluate: Error: HTTP 403');
+  });
+
+  it('keeps going after a failure that a retry recovers from', async () => {
+    let calls = 0;
+    const fetch = async () => {
+      calls++;
+      if (calls === 1 || calls === 3) throw new Error('HTTP 429'); // two failures, never three in a row
+      return calls === 2 ? page(0, 8) : page(8, 2);
+    };
+    const r = await crawlMonth(fetch, '2026-01', () => {}, opts);
+    expect(r).toEqual({ flights: 10, pages: 2, error: null });
+  });
+
+  it('keeps the flights it read before a page failed for good', async () => {
+    const { seen, onFlights } = collected();
+    const fetch = async (q: string) => { if (q.endsWith('page=1')) return page(0, 8); throw new Error('HTTP 403'); };
+    const r = await crawlMonth(fetch, '2026-01', onFlights, opts);
+    expect(r).toEqual({ flights: 8, pages: 1, error: 'HTTP 403' });
+    expect(seen).toHaveLength(8);
+  });
+});
+
+describe('summarizeMonthErrors', () => {
+  const ok = { flights: 0, pages: 0, collected_utc: '2026-09-01T00:00:00Z' };
+  const bad = { ...ok, error: 'HTTP 403' };
+
+  it('is null when every month was read', () => {
+    expect(summarizeMonthErrors({ '2026-01': ok, '2026-02': { ...ok, flights: 4, pages: 1 } })).toBeNull();
+  });
+
+  it('names the months that failed, so check-sources can report them', () => {
+    expect(summarizeMonthErrors({ '2026-01': bad, '2026-02': ok, '2026-03': bad }))
+      .toBe('2 month(s) could not be read: 2026-01 (HTTP 403), 2026-03 (HTTP 403)');
+  });
+
+  it('keeps the line short when many months failed', () => {
+    const months = Object.fromEntries(['01', '02', '03', '04', '05'].map(m => [`2026-${m}`, bad]));
+    expect(summarizeMonthErrors(months)).toMatch(/^5 month\(s\) could not be read: .* …$/);
   });
 });
